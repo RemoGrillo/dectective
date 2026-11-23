@@ -249,3 +249,31 @@ examples:
           OPTIONAL { ?c ed:firstClue ?clue }
         }
       } GROUP BY ?order ?sentence ORDER BY ?order
+  - id: conflict-characters
+    category: Conflicts between characters
+    question: Which characters hold points of view that conflict with each other (not with Reality)?
+    sparql: |
+      SELECT DISTINCT ?agentA ?worldA ?agentB ?worldB WHERE {
+        GRAPH <http://example.org/dectective/edition/runs> {
+          ?d ed:relation dec:disagreesWith ; ed:world ?worldA ; ed:otherWorld ?worldB ; ed:run ?run .
+          ?run ed:dataset "gold" .
+        }
+        FILTER(STR(?worldA) < STR(?worldB))
+        FILTER(STRSTARTS(STR(?worldA), STR(w:)) && STRSTARTS(STR(?worldB), STR(w:)))
+        VALUES ?sa { prof:believes prof:establishes prof:conjectures prof:uttered }
+        VALUES ?sb { prof:believes prof:establishes prof:conjectures prof:uttered }
+        GRAPH <http://example.org/dectective/asserted/reality> { ?agentA ?sa ?worldA . ?agentB ?sb ?worldB }
+        FILTER(?agentA != ?agentB)
+      } ORDER BY ?agentA ?agentB
+  - id: enigma-closed
+    category: The enigma
+    question: Which facts does the story only settle in Reality late, and at which sentence?
+    note: A fact accepted into Reality at a late clue was an open question for the reader until then.
+    sparql: |
+      SELECT ?order ?sentence ?s ?p ?o WHERE {
+        GRAPH <http://example.org/dectective/edition/timeline> {
+          ?c a ed:Conclusion ; ed:firstClue ?clue ; ed:inGraph dec:reality ; ed:how "accepted into reality" ;
+             rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o .
+          ?clue ed:order ?order ; ed:sentence ?sentence .
+        }
+      } ORDER BY ?order ?s ?p

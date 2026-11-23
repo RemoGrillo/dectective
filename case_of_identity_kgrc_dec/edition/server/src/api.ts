@@ -284,6 +284,11 @@ export function api(): Router {
     if (!v) return res.status(404).json({ error: "unknown proposition" });
     res.json(v);
   });
+  r.get("/viewpoint/:id", (req, res) => {
+    const v = viewpoint(req.params.id, mode(req));
+    if (!v) return res.status(404).json({ error: "unknown proposition" });
+    res.json(v);
+  });
   r.get("/dossiers", (_req, res) => res.json(dossierIndex()));
   r.get("/dossiers/:id", (req, res) => {
     const d = dossiers().find((x) => x.id === req.params.id);

@@ -20,7 +20,7 @@ describe("case files (dossiers)", () => {
     expect(mary.verdict.tone).toBe("red");
     const wb = (await request(app).get("/api/dossiers/delusional-windibank_beliefs")).body;
     expect(wb.stamp.word).toBe("False alarm");
-    expect(mary.stamp.word).toBe("Delusion");
+    expect(mary.stamp.word).toBe("Illusion");
     expect(wb.caveats.some((c: any) => c.kind === "defect")).toBe(true);
   });
 
@@ -28,7 +28,7 @@ describe("case files (dossiers)", () => {
     const d = (await request(app).get("/api/dossiers/insincere-v_windibank_reassure")).body;
     expect(d.steps.length).toBeGreaterThan(2);
     for (const s of d.steps) expect(s.sparql).toMatch(/SELECT|ASK/);
-    expect(d.stamp.word).toBe("Lie");
+    expect(d.stamp.word).toBe("Deception");
     expect(d.steps.some((s: any) => s.by === "dec")).toBe(true);
     expect(d.anchorTexts.every((a: any) => a.text.length > 0)).toBe(true);
   });

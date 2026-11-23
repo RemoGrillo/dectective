@@ -3,6 +3,7 @@ import express from "express";
 import compression from "compression";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { PORT, PORTRAITS_DIR, WEB_DIST } from "./config.ts";
 import { loadStore } from "./store.ts";
 import { api } from "./api.ts";
@@ -37,7 +38,7 @@ export function createApp() {
   return app;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)) {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const app = createApp();
   warmUp();
   app.listen(PORT, () => console.log(`Edition on http://localhost:${PORT}  (SPARQL endpoint: http://localhost:${PORT}/sparql)`));

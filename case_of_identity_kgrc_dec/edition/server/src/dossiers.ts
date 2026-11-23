@@ -119,12 +119,12 @@ function utteranceDossier(vworld: string, kind: "insincere" | "false-sincere", t
   const believer = gov("gold").find((g) => g.world === beliefWorld && g.predicate === "believes" && !g.viaIdentity)?.agent ?? sp.speakers.at(-1)!;
   const props: Triple[] = [t, ...(bst.witnesses ?? []).map((w) => w.triple)];
   return {
-    id: `${kind}-${vworld}`, number: 0, type: kind, typeLabel: kind === "insincere" ? "Lie" : "Honest mistake", mode: "gold",
+    id: `${kind}-${vworld}`, number: 0, type: kind, typeLabel: kind === "insincere" ? "Deception" : "Sincere error", mode: "gold",
     title: `${label(sp.asserted)}: “${T(t)}”`, subtitle: vw.title,
     verdict: { label: kind === "insincere" ? "Says what he believes false" : "Said in good faith, but false", tone },
     stamp: kind === "insincere"
-      ? { word: "Lie", sub: bst.witnesses![0].axiom.kind === "closure" ? "says what he believes false · if one job at a time" : "says what he believes false" }
-      : { word: "Honest mistake", sub: "said in good faith, but false" },
+      ? { word: "Deception", sub: bst.witnesses![0].axiom.kind === "closure" ? "says what he believes false · if one job at a time" : "says what he believes false" }
+      : { word: "Sincere error", sub: "said in good faith, but false" },
     summary: kind === "insincere"
       ? `${label(sp.asserted)} said that ${T(t)}, but ${label(believer)}'s own beliefs exclude it, and Reality rules it out.`
       : `${label(sp.asserted)} said that ${T(t)} and believed it, but Reality rules it out. A false statement can be sincere.`,
@@ -185,14 +185,14 @@ function delusionalDossier(w: WorldInfo): Dossier {
     summary = `DEC labels “${w.title}” delusional, but these beliefs agree with Reality. The flag comes from a bug in DEC's single-value check, which fires on identical values.`;
   } else {
     verdict = { label: "Beliefs that Reality rules out", tone: "red" };
-    stamp = { word: "Delusion", sub: "beliefs that Reality rules out" };
+    stamp = { word: "Illusion", sub: "beliefs that Reality rules out" };
     summary = `Some of “${w.title}” cannot be true in Reality: ${lst(conflicts.map((x) => "“" + T(x.t) + "”"))}. A clash grounded in the text, not a psychological judgement.`;
     caveats.push({ kind: "semantics", text: "“Delusional” is DEC's technical term: incompatible with Reality given the data and rules. Holmes himself calls Mary's conviction a “delusion” (P138.S02)." });
     caveats.push({ kind: "assumption", text: "The clashes rest on shared rules: a journey is not both actual and pretended, a disappearance not both voluntary and involuntary, eyes not both weak and keen." });
   }
   const props = (conflicts.length ? conflicts.map((x) => x.t) : content).slice(0, 8);
   return {
-    id: `delusional-${w.local}`, number: 0, type: "delusional", typeLabel: pc.length === 0 ? "False alarm" : "Delusion", title: w.title, subtitle: w.desc, verdict, stamp, summary, mode: "gold",
+    id: `delusional-${w.local}`, number: 0, type: "delusional", typeLabel: pc.length === 0 ? "False alarm" : "Illusion", title: w.title, subtitle: w.desc, verdict, stamp, summary, mode: "gold",
     anchors: anchorsFor(props, w.segments.slice(0, 12)), steps: b.steps, caveats, dec, graph: buildGraph(props, "gold", { worlds: [w.local, "reality", "holmes_reconstruction"] }),
   };
 }

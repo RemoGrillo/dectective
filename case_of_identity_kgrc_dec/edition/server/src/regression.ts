@@ -5,6 +5,7 @@
 // Run directly:  node src/regression.ts
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import oxigraph from "oxigraph";
 import { DATA_DIR, NS } from "./config.ts";
 
@@ -78,7 +79,7 @@ export function runAuditQueries(): Outcome[] {
   return out;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)) {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const res = runAuditQueries();
   for (const r of res) {
     console.log(`${r.sameAsDec ? "same " : "DIFF "} ${r.matchesExpected ? "exp✓" : "exp✗"} ${r.id.padEnd(36)} ${r.dataset.padEnd(5)} edition=${JSON.stringify(r.edition).slice(0, 110)}`);
