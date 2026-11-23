@@ -1,4 +1,4 @@
-// The reader: the full text, with marks that say at a glance where someone lies, is deluded or makes an honest
+// The reader: the full text, with marks that say at a glance where someone deceives, is under an illusion or makes a sincere
 // mistake, where reasoning and identities are at play. The legend is a sticky bar of toggles above the text.
 // Selecting a sentence opens the panel with its kaleidoscope.
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -9,6 +9,7 @@ import { DiagIcon } from "../components/Glyphs";
 import { SentenceDrawer } from "../components/SentenceDrawer";
 import { stageOf, useApp, withMode } from "../state";
 import { Meter, useTimeline } from "../components/DeductionBits";
+import { FlowChart, FlowLegend } from "../components/FlowChart";
 import { DIAG } from "../vocab";
 
 type Toggle = Exclude<Mark, "annotated">;
@@ -27,7 +28,7 @@ function loadMarks(): Set<Toggle> {
     const v = JSON.parse(window.localStorage.getItem("dectective.marks") ?? "null");
     if (Array.isArray(v)) return new Set(v);
   } catch { /* ignore */ }
-  return new Set<Toggle>(["lie", "delusion", "mistake", "identity", "reasoning"]);
+  return new Set<Toggle>(["lie", "delusion", "mistake"]);
 }
 
 export function Reader() {
@@ -36,9 +37,14 @@ export function Reader() {
   const [params, setParams] = useSearchParams();
   const sel = params.get("s");
   const [marks, setMarks] = useState<Set<Toggle>>(loadMarks);
-  const [showCases, setShowCases] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.cases") !== "0"; } catch { return true; } });
-  const [showDed, setShowDed] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.deductions") !== "0"; } catch { return true; } });
+  const [showMore, setShowMore] = useState(false);
+  const [showCases, setShowCases] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.cases") === "1"; } catch { return false; } });
+  const [showDed, setShowDed] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.deductions") === "1"; } catch { return false; } });
   useEffect(() => { try { window.localStorage.setItem("dectective.deductions", showDed ? "1" : "0"); } catch { /* ignore */ } }, [showDed]);
+  const [reread, setReread] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.reread") !== "0"; } catch { return true; } });
+  useEffect(() => { try { window.localStorage.setItem("dectective.reread", reread ? "1" : "0"); } catch { /* ignore */ } }, [reread]);
+  const [showFlow, setShowFlow] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.flow") !== "0"; } catch { return true; } });
+  useEffect(() => { try { window.localStorage.setItem("dectective.flow", showFlow ? "1" : "0"); } catch { /* ignore */ } }, [showFlow]);
   const { data: tl } = useTimeline();
   // clue sentences: how many new story-level conclusions DEC draws there
   const clues = useMemo(() => new Map((tl?.steps ?? []).map((st) => [st.sid, { n: st.n, page: st.page, add: tl!.conclusions.filter((c) => c.step === st.n && c.cls === "story").length }])), [tl]);
@@ -78,6 +84,22 @@ export function Reader() {
     requestAnimationFrame(go);
     document.fonts?.ready.then(() => setTimeout(go, 60));
   }, [data, sel]);
+
+  // jump to the sentence of clue n: select it and bring it to the middle of the screen
+  const goClue = useCallback((n: number) => {
+    const st = tl?.steps.find((x) => x.n === n);
+    if (!st) return;
+    setParams((p) => { const q2 = new URLSearchParams(p); q2.set("s", st.sid); return q2; }, { replace: true });
+    document.getElementById("s-" + st.sid)?.scrollIntoView({ block: "center", behavior: "smooth" });
+  }, [tl, setParams]);
+  // a selection made elsewhere (a link from a conclusion, the notebook) also brings its sentence into view
+  useEffect(() => {
+    if (!sel) return;
+    const el = document.getElementById("s-" + sel);
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    if (r.top < 120 || r.bottom > window.innerHeight * 0.75) el.scrollIntoView({ block: "center", behavior: "smooth" });
+  }, [sel]);
 
   // current section in the contents
   useEffect(() => {
@@ -168,7 +190,7 @@ export function Reader() {
 
         <div className="text-col">
           <div className="marks-bar" role="group" aria-label="Marks in the text (click to show or hide)">
-            {MARKS.map((m, i) => (
+            {MARKS.filter((m, i) => i < 3 || showMore).map((m, i) => (
               <Fragment key={m.id}>
                 {i === 3 && <span className="sep" aria-hidden="true" />}
                 <button className="chip" aria-pressed={marks.has(m.id)} title={m.help}
@@ -179,10 +201,17 @@ export function Reader() {
                 </button>
               </Fragment>
             ))}
-            <span className="sep" aria-hidden="true" />
-            <button className="chip" aria-pressed={showCases} onClick={() => setShowCases(!showCases)} title="Sentences cited by a case file"><span className="case-pin" style={{ margin: 0 }}>▤</span> Case files</button>
-            <button className="chip" aria-pressed={showDed} onClick={() => setShowDed(!showDed)} title="Sentences after which DEC can draw new conclusions"><span className="ded-pin" style={{ margin: 0 }}>⚙</span> New deductions</button>
-            <span className="hint">Underlined sentences open the kaleidoscope.</span>
+            {showMore && (
+              <>
+                <span className="sep" aria-hidden="true" />
+                <button className="chip" aria-pressed={showCases} onClick={() => setShowCases(!showCases)} title="Sentences cited by a case file"><span className="case-pin" style={{ margin: 0 }}>▤</span> Case files</button>
+                <button className="chip" aria-pressed={showDed} onClick={() => setShowDed(!showDed)} title="Sentences after which new conclusions can be drawn"><span className="ded-pin" style={{ margin: 0 }}>⚙</span> New deductions</button>
+              </>
+            )}
+            <button className="chip" aria-pressed={showFlow} onClick={() => setShowFlow(!showFlow)} title="Dock under the text: every point of view as a lane, growing clue by clue as you read">◫ Worlds</button>
+            <button className="chip" aria-pressed={reread} onClick={() => setReread(!reread)} title="Under each marked passage, what it turns out to mean now that the truth is known">↻ Re-read</button>
+            <button className="chip" aria-expanded={showMore} onClick={() => setShowMore(!showMore)}>{showMore ? "Fewer marks" : "More marks"}</button>
+            <span className="hint">Underlined sentences open an explanation.</span>
           </div>
           <article className="leaf" aria-label="The text of A Case of Identity" onKeyDown={onKey}
             onFocus={(e) => { const sid = (e.target as HTMLElement).dataset.sid; if (sid) setFocused(sid); }}>
@@ -209,6 +238,11 @@ export function Reader() {
                     {p.sentences.map((s, i) => (
                       <Fragment key={s.id}>
                         <Sentence s={s} marks={marks} selected={sel === s.id} tabbable={focusTarget === s.id} clickable={clickable(s)} onSelect={select} />
+                        {showFlow && clues.get(s.id) && (
+                          <button className="clue-pin" onClick={() => select(s.id)} title={`Clue ${clues.get(s.id)!.n}: DEC's reading of this sentence, and where it came from`}>
+                            clue {clues.get(s.id)!.n}
+                          </button>
+                        )}
                         {showDed && (clues.get(s.id)?.add ?? 0) > 0 && (
                           <span className="ded-pin" role="presentation" onClick={() => select(s.id)}
                             title={`DEC can now draw ${clues.get(s.id)!.add} new conclusion(s) — clue ${clues.get(s.id)!.n}`}>⚙+{clues.get(s.id)!.add}</span>
@@ -221,6 +255,12 @@ export function Reader() {
                       </Fragment>
                     ))}
                   </div>
+                  {reread && p.sentences.filter((s) => s.diagnoses.some((d) => marks.has(d.kind))).map((s) => (
+                    <div key={"rr" + s.id} className="reread">
+                      ↻ In hindsight: “{s.text.length > 70 ? s.text.slice(0, 70).trimEnd() + "…" : s.text}” {s.diagnoses.filter((d) => marks.has(d.kind)).map((d) => d.text).join("; ")}.{" "}
+                      <button className="why" onClick={() => select(s.id)}>Why?</button>
+                    </div>
+                  ))}
                   {stage && (
                     <div className="stage-end" role="separator" aria-label={`End of stage: ${stage.label}`}>
                       <span>End of “{stage.label}”</span>
@@ -240,12 +280,21 @@ export function Reader() {
           </article>
         </div>
 
-        {sel && (
+        {sel ? (
           <aside className="drawer" aria-label="The selected sentence">
             <SentenceDrawer sid={sel} onClose={() => { const s = sel; select(null); requestAnimationFrame(() => document.getElementById("s-" + s)?.focus()); }} />
           </aside>
-        )}
+        ) : null}
       </div>
+      {showFlow && tl && (
+        <section className="flow-dock" aria-label="Points of view as the story unfolds">
+          <div className="spread small" style={{ padding: "4px 10px" }}>
+            <FlowLegend />
+            <span className="muted">clue {readingClue} of {tl.final} · click a column to find it in the text</span>
+          </div>
+          <FlowChart tl={tl} n={readingClue} row={26} follow onPick={goClue} />
+        </section>
+      )}
     </div>
   );
 }

@@ -25,6 +25,7 @@ export function ConclusionCard({ c, tl, compact = false }: { c: TConclusion; tl:
     <div className={`concl ${c.kind}`}>
       <div className="concl-head">
         <DecBadge title={c.kind === "accepted" ? "DEC copies Holmes's accepted solution into Reality (permeation)" : "Inferred by DEC's reasoner"} />
+        {stepOf(tl, c.step) && <Link className="clue-pin" to={withMode(`/read?s=${stepOf(tl, c.step)!.sid}`, mode)} title="Where the text gives rise to this: find it in the reading view">clue {c.step}</Link>}
         <span className="pov">
           <WorldIcon type={(c.world === "reality" ? "reality" : c.verb === "says" ? "verbatim" : c.verb === "believes" ? "doxastic" : c.verb === "concludes" ? "epistemic" : "conjectural") as DecType} size={15} />
           {c.world === "reality" ? "In Reality" : `${c.personName ?? ""} ${c.verb ? VERB[c.verb].label : ""} · ${c.worldTitle}`}

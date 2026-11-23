@@ -45,7 +45,7 @@ export function SentenceDrawer({ sid, onClose }: { sid: string; onClose: () => v
               <div>
                 <div className="w">{DIAG[d.kind].label}</div>
                 <div className="t">{d.text}{d.assumption ? <span className="muted"> — {d.assumption}</span> : null}.</div>
-                <div className="d" title={`DEC: ${DIAG[d.kind].dec}`}>{DIAG[d.kind].rule} <span className="dec-term">In DEC's terms</span></div>
+                <div className="d" title={`DEC: ${DIAG[d.kind].dec}`}>{DIAG[d.kind].rule}</div>
               </div>
             </div>
           ))}
@@ -70,11 +70,18 @@ export function SentenceDrawer({ sid, onClose }: { sid: string; onClose: () => v
           )}
           <p className="claim-title">“{vp.text}”</p>
           <Kaleidoscope vp={vp} size={290} />
-          <h4 style={{ marginTop: 16 }}>Who holds what</h4>
-          <Holders vp={vp} />
         </>
       )}
 
+      <details className="more" style={{ marginTop: 14 }}>
+        <summary>Show details</summary>
+        <div className="more-body">
+      {vps.length > 0 && (
+        <>
+          <h4>Who holds what</h4>
+          <Holders vp={vp} />
+        </>
+      )}
       <div style={{ marginTop: 14 }}>
         {tl && (() => {
           const st = tl.steps.find((x) => x.sid === sid);
@@ -133,6 +140,8 @@ export function SentenceDrawer({ sid, onClose }: { sid: string; onClose: () => v
           <span className="small muted"><DecBadge /> computed from DEC's views</span>
         </div>
       </div>
+        </div>
+      </details>
     </div>
   );
 }
