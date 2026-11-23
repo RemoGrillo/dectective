@@ -1,0 +1,603 @@
+{
+  "html_units_total": 141,
+  "html_disclaimer_units": 3,
+  "html_story_units": 138,
+  "pdf_paragraphs": 138,
+  "pairs": [
+    {
+      "unit": 4,
+      "pdf_page": 3,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9922,
+      "ops": [
+        [
+          "replace",
+          "husband’s",
+          "husband's"
+        ]
+      ]
+    },
+    {
+      "unit": 16,
+      "pdf_page": 4,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9825,
+      "ops": [
+        [
+          "replace",
+          "“You’ve",
+          "“You've"
+        ]
+      ]
+    },
+    {
+      "unit": 18,
+      "pdf_page": 4,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9877,
+      "ops": [
+        [
+          "replace",
+          "I’m",
+          "I'm"
+        ]
+      ]
+    },
+    {
+      "unit": 24,
+      "pdf_page": 4,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9709,
+      "ops": [
+        [
+          "replace",
+          "wasn’t",
+          "wasn't"
+        ],
+        [
+          "replace",
+          "father’s",
+          "father's"
+        ],
+        [
+          "replace",
+          "wasn’t",
+          "wasn't"
+        ]
+      ]
+    },
+    {
+      "unit": 29,
+      "pdf_page": 4,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9902,
+      "ops": [
+        [
+          "replace",
+          "don’t",
+          "don't"
+        ]
+      ]
+    },
+    {
+      "unit": 31,
+      "pdf_page": 4,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.984,
+      "ops": [
+        [
+          "replace",
+          "Sutherland’s",
+          "Sutherland's"
+        ],
+        [
+          "replace",
+          "gasfitters’",
+          "gasfitters'"
+        ],
+        [
+          "replace",
+          "father’s",
+          "father's"
+        ]
+      ]
+    },
+    {
+      "unit": 34,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9444,
+      "ops": [
+        [
+          "replace",
+          "gasfitters’",
+          "gasfitters'"
+        ]
+      ]
+    },
+    {
+      "unit": 37,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9672,
+      "ops": [
+        [
+          "replace",
+          "didn’t",
+          "didn't"
+        ],
+        [
+          "replace",
+          "wouldn’t",
+          "wouldn't"
+        ]
+      ]
+    },
+    {
+      "unit": 43,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.8,
+      "ops": [
+        [
+          "replace",
+          "“That’s",
+          "“That's"
+        ],
+        [
+          "replace",
+          "don’t",
+          "don't"
+        ]
+      ]
+    },
+    {
+      "unit": 46,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.8333,
+      "ops": [
+        [
+          "replace",
+          "don’t",
+          "don't"
+        ]
+      ]
+    },
+    {
+      "unit": 49,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9903,
+      "ops": [
+        [
+          "replace",
+          "wouldn’t",
+          "wouldn't"
+        ]
+      ]
+    },
+    {
+      "unit": 51,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9897,
+      "ops": [
+        [
+          "replace",
+          "He’d",
+          "He'd"
+        ]
+      ]
+    },
+    {
+      "unit": 53,
+      "pdf_page": 5,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9892,
+      "ops": [
+        [
+          "replace",
+          "didn’t",
+          "didn't"
+        ],
+        [
+          "replace",
+          "didn’t",
+          "didn't"
+        ]
+      ]
+    },
+    {
+      "unit": 57,
+      "pdf_page": 6,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9868,
+      "ops": [
+        [
+          "replace",
+          "Saviour’s,",
+          "Saviour's,"
+        ],
+        [
+          "replace",
+          "King’s",
+          "King's"
+        ]
+      ]
+    },
+    {
+      "unit": 67,
+      "pdf_page": 6,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9921,
+      "ops": [
+        [
+          "replace",
+          "can’t",
+          "can't"
+        ]
+      ]
+    },
+    {
+      "unit": 69,
+      "pdf_page": 6,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.75,
+      "ops": [
+        [
+          "replace",
+          "don’t",
+          "don't"
+        ],
+        [
+          "replace",
+          "I’ll",
+          "I'll"
+        ]
+      ]
+    },
+    {
+      "unit": 73,
+      "pdf_page": 6,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9524,
+      "ops": [
+        [
+          "replace",
+          "Saturday’s",
+          "Saturday's"
+        ]
+      ]
+    },
+    {
+      "unit": 76,
+      "pdf_page": 6,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.8667,
+      "ops": [
+        [
+          "replace",
+          "Angel’s",
+          "Angel's"
+        ],
+        [
+          "replace",
+          "father’s",
+          "father's"
+        ]
+      ]
+    },
+    {
+      "unit": 82,
+      "pdf_page": 7,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9868,
+      "ops": [
+        [
+          "replace",
+          "’77,",
+          "'77,"
+        ]
+      ]
+    },
+    {
+      "unit": 84,
+      "pdf_page": 7,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9821,
+      "ops": [
+        [
+          "replace",
+          "woman’s",
+          "woman's"
+        ]
+      ]
+    },
+    {
+      "unit": 85,
+      "pdf_page": 7,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9889,
+      "ops": [
+        [
+          "replace",
+          "didn’t",
+          "didn't"
+        ]
+      ]
+    },
+    {
+      "unit": 87,
+      "pdf_page": 7,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9891,
+      "ops": [
+        [
+          "replace",
+          "“’Pon",
+          "“'Pon"
+        ],
+        [
+          "replace",
+          "woman’s",
+          "woman's"
+        ]
+      ]
+    },
+    {
+      "unit": 90,
+      "pdf_page": 7,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9375,
+      "ops": [
+        [
+          "replace",
+          "friend’s",
+          "friend's"
+        ]
+      ]
+    },
+    {
+      "unit": 100,
+      "pdf_page": 8,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9775,
+      "ops": [
+        [
+          "replace",
+          "lady’s",
+          "lady's"
+        ],
+        [
+          "replace",
+          "o’clock",
+          "o'clock"
+        ]
+      ]
+    },
+    {
+      "unit": 101,
+      "pdf_page": 8,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9911,
+      "ops": [
+        [
+          "replace",
+          "friend’s",
+          "friend's"
+        ]
+      ]
+    },
+    {
+      "unit": 103,
+      "pdf_page": 8,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9921,
+      "ops": [
+        [
+          "replace",
+          "o’clock",
+          "o'clock"
+        ]
+      ]
+    },
+    {
+      "unit": 110,
+      "pdf_page": 8,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9615,
+      "ops": [
+        [
+          "replace",
+          "girl’s",
+          "girl's"
+        ]
+      ]
+    },
+    {
+      "unit": 112,
+      "pdf_page": 8,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9615,
+      "ops": [
+        [
+          "replace",
+          "o’clock?”",
+          "o'clock?”"
+        ]
+      ]
+    },
+    {
+      "unit": 116,
+      "pdf_page": 8,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9889,
+      "ops": [
+        [
+          "replace",
+          "man’s",
+          "man's"
+        ]
+      ]
+    },
+    {
+      "unit": 118,
+      "pdf_page": 9,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9808,
+      "ops": [
+        [
+          "replace",
+          "‘e’s’",
+          "‘e’s'"
+        ],
+        [
+          "replace",
+          "‘r’s’",
+          "‘r’s'"
+        ]
+      ]
+    },
+    {
+      "unit": 122,
+      "pdf_page": 9,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9464,
+      "ops": [
+        [
+          "replace",
+          "won’t",
+          "won't"
+        ],
+        [
+          "replace",
+          "won’t,”",
+          "won't,”"
+        ],
+        [
+          "replace",
+          "That’s",
+          "That's"
+        ]
+      ]
+    },
+    {
+      "unit": 123,
+      "pdf_page": 9,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9565,
+      "ops": [
+        [
+          "replace",
+          "“It—it’s",
+          "“It—it's"
+        ]
+      ]
+    },
+    {
+      "unit": 126,
+      "pdf_page": 9,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9961,
+      "ops": [
+        [
+          "replace",
+          "girl’s",
+          "girl's"
+        ]
+      ]
+    },
+    {
+      "unit": 128,
+      "pdf_page": 9,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9892,
+      "ops": [
+        [
+          "replace",
+          "gentleman’s",
+          "gentleman's"
+        ],
+        [
+          "replace",
+          "girl’s",
+          "girl's"
+        ],
+        [
+          "replace",
+          "lady’s",
+          "lady's"
+        ]
+      ]
+    },
+    {
+      "unit": 131,
+      "pdf_page": 10,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9853,
+      "ops": [
+        [
+          "replace",
+          "man’s",
+          "man's"
+        ],
+        [
+          "replace",
+          "here’s",
+          "here's"
+        ]
+      ]
+    },
+    {
+      "unit": 132,
+      "pdf_page": 10,
+      "kind_pdf": "prose",
+      "kind_html": "p",
+      "ratio": 0.9792,
+      "ops": [
+        [
+          "replace",
+          "“There’s",
+          "“There's"
+        ]
+      ]
+    }
+  ],
+  "units_with_differences": 36
+}

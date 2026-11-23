@@ -1,0 +1,196 @@
+[T01_who_is_hosmer] T01a_identity_in_reality: slice T01a_identity_in_reality.trig: 128 triples (full 465), worlds 2
+    asserted: warm rc=0 1.09s
+    flat: warm rc=0 2.37s
+    ctx: warm rc=0 3.02s
+    dec: warm rc=0 2.95s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T01_who_is_hosmer] T01b_identity_in_holmes_world: slice T01b_identity_in_holmes_world.trig: 128 triples (full 465), worlds 2
+    asserted: warm rc=0 1.22s
+    flat: warm rc=0 2.89s
+    ctx: warm rc=0 3.42s
+    dec: warm rc=0 3.12s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T01_who_is_hosmer] T01c_identity_consequence: slice T01c_identity_consequence.trig: 128 triples (full 465), worlds 2
+    asserted: warm rc=0 1.22s
+    flat: warm rc=0 2.42s
+    ctx: warm rc=0 3.01s
+    dec: warm rc=0 2.77s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T02_mary_knows_identity] T02a_mary_identity: slice T02a_mary_identity.trig: 157 triples (full 465), worlds 3
+    asserted: warm rc=0 1.02s
+    flat: warm rc=0 2.93s
+    ctx: warm rc=0 4.28s
+    dec: warm rc=0 3.45s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T02_mary_knows_identity] T02b_mary_opacity: slice T02b_mary_opacity.trig: 157 triples (full 465), worlds 3
+    asserted: warm rc=0 1.24s
+    flat: warm rc=0 3.37s
+    ctx: warm rc=0 4.54s
+    dec: warm rc=0 3.41s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T02_mary_knows_identity] T02c_mary_engaged_de_re_reality: slice T02c_mary_engaged_de_re_reality.trig: 157 triples (full 465), worlds 3
+    asserted: warm rc=0 1.18s
+    flat: warm rc=0 3.04s
+    ctx: warm rc=0 4.2s
+    dec: warm rc=0 3.42s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T03_identity_dependent_conclusions] T03a_weak_sight_not_fact: slice T03a_weak_sight_not_fact.trig: 161 triples (full 465), worlds 3
+    asserted: warm rc=0 1.28s
+    flat: warm rc=0 2.96s
+    ctx: warm rc=0 4.45s
+    dec: warm rc=0 25.13s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T03_identity_dependent_conclusions] T03b_where_engaged_to_windibank: slice T03b_where_engaged_to_windibank.trig: 161 triples (full 465), worlds 3
+    asserted: warm rc=0 1.18s
+    flat: warm rc=0 2.92s
+    ctx: warm rc=0 4.62s
+    dec: warm rc=0 25.41s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T03s_identity_dependent_conclusions_sim] T03c_engaged_only_under_hypothesis: slice T03c_engaged_only_under_hypothesis.trig: 99 triples (full 392), worlds 3
+    asserted: warm rc=0 1.19s
+    flat: warm rc=0 2.6s
+    ctx: warm rc=0 3.9s
+    dec: warm rc=0 3.49s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T04_who_said_what] T04a_acts: slice T04a_acts.trig: 177 triples (full 465), worlds 3
+    asserted: warm rc=0 1.32s
+    flat: warm rc=0 3.12s
+    ctx: warm rc=0 4.85s
+    dec: warm rc=0 4.57s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T04_who_said_what] T04b_said_vs_true: slice T04b_said_vs_true.trig: 147 triples (full 465), worlds 3
+    asserted: warm rc=0 1.27s
+    flat: warm rc=0 2.89s
+    ctx: warm rc=0 4.01s
+    dec: warm rc=0 3.29s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T05_insincerity] T05a_content_vs_speaker_belief: slice T05a_content_vs_speaker_belief.trig: 207 triples (full 465), worlds 7
+    asserted: warm rc=0 1.34s
+    flat: warm rc=0 3.43s
+    ctx: warm rc=0 8.9s
+    dec: warm rc=0 174.06s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T05_insincerity] T05b_sincere_but_false: slice T05b_sincere_but_false.trig: 207 triples (full 465), worlds 7
+    asserted: warm rc=0 1.24s
+    flat: warm rc=0 3.5s
+    ctx: warm rc=0 8.9s
+    dec: warm rc=0 175.22s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T06_divergence] T06a_belief_worlds_vs_reality: slice T06a_belief_worlds_vs_reality.trig: 179 triples (full 465), worlds 4
+    asserted: warm rc=0 1.19s
+    flat: warm rc=0 3.01s
+    ctx: warm rc=0 5.06s
+    dec: warm rc=0 44.72s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T06_divergence] T06b_mary_delusional_label: slice T06b_mary_delusional_label.trig: 179 triples (full 465), worlds 4
+    asserted: warm rc=0 1.14s
+    flat: warm rc=0 3.09s
+    ctx: warm rc=0 5.0s
+    dec: warm rc=0 44.8s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T06x_divergence_ablation_journeys] T06c_ablation: slice T06c_ablation.trig: 159 triples (full 465), worlds 3
+    asserted: warm rc=0 1.14s
+    flat: warm rc=0 3.13s
+    ctx: warm rc=0 4.86s
+    dec: warm rc=0 26.03s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T07_hypotheses_vs_evidence_C3] T07a_C3: slice T07a_C3.trig: 85 triples (full 392), worlds 3
+    asserted: warm rc=0 1.18s
+    flat: warm rc=0 2.44s
+    ctx: warm rc=0 3.43s
+    dec: warm rc=0 17.6s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T07_hypotheses_vs_evidence_C4] T07b_C4: slice T07b_C4.trig: 97 triples (full 397), worlds 4
+    asserted: warm rc=0 1.16s
+    flat: warm rc=0 2.62s
+    ctx: warm rc=0 4.82s
+    dec: warm rc=0 43.09s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T07w_watson_rejected] T07c_watson: slice T07c_watson.trig: 134 triples (full 465), worlds 3
+    asserted: warm rc=0 1.11s
+    flat: warm rc=0 2.74s
+    ctx: warm rc=0 4.19s
+    dec: warm rc=0 26.24s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T08_update_C2] T08a_identity_C2: slice T08a_identity_C2.trig: 69 triples (full 368), worlds 2
+    asserted: warm rc=0 1.14s
+    flat: warm rc=0 2.3s
+    ctx: warm rc=0 2.96s
+    dec: warm rc=0 2.72s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T08_update_C3] T08b_identity_C3: slice T08b_identity_C3.trig: 90 triples (full 392), worlds 3
+    asserted: warm rc=0 1.09s
+    flat: warm rc=0 3.05s
+    ctx: warm rc=0 3.44s
+    dec: warm rc=0 3.15s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T08_update_C3] T08d_same_machine_C3: slice T08d_same_machine_C3.trig: 90 triples (full 392), worlds 3
+    asserted: warm rc=0 1.12s
+    flat: warm rc=0 3.01s
+    ctx: warm rc=0 3.46s
+    dec: warm rc=0 3.11s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T08_update_C4] T08c_identity_C4: slice T08c_identity_C4.trig: 108 triples (full 397), worlds 3
+    asserted: warm rc=0 1.09s
+    flat: warm rc=0 2.84s
+    ctx: warm rc=0 4.12s
+    dec: warm rc=0 3.47s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T08_update_C4] T08e_mary_unchanged_C4: slice T08e_mary_unchanged_C4.trig: 108 triples (full 397), worlds 3
+    asserted: warm rc=0 1.14s
+    flat: warm rc=0 2.84s
+    ctx: warm rc=0 4.05s
+    dec: warm rc=0 3.46s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T09_typewriter_C3] T09a_typed_on_office_machine: slice T09a_typed_on_office_machine.trig: 97 triples (full 392), worlds 4
+    asserted: warm rc=0 1.11s
+    flat: warm rc=0 2.53s
+    ctx: warm rc=0 3.48s
+    dec: warm rc=0 30.48s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T09_typewriter_C3] T09b_same_machine_not_fact: slice T09b_same_machine_not_fact.trig: 97 triples (full 392), worlds 4
+    asserted: warm rc=0 1.13s
+    flat: warm rc=0 2.53s
+    ctx: warm rc=0 3.28s
+    dec: warm rc=0 30.13s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T09_typewriter_C3] T09c_authorship_alternatives: slice T09c_authorship_alternatives.trig: 97 triples (full 392), worlds 4
+    asserted: warm rc=0 1.14s
+    flat: warm rc=0 2.5s
+    ctx: warm rc=0 3.45s
+    dec: warm rc=0 31.1s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T10_finale] T10a_no_telling_event: slice T10a_no_telling_event.trig: 178 triples (full 465), worlds 3
+    asserted: warm rc=0 1.22s
+    flat: warm rc=0 2.45s
+    ctx: warm rc=0 4.12s
+    dec: warm rc=0 3.99s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T10_finale] T10b_rejection_only_predicted: slice T10b_rejection_only_predicted.trig: 148 triples (full 465), worlds 3
+    asserted: warm rc=0 1.16s
+    flat: warm rc=0 2.25s
+    ctx: warm rc=0 3.35s
+    dec: warm rc=0 2.94s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[T10_finale] T10c_mary_last_belief: slice T10c_mary_last_belief.trig: 148 triples (full 465), worlds 3
+    asserted: warm rc=0 1.15s
+    flat: warm rc=0 2.27s
+    ctx: warm rc=0 3.45s
+    dec: warm rc=0 2.91s
+    instrumented_equivalent=True preserved_ctx=True preserved_dec=None
+[full gold] dec: rc=0 497.7s
+[full gold] ctx: rc=0 6.1s
+[full gold] flat: rc=0 2.5s
+[full C1] dec: rc=0 56.2s
+[full C1] ctx: rc=0 3.9s
+[full C1] flat: rc=0 2.0s
+[full C2] dec: rc=0 77.1s
+[full C2] ctx: rc=0 4.1s
+[full C2] flat: rc=0 2.0s
+[full C3] dec: rc=0 214.7s
+[full C3] ctx: rc=0 4.8s
+[full C3] flat: rc=0 2.3s
+[full C4] dec: rc=0 331.7s
+[full C4] ctx: rc=0 5.4s
+[full C4] flat: rc=0 2.3s
+EXIT 0

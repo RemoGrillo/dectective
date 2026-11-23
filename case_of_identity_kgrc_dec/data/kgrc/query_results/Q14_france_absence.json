@@ -1,0 +1,38 @@
+[
+ {
+  "s": "d:132",
+  "type": "kgc:Statement",
+  "src": "Windibank went to France for work.",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:159",
+  "type": "kgc:Statement",
+  "src": "Windibank goes to France a week later",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:217",
+  "type": "kgc:Statement",
+  "src": "Windibank works at the French office of the Bordeaux company",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:242",
+  "type": "kgc:Statement",
+  "src": "Hosmer does not throw away Sutherland",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:513",
+  "type": "kgc:Thought",
+  "src": "Windibank is in France",
+  "info": "d:Sutherland_s_thoughts"
+ },
+ {
+  "s": "d:557",
+  "type": "kgc:Situation",
+  "src": "Windibank ran away at full speed",
+  "info": null
+ }
+]

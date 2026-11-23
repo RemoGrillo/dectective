@@ -1,0 +1,448 @@
+{ 
+  "data" : "./prototype/fixtures/T05_insincerity/slices/T05a_content_vs_speaker_belief.trig" ,
+  "query" : "./prototype/fixtures/T05_insincerity/T05a_content_vs_speaker_belief.rq" ,
+  "config" : "ctx" ,
+  "instrumented" : false ,
+  "parse_ms" : 185.669207 ,
+  "input_quads" : 207 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : -1 ,
+        "warmup" : true ,
+        "materialise_total_ms" : 1464.41837 ,
+        "cpu_ms" : 1407.725371 ,
+        "gc_count" : 6 ,
+        "gc_ms" : 41 ,
+        "heap_delta_mb" : 49.516807556152344 ,
+        "phases" : {
+            "build_ms" : 29.363731 ,
+            "enumerate_ms" : 846.817088 ,
+            "validate_ms" : 580.912806
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 166.407158 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 256.347466 ,
+            "http://example.org/dectective/world/mary_D1" : 77.632712 ,
+            "http://example.org/dectective/world/shared" : 72.436231 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 127.410681 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 55.778527 ,
+            "http://example.org/dectective/world/v_mary_france" : 45.915123 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 44.782068
+          } ,
+        "query_first_ms" : 55.224858 ,
+        "query_second_ms" : 2.218764
+      } ,
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 818.707129 ,
+        "cpu_ms" : 793.549148 ,
+        "gc_count" : 3 ,
+        "gc_ms" : 18 ,
+        "heap_delta_mb" : 298.42517852783203 ,
+        "phases" : {
+            "build_ms" : 7.053396 ,
+            "enumerate_ms" : 502.015043 ,
+            "validate_ms" : 307.138685
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 53.405538 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 133.510324 ,
+            "http://example.org/dectective/world/mary_D1" : 50.482257 ,
+            "http://example.org/dectective/world/shared" : 43.766217 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 100.152973 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 41.549213 ,
+            "http://example.org/dectective/world/v_mary_france" : 40.310337 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 38.742034
+          } ,
+        "query_first_ms" : 1.240497 ,
+        "query_second_ms" : 0.505776
+      } ,
+      { 
+        "rep" : 1 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 598.09666 ,
+        "cpu_ms" : 575.951702 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 20 ,
+        "heap_delta_mb" : 260.96795654296875 ,
+        "phases" : {
+            "build_ms" : 3.184781 ,
+            "enumerate_ms" : 315.67544 ,
+            "validate_ms" : 277.628202
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 36.306146 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 73.334303 ,
+            "http://example.org/dectective/world/mary_D1" : 28.07078 ,
+            "http://example.org/dectective/world/shared" : 28.591818 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 69.501591 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 23.791669 ,
+            "http://example.org/dectective/world/v_mary_france" : 31.483405 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 24.542341
+          } ,
+        "query_first_ms" : 1.146446 ,
+        "query_second_ms" : 0.463521
+      } ,
+      { 
+        "rep" : 2 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 633.749872 ,
+        "cpu_ms" : 607.592211 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 24 ,
+        "heap_delta_mb" : 251.07735443115234 ,
+        "phases" : {
+            "build_ms" : 2.63669 ,
+            "enumerate_ms" : 349.033944 ,
+            "validate_ms" : 280.6449
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 36.590008 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 77.67779 ,
+            "http://example.org/dectective/world/mary_D1" : 30.677567 ,
+            "http://example.org/dectective/world/shared" : 28.111054 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 78.904106 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 28.998662 ,
+            "http://example.org/dectective/world/v_mary_france" : 36.153751 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 31.863049
+          } ,
+        "query_first_ms" : 1.097271 ,
+        "query_second_ms" : 0.379592
+      } ,
+      { 
+        "rep" : 3 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 597.692518 ,
+        "cpu_ms" : 572.770813 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 23 ,
+        "heap_delta_mb" : 246.40367126464844 ,
+        "phases" : {
+            "build_ms" : 2.209533 ,
+            "enumerate_ms" : 332.551985 ,
+            "validate_ms" : 261.48162
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 34.017045 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 71.39162 ,
+            "http://example.org/dectective/world/mary_D1" : 32.700021 ,
+            "http://example.org/dectective/world/shared" : 29.302466 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 79.756312 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 27.058159 ,
+            "http://example.org/dectective/world/v_mary_france" : 31.273273 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 27.003784
+          } ,
+        "query_first_ms" : 1.09577 ,
+        "query_second_ms" : 0.437439
+      } ,
+      { 
+        "rep" : 4 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 549.9369 ,
+        "cpu_ms" : 526.506386 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 22 ,
+        "heap_delta_mb" : 243.91458129882812 ,
+        "phases" : {
+            "build_ms" : 1.896059 ,
+            "enumerate_ms" : 291.745978 ,
+            "validate_ms" : 254.980379
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 27.555315 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 68.147835 ,
+            "http://example.org/dectective/world/mary_D1" : 28.304047 ,
+            "http://example.org/dectective/world/shared" : 24.915194 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 65.838751 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 23.357593 ,
+            "http://example.org/dectective/world/v_mary_france" : 29.69542 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 23.88008
+          } ,
+        "query_first_ms" : 1.041775 ,
+        "query_second_ms" : 0.303383
+      } ,
+      { 
+        "rep" : 5 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 600.855572 ,
+        "cpu_ms" : 578.397303 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 20 ,
+        "heap_delta_mb" : 229.70482635498047 ,
+        "phases" : {
+            "build_ms" : 2.142376 ,
+            "enumerate_ms" : 347.685278 ,
+            "validate_ms" : 249.68264
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 33.154022 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 80.387183 ,
+            "http://example.org/dectective/world/mary_D1" : 32.797962 ,
+            "http://example.org/dectective/world/shared" : 29.476596 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 82.519427 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 31.430392 ,
+            "http://example.org/dectective/world/v_mary_france" : 26.730904 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 31.124667
+          } ,
+        "query_first_ms" : 0.954195 ,
+        "query_second_ms" : 0.323086
+      } ,
+      { 
+        "rep" : 6 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 572.339109 ,
+        "cpu_ms" : 551.599031 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 19 ,
+        "heap_delta_mb" : 260.9117126464844 ,
+        "phases" : {
+            "build_ms" : 1.717739 ,
+            "enumerate_ms" : 294.511449 ,
+            "validate_ms" : 274.635299
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 29.484618 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 66.262199 ,
+            "http://example.org/dectective/world/mary_D1" : 28.396728 ,
+            "http://example.org/dectective/world/shared" : 23.757916 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 65.157757 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 26.69976 ,
+            "http://example.org/dectective/world/v_mary_france" : 30.459495 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 24.241611
+          } ,
+        "query_first_ms" : 1.214334 ,
+        "query_second_ms" : 0.346418
+      } ,
+      { 
+        "rep" : 7 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 601.370126 ,
+        "cpu_ms" : 577.637414 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 22 ,
+        "heap_delta_mb" : 247.90115356445312 ,
+        "phases" : {
+            "build_ms" : 2.118723 ,
+            "enumerate_ms" : 331.760045 ,
+            "validate_ms" : 266.32514
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 36.666959 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 77.912021 ,
+            "http://example.org/dectective/world/mary_D1" : 31.04536 ,
+            "http://example.org/dectective/world/shared" : 26.382916 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 77.020615 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 25.751107 ,
+            "http://example.org/dectective/world/v_mary_france" : 30.620573 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 26.300947
+          } ,
+        "query_first_ms" : 0.949704 ,
+        "query_second_ms" : 0.2752
+      } ,
+      { 
+        "rep" : 8 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 618.841776 ,
+        "cpu_ms" : 595.970922 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 20 ,
+        "heap_delta_mb" : 234.13088989257812 ,
+        "phases" : {
+            "build_ms" : 1.618308 ,
+            "enumerate_ms" : 322.864248 ,
+            "validate_ms" : 293.168889
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 28.362614 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 69.839914 ,
+            "http://example.org/dectective/world/mary_D1" : 27.091714 ,
+            "http://example.org/dectective/world/shared" : 24.032917 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 69.823392 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 26.008546 ,
+            "http://example.org/dectective/world/v_mary_france" : 31.232211 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 46.416674
+          } ,
+        "query_first_ms" : 0.953625 ,
+        "query_second_ms" : 0.26897
+      } ,
+      { 
+        "rep" : 9 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 562.682708 ,
+        "cpu_ms" : 542.462389 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 19 ,
+        "heap_delta_mb" : 239.42803955078125 ,
+        "phases" : {
+            "build_ms" : 1.622149 ,
+            "enumerate_ms" : 303.752539 ,
+            "validate_ms" : 256.198329
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 31.5897 ,
+            "http://example.org/dectective/world/windibank_beliefs" : 68.498687 ,
+            "http://example.org/dectective/world/mary_D1" : 26.584979 ,
+            "http://example.org/dectective/world/shared" : 25.258233 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 68.034917 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 26.219599 ,
+            "http://example.org/dectective/world/v_mary_france" : 29.093315 ,
+            "http://example.org/dectective/world/v_windibank_reassure" : 28.386808
+          } ,
+        "query_first_ms" : 1.00014 ,
+        "query_second_ms" : 0.263099
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 11 ,
+              "base_after" : 88 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1159 ,
+              "inferred_trivial" : 33 ,
+              "inferred_nontrivial" : 31 ,
+              "inferred_taxonomic" : 15 ,
+              "inferred_substantive" : 16 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/mary_D1" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 10 ,
+              "base_after" : 87 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1119 ,
+              "inferred_trivial" : 21 ,
+              "inferred_nontrivial" : 4 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "shared(ctx)" ,
+              "asserted" : 77 ,
+              "base_after" : 77 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1084 ,
+              "inferred_trivial" : 958 ,
+              "inferred_nontrivial" : 49 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 49 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/v_hosmer_cashier" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 1 ,
+              "base_after" : 78 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1091 ,
+              "inferred_trivial" : 6 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/v_mary_france" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 1 ,
+              "base_after" : 78 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1089 ,
+              "inferred_trivial" : 3 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 1 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/v_windibank_reassure" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 2 ,
+              "base_after" : 79 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1093 ,
+              "inferred_trivial" : 6 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 1 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/windibank_beliefs" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 4 ,
+              "base_after" : 81 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1107 ,
+              "inferred_trivial" : 15 ,
+              "inferred_nontrivial" : 4 ,
+              "inferred_taxonomic" : 2 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "reality(ctx)" ,
+              "asserted" : 95 ,
+              "base_after" : 172 ,
+              "permeated_in" : 1084 ,
+              "permeated_in_nontrivial" : 76 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1418 ,
+              "inferred_trivial" : 132 ,
+              "inferred_nontrivial" : 107 ,
+              "inferred_taxonomic" : 67 ,
+              "inferred_substantive" : 40 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 8 ,
+      "asserted_total" : 201 ,
+      "materialised_total" : 9160 ,
+      "permeated_total" : 7588 ,
+      "inferred_total" : 1371 ,
+      "inferred_trivial_total" : 1174 ,
+      "inferred_nontrivial_total" : 197 ,
+      "inferred_taxonomic_total" : 89 ,
+      "inferred_substantive_total" : 108 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1467 ,
+      "redundancy" : 6.244035446489434 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 1.00014 ,
+      "query_second_ms" : 0.263099 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "a94aae2e4301ebd0291af099dfd7fa4815417c0fa95ce4ce2032ae4a7a36de0c"
+}

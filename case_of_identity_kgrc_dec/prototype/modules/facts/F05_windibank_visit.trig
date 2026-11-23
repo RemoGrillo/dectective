@@ -1,0 +1,16 @@
+@prefix st:   <http://example.org/dectective/story/> .
+@prefix w:    <http://example.org/dectective/world/> .
+@prefix prof: <http://example.org/dectective/profile#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix inf:  <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix dec:  <http://w3id.org/conjectures/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+st:windibank a prof:KeenSighted .
+st:letter_W a prof:TypewrittenLetter ; prof:writtenBy st:windibank ; prof:typedOn st:office_machine ; prof:showsDefectProfile st:profile_eR14 .
+st:office_machine a prof:Typewriter ; prof:hasDefectProfile st:profile_eR14 ; prof:usedBy st:westhouse_staff .
+st:machine_H prof:hasDefectProfile st:profile_eR14 .

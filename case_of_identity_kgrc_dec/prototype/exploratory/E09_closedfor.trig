@@ -1,0 +1,11 @@
+@prefix : <http://example.org/x#> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+# Closure-based disagreement on a functional-in-intent property.
+:K { :letters :typedBy :machineW . }
+:holmes :knows :K . :knows a dec:epistemicPredicate .
+:B { :letters :typedBy :machineX . }
+:watson :believes :B . :believes a dec:doxasticPredicate .
+rdf:subject dec:closedFor :typedBy .

@@ -1,0 +1,46 @@
+{
+  "dataset": "C3",
+  "query": "prototype/fixtures/T08_update_C3/T08b_identity_C3.rq",
+  "k": 2,
+  "seeds": [
+    "http://example.org/dectective/story/m1",
+    "http://example.org/dectective/story/m2",
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/pC"
+  ],
+  "worlds_selected": [
+    "http://example.org/dectective/world/w20",
+    "http://example.org/dectective/world/w22"
+  ],
+  "modules_candidate": 23,
+  "fact_triples_selected": 55,
+  "governing_triples": 2,
+  "dec_config_triples": 2,
+  "schema_triples": 29,
+  "crm_terms": 0,
+  "excluded_axioms": [],
+  "schema_mode": "minimal",
+  "sizes_after": {
+    "default": 59,
+    "http://example.org/dectective/world/w20": 1,
+    "http://example.org/dectective/world/shared": 29,
+    "http://example.org/dectective/world/w22": 1
+  },
+  "sizes_full_by_graph": {
+    "default": 79,
+    "w:w01": 7,
+    "w:w03": 1,
+    "w:w04": 2,
+    "w:w20": 1,
+    "w:w21": 1,
+    "w:w05": 1,
+    "w:w06": 1,
+    "w:w22": 1,
+    "w:w23": 2,
+    "w:w24": 3,
+    "w:shared": 293
+  },
+  "total_after": 90,
+  "total_full": 392,
+  "inconsistency_pairs_upper_bound": 6
+}

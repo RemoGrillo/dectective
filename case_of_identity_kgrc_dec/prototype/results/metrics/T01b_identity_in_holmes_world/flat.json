@@ -1,0 +1,244 @@
+{ 
+  "data" : "./prototype/fixtures/T01_who_is_hosmer/slices/T01b_identity_in_holmes_world.trig" ,
+  "query" : "./prototype/fixtures/T01_who_is_hosmer/T01b_identity_in_holmes_world.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 166.935815 ,
+  "input_quads" : 128 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : -1 ,
+        "warmup" : true ,
+        "materialise_total_ms" : 308.195971 ,
+        "cpu_ms" : 291.746044 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 9 ,
+        "heap_delta_mb" : 11.722732543945312 ,
+        "phases" : {
+            "build_ms" : 24.340118 ,
+            "enumerate_ms" : 176.119639 ,
+            "validate_ms" : 102.048485
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 97.091638 ,
+        "query_second_ms" : 4.062801
+      } ,
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 214.182757 ,
+        "cpu_ms" : 197.807757 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 14 ,
+        "heap_delta_mb" : 17.669166564941406 ,
+        "phases" : {
+            "build_ms" : 3.41705 ,
+            "enumerate_ms" : 117.844441 ,
+            "validate_ms" : 92.515499
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 2.603515 ,
+        "query_second_ms" : 1.073969
+      } ,
+      { 
+        "rep" : 1 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 119.383349 ,
+        "cpu_ms" : 112.24008 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 17.318359375 ,
+        "phases" : {
+            "build_ms" : 3.583913 ,
+            "enumerate_ms" : 69.381214 ,
+            "validate_ms" : 46.106747
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.449985 ,
+        "query_second_ms" : 0.775094
+      } ,
+      { 
+        "rep" : 2 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 134.532434 ,
+        "cpu_ms" : 117.781229 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 16 ,
+        "heap_delta_mb" : 13.989166259765625 ,
+        "phases" : {
+            "build_ms" : 1.462765 ,
+            "enumerate_ms" : 64.60864 ,
+            "validate_ms" : 68.018259
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.637999 ,
+        "query_second_ms" : 0.686262
+      } ,
+      { 
+        "rep" : 3 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 124.278254 ,
+        "cpu_ms" : 115.332929 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 28.336227416992188 ,
+        "phases" : {
+            "build_ms" : 1.816802 ,
+            "enumerate_ms" : 76.818984 ,
+            "validate_ms" : 45.346964
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.660959 ,
+        "query_second_ms" : 0.790484
+      } ,
+      { 
+        "rep" : 4 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 101.605378 ,
+        "cpu_ms" : 98.31307 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 6.89312744140625 ,
+        "phases" : {
+            "build_ms" : 2.127788 ,
+            "enumerate_ms" : 56.316013 ,
+            "validate_ms" : 42.875032
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.468847 ,
+        "query_second_ms" : 0.632691
+      } ,
+      { 
+        "rep" : 5 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 127.355902 ,
+        "cpu_ms" : 111.749177 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 15 ,
+        "heap_delta_mb" : 8.713226318359375 ,
+        "phases" : {
+            "build_ms" : 1.764952 ,
+            "enumerate_ms" : 62.039742 ,
+            "validate_ms" : 63.261303
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 2.111108 ,
+        "query_second_ms" : 0.912487
+      } ,
+      { 
+        "rep" : 6 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 152.538042 ,
+        "cpu_ms" : 142.667749 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 9 ,
+        "heap_delta_mb" : 27.83959197998047 ,
+        "phases" : {
+            "build_ms" : 2.066448 ,
+            "enumerate_ms" : 83.769537 ,
+            "validate_ms" : 66.296839
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 2.566697 ,
+        "query_second_ms" : 1.272123
+      } ,
+      { 
+        "rep" : 7 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 140.818278 ,
+        "cpu_ms" : 137.157246 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 7.13128662109375 ,
+        "phases" : {
+            "build_ms" : 2.111459 ,
+            "enumerate_ms" : 82.137328 ,
+            "validate_ms" : 56.214985
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.563588 ,
+        "query_second_ms" : 0.637272
+      } ,
+      { 
+        "rep" : 8 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 136.806295 ,
+        "cpu_ms" : 123.817693 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 12 ,
+        "heap_delta_mb" : 6.6807861328125 ,
+        "phases" : {
+            "build_ms" : 2.295562 ,
+            "enumerate_ms" : 71.475903 ,
+            "validate_ms" : 62.739034
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.548088 ,
+        "query_second_ms" : 0.452288
+      } ,
+      { 
+        "rep" : 9 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 105.123868 ,
+        "cpu_ms" : 97.01367 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 29.928443908691406 ,
+        "phases" : {
+            "build_ms" : 1.399555 ,
+            "enumerate_ms" : 56.810286 ,
+            "validate_ms" : 46.59834
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.336724 ,
+        "query_second_ms" : 0.552661
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 128 ,
+              "base_after" : 128 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1140 ,
+              "inferred_trivial" : 973 ,
+              "inferred_nontrivial" : 39 ,
+              "inferred_taxonomic" : 6 ,
+              "inferred_substantive" : 33 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 128 ,
+      "materialised_total" : 1140 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1012 ,
+      "inferred_trivial_total" : 973 ,
+      "inferred_nontrivial_total" : 39 ,
+      "inferred_taxonomic_total" : 6 ,
+      "inferred_substantive_total" : 33 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1140 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "x=http://example.org/dectective/story/windibank" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 1.336724 ,
+      "query_second_ms" : 0.552661 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "c69a62d6ebbf8d3c6be6c5ef7b1bddaf80b0d2c569f2363d924408c5b2907578"
+}

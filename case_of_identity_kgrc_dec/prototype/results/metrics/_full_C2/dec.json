@@ -1,0 +1,203 @@
+{ 
+  "data" : "./prototype/sim/C2.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 213.314853 ,
+  "input_quads" : 368 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 76005.594251 ,
+        "cpu_ms" : 74345.412121 ,
+        "gc_count" : 218 ,
+        "gc_ms" : 1322 ,
+        "heap_delta_mb" : 1024.5579071044922 ,
+        "phases" : {
+            "load_ms" : 42.619883 ,
+            "handlePermeation_ms" : 75947.818292 ,
+            "enumerate_ms" : 6.739199
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.505389 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.594366 ,
+            "http://example.org/dectective/world/w20#enumerate" : 0.943319 ,
+            "http://example.org/dectective/world/w21#enumerate" : 1.051117 ,
+            "http://example.org/dectective/world/w01#enumerate" : 0.760793 ,
+            "http://example.org/dectective/world/w04#enumerate" : 0.004619 ,
+            "http://example.org/dectective/world/w03#enumerate" : 0.0033 ,
+            "http://example.org/dectective/world/w05#enumerate" : 0.936279
+          } ,
+        "query_first_ms" : 32.678539 ,
+        "query_second_ms" : 1.915787
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named/shared" ,
+              "asserted" : 293 ,
+              "base_after" : 293 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 2166 ,
+              "inferred_trivial" : 1256 ,
+              "inferred_nontrivial" : 617 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 617 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/w01" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 7 ,
+              "base_after" : 1533 ,
+              "permeated_in" : 2166 ,
+              "permeated_in_nontrivial" : 809 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 2519 ,
+              "inferred_trivial" : 193 ,
+              "inferred_nontrivial" : 153 ,
+              "inferred_taxonomic" : 45 ,
+              "inferred_substantive" : 108 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/w03" : {
+              "type" : "named/verbatim" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/w04" : {
+              "type" : "named/verbatim" ,
+              "asserted" : 2 ,
+              "base_after" : 2 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 2 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/w05" : {
+              "type" : "named/conjectural" ,
+              "asserted" : 1 ,
+              "base_after" : 2158 ,
+              "permeated_in" : 2803 ,
+              "permeated_in_nontrivial" : 1184 ,
+              "receives_from" : [ 
+                  "http://example.org/dectective/world/shared" ,
+                  "http://w3id.org/conjectures/reality"
+                ] ,
+              "materialised" : 2807 ,
+              "inferred_trivial" : 3 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/w20" : {
+              "type" : "named/conjectural" ,
+              "asserted" : 1 ,
+              "base_after" : 2158 ,
+              "permeated_in" : 2803 ,
+              "permeated_in_nontrivial" : 1184 ,
+              "receives_from" : [ 
+                  "http://example.org/dectective/world/shared" ,
+                  "http://w3id.org/conjectures/reality"
+                ] ,
+              "materialised" : 2853 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 49 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 49 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/w21" : {
+              "type" : "named/conjectural" ,
+              "asserted" : 1 ,
+              "base_after" : 2158 ,
+              "permeated_in" : 2803 ,
+              "permeated_in_nontrivial" : 1184 ,
+              "receives_from" : [ 
+                  "http://example.org/dectective/world/shared" ,
+                  "http://w3id.org/conjectures/reality"
+                ] ,
+              "materialised" : 2804 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 55 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 2816 ,
+              "inferred_trivial" : 1619 ,
+              "inferred_nontrivial" : 1129 ,
+              "inferred_taxonomic" : 182 ,
+              "inferred_substantive" : 947 ,
+              "dec_diagnostic" : 13
+            }
+        } ,
+      "n_worlds" : 8 ,
+      "asserted_total" : 361 ,
+      "materialised_total" : 15968 ,
+      "permeated_total" : 10575 ,
+      "inferred_total" : 5019 ,
+      "inferred_trivial_total" : 3071 ,
+      "inferred_nontrivial_total" : 1948 ,
+      "inferred_taxonomic_total" : 227 ,
+      "inferred_substantive_total" : 1721 ,
+      "dec_diagnostic_total" : 13 ,
+      "distinct_triples_all_worlds" : 2886 ,
+      "redundancy" : 5.532917532917533 ,
+      "inconsistency_pairs" : 21 ,
+      "dec_diagnostics" : [ 
+          "e4910d9cf7f6e289fabba46809a7f0c0 http://w3id.org/conjectures/checkInconsistencies \"true\"^^http://www.w3.org/2001/XMLSchema#boolean" ,
+          "http://example.org/dectective/profile#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate" ,
+          "http://example.org/dectective/profile#conjectures http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalPredicate" ,
+          "http://example.org/dectective/profile#establishes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate" ,
+          "http://example.org/dectective/profile#uttered http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimPredicate" ,
+          "http://example.org/dectective/world/shared http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/dectective/world/w01 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/dectective/world/w03 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimWorld" ,
+          "http://example.org/dectective/world/w04 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimWorld" ,
+          "http://example.org/dectective/world/w05 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalWorld" ,
+          "http://example.org/dectective/world/w20 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalWorld" ,
+          "http://example.org/dectective/world/w21 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalWorld" ,
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject http://w3id.org/conjectures/closedFor http://example.org/dectective/profile#writtenBy"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/dectective/world/shared s=http://www.cidoc-crm.org/cidoc-crm/E55_Type p=http://www.w3.org/2000/01/rdf-schema#subClassOf o=http://www.w3.org/2000/01/rdf-schema#Resource" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 32.678539 ,
+      "query_second_ms" : 1.915787 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "http://example.org/dectective/world/shared | http://www.cidoc-crm.org/cidoc-crm/E55_Type http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.w3.org/2000/01/rdf-schema#Resource" ]
+    } ,
+  "materialised_sha256" : "edc47de3b6c8ace15a5a5a682161903ca5096cd243679868a05451829af89491"
+}

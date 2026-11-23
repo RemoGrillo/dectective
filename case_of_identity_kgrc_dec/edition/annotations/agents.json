@@ -1,0 +1,14 @@
+{
+  "note": "Display registry for agents. 'gold' = IRI in the whole-story dataset, 'sim' = neutral IRI in the spoiler-free stages. Stances are NOT listed here: they are read from the governing triples (prof:believes / establishes / conjectures / uttered) in the knowledge graph. 'kind': character | persona (a false identity) | reality | reader (simulated first-time reader) | whatif (test hypothesis added by the editors).",
+  "agents": [
+    {"id": "mary", "name": "Mary Sutherland", "short": "Mary", "monogram": "MS", "role": "The client, engaged to “Hosmer Angel”", "gold": "http://example.org/dectective/story/mary", "sim": "http://example.org/dectective/story/pA", "kind": "character"},
+    {"id": "windibank", "name": "James Windibank", "short": "Windibank", "monogram": "JW", "role": "Mary's stepfather, a traveller in wines", "gold": "http://example.org/dectective/story/windibank", "sim": "http://example.org/dectective/story/pB", "kind": "character"},
+    {"id": "hosmer", "name": "Hosmer Angel", "short": "Hosmer", "monogram": "HA", "role": "The vanished bridegroom. In the end: Windibank in disguise", "gold": "http://example.org/dectective/story/hosmer", "sim": "http://example.org/dectective/story/pC", "kind": "persona", "maskOf": "windibank"},
+    {"id": "holmes", "name": "Sherlock Holmes", "short": "Holmes", "monogram": "SH", "role": "Consulting detective", "gold": "http://example.org/dectective/story/holmes", "sim": "http://example.org/dectective/story/pH", "kind": "character"},
+    {"id": "watson", "name": "Dr. Watson", "short": "Watson", "monogram": "DW", "role": "Holmes's friend and the narrator", "gold": "http://example.org/dectective/story/watson", "sim": "http://example.org/dectective/story/pW", "kind": "character"},
+    {"id": "mother", "name": "Mary's mother", "short": "Mother", "monogram": "MM", "role": "Windibank's wife. Her part in the plot is only claimed by Holmes", "gold": "http://example.org/dectective/story/mother", "sim": "http://example.org/dectective/story/pD", "kind": "character"},
+    {"id": "reality", "name": "Reality", "short": "Reality", "monogram": "R", "role": "What is true in the story, including Holmes's accepted solution", "gold": "http://w3id.org/conjectures/reality", "sim": "http://w3id.org/conjectures/reality", "kind": "reality"},
+    {"id": "reader", "name": "The reader", "short": "Reader", "monogram": "?", "role": "A simulated first-time reader: their guesses at each stage of a spoiler-free reading", "gold": null, "sim": "http://example.org/dectective/story/solver", "kind": "reader"},
+    {"id": "whatif", "name": "Editors' what-if", "short": "What-if", "monogram": "W?", "role": "A test hypothesis added by the editors, not in the story: another clerk typed the letters", "gold": "http://example.org/dectective/story/analyst", "sim": "http://example.org/dectective/story/analyst", "kind": "whatif"}
+  ]
+}

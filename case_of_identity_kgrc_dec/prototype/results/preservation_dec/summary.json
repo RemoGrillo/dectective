@@ -1,0 +1,23 @@
+{
+  "T02b_mary_opacity": {
+    "full": false,
+    "slice": false,
+    "preserved": true,
+    "full_mat_ms": 476717.648829,
+    "slice_mat_ms_median": 164.823762
+  },
+  "T07a_C3": {
+    "full": [],
+    "slice": [],
+    "preserved": true,
+    "full_mat_ms": 212785.288997,
+    "slice_mat_ms_median": 1412.653291
+  },
+  "T08c_identity_C4": {
+    "full": true,
+    "slice": true,
+    "preserved": true,
+    "full_mat_ms": 335910.857228,
+    "slice_mat_ms_median": 167.867222
+  }
+}

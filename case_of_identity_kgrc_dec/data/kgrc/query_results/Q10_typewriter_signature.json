@@ -1,0 +1,320 @@
+[
+ {
+  "s": "d:040",
+  "type": "kgc:Statement",
+  "src": "Myopia is hard to type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:058",
+  "type": "kgc:Statement",
+  "src": "Sutherland is a typing",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:164",
+  "type": "kgc:Statement",
+  "src": "Sutherland and Hosmer wrote a letter every day",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:165",
+  "type": "kgc:Statement",
+  "src": "Sutherland received a letter in the morning",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:166",
+  "type": "kgc:Statement",
+  "src": "Windibank does not know the letter",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:173",
+  "type": "kgc:Statement",
+  "src": "Sutherland sent a letter to Redon Hall Street Post Office",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:176",
+  "type": "kgc:Statement",
+  "src": "Sutherland's letter arrives at the office",
+  "info": "d:Hosmer_s_statement"
+ },
+ {
+  "s": "d:179",
+  "type": "kgc:Statement",
+  "src": "Hosmer does not want to receive typing letters",
+  "info": "d:Hosmer_s_statement"
+ },
+ {
+  "s": "d:180",
+  "type": "kgc:Statement",
+  "src": "Handwritten letter feels Sutherland",
+  "info": "d:Hosmer_s_statement"
+ },
+ {
+  "s": "d:181",
+  "type": "kgc:Statement",
+  "src": "Typing letter feels machine",
+  "info": "d:Hosmer_s_statement"
+ },
+ {
+  "s": "d:218",
+  "type": "kgc:Statement",
+  "src": "Sutherland sent a letter to Windibank",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:219",
+  "type": "kgc:Statement",
+  "src": "The letter came back to Sutherland on the morning of the wedding day",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:220",
+  "type": "kgc:Statement",
+  "src": "The letter did not reach Windibank",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:221",
+  "type": "kgc:Statement",
+  "src": "Windibank left for England just before the letter arrived",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:239",
+  "type": "kgc:Statement",
+  "src": "Hosmer does not send letters",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:272",
+  "type": "kgc:Statement",
+  "src": "Holmes wants a letter from Hosmer",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:276",
+  "type": "kgc:Situation",
+  "src": "Sutherland gave Hosmer a letter to Holmes",
+  "info": null
+ },
+ {
+  "s": "d:333",
+  "type": "kgc:Statement",
+  "src": "The double line on the wrist is a trace of the type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:334",
+  "type": "kgc:Statement",
+  "src": "The double wire on the wrist is the mark of a manual sewing machine",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:335",
+  "type": "kgc:Statement",
+  "src": "The double line on the left wrist is the mark of a manual sewing machine",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:336",
+  "type": "kgc:Statement",
+  "src": "The right wrist double line is a trace of type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:339",
+  "type": "kgc:Statement",
+  "src": "Holmes surprised Sutherland with myopia and type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:368",
+  "type": "kgc:Statement",
+  "src": "Letters have no clues to Hosmer",
+  "info": "d:Watson"
+ },
+ {
+  "s": "d:369",
+  "type": "kgc:Statement",
+  "src": "The letter has a quote from Balzac",
+  "info": "d:Watson"
+ },
+ {
+  "s": "d:370",
+  "type": "kgc:Statement",
+  "src": "The letter is written in type",
+  "info": "d:Watson"
+ },
+ {
+  "s": "d:372",
+  "type": "kgc:Statement",
+  "src": "Signature is written in type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:373",
+  "type": "kgc:Statement",
+  "src": "Signature is Hosmer Aingel",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:374",
+  "type": "kgc:Statement",
+  "src": "Letter has a date",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:376",
+  "type": "kgc:Statement",
+  "src": "Signature is important",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:378",
+  "type": "kgc:Statement",
+  "src": "Signature repeals vow",
+  "info": "d:Watson"
+ },
+ {
+  "s": "d:385",
+  "type": "kgc:Statement",
+  "src": "Holmes and Watson write two letters",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:386",
+  "type": "kgc:Statement",
+  "src": "Letter 1 is sent to a company in Central City",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:387",
+  "type": "kgc:Statement",
+  "src": "Letter 2 sent to Windibank",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:388",
+  "type": "kgc:Statement",
+  "src": "Holmes writes the following to letter 2",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:413",
+  "type": "kgc:Statement",
+  "src": "The type letter is a Windibank letter",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:435",
+  "type": "kgc:Statement",
+  "src": "Typewriter letters differ like handwriting",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:436",
+  "type": "kgc:Statement",
+  "src": "In the Windibank letter",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:438",
+  "type": "kgc:Statement",
+  "src": "In the Windibank letter",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:439",
+  "type": "kgc:Statement",
+  "src": "Windibank's letter has 14 features",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:441",
+  "type": "kgc:Statement",
+  "src": "Windibank's workplace has one machine",
+  "info": "d:Windibank"
+ },
+ {
+  "s": "d:443",
+  "type": "kgc:Statement",
+  "src": "Letters wear out",
+  "info": "d:Windibank"
+ },
+ {
+  "s": "d:446",
+  "type": "kgc:Statement",
+  "src": "Typewriters are involved in crime",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:447",
+  "type": "kgc:Statement",
+  "src": "letter of Hosma is written in type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:448",
+  "type": "kgc:Statement",
+  "src": "In letter of Hosma",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:449",
+  "type": "kgc:Statement",
+  "src": "In the letter of Hosmer r is missing",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:450",
+  "type": "kgc:Statement",
+  "src": "letter of Hosma has 14 features",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:565",
+  "type": "kgc:Statement",
+  "src": "The signature was a type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:566",
+  "type": "kgc:Statement",
+  "src": "Sutherland knows Windibank handwriting",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:568",
+  "type": "kgc:Statement",
+  "src": "Sutherland notices Windibank handwriting",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:572",
+  "type": "kgc:Statement",
+  "src": "Holmes was aware of the features of the type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:573",
+  "type": "kgc:Statement",
+  "src": "Holmes sent a letter to Windibank",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:574",
+  "type": "kgc:Statement",
+  "src": "The reply was a typing",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:575",
+  "type": "kgc:Statement",
+  "src": "The characteristics of the type matched Hosmer",
+  "info": "d:Holmes"
+ }
+]

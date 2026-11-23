@@ -1,0 +1,69 @@
+{
+  "dataset": "gold",
+  "question": "Which statements are insincere? (content vs speaker's contemporaneous beliefs)",
+  "seed_iris": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/story/mary"
+  ],
+  "require_modules": [
+    "F06_comm_acts",
+    "W08_v_hosmer_cashier",
+    "W09_v_mary_france",
+    "W10_v_windibank_reassure",
+    "W06_windibank_beliefs",
+    "W01_mary_D1",
+    "W02_holmes_reconstruction",
+    "F02_occupation",
+    "F03_courtship"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "closed_for": [
+    "http://example.org/dectective/profile#hasOccupation"
+  ],
+  "queries": [
+    {
+      "id": "T05a_content_vs_speaker_belief",
+      "file": "T05a_content_vs_speaker_belief.rq",
+      "expected": [
+        "content=http://example.org/dectective/world/v_hosmer_cashier",
+        "content=http://example.org/dectective/world/v_windibank_reassure"
+      ],
+      "classification": "derivable",
+      "justification": [
+        "P041.S03",
+        "P067.S01",
+        "P126.S11",
+        "P128.S10"
+      ],
+      "axioms_or_assumptions": [
+        "identity (reconstruction)",
+        "self-knowledge of the speaker (W06, analyst)",
+        "closedFor hasOccupation (assumption)",
+        "Voluntary disjoint Involuntary"
+      ],
+      "world_time": "verbatim content vs w:windibank_beliefs (time of the utterances)",
+      "note": "Insincerity derivable only under the listed assumptions; Mary's report of the reassurance is hedged ('seemed to think')."
+    },
+    {
+      "id": "T05b_sincere_but_false",
+      "file": "T05b_sincere_but_false.rq",
+      "expected": [
+        "content=http://example.org/dectective/world/v_mary_france"
+      ],
+      "classification": "derivable",
+      "justification": [
+        "P031.S10",
+        "P128.S02",
+        "P128.S07"
+      ],
+      "axioms_or_assumptions": [
+        "ActualJourney disjoint PretendedJourney"
+      ],
+      "world_time": "w:v_mary_france vs reality and vs w:mary_D1",
+      "note": "A false statement can be sincere."
+    }
+  ]
+}

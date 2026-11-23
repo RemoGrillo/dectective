@@ -1,0 +1,655 @@
+{
+  "n_queries": 30,
+  "per_config": {
+    "asserted": {
+      "mat_ms_median": {
+        "n": 30,
+        "mean": 1.9563547333333333,
+        "median": 1.855105,
+        "sd": 0.43463290534497745,
+        "min": 1.30076,
+        "max": 3.0958249999999996,
+        "iqr": 0.36585300000000043
+      },
+      "cold_mat_ms_mean": {
+        "n": 30,
+        "mean": 9.8124196,
+        "median": 9.772571,
+        "sd": 0.8232004559287245,
+        "min": 8.220411666666667,
+        "max": 11.796927666666667,
+        "iqr": 1.1806617499999987
+      },
+      "query_first_ms_median": {
+        "n": 30,
+        "mean": 1.0672344,
+        "median": 0.89773825,
+        "sd": 0.3599277654478025,
+        "min": 0.66863,
+        "max": 2.0609365000000004,
+        "iqr": 0.5057874999999998
+      },
+      "asserted_total": {
+        "n": 30,
+        "mean": 132.66666666666666,
+        "median": 137.0,
+        "sd": 37.241368667516575,
+        "min": 67,
+        "max": 201,
+        "iqr": 62.75
+      },
+      "materialised_total": {
+        "n": 30,
+        "mean": 132.66666666666666,
+        "median": 137.0,
+        "sd": 37.241368667516575,
+        "min": 67,
+        "max": 201,
+        "iqr": 62.75
+      },
+      "inferred_total": {
+        "n": 30,
+        "mean": 0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0,
+        "max": 0,
+        "iqr": 0.0
+      },
+      "inferred_substantive": {
+        "n": 30,
+        "mean": 0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0,
+        "max": 0,
+        "iqr": 0.0
+      },
+      "permeated_total": {
+        "n": 30,
+        "mean": 0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0,
+        "max": 0,
+        "iqr": 0.0
+      },
+      "redundancy": {
+        "n": 30,
+        "mean": 1.0147190413233285,
+        "median": 1.0100708502024291,
+        "sd": 0.016652828019371797,
+        "min": 1.0,
+        "max": 1.0578947368421052,
+        "iqr": 0.02640349738129233
+      },
+      "throughput_triples_per_s": {
+        "n": 30,
+        "mean": 68167.18525348016,
+        "median": 67979.11269285445,
+        "sd": 15308.76414821037,
+        "min": 40790.30919663182,
+        "max": 103247.15659677258,
+        "iqr": 22214.642273900114
+      },
+      "ms_per_asserted": {
+        "n": 30,
+        "mean": 0.015406426692867917,
+        "median": 0.01471163,
+        "sd": 0.003511867873109275,
+        "min": 0.009685496753246753,
+        "max": 0.02451562686567164,
+        "iqr": 0.005211995485890599
+      },
+      "inference_utility": {},
+      "geomean_amplification": 1.0,
+      "geomean_new_knowledge_rate": null,
+      "matches_expected": {
+        "true": 15,
+        "false": 14,
+        "n/a": 1
+      }
+    },
+    "flat": {
+      "mat_ms_median": {
+        "n": 30,
+        "mean": 116.44531485,
+        "median": 121.81977549999999,
+        "sd": 29.316232684314567,
+        "min": 60.760197500000004,
+        "max": 172.86442,
+        "iqr": 50.34536912499999
+      },
+      "cold_mat_ms_mean": {
+        "n": 30,
+        "mean": 363.12801674444444,
+        "median": 361.26351850000003,
+        "sd": 81.19775626582384,
+        "min": 207.78751766666667,
+        "max": 556.9329823333334,
+        "iqr": 120.22478875000002
+      },
+      "query_first_ms_median": {
+        "n": 30,
+        "mean": 1.2396435833333332,
+        "median": 1.17120875,
+        "sd": 0.3529513196600348,
+        "min": 0.7974855000000001,
+        "max": 1.8910825,
+        "iqr": 0.6602267500000002
+      },
+      "asserted_total": {
+        "n": 30,
+        "mean": 133.56666666666666,
+        "median": 139.0,
+        "sd": 35.406684867879584,
+        "min": 69,
+        "max": 196,
+        "iqr": 59.25
+      },
+      "materialised_total": {
+        "n": 30,
+        "mean": 1183.4333333333334,
+        "median": 1150.0,
+        "sd": 157.70327513563487,
+        "min": 945,
+        "max": 1550,
+        "iqr": 185.0
+      },
+      "inferred_total": {
+        "n": 30,
+        "mean": 1049.2666666666667,
+        "median": 1012.0,
+        "sd": 124.93444717912679,
+        "min": 876,
+        "max": 1352,
+        "iqr": 124.75
+      },
+      "inferred_substantive": {
+        "n": 30,
+        "mean": 46.36666666666667,
+        "median": 34.0,
+        "sd": 44.312746927152745,
+        "min": 5,
+        "max": 165,
+        "iqr": 20.0
+      },
+      "permeated_total": {
+        "n": 30,
+        "mean": 0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0,
+        "max": 0,
+        "iqr": 0.0
+      },
+      "redundancy": {
+        "n": 30,
+        "mean": 1.0,
+        "median": 1.0,
+        "sd": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "iqr": 0.0
+      },
+      "throughput_triples_per_s": {
+        "n": 30,
+        "mean": 10693.19358226284,
+        "median": 9940.108769724078,
+        "sd": 2655.031887617053,
+        "min": 7069.1238833300695,
+        "max": 18926.864087299913,
+        "iqr": 2814.644752600945
+      },
+      "ms_per_asserted": {
+        "n": 30,
+        "mean": 0.9033758140728342,
+        "median": 0.882850162371134,
+        "sd": 0.22661178843124838,
+        "min": 0.42194581597222225,
+        "max": 1.5018433055555556,
+        "iqr": 0.18982164886773467
+      },
+      "inference_utility": {
+        "n": 30,
+        "mean": 0.00045979001677488786,
+        "median": 0.0,
+        "sd": 0.0008375686459368779,
+        "min": 0.0,
+        "max": 0.0037907505686125853,
+        "iqr": 0.0009328576163324504
+      },
+      "geomean_amplification": 9.114330915894673,
+      "geomean_new_knowledge_rate": 0.24968689689111886,
+      "matches_expected": {
+        "true": 10,
+        "false": 19,
+        "n/a": 1
+      }
+    },
+    "ctx": {
+      "mat_ms_median": {
+        "n": 30,
+        "mean": 206.08196993333334,
+        "median": 181.07837750000002,
+        "sd": 113.23763848023347,
+        "min": 114.03839450000001,
+        "max": 599.476116,
+        "iqr": 76.48807375000001
+      },
+      "cold_mat_ms_mean": {
+        "n": 30,
+        "mean": 761.3294924333334,
+        "median": 734.6532093333333,
+        "sd": 243.9815906888988,
+        "min": 444.88219633333335,
+        "max": 1558.1497793333333,
+        "iqr": 202.76985491666665
+      },
+      "query_first_ms_median": {
+        "n": 30,
+        "mean": 0.9976441333333333,
+        "median": 0.97654275,
+        "sd": 0.2153507226531646,
+        "min": 0.7170305,
+        "max": 1.432208,
+        "iqr": 0.36554200000000003
+      },
+      "asserted_total": {
+        "n": 30,
+        "mean": 132.66666666666666,
+        "median": 137.0,
+        "sd": 37.241368667516575,
+        "min": 67,
+        "max": 201,
+        "iqr": 62.75
+      },
+      "materialised_total": {
+        "n": 30,
+        "mean": 4258.233333333334,
+        "median": 4000.0,
+        "sd": 1460.9957087272844,
+        "min": 2529,
+        "max": 9160,
+        "iqr": 758.0
+      },
+      "inferred_total": {
+        "n": 30,
+        "mean": 1052.8333333333333,
+        "median": 1028.0,
+        "sd": 131.83037254910866,
+        "min": 860,
+        "max": 1371,
+        "iqr": 138.0
+      },
+      "inferred_substantive": {
+        "n": 30,
+        "mean": 20.666666666666668,
+        "median": 8.0,
+        "sd": 35.41802904749494,
+        "min": 2,
+        "max": 112,
+        "iqr": 8.0
+      },
+      "permeated_total": {
+        "n": 30,
+        "mean": 3072.733333333333,
+        "median": 2766.0,
+        "sd": 1342.5798360216625,
+        "min": 1602,
+        "max": 7588,
+        "iqr": 717.0
+      },
+      "redundancy": {
+        "n": 30,
+        "mean": 3.6760493477039917,
+        "median": 3.404255319148936,
+        "sd": 0.853272762787821,
+        "min": 2.6146209386281587,
+        "max": 6.244035446489434,
+        "iqr": 0.6255764821835061
+      },
+      "throughput_triples_per_s": {
+        "n": 30,
+        "mean": 22254.965690052202,
+        "median": 20018.51140973956,
+        "sd": 5274.733615889757,
+        "min": 15280.008253072752,
+        "max": 35745.08573982623,
+        "iqr": 5484.794683023112
+      },
+      "ms_per_asserted": {
+        "n": 30,
+        "mean": 1.5431731711506527,
+        "median": 1.4130722086021503,
+        "sd": 0.4977523248915587,
+        "min": 0.8650552191780823,
+        "max": 2.9824682388059705,
+        "iqr": 0.43941153620393836
+      },
+      "inference_utility": {
+        "n": 30,
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "iqr": 0.0
+      },
+      "geomean_amplification": 32.083720906123986,
+      "geomean_new_knowledge_rate": 0.06902534147152448,
+      "matches_expected": {
+        "true": 15,
+        "false": 14,
+        "n/a": 1
+      }
+    },
+    "dec": {
+      "mat_ms_median": {
+        "n": 30,
+        "mean": 2069.7984804,
+        "median": 169.41686025,
+        "sd": 3866.8443212570687,
+        "min": 96.5122545,
+        "max": 15571.625952999999,
+        "iqr": 2285.718444
+      },
+      "cold_mat_ms_mean": {
+        "n": 30,
+        "mean": 2757.409573522222,
+        "median": 734.7489075,
+        "sd": 3966.5175583326045,
+        "min": 410.56679733333334,
+        "max": 16189.942336333334,
+        "iqr": 3038.347538916667
+      },
+      "query_first_ms_median": {
+        "n": 30,
+        "mean": 0.9909533166666666,
+        "median": 0.96257375,
+        "sd": 0.26645400184852647,
+        "min": 0.6149835,
+        "max": 1.5790385,
+        "iqr": 0.42813425000000027
+      },
+      "asserted_total": {
+        "n": 30,
+        "mean": 132.66666666666666,
+        "median": 137.0,
+        "sd": 37.241368667516575,
+        "min": 67,
+        "max": 201,
+        "iqr": 62.75
+      },
+      "materialised_total": {
+        "n": 30,
+        "mean": 4231.433333333333,
+        "median": 4130.0,
+        "sd": 884.6204985397871,
+        "min": 2720,
+        "max": 6277,
+        "iqr": 1075.5
+      },
+      "inferred_total": {
+        "n": 30,
+        "mean": 2082.3333333333335,
+        "median": 1991.0,
+        "sd": 265.43696353220173,
+        "min": 1712,
+        "max": 2781,
+        "iqr": 246.5
+      },
+      "inferred_substantive": {
+        "n": 30,
+        "mean": 69.53333333333333,
+        "median": 49.0,
+        "sd": 81.45857137572885,
+        "min": 9,
+        "max": 294,
+        "iqr": 31.0
+      },
+      "permeated_total": {
+        "n": 30,
+        "mean": 2007.2,
+        "median": 1860.0,
+        "sd": 754.0910216714673,
+        "min": 878,
+        "max": 3252,
+        "iqr": 886.0
+      },
+      "redundancy": {
+        "n": 30,
+        "mean": 3.498208256674702,
+        "median": 3.4206351411424762,
+        "sd": 0.6370584319961252,
+        "min": 2.426915647134578,
+        "max": 4.688600556070436,
+        "iqr": 0.49859576044523957
+      },
+      "throughput_triples_per_s": {
+        "n": 30,
+        "mean": 15678.561941249987,
+        "median": 22689.313622944603,
+        "sd": 12843.383604288078,
+        "min": 403.1049820324438,
+        "max": 33428.3820825058,
+        "iqr": 25367.411803543448
+      },
+      "ms_per_asserted": {
+        "n": 30,
+        "mean": 13.73817833585058,
+        "median": 1.5703999924242424,
+        "sd": 20.405342777077667,
+        "min": 0.7970423321917808,
+        "max": 77.47077588557214,
+        "iqr": 19.577444929873298
+      },
+      "inference_utility": {
+        "n": 30,
+        "mean": 0.00021964084878733177,
+        "median": 8.28775070445881e-05,
+        "sd": 0.00033256116313459724,
+        "min": 0.0,
+        "max": 0.001392757660167131,
+        "iqr": 0.0002617145902591106
+      },
+      "geomean_amplification": 32.535413596584014,
+      "geomean_new_knowledge_rate": 0.3385849359740047,
+      "matches_expected": {
+        "true": 28,
+        "false": 1,
+        "n/a": 1
+      },
+      "geomean_overhead_vs_ctx": 2.9369031928027987,
+      "geomean_overhead_vs_flat": 4.903788889545196,
+      "ms_per_inconsistency_pair": {
+        "n": 30,
+        "mean": 331.9995897730159,
+        "median": 0.00414,
+        "sd": 397.5329230406616,
+        "min": 0.0012666666666666666,
+        "max": 973.2912706666666,
+        "iqr": 732.4458064880953
+      },
+      "phase_permeateWorlds_ms": {
+        "n": 30,
+        "mean": 344.768008,
+        "median": 330.6611875,
+        "sd": 123.679267787521,
+        "min": 166.176292,
+        "max": 648.527968,
+        "iqr": 141.74722775
+      },
+      "phase_verifyInconsistencies_ms": {
+        "n": 30,
+        "mean": 2261.4938787333335,
+        "median": 0.0056105,
+        "sd": 3926.8154356264104,
+        "min": 0.00372,
+        "max": 15412.899784,
+        "iqr": 3178.192453
+      },
+      "phase_verifyClosedFor_ms": {
+        "n": 30,
+        "mean": 8.922038533333334,
+        "median": 0.0132695,
+        "sd": 21.026333574550854,
+        "min": 0.0061,
+        "max": 78.367244,
+        "iqr": 0.00477025
+      },
+      "phase_assignDecTypes_ms": {
+        "n": 30,
+        "mean": 1.3926752333333334,
+        "median": 1.3747335,
+        "sd": 0.2264002925664741,
+        "min": 0.973688,
+        "max": 1.97164,
+        "iqr": 0.28000199999999986
+      },
+      "phase_restore_ms": {
+        "n": 30,
+        "mean": 75.80264726666667,
+        "median": 4.8342535,
+        "sd": 92.21251396351738,
+        "min": 1.583118,
+        "max": 252.830781,
+        "iqr": 143.998442
+      }
+    }
+  },
+  "slicing": {
+    "size_reduction_ratio": {
+      "n": 30,
+      "mean": 0.30614886247286216,
+      "median": 0.3021505376344086,
+      "sd": 0.06609082826553993,
+      "min": 0.1875,
+      "max": 0.44516129032258067,
+      "iqr": 0.09643680052666229
+    },
+    "preserved_ctx": 30,
+    "not_preserved_ctx": [],
+    "preserved_dec": 0,
+    "not_preserved_dec": [],
+    "instrumented_equivalent": 30,
+    "instrumented_not_equivalent": []
+  },
+  "full_dataset_timings": {
+    "gold": {
+      "dec": {
+        "mat_ms": 496576.218356,
+        "input_quads": 465,
+        "materialised_total": 32326,
+        "n_worlds": 16,
+        "inconsistency_pairs": 105
+      },
+      "ctx": {
+        "mat_ms": 4929.310581,
+        "input_quads": 465,
+        "materialised_total": 35899,
+        "n_worlds": 16,
+        "inconsistency_pairs": 0
+      },
+      "flat": {
+        "mat_ms": 1442.501255,
+        "input_quads": 465,
+        "materialised_total": 3132,
+        "n_worlds": 1,
+        "inconsistency_pairs": 0
+      }
+    },
+    "C1": {
+      "dec": {
+        "mat_ms": 55212.544366,
+        "input_quads": 359,
+        "materialised_total": 12990,
+        "n_worlds": 7,
+        "inconsistency_pairs": 15
+      },
+      "ctx": {
+        "mat_ms": 2956.325221,
+        "input_quads": 359,
+        "materialised_total": 15586,
+        "n_worlds": 7,
+        "inconsistency_pairs": 0
+      },
+      "flat": {
+        "mat_ms": 987.812262,
+        "input_quads": 359,
+        "materialised_total": 2545,
+        "n_worlds": 1,
+        "inconsistency_pairs": 0
+      }
+    },
+    "C3": {
+      "dec": {
+        "mat_ms": 213677.581428,
+        "input_quads": 392,
+        "materialised_total": 25181,
+        "n_worlds": 12,
+        "inconsistency_pairs": 55
+      },
+      "ctx": {
+        "mat_ms": 3714.238201,
+        "input_quads": 392,
+        "materialised_total": 26670,
+        "n_worlds": 12,
+        "inconsistency_pairs": 0
+      },
+      "flat": {
+        "mat_ms": 1262.73408,
+        "input_quads": 392,
+        "materialised_total": 2759,
+        "n_worlds": 1,
+        "inconsistency_pairs": 0
+      }
+    },
+    "C4": {
+      "dec": {
+        "mat_ms": 330705.178489,
+        "input_quads": 397,
+        "materialised_total": 28166,
+        "n_worlds": 13,
+        "inconsistency_pairs": 66
+      },
+      "ctx": {
+        "mat_ms": 4284.138064,
+        "input_quads": 397,
+        "materialised_total": 28887,
+        "n_worlds": 13,
+        "inconsistency_pairs": 0
+      },
+      "flat": {
+        "mat_ms": 1325.463708,
+        "input_quads": 397,
+        "materialised_total": 2778,
+        "n_worlds": 1,
+        "inconsistency_pairs": 0
+      }
+    },
+    "C2": {
+      "dec": {
+        "mat_ms": 76005.594251,
+        "input_quads": 368,
+        "materialised_total": 15968,
+        "n_worlds": 8,
+        "inconsistency_pairs": 21
+      },
+      "ctx": {
+        "mat_ms": 3077.233221,
+        "input_quads": 368,
+        "materialised_total": 17817,
+        "n_worlds": 8,
+        "inconsistency_pairs": 0
+      },
+      "flat": {
+        "mat_ms": 952.129018,
+        "input_quads": 368,
+        "materialised_total": 2609,
+        "n_worlds": 1,
+        "inconsistency_pairs": 0
+      }
+    }
+  }
+}

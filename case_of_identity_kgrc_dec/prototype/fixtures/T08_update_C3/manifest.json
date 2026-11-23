@@ -1,0 +1,48 @@
+{
+  "dataset": "C3",
+  "question": "Snapshot C3 (new documentary evidence).",
+  "seed_iris": [
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/m1",
+    "http://example.org/dectective/story/m2"
+  ],
+  "require_modules": [
+    "sW20_h_identity",
+    "sW22_h_same_machine",
+    "sF04_solver",
+    "sF06_visit",
+    "sF05_documents"
+  ],
+  "queries": [
+    {
+      "id": "T08b_identity_C3",
+      "file": "T08b_identity_C3.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P116.S04",
+        "P118.S06"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "reality at C3",
+      "note": "Evidence added, identity still conjectural (no settle operation in DEC)."
+    },
+    {
+      "id": "T08d_same_machine_C3",
+      "file": "T08d_same_machine_C3.rq",
+      "expected": true,
+      "classification": "derivable",
+      "justification": [
+        "P116.S01",
+        "P116.S02",
+        "P118.S06"
+      ],
+      "axioms_or_assumptions": [
+        "hasDefectProfile inverse-functional (Holmes's principle) only in w22"
+      ],
+      "world_time": "w:w22 at C3",
+      "note": "New consequence available only in the later snapshot."
+    }
+  ]
+}

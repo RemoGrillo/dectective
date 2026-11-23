@@ -1,0 +1,75 @@
+{ 
+  "data" : "./prototype/fixtures/T08_update_C2/slices/T08a_identity_C2.trig" ,
+  "query" : "./prototype/fixtures/T08_update_C2/T08a_identity_C2.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 175.972681 ,
+  "input_quads" : 69 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 248.89321 ,
+        "cpu_ms" : 235.898644 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 4 ,
+        "heap_delta_mb" : 22.681663513183594 ,
+        "phases" : {
+            "build_ms" : 23.423575 ,
+            "enumerate_ms" : 145.044918 ,
+            "validate_ms" : 74.365801
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 64.130098 ,
+        "query_second_ms" : 1.438552
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 69 ,
+              "base_after" : 69 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 945 ,
+              "inferred_trivial" : 853 ,
+              "inferred_nontrivial" : 23 ,
+              "inferred_taxonomic" : 2 ,
+              "inferred_substantive" : 21 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 69 ,
+      "materialised_total" : 945 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 876 ,
+      "inferred_trivial_total" : 853 ,
+      "inferred_nontrivial_total" : 23 ,
+      "inferred_taxonomic_total" : 2 ,
+      "inferred_substantive_total" : 21 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 945 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : true ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 64.130098 ,
+      "query_second_ms" : 1.438552 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "019bfea519f782fd91c18d50dad4c70708d107457d713a1145fd910f17419d1a"
+}

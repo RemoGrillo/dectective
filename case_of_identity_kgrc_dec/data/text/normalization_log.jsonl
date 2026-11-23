@@ -1,0 +1,145 @@
+{"rule": "N1", "pdf_page": 1, "text": "A Case of Identity", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 1, "text": "Arthur Conan Doyle", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 2, "text": "This text is provided to you “as-is” without any warranty. No warranties of any kind, expressed or implied, are made to you as to the text", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 2, "text": "or any medium it may be on, including but not limited to warranties of merchantablity or ﬁtness for a particular purpose.", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 2, "text": "This text was formatted from various free ASCII and HTML variants. See http://sherlock-holm.es for an electronic form of this text and", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 2, "text": "additional information about it.", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 2, "text": "This text comes from the collection’s version 3.1.", "action": "excluded:front_matter"}
+{"rule": "N1", "pdf_page": 3, "text": "1", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 4, "text": "2", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 5, "text": "3", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 6, "text": "4", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 7, "text": "5", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 8, "text": "6", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 9, "text": "7", "action": "excluded:page_number"}
+{"rule": "N1", "pdf_page": 10, "text": "8", "action": "excluded:page_number"}
+{"rule": "N3", "pdf_page": 5, "text": "“I suppose,” said Holmes, | “that when Mr.", "action": "merged"}
+{"rule": "N3", "pdf_page": 6, "text": "“Yes, sir, but very quietly. | It was to be at St.", "action": "merged"}
+{"rule": "N3", "pdf_page": 6, "text": "“You will leave that question in my hands. | I", "action": "merged"}
+{"rule": "N3", "pdf_page": 7, "text": "mer Angel. | About ﬁve ft. seven in. in", "action": "merged"}
+{"rule": "N3", "pdf_page": 7, "text": "speech. | Was dressed, when last seen,", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“This | is", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“This is | the", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“This is the | girl’s", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“This is the girl’s | stepfather,", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“This is the girl’s stepfather, | Mr.", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“This is the girl’s stepfather, Mr. | James", "action": "merged"}
+{"rule": "N3", "pdf_page": 8, "text": "“Good-evening, | Mr. James Windibank,” said", "action": "merged"}
+{"rule": "N2", "pdf_page": 3, "text": "M + y dear fellow,” said Sherlock Holmes as", "action": "prefixed drop cap and restored opening quotation mark", "result": "“My dear fellow,” said Sherlock Holmes as"}
+{"rule": "N2", "pdf_page": 3, "text": "we sat on either side of the ﬁre in his", "action": "indent 46.0 caused by drop cap reset to 0 (continuation line)"}
+{"rule": "N2", "pdf_page": 3, "text": "lodgings at Baker Street, “life is inﬁnitely", "action": "indent 46.4 caused by drop cap reset to 0 (continuation line)"}
+{"rule": "N2", "pdf_page": 3, "text": "stranger than anything which the mind of", "action": "indent 46.4 caused by drop cap reset to 0 (continuation line)"}
+{"rule": "N5", "pdf_page": 3, "left": "con", "right": "ventionalities", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 4}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB02", "count": 1}
+{"rule": "N7", "pdf_page": 3, "text": "´e", "result": "é"}
+{"rule": "N5", "pdf_page": 3, "left": "lim", "right": "its", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 3, "left": "un", "right": "derstand", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 5}
+{"rule": "N5", "pdf_page": 3, "left": "ev", "right": "erybody", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 2}
+{"rule": "N5", "pdf_page": 3, "left": "sep", "right": "aration", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 3, "left": "under", "right": "stand", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 5}
+{"rule": "N5", "pdf_page": 3, "left": "inves", "right": "tigation", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 3, "left": "inter", "right": "est", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 10}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 3, "left": "be", "right": "tween", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 3}
+{"rule": "N5", "pdf_page": 3, "left": "shoul", "right": "der", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 3, "left": "De", "right": "vonshire", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 3, "left": "fash", "right": "ion", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 4}
+{"rule": "N5", "pdf_page": 3, "left": "back", "right": "ward", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 2}
+{"rule": "N6", "pdf_page": 3, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 4, "left": "Suther", "right": "land", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 7}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 4, "left": "sud", "right": "denly", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 4, "left": "astonish", "right": "ment", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 4, "left": "my", "right": "self", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 5}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 4, "left": "vac", "right": "uous", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 4, "left": "hun", "right": "dred", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 4}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 1}
+{"rule": "N8", "pdf_page": 4, "text": "41/2", "result": "4½", "evidence": "HTML witness has 4½; PDF typesets a stacked fraction"}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 2}
+{"rule": "N5", "pdf_page": 4, "left": "be", "right": "fore", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 9}
+{"rule": "N5", "pdf_page": 5, "left": "Sunday", "right": "school", "decision": "kept_hyphen", "html_count_hyphenated": 1, "html_count_joined": 0}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB01", "count": 5}
+{"rule": "N6", "pdf_page": 4, "char": "U+FB02", "count": 1}
+{"rule": "N5", "pdf_page": 5, "left": "an", "right": "noyed", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 5, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 5, "char": "U+FB01", "count": 2}
+{"rule": "N6", "pdf_page": 5, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 5, "left": "hav", "right": "ing", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 6}
+{"rule": "N6", "pdf_page": 5, "char": "U+FB01", "count": 2}
+{"rule": "N6", "pdf_page": 5, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 5, "left": "day", "right": "light", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 5, "left": "hap", "right": "pened", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 9}
+{"rule": "N6", "pdf_page": 5, "char": "U+FB01", "count": 2}
+{"rule": "N5", "pdf_page": 6, "left": "be", "right": "come", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N6", "pdf_page": 6, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 6, "left": "shame", "right": "fully", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 6, "left": "some", "right": "thing", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 8}
+{"rule": "N5", "pdf_page": 6, "left": "Hos", "right": "mer", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 23}
+{"rule": "N5", "pdf_page": 6, "left": "hap", "right": "pened", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 9}
+{"rule": "N5", "pdf_page": 6, "left": "fur", "right": "ther", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 6, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 6, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 6, "char": "U+FB01", "count": 2}
+{"rule": "N5", "pdf_page": 7, "left": "ob", "right": "served", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N6", "pdf_page": 7, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 7, "left": "impor", "right": "tance", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N5", "pdf_page": 7, "left": "hang", "right": "ing", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 7, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 7, "left": "impor", "right": "tance", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N6", "pdf_page": 7, "char": "U+FB01", "count": 3}
+{"rule": "N5", "pdf_page": 7, "left": "sur", "right": "prised", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N5", "pdf_page": 7, "left": "other", "right": "wise", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 7, "char": "U+FB01", "count": 3}
+{"rule": "N5", "pdf_page": 7, "left": "amus", "right": "ing", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 7, "char": "U+FB01", "count": 3}
+{"rule": "N5", "pdf_page": 7, "left": "Hos", "right": "mer", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 23}
+{"rule": "N5", "pdf_page": 7, "left": "complex", "right": "ion", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 7, "left": "cen", "right": "tre", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N5", "pdf_page": 7, "left": "mous", "right": "tache", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N5", "pdf_page": 7, "left": "Har", "right": "ris", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 7, "char": "U+FB01", "count": 3}
+{"rule": "N5", "pdf_page": 7, "left": "com", "right": "monplace", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N5", "pdf_page": 7, "left": "remark", "right": "able", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 3}
+{"rule": "N6", "pdf_page": 8, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 8, "char": "U+FB01", "count": 2}
+{"rule": "N7", "pdf_page": 8, "text": "´e", "result": "é"}
+{"rule": "N5", "pdf_page": 8, "left": "con", "right": "trolled", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 8, "char": "U+FB01", "count": 2}
+{"rule": "N5", "pdf_page": 8, "left": "ev", "right": "ery", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 7}
+{"rule": "N6", "pdf_page": 9, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 9, "left": "type", "right": "written", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 6}
+{"rule": "N5", "pdf_page": 9, "left": "turn", "right": "ing", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 3}
+{"rule": "N5", "pdf_page": 9, "left": "im", "right": "possible", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 9, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 9, "left": "mantel", "right": "piece", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 9, "left": "se", "right": "rious", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 9, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 9, "left": "car", "right": "ried", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 3}
+{"rule": "N6", "pdf_page": 9, "char": "U+FB01", "count": 1}
+{"rule": "N5", "pdf_page": 9, "left": "gentle", "right": "man’s", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 0}
+{"rule": "N5", "pdf_page": 9, "left": "pre", "right": "tended", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 9, "left": "per", "right": "manent", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 9, "left": "ex", "right": "acted", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 9, "char": "U+FB01", "count": 2}
+{"rule": "N6", "pdf_page": 9, "char": "U+FB02", "count": 1}
+{"rule": "N5", "pdf_page": 10, "left": "assur", "right": "ance", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 10, "left": "action", "right": "able", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 2}
+{"rule": "N6", "pdf_page": 10, "char": "U+FB01", "count": 1}
+{"rule": "N6", "pdf_page": 10, "char": "U+FB02", "count": 1}
+{"rule": "N5", "pdf_page": 10, "left": "gal", "right": "lows", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N5", "pdf_page": 10, "left": "curi", "right": "ous", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 3}
+{"rule": "N6", "pdf_page": 10, "char": "U+FB01", "count": 3}
+{"rule": "N5", "pdf_page": 10, "left": "char", "right": "acteristic", "decision": "removed_hyphen", "html_count_hyphenated": 0, "html_count_joined": 1}
+{"rule": "N6", "pdf_page": 10, "char": "U+FB01", "count": 2}
+{"rule": "N7", "pdf_page": 10, "text": "`a", "result": "à"}
+{"rule": "N6", "pdf_page": 10, "char": "U+FB01", "count": 1}

@@ -1,0 +1,19 @@
+@prefix st:   <http://example.org/dectective/story/> .
+@prefix w:    <http://example.org/dectective/world/> .
+@prefix prof: <http://example.org/dectective/profile#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix inf:  <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix dec:  <http://w3id.org/conjectures/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+st:pB a prof:KeenSighted .
+st:d9 a prof:TypewrittenLetter ; prof:writtenBy st:pB ; prof:typedOn st:m2 ; prof:showsDefectProfile st:f1 .
+st:m2 a prof:Typewriter ; prof:hasDefectProfile st:f1 ; prof:usedBy st:g2 .
+st:m1 prof:hasDefectProfile st:f1 .
+st:a3 a prof:CommunicativeAct ; crm:P14_carried_out_by st:pB ; prof:addressee st:pH ; prof:hasContent w:w06 .
+st:pB prof:uttered w:w06 .
+st:solver prof:conjectures w:w22 .

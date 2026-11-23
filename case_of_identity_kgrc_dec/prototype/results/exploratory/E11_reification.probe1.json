@@ -1,0 +1,101 @@
+{ 
+  "data" : "./prototype/exploratory/E11_reification.trig" ,
+  "query" : "./prototype/results/exploratory/E11_reification.probe1.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 169.302626 ,
+  "input_quads" : 8 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 221.79643 ,
+        "cpu_ms" : 204.993102 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 3 ,
+        "heap_delta_mb" : 7.420600891113281 ,
+        "phases" : {
+            "load_ms" : 32.644514 ,
+            "handlePermeation_ms" : 178.260728 ,
+            "enumerate_ms" : 2.807728
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.495098 ,
+            "http://example.org/x#S#enumerate" : 0.730788
+          } ,
+        "query_first_ms" : 62.597214 ,
+        "query_second_ms" : 1.234437
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 649 ,
+              "inferred_trivial" : 648 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 5 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 837 ,
+              "inferred_trivial" : 719 ,
+              "inferred_nontrivial" : 109 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 109 ,
+              "dec_diagnostic" : 4
+            }
+        } ,
+      "n_worlds" : 2 ,
+      "asserted_total" : 6 ,
+      "materialised_total" : 1486 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1476 ,
+      "inferred_trivial_total" : 1367 ,
+      "inferred_nontrivial_total" : 109 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 109 ,
+      "dec_diagnostic_total" : 4 ,
+      "distinct_triples_all_worlds" : 837 ,
+      "redundancy" : 1.7753882915173238 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate" ,
+          "http://example.org/x#eve http://example.org/x#believes http://w3id.org/conjectures/reification/6fa560e0#http://example.org/x#eve" ,
+          "http://w3id.org/conjectures/reification/6fa560e0#http://example.org/x#eve http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : true ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 62.597214 ,
+      "query_second_ms" : 1.234437 ,
+      "matched_triples" : 4 ,
+      "matched_non_asserted_triples" : 4 ,
+      "matched_non_asserted_list" : [ 
+          "http://w3id.org/conjectures/reality | http://example.org/x#eve http://example.org/x#believes http://example.org/x#st1-inf409" ,
+          "http://w3id.org/conjectures/reality | http://example.org/x#st1-inf409 http://www.w3.org/1999/02/22-rdf-syntax-ns#object http://example.org/x#B" ,
+          "http://w3id.org/conjectures/reality | http://example.org/x#st1-inf409 http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ,
+          "http://w3id.org/conjectures/reality | http://example.org/x#st1-inf409 http://www.w3.org/1999/02/22-rdf-syntax-ns#subject http://example.org/x#x"
+        ]
+    } ,
+  "materialised_sha256" : "938aebddf58d259651619ec67b3162396e8667d57f5e99c5b7eb244066334b5e"
+}

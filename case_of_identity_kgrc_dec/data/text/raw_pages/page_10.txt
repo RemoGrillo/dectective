@@ -1,0 +1,81 @@
+1	body	and so uncertain as to his fate, that for ten years to
+1	body	come, at any rate, she would not listen to another man.
+1	body	As far as the church door he brought her, and then,
+1	body	as he could go no farther, he conveniently vanished
+1	body	away by the old trick of stepping in at one door of a
+1	body	four-wheeler and out at the other. I think that was
+1	body	the chain of events, Mr. Windibank!”
+1	body	Our visitor had recovered something of his assur-
+1	body	ance while Holmes had been talking, and he rose
+1	body	from his chair now with a cold sneer upon his pale
+1	body	face.
+1	body	“It may be so, or it may not, Mr. Holmes,” said he,
+1	body	“but if you are so very sharp you ought to be sharp
+1	body	enough to know that it is you who are breaking the
+1	body	law now, and not me. I have done nothing action-
+1	body	able from the ﬁrst, but as long as you keep that door
+1	body	locked you lay yourself open to an action for assault
+1	body	and illegal constraint.”
+1	body	“The law cannot, as you say, touch you,” said
+1	body	Holmes, unlocking and throwing open the door, “yet
+1	body	there never was a man who deserved punishment
+1	body	more. If the young lady has a brother or a friend, he
+1	body	ought to lay a whip across your shoulders. By Jove!”
+1	body	he continued, ﬂushing up at the sight of the bitter
+1	body	sneer upon the man’s face, “it is not part of my duties
+1	body	to my client, but here’s a hunting crop handy, and I
+1	body	think I shall just treat myself to—” He took two swift
+1	body	steps to the whip, but before he could grasp it there
+1	body	was a wild clatter of steps upon the stairs, the heavy
+1	body	hall door banged, and from the window we could see
+1	body	Mr. James Windibank running at the top of his speed
+1	body	down the road.
+1	body	“There’s a cold-blooded scoundrel!” said Holmes,
+1	body	laughing, as he threw himself down into his chair
+1	body	once more. “That fellow will rise from crime to crime
+1	body	until he does something very bad, and ends on a gal-
+1	body	lows. The case has, in some respects, been not entirely
+1	body	devoid of interest.”
+1	body	“I cannot now entirely see all the steps of your
+1	body	reasoning,” I remarked.
+1	page_number	8
+2	body	“Well, of course it was obvious from the ﬁrst that
+2	body	this Mr. Hosmer Angel must have some strong object
+2	body	for his curious conduct, and it was equally clear that
+2	body	the only man who really proﬁted by the incident, as
+2	body	far as we could see, was the stepfather. Then the fact
+2	body	that the two men were never together, but that the
+2	body	one always appeared when the other was away, was
+2	body	suggestive. So were the tinted spectacles and the curi-
+2	body	ous voice, which both hinted at a disguise, as did the
+2	body	bushy whiskers. My suspicions were all conﬁrmed
+2	body	by his peculiar action in typewriting his signature,
+2	body	which, of course, inferred that his handwriting was
+2	body	so familiar to her that she would recognise even the
+2	body	smallest sample of it. You see all these isolated facts,
+2	body	together with many minor ones, all pointed in the
+2	body	same direction.”
+2	body	“And how did you verify them?”
+2	body	“Having once spotted my man, it was easy to
+2	body	get corroboration. I knew the ﬁrm for which this
+2	body	man worked. Having taken the printed description,
+2	body	I eliminated everything from it which could be the
+2	body	result of a disguise—the whiskers, the glasses, the
+2	body	voice, and I sent it to the ﬁrm, with a request that
+2	body	they would inform me whether it answered to the
+2	body	description of any of their travellers. I had already
+2	body	noticed the peculiarities of the typewriter, and I wrote
+2	body	to the man himself at his business address asking him
+2	body	if he would come here. As I expected, his reply was
+2	body	typewritten and revealed the same trivial but char-
+2	body	acteristic defects. The same post brought me a letter
+2	body	from Westhouse & Marbank, of Fenchurch Street, to
+2	body	say that the description tallied in every respect with
+2	body	that of their employee, James Windibank. Voil`a tout!”
+2	body	“And Miss Sutherland?”
+2	body	“If I tell her she will not believe me. You may
+2	body	remember the old Persian saying, ‘There is danger
+2	body	for him who taketh the tiger cub, and danger also for
+2	body	whoso snatches a delusion from a woman.’ There is
+2	body	as much sense in Haﬁz as in Horace, and as much
+2	body	knowledge of the world.”

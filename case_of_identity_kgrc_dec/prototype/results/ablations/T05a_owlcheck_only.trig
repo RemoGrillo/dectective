@@ -1,0 +1,338 @@
+@prefix ns1: <http://example.org/dectective/profile#> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix ns4: <http://w3id.org/conjectures/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/dectective/world/v_hosmer_cashier> {
+    <http://example.org/dectective/story/hosmer> ns1:hasOccupation <http://example.org/dectective/story/occ_cashier_leadenhall> .
+}
+
+{
+    <http://example.org/dectective/story/adoption_mary> a ns3:I7_Belief_Adoption ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/mary> ;
+        ns3:J2_concluded_that <http://example.org/dectective/story/belief_mary_D1> ;
+        ns3:J7_is_based_on_evidence_from <http://example.org/dectective/story/letter_H1> .
+
+    <http://example.org/dectective/story/ca_holmes_reconstruction> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/windibank> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/holmes> .
+
+    <http://example.org/dectective/story/ca_hosmer_cashier> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/mary> ;
+        ns1:hasContent <http://example.org/dectective/world/v_hosmer_cashier> ;
+        ns1:reportedBy <http://example.org/dectective/story/mary> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/ca_mary_france> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns1:hasContent <http://example.org/dectective/world/v_mary_france> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/mary> .
+
+    <http://example.org/dectective/story/ca_windibank_delighted> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/ca_windibank_machine> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/ca_windibank_reassure> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/mary> ;
+        ns1:hasContent <http://example.org/dectective/world/v_windibank_reassure> ;
+        ns1:reportedBy <http://example.org/dectective/story/mary> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/inference_holmes> ns3:J2_concluded_that <http://example.org/dectective/story/belief_holmes_identity> .
+
+    <http://example.org/dectective/story/letter_W> a ns1:TypewrittenLetter ;
+        ns1:showsDefectProfile <http://example.org/dectective/story/profile_eR14> ;
+        ns1:typedOn <http://example.org/dectective/story/office_machine> ;
+        ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/reaction_start> a ns2:E5_Event ;
+        ns2:P11_had_participant <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/world/shared> a ns4:sharedWorld .
+
+
+    ns1:believes a ns4:doxasticPredicate .
+
+    ns1:establishes a ns4:epistemicPredicate .
+
+    ns1:uttered a ns4:verbatimPredicate .
+
+    <http://example.org/dectective/story/letter_H2> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/letter_H3> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/letter_H4> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/app_mary_sutherland> a ns2:E41_Appellation ;
+        rdfs:label "Mary Sutherland" .
+
+    <http://example.org/dectective/story/app_windibank> a ns2:E41_Appellation ;
+        rdfs:label "Windibank" .
+
+    <http://example.org/dectective/story/belief_holmes_identity> a ns3:I2_Belief ;
+        ns1:heldBy <http://example.org/dectective/story/holmes> ;
+        ns3:J4_that <http://example.org/dectective/world/holmes_reconstruction> ;
+        ns3:J5_holds_to_be "TRUE" .
+
+    <http://example.org/dectective/story/belief_mary_D1> a ns3:I2_Belief ;
+        ns1:heldBy <http://example.org/dectective/story/mary> ;
+        ns3:J4_that <http://example.org/dectective/world/mary_D1> ;
+        ns3:J5_holds_to_be "TRUE" .
+
+    <http://example.org/dectective/story/journey_france_2> a ns1:Journey ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/mother> a ns2:E21_Person .
+
+    <http://example.org/dectective/story/office_machine> ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> .
+
+    <http://example.org/dectective/story/westhouse_marbank> a ns2:E74_Group .
+
+    <http://example.org/dectective/story/app_hosmer_angel> a ns2:E41_Appellation ;
+        rdfs:label "Hosmer Angel" .
+
+    <http://example.org/dectective/story/letter_H1> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:showsDefectProfile <http://example.org/dectective/story/profile_eR14> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/occ_wine_traveller> a ns1:Occupation .
+
+    <http://example.org/dectective/story/ball> a ns2:E5_Event .
+
+    <http://example.org/dectective/story/disappearance> a ns1:Disappearance ;
+        ns1:disappearedPerson <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:Journey ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/machine_H> a ns1:Typewriter ;
+        ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> .
+
+    <http://example.org/dectective/story/holmes> ns1:establishes <http://example.org/dectective/world/holmes_reconstruction> .
+
+    <http://example.org/dectective/story/mary> a ns2:E21_Person ;
+        ns1:attended <http://example.org/dectective/story/ball> ;
+        ns1:believes <http://example.org/dectective/world/mary_D1> ;
+        ns1:engagedTo <http://example.org/dectective/story/hosmer> ;
+        ns1:uttered <http://example.org/dectective/world/v_mary_france> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/app_mary_sutherland> .
+
+    <http://example.org/dectective/story/hosmer> a ns2:E21_Person ;
+        ns1:attended <http://example.org/dectective/story/ball> ;
+        ns1:uttered <http://example.org/dectective/world/v_hosmer_cashier> ;
+        ns1:wore <http://example.org/dectective/story/tinted_glasses> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/app_hosmer_angel> .
+
+    <http://example.org/dectective/story/windibank> a ns1:KeenSighted,
+            ns2:E21_Person ;
+        ns1:believes <http://example.org/dectective/world/windibank_beliefs> ;
+        ns1:employedBy <http://example.org/dectective/story/westhouse_marbank> ;
+        ns1:hasOccupation <http://example.org/dectective/story/occ_wine_traveller> ;
+        ns1:spouseOf <http://example.org/dectective/story/mother> ;
+        ns1:stepfatherOf <http://example.org/dectective/story/mary> ;
+        ns1:uttered <http://example.org/dectective/world/v_windibank_reassure> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/app_windibank> .
+
+    _:ncfd63f7bd189447d8913b3eee0cb26feb2 ns4:checkInconsistencies true .
+}
+
+<http://example.org/dectective/world/windibank_beliefs> {
+    <http://example.org/dectective/story/disappearance> a ns1:VoluntaryDisappearance .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/windibank> ns1:hasOccupation <http://example.org/dectective/story/occ_wine_traveller> ;
+        owl:sameAs <http://example.org/dectective/story/hosmer> .
+}
+
+<http://example.org/dectective/world/v_windibank_reassure> {
+    <http://example.org/dectective/story/disappearance> a ns1:InvoluntaryDisappearance .
+
+    <http://example.org/dectective/story/hosmer> a ns1:ExpectedToReturn .
+}
+
+<http://example.org/dectective/world/holmes_reconstruction> {
+    <http://example.org/dectective/story/impersonation> a ns1:Impersonation ;
+        ns1:usedAppellation <http://example.org/dectective/story/app_hosmer_angel> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/journey_france_2> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/letter_H2> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/letter_H3> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/letter_H4> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/letter_H1> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/disappearance> a ns1:VoluntaryDisappearance .
+
+    <http://example.org/dectective/story/hosmer> owl:sameAs <http://example.org/dectective/story/windibank> .
+}
+
+<http://example.org/dectective/world/mary_D1> {
+    <http://example.org/dectective/story/journey_france_2> a ns1:ActualJourney ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:ActualJourney ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/disappearance> a ns1:InvoluntaryDisappearance ;
+        ns1:disappearedPerson <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/mary> ns1:engagedTo <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/hosmer> a ns1:ExpectedToReturn,
+            ns1:WeakSighted ;
+        ns1:hasOccupation <http://example.org/dectective/story/occ_cashier_leadenhall> .
+}
+
+<http://example.org/dectective/world/v_mary_france> {
+    <http://example.org/dectective/story/journey_france_1> a ns1:ActualJourney .
+}
+
+<http://example.org/dectective/world/shared> {
+    ns2:E1_CRM_Entity a rdfs:Class .
+
+    ns2:E2_Temporal_Entity a rdfs:Class ;
+        rdfs:subClassOf ns2:E1_CRM_Entity .
+
+    ns2:E39_Actor a rdfs:Class ;
+        rdfs:subClassOf ns2:E77_Persistent_Item .
+
+    ns2:E4_Period a rdfs:Class ;
+        rdfs:subClassOf ns2:E2_Temporal_Entity,
+            ns2:E92_Spacetime_Volume .
+
+    ns2:E5_Event a rdfs:Class ;
+        rdfs:subClassOf ns2:E4_Period .
+
+    ns2:E77_Persistent_Item a rdfs:Class ;
+        rdfs:subClassOf ns2:E1_CRM_Entity .
+
+    ns2:E7_Activity a rdfs:Class ;
+        rdfs:subClassOf ns2:E5_Event .
+
+    ns2:E92_Spacetime_Volume a rdfs:Class ;
+        rdfs:subClassOf ns2:E1_CRM_Entity .
+
+    ns1:addressee a owl:ObjectProperty .
+
+    ns1:attended a owl:ObjectProperty .
+
+    ns1:disappearedPerson a owl:ObjectProperty .
+
+    ns1:employedBy a owl:ObjectProperty .
+
+    ns1:engagedTo a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:hasContent a owl:ObjectProperty .
+
+    ns1:hasDefectProfile a owl:ObjectProperty .
+
+    ns1:heldBy a owl:ObjectProperty .
+
+    ns1:purportsToBeFrom a owl:ObjectProperty .
+
+    ns1:reportedBy a owl:ObjectProperty .
+
+    ns1:showsDefectProfile a owl:ObjectProperty .
+
+    ns1:spouseOf a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:stepfatherOf a owl:ObjectProperty .
+
+    ns1:traveller a owl:ObjectProperty .
+
+    ns1:typedOn a owl:ObjectProperty .
+
+    ns1:usedAppellation a owl:ObjectProperty .
+
+    ns1:wore a owl:ObjectProperty .
+
+    ns1:writtenBy a owl:ObjectProperty .
+
+    ns2:P14_carried_out_by a rdf:Property ;
+        rdfs:domain ns2:E7_Activity ;
+        rdfs:range ns2:E39_Actor ;
+        rdfs:subPropertyOf ns2:P11_had_participant ;
+        owl:inverseOf ns2:P14i_performed .
+
+    ns1:Impersonation a owl:Class .
+
+    ns1:Letter a owl:Class .
+
+    ns1:Occupation a owl:Class .
+
+    ns1:Typewriter a owl:Class .
+
+    ns1:WeakSighted a owl:Class ;
+        owl:disjointWith ns1:KeenSighted .
+
+    ns1:believes a owl:ObjectProperty .
+
+    ns1:establishes a owl:ObjectProperty .
+
+    ns1:hasOccupation a owl:ObjectProperty .
+
+    ns1:uttered a owl:ObjectProperty .
+
+    ns2:P11_had_participant a rdf:Property ;
+        rdfs:domain ns2:E5_Event ;
+        rdfs:range ns2:E39_Actor ;
+        rdfs:subPropertyOf ns2:P12_occurred_in_the_presence_of ;
+        owl:inverseOf ns2:P11i_participated_in .
+
+    ns2:P12_occurred_in_the_presence_of a rdf:Property ;
+        rdfs:domain ns2:E5_Event ;
+        rdfs:range ns2:E77_Persistent_Item ;
+        owl:inverseOf ns2:P12i_was_present_at .
+
+    ns1:ExpectedToReturn a owl:Class .
+
+    ns1:KeenSighted a owl:Class .
+
+    ns1:VoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance ;
+        owl:disjointWith ns1:InvoluntaryDisappearance .
+
+    ns1:ActualJourney a owl:Class ;
+        rdfs:subClassOf ns1:Journey ;
+        owl:disjointWith ns1:PretendedJourney .
+
+    ns1:Disappearance a owl:Class .
+
+    ns1:InvoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance .
+
+    ns1:Journey a owl:Class .
+
+    ns1:PretendedJourney a owl:Class ;
+        rdfs:subClassOf ns1:Journey .
+
+    ns1:TypewrittenLetter a owl:Class ;
+        rdfs:subClassOf ns1:Letter .
+
+    ns1:CommunicativeAct a owl:Class .
+}
+

@@ -1,0 +1,125 @@
+{ 
+  "data" : "./prototype/exploratory/E07_nested.trig" ,
+  "query" : "./prototype/results/exploratory/E07_nested.probe0.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 142.776309 ,
+  "input_quads" : 6 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 183.396309 ,
+        "cpu_ms" : 173.358502 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 5.3770904541015625 ,
+        "phases" : {
+            "load_ms" : 30.411484 ,
+            "handlePermeation_ms" : 117.341836 ,
+            "enumerate_ms" : 28.589476
+          } ,
+        "per_world_ms" : {
+            "http://example.org/x#HolmesB#enumerate" : 26.206759 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.239976 ,
+            "http://example.org/x#S#enumerate" : 0.508891 ,
+            "http://example.org/x#MaryB#enumerate" : 0.109844
+          } ,
+        "query_first_ms" : 57.914877 ,
+        "query_second_ms" : 1.171456
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#HolmesB" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 1 ,
+              "base_after" : 16 ,
+              "permeated_in" : 649 ,
+              "permeated_in_nontrivial" : 1 ,
+              "receives_from" : [ "http://example.org/x#S" ] ,
+              "materialised" : 666 ,
+              "inferred_trivial" : 16 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#MaryB" : {
+              "type" : "named/verbatim" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 649 ,
+              "inferred_trivial" : 648 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 1 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 669 ,
+              "inferred_trivial" : 664 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 3
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 4 ,
+      "materialised_total" : 1985 ,
+      "permeated_total" : 649 ,
+      "inferred_total" : 1329 ,
+      "inferred_trivial_total" : 1328 ,
+      "inferred_nontrivial_total" : 1 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 1 ,
+      "dec_diagnostic_total" : 3 ,
+      "distinct_triples_all_worlds" : 671 ,
+      "redundancy" : 2.9582712369597615 ,
+      "inconsistency_pairs" : 3 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/x#HolmesB http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 57.914877 ,
+      "query_second_ms" : 1.171456 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "c87aa6cafd24428702c0316dc25169280b83e95a9c63bda078a9eb52b12c5f57"
+}

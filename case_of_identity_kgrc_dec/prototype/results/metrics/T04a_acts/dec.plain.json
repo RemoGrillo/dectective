@@ -1,0 +1,146 @@
+{ 
+  "data" : "./prototype/fixtures/T04_who_said_what/slices/T04a_acts.trig" ,
+  "query" : "./prototype/fixtures/T04_who_said_what/T04a_acts.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 186.883753 ,
+  "input_quads" : 177 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 793.747001 ,
+        "cpu_ms" : 743.505318 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 31 ,
+        "heap_delta_mb" : 57.032989501953125 ,
+        "phases" : {
+            "load_ms" : 36.501368 ,
+            "handlePermeation_ms" : 746.016835 ,
+            "enumerate_ms" : 3.005626
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.507545 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.554141 ,
+            "http://example.org/dectective/world/v_hosmer_cashier#enumerate" : 0.102851 ,
+            "http://example.org/dectective/world/holmes_reconstruction#enumerate" : 0.632689
+          } ,
+        "query_first_ms" : 40.379139 ,
+        "query_second_ms" : 2.658449
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named/epistemic" ,
+              "asserted" : 11 ,
+              "base_after" : 414 ,
+              "permeated_in" : 1040 ,
+              "permeated_in_nontrivial" : 68 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1176 ,
+              "inferred_trivial" : 85 ,
+              "inferred_nontrivial" : 40 ,
+              "inferred_taxonomic" : 15 ,
+              "inferred_substantive" : 25 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named/shared" ,
+              "asserted" : 67 ,
+              "base_after" : 67 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1040 ,
+              "inferred_trivial" : 927 ,
+              "inferred_nontrivial" : 46 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 46 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/v_hosmer_cashier" : {
+              "type" : "named/verbatim" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 95 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1552 ,
+              "inferred_trivial" : 1163 ,
+              "inferred_nontrivial" : 289 ,
+              "inferred_taxonomic" : 90 ,
+              "inferred_substantive" : 199 ,
+              "dec_diagnostic" : 5
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 174 ,
+      "materialised_total" : 3769 ,
+      "permeated_total" : 1040 ,
+      "inferred_total" : 2550 ,
+      "inferred_trivial_total" : 2175 ,
+      "inferred_nontrivial_total" : 375 ,
+      "inferred_taxonomic_total" : 105 ,
+      "inferred_substantive_total" : 270 ,
+      "dec_diagnostic_total" : 5 ,
+      "distinct_triples_all_worlds" : 1553 ,
+      "redundancy" : 2.426915647134578 ,
+      "inconsistency_pairs" : 3 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/dectective/profile#establishes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate" ,
+          "http://example.org/dectective/profile#uttered http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimPredicate" ,
+          "http://example.org/dectective/world/holmes_reconstruction http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicWorld" ,
+          "http://example.org/dectective/world/shared http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/dectective/world/v_hosmer_cashier http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimWorld"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ 
+          "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/hosmer" ,
+          "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank" ,
+          "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+        ] ,
+      "n_rows" : 13 ,
+      "query_first_ms" : 40.379139 ,
+      "query_second_ms" : 2.658449 ,
+      "matched_triples" : 29 ,
+      "matched_non_asserted_triples" : 5 ,
+      "matched_non_asserted_list" : [ 
+          "http://w3id.org/conjectures/reality | http://example.org/dectective/story/ca_holmes_reconstruction http://example.org/dectective/profile#addressee http://example.org/dectective/story/hosmer" ,
+          "http://w3id.org/conjectures/reality | http://example.org/dectective/story/ca_hosmer_cashier http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/windibank" ,
+          "http://w3id.org/conjectures/reality | http://example.org/dectective/story/ca_windibank_delighted http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/hosmer" ,
+          "http://w3id.org/conjectures/reality | http://example.org/dectective/story/ca_windibank_machine http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/hosmer" ,
+          "http://w3id.org/conjectures/reality | http://example.org/dectective/story/ca_windibank_reassure http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/hosmer"
+        ]
+    } ,
+  "materialised_sha256" : "5ebc21a0007ca6ed73163dda48d6fbefc4e6ad25c4003a70765e4c6a02788066"
+}

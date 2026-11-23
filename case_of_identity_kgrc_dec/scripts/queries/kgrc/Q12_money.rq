@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# Scenes about money, income, interest and inheritance
+SELECT DISTINCT ?s ?src ?info WHERE {
+  ?s kgc:source ?src . FILTER(lang(?src)="en")
+  FILTER(REGEX(?src, "(?i)money|income|pound|GBP|interest|heritage|inherit|stock|shilling|business|year"))
+  OPTIONAL { ?s kgc:infoSource ?info }
+} ORDER BY ?s

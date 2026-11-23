@@ -1,0 +1,131 @@
+{ 
+  "data" : "./prototype/fixtures/T07w_watson_rejected/slices/T07c_watson.trig" ,
+  "query" : "./prototype/fixtures/T07w_watson_rejected/T07c_watson.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 191.32692 ,
+  "input_quads" : 134 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 3276.263706 ,
+        "cpu_ms" : 3180.285137 ,
+        "gc_count" : 9 ,
+        "gc_ms" : 67 ,
+        "heap_delta_mb" : 86.80825805664062 ,
+        "phases" : {
+            "load_ms" : 36.154289 ,
+            "handlePermeation_ms" : 3233.666655 ,
+            "enumerate_ms" : 1.835052
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.1913 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.295644 ,
+            "http://example.org/dectective/world/holmes_reconstruction#enumerate" : 0.298215 ,
+            "http://example.org/dectective/world/watson_hyp#enumerate" : 0.378329
+          } ,
+        "query_first_ms" : 29.604465 ,
+        "query_second_ms" : 0.578668
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named/epistemic" ,
+              "asserted" : 11 ,
+              "base_after" : 271 ,
+              "permeated_in" : 894 ,
+              "permeated_in_nontrivial" : 3 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 976 ,
+              "inferred_trivial" : 62 ,
+              "inferred_nontrivial" : 9 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 6 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named/shared" ,
+              "asserted" : 37 ,
+              "base_after" : 37 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 894 ,
+              "inferred_trivial" : 857 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/watson_hyp" : {
+              "type" : "named/conjectural" ,
+              "asserted" : 1 ,
+              "base_after" : 545 ,
+              "permeated_in" : 1184 ,
+              "permeated_in_nontrivial" : 134 ,
+              "receives_from" : [ 
+                  "http://example.org/dectective/world/shared" ,
+                  "http://w3id.org/conjectures/reality"
+                ] ,
+              "materialised" : 1221 ,
+              "inferred_trivial" : 36 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 81 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1190 ,
+              "inferred_trivial" : 1050 ,
+              "inferred_nontrivial" : 53 ,
+              "inferred_taxonomic" : 10 ,
+              "inferred_substantive" : 43 ,
+              "dec_diagnostic" : 6
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 130 ,
+      "materialised_total" : 4281 ,
+      "permeated_total" : 2078 ,
+      "inferred_total" : 2067 ,
+      "inferred_trivial_total" : 2005 ,
+      "inferred_nontrivial_total" : 62 ,
+      "inferred_taxonomic_total" : 13 ,
+      "inferred_substantive_total" : 49 ,
+      "dec_diagnostic_total" : 6 ,
+      "distinct_triples_all_worlds" : 1227 ,
+      "redundancy" : 3.488997555012225 ,
+      "inconsistency_pairs" : 3 ,
+      "dec_diagnostics" : [ 
+          "be19de7a0ad6a7ffef6b8bae3a5177f5 http://w3id.org/conjectures/checkInconsistencies \"true\"^^http://www.w3.org/2001/XMLSchema#boolean" ,
+          "http://example.org/dectective/profile#conjectures http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalPredicate" ,
+          "http://example.org/dectective/profile#establishes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate" ,
+          "http://example.org/dectective/world/holmes_reconstruction http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicWorld" ,
+          "http://example.org/dectective/world/shared http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/dectective/world/watson_hyp http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalWorld"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 29.604465 ,
+      "query_second_ms" : 0.578668 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "46765d494920b641bc116ee032deb2a9a63930776faf6c321f4307e5301c0f73"
+}

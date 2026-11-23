@@ -1,0 +1,45 @@
+{
+  "note": "Face crop for the small round portraits: [x, y, side] in pixels of the 1024\u00d71024 original (top-left corner and side of a square). Edit and re-run `npm run build:portraits` if a face looks off-centre.",
+  "faces": {
+    "holmes": [
+      160,
+      50,
+      640
+    ],
+    "hosmer": [
+      246,
+      93,
+      600
+    ],
+    "mary": [
+      168,
+      134,
+      620
+    ],
+    "mother": [
+      116,
+      127,
+      600
+    ],
+    "reader": [
+      192,
+      124,
+      640
+    ],
+    "watson": [
+      212,
+      58,
+      600
+    ],
+    "whatif": [
+      198,
+      0,
+      560
+    ],
+    "windibank": [
+      137,
+      24,
+      600
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "rel": "kgc:what",
+  "n": "473"
+ },
+ {
+  "rel": "kgc:then",
+  "n": "170"
+ },
+ {
+  "rel": "kgc:at_the_same_time",
+  "n": "10"
+ },
+ {
+  "rel": "kgc:therefore",
+  "n": "10"
+ },
+ {
+  "rel": "kgc:when",
+  "n": "7"
+ },
+ {
+  "rel": "kgc:if",
+  "n": "6"
+ },
+ {
+  "rel": "kgc:because",
+  "n": "5"
+ },
+ {
+  "rel": "kgc:why",
+  "n": "4"
+ },
+ {
+  "rel": "kgc:subject",
+  "n": "2"
+ },
+ {
+  "rel": "kgc:after",
+  "n": "2"
+ },
+ {
+  "rel": "kgc:whom",
+  "n": "1"
+ },
+ {
+  "rel": "kgc:and",
+  "n": "1"
+ }
+]

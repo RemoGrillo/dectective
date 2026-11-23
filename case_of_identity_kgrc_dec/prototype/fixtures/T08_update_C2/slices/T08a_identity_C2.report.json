@@ -1,0 +1,38 @@
+{
+  "dataset": "C2",
+  "query": "prototype/fixtures/T08_update_C2/T08a_identity_C2.rq",
+  "k": 2,
+  "seeds": [
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/pC"
+  ],
+  "worlds_selected": [
+    "http://example.org/dectective/world/w20"
+  ],
+  "modules_candidate": 17,
+  "fact_triples_selected": 42,
+  "governing_triples": 1,
+  "dec_config_triples": 2,
+  "schema_triples": 23,
+  "crm_terms": 0,
+  "excluded_axioms": [],
+  "schema_mode": "minimal",
+  "sizes_after": {
+    "default": 45,
+    "http://example.org/dectective/world/shared": 23,
+    "http://example.org/dectective/world/w20": 1
+  },
+  "sizes_full_by_graph": {
+    "default": 62,
+    "w:w01": 7,
+    "w:w03": 1,
+    "w:w04": 2,
+    "w:w20": 1,
+    "w:w21": 1,
+    "w:w05": 1,
+    "w:shared": 293
+  },
+  "total_after": 69,
+  "total_full": 368,
+  "inconsistency_pairs_upper_bound": 3
+}

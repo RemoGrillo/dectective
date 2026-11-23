@@ -1,0 +1,55 @@
+{
+  "dataset": "gold",
+  "question": "Does the ending modify Mary's beliefs?",
+  "seed_iris": [
+    "http://example.org/dectective/story/holmes",
+    "http://example.org/dectective/story/mary",
+    "http://example.org/dectective/story/hosmer"
+  ],
+  "require_modules": [
+    "F08_holmes_acts",
+    "W07_holmes_prediction",
+    "W01_mary_D1"
+  ],
+  "queries": [
+    {
+      "id": "T10a_no_telling_event",
+      "file": "T10a_no_telling_event.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P137.S01",
+        "P138.S01"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "reality (gold)",
+      "note": "No act of Holmes addressed to Mary exists in the text; the telling exists only inside his prediction."
+    },
+    {
+      "id": "T10b_rejection_only_predicted",
+      "file": "T10b_rejection_only_predicted.rq",
+      "expected": [
+        "g=http://example.org/dectective/world/holmes_prediction"
+      ],
+      "classification": "lookup",
+      "justification": [
+        "P138.S01"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:holmes_prediction",
+      "note": "Mary's rejection is a predicted, hypothetical reaction."
+    },
+    {
+      "id": "T10c_mary_last_belief",
+      "file": "T10c_mary_last_belief.rq",
+      "expected": true,
+      "classification": "lookup",
+      "justification": [
+        "P079.S03"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:mary_D1",
+      "note": "Mary's last attested belief is unchanged; KGRC d:578 instead asserts 'Sutherland does not believe in Holmes' categorically."
+    }
+  ]
+}

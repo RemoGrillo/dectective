@@ -1,0 +1,94 @@
+{ 
+  "data" : "./prototype/fixtures/T04_who_said_what/slices/T04a_acts.trig" ,
+  "query" : "./prototype/fixtures/T04_who_said_what/T04a_acts.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 184.076347 ,
+  "input_quads" : 177 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 418.258741 ,
+        "cpu_ms" : 402.197998 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 7 ,
+        "heap_delta_mb" : 31.03844451904297 ,
+        "phases" : {
+            "build_ms" : 22.770058 ,
+            "enumerate_ms" : 235.031049 ,
+            "validate_ms" : 154.55397
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 65.422896 ,
+        "query_second_ms" : 3.372512
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 177 ,
+              "base_after" : 177 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1496 ,
+              "inferred_trivial" : 1071 ,
+              "inferred_nontrivial" : 248 ,
+              "inferred_taxonomic" : 86 ,
+              "inferred_substantive" : 162 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 177 ,
+      "materialised_total" : 1496 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1319 ,
+      "inferred_trivial_total" : 1071 ,
+      "inferred_nontrivial_total" : 248 ,
+      "inferred_taxonomic_total" : 86 ,
+      "inferred_substantive_total" : 162 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1496 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ 
+          "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/hosmer" ,
+          "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank" ,
+          "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+        ] ,
+      "n_rows" : 13 ,
+      "query_first_ms" : 65.422896 ,
+      "query_second_ms" : 3.372512 ,
+      "matched_triples" : 29 ,
+      "matched_non_asserted_triples" : 5 ,
+      "matched_non_asserted_list" : [ 
+          "flat | http://example.org/dectective/story/ca_holmes_reconstruction http://example.org/dectective/profile#addressee http://example.org/dectective/story/hosmer" ,
+          "flat | http://example.org/dectective/story/ca_hosmer_cashier http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/windibank" ,
+          "flat | http://example.org/dectective/story/ca_windibank_delighted http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/hosmer" ,
+          "flat | http://example.org/dectective/story/ca_windibank_machine http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/hosmer" ,
+          "flat | http://example.org/dectective/story/ca_windibank_reassure http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by http://example.org/dectective/story/hosmer"
+        ]
+    } ,
+  "materialised_sha256" : "7ef0b432612562839bd0afb6c14380f0f1a407cc1065d4592bb7532710107ca6"
+}

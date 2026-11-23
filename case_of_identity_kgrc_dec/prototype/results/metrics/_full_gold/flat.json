@@ -1,0 +1,74 @@
+{ 
+  "data" : "./prototype/gold/gold_retrospective.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 237.686273 ,
+  "input_quads" : 465 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 1442.501255 ,
+        "cpu_ms" : 1308.886544 ,
+        "gc_count" : 10 ,
+        "gc_ms" : 88 ,
+        "heap_delta_mb" : 52.920440673828125 ,
+        "phases" : {
+            "build_ms" : 34.311799 ,
+            "enumerate_ms" : 867.295756 ,
+            "validate_ms" : 535.448261
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 46.812521 ,
+        "query_second_ms" : 1.950115
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 452 ,
+              "base_after" : 452 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 3132 ,
+              "inferred_trivial" : 1447 ,
+              "inferred_nontrivial" : 1231 ,
+              "inferred_taxonomic" : 375 ,
+              "inferred_substantive" : 856 ,
+              "dec_diagnostic" : 2 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 452 ,
+      "materialised_total" : 3132 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 2678 ,
+      "inferred_trivial_total" : 1447 ,
+      "inferred_nontrivial_total" : 1231 ,
+      "inferred_taxonomic_total" : 375 ,
+      "inferred_substantive_total" : 856 ,
+      "dec_diagnostic_total" : 2 ,
+      "distinct_triples_all_worlds" : 3132 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/dectective/world/holmes_prediction s=http://www.cidoc-crm.org/cidoc-crm/E55_Type p=http://www.w3.org/2000/01/rdf-schema#subClassOf o=http://www.cidoc-crm.org/cidoc-crm/E55_Type" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 46.812521 ,
+      "query_second_ms" : 1.950115 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "flat | http://www.cidoc-crm.org/cidoc-crm/E55_Type http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.cidoc-crm.org/cidoc-crm/E55_Type" ]
+    } ,
+  "materialised_sha256" : "f255785459ad39d8c9222f7a994fdcfefcb33ee04b6938bce482dd32947735ac"
+}

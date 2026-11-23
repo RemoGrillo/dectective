@@ -1,0 +1,314 @@
+[
+ {
+  "s": "d:029",
+  "type": "kgc:Statement",
+  "subj": "d:Woman",
+  "p": "pred:feel",
+  "src": "The woman is in distress",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:044",
+  "type": "kgc:Situation",
+  "subj": "d:Sutherland",
+  "p": "pred:notice",
+  "src": "Sutherland notices the meaning of the words of Holmes",
+  "info": null
+ },
+ {
+  "s": "d:047",
+  "type": "kgc:Situation",
+  "subj": "d:Sutherland",
+  "p": "pred:think",
+  "src": "Sutherland thought that",
+  "info": null
+ },
+ {
+  "s": "d:048",
+  "type": "kgc:Statement",
+  "subj": "d:Holmes",
+  "p": "pred:know",
+  "src": "Holmes already knows Sutherland",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:055",
+  "type": "kgc:Statement",
+  "subj": "d:police",
+  "p": "pred:beConvinced",
+  "src": "Police had ruled that Esridge's husband had died",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:080",
+  "type": "kgc:Situation",
+  "subj": "d:Sutherland",
+  "p": "pred:think",
+  "src": "Sutherland thinks the following",
+  "info": null
+ },
+ {
+  "s": "d:081",
+  "type": "kgc:Statement",
+  "subj": "d:father_of_Sutherland",
+  "p": "pred:think",
+  "src": "Sutherland's father thinks of",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:083",
+  "type": "kgc:Situation",
+  "subj": "d:Watson",
+  "p": "pred:think",
+  "src": "Watson thinks that",
+  "info": null
+ },
+ {
+  "s": "d:094",
+  "type": "kgc:Situation",
+  "subj": "d:Holmes",
+  "p": "pred:think",
+  "src": "Holmes thought the following",
+  "info": null
+ },
+ {
+  "s": "d:135",
+  "type": "kgc:Situation",
+  "subj": "d:Holmes",
+  "p": "pred:think",
+  "src": "Holmes thought the following",
+  "info": null
+ },
+ {
+  "s": "d:138",
+  "type": "kgc:Situation",
+  "subj": "d:Sutherland",
+  "p": "pred:think",
+  "src": "Sutherland thought that",
+  "info": null
+ },
+ {
+  "s": "d:153",
+  "type": "kgc:Situation",
+  "subj": "d:Windibank",
+  "p": "pred:think",
+  "src": "Windibank thought that",
+  "info": null
+ },
+ {
+  "s": "d:166",
+  "type": "kgc:Statement",
+  "subj": "d:Windibank",
+  "p": "pred:notKnow",
+  "src": "Windibank does not know the letter",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:169",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know the industry of Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:171",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:know",
+  "src": "Sutherland knows the following",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:180",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:feel",
+  "src": "Handwritten letter feels Sutherland",
+  "info": "d:Hosmer_s_statement"
+ },
+ {
+  "s": "d:181",
+  "type": "kgc:Statement",
+  "subj": null,
+  "p": "pred:feel",
+  "src": "Typing letter feels machine",
+  "info": "d:Hosmer_s_statement"
+ },
+ {
+  "s": "d:207",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:believe",
+  "src": "Sutherland believes in Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:241",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know where Hosmer is",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:244",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:believe",
+  "src": "Sutherland believes in Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:248",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:understand",
+  "src": "Sutherland now understands the language of Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:249",
+  "type": "kgc:Situation",
+  "subj": "d:Sutherland",
+  "p": "pred:think",
+  "src": "Sutherland thinks the following",
+  "info": null
+ },
+ {
+  "s": "d:250",
+  "type": "kgc:Thought",
+  "subj": "d:Hosmer",
+  "p": "pred:know",
+  "src": "Hosmer knew about the danger",
+  "info": "d:Sutherland_s_thoughts"
+ },
+ {
+  "s": "d:254",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know the danger of Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:269",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:forget",
+  "src": "Sutherland forgets Hosmer",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:279",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know Hosmer's address",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:284",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:forget",
+  "src": "Sutherland forgets Hosmer's disappearance",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:287",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:believe",
+  "src": "Sutherland believes in Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:288",
+  "type": "kgc:Situation",
+  "subj": "d:Watson",
+  "p": "pred:feel",
+  "src": "Watson felt noble and respect for Sutherland",
+  "info": null
+ },
+ {
+  "s": "d:293",
+  "type": "kgc:Statement",
+  "subj": "d:Holmes",
+  "p": "pred:know",
+  "src": "Holmes knows the same case",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:348",
+  "type": "kgc:Situation",
+  "subj": "d:Holmes",
+  "p": "pred:notice",
+  "src": "Holmes noticed the following",
+  "info": null
+ },
+ {
+  "s": "d:392",
+  "type": "kgc:Situation",
+  "subj": "d:Watson",
+  "p": "pred:think",
+  "src": "Watson thought the following",
+  "info": null
+ },
+ {
+  "s": "d:426",
+  "type": "kgc:Situation",
+  "subj": "d:Windibank",
+  "p": "pred:think",
+  "src": "Windibank thinks the following",
+  "info": null
+ },
+ {
+  "s": "d:542",
+  "type": "kgc:Statement",
+  "subj": "d:Windibank",
+  "p": "pred:notKnow",
+  "src": "Windibank does not know the facts",
+  "info": "d:Windibank"
+ },
+ {
+  "s": "d:566",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:know",
+  "src": "Sutherland knows Windibank handwriting",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:568",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:notice",
+  "src": "Sutherland notices Windibank handwriting",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:569",
+  "type": "kgc:Statement",
+  "subj": "d:Holmes",
+  "p": "pred:know",
+  "src": "Holmes knows the company of Windibank",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:572",
+  "type": "kgc:Statement",
+  "subj": "d:Holmes",
+  "p": "pred:know",
+  "src": "Holmes was aware of the features of the type",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:578",
+  "type": "kgc:Statement",
+  "subj": "d:Sutherland",
+  "p": "pred:notBelieve",
+  "src": "Sutherland does not believe in Holmes",
+  "info": "d:Holmes"
+ }
+]

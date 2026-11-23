@@ -1,0 +1,30 @@
+{
+  "dataset": "gold",
+  "question": "Is Watson's rejected hypothesis incompatible with the reconstruction?",
+  "seed_iris": [
+    "http://example.org/dectective/story/letter_H1"
+  ],
+  "require_modules": [
+    "W05_watson_hyp",
+    "W02_holmes_reconstruction",
+    "F04_documents"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "queries": [
+    {
+      "id": "T07c_watson",
+      "file": "T07c_watson.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P099.S01",
+        "P100.S01"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:watson_hyp",
+      "note": "Rejected by Holmes but not logically incompatible: no contradiction is manufactured."
+    }
+  ]
+}

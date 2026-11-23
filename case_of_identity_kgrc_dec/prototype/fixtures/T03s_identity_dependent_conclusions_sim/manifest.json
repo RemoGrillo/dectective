@@ -1,0 +1,33 @@
+{
+  "dataset": "C3",
+  "question": "Same rules, identity available (solver hypothesis) or absent (Mary).",
+  "seed_iris": [
+    "http://example.org/dectective/story/pA",
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/pC"
+  ],
+  "require_modules": [
+    "sW20_h_identity",
+    "sW01_mary",
+    "sF02_courtship"
+  ],
+  "queries": [
+    {
+      "id": "T03c_engaged_only_under_hypothesis",
+      "file": "T03c_engaged_only_under_hypothesis.rq",
+      "expected": [
+        "g=http://example.org/dectective/world/w20"
+      ],
+      "classification": "derivable",
+      "justification": [
+        "P041.S02"
+      ],
+      "axioms_or_assumptions": [
+        "owl:sameAs in w20 (hypothesis)",
+        "conjectural world receives reality"
+      ],
+      "world_time": "w:w20 at C3",
+      "note": "Only the identity hypothesis world derives it; Mary's world (w01) does not."
+    }
+  ]
+}

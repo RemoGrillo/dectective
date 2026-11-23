@@ -1,0 +1,194 @@
+{ 
+  "data" : "./prototype/results/sensitivity/A_2000.trig" ,
+  "query" : "./prototype/fixtures/T06_divergence/T06a_belief_worlds_vs_reality.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 274.854001 ,
+  "input_quads" : 2179 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 5390.293091 ,
+        "cpu_ms" : 5244.418114 ,
+        "gc_count" : 13 ,
+        "gc_ms" : 108 ,
+        "heap_delta_mb" : 439.5082092285156 ,
+        "phases" : {
+            "load_ms" : 77.637756 ,
+            "handlePermeation_ms" : 5301.210458 ,
+            "enumerate_ms" : 2.303492
+          } ,
+        "per_world_ms" : {
+            "http://example.org/dectective/world/holmes_prediction#enumerate" : 0.344456 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.401097 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.271385 ,
+            "http://example.org/dectective/world/holmes_reconstruction#enumerate" : 0.332407 ,
+            "http://example.org/dectective/world/mary_D1#enumerate" : 0.294496
+          } ,
+        "query_first_ms" : 54.952207 ,
+        "query_second_ms" : 2.539586
+      } ,
+      { 
+        "rep" : 1 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 4244.806295 ,
+        "cpu_ms" : 4148.940744 ,
+        "gc_count" : 12 ,
+        "gc_ms" : 84 ,
+        "heap_delta_mb" : 389.3625946044922 ,
+        "phases" : {
+            "load_ms" : 11.361066 ,
+            "handlePermeation_ms" : 4228.120532 ,
+            "enumerate_ms" : 1.736992
+          } ,
+        "per_world_ms" : {
+            "http://example.org/dectective/world/holmes_prediction#enumerate" : 0.300625 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.395338 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.261755 ,
+            "http://example.org/dectective/world/holmes_reconstruction#enumerate" : 0.292775 ,
+            "http://example.org/dectective/world/mary_D1#enumerate" : 0.283185
+          } ,
+        "query_first_ms" : 1.963576 ,
+        "query_second_ms" : 0.942887
+      } ,
+      { 
+        "rep" : 2 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 4121.287358 ,
+        "cpu_ms" : 4028.533897 ,
+        "gc_count" : 11 ,
+        "gc_ms" : 77 ,
+        "heap_delta_mb" : 393.7563781738281 ,
+        "phases" : {
+            "load_ms" : 8.75595 ,
+            "handlePermeation_ms" : 4109.001792 ,
+            "enumerate_ms" : 1.393546
+          } ,
+        "per_world_ms" : {
+            "http://example.org/dectective/world/holmes_prediction#enumerate" : 0.257704 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.251004 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.227025 ,
+            "http://example.org/dectective/world/holmes_reconstruction#enumerate" : 0.251665 ,
+            "http://example.org/dectective/world/mary_D1#enumerate" : 0.236385
+          } ,
+        "query_first_ms" : 1.215903 ,
+        "query_second_ms" : 0.514159
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_prediction" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 4 ,
+              "base_after" : 316 ,
+              "permeated_in" : 946 ,
+              "permeated_in_nontrivial" : 11 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 990 ,
+              "inferred_trivial" : 40 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named/epistemic" ,
+              "asserted" : 11 ,
+              "base_after" : 323 ,
+              "permeated_in" : 946 ,
+              "permeated_in_nontrivial" : 11 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1030 ,
+              "inferred_trivial" : 64 ,
+              "inferred_nontrivial" : 9 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 6 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/mary_D1" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 10 ,
+              "base_after" : 322 ,
+              "permeated_in" : 946 ,
+              "permeated_in_nontrivial" : 11 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1009 ,
+              "inferred_trivial" : 49 ,
+              "inferred_nontrivial" : 4 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named/shared" ,
+              "asserted" : 48 ,
+              "base_after" : 48 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 946 ,
+              "inferred_trivial" : 895 ,
+              "inferred_nontrivial" : 3 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 3 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 2102 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 3363 ,
+              "inferred_trivial" : 1188 ,
+              "inferred_nontrivial" : 61 ,
+              "inferred_taxonomic" : 10 ,
+              "inferred_substantive" : 51 ,
+              "dec_diagnostic" : 12
+            }
+        } ,
+      "n_worlds" : 5 ,
+      "asserted_total" : 2175 ,
+      "materialised_total" : 7338 ,
+      "permeated_total" : 2838 ,
+      "inferred_total" : 2313 ,
+      "inferred_trivial_total" : 2236 ,
+      "inferred_nontrivial_total" : 77 ,
+      "inferred_taxonomic_total" : 16 ,
+      "inferred_substantive_total" : 61 ,
+      "dec_diagnostic_total" : 12 ,
+      "distinct_triples_all_worlds" : 3382 ,
+      "redundancy" : 2.1697220579538734 ,
+      "inconsistency_pairs" : 6 ,
+      "dec_diagnostics" : [ 
+          "69753b6b42fca4a988c1af1133c2584a http://w3id.org/conjectures/checkInconsistencies \"true\"^^http://www.w3.org/2001/XMLSchema#boolean" ,
+          "http://example.org/dectective/profile#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate" ,
+          "http://example.org/dectective/profile#establishes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate" ,
+          "http://example.org/dectective/world/holmes_prediction http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1" ,
+          "http://example.org/dectective/world/holmes_reconstruction http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicWorld" ,
+          "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction" ,
+          "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality" ,
+          "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld" ,
+          "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/dectective/world/shared http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "w=http://example.org/dectective/world/mary_D1" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 1.215903 ,
+      "query_second_ms" : 0.514159 ,
+      "matched_triples" : 2 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "http://w3id.org/conjectures/reality | http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality" ]
+    } ,
+  "materialised_sha256" : "aea4d1e869149f1773623be08178113053d543446b6a585c0a4b8d40b7cddbf5"
+}

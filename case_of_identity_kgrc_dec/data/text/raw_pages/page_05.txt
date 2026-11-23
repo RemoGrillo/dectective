@@ -1,0 +1,102 @@
+1	body	afterwards they remembered us, and sent them to
+1	body	mother. Mr. Windibank did not wish us to go. He
+1	body	never did wish us to go anywhere. He would get
+1	body	quite mad if I wanted so much as to join a Sunday-
+1	body	school treat. But this time I was set on going, and
+1	body	I would go; for what right had he to prevent? He
+1	body	said the folk were not ﬁt for us to know, when all
+1	body	father’s friends were to be there. And he said that I
+1	body	had nothing ﬁt to wear, when I had my purple plush
+1	body	that I had never so much as taken out of the drawer.
+1	body	At last, when nothing else would do, he went off to
+1	body	France upon the business of the ﬁrm, but we went,
+1	body	mother and I, with Mr. Hardy, who used to be our
+1	body	foreman, and it was there I met Mr. Hosmer Angel.”
+1	body	“I suppose,” said Holmes,
+1	body	“that when Mr.
+1	body	Windibank came back from France he was very an-
+1	body	noyed at your having gone to the ball.”
+1	body	“Oh, well, he was very good about it. He laughed,
+1	body	I remember, and shrugged his shoulders, and said
+1	body	there was no use denying anything to a woman, for
+1	body	she would have her way.”
+1	body	“I see. Then at the gasﬁtters’ ball you met, as I
+1	body	understand, a gentleman called Mr. Hosmer Angel.”
+1	body	“Yes, sir. I met him that night, and he called next
+1	body	day to ask if we had got home all safe, and after that
+1	body	we met him—that is to say, Mr. Holmes, I met him
+1	body	twice for walks, but after that father came back again,
+1	body	and Mr. Hosmer Angel could not come to the house
+1	body	any more.”
+1	body	“No?”
+1	body	“Well, you know father didn’t like anything of the
+1	body	sort. He wouldn’t have any visitors if he could help
+1	body	it, and he used to say that a woman should be happy
+1	body	in her own family circle. But then, as I used to say to
+1	body	mother, a woman wants her own circle to begin with,
+1	body	and I had not got mine yet.”
+1	body	“But how about Mr. Hosmer Angel? Did he make
+1	body	no attempt to see you?”
+1	body	“Well, father was going off to France again in a
+1	body	week, and Hosmer wrote and said that it would be
+1	body	safer and better not to see each other until he had
+1	body	gone. We could write in the meantime, and he used
+1	body	to write every day. I took the letters in in the morning,
+1	body	so there was no need for father to know.”
+1	body	“Were you engaged to the gentleman at this time?”
+1	body	“Oh, yes, Mr. Holmes. We were engaged after the
+1	body	ﬁrst walk that we took. Hosmer—Mr. Angel—was a
+1	body	cashier in an ofﬁce in Leadenhall Street—and—”
+1	body	“What ofﬁce?”
+1	body	“That’s the worst of it, Mr. Holmes, I don’t know.”
+2	body	“Where did he live, then?”
+2	body	“He slept on the premises.”
+2	body	“And you don’t know his address?”
+2	body	“No—except that it was Leadenhall Street.”
+2	body	“Where did you address your letters, then?”
+2	body	“To the Leadenhall Street Post Ofﬁce, to be left till
+2	body	called for. He said that if they were sent to the ofﬁce
+2	body	he would be chaffed by all the other clerks about hav-
+2	body	ing letters from a lady, so I offered to typewrite them,
+2	body	like he did his, but he wouldn’t have that, for he said
+2	body	that when I wrote them they seemed to come from
+2	body	me, but when they were typewritten he always felt
+2	body	that the machine had come between us. That will just
+2	body	show you how fond he was of me, Mr. Holmes, and
+2	body	the little things that he would think of.”
+2	body	“It was most suggestive,” said Holmes. “It has
+2	body	long been an axiom of mine that the little things are
+2	body	inﬁnitely the most important. Can you remember any
+2	body	other little things about Mr. Hosmer Angel?”
+2	body	“He was a very shy man, Mr. Holmes. He would
+2	body	rather walk with me in the evening than in the day-
+2	body	light, for he said that he hated to be conspicuous. Very
+2	body	retiring and gentlemanly he was. Even his voice was
+2	body	gentle. He’d had the quinsy and swollen glands when
+2	body	he was young, he told me, and it had left him with a
+2	body	weak throat, and a hesitating, whispering fashion of
+2	body	speech. He was always well dressed, very neat and
+2	body	plain, but his eyes were weak, just as mine are, and
+2	body	he wore tinted glasses against the glare.”
+2	body	“Well, and what happened when Mr. Windibank,
+2	body	your stepfather, returned to France?”
+2	body	“Mr. Hosmer Angel came to the house again and
+2	body	proposed that we should marry before father came
+2	body	back. He was in dreadful earnest and made me swear,
+2	body	with my hands on the Testament, that whatever hap-
+2	body	pened I would always be true to him. Mother said
+2	body	he was quite right to make me swear, and that it was
+2	body	a sign of his passion. Mother was all in his favour
+2	body	from the ﬁrst and was even fonder of him than I was.
+2	body	Then, when they talked of marrying within the week,
+2	body	I began to ask about father; but they both said never
+2	body	to mind about father, but just to tell him afterwards,
+2	body	and mother said she would make it all right with him.
+2	body	I didn’t quite like that, Mr. Holmes. It seemed funny
+2	body	that I should ask his leave, as he was only a few years
+2	body	older than me; but I didn’t want to do anything on
+2	body	the sly, so I wrote to father at Bordeaux, where the
+2	body	company has its French ofﬁces, but the letter came
+2	body	back to me on the very morning of the wedding.”
+2	body	“It missed him, then?”
+2	page_number	3

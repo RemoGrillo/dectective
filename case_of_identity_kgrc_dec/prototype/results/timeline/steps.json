@@ -1,0 +1,264 @@
+{
+ "entries": {
+  "mary_D1": "P031.S10",
+  "holmes_reconstruction": "P126.S11",
+  "holmes_mother": "P126.S11",
+  "holmes_motive": "P126.S01",
+  "watson_hyp": "P099.S01",
+  "windibank_beliefs": "P126.S11",
+  "holmes_prediction": "P138.S01",
+  "v_hosmer_cashier": "P041.S04",
+  "v_mary_france": "P031.S10",
+  "v_windibank_reassure": "P067.S01",
+  "v_windibank_delighted": "P115.S02",
+  "v_windibank_machine": "P117.S01",
+  "holmes_same_machine": "P116.S01",
+  "h_author_other": "P117.S01"
+ },
+ "entryRules": {
+  "mary_D1": "max(first module passage, first content anchor) in its checkpoint window",
+  "holmes_reconstruction": "max(first module passage, first content anchor) in its checkpoint window",
+  "holmes_mother": "max(first module passage, first content anchor) in its checkpoint window",
+  "holmes_motive": "max(first module passage, first content anchor) in its checkpoint window",
+  "watson_hyp": "max(first module passage, first content anchor) in its checkpoint window",
+  "windibank_beliefs": "max(first module passage, first content anchor) in its checkpoint window",
+  "holmes_prediction": "max(first module passage, first content anchor) in its checkpoint window",
+  "v_hosmer_cashier": "max(first module passage, first content anchor) in its checkpoint window",
+  "v_mary_france": "max(first module passage, first content anchor) in its checkpoint window",
+  "v_windibank_reassure": "max(first module passage, first content anchor) in its checkpoint window",
+  "v_windibank_delighted": "max(first module passage, first content anchor) in its checkpoint window",
+  "v_windibank_machine": "max(first module passage, first content anchor) in its checkpoint window",
+  "holmes_same_machine": "max(first module passage, first content anchor) in its checkpoint window",
+  "h_author_other": "override"
+ },
+ "steps": [
+  {
+   "step": 0,
+   "sentence": null,
+   "asserted": 298,
+   "new": 298
+  },
+  {
+   "step": 1,
+   "sentence": "P014.S01",
+   "asserted": 311,
+   "new": 13
+  },
+  {
+   "step": 2,
+   "sentence": "P018.S03",
+   "asserted": 312,
+   "new": 1
+  },
+  {
+   "step": 3,
+   "sentence": "P020.S02",
+   "asserted": 313,
+   "new": 1
+  },
+  {
+   "step": 4,
+   "sentence": "P021.S01",
+   "asserted": 314,
+   "new": 1
+  },
+  {
+   "step": 5,
+   "sentence": "P024.S02",
+   "asserted": 315,
+   "new": 1
+  },
+  {
+   "step": 6,
+   "sentence": "P024.S03",
+   "asserted": 318,
+   "new": 3
+  },
+  {
+   "step": 7,
+   "sentence": "P031.S02",
+   "asserted": 320,
+   "new": 2
+  },
+  {
+   "step": 8,
+   "sentence": "P031.S10",
+   "asserted": 340,
+   "new": 20
+  },
+  {
+   "step": 9,
+   "sentence": "P039.S01",
+   "asserted": 344,
+   "new": 4
+  },
+  {
+   "step": 10,
+   "sentence": "P041.S02",
+   "asserted": 346,
+   "new": 2
+  },
+  {
+   "step": 11,
+   "sentence": "P041.S04",
+   "asserted": 354,
+   "new": 8
+  },
+  {
+   "step": 12,
+   "sentence": "P051.S06",
+   "asserted": 356,
+   "new": 2
+  },
+  {
+   "step": 13,
+   "sentence": "P057.S04",
+   "asserted": 359,
+   "new": 3
+  },
+  {
+   "step": 14,
+   "sentence": "P059.S02",
+   "asserted": 360,
+   "new": 1
+  },
+  {
+   "step": 15,
+   "sentence": "P067.S01",
+   "asserted": 369,
+   "new": 9
+  },
+  {
+   "step": 16,
+   "sentence": "P077.S01",
+   "asserted": 370,
+   "new": 1
+  },
+  {
+   "step": 17,
+   "sentence": "P094.S02",
+   "asserted": 372,
+   "new": 2
+  },
+  {
+   "step": 18,
+   "sentence": "P099.S01",
+   "asserted": 374,
+   "new": 2
+  },
+  {
+   "step": 19,
+   "sentence": "P111.S01",
+   "asserted": 375,
+   "new": 1
+  },
+  {
+   "step": 20,
+   "sentence": "P112.S01",
+   "asserted": 376,
+   "new": 1
+  },
+  {
+   "step": 21,
+   "sentence": "P115.S01",
+   "asserted": 378,
+   "new": 2
+  },
+  {
+   "step": 22,
+   "sentence": "P115.S02",
+   "asserted": 384,
+   "new": 6
+  },
+  {
+   "step": 23,
+   "sentence": "P116.S01",
+   "asserted": 386,
+   "new": 2
+  },
+  {
+   "step": 24,
+   "sentence": "P116.S04",
+   "asserted": 390,
+   "new": 4
+  },
+  {
+   "step": 25,
+   "sentence": "P117.S01",
+   "asserted": 403,
+   "new": 13
+  },
+  {
+   "step": 26,
+   "sentence": "P118.S04",
+   "asserted": 412,
+   "new": 9
+  },
+  {
+   "step": 27,
+   "sentence": "P118.S05",
+   "asserted": 414,
+   "new": 2
+  },
+  {
+   "step": 28,
+   "sentence": "P118.S06",
+   "asserted": 416,
+   "new": 2
+  },
+  {
+   "step": 29,
+   "sentence": "P124.S02",
+   "asserted": 419,
+   "new": 3
+  },
+  {
+   "step": 30,
+   "sentence": "P126.S01",
+   "asserted": 421,
+   "new": 2
+  },
+  {
+   "step": 31,
+   "sentence": "P126.S11",
+   "asserted": 441,
+   "new": 20
+  },
+  {
+   "step": 32,
+   "sentence": "P128.S02",
+   "asserted": 443,
+   "new": 2
+  },
+  {
+   "step": 33,
+   "sentence": "P128.S07",
+   "asserted": 444,
+   "new": 1
+  },
+  {
+   "step": 34,
+   "sentence": "P128.S10",
+   "asserted": 446,
+   "new": 2
+  },
+  {
+   "step": 35,
+   "sentence": "P134.S01",
+   "asserted": 449,
+   "new": 3
+  },
+  {
+   "step": 36,
+   "sentence": "P134.S04",
+   "asserted": 453,
+   "new": 4
+  },
+  {
+   "step": 37,
+   "sentence": "P138.S01",
+   "asserted": 462,
+   "new": 9
+  }
+ ]
+}

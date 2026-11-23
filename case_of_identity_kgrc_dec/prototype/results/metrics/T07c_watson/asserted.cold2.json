@@ -1,0 +1,112 @@
+{ 
+  "data" : "./prototype/fixtures/T07w_watson_rejected/slices/T07c_watson.trig" ,
+  "query" : "./prototype/fixtures/T07w_watson_rejected/T07c_watson.rq" ,
+  "config" : "asserted" ,
+  "instrumented" : false ,
+  "parse_ms" : 187.69088 ,
+  "input_quads" : 134 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 9.426035 ,
+        "cpu_ms" : 8.890383 ,
+        "gc_count" : 0 ,
+        "gc_ms" : 0 ,
+        "heap_delta_mb" : 2.0 ,
+        "phases" : {"build_ms" : 5.831802 } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 38.043194 ,
+        "query_second_ms" : 0.61315
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named(asserted)" ,
+              "asserted" : 11 ,
+              "base_after" : 11 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 11 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named(asserted)" ,
+              "asserted" : 37 ,
+              "base_after" : 37 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 37 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/watson_hyp" : {
+              "type" : "named(asserted)" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "reality(asserted)" ,
+              "asserted" : 81 ,
+              "base_after" : 81 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 81 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 130 ,
+      "materialised_total" : 130 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 0 ,
+      "inferred_trivial_total" : 0 ,
+      "inferred_nontrivial_total" : 0 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 0 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 130 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 38.043194 ,
+      "query_second_ms" : 0.61315 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "3ac4a96ca89ab61d60eb7321575c9578569b31296821265abd0b6523141d81c0"
+}

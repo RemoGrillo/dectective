@@ -1,0 +1,74 @@
+{ 
+  "data" : "./prototype/fixtures/T07_hypotheses_vs_evidence_C3/slices/T07a_C3.trig" ,
+  "query" : "./prototype/fixtures/T07_hypotheses_vs_evidence_C3/T07a_C3.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 209.611681 ,
+  "input_quads" : 85 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 281.221685 ,
+        "cpu_ms" : 268.764892 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 4 ,
+        "heap_delta_mb" : 27.411911010742188 ,
+        "phases" : {
+            "build_ms" : 24.056009 ,
+            "enumerate_ms" : 166.208674 ,
+            "validate_ms" : 84.475144
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 83.5752 ,
+        "query_second_ms" : 2.699023
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 85 ,
+              "base_after" : 85 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1012 ,
+              "inferred_trivial" : 899 ,
+              "inferred_nontrivial" : 27 ,
+              "inferred_taxonomic" : 4 ,
+              "inferred_substantive" : 23 ,
+              "dec_diagnostic" : 1 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 85 ,
+      "materialised_total" : 1012 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 926 ,
+      "inferred_trivial_total" : 899 ,
+      "inferred_nontrivial_total" : 27 ,
+      "inferred_taxonomic_total" : 4 ,
+      "inferred_substantive_total" : 23 ,
+      "dec_diagnostic_total" : 1 ,
+      "distinct_triples_all_worlds" : 1012 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 83.5752 ,
+      "query_second_ms" : 2.699023 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "ad71883e0fe62dfd0c1175d0e642a99b4731ed789a38b9d20b931b4ae6a160d2"
+}

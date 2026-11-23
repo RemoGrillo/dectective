@@ -1,0 +1,7 @@
+{
+  "note": "Corrections to the automatic availability of gold triples in the Deductions timeline (scripts/run_edition_timeline.py). 'worlds': world -> sentence from which the world (with its governance) exists. 'triples': N-Triples key 's p o' -> sentence. Review prototype/results/timeline/availability.csv after any change.",
+  "worlds": {
+    "h_author_other": "P117.S01"
+  },
+  "triples": {}
+}

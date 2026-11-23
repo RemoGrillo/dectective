@@ -1,0 +1,77 @@
+{
+  "dataset": "C3",
+  "question": "What can be inferred from the typewritten documents at C3?",
+  "seed_iris": [
+    "http://example.org/dectective/story/d1",
+    "http://example.org/dectective/story/d2",
+    "http://example.org/dectective/story/m1",
+    "http://example.org/dectective/story/m2",
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/story/pB"
+  ],
+  "require_modules": [
+    "sW22_h_same_machine",
+    "sW23_h_author_pB",
+    "sW24_h_author_other",
+    "sF04_solver",
+    "sF05_documents",
+    "sF06_visit"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "closed_for": [
+    "http://example.org/dectective/profile#writtenBy"
+  ],
+  "queries": [
+    {
+      "id": "T09a_typed_on_office_machine",
+      "file": "T09a_typed_on_office_machine.rq",
+      "expected": [
+        "l=http://example.org/dectective/story/d1",
+        "l=http://example.org/dectective/story/d2"
+      ],
+      "classification": "derivable",
+      "justification": [
+        "P116.S01",
+        "P116.S02",
+        "P118.S06",
+        "P117.S01"
+      ],
+      "axioms_or_assumptions": [
+        "hasDefectProfile inverse-functional (Holmes's individuality principle, caveat 'unless new')"
+      ],
+      "world_time": "w:w22 at C3",
+      "note": "Same machine is derivable only under the explicit premise; not in reality."
+    },
+    {
+      "id": "T09b_same_machine_not_fact",
+      "file": "T09b_same_machine_not_fact.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P118.S06"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "reality at C3",
+      "note": "Without the premise the machine identity is not a fact."
+    },
+    {
+      "id": "T09c_authorship_alternatives",
+      "file": "T09c_authorship_alternatives.rq",
+      "expected": [
+        "h=http://example.org/dectective/world/w23 x=http://example.org/dectective/world/w24",
+        "h=http://example.org/dectective/world/w24 x=http://example.org/dectective/world/w23"
+      ],
+      "classification": "not-determined",
+      "justification": [
+        "P117.S01"
+      ],
+      "axioms_or_assumptions": [
+        "closedFor writtenBy (single author, assumption)"
+      ],
+      "world_time": "w23 vs w24 at C3",
+      "note": "The two authorship hypotheses exclude each other only under the closure; neither is incompatible with the C3 evidence (shared office machine)."
+    }
+  ]
+}

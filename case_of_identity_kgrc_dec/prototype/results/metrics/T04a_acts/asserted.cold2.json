@@ -1,0 +1,120 @@
+{ 
+  "data" : "./prototype/fixtures/T04_who_said_what/slices/T04a_acts.trig" ,
+  "query" : "./prototype/fixtures/T04_who_said_what/T04a_acts.rq" ,
+  "config" : "asserted" ,
+  "instrumented" : false ,
+  "parse_ms" : 183.152787 ,
+  "input_quads" : 177 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 10.360922 ,
+        "cpu_ms" : 9.958943 ,
+        "gc_count" : 0 ,
+        "gc_ms" : 0 ,
+        "heap_delta_mb" : 2.0 ,
+        "phases" : {"build_ms" : 6.05348 } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 43.636134 ,
+        "query_second_ms" : 2.292666
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named(asserted)" ,
+              "asserted" : 11 ,
+              "base_after" : 11 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 11 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named(asserted)" ,
+              "asserted" : 67 ,
+              "base_after" : 67 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 67 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/v_hosmer_cashier" : {
+              "type" : "named(asserted)" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "reality(asserted)" ,
+              "asserted" : 95 ,
+              "base_after" : 95 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 95 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 174 ,
+      "materialised_total" : 174 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 0 ,
+      "inferred_trivial_total" : 0 ,
+      "inferred_nontrivial_total" : 0 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 0 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 174 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ 
+          "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank" ,
+          "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+        ] ,
+      "n_rows" : 8 ,
+      "query_first_ms" : 43.636134 ,
+      "query_second_ms" : 2.292666 ,
+      "matched_triples" : 24 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "b6c6f68d98952e7114a5cb00ada120ab1df8b18874e724d372f8c6c4f6a2f058"
+}

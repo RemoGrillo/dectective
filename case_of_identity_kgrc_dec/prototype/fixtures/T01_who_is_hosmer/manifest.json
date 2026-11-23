@@ -1,0 +1,60 @@
+{
+  "dataset": "gold",
+  "question": "Who is Hosmer Angel in the reference reconstruction?",
+  "seed_iris": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/windibank"
+  ],
+  "require_modules": [
+    "W02_holmes_reconstruction",
+    "F03_courtship"
+  ],
+  "queries": [
+    {
+      "id": "T01a_identity_in_reality",
+      "file": "T01a_identity_in_reality.rq",
+      "expected": [
+        "x=http://example.org/dectective/story/windibank"
+      ],
+      "classification": "lookup",
+      "justification": [
+        "P126.S11",
+        "P127.S01",
+        "P136.S06"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "reality (gold)",
+      "note": "Reads Holmes's accepted conclusion (epistemic world permeated into reality). Not a deduction of identity."
+    },
+    {
+      "id": "T01b_identity_in_holmes_world",
+      "file": "T01b_identity_in_holmes_world.rq",
+      "expected": [
+        "x=http://example.org/dectective/story/windibank"
+      ],
+      "classification": "lookup",
+      "justification": [
+        "P126.S11"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:holmes_reconstruction",
+      "note": "Context-scoped lookup: answerable without DEC permeation."
+    },
+    {
+      "id": "T01c_identity_consequence",
+      "file": "T01c_identity_consequence.rq",
+      "expected": true,
+      "classification": "derivable",
+      "justification": [
+        "P051.S06",
+        "P093.S02",
+        "P126.S11"
+      ],
+      "axioms_or_assumptions": [
+        "owl:sameAs substitution (OWL)"
+      ],
+      "world_time": "reality (gold)",
+      "note": "Engine-derived: Hosmer's observed glasses transfer to Windibank under the reconstructed identity."
+    }
+  ]
+}

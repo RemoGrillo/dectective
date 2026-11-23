@@ -1,0 +1,27 @@
+{
+  "dataset": "C2",
+  "question": "Snapshot C2: is the identity a fact? are the machines identified?",
+  "seed_iris": [
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/story/pB"
+  ],
+  "require_modules": [
+    "sW20_h_identity",
+    "sF04_solver"
+  ],
+  "queries": [
+    {
+      "id": "T08a_identity_C2",
+      "file": "T08a_identity_C2.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P096.S04",
+        "P100.S03"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "reality at C2",
+      "note": ""
+    }
+  ]
+}

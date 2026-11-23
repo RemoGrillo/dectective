@@ -1,0 +1,6560 @@
+{
+ "modules": [
+  {
+   "basis": "schema",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "shared",
+   "file": "prototype/modules/schema/S01_crm_fragment.trig",
+   "graph": "w:shared",
+   "id": "S01_crm_fragment",
+   "note": "generated from official RDFS (extract_onto_module.py)",
+   "role": "schema",
+   "segments": [],
+   "tags": [
+    "schema"
+   ]
+  },
+  {
+   "basis": "schema",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "shared",
+   "file": "prototype/modules/schema/S02_profile.trig",
+   "graph": "w:shared",
+   "id": "S02_profile",
+   "note": "prototype/profile/dtv_profile.ttl",
+   "role": "schema",
+   "segments": [],
+   "tags": [
+    "schema"
+   ]
+  },
+  {
+   "basis": "schema",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "shared",
+   "file": "prototype/modules/schema/S03_axioms.trig",
+   "graph": "w:shared",
+   "id": "S03_axioms",
+   "note": "analytic disjointness axioms; declared assumptions, not textual facts",
+   "role": "schema",
+   "segments": [],
+   "tags": [
+    "schema",
+    "axiom"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/dec/D01_typing.trig",
+   "graph": "default",
+   "id": "D01_typing",
+   "note": "",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/dec/D02_check.trig",
+   "graph": "default",
+   "id": "D02_check",
+   "note": "",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec",
+    "conflict"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/dec/D03_closed_writtenBy.trig",
+   "graph": "default",
+   "id": "D03_closed_writtenBy",
+   "note": "ASSUMPTION: a letter has a single author",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec",
+    "closure",
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/dec/D04_closed_occupation.trig",
+   "graph": "default",
+   "id": "D04_closed_occupation",
+   "note": "ASSUMPTION: one occupation per person in the story time",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec",
+    "closure",
+    "occupation"
+   ]
+  },
+  {
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F01_persons.trig",
+   "graph": "default",
+   "id": "F01_persons",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "tags": [
+    "persons",
+    "identity"
+   ]
+  },
+  {
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F02_occupation.trig",
+   "graph": "default",
+   "id": "F02_occupation",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P024.S03",
+    "P077.S01"
+   ],
+   "tags": [
+    "occupation",
+    "motive"
+   ]
+  },
+  {
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F03_courtship.trig",
+   "graph": "default",
+   "id": "F03_courtship",
+   "note": "events experienced by Mary, accepted by the narrative; journeys only as announced",
+   "role": "fact",
+   "segments": [
+    "P031.S10",
+    "P035.S02",
+    "P039.S01",
+    "P041.S02",
+    "P051.S06",
+    "P057.S03",
+    "P057.S04"
+   ],
+   "tags": [
+    "courtship",
+    "identity",
+    "timeline"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F04_documents.trig",
+   "graph": "default",
+   "id": "F04_documents",
+   "note": "st:machine_H = 'the (unknown) machine the four letters were typed on'; defect profile observed in P118.S06",
+   "role": "fact",
+   "segments": [
+    "P094.S02",
+    "P095.S01",
+    "P096.S01",
+    "P096.S02",
+    "P118.S04",
+    "P118.S05"
+   ],
+   "tags": [
+    "typewriter",
+    "documents"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F05_windibank_visit.trig",
+   "graph": "default",
+   "id": "F05_windibank_visit",
+   "note": "KeenSighted from narrator (P111); letter_W acknowledged by Windibank (P112-P113); office machine shared (P117, admitted)",
+   "role": "fact",
+   "segments": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P116.S05",
+    "P117.S01",
+    "P118.S06"
+   ],
+   "tags": [
+    "typewriter",
+    "identity",
+    "windibank"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F06_comm_acts.trig",
+   "graph": "default",
+   "id": "F06_comm_acts",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P031.S10",
+    "P041.S03",
+    "P067.S01",
+    "P067.S02"
+   ],
+   "tags": [
+    "communication",
+    "deception"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F07_comm_acts_visit.trig",
+   "graph": "default",
+   "id": "F07_comm_acts_visit",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P115.S01",
+    "P115.S02",
+    "P117.S01"
+   ],
+   "tags": [
+    "communication",
+    "deception",
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F08_holmes_acts.trig",
+   "graph": "default",
+   "id": "F08_holmes_acts",
+   "note": "no communicative act addressed to Mary after P080 exists in the text",
+   "role": "fact",
+   "segments": [
+    "P124.S02",
+    "P126.S01",
+    "P128.S12",
+    "P134.S01",
+    "P136.S01",
+    "P138.S01"
+   ],
+   "tags": [
+    "communication",
+    "ending"
+   ]
+  },
+  {
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F09_crminf.trig",
+   "graph": "default",
+   "id": "F09_crminf",
+   "note": "st:analyst = extradiegetic annotator introducing an alternative hypothesis for testing (not in the text)",
+   "role": "crminf",
+   "segments": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "tags": [
+    "crminf",
+    "governing"
+   ]
+  },
+  {
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "doxastic",
+   "file": "prototype/modules/worlds/W01_mary_D1.trig",
+   "graph": "w:mary_D1",
+   "id": "W01_mary_D1",
+   "note": "Mary's beliefs at D1; no later Mary scene in the text; no sameAs, no differentFrom",
+   "role": "world",
+   "segments": [
+    "P031.S10",
+    "P039.S01",
+    "P041.S02",
+    "P041.S03",
+    "P051.S06",
+    "P053.S07",
+    "P055.S01",
+    "P059.S02",
+    "P061.S02",
+    "P061.S03",
+    "P079.S02",
+    "P079.S03"
+   ],
+   "tags": [
+    "mary",
+    "belief",
+    "identity"
+   ]
+  },
+  {
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "dec_type": "epistemic",
+   "file": "prototype/modules/worlds/W02_holmes_reconstruction.trig",
+   "graph": "w:holmes_reconstruction",
+   "id": "W02_holmes_reconstruction",
+   "note": "explanation accepted by the narrative, corroborated by P127 (partial admission) and P136 (firm letter, typed reply)",
+   "role": "world",
+   "segments": [
+    "P126.S11",
+    "P127.S01",
+    "P128.S07",
+    "P128.S11",
+    "P134.S02",
+    "P134.S04",
+    "P136.S05",
+    "P136.S06"
+   ],
+   "tags": [
+    "holmes",
+    "identity",
+    "reconstruction"
+   ]
+  },
+  {
+   "basis": "hypothesized",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/W03_holmes_mother.trig",
+   "graph": "w:holmes_mother",
+   "id": "W03_holmes_mother",
+   "note": "Holmes's claim ('connivance and assistance'), indirectly supported by Windibank's 'We' (P127.S02); not confirmed by the mother",
+   "role": "world",
+   "segments": [
+    "P126.S11",
+    "P127.S02",
+    "P053.S03",
+    "P053.S04",
+    "P128.S03"
+   ],
+   "tags": [
+    "mother",
+    "holmes"
+   ]
+  },
+  {
+   "basis": "hypothesized",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/W04_holmes_motive.trig",
+   "graph": "w:holmes_motive",
+   "id": "W04_holmes_motive",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P126.S01",
+    "P126.S02",
+    "P126.S05",
+    "P029.S03"
+   ],
+   "tags": [
+    "motive",
+    "holmes"
+   ]
+  },
+  {
+   "basis": "hypothesized",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/W05_watson_hyp.trig",
+   "graph": "w:watson_hyp",
+   "id": "W05_watson_hyp",
+   "note": "rejected by Holmes ('that was not the point') but not logically incompatible",
+   "role": "world",
+   "segments": [
+    "P099.S01",
+    "P100.S01"
+   ],
+   "tags": [
+    "watson",
+    "typewriter",
+    "hypothesis"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "dec_type": "doxastic",
+   "file": "prototype/modules/worlds/W06_windibank_beliefs.trig",
+   "graph": "w:windibank_beliefs",
+   "id": "W06_windibank_beliefs",
+   "note": "beliefs attributed to Windibank as the agent of the reconstruction (self-knowledge assumption)",
+   "role": "world",
+   "segments": [
+    "P126.S11",
+    "P127.S01",
+    "P128.S10"
+   ],
+   "tags": [
+    "windibank",
+    "belief",
+    "deception"
+   ]
+  },
+  {
+   "basis": "predicted",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "dec_type": "doxastic",
+   "file": "prototype/modules/worlds/W07_holmes_prediction.trig",
+   "graph": "w:holmes_prediction",
+   "id": "W07_holmes_prediction",
+   "note": "conditional prediction; hypothetical individuals; DEC has no conditional operator",
+   "role": "world",
+   "segments": [
+    "P138.S01"
+   ],
+   "tags": [
+    "ending",
+    "holmes"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/W08_v_hosmer_cashier.trig",
+   "graph": "w:v_hosmer_cashier",
+   "id": "W08_v_hosmer_cashier",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P041.S03"
+   ],
+   "tags": [
+    "communication",
+    "deception"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/W09_v_mary_france.trig",
+   "graph": "w:v_mary_france",
+   "id": "W09_v_mary_france",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P031.S10"
+   ],
+   "tags": [
+    "communication",
+    "mary"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/W10_v_windibank_reassure.trig",
+   "graph": "w:v_windibank_reassure",
+   "id": "W10_v_windibank_reassure",
+   "note": "Mary's hedged report: 'he seemed to think, with me, that something had happened'",
+   "role": "world",
+   "segments": [
+    "P067.S01"
+   ],
+   "tags": [
+    "communication",
+    "deception"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/W11_v_windibank_delighted.trig",
+   "graph": "w:v_windibank_delighted",
+   "id": "W11_v_windibank_delighted",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P115.S02"
+   ],
+   "tags": [
+    "communication",
+    "deception"
+   ]
+  },
+  {
+   "basis": "admitted",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/W12_v_windibank_machine.trig",
+   "graph": "w:v_windibank_machine",
+   "id": "W12_v_windibank_machine",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P117.S01"
+   ],
+   "tags": [
+    "communication",
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "hypothesized",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/W13_holmes_same_machine.trig",
+   "graph": "w:holmes_same_machine",
+   "id": "W13_holmes_same_machine",
+   "note": "Holmes's individuality principle ('no two of them write exactly alike', unless new) as an explicit premise",
+   "role": "world",
+   "segments": [
+    "P116.S01",
+    "P116.S02",
+    "P118.S06"
+   ],
+   "tags": [
+    "typewriter",
+    "holmes"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/W14_h_author_other.trig",
+   "graph": "w:h_author_other",
+   "id": "W14_h_author_other",
+   "note": "ANALYST alternative (not in the text): another user of the shared office machine (P117) typed the letters",
+   "role": "world",
+   "segments": [],
+   "tags": [
+    "typewriter",
+    "hypothesis"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/dec/sD01_typing.trig",
+   "graph": "default",
+   "id": "sD01_typing",
+   "note": "",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/dec/sD02_check.trig",
+   "graph": "default",
+   "id": "sD02_check",
+   "note": "",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec",
+    "conflict"
+   ]
+  },
+  {
+   "basis": "dec",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/dec/sD03_closed_writtenBy.trig",
+   "graph": "default",
+   "id": "sD03_closed_writtenBy",
+   "note": "ASSUMPTION: a letter has a single author",
+   "role": "dec",
+   "segments": [],
+   "tags": [
+    "dec",
+    "closure"
+   ]
+  },
+  {
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF01_persons.trig",
+   "graph": "default",
+   "id": "sF01_persons",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "tags": [
+    "persons"
+   ]
+  },
+  {
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF02_courtship.trig",
+   "graph": "default",
+   "id": "sF02_courtship",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P031.S10",
+    "P035.S02",
+    "P039.S01",
+    "P041.S02",
+    "P051.S06",
+    "P057.S04"
+   ],
+   "tags": [
+    "courtship"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF03_comm.trig",
+   "graph": "default",
+   "id": "sF03_comm",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "tags": [
+    "communication"
+   ]
+  },
+  {
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "doxastic",
+   "file": "prototype/modules/worlds/sW01_mary.trig",
+   "graph": "w:w01",
+   "id": "sW01_mary",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P031.S10",
+    "P039.S01",
+    "P041.S03",
+    "P051.S06",
+    "P059.S02",
+    "P061.S02",
+    "P079.S03"
+   ],
+   "tags": [
+    "mary"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/sW03_v_cashier.trig",
+   "graph": "w:w03",
+   "id": "sW03_v_cashier",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P041.S03"
+   ],
+   "tags": [
+    "communication"
+   ]
+  },
+  {
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/sW04_v_reassure.trig",
+   "graph": "w:w04",
+   "id": "sW04_v_reassure",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P067.S01"
+   ],
+   "tags": [
+    "communication"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF04_solver.trig",
+   "graph": "default",
+   "id": "sF04_solver",
+   "note": "",
+   "role": "fact",
+   "segments": [],
+   "tags": [
+    "hypothesis"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/sW20_h_identity.trig",
+   "graph": "w:w20",
+   "id": "sW20_h_identity",
+   "note": "solver hypothesis H1: the man known as Hosmer Angel is the stepfather",
+   "role": "world",
+   "segments": [],
+   "tags": [
+    "hypothesis",
+    "identity"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/sW21_h_external.trig",
+   "graph": "w:w21",
+   "id": "sW21_h_external",
+   "note": "solver hypothesis H2: something happened to him (Mary's view as a hypothesis)",
+   "role": "world",
+   "segments": [],
+   "tags": [
+    "hypothesis"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF05_documents.trig",
+   "graph": "default",
+   "id": "sF05_documents",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P095.S01",
+    "P096.S01",
+    "P099.S01"
+   ],
+   "tags": [
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "hypothesized",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/sW05_watson.trig",
+   "graph": "w:w05",
+   "id": "sW05_watson",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P099.S01"
+   ],
+   "tags": [
+    "watson"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF06_visit.trig",
+   "graph": "default",
+   "id": "sF06_visit",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "tags": [
+    "typewriter",
+    "visit"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/sW06_v_delighted.trig",
+   "graph": "w:w06",
+   "id": "sW06_v_delighted",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P115.S02"
+   ],
+   "tags": [
+    "communication"
+   ]
+  },
+  {
+   "basis": "hypothesized",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/sW22_h_same_machine.trig",
+   "graph": "w:w22",
+   "id": "sW22_h_same_machine",
+   "note": "",
+   "role": "world",
+   "segments": [
+    "P116.S01",
+    "P116.S02"
+   ],
+   "tags": [
+    "typewriter",
+    "hypothesis"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF08_solver_authorship.trig",
+   "graph": "default",
+   "id": "sF08_solver_authorship",
+   "note": "",
+   "role": "fact",
+   "segments": [],
+   "tags": [
+    "hypothesis",
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/sW23_h_author_pB.trig",
+   "graph": "w:w23",
+   "id": "sW23_h_author_pB",
+   "note": "solver hypothesis: the stepfather typed the letters",
+   "role": "world",
+   "segments": [
+    "P117.S01",
+    "P118.S04"
+   ],
+   "tags": [
+    "hypothesis",
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "dec_type": "conjectural",
+   "file": "prototype/modules/worlds/sW24_h_author_other.trig",
+   "graph": "w:w24",
+   "id": "sW24_h_author_other",
+   "note": "ANALYST alternative (not in the text): another user of the shared office machine",
+   "role": "world",
+   "segments": [
+    "P117.S01"
+   ],
+   "tags": [
+    "hypothesis",
+    "typewriter"
+   ]
+  },
+  {
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF07_reconstruction.trig",
+   "graph": "default",
+   "id": "sF07_reconstruction",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P126.S11",
+    "P127.S01",
+    "P128.S07"
+   ],
+   "tags": [
+    "reconstruction"
+   ]
+  },
+  {
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "dec_type": "epistemic",
+   "file": "prototype/modules/worlds/sW10_holmes.trig",
+   "graph": "w:w10",
+   "id": "sW10_holmes",
+   "note": "C4 settlement emulated by authoring: the reconstruction is typed epistemic (DEC has no settle operation)",
+   "role": "world",
+   "segments": [
+    "P126.S11",
+    "P127.S01",
+    "P128.S07",
+    "P128.S11"
+   ],
+   "tags": [
+    "reconstruction",
+    "identity"
+   ]
+  },
+  {
+   "basis": "schema",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "shared",
+   "file": "prototype/modules/schema/S01_crm_fragment.trig",
+   "graph": "w:shared",
+   "id": "sS01_crm_fragment",
+   "note": "generated from official RDFS (extract_onto_module.py)",
+   "role": "schema",
+   "segments": [],
+   "tags": [
+    "schema"
+   ]
+  },
+  {
+   "basis": "schema",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "shared",
+   "file": "prototype/modules/schema/S02_profile.trig",
+   "graph": "w:shared",
+   "id": "sS02_profile",
+   "note": "prototype/profile/dtv_profile.ttl",
+   "role": "schema",
+   "segments": [],
+   "tags": [
+    "schema"
+   ]
+  },
+  {
+   "basis": "schema",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "dec_type": "shared",
+   "file": "prototype/modules/schema/S03_axioms.trig",
+   "graph": "w:shared",
+   "id": "sS03_axioms",
+   "note": "analytic disjointness axioms; declared assumptions, not textual facts",
+   "role": "schema",
+   "segments": [],
+   "tags": [
+    "schema",
+    "axiom"
+   ]
+  }
+ ],
+ "namespaces": {
+  "annotation": "http://example.org/dectective/edition/annotation",
+  "asserted": "http://example.org/dectective/asserted/",
+  "dec": "http://w3id.org/conjectures/",
+  "ed": "http://example.org/dectective/edition#",
+  "kgrc": "http://kgc.knowledge-graph.jp/data/ACaseOfIdentity",
+  "prof": "http://example.org/dectective/profile#",
+  "runs": "http://example.org/dectective/edition/runs",
+  "snapshot": "http://example.org/dectective/snapshot/",
+  "snapshotAsserted": "http://example.org/dectective/snapshot-asserted/",
+  "st": "http://example.org/dectective/story/",
+  "text": "http://example.org/dectective/edition/text",
+  "w": "http://example.org/dectective/world/"
+ },
+ "propositions": {
+  "prop_00996bd587c0": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_00996bd587c0",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/world/v_hosmer_cashier>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_hosmer_cashier>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_017c4884d23a": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_017c4884d23a",
+   "module": "F09_crminf",
+   "o": "<http://www.cidoc-crm.org/extensions/crminf/I2_Belief>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/belief_mary_D1>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_01a2be05dad4": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_01a2be05dad4",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/profile#Typewriter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/m2>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05",
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_030ebb27a091": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_030ebb27a091",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://example.org/dectective/profile#heldBy>",
+   "s": "<http://example.org/dectective/story/belief_holmes_identity>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_04608ca75e96": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_04608ca75e96",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/world/v_windibank_delighted>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_05b29dae37b0": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_05b29dae37b0",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/profile#Journey>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/j1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_095b9658932a": {
+   "anchorLevel": "proposition",
+   "basis": "hypothesized",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_095b9658932a",
+   "module": "W05_watson_hyp",
+   "o": "<http://example.org/dectective/story/purpose_deny_signature>",
+   "p": "<http://example.org/dectective/profile#purpose>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P099.S01"
+   ],
+   "world": "watson_hyp"
+  },
+  "prop_09ebaab04563": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_09ebaab04563",
+   "module": "sF07_reconstruction",
+   "o": "<http://example.org/dectective/world/w10>",
+   "p": "<http://example.org/dectective/profile#establishes>",
+   "s": "<http://example.org/dectective/story/pH>",
+   "sentences": [
+    "P128.S12",
+    "P134.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_0b84ac539823": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_0b84ac539823",
+   "module": "F01_persons",
+   "o": "\"Hosmer Angel\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/app_hosmer_angel>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_0cb75e51f147": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_0cb75e51f147",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/letter_H2>",
+   "sentences": [
+    "P134.S04",
+    "P136.S05"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_0d84d044bcc0": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_0d84d044bcc0",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/d2>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_0fec0724a167": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_0fec0724a167",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/world/w06>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_1118a4be1a88": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_1118a4be1a88",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/story/m1>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/d1>",
+   "sentences": [
+    "P118.S05",
+    "P118.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_113b6f157e74": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_113b6f157e74",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_windibank_machine>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_11679adb9824": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_11679adb9824",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P134.S04",
+    "P136.S05"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_11aa07bf6eda": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_11aa07bf6eda",
+   "module": "F01_persons",
+   "o": "<http://example.org/dectective/story/app_mary_sutherland>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P014.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_13565f02aa86": {
+   "anchorLevel": "proposition",
+   "basis": "predicted",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_13565f02aa86",
+   "module": "W07_holmes_prediction",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/hyp_telling>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "holmes_prediction"
+  },
+  "prop_1375fa38e303": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_1375fa38e303",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/letter_H4>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_174bbd6b433d": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_174bbd6b433d",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/pH>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/a3>",
+   "sentences": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_177274a0591c": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_177274a0591c",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/mother>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_187cc6e2f048": {
+   "anchorLevel": "module",
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_187cc6e2f048",
+   "module": "sF04_solver",
+   "o": "<http://example.org/dectective/world/w21>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/solver>",
+   "sentences": [],
+   "world": "reality"
+  },
+  "prop_190f9f6d78bd": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_190f9f6d78bd",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://example.org/dectective/profile#engagedTo>",
+   "s": "<http://example.org/dectective/story/pA>",
+   "sentences": [
+    "P041.S02"
+   ],
+   "world": "w01"
+  },
+  "prop_1a9374b288f8": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_1a9374b288f8",
+   "module": "F09_crminf",
+   "o": "\"TRUE\"",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be>",
+   "s": "<http://example.org/dectective/story/belief_mary_D1>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_1c67ab4e381f": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_1c67ab4e381f",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/world/v_mary_france>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_mary_france>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_1c842b3cdcb6": {
+   "anchorLevel": "module",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_1c842b3cdcb6",
+   "module": "sW24_h_author_other",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/q1>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "w24"
+  },
+  "prop_1d0afe9a9a58": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_1d0afe9a9a58",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/x1>",
+   "p": "<http://example.org/dectective/profile#wore>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P051.S06",
+    "P093.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_1d336a09e210": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_1d336a09e210",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/story/pA>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/a2>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_1e74b57f3b57": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_1e74b57f3b57",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_mary_france>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_1f30d703ae1e": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_1f30d703ae1e",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/story/profile_eR14>",
+   "p": "<http://example.org/dectective/profile#hasDefectProfile>",
+   "s": "<http://example.org/dectective/story/office_machine>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05",
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_1f41871f4699": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_1f41871f4699",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://example.org/dectective/profile#purportsToBeFrom>",
+   "s": "<http://example.org/dectective/story/d2>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_1f476d810378": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_1f476d810378",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/profile#PretendedJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P128.S02",
+    "P128.S07"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_208b686075fc": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_208b686075fc",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/d9>",
+   "sentences": [
+    "P112.S01",
+    "P113.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_20ef2b1ab005": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_20ef2b1ab005",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/profile#Occupation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/o1>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_2244bf8cd0ca": {
+   "anchorLevel": "proposition",
+   "basis": "predicted",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_2244bf8cd0ca",
+   "module": "W07_holmes_prediction",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/hyp_telling>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "holmes_prediction"
+  },
+  "prop_22757b9d859e": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_22757b9d859e",
+   "module": "W10_v_windibank_reassure",
+   "o": "<http://example.org/dectective/profile#InvoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P059.S02",
+    "P061.S02",
+    "P061.S03",
+    "P067.S01"
+   ],
+   "world": "v_windibank_reassure"
+  },
+  "prop_227f5f052983": {
+   "anchorLevel": "proposition",
+   "basis": "hypothesized",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_227f5f052983",
+   "module": "W13_holmes_same_machine",
+   "o": "<http://www.w3.org/2002/07/owl#InverseFunctionalProperty>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/profile#hasDefectProfile>",
+   "sentences": [
+    "P116.S01",
+    "P116.S02"
+   ],
+   "world": "holmes_same_machine"
+  },
+  "prop_22a46096de12": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_22a46096de12",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/story/m1>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/d2>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_24c279f82770": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_24c279f82770",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/profile#Journey>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/j2>",
+   "sentences": [
+    "P039.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_2632ab313d0a": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_2632ab313d0a",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_holmes_explanation>",
+   "sentences": [
+    "P134.S01",
+    "P136.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_2678ea4f0c44": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_2678ea4f0c44",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pD>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_267b4ecf15d7": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_267b4ecf15d7",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/world/v_hosmer_cashier>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_27525a51bc24": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_27525a51bc24",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/holmes_reconstruction>",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J4_that>",
+   "s": "<http://example.org/dectective/story/belief_holmes_identity>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_297a672283bb": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_297a672283bb",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/windibank_beliefs>",
+   "p": "<http://example.org/dectective/profile#believes>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P127.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_2a412968ddf7": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_2a412968ddf7",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/profile#Typewriter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/office_machine>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05",
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_2a6a67d63084": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_2a6a67d63084",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#traveller>",
+   "s": "<http://example.org/dectective/story/journey_france_2>",
+   "sentences": [
+    "P039.S01"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_2ab2bdc98904": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_2ab2bdc98904",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#purportsToBeFrom>",
+   "s": "<http://example.org/dectective/story/letter_H3>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_2b89e66bdf5f": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_2b89e66bdf5f",
+   "module": "sW20_h_identity",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://www.w3.org/2002/07/owl#sameAs>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P126.S11",
+    "P134.S02"
+   ],
+   "world": "w20"
+  },
+  "prop_2bbd76c57bc7": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_2bbd76c57bc7",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/profile#Journey>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_2d3d1b245695": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_2d3d1b245695",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/inference_holmes>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_2fa9a98761e1": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_2fa9a98761e1",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/profile#ActualJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/j1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "w01"
+  },
+  "prop_2ff72b9aa5ad": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_2ff72b9aa5ad",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/app_hosmer_angel>",
+   "p": "<http://example.org/dectective/profile#usedAppellation>",
+   "s": "<http://example.org/dectective/story/impersonation>",
+   "sentences": [
+    "P126.S11"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_307497e50492": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_307497e50492",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/mary_D1>",
+   "p": "<http://example.org/dectective/profile#believes>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P079.S02",
+    "P061.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_316ec1abf140": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_316ec1abf140",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/holmes_reconstruction>",
+   "p": "<http://example.org/dectective/profile#establishes>",
+   "s": "<http://example.org/dectective/story/holmes>",
+   "sentences": [
+    "P128.S12",
+    "P134.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_31ff43afdccd": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_31ff43afdccd",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/a2>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_32369b2c3bd9": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_32369b2c3bd9",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/profile_eR14>",
+   "p": "<http://example.org/dectective/profile#showsDefectProfile>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P118.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_3272b0be8186": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_3272b0be8186",
+   "module": "sF01_persons",
+   "o": "\"Windibank\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/nB>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_32de717befd5": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_32de717befd5",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/profile#ActualJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/j2>",
+   "sentences": [
+    "P039.S01",
+    "P053.S07",
+    "P055.S01"
+   ],
+   "world": "w01"
+  },
+  "prop_335777ad867a": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_335777ad867a",
+   "module": "sW03_v_cashier",
+   "o": "<http://example.org/dectective/story/o2>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P041.S04"
+   ],
+   "world": "w03"
+  },
+  "prop_34b31e6bb7d1": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_34b31e6bb7d1",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#purportsToBeFrom>",
+   "s": "<http://example.org/dectective/story/letter_H4>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_3597e7ca7038": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_3597e7ca7038",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/m2>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/d9>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_365ef36e7d55": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_365ef36e7d55",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/world/v_mary_france>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_37d99bd82ae0": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_37d99bd82ae0",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/e1>",
+   "p": "<http://example.org/dectective/profile#attended>",
+   "s": "<http://example.org/dectective/story/pA>",
+   "sentences": [
+    "P031.S02",
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_3b4e838753b9": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_3b4e838753b9",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/world/v_windibank_delighted>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_windibank_delighted>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_3c765c362498": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_3c765c362498",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/app_mary_sutherland>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_3dfd03f56442": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_3dfd03f56442",
+   "module": "W06_windibank_beliefs",
+   "o": "<http://example.org/dectective/story/occ_wine_traveller>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "windibank_beliefs"
+  },
+  "prop_3eaaaa5a6310": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_3eaaaa5a6310",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_windibank_reassure>",
+   "sentences": [
+    "P067.S01",
+    "P067.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_3eea49618bb3": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_3eea49618bb3",
+   "module": "F02_occupation",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E74_Group>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/westhouse_marbank>",
+   "sentences": [
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_400914c7351b": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_400914c7351b",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/impersonation>",
+   "sentences": [
+    "P126.S11"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_42dfcd8e8855": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_42dfcd8e8855",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/story/watson>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_holmes_prediction>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_44c00e6d00bf": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_44c00e6d00bf",
+   "module": "F03_courtship",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E5_Event>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ball>",
+   "sentences": [
+    "P031.S10",
+    "P035.S02",
+    "P039.S01",
+    "P041.S02",
+    "P051.S06",
+    "P057.S03",
+    "P057.S04"
+   ],
+   "world": "reality"
+  },
+  "prop_45766de6a451": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_45766de6a451",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/nB>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_466b9784cbb8": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_466b9784cbb8",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/world/v_windibank_machine>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_windibank_machine>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_47b1bbf99520": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_47b1bbf99520",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E5_Event>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/reaction_start>",
+   "sentences": [
+    "P115.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_483acf774446": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_483acf774446",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_hosmer_cashier>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_4a748ee97f0c": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_4a748ee97f0c",
+   "module": "F01_persons",
+   "o": "<http://example.org/dectective/story/app_windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P020.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_4db4d20bc641": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_4db4d20bc641",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/a1>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_4dc1295b30f5": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_4dc1295b30f5",
+   "module": "sW21_h_external",
+   "o": "<http://example.org/dectective/profile#InvoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/e2>",
+   "sentences": [
+    "P059.S02",
+    "P061.S02",
+    "P061.S03",
+    "P067.S01"
+   ],
+   "world": "w21"
+  },
+  "prop_4e009e905aed": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_4e009e905aed",
+   "module": "W14_h_author_other",
+   "o": "<http://example.org/dectective/story/westhouse_marbank>",
+   "p": "<http://example.org/dectective/profile#employedBy>",
+   "s": "<http://example.org/dectective/story/other_clerk>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "h_author_other"
+  },
+  "prop_4e2015e04ae2": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_4e2015e04ae2",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/letter_H1>",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from>",
+   "s": "<http://example.org/dectective/story/adoption_mary>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_4ed3e75e76ca": {
+   "anchorLevel": "proposition",
+   "basis": "predicted",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_4ed3e75e76ca",
+   "module": "W07_holmes_prediction",
+   "o": "<http://example.org/dectective/story/hyp_telling>",
+   "p": "<http://example.org/dectective/profile#rejects>",
+   "s": "<http://example.org/dectective/story/hyp_reaction>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "holmes_prediction"
+  },
+  "prop_50366a506845": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_50366a506845",
+   "module": "F01_persons",
+   "o": "\"Windibank\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/app_windibank>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_512e024e8410": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_512e024e8410",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_windibank_reassure>",
+   "sentences": [
+    "P067.S01",
+    "P067.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_52a5a2c39410": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_52a5a2c39410",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/g2>",
+   "p": "<http://example.org/dectective/profile#usedBy>",
+   "s": "<http://example.org/dectective/story/m2>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_5347b9450bef": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_5347b9450bef",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/holmes_prediction>",
+   "p": "<http://example.org/dectective/profile#believes>",
+   "s": "<http://example.org/dectective/story/holmes>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_542dfd933d30": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_542dfd933d30",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/story/pA>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/a1>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_56fd7ef188d7": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_56fd7ef188d7",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_57ba5653c4aa": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_57ba5653c4aa",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/a3>",
+   "sentences": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_5952f406ad83": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_5952f406ad83",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/world/holmes_prediction>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_holmes_prediction>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_5b7ddd69ad75": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_5b7ddd69ad75",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_5c34b7b2b981": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_5c34b7b2b981",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/watson>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_5d3ebc9311dc": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_5d3ebc9311dc",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/profile#Disappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/e2>",
+   "sentences": [
+    "P057.S04",
+    "P057.S05",
+    "P057.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_5deeee282cb2": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_5deeee282cb2",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#engagedTo>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P041.S02"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_5e549d950b26": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_5e549d950b26",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://example.org/dectective/profile#traveller>",
+   "s": "<http://example.org/dectective/story/j2>",
+   "sentences": [
+    "P039.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_60736134d3c6": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_60736134d3c6",
+   "module": "sW10_holmes",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://www.w3.org/2002/07/owl#sameAs>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P126.S11",
+    "P134.S02"
+   ],
+   "world": "w10"
+  },
+  "prop_60c82b6e5a85": {
+   "anchorLevel": "proposition",
+   "basis": "hypothesized",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_60c82b6e5a85",
+   "module": "sW22_h_same_machine",
+   "o": "<http://www.w3.org/2002/07/owl#InverseFunctionalProperty>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/profile#hasDefectProfile>",
+   "sentences": [
+    "P116.S01",
+    "P116.S02"
+   ],
+   "world": "w22"
+  },
+  "prop_614637ba1f75": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_614637ba1f75",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/profile#ActualJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_6153a0b32250": {
+   "anchorLevel": "proposition",
+   "basis": "hypothesized",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_6153a0b32250",
+   "module": "W03_holmes_mother",
+   "o": "<http://example.org/dectective/story/impersonation>",
+   "p": "<http://example.org/dectective/profile#assisted>",
+   "s": "<http://example.org/dectective/story/mother>",
+   "sentences": [
+    "P126.S11",
+    "P127.S02"
+   ],
+   "world": "holmes_mother"
+  },
+  "prop_637f479a1674": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_637f479a1674",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#reportedBy>",
+   "s": "<http://example.org/dectective/story/ca_hosmer_cashier>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_6440e369c436": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_6440e369c436",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#purportsToBeFrom>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P094.S02",
+    "P096.S01",
+    "P118.S04"
+   ],
+   "world": "reality"
+  },
+  "prop_648e6d8b44ba": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_648e6d8b44ba",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/story/o2>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P041.S04"
+   ],
+   "world": "w01"
+  },
+  "prop_64d234b7c2ec": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_64d234b7c2ec",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_65f3a82da9b2": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_65f3a82da9b2",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/story/occ_cashier_leadenhall>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P041.S04"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_67084d69ce85": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_67084d69ce85",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/profile#KeenSighted>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P111.S01",
+    "P126.S11"
+   ],
+   "world": "reality"
+  },
+  "prop_6805d057a65f": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_6805d057a65f",
+   "module": "sW10_holmes",
+   "o": "<http://example.org/dectective/profile#VoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/e2>",
+   "sentences": [
+    "P128.S10",
+    "P128.S11"
+   ],
+   "world": "w10"
+  },
+  "prop_688469bf97de": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_688469bf97de",
+   "module": "sW23_h_author_pB",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/d1>",
+   "sentences": [
+    "P134.S04",
+    "P136.S05"
+   ],
+   "world": "w23"
+  },
+  "prop_6cd955c45d25": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_6cd955c45d25",
+   "module": "F09_crminf",
+   "o": "<http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/adoption_mary>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_6d2bbb247160": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_6d2bbb247160",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#heldBy>",
+   "s": "<http://example.org/dectective/story/belief_mary_D1>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_6d6e08062032": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_6d6e08062032",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pW>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_6e8b0a50615a": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_6e8b0a50615a",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/ball>",
+   "p": "<http://example.org/dectective/profile#attended>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P031.S02",
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_6f8c6d9904ab": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_6f8c6d9904ab",
+   "module": "sW04_v_reassure",
+   "o": "<http://example.org/dectective/profile#ExpectedToReturn>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P079.S03",
+    "P067.S01"
+   ],
+   "world": "w04"
+  },
+  "prop_70f824ec1cbd": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_70f824ec1cbd",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/d9>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_714dee385de5": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_714dee385de5",
+   "module": "W06_windibank_beliefs",
+   "o": "<http://example.org/dectective/profile#PretendedJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P128.S02",
+    "P128.S07"
+   ],
+   "world": "windibank_beliefs"
+  },
+  "prop_71757d9224b2": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_71757d9224b2",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/letter_W>",
+   "sentences": [
+    "P112.S01",
+    "P113.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_717d077ac0ea": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_717d077ac0ea",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/holmes_mother>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/holmes>",
+   "sentences": [
+    "P126.S11"
+   ],
+   "world": "reality"
+  },
+  "prop_734699c6d8e0": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_734699c6d8e0",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/story/pA>",
+   "p": "<http://example.org/dectective/profile#reportedBy>",
+   "s": "<http://example.org/dectective/story/a2>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_748198510fd1": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_748198510fd1",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/machine_H>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/letter_H3>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_759f2e7a3416": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_759f2e7a3416",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/watson_hyp>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/watson>",
+   "sentences": [
+    "P099.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_78c496f85abf": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_78c496f85abf",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_mary_france>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_79883b2c5777": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_79883b2c5777",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/letter_H3>",
+   "sentences": [
+    "P134.S04",
+    "P136.S05"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_7ab69adea7ab": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_7ab69adea7ab",
+   "module": "sF01_persons",
+   "o": "\"Hosmer Angel\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/nC>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_7b4f8bf3ad99": {
+   "anchorLevel": "module",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_7b4f8bf3ad99",
+   "module": "sF08_solver_authorship",
+   "o": "<http://example.org/dectective/world/w23>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/solver>",
+   "sentences": [],
+   "world": "reality"
+  },
+  "prop_7c1572dd36aa": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_7c1572dd36aa",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/f1>",
+   "p": "<http://example.org/dectective/profile#hasDefectProfile>",
+   "s": "<http://example.org/dectective/story/m1>",
+   "sentences": [
+    "P118.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_7c5bd6cb0b5c": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_7c5bd6cb0b5c",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#purportsToBeFrom>",
+   "s": "<http://example.org/dectective/story/letter_H2>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_7d95808e61ae": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_7d95808e61ae",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/profile#ExpectedToReturn>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P079.S03",
+    "P067.S01"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_7e7698e6df7b": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_7e7698e6df7b",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_mary_france>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_7f42d2371c13": {
+   "anchorLevel": "module",
+   "basis": "analyst",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_7f42d2371c13",
+   "module": "sF04_solver",
+   "o": "<http://example.org/dectective/world/w20>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/solver>",
+   "sentences": [],
+   "world": "reality"
+  },
+  "prop_80392e39115a": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_80392e39115a",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/e1>",
+   "p": "<http://example.org/dectective/profile#attended>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P031.S02",
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_81765fa5d601": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_81765fa5d601",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/profile#InvoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/e2>",
+   "sentences": [
+    "P059.S02",
+    "P061.S02",
+    "P061.S03",
+    "P067.S01"
+   ],
+   "world": "w01"
+  },
+  "prop_818efe451607": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_818efe451607",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/profile#Journey>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_2>",
+   "sentences": [
+    "P039.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_81953b6b3e4f": {
+   "anchorLevel": "proposition",
+   "basis": "hypothesized",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_81953b6b3e4f",
+   "module": "sW05_watson",
+   "o": "<http://example.org/dectective/story/u1>",
+   "p": "<http://example.org/dectective/profile#purpose>",
+   "s": "<http://example.org/dectective/story/d1>",
+   "sentences": [
+    "P099.S01"
+   ],
+   "world": "w05"
+  },
+  "prop_8368e9b9b58d": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_8368e9b9b58d",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/d1>",
+   "sentences": [
+    "P094.S02",
+    "P096.S01",
+    "P118.S04"
+   ],
+   "world": "reality"
+  },
+  "prop_83792ff692c5": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_83792ff692c5",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/holmes_same_machine>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/holmes>",
+   "sentences": [
+    "P116.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_83ad92003264": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_83ad92003264",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/a3>",
+   "sentences": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_85721dae8f5a": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_85721dae8f5a",
+   "module": "W10_v_windibank_reassure",
+   "o": "<http://example.org/dectective/profile#ExpectedToReturn>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P079.S03",
+    "P067.S01"
+   ],
+   "world": "v_windibank_reassure"
+  },
+  "prop_862036928c6a": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_862036928c6a",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_holmes_prediction>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_8a374abbb805": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_8a374abbb805",
+   "module": "W14_h_author_other",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/other_clerk>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "h_author_other"
+  },
+  "prop_8b29284866be": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_8b29284866be",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/world/w06>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/a3>",
+   "sentences": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_8ba8fd7d202a": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_8ba8fd7d202a",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/profile#Disappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P057.S04",
+    "P057.S05",
+    "P057.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_8c48541f6f35": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_8c48541f6f35",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/story/pA>",
+   "p": "<http://example.org/dectective/profile#reportedBy>",
+   "s": "<http://example.org/dectective/story/a1>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_8c83800cd9c6": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_8c83800cd9c6",
+   "module": "sF01_persons",
+   "o": "\"Mary Sutherland\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/nA>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_8ebe622b294d": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_8ebe622b294d",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_holmes_reconstruction>",
+   "sentences": [
+    "P124.S02",
+    "P126.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_8edd71091407": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_8edd71091407",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/profile#PretendedJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_2>",
+   "sentences": [
+    "P128.S07"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_8f53f66116b2": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_8f53f66116b2",
+   "module": "F01_persons",
+   "o": "\"Mary Sutherland\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/app_mary_sutherland>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_90ffac7dd3b0": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_90ffac7dd3b0",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/profile#Typewriter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/machine_H>",
+   "sentences": [
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_9294962ed9df": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_9294962ed9df",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/o1>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_932ac83a40b0": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_932ac83a40b0",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_holmes_explanation>",
+   "sentences": [
+    "P134.S01",
+    "P136.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_944885f51226": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_944885f51226",
+   "module": "sW04_v_reassure",
+   "o": "<http://example.org/dectective/profile#InvoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/e2>",
+   "sentences": [
+    "P059.S02",
+    "P061.S02",
+    "P061.S03",
+    "P067.S01"
+   ],
+   "world": "w04"
+  },
+  "prop_96b76d1c06de": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_96b76d1c06de",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_windibank_reassure>",
+   "sentences": [
+    "P067.S01",
+    "P067.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_987ed494ba42": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_987ed494ba42",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/world/w22>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/solver>",
+   "sentences": [
+    "P111.S01",
+    "P112.S01",
+    "P113.S01",
+    "P116.S04",
+    "P117.S01",
+    "P118.S06",
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_98a525b969d0": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_98a525b969d0",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/machine_H>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/letter_H2>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_9b791d6f9ee5": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_9b791d6f9ee5",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://example.org/dectective/profile#disappearedPerson>",
+   "s": "<http://example.org/dectective/story/e2>",
+   "sentences": [
+    "P057.S04",
+    "P057.S05",
+    "P057.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_9cb71c128a96": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_9cb71c128a96",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pA>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_9cd95707afdd": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_9cd95707afdd",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/letter_H4>",
+   "sentences": [
+    "P134.S04",
+    "P136.S05"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_9ea5f8ae1396": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_9ea5f8ae1396",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/profile#Typewriter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/m1>",
+   "sentences": [
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_9f40bccf3b99": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_9f40bccf3b99",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/a1>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_a05ec183f3e7": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_a05ec183f3e7",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/machine_H>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/letter_H4>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_a0a27315f5bf": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_a0a27315f5bf",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/h_author_other>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/analyst>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_a0cc2c34e842": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_a0cc2c34e842",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/story/profile_eR14>",
+   "p": "<http://example.org/dectective/profile#showsDefectProfile>",
+   "s": "<http://example.org/dectective/story/letter_W>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_a190e15e0bd1": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_a190e15e0bd1",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#engagedTo>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P041.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_a2046474b6bf": {
+   "anchorLevel": "proposition",
+   "basis": "admitted",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_a2046474b6bf",
+   "module": "W12_v_windibank_machine",
+   "o": "<http://example.org/dectective/story/office_machine>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/letter_W>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "v_windibank_machine"
+  },
+  "prop_a4fe8966c8a8": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_a4fe8966c8a8",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/story/machine_H>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P118.S05",
+    "P118.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_a61c47b31369": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_a61c47b31369",
+   "module": "F09_crminf",
+   "o": "<http://www.cidoc-crm.org/extensions/crminf/I2_Belief>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/belief_holmes_identity>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_a8a1695d91b4": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_a8a1695d91b4",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#reportedBy>",
+   "s": "<http://example.org/dectective/story/ca_windibank_reassure>",
+   "sentences": [
+    "P067.S01",
+    "P067.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_a8cc2b30b547": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_a8cc2b30b547",
+   "module": "F09_crminf",
+   "o": "<http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/inference_holmes>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ab1582eab37c": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_ab1582eab37c",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/holmes>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_ab8004010487": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_ab8004010487",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#traveller>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_abea09f9bb2c": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_abea09f9bb2c",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/logic_convergent_abduction>",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J3_applied>",
+   "s": "<http://example.org/dectective/story/inference_holmes>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ac156354a01c": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_ac156354a01c",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/f1>",
+   "p": "<http://example.org/dectective/profile#hasDefectProfile>",
+   "s": "<http://example.org/dectective/story/m2>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05",
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_aee04315c16c": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_aee04315c16c",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/world/w05>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/pW>",
+   "sentences": [
+    "P095.S01",
+    "P096.S01",
+    "P099.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_afdd2f0d5eba": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_afdd2f0d5eba",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#disappearedPerson>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P057.S04",
+    "P057.S05",
+    "P057.S06"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_b22b7d7bf824": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_b22b7d7bf824",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#traveller>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_b32337417883": {
+   "anchorLevel": "proposition",
+   "basis": "admitted",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_b32337417883",
+   "module": "W12_v_windibank_machine",
+   "o": "<http://example.org/dectective/story/westhouse_staff>",
+   "p": "<http://example.org/dectective/profile#usedBy>",
+   "s": "<http://example.org/dectective/story/office_machine>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "v_windibank_machine"
+  },
+  "prop_b3e7c4d896d4": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_b3e7c4d896d4",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/world/v_windibank_reassure>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_windibank_reassure>",
+   "sentences": [
+    "P067.S01",
+    "P067.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_b411cbb28614": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_b411cbb28614",
+   "module": "F02_occupation",
+   "o": "<http://example.org/dectective/story/occ_wine_traveller>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_b4a40ffa8352": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_b4a40ffa8352",
+   "module": "sW10_holmes",
+   "o": "<http://example.org/dectective/profile#PretendedJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/j1>",
+   "sentences": [
+    "P128.S02",
+    "P128.S07"
+   ],
+   "world": "w10"
+  },
+  "prop_b5c1449b0a23": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_b5c1449b0a23",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://example.org/dectective/profile#engagedTo>",
+   "s": "<http://example.org/dectective/story/pA>",
+   "sentences": [
+    "P041.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_b5c4ee38981d": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_b5c4ee38981d",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/app_windibank>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_b6114e002935": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_b6114e002935",
+   "module": "sW23_h_author_pB",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/d2>",
+   "sentences": [
+    "P134.S04",
+    "P136.S05"
+   ],
+   "world": "w23"
+  },
+  "prop_b6a02d2c1245": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_b6a02d2c1245",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/pA>",
+   "p": "<http://example.org/dectective/profile#stepfatherOf>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P021.S01",
+    "P022.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_b7494640064e": {
+   "anchorLevel": "proposition",
+   "basis": "hypothesized",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_b7494640064e",
+   "module": "W04_holmes_motive",
+   "o": "<http://example.org/dectective/story/motive_keep_income>",
+   "p": "<http://example.org/dectective/profile#motive>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P126.S01",
+    "P126.S02",
+    "P126.S05"
+   ],
+   "world": "holmes_motive"
+  },
+  "prop_b879ab4ce70a": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_b879ab4ce70a",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_hosmer_cashier>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_b8d4f5c8c7cc": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_b8d4f5c8c7cc",
+   "module": "sF02_courtship",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E5_Event>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/e1>",
+   "sentences": [
+    "P031.S10",
+    "P035.S02",
+    "P039.S01",
+    "P041.S02",
+    "P051.S06",
+    "P057.S04"
+   ],
+   "world": "reality"
+  },
+  "prop_b935de6d562c": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_b935de6d562c",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/letter_H3>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_b985db2ce484": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_b985db2ce484",
+   "module": "W14_h_author_other",
+   "o": "<http://example.org/dectective/story/other_clerk>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "h_author_other"
+  },
+  "prop_b9e724d7d0c3": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_b9e724d7d0c3",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/profile#VoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P128.S10",
+    "P128.S11"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_bb33a75a0773": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_bb33a75a0773",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/g1>",
+   "p": "<http://example.org/dectective/profile#employedBy>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P077.S01",
+    "P136.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_bc09663ad2ba": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_bc09663ad2ba",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/pD>",
+   "p": "<http://example.org/dectective/profile#spouseOf>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_bda3c39e7ca1": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_bda3c39e7ca1",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_windibank_machine>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_bdee3efd2005": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_bdee3efd2005",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/profile#WeakSighted>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P051.S06"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_be5c798f4748": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_be5c798f4748",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.w3.org/2002/07/owl#sameAs>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P126.S11",
+    "P134.S02"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_bee710ec2995": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_bee710ec2995",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/nC>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_bf1137d001ad": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_bf1137d001ad",
+   "module": "sW10_holmes",
+   "o": "<http://example.org/dectective/profile#PretendedJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/j2>",
+   "sentences": [
+    "P128.S07"
+   ],
+   "world": "w10"
+  },
+  "prop_c00403728436": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_c00403728436",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/world/v_windibank_reassure>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_c00cb5963173": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_c00cb5963173",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/nC>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P018.S03",
+    "P093.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_c01f47bd2132": {
+   "anchorLevel": "module",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_c01f47bd2132",
+   "module": "sF08_solver_authorship",
+   "o": "<http://example.org/dectective/world/w24>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/analyst>",
+   "sentences": [],
+   "world": "reality"
+  },
+  "prop_c05e457a1f42": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_c05e457a1f42",
+   "module": "W11_v_windibank_delighted",
+   "o": "<http://example.org/dectective/story/wish_hosmer_found>",
+   "p": "<http://example.org/dectective/profile#motive>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "v_windibank_delighted"
+  },
+  "prop_c12a9b4d35ac": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_c12a9b4d35ac",
+   "module": "W08_v_hosmer_cashier",
+   "o": "<http://example.org/dectective/story/occ_cashier_leadenhall>",
+   "p": "<http://example.org/dectective/profile#hasOccupation>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P041.S04"
+   ],
+   "world": "v_hosmer_cashier"
+  },
+  "prop_c241c8b5e348": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_c241c8b5e348",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/nA>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_c3f07e46144a": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_c3f07e46144a",
+   "module": "F02_occupation",
+   "o": "<http://example.org/dectective/profile#Occupation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/occ_wine_traveller>",
+   "sentences": [
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_c56617953233": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_c56617953233",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/profile#KeenSighted>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P111.S01",
+    "P126.S11"
+   ],
+   "world": "reality"
+  },
+  "prop_c667345d6e6b": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_c667345d6e6b",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://example.org/dectective/profile#disappearedPerson>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P057.S04",
+    "P057.S05",
+    "P057.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_c85f46aad725": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_c85f46aad725",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_windibank_delighted>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_c9bbc53fa8ba": {
+   "anchorLevel": "module",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_c9bbc53fa8ba",
+   "module": "sW24_h_author_other",
+   "o": "<http://example.org/dectective/story/g1>",
+   "p": "<http://example.org/dectective/profile#employedBy>",
+   "s": "<http://example.org/dectective/story/q1>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "w24"
+  },
+  "prop_caf05b6a9088": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_caf05b6a9088",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/world/w03>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/a1>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_caf1f5c36175": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_caf1f5c36175",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/world/w03>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_cb52590aa8ec": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_cb52590aa8ec",
+   "module": "F09_crminf",
+   "o": "\"convergent circumstantial evidence (abductive), P134.S05\"",
+   "p": "<http://www.w3.org/2000/01/rdf-schema#label>",
+   "s": "<http://example.org/dectective/story/logic_convergent_abduction>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_cbc4696061eb": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_cbc4696061eb",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/letter_H1>",
+   "sentences": [
+    "P094.S02",
+    "P096.S01",
+    "P118.S04"
+   ],
+   "world": "reality"
+  },
+  "prop_cc41060ca39e": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_cc41060ca39e",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/belief_holmes_identity>",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that>",
+   "s": "<http://example.org/dectective/story/inference_holmes>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_cd5b31a7359f": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_cd5b31a7359f",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/a2>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_cd9eb0699f52": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_cd9eb0699f52",
+   "module": "W06_windibank_beliefs",
+   "o": "<http://example.org/dectective/profile#VoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P128.S10",
+    "P128.S11"
+   ],
+   "world": "windibank_beliefs"
+  },
+  "prop_cf46ef059e31": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_cf46ef059e31",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/world/w01>",
+   "p": "<http://example.org/dectective/profile#believes>",
+   "s": "<http://example.org/dectective/story/pA>",
+   "sentences": [
+    "P079.S02",
+    "P061.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_d1a695dbe397": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_d1a695dbe397",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/profile#InvoluntaryDisappearance>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/disappearance>",
+   "sentences": [
+    "P059.S02",
+    "P061.S02",
+    "P061.S03",
+    "P067.S01"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_d1ab4d2c45f5": {
+   "anchorLevel": "proposition",
+   "basis": "predicted",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_d1ab4d2c45f5",
+   "module": "W07_holmes_prediction",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/hyp_telling>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "holmes_prediction"
+  },
+  "prop_d1b34939810a": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_d1b34939810a",
+   "module": "W06_windibank_beliefs",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://www.w3.org/2002/07/owl#sameAs>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P126.S11",
+    "P127.S01"
+   ],
+   "world": "windibank_beliefs"
+  },
+  "prop_d3370552282b": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_d3370552282b",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/story/office_machine>",
+   "p": "<http://example.org/dectective/profile#typedOn>",
+   "s": "<http://example.org/dectective/story/letter_W>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_d355222adde4": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_d355222adde4",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/adoption_mary>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_d784af2760c4": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_d784af2760c4",
+   "module": "sW06_v_delighted",
+   "o": "<http://example.org/dectective/story/u2>",
+   "p": "<http://example.org/dectective/profile#motive>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "w06"
+  },
+  "prop_d7e69b137621": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_d7e69b137621",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/ball>",
+   "p": "<http://example.org/dectective/profile#attended>",
+   "s": "<http://example.org/dectective/story/mary>",
+   "sentences": [
+    "P031.S02",
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_d8e5177ffeb6": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_d8e5177ffeb6",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_windibank_machine>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_d9b88df96209": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "gold",
+   "id": "prop_d9b88df96209",
+   "module": "F04_documents",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/letter_H2>",
+   "sentences": [
+    "P118.S04",
+    "P118.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_da3b5fb4010d": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_da3b5fb4010d",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/tinted_glasses>",
+   "p": "<http://example.org/dectective/profile#wore>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P051.S06",
+    "P093.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_da8e88179463": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_da8e88179463",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_windibank_delighted>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_db1db1213578": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_db1db1213578",
+   "module": "F02_occupation",
+   "o": "<http://example.org/dectective/story/westhouse_marbank>",
+   "p": "<http://example.org/dectective/profile#employedBy>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P077.S01",
+    "P136.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_db2c79ad22ea": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C2",
+   "dataset": "sim",
+   "id": "prop_db2c79ad22ea",
+   "module": "sF05_documents",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://example.org/dectective/profile#purportsToBeFrom>",
+   "s": "<http://example.org/dectective/story/d1>",
+   "sentences": [
+    "P094.S02",
+    "P096.S01",
+    "P118.S04"
+   ],
+   "world": "reality"
+  },
+  "prop_dbd66a002c61": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_dbd66a002c61",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/world/v_windibank_machine>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_dbed7f4a0991": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_dbed7f4a0991",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_holmes_reconstruction>",
+   "sentences": [
+    "P124.S02",
+    "P126.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_dd9fc0cb2932": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_dd9fc0cb2932",
+   "module": "W01_mary_D1",
+   "o": "<http://example.org/dectective/profile#ActualJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_2>",
+   "sentences": [
+    "P039.S01",
+    "P053.S07",
+    "P055.S01"
+   ],
+   "world": "mary_D1"
+  },
+  "prop_dea01b5be07a": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_dea01b5be07a",
+   "module": "F09_crminf",
+   "o": "\"TRUE\"",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be>",
+   "s": "<http://example.org/dectective/story/belief_holmes_identity>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_dff366b9f4a2": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_dff366b9f4a2",
+   "module": "F01_persons",
+   "o": "<http://example.org/dectective/story/mother>",
+   "p": "<http://example.org/dectective/profile#spouseOf>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_e0c6236a067b": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_e0c6236a067b",
+   "module": "F03_courtship",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://example.org/dectective/profile#traveller>",
+   "s": "<http://example.org/dectective/story/journey_france_2>",
+   "sentences": [
+    "P039.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_e147662f5091": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_e147662f5091",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/profile#ExpectedToReturn>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P079.S03",
+    "P067.S01"
+   ],
+   "world": "w01"
+  },
+  "prop_e3aae4ea077e": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_e3aae4ea077e",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_holmes_reconstruction>",
+   "sentences": [
+    "P124.S02",
+    "P126.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_e55a0a4dacf2": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_e55a0a4dacf2",
+   "module": "sF02_courtship",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://example.org/dectective/profile#traveller>",
+   "s": "<http://example.org/dectective/story/j1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "reality"
+  },
+  "prop_e77a05f8e692": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_e77a05f8e692",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/nA>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>",
+   "s": "<http://example.org/dectective/story/pA>",
+   "sentences": [
+    "P014.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_e8f6af52a5bf": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_e8f6af52a5bf",
+   "module": "W02_holmes_reconstruction",
+   "o": "<http://example.org/dectective/profile#Impersonation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/impersonation>",
+   "sentences": [
+    "P126.S11"
+   ],
+   "world": "holmes_reconstruction"
+  },
+  "prop_e9d4fec1418b": {
+   "anchorLevel": "proposition",
+   "basis": "analyst",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_e9d4fec1418b",
+   "module": "sW24_h_author_other",
+   "o": "<http://example.org/dectective/story/q1>",
+   "p": "<http://example.org/dectective/profile#writtenBy>",
+   "s": "<http://example.org/dectective/story/d1>",
+   "sentences": [
+    "P094.S02",
+    "P096.S01",
+    "P118.S04"
+   ],
+   "world": "w24"
+  },
+  "prop_ea27fe847496": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_ea27fe847496",
+   "module": "F06_comm_acts",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_hosmer_cashier>",
+   "sentences": [
+    "P041.S03"
+   ],
+   "world": "reality"
+  },
+  "prop_ea4f1f6f73de": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_ea4f1f6f73de",
+   "module": "F09_crminf",
+   "o": "<http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/logic_convergent_abduction>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ea89facdcb46": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_ea89facdcb46",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_eb07efaa4f99": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_eb07efaa4f99",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ec16eb78909c": {
+   "anchorLevel": "proposition",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_ec16eb78909c",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/holmes_motive>",
+   "p": "<http://example.org/dectective/profile#conjectures>",
+   "s": "<http://example.org/dectective/story/holmes>",
+   "sentences": [
+    "P126.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ec3316821566": {
+   "anchorLevel": "proposition",
+   "basis": "believed",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_ec3316821566",
+   "module": "sW01_mary",
+   "o": "<http://example.org/dectective/profile#WeakSighted>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pC>",
+   "sentences": [
+    "P051.S06"
+   ],
+   "world": "w01"
+  },
+  "prop_ec7e648bf51b": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_ec7e648bf51b",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E21_Person>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/pH>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ecfcca3a6dab": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_ecfcca3a6dab",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/story/profile_eR14>",
+   "p": "<http://example.org/dectective/profile#hasDefectProfile>",
+   "s": "<http://example.org/dectective/story/machine_H>",
+   "sentences": [
+    "P118.S06"
+   ],
+   "world": "reality"
+  },
+  "prop_ed3baf9ed5cd": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_ed3baf9ed5cd",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_holmes_prediction>",
+   "sentences": [
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ee8feaa8d805": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_ee8feaa8d805",
+   "module": "F01_persons",
+   "o": "<http://example.org/dectective/story/mary>",
+   "p": "<http://example.org/dectective/profile#stepfatherOf>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P021.S01",
+    "P022.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ef3d4ff67a0e": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_ef3d4ff67a0e",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P11_had_participant>",
+   "s": "<http://example.org/dectective/story/reaction_start>",
+   "sentences": [
+    "P115.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_f00ac9ff785b": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_f00ac9ff785b",
+   "module": "F08_holmes_acts",
+   "o": "<http://example.org/dectective/story/watson>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_holmes_explanation>",
+   "sentences": [
+    "P134.S01",
+    "P136.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_f0ef2cfc7543": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_f0ef2cfc7543",
+   "module": "sF01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E74_Group>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/g1>",
+   "sentences": [
+    "P014.S01",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02",
+    "P024.S03",
+    "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_f10cac553f9d": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_f10cac553f9d",
+   "module": "F07_comm_acts_visit",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_windibank_delighted>",
+   "sentences": [
+    "P115.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_f1f5319fb6fd": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_f1f5319fb6fd",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/world/mary_D1>",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J4_that>",
+   "s": "<http://example.org/dectective/story/belief_mary_D1>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_f3755ad989df": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_f3755ad989df",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/world/w04>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/a2>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_f4303dcfb75f": {
+   "anchorLevel": "proposition",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_f4303dcfb75f",
+   "module": "W09_v_mary_france",
+   "o": "<http://example.org/dectective/profile#ActualJourney>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/journey_france_1>",
+   "sentences": [
+    "P031.S10"
+   ],
+   "world": "v_mary_france"
+  },
+  "prop_f5409c2c18ae": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "sim",
+   "id": "prop_f5409c2c18ae",
+   "module": "sF06_visit",
+   "o": "<http://example.org/dectective/story/f1>",
+   "p": "<http://example.org/dectective/profile#showsDefectProfile>",
+   "s": "<http://example.org/dectective/story/d9>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05"
+   ],
+   "world": "reality"
+  },
+  "prop_f61514f83ec3": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_f61514f83ec3",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/story/westhouse_staff>",
+   "p": "<http://example.org/dectective/profile#usedBy>",
+   "s": "<http://example.org/dectective/story/office_machine>",
+   "sentences": [
+    "P117.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_f7491de08e21": {
+   "anchorLevel": "module",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_f7491de08e21",
+   "module": "F01_persons",
+   "o": "<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/app_hosmer_angel>",
+   "sentences": [
+    "P014.S01",
+    "P018.S03",
+    "P020.S02",
+    "P021.S01",
+    "P022.S01",
+    "P024.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_f8a8f7b44eb0": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "gold",
+   "id": "prop_f8a8f7b44eb0",
+   "module": "F01_persons",
+   "o": "<http://example.org/dectective/story/app_hosmer_angel>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>",
+   "s": "<http://example.org/dectective/story/hosmer>",
+   "sentences": [
+    "P018.S03",
+    "P093.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_fd6e4c352d92": {
+   "anchorLevel": "proposition",
+   "basis": "reported-accepted",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_fd6e4c352d92",
+   "module": "sF01_persons",
+   "o": "<http://example.org/dectective/story/nB>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P020.S02"
+   ],
+   "world": "reality"
+  },
+  "prop_fde0f7e26730": {
+   "anchorLevel": "module",
+   "basis": "reconstructed",
+   "checkpoint": "G",
+   "dataset": "gold",
+   "id": "prop_fde0f7e26730",
+   "module": "F09_crminf",
+   "o": "<http://example.org/dectective/story/belief_mary_D1>",
+   "p": "<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that>",
+   "s": "<http://example.org/dectective/story/adoption_mary>",
+   "sentences": [
+    "P018.S03",
+    "P073.S01",
+    "P099.S01",
+    "P126.S11",
+    "P128.S10",
+    "P134.S05",
+    "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ff2a1b550781": {
+   "anchorLevel": "module",
+   "basis": "reported",
+   "checkpoint": "C1",
+   "dataset": "sim",
+   "id": "prop_ff2a1b550781",
+   "module": "sF03_comm",
+   "o": "<http://example.org/dectective/world/w04>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P041.S03",
+    "P067.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ff909bfaaba9": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C3",
+   "dataset": "gold",
+   "id": "prop_ff909bfaaba9",
+   "module": "F05_windibank_visit",
+   "o": "<http://example.org/dectective/profile#TypewrittenLetter>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/letter_W>",
+   "sentences": [
+    "P116.S04",
+    "P116.S05"
+   ],
+   "world": "reality"
+  }
+ },
+ "simToGold": {
+  "d1": "letter_H1",
+  "d2": "letter_H2",
+  "d9": "letter_W",
+  "e1": "ball",
+  "e2": "disappearance",
+  "f1": "profile_eR14",
+  "g1": "westhouse_marbank",
+  "g2": "westhouse_staff",
+  "j1": "journey_france_1",
+  "j2": "journey_france_2",
+  "m1": "machine_H",
+  "m2": "office_machine",
+  "nA": "app_mary_sutherland",
+  "nB": "app_windibank",
+  "nC": "app_hosmer_angel",
+  "o1": "occ_wine_traveller",
+  "o2": "occ_cashier_leadenhall",
+  "pA": "mary",
+  "pB": "windibank",
+  "pC": "hosmer",
+  "pD": "mother",
+  "pH": "holmes",
+  "pW": "watson",
+  "u1": "purpose_deny_signature",
+  "u2": "wish_hosmer_found",
+  "x1": "tinted_glasses"
+ },
+ "worlds": {
+  "gold": {
+   "h_author_other": {
+    "basis": [
+     "analyst"
+    ],
+    "checkpoint": "C3",
+    "decType": "conjectural",
+    "desc": "Not in the story. The editors added it to test what the typewriter evidence alone can prove.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/analyst",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/h_author_other",
+    "local": "h_author_other",
+    "materializedBy": [
+     "complement-gold"
+    ],
+    "modules": [
+     "W14_h_author_other"
+    ],
+    "notes": [
+     "ANALYST alternative (not in the text): another user of the shared office machine (P117) typed the letters"
+    ],
+    "segments": [],
+    "title": "What-if: another clerk typed the letters"
+   },
+   "holmes_mother": {
+    "basis": [
+     "hypothesized"
+    ],
+    "checkpoint": "C4",
+    "decType": "conjectural",
+    "desc": "Holmes's claim that the mother was in on it, supported only by Windibank's “we”.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/holmes",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/holmes_mother",
+    "local": "holmes_mother",
+    "materializedBy": [
+     "complement-gold"
+    ],
+    "modules": [
+     "W03_holmes_mother"
+    ],
+    "notes": [
+     "Holmes's claim ('connivance and assistance'), indirectly supported by Windibank's 'We' (P127.S02); not confirmed by the mother"
+    ],
+    "segments": [
+     "P053.S03",
+     "P053.S04",
+     "P126.S11",
+     "P127.S02",
+     "P128.S03"
+    ],
+    "title": "Holmes: the mother helped"
+   },
+   "holmes_motive": {
+    "basis": [
+     "hypothesized"
+    ],
+    "checkpoint": "C4",
+    "decType": "conjectural",
+    "desc": "Holmes's explanation of why: keeping the daughter's income.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/holmes",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/holmes_motive",
+    "local": "holmes_motive",
+    "materializedBy": [
+     "complement-gold"
+    ],
+    "modules": [
+     "W04_holmes_motive"
+    ],
+    "notes": [],
+    "segments": [
+     "P029.S03",
+     "P126.S01",
+     "P126.S02",
+     "P126.S05"
+    ],
+    "title": "Holmes: the motive"
+   },
+   "holmes_prediction": {
+    "basis": [
+     "predicted"
+    ],
+    "checkpoint": "G",
+    "decType": "doxastic",
+    "desc": "“If I tell her she will not believe me”: what Holmes expects Mary would do.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/holmes",
+      "predicate": "believes"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/holmes_prediction",
+    "local": "holmes_prediction",
+    "materializedBy": [
+     "T06a_belief_worlds_vs_reality",
+     "T06b_mary_delusional_label",
+     "T10a_no_telling_event",
+     "T10b_rejection_only_predicted",
+     "T10c_mary_last_belief"
+    ],
+    "modules": [
+     "W07_holmes_prediction"
+    ],
+    "notes": [
+     "conditional prediction; hypothetical individuals; DEC has no conditional operator"
+    ],
+    "segments": [
+     "P138.S01"
+    ],
+    "title": "Holmes's prediction"
+   },
+   "holmes_reconstruction": {
+    "basis": [
+     "reconstructed"
+    ],
+    "checkpoint": "C4",
+    "decType": "epistemic",
+    "desc": "Holmes's explanation of the case. The story accepts it: Windibank half-admits it and the firm's letter confirms it.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/holmes",
+      "predicate": "establishes"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/holmes_reconstruction",
+    "local": "holmes_reconstruction",
+    "materializedBy": [
+     "T01a_identity_in_reality",
+     "T01b_identity_in_holmes_world",
+     "T01c_identity_consequence",
+     "T02a_mary_identity",
+     "T02b_mary_opacity",
+     "T02c_mary_engaged_de_re_reality",
+     "T03a_weak_sight_not_fact",
+     "T03b_where_engaged_to_windibank",
+     "T04a_acts",
+     "T04b_said_vs_true",
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false",
+     "T06a_belief_worlds_vs_reality",
+     "T06b_mary_delusional_label",
+     "T07c_watson",
+     "complement-gold"
+    ],
+    "modules": [
+     "W02_holmes_reconstruction"
+    ],
+    "notes": [
+     "explanation accepted by the narrative, corroborated by P127 (partial admission) and P136 (firm letter, typed reply)"
+    ],
+    "segments": [
+     "P126.S11",
+     "P127.S01",
+     "P128.S07",
+     "P128.S11",
+     "P134.S02",
+     "P134.S04",
+     "P136.S05",
+     "P136.S06"
+    ],
+    "title": "Holmes's solution"
+   },
+   "holmes_same_machine": {
+    "basis": [
+     "hypothesized"
+    ],
+    "checkpoint": "C3",
+    "decType": "conjectural",
+    "desc": "“No two of them write exactly alike”: the same defects mean the same machine.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/holmes",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/holmes_same_machine",
+    "local": "holmes_same_machine",
+    "materializedBy": [
+     "complement-gold"
+    ],
+    "modules": [
+     "W13_holmes_same_machine"
+    ],
+    "notes": [
+     "Holmes's individuality principle ('no two of them write exactly alike', unless new) as an explicit premise"
+    ],
+    "segments": [
+     "P116.S01",
+     "P116.S02",
+     "P118.S06"
+    ],
+    "title": "Holmes: the same typewriter"
+   },
+   "mary_D1": {
+    "basis": [
+     "believed"
+    ],
+    "checkpoint": "C1",
+    "decType": "doxastic",
+    "desc": "What Mary believes when she visits Baker Street. No later scene shows her again.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/mary",
+      "predicate": "believes"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/mary_D1",
+    "local": "mary_D1",
+    "materializedBy": [
+     "T02a_mary_identity",
+     "T02b_mary_opacity",
+     "T02c_mary_engaged_de_re_reality",
+     "T03a_weak_sight_not_fact",
+     "T03b_where_engaged_to_windibank",
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false",
+     "T06a_belief_worlds_vs_reality",
+     "T06b_mary_delusional_label",
+     "T10a_no_telling_event",
+     "T10b_rejection_only_predicted",
+     "T10c_mary_last_belief"
+    ],
+    "modules": [
+     "W01_mary_D1"
+    ],
+    "notes": [
+     "Mary's beliefs at D1; no later Mary scene in the text; no sameAs, no differentFrom"
+    ],
+    "segments": [
+     "P031.S10",
+     "P039.S01",
+     "P041.S02",
+     "P041.S03",
+     "P051.S06",
+     "P053.S07",
+     "P055.S01",
+     "P059.S02",
+     "P061.S02",
+     "P061.S03",
+     "P079.S02",
+     "P079.S03"
+    ],
+    "title": "Mary's beliefs"
+   },
+   "reality": {
+    "basis": [
+     "observed",
+     "reconstructed",
+     "reported",
+     "reported-accepted"
+    ],
+    "checkpoint": "C1",
+    "decType": "reality",
+    "desc": "What is true in the story: the narrated facts plus Holmes's solution, which the story accepts (DEC reality).",
+    "governedBy": [],
+    "iri": "http://w3id.org/conjectures/reality",
+    "local": "reality",
+    "materializedBy": [
+     "T01a_identity_in_reality",
+     "T01b_identity_in_holmes_world",
+     "T01c_identity_consequence",
+     "T02a_mary_identity",
+     "T02b_mary_opacity",
+     "T02c_mary_engaged_de_re_reality",
+     "T03a_weak_sight_not_fact",
+     "T03b_where_engaged_to_windibank",
+     "T04a_acts",
+     "T04b_said_vs_true",
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false",
+     "T06a_belief_worlds_vs_reality",
+     "T06b_mary_delusional_label",
+     "T07c_watson",
+     "T10a_no_telling_event",
+     "T10b_rejection_only_predicted",
+     "T10c_mary_last_belief",
+     "complement-gold"
+    ],
+    "modules": [
+     "F01_persons",
+     "F02_occupation",
+     "F03_courtship",
+     "F04_documents",
+     "F05_windibank_visit",
+     "F06_comm_acts",
+     "F07_comm_acts_visit",
+     "F08_holmes_acts",
+     "F09_crminf"
+    ],
+    "notes": [
+     "events experienced by Mary, accepted by the narrative; journeys only as announced",
+     "st:machine_H = 'the (unknown) machine the four letters were typed on'; defect profile observed in P118.S06",
+     "KeenSighted from narrator (P111); letter_W acknowledged by Windibank (P112-P113); office machine shared (P117, admitted)",
+     "no communicative act addressed to Mary after P080 exists in the text",
+     "st:analyst = extradiegetic annotator introducing an alternative hypothesis for testing (not in the text)"
+    ],
+    "segments": [
+     "P014.S01",
+     "P018.S03",
+     "P020.S02",
+     "P021.S01",
+     "P022.S01",
+     "P024.S02",
+     "P024.S03",
+     "P031.S10",
+     "P035.S02",
+     "P039.S01",
+     "P041.S02",
+     "P041.S03",
+     "P051.S06",
+     "P057.S03",
+     "P057.S04",
+     "P067.S01",
+     "P067.S02",
+     "P073.S01",
+     "P077.S01",
+     "P094.S02",
+     "P095.S01",
+     "P096.S01",
+     "P096.S02",
+     "P099.S01",
+     "P111.S01",
+     "P112.S01",
+     "P113.S01",
+     "P115.S01",
+     "P115.S02",
+     "P116.S04",
+     "P116.S05",
+     "P117.S01",
+     "P118.S04",
+     "P118.S05",
+     "P118.S06",
+     "P124.S02",
+     "P126.S01",
+     "P126.S11",
+     "P128.S10",
+     "P128.S12",
+     "P134.S01",
+     "P134.S05",
+     "P136.S01",
+     "P138.S01"
+    ],
+    "title": "Reality"
+   },
+   "shared": {
+    "basis": [
+     "schema"
+    ],
+    "checkpoint": "C1",
+    "decType": "shared",
+    "desc": "Vocabulary and rules everyone shares (e.g. a journey cannot be both actual and pretended).",
+    "governedBy": [],
+    "iri": "http://example.org/dectective/world/shared",
+    "local": "shared",
+    "materializedBy": [
+     "T01a_identity_in_reality",
+     "T01b_identity_in_holmes_world",
+     "T01c_identity_consequence",
+     "T02a_mary_identity",
+     "T02b_mary_opacity",
+     "T02c_mary_engaged_de_re_reality",
+     "T03a_weak_sight_not_fact",
+     "T03b_where_engaged_to_windibank",
+     "T04a_acts",
+     "T04b_said_vs_true",
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false",
+     "T06a_belief_worlds_vs_reality",
+     "T06b_mary_delusional_label",
+     "T07c_watson",
+     "T10a_no_telling_event",
+     "T10b_rejection_only_predicted",
+     "T10c_mary_last_belief",
+     "complement-gold"
+    ],
+    "modules": [
+     "S01_crm_fragment",
+     "S02_profile",
+     "S03_axioms"
+    ],
+    "notes": [
+     "generated from official RDFS (extract_onto_module.py)",
+     "prototype/profile/dtv_profile.ttl",
+     "analytic disjointness axioms; declared assumptions, not textual facts"
+    ],
+    "segments": [],
+    "title": "Shared background"
+   },
+   "v_hosmer_cashier": {
+    "basis": [
+     "reported"
+    ],
+    "checkpoint": "C1",
+    "decType": "verbatim",
+    "desc": "How Hosmer described himself, as Mary reports it.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/hosmer",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/v_hosmer_cashier",
+    "local": "v_hosmer_cashier",
+    "materializedBy": [
+     "T04a_acts",
+     "T04b_said_vs_true",
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false"
+    ],
+    "modules": [
+     "W08_v_hosmer_cashier"
+    ],
+    "notes": [],
+    "segments": [
+     "P041.S03"
+    ],
+    "title": "Hosmer: “a cashier in Leadenhall Street”"
+   },
+   "v_mary_france": {
+    "basis": [
+     "reported"
+    ],
+    "checkpoint": "C1",
+    "decType": "verbatim",
+    "desc": "What Mary tells Holmes about her stepfather's journey.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/mary",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/v_mary_france",
+    "local": "v_mary_france",
+    "materializedBy": [
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false"
+    ],
+    "modules": [
+     "W09_v_mary_france"
+    ],
+    "notes": [],
+    "segments": [
+     "P031.S10"
+    ],
+    "title": "Mary: “father went to France”"
+   },
+   "v_windibank_delighted": {
+    "basis": [
+     "observed"
+    ],
+    "checkpoint": "C3",
+    "decType": "verbatim",
+    "desc": "His reply when Holmes says he will find Hosmer Angel.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/windibank",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/v_windibank_delighted",
+    "local": "v_windibank_delighted",
+    "materializedBy": [
+     "complement-gold"
+    ],
+    "modules": [
+     "W11_v_windibank_delighted"
+    ],
+    "notes": [],
+    "segments": [
+     "P115.S02"
+    ],
+    "title": "Windibank: “I am delighted to hear it”"
+   },
+   "v_windibank_machine": {
+    "basis": [
+     "admitted"
+    ],
+    "checkpoint": "C3",
+    "decType": "verbatim",
+    "desc": "What he admits about the office typewriter.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/windibank",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/v_windibank_machine",
+    "local": "v_windibank_machine",
+    "materializedBy": [
+     "complement-gold"
+    ],
+    "modules": [
+     "W12_v_windibank_machine"
+    ],
+    "notes": [],
+    "segments": [
+     "P117.S01"
+    ],
+    "title": "Windibank: “We do all our correspondence with this machine”"
+   },
+   "v_windibank_reassure": {
+    "basis": [
+     "reported"
+    ],
+    "checkpoint": "C1",
+    "decType": "verbatim",
+    "desc": "Reported by Mary: “he seemed to think, with me, that something had happened”.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/windibank",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/v_windibank_reassure",
+    "local": "v_windibank_reassure",
+    "materializedBy": [
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false"
+    ],
+    "modules": [
+     "W10_v_windibank_reassure"
+    ],
+    "notes": [
+     "Mary's hedged report: 'he seemed to think, with me, that something had happened'"
+    ],
+    "segments": [
+     "P067.S01"
+    ],
+    "title": "Windibank: “something happened to him”"
+   },
+   "watson_hyp": {
+    "basis": [
+     "hypothesized"
+    ],
+    "checkpoint": "C2",
+    "decType": "conjectural",
+    "desc": "The signature was typed so that it could be denied in a breach-of-promise case. Holmes rejects it.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/watson",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/watson_hyp",
+    "local": "watson_hyp",
+    "materializedBy": [
+     "T07c_watson"
+    ],
+    "modules": [
+     "W05_watson_hyp"
+    ],
+    "notes": [
+     "rejected by Holmes ('that was not the point') but not logically incompatible"
+    ],
+    "segments": [
+     "P099.S01",
+     "P100.S01"
+    ],
+    "title": "Watson's guess"
+   },
+   "windibank_beliefs": {
+    "basis": [
+     "analyst"
+    ],
+    "checkpoint": "C4",
+    "decType": "doxastic",
+    "desc": "What Windibank knows while playing himself and Hosmer. The story never states them: the editors attribute them from Holmes's solution.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/windibank",
+      "predicate": "believes"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/windibank_beliefs",
+    "local": "windibank_beliefs",
+    "materializedBy": [
+     "T05a_content_vs_speaker_belief",
+     "T05b_sincere_but_false"
+    ],
+    "modules": [
+     "W06_windibank_beliefs"
+    ],
+    "notes": [
+     "beliefs attributed to Windibank as the agent of the reconstruction (self-knowledge assumption)"
+    ],
+    "segments": [
+     "P126.S11",
+     "P127.S01",
+     "P128.S10"
+    ],
+    "title": "Windibank's beliefs"
+   }
+  },
+  "sim": {
+   "reality": {
+    "basis": [
+     "analyst",
+     "observed",
+     "reconstructed",
+     "reported",
+     "reported-accepted"
+    ],
+    "checkpoint": "C1",
+    "decType": "reality",
+    "desc": "What a reader can take as true at this point of the story.",
+    "governedBy": [],
+    "iri": "http://w3id.org/conjectures/reality",
+    "local": "reality",
+    "materializedBy": [
+     "T03c_engaged_only_under_hypothesis",
+     "T07a_C3",
+     "T07b_C4",
+     "T08a_identity_C2",
+     "T08b_identity_C3",
+     "T08c_identity_C4",
+     "T08d_same_machine_C3",
+     "T08e_mary_unchanged_C4",
+     "T09a_typed_on_office_machine",
+     "T09b_same_machine_not_fact",
+     "T09c_authorship_alternatives",
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C1",
+     "leakage-C2",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sF01_persons",
+     "sF02_courtship",
+     "sF03_comm",
+     "sF04_solver",
+     "sF05_documents",
+     "sF06_visit",
+     "sF08_solver_authorship",
+     "sF07_reconstruction"
+    ],
+    "notes": [],
+    "segments": [
+     "P014.S01",
+     "P020.S02",
+     "P021.S01",
+     "P022.S01",
+     "P024.S02",
+     "P024.S03",
+     "P031.S10",
+     "P035.S02",
+     "P039.S01",
+     "P041.S02",
+     "P041.S03",
+     "P051.S06",
+     "P057.S04",
+     "P067.S01",
+     "P077.S01",
+     "P095.S01",
+     "P096.S01",
+     "P099.S01",
+     "P111.S01",
+     "P112.S01",
+     "P113.S01",
+     "P115.S02",
+     "P116.S04",
+     "P117.S01",
+     "P118.S06",
+     "P126.S11",
+     "P127.S01",
+     "P128.S07"
+    ],
+    "title": "Reality (so far)"
+   },
+   "shared": {
+    "basis": [
+     "schema"
+    ],
+    "checkpoint": "C1",
+    "decType": "shared",
+    "desc": "Vocabulary and rules everyone shares.",
+    "governedBy": [],
+    "iri": "http://example.org/dectective/world/shared",
+    "local": "shared",
+    "materializedBy": [
+     "T03c_engaged_only_under_hypothesis",
+     "T07a_C3",
+     "T07b_C4",
+     "T08a_identity_C2",
+     "T08b_identity_C3",
+     "T08c_identity_C4",
+     "T08d_same_machine_C3",
+     "T08e_mary_unchanged_C4",
+     "T09a_typed_on_office_machine",
+     "T09b_same_machine_not_fact",
+     "T09c_authorship_alternatives",
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C1",
+     "leakage-C2",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sS01_crm_fragment",
+     "sS02_profile",
+     "sS03_axioms"
+    ],
+    "notes": [
+     "generated from official RDFS (extract_onto_module.py)",
+     "prototype/profile/dtv_profile.ttl",
+     "analytic disjointness axioms; declared assumptions, not textual facts"
+    ],
+    "segments": [],
+    "title": "Shared background"
+   },
+   "w01": {
+    "basis": [
+     "believed"
+    ],
+    "checkpoint": "C1",
+    "decType": "doxastic",
+    "desc": "Mary's beliefs as she tells them to Holmes.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pA",
+      "predicate": "believes"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w01",
+    "local": "w01",
+    "materializedBy": [
+     "T03c_engaged_only_under_hypothesis",
+     "T08c_identity_C4",
+     "T08e_mary_unchanged_C4",
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C1",
+     "leakage-C2",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW01_mary"
+    ],
+    "notes": [],
+    "segments": [
+     "P031.S10",
+     "P039.S01",
+     "P041.S03",
+     "P051.S06",
+     "P059.S02",
+     "P061.S02",
+     "P079.S03"
+    ],
+    "title": "Mary's beliefs"
+   },
+   "w03": {
+    "basis": [
+     "reported"
+    ],
+    "checkpoint": "C1",
+    "decType": "verbatim",
+    "desc": "Reported by Mary.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pC",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w03",
+    "local": "w03",
+    "materializedBy": [
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4"
+    ],
+    "modules": [
+     "sW03_v_cashier"
+    ],
+    "notes": [],
+    "segments": [
+     "P041.S03"
+    ],
+    "title": "Hosmer: “a cashier”"
+   },
+   "w04": {
+    "basis": [
+     "reported"
+    ],
+    "checkpoint": "C1",
+    "decType": "verbatim",
+    "desc": "Reported by Mary.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pB",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w04",
+    "local": "w04",
+    "materializedBy": [
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4"
+    ],
+    "modules": [
+     "sW04_v_reassure"
+    ],
+    "notes": [],
+    "segments": [
+     "P067.S01"
+    ],
+    "title": "Windibank: “something happened to him”"
+   },
+   "w05": {
+    "basis": [
+     "hypothesized"
+    ],
+    "checkpoint": "C2",
+    "decType": "conjectural",
+    "desc": "The typed signature as a breach-of-promise trick.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pW",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w05",
+    "local": "w05",
+    "materializedBy": [
+     "complement-C2",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C2",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW05_watson"
+    ],
+    "notes": [],
+    "segments": [
+     "P099.S01"
+    ],
+    "title": "Watson's guess"
+   },
+   "w06": {
+    "basis": [
+     "observed"
+    ],
+    "checkpoint": "C3",
+    "decType": "verbatim",
+    "desc": "Said to Holmes.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pB",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w06",
+    "local": "w06",
+    "materializedBy": [
+     "complement-C3",
+     "complement-C4"
+    ],
+    "modules": [
+     "sW06_v_delighted"
+    ],
+    "notes": [],
+    "segments": [
+     "P115.S02"
+    ],
+    "title": "Windibank: “delighted”"
+   },
+   "w10": {
+    "basis": [
+     "reconstructed"
+    ],
+    "checkpoint": "C4",
+    "decType": "epistemic",
+    "desc": "Stated at the unmasking, and accepted from that point on.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pH",
+      "predicate": "establishes"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w10",
+    "local": "w10",
+    "materializedBy": [
+     "T07b_C4",
+     "T08c_identity_C4",
+     "T08e_mary_unchanged_C4",
+     "complement-C4",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW10_holmes"
+    ],
+    "notes": [
+     "C4 settlement emulated by authoring: the reconstruction is typed epistemic (DEC has no settle operation)"
+    ],
+    "segments": [
+     "P126.S11",
+     "P127.S01",
+     "P128.S07",
+     "P128.S11"
+    ],
+    "title": "Holmes's solution"
+   },
+   "w20": {
+    "basis": [
+     "analyst"
+    ],
+    "checkpoint": "C1",
+    "decType": "conjectural",
+    "desc": "A guess of the simulated first-time reader.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/solver",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w20",
+    "local": "w20",
+    "materializedBy": [
+     "T03c_engaged_only_under_hypothesis",
+     "T07a_C3",
+     "T07b_C4",
+     "T08a_identity_C2",
+     "T08b_identity_C3",
+     "T08d_same_machine_C3",
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C1",
+     "leakage-C2",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW20_h_identity"
+    ],
+    "notes": [
+     "solver hypothesis H1: the man known as Hosmer Angel is the stepfather"
+    ],
+    "segments": [],
+    "title": "Reader's guess: Hosmer is the stepfather"
+   },
+   "w21": {
+    "basis": [
+     "analyst"
+    ],
+    "checkpoint": "C1",
+    "decType": "conjectural",
+    "desc": "Mary's view, taken as a guess.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/solver",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w21",
+    "local": "w21",
+    "materializedBy": [
+     "T07a_C3",
+     "T07b_C4",
+     "complement-C1",
+     "complement-C2",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C1",
+     "leakage-C2",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW21_h_external"
+    ],
+    "notes": [
+     "solver hypothesis H2: something happened to him (Mary's view as a hypothesis)"
+    ],
+    "segments": [],
+    "title": "Reader's guess: something happened to him"
+   },
+   "w22": {
+    "basis": [
+     "hypothesized"
+    ],
+    "checkpoint": "C3",
+    "decType": "conjectural",
+    "desc": "The same defects mean the same machine.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/solver",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w22",
+    "local": "w22",
+    "materializedBy": [
+     "T08b_identity_C3",
+     "T08d_same_machine_C3",
+     "T09a_typed_on_office_machine",
+     "T09b_same_machine_not_fact",
+     "T09c_authorship_alternatives",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW22_h_same_machine"
+    ],
+    "notes": [],
+    "segments": [
+     "P116.S01",
+     "P116.S02"
+    ],
+    "title": "Holmes: the same typewriter"
+   },
+   "w23": {
+    "basis": [
+     "analyst"
+    ],
+    "checkpoint": "C3",
+    "decType": "conjectural",
+    "desc": "A guess about who typed them.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/solver",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w23",
+    "local": "w23",
+    "materializedBy": [
+     "T09a_typed_on_office_machine",
+     "T09b_same_machine_not_fact",
+     "T09c_authorship_alternatives",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW23_h_author_pB"
+    ],
+    "notes": [
+     "solver hypothesis: the stepfather typed the letters"
+    ],
+    "segments": [
+     "P117.S01",
+     "P118.S04"
+    ],
+    "title": "Reader's guess: the stepfather typed the letters"
+   },
+   "w24": {
+    "basis": [
+     "analyst"
+    ],
+    "checkpoint": "C3",
+    "decType": "conjectural",
+    "desc": "Not in the story: a test alternative.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/analyst",
+      "predicate": "conjectures"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w24",
+    "local": "w24",
+    "materializedBy": [
+     "T09a_typed_on_office_machine",
+     "T09b_same_machine_not_fact",
+     "T09c_authorship_alternatives",
+     "complement-C3",
+     "complement-C4",
+     "leakage-C3",
+     "leakage-C4"
+    ],
+    "modules": [
+     "sW24_h_author_other"
+    ],
+    "notes": [
+     "ANALYST alternative (not in the text): another user of the shared office machine"
+    ],
+    "segments": [
+     "P117.S01"
+    ],
+    "title": "What-if: another clerk typed them"
+   }
+  }
+ }
+}

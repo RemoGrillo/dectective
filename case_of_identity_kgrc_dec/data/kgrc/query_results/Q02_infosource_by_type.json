@@ -1,0 +1,87 @@
+[
+ {
+  "type": "kgc:Situation",
+  "src": "d:Sutherland",
+  "n": "1"
+ },
+ {
+  "type": "kgc:Situation",
+  "src": "d:Hosmer_s_statement",
+  "n": "1"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:Holmes",
+  "n": "164"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:Sutherland",
+  "n": "153"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:Watson",
+  "n": "34"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:Windibank",
+  "n": "25"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:Hosmer_s_statement",
+  "n": "8"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:Service_Boy",
+  "n": "2"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:The_speaker_s_statement",
+  "n": "1"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:mother_of_Sutherland&#39_s_remark",
+  "n": "1"
+ },
+ {
+  "type": "kgc:Statement",
+  "src": "d:someone_of_Company",
+  "n": "1"
+ },
+ {
+  "type": "kgc:Thought",
+  "src": "d:Holmes",
+  "n": "7"
+ },
+ {
+  "type": "kgc:Thought",
+  "src": "d:Watson",
+  "n": "6"
+ },
+ {
+  "type": "kgc:Thought",
+  "src": "d:Sutherland_s_thoughts",
+  "n": "4"
+ },
+ {
+  "type": "kgc:Thought",
+  "src": "d:Hosmer_s_thoughts",
+  "n": "2"
+ },
+ {
+  "type": "kgc:Thought",
+  "src": "d:Father_of_Sutherland",
+  "n": "1"
+ },
+ {
+  "type": "kgc:Thought",
+  "src": "d:Windibank_s_Thoughts",
+  "n": "1"
+ }
+]

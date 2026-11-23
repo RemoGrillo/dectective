@@ -1,0 +1,126 @@
+{ 
+  "data" : "./prototype/fixtures/T04_who_said_what/slices/T04b_said_vs_true.trig" ,
+  "query" : "./prototype/fixtures/T04_who_said_what/T04b_said_vs_true.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 210.218125 ,
+  "input_quads" : 147 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 498.895196 ,
+        "cpu_ms" : 467.205442 ,
+        "gc_count" : 3 ,
+        "gc_ms" : 20 ,
+        "heap_delta_mb" : 19.43316650390625 ,
+        "phases" : {
+            "load_ms" : 36.933475 ,
+            "handlePermeation_ms" : 447.471484 ,
+            "enumerate_ms" : 3.572352
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.506865 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.791297 ,
+            "http://example.org/dectective/world/v_hosmer_cashier#enumerate" : 0.128384 ,
+            "http://example.org/dectective/world/holmes_reconstruction#enumerate" : 0.695296
+          } ,
+        "query_first_ms" : 49.896686 ,
+        "query_second_ms" : 3.116331
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named/epistemic" ,
+              "asserted" : 11 ,
+              "base_after" : 271 ,
+              "permeated_in" : 894 ,
+              "permeated_in_nontrivial" : 3 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 976 ,
+              "inferred_trivial" : 62 ,
+              "inferred_nontrivial" : 9 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 6 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named/shared" ,
+              "asserted" : 37 ,
+              "base_after" : 37 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 894 ,
+              "inferred_trivial" : 857 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/dectective/world/v_hosmer_cashier" : {
+              "type" : "named/verbatim" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 95 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1213 ,
+              "inferred_trivial" : 1059 ,
+              "inferred_nontrivial" : 54 ,
+              "inferred_taxonomic" : 10 ,
+              "inferred_substantive" : 44 ,
+              "dec_diagnostic" : 5
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 144 ,
+      "materialised_total" : 3084 ,
+      "permeated_total" : 894 ,
+      "inferred_total" : 2041 ,
+      "inferred_trivial_total" : 1978 ,
+      "inferred_nontrivial_total" : 63 ,
+      "inferred_taxonomic_total" : 13 ,
+      "inferred_substantive_total" : 50 ,
+      "dec_diagnostic_total" : 5 ,
+      "distinct_triples_all_worlds" : 1214 ,
+      "redundancy" : 2.540362438220758 ,
+      "inconsistency_pairs" : 3 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/dectective/profile#establishes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate" ,
+          "http://example.org/dectective/profile#uttered http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimPredicate" ,
+          "http://example.org/dectective/world/holmes_reconstruction http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicWorld" ,
+          "http://example.org/dectective/world/shared http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/dectective/world/v_hosmer_cashier http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimWorld"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=false^^http://www.w3.org/2001/XMLSchema#boolean" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 49.896686 ,
+      "query_second_ms" : 3.116331 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "aacdf96b80265cb3efdd5a61042abff1eed78a27eb7b25cd73b8219bce9bd1bc"
+}

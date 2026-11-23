@@ -1,0 +1,103 @@
+1	body	not too delicate for communication. And yet even
+1	body	here we may discriminate. When a woman has been
+1	body	seriously wronged by a man she no longer oscillates,
+1	body	and the usual symptom is a broken bell wire. Here
+1	body	we may take it that there is a love matter, but that the
+1	body	maiden is not so much angry as perplexed, or grieved.
+1	body	But here she comes in person to resolve our doubts.”
+1	body	As he spoke there was a tap at the door, and the
+1	body	boy in buttons entered to announce Miss Mary Suther-
+1	body	land, while the lady herself loomed behind his small
+1	body	black ﬁgure like a full-sailed merchant-man behind
+1	body	a tiny pilot boat. Sherlock Holmes welcomed her
+1	body	with the easy courtesy for which he was remarkable,
+1	body	and, having closed the door and bowed her into an
+1	body	armchair, he looked her over in the minute and yet
+1	body	abstracted fashion which was peculiar to him.
+1	body	“Do you not ﬁnd,” he said, “that with your short
+1	body	sight it is a little trying to do so much typewriting?”
+1	body	“I did at ﬁrst,” she answered, “but now I know
+1	body	where the letters are without looking.” Then, sud-
+1	body	denly realising the full purport of his words, she gave
+1	body	a violent start and looked up, with fear and astonish-
+1	body	ment upon her broad, good-humoured face. “You’ve
+1	body	heard about me, Mr. Holmes,” she cried, “else how
+1	body	could you know all that?”
+1	body	“Never mind,” said Holmes, laughing; “it is my
+1	body	business to know things. Perhaps I have trained my-
+1	body	self to see what others overlook. If not, why should
+1	body	you come to consult me?”
+1	body	“I came to you, sir, because I heard of you from
+1	body	Mrs. Etherege, whose husband you found so easy
+1	body	when the police and everyone had given him up for
+1	body	dead. Oh, Mr. Holmes, I wish you would do as much
+1	body	for me. I’m not rich, but still I have a hundred a year
+1	body	in my own right, besides the little that I make by the
+1	body	machine, and I would give it all to know what has
+1	body	become of Mr. Hosmer Angel.”
+1	body	“Why did you come away to consult me in such a
+1	body	hurry?” asked Sherlock Holmes, with his ﬁnger-tips
+1	body	together and his eyes to the ceiling.
+1	body	Again a startled look came over the somewhat vac-
+1	body	uous face of Miss Mary Sutherland. “Yes, I did bang
+1	body	out of the house,” she said, “for it made me angry
+1	body	to see the easy way in which Mr. Windibank—that
+1	body	is, my father—took it all. He would not go to the
+1	body	police, and he would not go to you, and so at last, as
+1	body	he would do nothing and kept on saying that there
+1	body	was no harm done, it made me mad, and I just on
+1	body	with my things and came right away to you.”
+1	body	“Your father,” said Holmes, “your stepfather,
+1	body	surely, since the name is different.”
+1	page_number	2
+2	body	“Yes, my stepfather. I call him father, though it
+2	body	sounds funny, too, for he is only ﬁve years and two
+2	body	months older than myself.”
+2	body	“And your mother is alive?”
+2	body	“Oh, yes, mother is alive and well. I wasn’t best
+2	body	pleased, Mr. Holmes, when she married again so soon
+2	body	after father’s death, and a man who was nearly ﬁfteen
+2	body	years younger than herself. Father was a plumber in
+2	body	the Tottenham Court Road, and he left a tidy business
+2	body	behind him, which mother carried on with Mr. Hardy,
+2	body	the foreman; but when Mr. Windibank came he made
+2	body	her sell the business, for he was very superior, being
+2	body	a traveller in wines. They got £4700 for the goodwill
+2	body	and interest, which wasn’t near as much as father
+2	body	could have got if he had been alive.”
+2	body	I had expected to see Sherlock Holmes impatient
+2	body	under this rambling and inconsequential narrative,
+2	body	but, on the contrary, he had listened with the greatest
+2	body	concentration of attention.
+2	body	“Your own little income,” he asked, “does it come
+2	body	out of the business?”
+2	body	“Oh, no, sir. It is quite separate and was left me
+2	body	by my uncle Ned in Auckland. It is in New Zealand
+2	body	stock, paying 41/2 per cent. Two thousand ﬁve hun-
+2	body	dred pounds was the amount, but I can only touch
+2	body	the interest.”
+2	body	“You interest me extremely,” said Holmes. “And
+2	body	since you draw so large a sum as a hundred a year,
+2	body	with what you earn into the bargain, you no doubt
+2	body	travel a little and indulge yourself in every way. I
+2	body	believe that a single lady can get on very nicely upon
+2	body	an income of about £60.”
+2	body	“I could do with much less than that, Mr. Holmes,
+2	body	but you understand that as long as I live at home
+2	body	I don’t wish to be a burden to them, and so they
+2	body	have the use of the money just while I am staying
+2	body	with them. Of course, that is only just for the time.
+2	body	Mr. Windibank draws my interest every quarter and
+2	body	pays it over to mother, and I ﬁnd that I can do pretty
+2	body	well with what I earn at typewriting. It brings me
+2	body	twopence a sheet, and I can often do from ﬁfteen to
+2	body	twenty sheets in a day.”
+2	body	“You have made your position very clear to me,”
+2	body	said Holmes. “This is my friend, Dr. Watson, be-
+2	body	fore whom you can speak as freely as before myself.
+2	body	Kindly tell us now all about your connection with Mr.
+2	body	Hosmer Angel.”
+2	body	A ﬂush stole over Miss Sutherland’s face, and she
+2	body	picked nervously at the fringe of her jacket. “I met
+2	body	him ﬁrst at the gasﬁtters’ ball,” she said. “They used
+2	body	to send father tickets when he was alive, and then

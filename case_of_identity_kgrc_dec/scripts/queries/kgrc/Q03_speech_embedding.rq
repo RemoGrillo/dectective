@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# Speech acts: a scene with hasPredicate pred:say embedding content scenes via kgc:what
+SELECT ?act ?speaker ?actSource ?content ?contentSource ?contentInfoSource WHERE {
+  ?act kgc:hasPredicate pred:say ; kgc:what ?content .
+  OPTIONAL { ?act kgc:subject ?speaker }
+  OPTIONAL { ?act kgc:source ?actSource FILTER(lang(?actSource)="en") }
+  ?content rdf:type ?ct . FILTER(?ct IN (kgc:Statement, kgc:Situation, kgc:Thought))
+  OPTIONAL { ?content kgc:source ?contentSource FILTER(lang(?contentSource)="en") }
+  OPTIONAL { ?content kgc:infoSource ?contentInfoSource }
+} ORDER BY ?act ?content

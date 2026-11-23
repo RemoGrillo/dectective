@@ -1,0 +1,282 @@
+@prefix ns1: <http://example.org/dectective/profile#> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/dectective/world/shared> {
+    ns1:ActualJourney a owl:Class ;
+        rdfs:subClassOf ns1:Journey ;
+        owl:disjointWith ns1:PretendedJourney .
+
+    ns1:ExpectedToReturn a owl:Class ;
+        rdfs:comment "Person whom the believer expects to come back (used only inside belief worlds)." ;
+        rdfs:subClassOf ns2:E21_Person .
+
+    ns1:VoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance ;
+        owl:disjointWith ns1:InvoluntaryDisappearance .
+
+    ns1:WeakSighted a owl:Class ;
+        rdfs:subClassOf ns2:E21_Person ;
+        owl:disjointWith ns1:KeenSighted .
+
+    ns1:addressee a owl:ObjectProperty ;
+        rdfs:domain ns1:CommunicativeAct ;
+        rdfs:range ns2:E39_Actor .
+
+    ns1:assisted a owl:ObjectProperty ;
+        rdfs:subPropertyOf ns2:P11i_participated_in .
+
+    ns1:attended a owl:ObjectProperty ;
+        rdfs:domain ns2:E21_Person ;
+        rdfs:range ns2:E5_Event .
+
+    ns1:believes a owl:ObjectProperty ;
+        rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+
+    ns1:conjectures a owl:ObjectProperty ;
+        rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+
+    ns1:disappearedPerson a owl:ObjectProperty ;
+        rdfs:domain ns1:Disappearance ;
+        rdfs:subPropertyOf ns2:P11_had_participant .
+
+    ns1:employedBy a owl:ObjectProperty ;
+        rdfs:domain ns2:E21_Person ;
+        rdfs:range ns2:E74_Group .
+
+    ns1:engagedTo a owl:ObjectProperty,
+            owl:SymmetricProperty ;
+        rdfs:domain ns2:E21_Person ;
+        rdfs:range ns2:E21_Person .
+
+    ns1:establishes a owl:ObjectProperty ;
+        rdfs:comment "The actor's account accepted by the narrative as part of the reference reconstruction." ;
+        rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+
+    ns1:hasContent a owl:ObjectProperty ;
+        rdfs:comment "The proposition set communicated (encoded as a named graph). Communicating it does not imply belief." ;
+        rdfs:domain ns1:CommunicativeAct ;
+        rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+
+    ns1:hasDefectProfile a owl:ObjectProperty ;
+        rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
+        rdfs:domain ns1:Typewriter .
+
+    ns1:hasOccupation a owl:ObjectProperty ;
+        rdfs:domain ns2:E21_Person ;
+        rdfs:range ns1:Occupation .
+
+    ns1:heldBy a owl:ObjectProperty ;
+        rdfs:comment "Local shortcut: holder of a belief (CRMinf links it only indirectly via I1/I7 P14 and J2)." ;
+        rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> ;
+        rdfs:range ns2:E39_Actor .
+
+    ns1:motive a owl:ObjectProperty .
+
+    ns1:purportsToBeFrom a owl:ObjectProperty ;
+        rdfs:comment "Apparent sender as shown on the document; not authorship." ;
+        rdfs:domain ns1:Letter .
+
+    ns1:purpose a owl:ObjectProperty .
+
+    ns1:rejects a owl:ObjectProperty .
+
+    ns1:reportedBy a owl:ObjectProperty ;
+        rdfs:comment "Who reports the act in the text (e.g. Mary reporting Hosmer's words)." ;
+        rdfs:domain ns1:CommunicativeAct ;
+        rdfs:range ns2:E39_Actor .
+
+    ns1:showsDefectProfile a owl:ObjectProperty ;
+        rdfs:domain ns1:TypewrittenLetter .
+
+    ns1:spouseOf a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:stepfatherOf a owl:ObjectProperty ;
+        rdfs:domain ns2:E21_Person ;
+        rdfs:range ns2:E21_Person .
+
+    ns1:traveller a owl:ObjectProperty ;
+        rdfs:domain ns1:Journey ;
+        rdfs:subPropertyOf ns2:P14_carried_out_by .
+
+    ns1:typedOn a owl:ObjectProperty ;
+        rdfs:domain ns1:TypewrittenLetter ;
+        rdfs:range ns1:Typewriter .
+
+    ns1:usedAppellation a owl:ObjectProperty ;
+        rdfs:domain ns1:Impersonation ;
+        rdfs:range ns2:E41_Appellation .
+
+    ns1:usedBy a owl:ObjectProperty ;
+        rdfs:domain ns1:Typewriter .
+
+    ns1:uttered a owl:ObjectProperty ;
+        rdfs:comment "Verbatim content of a communicative act; no commitment of the speaker implied." ;
+        rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+
+    ns1:wore a owl:ObjectProperty ;
+        rdfs:domain ns2:E21_Person .
+
+    ns1:writtenBy a owl:ObjectProperty ;
+        rdfs:domain ns1:Letter ;
+        rdfs:range ns2:E21_Person .
+
+    ns1:Impersonation a owl:Class ;
+        rdfs:comment "Acting under a persona identified by an appellation that is not one's own." ;
+        rdfs:subClassOf ns2:E7_Activity .
+
+    ns1:InvoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance .
+
+    ns1:KeenSighted a owl:Class ;
+        rdfs:subClassOf ns2:E21_Person .
+
+    ns1:Occupation a owl:Class ;
+        rdfs:subClassOf ns2:E55_Type .
+
+    ns1:PretendedJourney a owl:Class ;
+        rdfs:comment "A journey announced but not performed." ;
+        rdfs:subClassOf ns1:Journey .
+
+    ns1:TypewrittenLetter a owl:Class ;
+        rdfs:subClassOf ns1:Letter .
+
+    ns1:CommunicativeAct a owl:Class ;
+        rdfs:comment "An act of telling or writing addressed to someone. Unlike crminf:I1 Argumentation (and E13, a subclass of I1 in CRMinf 1.2.1) it does NOT presuppose sincerity: the speaker's belief in the content is represented separately, if at all." ;
+        rdfs:subClassOf ns2:E7_Activity .
+
+    ns1:Disappearance a owl:Class ;
+        rdfs:subClassOf ns2:E5_Event .
+
+    ns1:Journey a owl:Class ;
+        rdfs:subClassOf ns2:E7_Activity .
+
+    ns1:Letter a owl:Class ;
+        rdfs:subClassOf ns2:E22_Human-Made_Object .
+
+    ns1:Typewriter a owl:Class ;
+        rdfs:subClassOf ns2:E22_Human-Made_Object .
+}
+
+{
+    <http://example.org/dectective/story/a1> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/pA> ;
+        ns1:hasContent <http://example.org/dectective/world/w03> ;
+        ns1:reportedBy <http://example.org/dectective/story/pA> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/pC> .
+
+    <http://example.org/dectective/story/a2> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/pA> ;
+        ns1:hasContent <http://example.org/dectective/world/w04> ;
+        ns1:reportedBy <http://example.org/dectective/story/pA> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/pB> .
+
+    <http://example.org/dectective/story/a3> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/pH> ;
+        ns1:hasContent <http://example.org/dectective/world/w06> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/pB> .
+
+    <http://example.org/dectective/story/analyst> ns1:conjectures <http://example.org/dectective/world/w24> .
+
+    <http://example.org/dectective/story/d1> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/pC> ;
+        ns1:typedOn <http://example.org/dectective/story/m1> .
+
+    <http://example.org/dectective/story/d2> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/pC> ;
+        ns1:typedOn <http://example.org/dectective/story/m1> .
+
+    <http://example.org/dectective/story/d9> a ns1:TypewrittenLetter ;
+        ns1:showsDefectProfile <http://example.org/dectective/story/f1> ;
+        ns1:typedOn <http://example.org/dectective/story/m2> ;
+        ns1:writtenBy <http://example.org/dectective/story/pB> .
+
+    <http://example.org/dectective/story/pW> a ns2:E21_Person ;
+        ns1:conjectures <http://example.org/dectective/world/w05> .
+
+    <http://example.org/dectective/story/solver> ns1:conjectures <http://example.org/dectective/world/w20>,
+            <http://example.org/dectective/world/w21>,
+            <http://example.org/dectective/world/w22>,
+            <http://example.org/dectective/world/w23> .
+
+    <http://example.org/dectective/world/shared> a <http://w3id.org/conjectures/sharedWorld> .
+
+    ns1:believes a <http://w3id.org/conjectures/doxasticPredicate> .
+
+    ns1:conjectures a <http://w3id.org/conjectures/conjecturalPredicate> .
+
+    ns1:establishes a <http://w3id.org/conjectures/epistemicPredicate> .
+
+    ns1:uttered a <http://w3id.org/conjectures/verbatimPredicate> .
+
+    <http://example.org/dectective/story/e2> a ns1:Disappearance ;
+        ns1:disappearedPerson <http://example.org/dectective/story/pC> .
+
+    <http://example.org/dectective/story/j1> a ns1:Journey ;
+        ns1:traveller <http://example.org/dectective/story/pB> .
+
+    <http://example.org/dectective/story/j2> a ns1:Journey ;
+        ns1:traveller <http://example.org/dectective/story/pB> .
+
+    <http://example.org/dectective/story/g1> a ns2:E74_Group .
+
+    <http://example.org/dectective/story/m2> a ns1:Typewriter ;
+        ns1:hasDefectProfile <http://example.org/dectective/story/f1> ;
+        ns1:usedBy <http://example.org/dectective/story/g2> .
+
+    <http://example.org/dectective/story/nA> a ns2:E41_Appellation ;
+        rdfs:label "Mary Sutherland" .
+
+    <http://example.org/dectective/story/nB> a ns2:E41_Appellation ;
+        rdfs:label "Windibank" .
+
+    <http://example.org/dectective/story/nC> a ns2:E41_Appellation ;
+        rdfs:label "Hosmer Angel" .
+
+    <http://example.org/dectective/story/o1> a ns1:Occupation .
+
+    <http://example.org/dectective/story/pD> a ns2:E21_Person .
+
+    <http://example.org/dectective/story/pH> a ns2:E21_Person ;
+        ns1:establishes <http://example.org/dectective/world/w10> .
+
+    <http://example.org/dectective/story/e1> a ns2:E5_Event .
+
+    <http://example.org/dectective/story/m1> a ns1:Typewriter ;
+        ns1:hasDefectProfile <http://example.org/dectective/story/f1> .
+
+    <http://example.org/dectective/story/pA> a ns2:E21_Person ;
+        ns1:attended <http://example.org/dectective/story/e1> ;
+        ns1:believes <http://example.org/dectective/world/w01> ;
+        ns1:engagedTo <http://example.org/dectective/story/pC> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/nA> .
+
+    <http://example.org/dectective/story/pB> a ns1:KeenSighted,
+            ns2:E21_Person ;
+        ns1:employedBy <http://example.org/dectective/story/g1> ;
+        ns1:hasOccupation <http://example.org/dectective/story/o1> ;
+        ns1:spouseOf <http://example.org/dectective/story/pD> ;
+        ns1:stepfatherOf <http://example.org/dectective/story/pA> ;
+        ns1:uttered <http://example.org/dectective/world/w04>,
+            <http://example.org/dectective/world/w06> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/nB> .
+
+    <http://example.org/dectective/story/pC> a ns2:E21_Person ;
+        ns1:attended <http://example.org/dectective/story/e1> ;
+        ns1:uttered <http://example.org/dectective/world/w03> ;
+        ns1:wore <http://example.org/dectective/story/x1> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/nC> .
+}
+
+<http://example.org/dectective/world/w10> {
+    <http://example.org/dectective/story/e2> a ns1:VoluntaryDisappearance .
+
+    <http://example.org/dectective/story/j1> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/j2> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/pC> owl:sameAs <http://example.org/dectective/story/pB> .
+}
+

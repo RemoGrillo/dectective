@@ -1,0 +1,36 @@
+{
+  "note": "Display labels for DEC worlds (named graphs). The DEC type, governing agent and content are read from the knowledge graph; this file only adds human-readable titles ('title') and a short phrase usable after a verb ('short').",
+  "gold": {
+    "reality": {"title": "Reality", "desc": "What is true in the story: the narrated facts plus Holmes's solution, which the story accepts (DEC reality)."},
+    "shared": {"title": "Shared background", "desc": "Vocabulary and rules everyone shares (e.g. a journey cannot be both actual and pretended)."},
+    "mary_D1": {"title": "Mary's beliefs", "desc": "What Mary believes when she visits Baker Street. No later scene shows her again."},
+    "holmes_reconstruction": {"title": "Holmes's solution", "desc": "Holmes's explanation of the case. The story accepts it: Windibank half-admits it and the firm's letter confirms it."},
+    "holmes_mother": {"title": "Holmes: the mother helped", "desc": "Holmes's claim that the mother was in on it, supported only by Windibank's “we”."},
+    "holmes_motive": {"title": "Holmes: the motive", "desc": "Holmes's explanation of why: keeping the daughter's income."},
+    "holmes_same_machine": {"title": "Holmes: the same typewriter", "desc": "“No two of them write exactly alike”: the same defects mean the same machine."},
+    "holmes_prediction": {"title": "Holmes's prediction", "desc": "“If I tell her she will not believe me”: what Holmes expects Mary would do."},
+    "watson_hyp": {"title": "Watson's guess", "desc": "The signature was typed so that it could be denied in a breach-of-promise case. Holmes rejects it."},
+    "windibank_beliefs": {"title": "Windibank's beliefs", "desc": "What Windibank knows while playing himself and Hosmer. The story never states them: the editors attribute them from Holmes's solution."},
+    "v_hosmer_cashier": {"title": "Hosmer: “a cashier in Leadenhall Street”", "desc": "How Hosmer described himself, as Mary reports it."},
+    "v_mary_france": {"title": "Mary: “father went to France”", "desc": "What Mary tells Holmes about her stepfather's journey."},
+    "v_windibank_reassure": {"title": "Windibank: “something happened to him”", "desc": "Reported by Mary: “he seemed to think, with me, that something had happened”."},
+    "v_windibank_delighted": {"title": "Windibank: “I am delighted to hear it”", "desc": "His reply when Holmes says he will find Hosmer Angel."},
+    "v_windibank_machine": {"title": "Windibank: “We do all our correspondence with this machine”", "desc": "What he admits about the office typewriter."},
+    "h_author_other": {"title": "What-if: another clerk typed the letters", "desc": "Not in the story. The editors added it to test what the typewriter evidence alone can prove."}
+  },
+  "sim": {
+    "reality": {"title": "Reality (so far)", "desc": "What a reader can take as true at this point of the story."},
+    "shared": {"title": "Shared background", "desc": "Vocabulary and rules everyone shares."},
+    "w01": {"title": "Mary's beliefs", "desc": "Mary's beliefs as she tells them to Holmes."},
+    "w03": {"title": "Hosmer: “a cashier”", "desc": "Reported by Mary."},
+    "w04": {"title": "Windibank: “something happened to him”", "desc": "Reported by Mary."},
+    "w05": {"title": "Watson's guess", "desc": "The typed signature as a breach-of-promise trick."},
+    "w06": {"title": "Windibank: “delighted”", "desc": "Said to Holmes."},
+    "w10": {"title": "Holmes's solution", "desc": "Stated at the unmasking, and accepted from that point on."},
+    "w20": {"title": "Reader's guess: Hosmer is the stepfather", "desc": "A guess of the simulated first-time reader."},
+    "w21": {"title": "Reader's guess: something happened to him", "desc": "Mary's view, taken as a guess."},
+    "w22": {"title": "Holmes: the same typewriter", "desc": "The same defects mean the same machine."},
+    "w23": {"title": "Reader's guess: the stepfather typed the letters", "desc": "A guess about who typed them."},
+    "w24": {"title": "What-if: another clerk typed them", "desc": "Not in the story: a test alternative."}
+  }
+}

@@ -1,0 +1,10 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# Scene nodes by type (a node may have several types)
+SELECT ?type (COUNT(DISTINCT ?s) AS ?n) WHERE {
+  ?s rdf:type ?type . FILTER(?type IN (kgc:Statement, kgc:Situation, kgc:Thought, kgc:Talk))
+} GROUP BY ?type ORDER BY DESC(?n)

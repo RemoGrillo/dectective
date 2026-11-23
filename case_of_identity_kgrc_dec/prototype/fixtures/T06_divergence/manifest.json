@@ -1,0 +1,58 @@
+{
+  "dataset": "gold",
+  "question": "Which divergences between perspectives are justified by the text?",
+  "seed_iris": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/story/mary"
+  ],
+  "require_modules": [
+    "W01_mary_D1",
+    "W02_holmes_reconstruction",
+    "W07_holmes_prediction",
+    "F03_courtship",
+    "F05_windibank_visit"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "queries": [
+    {
+      "id": "T06a_belief_worlds_vs_reality",
+      "file": "T06a_belief_worlds_vs_reality.rq",
+      "expected": [
+        "w=http://example.org/dectective/world/mary_D1"
+      ],
+      "classification": "incompatible",
+      "justification": [
+        "P031.S10",
+        "P039.S01",
+        "P051.S06",
+        "P061.S02",
+        "P128.S02",
+        "P128.S07",
+        "P111.S01"
+      ],
+      "axioms_or_assumptions": [
+        "ActualJourney disjoint PretendedJourney",
+        "Voluntary disjoint Involuntary",
+        "WeakSighted disjoint KeenSighted (+identity)"
+      ],
+      "world_time": "w:mary_D1 vs reality (gold)",
+      "note": "Genuine textual disagreement; 'delusional' is DEC's technical label (cf. Holmes's own word 'delusion', P138.S02)."
+    },
+    {
+      "id": "T06b_mary_delusional_label",
+      "file": "T06b_mary_delusional_label.rq",
+      "expected": true,
+      "classification": "incompatible",
+      "justification": [
+        "P128.S02",
+        "P138.S02"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:mary_D1",
+      "note": "Technical classification relative to data and axioms."
+    }
+  ]
+}

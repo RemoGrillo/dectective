@@ -1,0 +1,38 @@
+{
+  "dataset": "C4",
+  "question": "Same question after the reconstruction is accepted (C4).",
+  "seed_iris": [
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/e2"
+  ],
+  "require_modules": [
+    "sW20_h_identity",
+    "sW21_h_external",
+    "sF04_solver",
+    "sW10_holmes",
+    "sF07_reconstruction",
+    "sF02_courtship"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "queries": [
+    {
+      "id": "T07b_C4",
+      "file": "T07b_C4.rq",
+      "expected": [
+        "h=http://example.org/dectective/world/w21"
+      ],
+      "classification": "incompatible",
+      "justification": [
+        "P128.S11"
+      ],
+      "axioms_or_assumptions": [
+        "Voluntary disjoint Involuntary"
+      ],
+      "world_time": "solver worlds at C4",
+      "note": "H2 (something happened to him) is incompatible with the settled reconstruction."
+    }
+  ]
+}

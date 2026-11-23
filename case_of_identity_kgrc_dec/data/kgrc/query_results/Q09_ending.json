@@ -1,0 +1,207 @@
+[
+ {
+  "s": "d:558",
+  "p": "kgc:hasPredicate",
+  "o": "pred:say"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:source",
+  "o": "Holmes said the following"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:subject",
+  "o": "d:Holmes"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:then",
+  "o": "d:558"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:559"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:560"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:561"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:562"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:563"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:564"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:565"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:566"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:567"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:568"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:569"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:570"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:571"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:572"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:573"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:574"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:575"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:576"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:578"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:579"
+ },
+ {
+  "s": "d:558",
+  "p": "kgc:what",
+  "o": "d:580"
+ },
+ {
+  "s": "d:558",
+  "p": "rdf:type",
+  "o": "kgc:Situation"
+ },
+ {
+  "s": "d:578",
+  "p": "kgc:hasPredicate",
+  "o": "pred:notBelieve"
+ },
+ {
+  "s": "d:578",
+  "p": "kgc:infoSource",
+  "o": "d:Holmes"
+ },
+ {
+  "s": "d:578",
+  "p": "kgc:source",
+  "o": "Sutherland does not believe in Holmes"
+ },
+ {
+  "s": "d:578",
+  "p": "kgc:subject",
+  "o": "d:Sutherland"
+ },
+ {
+  "s": "d:578",
+  "p": "kgc:what",
+  "o": "d:Holmes"
+ },
+ {
+  "s": "d:578",
+  "p": "rdf:type",
+  "o": "kgc:Statement"
+ },
+ {
+  "s": "d:579",
+  "p": "kgc:if",
+  "o": "d:580"
+ },
+ {
+  "s": "d:579",
+  "p": "rdf:type",
+  "o": "kgc:Situation"
+ },
+ {
+  "s": "d:580",
+  "p": "kgc:hasPredicate",
+  "o": "pred:say"
+ },
+ {
+  "s": "d:580",
+  "p": "kgc:infoSource",
+  "o": "d:Holmes"
+ },
+ {
+  "s": "d:580",
+  "p": "kgc:source",
+  "o": "Holmes tell the truth to Sutherland"
+ },
+ {
+  "s": "d:580",
+  "p": "kgc:subject",
+  "o": "d:Holmes"
+ },
+ {
+  "s": "d:580",
+  "p": "kgc:what",
+  "o": "d:truth"
+ },
+ {
+  "s": "d:580",
+  "p": "kgc:whom",
+  "o": "d:Sutherland"
+ },
+ {
+  "s": "d:580",
+  "p": "rdf:type",
+  "o": "kgc:Statement"
+ }
+]

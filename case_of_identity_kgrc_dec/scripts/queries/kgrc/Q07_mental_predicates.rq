@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# Scenes whose predicate denotes a mental state or epistemic act
+SELECT ?s ?type ?subj ?p ?src ?info WHERE {
+  ?s kgc:hasPredicate ?p ; rdf:type ?type .
+  FILTER(REGEX(STR(?p), "/predicate/(believe|notBelieve|think|know|notKnow|suppose|suspect|guess|doubt|understand|realize|notice|beConvinced|expect|imagine|foresee|wonder|deduce|infer|conclude|consider|feel|forget|remember)$"))
+  OPTIONAL { ?s kgc:subject ?subj }
+  OPTIONAL { ?s kgc:source ?src FILTER(lang(?src)="en") }
+  OPTIONAL { ?s kgc:infoSource ?info }
+} ORDER BY ?s

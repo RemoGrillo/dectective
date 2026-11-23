@@ -1,0 +1,18 @@
+[
+ {
+  "device": "kgc:Not",
+  "n": "30"
+ },
+ {
+  "device": "kgc:canNot",
+  "n": "10"
+ },
+ {
+  "device": "hasPredicate typed kgc:NotAction",
+  "n": "49"
+ },
+ {
+  "device": "hasPredicate pred:not*/cannot*",
+  "n": "56"
+ }
+]

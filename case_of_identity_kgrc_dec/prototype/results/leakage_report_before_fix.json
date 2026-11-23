@@ -1,0 +1,71 @@
+{
+  "C1": {
+    "leaks": [
+      {
+        "check": "lexical-literal",
+        "token": "windibank as",
+        "graph": "http://example.org/dectective/world/shared",
+        "subject": "http://example.org/dectective/profile#Impersonation",
+        "literal": "Acting under a persona with an appellation that is not one's own (here: Windibank as 'Hosmer Angel')."
+      }
+    ],
+    "n_leaks": 1,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared"
+    ],
+    "dynamic": "skipped"
+  },
+  "C2": {
+    "leaks": [
+      {
+        "check": "lexical-literal",
+        "token": "windibank as",
+        "graph": "http://example.org/dectective/world/shared",
+        "subject": "http://example.org/dectective/profile#Impersonation",
+        "literal": "Acting under a persona with an appellation that is not one's own (here: Windibank as 'Hosmer Angel')."
+      }
+    ],
+    "n_leaks": 1,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared"
+    ],
+    "dynamic": "skipped"
+  },
+  "C3": {
+    "leaks": [
+      {
+        "check": "lexical-literal",
+        "token": "windibank as",
+        "graph": "http://example.org/dectective/world/shared",
+        "subject": "http://example.org/dectective/profile#Impersonation",
+        "literal": "Acting under a persona with an appellation that is not one's own (here: Windibank as 'Hosmer Angel')."
+      }
+    ],
+    "n_leaks": 1,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared"
+    ],
+    "dynamic": "skipped"
+  },
+  "C4": {
+    "leaks": [
+      {
+        "check": "lexical-literal",
+        "token": "windibank as",
+        "graph": "http://example.org/dectective/world/shared",
+        "subject": "http://example.org/dectective/profile#Impersonation",
+        "literal": "Acting under a persona with an appellation that is not one's own (here: Windibank as 'Hosmer Angel')."
+      }
+    ],
+    "n_leaks": 1,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared",
+      "http://example.org/dectective/world/w10"
+    ],
+    "dynamic": "skipped"
+  }
+}

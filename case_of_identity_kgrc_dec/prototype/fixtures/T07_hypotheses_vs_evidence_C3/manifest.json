@@ -1,0 +1,34 @@
+{
+  "dataset": "C3",
+  "question": "Which hypotheses are incompatible with the evidence available at C3?",
+  "seed_iris": [
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/e2"
+  ],
+  "require_modules": [
+    "sW20_h_identity",
+    "sW21_h_external",
+    "sF04_solver",
+    "sF02_courtship"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "queries": [
+    {
+      "id": "T07a_C3",
+      "file": "T07a_C3.rq",
+      "expected": [],
+      "classification": "not-determined",
+      "justification": [
+        "P111.S01",
+        "P116.S04",
+        "P118.S06"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "solver worlds w20, w21 at C3",
+      "note": "Both hypotheses remain admissible at C3: compatibility is not proof."
+    }
+  ]
+}

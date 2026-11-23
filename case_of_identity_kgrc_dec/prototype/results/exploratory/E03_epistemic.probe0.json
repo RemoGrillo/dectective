@@ -1,0 +1,110 @@
+{ 
+  "data" : "./prototype/exploratory/E03_epistemic.trig" ,
+  "query" : "./prototype/results/exploratory/E03_epistemic.probe0.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 146.397867 ,
+  "input_quads" : 5 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 191.895582 ,
+        "cpu_ms" : 176.298962 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 6.3770904541015625 ,
+        "phases" : {
+            "load_ms" : 30.497284 ,
+            "handlePermeation_ms" : 149.158211 ,
+            "enumerate_ms" : 3.855205
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.443909 ,
+            "http://example.org/x#S#enumerate" : 0.84129 ,
+            "http://example.org/x#K#enumerate" : 0.731878
+          } ,
+        "query_first_ms" : 44.506416 ,
+        "query_second_ms" : 0.962312
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#K" : {
+              "type" : "named/epistemic" ,
+              "asserted" : 1 ,
+              "base_after" : 16 ,
+              "permeated_in" : 649 ,
+              "permeated_in_nontrivial" : 1 ,
+              "receives_from" : [ "http://example.org/x#S" ] ,
+              "materialised" : 665 ,
+              "inferred_trivial" : 14 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 649 ,
+              "inferred_trivial" : 648 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 1 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 676 ,
+              "inferred_trivial" : 669 ,
+              "inferred_nontrivial" : 3 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 3 ,
+              "dec_diagnostic" : 3
+            }
+        } ,
+      "n_worlds" : 3 ,
+      "asserted_total" : 3 ,
+      "materialised_total" : 1990 ,
+      "permeated_total" : 649 ,
+      "inferred_total" : 1335 ,
+      "inferred_trivial_total" : 1331 ,
+      "inferred_nontrivial_total" : 4 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 4 ,
+      "dec_diagnostic_total" : 3 ,
+      "distinct_triples_all_worlds" : 676 ,
+      "redundancy" : 2.9437869822485205 ,
+      "inconsistency_pairs" : 1 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/x#K http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicWorld" ,
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#knows http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 44.506416 ,
+      "query_second_ms" : 0.962312 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "12d861f9a240a440510ee50adc7ef76acfdb46b621ed112737a80ba13d30566c"
+}

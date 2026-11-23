@@ -1,0 +1,3082 @@
+[
+ {
+  "act": "d:015",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:016",
+  "contentSource": "The present movement has been before",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:015",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:017",
+  "contentSource": "Women are thrilled at the pavement",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:015",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:018",
+  "contentSource": "The above is color love Saya",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:015",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:019",
+  "contentSource": "Sutherland wants advice",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:015",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:020",
+  "contentSource": "Sutherland suffers from",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:015",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:021",
+  "contentSource": "Sutherland wants to consult people",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:033",
+  "speaker": "d:Service_Boy",
+  "actSource": "A boy at the service uniform tells Sutherland",
+  "content": "d:034",
+  "contentSource": "Sutherland appears",
+  "contentInfoSource": "d:Service_Boy"
+ },
+ {
+  "act": "d:033",
+  "speaker": "d:Service_Boy",
+  "actSource": "A boy at the service uniform tells Sutherland",
+  "content": "d:33a",
+  "contentSource": "The woman is Sutherland",
+  "contentInfoSource": "d:Service_Boy"
+ },
+ {
+  "act": "d:039",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:040",
+  "contentSource": "Myopia is hard to type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:041",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:042",
+  "contentSource": "Myopia is hard",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:041",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:043",
+  "contentSource": "Sutherland knows the position of the character",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:049",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:051",
+  "contentSource": "Holmes finds out that others overlook",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:053",
+  "contentSource": "Sutherland heard Holmes from Etheridge",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:054",
+  "contentSource": "Holmes easily found Etheridge's husband",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:055",
+  "contentSource": "Police had ruled that Esridge's husband had died",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:056",
+  "contentSource": "Sutherland is not rich",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:057",
+  "contentSource": "Sutherland earns one hundred dollars a year",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:058",
+  "contentSource": "Sutherland is a typing",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:060",
+  "contentSource": "Holmes find Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:062",
+  "contentSource": "Sutherland hands over to Holmes",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:063",
+  "contentSource": "Sutherland jumped out of the house",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:064",
+  "contentSource": "Sutherland is angry",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:065",
+  "contentSource": "Windibank is naive",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:066",
+  "contentSource": "Windibank does not want to go to the police",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:067",
+  "contentSource": "Windibank does not want to visit Holmes",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:068",
+  "contentSource": "Windibank is Sutherland's father-in-law",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:069",
+  "contentSource": "Windibank is 5 years and 2 months older than Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:070",
+  "contentSource": "mother of Sutherland is fine",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:071",
+  "contentSource": "mother of Sutherland is strong",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:072",
+  "contentSource": "mother of Sutherland remarried after Sutherland&#39;s father&#39;s death",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:073",
+  "contentSource": "Sutherland's father is a plumber in Totenham Court",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:074",
+  "contentSource": "Sutherland's father left a store",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:075",
+  "contentSource": "mother of Sutherland continued with Hardy",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:076",
+  "contentSource": "Hardy is the head of the scene",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:077",
+  "contentSource": "Windibank sold her father's shop in Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:078",
+  "contentSource": "Windibank is a wine commerce",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:079",
+  "contentSource": "Sutherland's father';s store sold for ｡・4700",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:080",
+  "contentSource": "Sutherland thinks the following",
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:081",
+  "contentSource": "Sutherland's father thinks of",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:052",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:082",
+  "contentSource": "4700 pounds is small",
+  "contentInfoSource": "d:Father_of_Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:087",
+  "contentSource": "Sutherland's income is Ned&#39;s heritage",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:088",
+  "contentSource": "Ned is Sutherland's uncle",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:089",
+  "contentSource": "Ned is in Auckland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:090",
+  "contentSource": "Heritage is a New Zealand strain",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:091",
+  "contentSource": "The dividend of the heritage is quarter and five o'clock",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:092",
+  "contentSource": "The face value of the heritage is ｡・2500",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:086",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:093",
+  "contentSource": "Sutherland gives yield",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:101",
+  "contentSource": "Sutherland earns less than ｡・60",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:102",
+  "contentSource": "Sutherland does not rely on parents",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:103",
+  "contentSource": "Sutherland keeps money with her parents",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:104",
+  "contentSource": "Sutherland is with parents",
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:105",
+  "contentSource": "Windibank draws a quarter from the yield",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:106",
+  "contentSource": "Windibank passes to mother of Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:107",
+  "contentSource": "Sutherland earns enough for Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:108",
+  "contentSource": "Sutherland gets 2 pence with one",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:100",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:109",
+  "contentSource": "Sutherland processes up to 20 cards in a day",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:114",
+  "contentSource": "Sutherland Meets Hosmer at the Gas Industry Association Ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:115",
+  "contentSource": "Sutherland's father had sent an invitation to the Gas Association&#39;s ball to Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:116",
+  "contentSource": "Sutherland's and Sutherland&#39;s mother went to the ball after Sutherland&#39;s father&#39;s death",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:117",
+  "contentSource": "Windibank does not know",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:118",
+  "contentSource": "Sutherland and mother of Sutherland go to a ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:119",
+  "contentSource": "Sutherland and mother of Sutherland go out",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:120",
+  "contentSource": "Windibank goes mad below",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:121",
+  "contentSource": "Sutherland goes to Sunday school event",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:122",
+  "contentSource": "Sutherland told the ball to join",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:122",
+  "contentSource": "Sutherland told the ball to join",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:123",
+  "contentSource": "Windibank can not stop Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:124",
+  "contentSource": "Windibank says",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:126",
+  "contentSource": "Sutherland's father&#39;s friend participates in a ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:127",
+  "contentSource": "Windibank said",
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:113",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:128",
+  "contentSource": "Sutherland has no clothes to wear",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:122",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland told the ball to join",
+  "content": "d:122a",
+  "contentSource": null,
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:124",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank says",
+  "content": "d:125",
+  "contentSource": "People in the ball have no value",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:127",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:128",
+  "contentSource": "Sutherland has no clothes to wear",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:130",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:131",
+  "contentSource": "Sutherland wore purple plush",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:130",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:132",
+  "contentSource": "Windibank went to France for work.",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:130",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:133",
+  "contentSource": "Sutherland and her mother and Hardy went to the ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:130",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:134",
+  "contentSource": "Sutherland met Hosmer at the ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:140",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:141",
+  "contentSource": "Windibank laughed",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:142",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:143",
+  "contentSource": "Woman is free",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:145",
+  "contentSource": "Sutherland met Hosmer at a ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:146",
+  "contentSource": "Hosmer visits Sutherland's house the day after the ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:147",
+  "contentSource": "Sutherland meets Hosmer after the ball",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:148",
+  "contentSource": "Sutherland has met Hosmer twice",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:149",
+  "contentSource": "Windibank returned home",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:150",
+  "contentSource": "Hosmer can not come home",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:151",
+  "contentSource": "Windibank dislikes",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:144",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:152",
+  "contentSource": "The customer enters the house",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:155",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:156",
+  "contentSource": "Sutherland told her mother",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:155",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:157",
+  "contentSource": "Women want a home",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:155",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:158",
+  "contentSource": "Sutherland has no home",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:155",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:159",
+  "contentSource": "Windibank goes to France a week later",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:155",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:160",
+  "contentSource": "Hosmer said the following",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:160",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:161",
+  "contentSource": "Hosmer does not meet Sutherland while Windibank is",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:160",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:161",
+  "contentSource": "Hosmer does not meet Sutherland while Windibank is",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:164",
+  "contentSource": "Sutherland and Hosmer wrote a letter every day",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:165",
+  "contentSource": "Sutherland received a letter in the morning",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:166",
+  "contentSource": "Windibank does not know the letter",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:167",
+  "contentSource": "Sutherland was engaged to Hosmer at the first walk",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:168",
+  "contentSource": "Hosmer is the teller of Redon Hall Street office",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:169",
+  "contentSource": "Sutherland does not know the industry of Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:170",
+  "contentSource": "Hosmer lives in the office of Redon Hall Street",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:171",
+  "contentSource": "Sutherland knows the following",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:172",
+  "contentSource": "Hosmer's address is on Redon Hall Street",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:173",
+  "contentSource": "Sutherland sent a letter to Redon Hall Street Post Office",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:174",
+  "contentSource": "Hosmer said the following",
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:176",
+  "contentSource": "Sutherland's letter arrives at the office",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:178",
+  "contentSource": "Hosmer is teased by colleagues",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:179",
+  "contentSource": "Hosmer does not want to receive typing letters",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:180",
+  "contentSource": "Handwritten letter feels Sutherland",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:163",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:181",
+  "contentSource": "Typing letter feels machine",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:174",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:176",
+  "contentSource": "Sutherland's letter arrives at the office",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:174",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:178",
+  "contentSource": "Hosmer is teased by colleagues",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:174",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:179",
+  "contentSource": "Hosmer does not want to receive typing letters",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:174",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:180",
+  "contentSource": "Handwritten letter feels Sutherland",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:174",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:181",
+  "contentSource": "Typing letter feels machine",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:182",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:183",
+  "contentSource": "Hosmer loves Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:182",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:184",
+  "contentSource": "Hosmer pays attention",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:185",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the inscription of Zayedomo (below)",
+  "content": "d:186",
+  "contentSource": "The importance of minor matters is infinite",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:188",
+  "contentSource": "Hosmer is shy",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:192",
+  "contentSource": "Hosmer is shy",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:193",
+  "contentSource": "Hosmer is a gentleman",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:194",
+  "contentSource": "Hosmer's voice is thin",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:195",
+  "contentSource": "Hosmer suffered tonsillitis when he was young",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:196",
+  "contentSource": null,
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:197",
+  "contentSource": "Hosmer has a weak throat",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:198",
+  "contentSource": "Hosmer speaks whisperly",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:199",
+  "contentSource": "The appearance of Hosmer is good",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:200",
+  "contentSource": "Hosmer's eyes are bad",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:201",
+  "contentSource": "Hosmer has colored glasses",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:202",
+  "contentSource": "Hosmer said the following",
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:204",
+  "contentSource": "Hosmer was keen",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:205",
+  "contentSource": "Hosmer gave the Bible to Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:206",
+  "contentSource": "Hosmer has made Sutherland vow:",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:207",
+  "contentSource": "Sutherland believes in Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:208",
+  "contentSource": "mother of Sutherland agreed with the above",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:209",
+  "contentSource": "mother of Sutherland loved Hosmer more than Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:212",
+  "contentSource": "Sutherland worried about Windibank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:213",
+  "contentSource": "mother of Sutherland and Hosmer said",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:214",
+  "contentSource": "Sutherland Worries About Windibank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:215",
+  "contentSource": "mother of Sutherland corresponds to Windibank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:216",
+  "contentSource": "Sutherland wants to report to Windibank before the wedding",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:217",
+  "contentSource": "Windibank works at the French office of the Bordeaux company",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:218",
+  "contentSource": "Sutherland sent a letter to Windibank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:219",
+  "contentSource": "The letter came back to Sutherland on the morning of the wedding day",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:220",
+  "contentSource": "The letter did not reach Windibank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:221",
+  "contentSource": "Windibank left for England just before the letter arrived",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:223",
+  "contentSource": "Wedding will be on friday",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:224",
+  "contentSource": "Weddings will take place at St. Savior Church",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:226",
+  "contentSource": "Sutherland and Hosmer eat breakfast at Saint St Pancras Hotel",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:227",
+  "contentSource": "Last Friday",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:228",
+  "contentSource": "Hosmer put mother of Sutherland and Sutherland&#39;s mother on a Hansom carriage",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:229",
+  "contentSource": "Hosmer got on a carriage",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:230",
+  "contentSource": "There were no other carriages in the street",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:231",
+  "contentSource": "Sutherland and mother of Sutherland arrived at the church before Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:232",
+  "contentSource": "Hosmer wasn't in a cart",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:233",
+  "contentSource": "A chariot wandered under the chariot",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:234",
+  "contentSource": "There was no one under the cart",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:235",
+  "contentSource": "He does not know where Hosmer is",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:236",
+  "contentSource": "He saw the following",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:239",
+  "contentSource": "Hosmer does not send letters",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:240",
+  "contentSource": "Hosmer does not show up",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:241",
+  "contentSource": "Sutherland does not know where Hosmer is",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:242",
+  "contentSource": "Hosmer does not throw away Sutherland",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:243",
+  "contentSource": "Last Friday morning",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:244",
+  "contentSource": "Sutherland believes in Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:245",
+  "contentSource": "Sutherland swore the above",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:247",
+  "contentSource": "Sutherland leaves with Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:187",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:248",
+  "contentSource": "Sutherland now understands the language of Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:202",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:203",
+  "contentSource": "Hosmer wants to marry Sutherland before his father's return home",
+  "contentInfoSource": "d:Hosmer_s_thoughts"
+ },
+ {
+  "act": "d:210",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said the following",
+  "content": "d:211",
+  "contentSource": "Hosmer will marry Sutherland this week",
+  "contentInfoSource": "d:Hosmer_s_statement"
+ },
+ {
+  "act": "d:243",
+  "speaker": "d:Hosmer",
+  "actSource": "Last Friday morning",
+  "content": "d:244",
+  "contentSource": "Sutherland believes in Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:252",
+  "speaker": "d:Hosmer",
+  "actSource": "Hosmer said above",
+  "content": "d:244",
+  "contentSource": "Sutherland believes in Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:253",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:254",
+  "contentSource": "Sutherland does not know the danger of Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:253",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:255",
+  "contentSource": "Sutherland reported Hosmer's disappearance to Sutherland&#39;s mother and Windibank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:253",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:256",
+  "contentSource": "mother of Sutherland got mad at Hosmer&#39;s disappearance",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:257",
+  "speaker": "d:mother_of_Sutherland",
+  "actSource": "mother of Sutherland said to Sutherland:",
+  "content": "d:258",
+  "contentSource": "Sutherland does not speak Hosmer's disappearance",
+  "contentInfoSource": "d:mother_of_Sutherland&#39_s_remark"
+ },
+ {
+  "act": "d:259",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:260",
+  "contentSource": "Hosmer will contact Sutherland",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:261",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:262",
+  "contentSource": "Hosmer owns his property",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:261",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:263",
+  "contentSource": "Hosmer does not want Sutherland's money",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:261",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:264",
+  "contentSource": "Sutherland can not sleep",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:261",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:265",
+  "contentSource": "Sutherland cried",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:266",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:267",
+  "contentSource": "Holmes examines Hosmer's disappearance",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:266",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:268",
+  "contentSource": "Holmes can solve Hosmer's disappearance",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:266",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:269",
+  "contentSource": "Sutherland forgets Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:266",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:270",
+  "contentSource": "Sutherland can not see Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:266",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:271",
+  "contentSource": "Holmes wants Hosmer's personalities",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:266",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:272",
+  "contentSource": "Holmes wants a letter from Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:273",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:274",
+  "contentSource": "Last Saturday",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:277",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:278",
+  "contentSource": "Sutherland's address is Camberwell",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:277",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:279",
+  "contentSource": "Sutherland does not know Hosmer's address",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:277",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:280",
+  "contentSource": "Hosmer is a foreign company in West House &amp; Marbank",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:277",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:281",
+  "contentSource": "West House &amp; Marbank is the largest claret importer on Fenchurch Street",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:282",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:283",
+  "contentSource": "Sutherland will not forget Holmes' advice",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:282",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:284",
+  "contentSource": "Sutherland forgets Hosmer's disappearance",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:285",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:286",
+  "contentSource": "Sutherland can not forget Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:285",
+  "speaker": "d:Sutherland",
+  "actSource": "Sutherland said the following",
+  "content": "d:287",
+  "contentSource": "Sutherland believes in Hosmer",
+  "contentInfoSource": "d:Sutherland"
+ },
+ {
+  "act": "d:291",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:292",
+  "contentSource": "Sutherland is interesting",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:291",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:293",
+  "contentSource": "Holmes knows the same case",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:291",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:294",
+  "contentSource": "The same incident happened in Andova in 1977",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:291",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:295",
+  "contentSource": "The same incident happened in The Hague last year",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:296",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:297",
+  "contentSource": "Holmes can read Sutherland",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:296",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:298",
+  "contentSource": "Watson can not read Sutherland",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:299",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:300",
+  "contentSource": "Watson overlooks an important point",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:299",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:301",
+  "contentSource": "Sleeves are important",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:299",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:302",
+  "contentSource": "Thumb nail talks",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:299",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:303",
+  "contentSource": "Shoe laces lead to major problems",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:305",
+  "contentSource": "Sutherland wore a straw hat with a blackboard color",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:306",
+  "contentSource": "A red-brick feather was on a blackboard-colored straw hat",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:307",
+  "contentSource": "Sutherland's jacket was black",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:308",
+  "contentSource": "Black beads were attached to the jacket of Sutherland",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:309",
+  "contentSource": "A small black beaded ornament is attached to the hem border edge",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:310",
+  "contentSource": "The clothes were brown",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:311",
+  "contentSource": "A purple plush is attached to the neck and sleeves of the garment",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:312",
+  "contentSource": "The gloves were scarlet",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:313",
+  "contentSource": "The thumb of the right glove is worn",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:314",
+  "contentSource": "Watson has not seen Sutherland shoes",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:315",
+  "contentSource": "Sutherland was hanging a small round gold earring",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:316",
+  "contentSource": "Sutherland is rich",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:317",
+  "contentSource": "Sutherland is a leisure",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:318",
+  "contentSource": "Sutherland is warm",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:304",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:319",
+  "contentSource": "Sutherland is a town girl",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:323",
+  "contentSource": "Watson improved",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:324",
+  "contentSource": "Watson overlooks an important point",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:325",
+  "contentSource": "The way is right",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:326",
+  "contentSource": "Watson looks at the color",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:327",
+  "contentSource": "Watson pays attention to details",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:328",
+  "contentSource": "Holmes look at a woman's sleeve",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:329",
+  "contentSource": "Holmes looks at the knee of a man's pants",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:330",
+  "contentSource": "A plush weave is attached to the cuffs of Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:331",
+  "contentSource": "The plush weave marks",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:332",
+  "contentSource": "Plush weave is an expensive fabric",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:333",
+  "contentSource": "The double line on the wrist is a trace of the type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:334",
+  "contentSource": "The double wire on the wrist is the mark of a manual sewing machine",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:335",
+  "contentSource": "The double line on the left wrist is the mark of a manual sewing machine",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:336",
+  "contentSource": "The right wrist double line is a trace of type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:337",
+  "contentSource": "Sutherland has a trace of nose glasses",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:339",
+  "contentSource": "Holmes surprised Sutherland with myopia and type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:322",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:341",
+  "contentSource": "Watson was surprised",
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:342",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:343",
+  "contentSource": "Sutherland's left and right shoes are different",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:342",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:345",
+  "contentSource": "Sutherland's appearance is tight",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:342",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:346",
+  "contentSource": "Sutherland wears different left and right shoes",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:354",
+  "contentSource": "Inquirer ad is written below",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:355",
+  "contentSource": "Hosmer disappeared on the morning of the 14th",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:356",
+  "contentSource": "Hosmer's height is 5 feet 7 inches",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:357",
+  "contentSource": "Hosmer's physique is good",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:358",
+  "contentSource": "The color of Hosmer is bad",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:359",
+  "contentSource": "Hosmer's hair is black",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:360",
+  "contentSource": "There is a small boat on the top of Hosmer's head",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:361",
+  "contentSource": "Hosmer has a black cheek and mouth",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:362",
+  "contentSource": "Hosmer has colored glasses",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:363",
+  "contentSource": "Hosmer's way of speaking is jealous",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:364",
+  "contentSource": "At the time of disappearance is a black frock coat",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:365",
+  "contentSource": "At the time of disappearance is a black vest",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:366",
+  "contentSource": "Dress at the time of disappearance is the Albert chain of gold",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:367",
+  "contentSource": "In the past",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:368",
+  "contentSource": "Letters have no clues to Hosmer",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:369",
+  "contentSource": "The letter has a quote from Balzac",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:353",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:370",
+  "contentSource": "The letter is written in type",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:371",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:372",
+  "contentSource": "Signature is written in type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:371",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:373",
+  "contentSource": "Signature is Hosmer Aingel",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:371",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:374",
+  "contentSource": "Letter has a date",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:371",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:375",
+  "contentSource": "The sender's address is Redon Hall Street",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:371",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:376",
+  "contentSource": "Signature is important",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:377",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:378",
+  "contentSource": "Signature repeals vow",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:377",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:380",
+  "contentSource": "Hosma received an appeal against breach of covenants",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:382",
+  "contentSource": "The above is not important",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:383",
+  "contentSource": "Hosmer's disappearance resolves",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:385",
+  "contentSource": "Holmes and Watson write two letters",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:386",
+  "contentSource": "Letter 1 is sent to a company in Central City",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:387",
+  "contentSource": "Letter 2 sent to Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:388",
+  "contentSource": "Holmes writes the following to letter 2",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:381",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:389",
+  "contentSource": "Holmes wants to see Windibank at 6 o'clock in the evening",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:395",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:396",
+  "contentSource": "The incident has no mystery",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:395",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:397",
+  "contentSource": "Holmes can not catch the villain",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:399",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:400",
+  "contentSource": "Windibank came",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:412",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:413",
+  "contentSource": "The type letter is a Windibank letter",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:415",
+  "contentSource": "Windibank worried about being late",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:416",
+  "contentSource": "Windibank is busy",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:417",
+  "contentSource": "Windibank apologizes for",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:418",
+  "contentSource": "Sutherland bothers Holmes",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:419",
+  "contentSource": "Windibank does not want",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:420",
+  "contentSource": "Sutherland comes to Holmes",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:421",
+  "contentSource": "Sutherland talks about family misfortune",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:422",
+  "contentSource": "Sutherland moves quickly",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:423",
+  "contentSource": "Windibank is pleased to",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:424",
+  "contentSource": "Holmes is not a police officer",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:414",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:425",
+  "contentSource": "Windibank wants to avoid unnecessary expenses",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:428",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:429",
+  "contentSource": "Holmes find Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:434",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:435",
+  "contentSource": "Typewriter letters differ like handwriting",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:434",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:436",
+  "contentSource": "In the Windibank letter",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:434",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:438",
+  "contentSource": "In the Windibank letter",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:434",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:439",
+  "contentSource": "Windibank's letter has 14 features",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:440",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:441",
+  "contentSource": "Windibank's workplace has one machine",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:440",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:443",
+  "contentSource": "Letters wear out",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:444",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:445",
+  "contentSource": "Holmes is writing a dissertation (below)",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:444",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:446",
+  "contentSource": "Typewriters are involved in crime",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:444",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:447",
+  "contentSource": "letter of Hosma is written in type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:444",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:448",
+  "contentSource": "In letter of Hosma",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:444",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:449",
+  "contentSource": "In the letter of Hosmer r is missing",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:444",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:450",
+  "contentSource": "letter of Hosma has 14 features",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:453",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:454",
+  "contentSource": "Windibank has no wasted time",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:460",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:461",
+  "contentSource": "Holmes caught Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:465",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:466",
+  "contentSource": "Windibank can not escape from Holmes",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:470",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:471",
+  "contentSource": "Holmes does not sue Windibank",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:473",
+  "contentSource": "Holmes is sorry",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:474",
+  "contentSource": "Holmes first met a cruel and selfish treat",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:475",
+  "contentSource": "Windibank married for money with mother of Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:476",
+  "contentSource": "Windibank can use Sutherland gold",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:478",
+  "contentSource": "Windibank lives with Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:479",
+  "contentSource": "Sutherland's money is big money",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:480",
+  "contentSource": "Windibank Wants Sutherland Gold",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:481",
+  "contentSource": "Sutherland is funny",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:482",
+  "contentSource": "Sutherland has emotions and compassion",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:483",
+  "contentSource": "The character of Sutherland is good",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:484",
+  "contentSource": "Sutherland has money",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:486",
+  "contentSource": "Sutherland gets married soon",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:488",
+  "contentSource": "Windibank loses 100 pounds in a year",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:490",
+  "contentSource": "Windibank will not leave Sutherland from home",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:491",
+  "contentSource": "Windibank prohibits Sutherland from dating with people of the same age",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:492",
+  "contentSource": "The above does not continue",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:493",
+  "contentSource": "Sutherland defy Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:494",
+  "contentSource": "Sutherland claims rights",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:495",
+  "contentSource": "Sutherland wants to go to a ball",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:496",
+  "contentSource": "Windibank gets the help of mother of Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:497",
+  "contentSource": "Windibank disguises",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:498",
+  "contentSource": "Windibank wore colored glasses",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:499",
+  "contentSource": "Windibank wore a mustache",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:500",
+  "contentSource": "Windibank whispered",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:501",
+  "contentSource": "Disguise is safe",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:503",
+  "contentSource": "Sutherland is nearsighted",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:504",
+  "contentSource": "Windibank is Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:505",
+  "contentSource": "Windibank chases others from Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:472",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:507",
+  "contentSource": "Sutherland loves Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:511",
+  "contentSource": "Sutherland loved Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:512",
+  "contentSource": "Sutherland thinks that",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:514",
+  "contentSource": "Sutherland's thoughts grow with Sutherland&#39;s mother&#39;s praise",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:515",
+  "contentSource": "Hosmer met Sutherland many times",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:516",
+  "contentSource": "Windibank was relieved",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:518",
+  "contentSource": "Windibank gets engaged with Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:519",
+  "contentSource": "Sutherland's love does not go to others",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:520",
+  "contentSource": "Forever, Windibank can't fool Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:521",
+  "contentSource": "Windibank needs:",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:522",
+  "contentSource": "Windibank breaks up with Sutherland dramatically",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:524",
+  "contentSource": "Forever",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:525",
+  "contentSource": "For the time being",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:527",
+  "contentSource": "Windibank made Sutherland swear in the Bible",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:528",
+  "contentSource": "Windibank hints at",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:529",
+  "contentSource": "An incident occurs on the morning of the wedding day",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:530",
+  "contentSource": "Windibank wanted to",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:531",
+  "contentSource": "Sutherland tied to Hosma",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:532",
+  "contentSource": "Sutherland does not love others",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:534",
+  "contentSource": "Life and death of Hosmer is unknown",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:535",
+  "contentSource": "Windibank carried Sutherland to the church",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:537",
+  "contentSource": "Windibank has disappeared",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:510",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:538",
+  "contentSource": "Windibank came out of the opposite door",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:541",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:542",
+  "contentSource": "Windibank does not know the facts",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:541",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:543",
+  "contentSource": "Windibank has not beat the law",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:541",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:544",
+  "contentSource": "Windibank can sue Holmes for beating threat and illegal detention",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:541",
+  "speaker": "d:Windibank",
+  "actSource": "Windibank said",
+  "content": "d:547",
+  "contentSource": "Holmes is closing the door",
+  "contentInfoSource": "d:Windibank"
+ },
+ {
+  "act": "d:548",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:549",
+  "contentSource": "Law can not handle Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:551",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:552",
+  "contentSource": "Windibank has sins",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:551",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:553",
+  "contentSource": "Sutherland brothers best friend wins Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:554",
+  "speaker": "d:Watson",
+  "actSource": "Watson said the following",
+  "content": "d:555",
+  "contentSource": "Watson wants to try a hunting whistle",
+  "contentInfoSource": "d:Watson"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:559",
+  "contentSource": "Windibank Overlaps Sin",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:560",
+  "contentSource": "Finally",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:561",
+  "contentSource": "The behavior of Hosmer had a deep motive",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:562",
+  "contentSource": "Windibank Gets Money",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:563",
+  "contentSource": "Windibank and Hosmer do not appear together",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:564",
+  "contentSource": "Colored glasses and voices and whistles reminiscent of disguise",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:565",
+  "contentSource": "The signature was a type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:566",
+  "contentSource": "Sutherland knows Windibank handwriting",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:568",
+  "contentSource": "Sutherland notices Windibank handwriting",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:569",
+  "contentSource": "Holmes knows the company of Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:570",
+  "contentSource": "Holmes removed eyebrows",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:571",
+  "contentSource": "Holmes confirmed with the company",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:572",
+  "contentSource": "Holmes was aware of the features of the type",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:573",
+  "contentSource": "Holmes sent a letter to Windibank",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:574",
+  "contentSource": "The reply was a typing",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:575",
+  "contentSource": "The characteristics of the type matched Hosmer",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:576",
+  "contentSource": "The company said the following",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:578",
+  "contentSource": "Sutherland does not believe in Holmes",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:579",
+  "contentSource": null,
+  "contentInfoSource": null
+ },
+ {
+  "act": "d:558",
+  "speaker": "d:Holmes",
+  "actSource": "Holmes said the following",
+  "content": "d:580",
+  "contentSource": "Holmes tell the truth to Sutherland",
+  "contentInfoSource": "d:Holmes"
+ },
+ {
+  "act": "d:576",
+  "speaker": "d:company",
+  "actSource": "The company said the following",
+  "content": "d:577",
+  "contentSource": "The document is Windibank",
+  "contentInfoSource": "d:someone_of_Company"
+ }
+]

@@ -1,0 +1,16 @@
+@prefix st:   <http://example.org/dectective/story/> .
+@prefix w:    <http://example.org/dectective/world/> .
+@prefix prof: <http://example.org/dectective/profile#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix inf:  <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix dec:  <http://w3id.org/conjectures/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+st:e1 a crm:E5_Event . st:pA prof:attended st:e1 . st:pC prof:attended st:e1 .
+st:pA prof:engagedTo st:pC . st:pC prof:wore st:x1 .
+st:j1 a prof:Journey ; prof:traveller st:pB . st:j2 a prof:Journey ; prof:traveller st:pB .
+st:e2 a prof:Disappearance ; prof:disappearedPerson st:pC .

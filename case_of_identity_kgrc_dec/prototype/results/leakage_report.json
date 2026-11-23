@@ -1,0 +1,35 @@
+{
+  "C1": {
+    "leaks": [],
+    "n_leaks": 0,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared"
+    ]
+  },
+  "C2": {
+    "leaks": [],
+    "n_leaks": 0,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared"
+    ]
+  },
+  "C3": {
+    "leaks": [],
+    "n_leaks": 0,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared"
+    ]
+  },
+  "C4": {
+    "leaks": [],
+    "n_leaks": 0,
+    "reality_reaching_graphs": [
+      "default",
+      "http://example.org/dectective/world/shared",
+      "http://example.org/dectective/world/w10"
+    ]
+  }
+}

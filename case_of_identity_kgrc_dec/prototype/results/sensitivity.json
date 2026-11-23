@@ -1,0 +1,360 @@
+{
+  "base_slice": "prototype/fixtures/T06_divergence/slices/T06a_belief_worlds_vs_reality.trig",
+  "query": "T06a_belief_worlds_vs_reality",
+  "reps": 3,
+  "timeout_s": 600,
+  "A_background": [
+    {
+      "background_triples": 0,
+      "dec": {
+        "rc": 0,
+        "wall_s": 14.4,
+        "mat_ms": [
+          5109.58652,
+          4376.003613,
+          3818.480735
+        ],
+        "mat_ms_median": 4376.003613,
+        "input_quads": 179,
+        "materialised_total": 5266,
+        "n_worlds": 5,
+        "inconsistency_pairs": 6,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 2.9,
+        "mat_ms": [
+          1002.312538,
+          467.271102,
+          382.680225
+        ],
+        "mat_ms_median": 467.271102,
+        "input_quads": 179,
+        "materialised_total": 5092,
+        "n_worlds": 5,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "background_triples": 250,
+      "dec": {
+        "rc": 0,
+        "wall_s": 13.4,
+        "mat_ms": [
+          4716.792101,
+          3843.881338,
+          3654.60322
+        ],
+        "mat_ms_median": 3843.881338,
+        "input_quads": 429,
+        "materialised_total": 5565,
+        "n_worlds": 5,
+        "inconsistency_pairs": 6,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.2,
+        "mat_ms": [
+          1179.562637,
+          539.857483,
+          350.683297
+        ],
+        "mat_ms_median": 539.857483,
+        "input_quads": 429,
+        "materialised_total": 5391,
+        "n_worlds": 5,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "background_triples": 500,
+      "dec": {
+        "rc": 0,
+        "wall_s": 13.9,
+        "mat_ms": [
+          5030.453417,
+          3999.65934,
+          3678.511898
+        ],
+        "mat_ms_median": 3999.65934,
+        "input_quads": 679,
+        "materialised_total": 5821,
+        "n_worlds": 5,
+        "inconsistency_pairs": 6,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.0,
+        "mat_ms": [
+          955.685548,
+          527.324765,
+          404.775874
+        ],
+        "mat_ms_median": 527.324765,
+        "input_quads": 679,
+        "materialised_total": 5647,
+        "n_worlds": 5,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "background_triples": 1000,
+      "dec": {
+        "rc": 0,
+        "wall_s": 14.3,
+        "mat_ms": [
+          5480.724619,
+          3971.343916,
+          3672.856769
+        ],
+        "mat_ms_median": 3971.343916,
+        "input_quads": 1179,
+        "materialised_total": 6328,
+        "n_worlds": 5,
+        "inconsistency_pairs": 6,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.1,
+        "mat_ms": [
+          1188.419064,
+          458.76191,
+          330.079235
+        ],
+        "mat_ms_median": 458.76191,
+        "input_quads": 1179,
+        "materialised_total": 6154,
+        "n_worlds": 5,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "background_triples": 2000,
+      "dec": {
+        "rc": 0,
+        "wall_s": 15.0,
+        "mat_ms": [
+          5390.293091,
+          4244.806295,
+          4121.287358
+        ],
+        "mat_ms_median": 4244.806295,
+        "input_quads": 2179,
+        "materialised_total": 7338,
+        "n_worlds": 5,
+        "inconsistency_pairs": 6,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.2,
+        "mat_ms": [
+          1146.337564,
+          566.801983,
+          344.731778
+        ],
+        "mat_ms_median": 566.801983,
+        "input_quads": 2179,
+        "materialised_total": 7164,
+        "n_worlds": 5,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "background_triples": 4000,
+      "dec": {
+        "rc": 0,
+        "wall_s": 14.8,
+        "mat_ms": [
+          5407.827937,
+          4052.360245,
+          4060.988748
+        ],
+        "mat_ms_median": 4060.988748,
+        "input_quads": 4179,
+        "materialised_total": 9347,
+        "n_worlds": 5,
+        "inconsistency_pairs": 6,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.3,
+        "mat_ms": [
+          1136.364741,
+          624.459354,
+          329.399328
+        ],
+        "mat_ms_median": 624.459354,
+        "input_quads": 4179,
+        "materialised_total": 9173,
+        "n_worlds": 5,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    }
+  ],
+  "B_worlds": [
+    {
+      "extra_worlds": 2,
+      "dec": {
+        "rc": 0,
+        "wall_s": 28.6,
+        "mat_ms": [
+          9612.472255,
+          8711.843295,
+          8944.53484
+        ],
+        "mat_ms_median": 8944.53484,
+        "input_quads": 187,
+        "materialised_total": 7258,
+        "n_worlds": 7,
+        "inconsistency_pairs": 15,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.3,
+        "mat_ms": [
+          1264.070866,
+          583.783476,
+          438.359929
+        ],
+        "mat_ms_median": 583.783476,
+        "input_quads": 187,
+        "materialised_total": 7026,
+        "n_worlds": 7,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "extra_worlds": 4,
+      "dec": {
+        "rc": 0,
+        "wall_s": 49.0,
+        "mat_ms": [
+          16576.473742,
+          15865.944211,
+          15200.273826
+        ],
+        "mat_ms_median": 15865.944211,
+        "input_quads": 195,
+        "materialised_total": 9250,
+        "n_worlds": 9,
+        "inconsistency_pairs": 28,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 3.4,
+        "mat_ms": [
+          1191.377279,
+          736.298446,
+          421.432992
+        ],
+        "mat_ms_median": 736.298446,
+        "input_quads": 195,
+        "materialised_total": 8960,
+        "n_worlds": 9,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "extra_worlds": 8,
+      "dec": {
+        "rc": 0,
+        "wall_s": 107.8,
+        "mat_ms": [
+          35093.860857,
+          35159.862232,
+          35821.176725
+        ],
+        "mat_ms_median": 35159.862232,
+        "input_quads": 211,
+        "materialised_total": 13234,
+        "n_worlds": 13,
+        "inconsistency_pairs": 66,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 4.3,
+        "mat_ms": [
+          1793.839934,
+          747.698334,
+          653.009312
+        ],
+        "mat_ms_median": 747.698334,
+        "input_quads": 211,
+        "materialised_total": 12828,
+        "n_worlds": 13,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    },
+    {
+      "extra_worlds": 16,
+      "dec": {
+        "rc": 0,
+        "wall_s": 308.6,
+        "mat_ms": [
+          99616.35813,
+          104246.729515,
+          102560.194655
+        ],
+        "mat_ms_median": 102560.194655,
+        "input_quads": 243,
+        "materialised_total": 21202,
+        "n_worlds": 21,
+        "inconsistency_pairs": 190,
+        "answer": [
+          "w=http://example.org/dectective/world/mary_D1"
+        ]
+      },
+      "ctx": {
+        "rc": 0,
+        "wall_s": 4.8,
+        "mat_ms": [
+          2024.471003,
+          927.633896,
+          805.24857
+        ],
+        "mat_ms_median": 927.633896,
+        "input_quads": 243,
+        "materialised_total": 20564,
+        "n_worlds": 21,
+        "inconsistency_pairs": 0,
+        "answer": []
+      }
+    }
+  ]
+}

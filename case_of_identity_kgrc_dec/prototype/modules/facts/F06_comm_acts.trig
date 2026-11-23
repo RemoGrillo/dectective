@@ -1,0 +1,18 @@
+@prefix st:   <http://example.org/dectective/story/> .
+@prefix w:    <http://example.org/dectective/world/> .
+@prefix prof: <http://example.org/dectective/profile#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix inf:  <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix dec:  <http://w3id.org/conjectures/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+st:ca_hosmer_cashier a prof:CommunicativeAct ; crm:P14_carried_out_by st:hosmer ; prof:addressee st:mary ; prof:hasContent w:v_hosmer_cashier ; prof:reportedBy st:mary .
+st:hosmer prof:uttered w:v_hosmer_cashier .
+st:ca_mary_france a prof:CommunicativeAct ; crm:P14_carried_out_by st:mary ; prof:addressee st:holmes ; prof:hasContent w:v_mary_france .
+st:mary prof:uttered w:v_mary_france .
+st:ca_windibank_reassure a prof:CommunicativeAct ; crm:P14_carried_out_by st:windibank ; prof:addressee st:mary ; prof:hasContent w:v_windibank_reassure ; prof:reportedBy st:mary .
+st:windibank prof:uttered w:v_windibank_reassure .

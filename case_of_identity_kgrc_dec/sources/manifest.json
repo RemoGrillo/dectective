@@ -1,0 +1,332 @@
+{
+  "files": [
+    {
+      "path": "kgrc/ACaseOfIdentity.ttl",
+      "role": "kgrc_graph",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/ACaseOfIdentity.ttl",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/ACaseOfIdentity.ttl",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:44.470382+00:00",
+      "size_bytes": 507686,
+      "sha256": "def236736cdef4d41e0ed57286267d1b077d95c98901e9e24187a699f9f6b460",
+      "magic_check": null
+    },
+    {
+      "path": "kgrc/LICENSE_2023ikgrc",
+      "role": "kgrc_license",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/LICENSE",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/LICENSE",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:45.527348+00:00",
+      "size_bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "magic_check": null
+    },
+    {
+      "path": "kgrc/README_2023ikgrc.md",
+      "role": "kgrc_doc",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/README.md",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/README.md",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:45.152009+00:00",
+      "size_bytes": 3034,
+      "sha256": "01777a4f67dbda82e00788f89fc1bfcfdf987461a037a892b6e670ee8cdb1453",
+      "magic_check": null
+    },
+    {
+      "path": "kgrc/README_root.md",
+      "role": "kgrc_doc",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/README.md",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/README.md",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:45.755307+00:00",
+      "size_bytes": 1195,
+      "sha256": "05f527674d27ea5115172459eb242502bdbb1fba1772a0154e3a1fa59dbfde43",
+      "magic_check": null
+    },
+    {
+      "path": "kgrc/SampleSPARQL.md",
+      "role": "kgrc_doc",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/SampleSPARQL.md",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/SampleSPARQL.md",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:45.335577+00:00",
+      "size_bytes": 3663,
+      "sha256": "a345c4ad02bb2c9d0a27ebe1b44cd036aa2051acdac3e5b2ce1f83f5307473db",
+      "magic_check": null
+    },
+    {
+      "path": "kgrc/kgc.owl",
+      "role": "kgrc_schema_2023",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/kgc.owl",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/2023ikgrc/kgc.owl",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:44.715247+00:00",
+      "size_bytes": 12022,
+      "sha256": "a946bba7261237a405eceebb9105032cd3e941b2a1fbd3089608957596b07fd7",
+      "magic_check": null
+    },
+    {
+      "path": "kgrc/kgc.owl.root",
+      "role": "kgrc_schema_root",
+      "requested_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/kgc.owl",
+      "effective_url": "https://raw.githubusercontent.com/KnowledgeGraphJapan/KGRC-RDF/master/kgc.owl",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:44.953426+00:00",
+      "size_bytes": 18980,
+      "sha256": "dd2a24a89d2b99c591689a3c3e8275f55dfaec0d90ca9bbf4724d638cdb07e68",
+      "magic_check": null
+    },
+    {
+      "path": "ontologies/CIDOC_CRM_v7.1.3.rdf",
+      "role": "crm_rdfs",
+      "requested_url": "https://cidoc-crm.org/rdfs/7.1.3/CIDOC_CRM_v7.1.3.rdfs",
+      "effective_url": "https://cidoc-crm.org/rdfs/7.1.3/CIDOC_CRM_v7.1.3.rdf",
+      "http_status": 200,
+      "content_type": "application/rdf+xml",
+      "last_modified": "Fri, 20 Nov 2026 15:22:01 GMT",
+      "accessed_utc": "2026-11-22T17:24:47.400580+00:00",
+      "size_bytes": 736763,
+      "sha256": "3f9c634092e34f65927ea73b6ac232cda724da927dd93ff9efb8624cfff562d2",
+      "magic_check": true,
+      "note": "File starts with UTF-8 BOM before <?xml; initial magic check failed only because of the BOM; parses as RDF/XML (4556 triples). Server redirects .rdfs -> .rdf."
+    },
+    {
+      "path": "ontologies/CRMinf_v1.2.1.html",
+      "role": "crminf_spec",
+      "requested_url": "https://cidoc-crm.org/extensions/crminf/html/CRMinf_v1.2.1.html",
+      "effective_url": "https://cidoc-crm.org/extensions/crminf/html/CRMinf_v1.2.1.html",
+      "http_status": 200,
+      "content_type": "text/html",
+      "last_modified": "Tue, 29 Sep 2026 18:32:02 GMT",
+      "accessed_utc": "2026-11-22T17:24:47.772409+00:00",
+      "size_bytes": 318280,
+      "sha256": "59eb7b85276122831d58abafcae1a7d38c4ecf07592b5795945aa05f07be9ab5",
+      "magic_check": true
+    },
+    {
+      "path": "ontologies/CRMinf_v1.2.1.owl",
+      "role": "crminf_owl",
+      "requested_url": "https://cidoc-crm.org/extensions/crminf/owl/1.2.1/CRMinf_v1.2.1.owl",
+      "effective_url": "https://cidoc-crm.org/extensions/crminf/owl/1.2.1/CRMinf_v1.2.1.owl",
+      "http_status": 200,
+      "content_type": "application/owl+xml",
+      "last_modified": "Tue, 29 Sep 2026 18:32:02 GMT",
+      "accessed_utc": "2026-11-22T17:24:48.421242+00:00",
+      "size_bytes": 134219,
+      "sha256": "bb262267c7a7648ed1f8b5ea553688f2ef82ff7ffef77ade07db7bedf37fb6e1",
+      "magic_check": true
+    },
+    {
+      "path": "ontologies/CRMinf_v1.2.1.rdf",
+      "role": "crminf_rdfs",
+      "requested_url": "https://cidoc-crm.org/extensions/crminf/rdfs/1.2.1/CRMinf_v1.2.1.rdf",
+      "effective_url": "https://cidoc-crm.org/extensions/crminf/rdfs/1.2.1/CRMinf_v1.2.1.rdf",
+      "http_status": 200,
+      "content_type": "application/rdf+xml",
+      "last_modified": "Tue, 29 Sep 2026 18:32:02 GMT",
+      "accessed_utc": "2026-11-22T17:24:48.087560+00:00",
+      "size_bytes": 126772,
+      "sha256": "d7d9bb51339380abf56acdcc7229f529c65c547b467dc913b1c8d31bccf95298",
+      "magic_check": true
+    },
+    {
+      "path": "ontologies/cidoc_crm_v7.1.3.html",
+      "role": "crm_spec",
+      "requested_url": "https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html",
+      "effective_url": "https://cidoc-crm.org/html/cidoc_crm_v7.1.3.html",
+      "http_status": 200,
+      "content_type": "text/html",
+      "last_modified": "Fri, 20 Nov 2026 15:25:18 GMT",
+      "accessed_utc": "2026-11-22T17:24:46.668273+00:00",
+      "size_bytes": 1472925,
+      "sha256": "123efabc59c3b07441bf3cdb1718815919673b5c71d6358289dc56983ba5ca5a",
+      "magic_check": true
+    },
+    {
+      "path": "ontologies/crminf_releases.html",
+      "role": "crminf_release_page",
+      "requested_url": "https://cidoc-crm.org/crminf/fm_releases",
+      "effective_url": "https://cidoc-crm.org/crminf/fm_releases",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:48.720676+00:00",
+      "size_bytes": 93600,
+      "sha256": "ddd458790c454cb50021c40aeff4939bcee6ef2652d2b274b5864d4a72fcdb72",
+      "magic_check": true
+    },
+    {
+      "path": "ontologies/crminf_version_1.2.1.html",
+      "role": "crminf_version_page",
+      "requested_url": "https://cidoc-crm.org/crminf/ModelVersion/crminf-1.2.1",
+      "effective_url": "https://cidoc-crm.org/crminf/ModelVersion/crminf-1.2.1",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:49.009819+00:00",
+      "size_bytes": 72199,
+      "sha256": "17e22f41939a94547b6f48d26d1cdb79f69c85ee49c5c7ffd25f06ad3e5411fc",
+      "magic_check": true
+    },
+    {
+      "path": "papers/ESWC_2023_SEMMES_Mystery.pdf",
+      "role": "kgrc_paper",
+      "requested_url": "https://ceur-ws.org/Vol-3443/ESWC_2023_SEMMES_Mystery.pdf",
+      "effective_url": "https://ceur-ws.org/Vol-3443/ESWC_2023_SEMMES_Mystery.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 19 Jul 2023 06:26:41 GMT",
+      "accessed_utc": "2026-11-22T17:24:46.109933+00:00",
+      "size_bytes": 394310,
+      "sha256": "7b7958674a3d9ca46c1c693833710f1b21124ab50449eaca1138472123cb452f",
+      "magic_check": true
+    },
+    {
+      "path": "papers/arxiv_2606.15246_abs.html",
+      "role": "dec_paper_metadata",
+      "requested_url": "https://arxiv.org/abs/2606.15246",
+      "effective_url": "https://arxiv.org/abs/2606.15246",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": "Mon, 24 Aug 2026 18:58:10 GMT",
+      "accessed_utc": "2026-11-22T17:24:45.877950+00:00",
+      "size_bytes": 41588,
+      "sha256": "6b4e53150bc2f33c835df797339bd626b06feb0857d2777248261927d54bec9f",
+      "magic_check": true
+    },
+    {
+      "path": "papers/arxiv_2606.15246v1.pdf",
+      "role": "dec_paper",
+      "requested_url": "https://arxiv.org/pdf/2606.15246v1",
+      "effective_url": "https://arxiv.org/pdf/2606.15246v1",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 16 Jun 2026 00:36:53 GMT",
+      "accessed_utc": "2026-11-22T17:24:45.838280+00:00",
+      "size_bytes": 795777,
+      "sha256": "f40e44aa28dfa75486966d9d1595a1e924c6cd28fe6a1e1862558b670d39c63d",
+      "magic_check": true
+    },
+    {
+      "path": "text/iden.html",
+      "role": "story_collation",
+      "requested_url": "https://sherlock-holm.es/stories/html/iden.html",
+      "effective_url": "https://sherlock-holm.es/stories/html/iden.html",
+      "http_status": 200,
+      "content_type": "text/html",
+      "last_modified": "Fri, 02 May 2025 07:49:15 GMT",
+      "accessed_utc": "2026-11-22T17:24:44.079129+00:00",
+      "size_bytes": 43529,
+      "sha256": "7c6639ce3a62426cee08367e0dcdce1841ef4ddb7681837ea98b9f129f3de5cb",
+      "magic_check": true
+    },
+    {
+      "path": "text/iden.pdf",
+      "role": "story_witness",
+      "requested_url": "https://sherlock-holm.es/stories/pdf/letter/2-sided/iden.pdf",
+      "effective_url": "https://sherlock-holm.es/stories/pdf/letter/2-sided/iden.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Sun, 04 May 2025 07:54:03 GMT",
+      "accessed_utc": "2026-11-22T17:24:43.821667+00:00",
+      "size_bytes": 89329,
+      "sha256": "648cb664f9e91e8dae8f373ec15c89b8f104c89d95b4776b1364ced97262dc55",
+      "magic_check": true
+    },
+    {
+      "path": "text/sherlock-holm.es_colophon.html",
+      "role": "story_site_notes",
+      "requested_url": "https://sherlock-holm.es/colophon/",
+      "effective_url": "https://sherlock-holm.es/colophon/",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "accessed_utc": "2026-11-22T17:24:44.249059+00:00",
+      "size_bytes": 27119,
+      "sha256": "a2a72280da86b03178fde75b177f723199fc8600dade085666e9ef46e8a458b1",
+      "magic_check": true
+    }
+  ],
+  "generated_by": "scripts/acquire.py",
+  "git": {
+    "KGRC-RDF": {
+      "url": "https://github.com/KnowledgeGraphJapan/KGRC-RDF.git",
+      "clone": "partial (--filter=blob:none) + sparse (2023ikgrc)",
+      "branch": "master",
+      "head": "d62328bd166d8b1eafde529a61ee025775ce9a64",
+      "last_commit_touching_2023ikgrc/ACaseOfIdentity.ttl": "cae95727591af480c2957904a8f770c3f4fa5447 2023-07-24T15:10:10+09:00 added 2023ikgrc on the master",
+      "blob_master_2023ikgrc": "022b8cb7348b75b3e75483a83004ffb78622a072",
+      "blob_branch_ikgrc2023_root": "022b8cb7348b75b3e75483a83004ffb78622a072",
+      "note": "raw downloads in sources/kgrc are byte-identical (SHA-256) to the clone at this HEAD; master is mutable, the commit pins the version"
+    },
+    "dec-reasoner": {
+      "url": "https://github.com/fvitali/dec-reasoner.git",
+      "branch": "main",
+      "head": "e6775b39e22893176c45e3a161e49a7d2c718fb2",
+      "head_date_subject": "2026-07-06T17:22:54+02:00 Modified examples of belief and discovery predicates",
+      "working_tree_changes_after_build": "M .build/build-info.properties",
+      "note": "the Maven antrun plugin rewrites .build/build-info.properties (build counter) at every build; source code untouched"
+    }
+  },
+  "licences": {
+    "text": {
+      "files": [
+        "text/iden.pdf",
+        "text/iden.html"
+      ],
+      "found": "PDF/HTML disclaimer: provided 'as-is', 'formatted from various free ASCII and HTML variants', collection version 3.1; colophon: files built 'from the now copyright-free texts' (sources/text/sherlock-holm.es_colophon.html).",
+      "assessment": "Doyle's text of 'A Case of Identity' (1891) is out of copyright in most jurisdictions; no explicit licence is stated for the site's typeset files. Redistribution of the PDF itself is not authorised by an explicit licence: keep it as a local source and cite the URL."
+    },
+    "graph": {
+      "files": [
+        "kgrc/ACaseOfIdentity.ttl",
+        "kgrc/kgc.owl",
+        "kgrc/kgc.owl.root"
+      ],
+      "found": "CC BY 4.0: 2023ikgrc/README.md, 2023ikgrc/LICENSE (legal code), triples cc:license <https://creativecommons.org/licenses/by/4.0/> and cc:attributionName 'SIG-SWO, JSAI' in the TTL.",
+      "assessment": "Reuse and derivatives allowed with attribution (SIG-SWO, JSAI)."
+    },
+    "code": {
+      "repo": "fvitali/dec-reasoner",
+      "found": "MIT License (LICENSE file, GitHub API)."
+    },
+    "dec_paper": {
+      "file": "papers/arxiv_2606.15246v1.pdf",
+      "found": "arXiv preprint v1 (13 Jun 2026); the stored abstract page (papers/arxiv_2606.15246_abs.html) links the article to CC BY 4.0 (licenses/by/4.0, 'Rights to this article')."
+    },
+    "kgrc_paper": {
+      "file": "papers/ESWC_2023_SEMMES_Mystery.pdf",
+      "found": "CEUR-WS Vol-3443, '© 2023 Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0)' (page 1)."
+    },
+    "ontologies": {
+      "files": [
+        "ontologies/*"
+      ],
+      "found": "CIDOC CRM 7.1.3 and CRMinf 1.2.1 official HTML/RDFS/OWL from cidoc-crm.org; no licence statement checked in the acquired files beyond the site; used for reference and extraction of a minimal module."
+    }
+  },
+  "tools": {
+    "python": "3.14.10",
+    "requirements": "scripts/requirements.txt (pip freeze of .venv)",
+    "poppler_pdftotext": "pdftotext version 26.11.0",
+    "java": "openjdk version \"21.0.13.0.3\" 2026-10-24",
+    "maven": "Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)",
+    "jena": "4.8.0 (Maven, vendor/m2) — DEC pom and runner pom",
+    "maven_sha512_verified": "apache-maven-3.9.9-bin.tar.gz verified against the official .sha512"
+  }
+}

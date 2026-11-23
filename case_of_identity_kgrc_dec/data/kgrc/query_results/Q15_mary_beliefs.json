@@ -1,0 +1,170 @@
+[
+ {
+  "s": "d:019",
+  "type": "kgc:Statement",
+  "p": "pred:want",
+  "src": "Sutherland wants advice",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:020",
+  "type": "kgc:Statement",
+  "p": "pred:worry",
+  "src": "Sutherland suffers from",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:021",
+  "type": "kgc:Statement",
+  "p": "pred:want",
+  "src": "Sutherland wants to consult people",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:047",
+  "type": "kgc:Situation",
+  "p": "pred:think",
+  "src": "Sutherland thought that",
+  "info": null
+ },
+ {
+  "s": "d:080",
+  "type": "kgc:Situation",
+  "p": "pred:think",
+  "src": "Sutherland thinks the following",
+  "info": null
+ },
+ {
+  "s": "d:138",
+  "type": "kgc:Situation",
+  "p": "pred:think",
+  "src": "Sutherland thought that",
+  "info": null
+ },
+ {
+  "s": "d:169",
+  "type": "kgc:Statement",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know the industry of Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:171",
+  "type": "kgc:Statement",
+  "p": "pred:know",
+  "src": "Sutherland knows the following",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:207",
+  "type": "kgc:Statement",
+  "p": "pred:believe",
+  "src": "Sutherland believes in Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:212",
+  "type": "kgc:Statement",
+  "p": "pred:worry",
+  "src": "Sutherland worried about Windibank",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:216",
+  "type": "kgc:Statement",
+  "p": "pred:want",
+  "src": "Sutherland wants to report to Windibank before the wedding",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:241",
+  "type": "kgc:Statement",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know where Hosmer is",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:244",
+  "type": "kgc:Statement",
+  "p": "pred:believe",
+  "src": "Sutherland believes in Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:245",
+  "type": "kgc:Statement",
+  "p": "pred:swear",
+  "src": "Sutherland swore the above",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:249",
+  "type": "kgc:Situation",
+  "p": "pred:think",
+  "src": "Sutherland thinks the following",
+  "info": null
+ },
+ {
+  "s": "d:254",
+  "type": "kgc:Statement",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know the danger of Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:279",
+  "type": "kgc:Statement",
+  "p": "pred:notKnow",
+  "src": "Sutherland does not know Hosmer's address",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:287",
+  "type": "kgc:Statement",
+  "p": "pred:believe",
+  "src": "Sutherland believes in Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:495",
+  "type": "kgc:Statement",
+  "p": "pred:want",
+  "src": "Sutherland wants to go to a ball",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:507",
+  "type": "kgc:Statement",
+  "p": "pred:love",
+  "src": "Sutherland loves Windibank",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:511",
+  "type": "kgc:Statement",
+  "p": "pred:love",
+  "src": "Sutherland loved Hosmer",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:512",
+  "type": "kgc:Statement",
+  "p": "pred:thinking",
+  "src": "Sutherland thinks that",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:527a",
+  "type": "kgc:Statement",
+  "p": "pred:swear",
+  "src": null,
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:566",
+  "type": "kgc:Statement",
+  "p": "pred:know",
+  "src": "Sutherland knows Windibank handwriting",
+  "info": "d:Holmes"
+ }
+]

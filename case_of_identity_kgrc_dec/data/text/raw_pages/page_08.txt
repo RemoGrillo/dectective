@@ -1,0 +1,109 @@
+1	body	about the signature is very suggestive—in fact, we
+1	body	may call it conclusive.”
+1	body	“Of what?”
+1	body	“My dear fellow, is it possible you do not see how
+1	body	strongly it bears upon the case?”
+1	body	“I cannot say that I do unless it were that he
+1	body	wished to be able to deny his signature if an action
+1	body	for breach of promise were instituted.”
+1	body	“No, that was not the point. However, I shall write
+1	body	two letters, which should settle the matter. One is
+1	body	to a ﬁrm in the City, the other is to the young lady’s
+1	body	stepfather, Mr. Windibank, asking him whether he
+1	body	could meet us here at six o’clock tomorrow evening.
+1	body	It is just as well that we should do business with the
+1	body	male relatives. And now, Doctor, we can do nothing
+1	body	until the answers to those letters come, so we may put
+1	body	our little problem upon the shelf for the interim.”
+1	body	I had had so many reasons to believe in my
+1	body	friend’s subtle powers of reasoning and extraordinary
+1	body	energy in action that I felt that he must have some
+1	body	solid grounds for the assured and easy demeanour
+1	body	with which he treated the singular mystery which he
+1	body	had been called upon to fathom. Once only had I
+1	body	known him to fail, in the case of the King of Bohemia
+1	body	and of the Irene Adler photograph; but when I looked
+1	body	back to the weird business of the Sign of Four, and
+1	body	the extraordinary circumstances connected with the
+1	body	Study in Scarlet, I felt that it would be a strange tangle
+1	body	indeed which he could not unravel.
+1	body	I left him then, still pufﬁng at his black clay pipe,
+1	body	with the conviction that when I came again on the
+1	body	next evening I would ﬁnd that he held in his hands all
+1	body	the clues which would lead up to the identity of the
+1	body	disappearing bridegroom of Miss Mary Sutherland.
+1	body	A professional case of great gravity was engaging
+1	body	my own attention at the time, and the whole of next
+1	body	day I was busy at the bedside of the sufferer. It was
+1	body	not until close upon six o’clock that I found myself
+1	body	free and was able to spring into a hansom and drive
+1	body	to Baker Street, half afraid that I might be too late to
+1	body	assist at the d´enouement of the little mystery. I found
+1	body	Sherlock Holmes alone, however, half asleep, with
+1	body	his long, thin form curled up in the recesses of his
+1	body	armchair. A formidable array of bottles and test-tubes,
+1	body	with the pungent cleanly smell of hydrochloric acid,
+1	body	told me that he had spent his day in the chemical
+1	body	work which was so dear to him.
+1	body	“Well, have you solved it?” I asked as I entered.
+1	body	“Yes. It was the bisulphate of baryta.”
+1	body	“No, no, the mystery!” I cried.
+1	page_number	6
+2	body	“Oh, that! I thought of the salt that I have been
+2	body	working upon. There was never any mystery in the
+2	body	matter, though, as I said yesterday, some of the details
+2	body	are of interest. The only drawback is that there is no
+2	body	law, I fear, that can touch the scoundrel.”
+2	body	“Who was he, then, and what was his object in
+2	body	deserting Miss Sutherland?”
+2	body	The question was hardly out of my mouth, and
+2	body	Holmes had not yet opened his lips to reply, when we
+2	body	heard a heavy footfall in the passage and a tap at the
+2	body	door.
+2	body	“This
+2	body	is
+2	body	the
+2	body	girl’s
+2	body	stepfather,
+2	body	Mr.
+2	body	James
+2	body	Windibank,” said Holmes. “He has written to me
+2	body	to say that he would be here at six. Come in!”
+2	body	The man who entered was a sturdy, middle-sized
+2	body	fellow, some thirty years of age, clean-shaven, and
+2	body	sallow-skinned, with a bland, insinuating manner,
+2	body	and a pair of wonderfully sharp and penetrating grey
+2	body	eyes. He shot a questioning glance at each of us,
+2	body	placed his shiny top-hat upon the sideboard, and
+2	body	with a slight bow sidled down into the nearest chair.
+2	body	“Good-evening,
+2	body	Mr. James Windibank,” said
+2	body	Holmes. “I think that this typewritten letter is from
+2	body	you, in which you made an appointment with me for
+2	body	six o’clock?”
+2	body	“Yes, sir. I am afraid that I am a little late, but I
+2	body	am not quite my own master, you know. I am sorry
+2	body	that Miss Sutherland has troubled you about this little
+2	body	matter, for I think it is far better not to wash linen of
+2	body	the sort in public. It was quite against my wishes that
+2	body	she came, but she is a very excitable, impulsive girl,
+2	body	as you may have noticed, and she is not easily con-
+2	body	trolled when she has made up her mind on a point.
+2	body	Of course, I did not mind you so much, as you are
+2	body	not connected with the ofﬁcial police, but it is not
+2	body	pleasant to have a family misfortune like this noised
+2	body	abroad. Besides, it is a useless expense, for how could
+2	body	you possibly ﬁnd this Hosmer Angel?”
+2	body	“On the contrary,” said Holmes quietly; “I have ev-
+2	body	ery reason to believe that I will succeed in discovering
+2	body	Mr. Hosmer Angel.”
+2	body	Mr. Windibank gave a violent start and dropped
+2	body	his gloves. “I am delighted to hear it,” he said.
+2	body	“It is a curious thing,” remarked Holmes, “that a
+2	body	typewriter has really quite as much individuality as
+2	body	a man’s handwriting. Unless they are quite new, no
+2	body	two of them write exactly alike. Some letters get more
+2	body	worn than others, and some wear only on one side.
+2	body	Now, you remark in this note of yours, Mr. Windibank,
+2	body	that in every case there is some little slurring over of
+2	body	the ‘e,’ and a slight defect in the tail of the ‘r.’ There

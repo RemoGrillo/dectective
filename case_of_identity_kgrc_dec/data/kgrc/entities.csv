@@ -1,0 +1,797 @@
+iri,types,label_en,label_ja,label_other,scene_mentions
+d:100_GBP,kgc:PhysicalObject,100 GBP,100ポンド,,2
+d:14_features,kgc:PhysicalObject,14 features,14の特徴,,2
+d:14th_Monday,kgc:AbstractTime,14th Monday,14日朝,,1
+d:1877,kgc:Object,1877,1877年,,1
+d:1_day,kgc:AbstractTime,1 day,１日,,1
+d:1_year,kgc:AbstractTime,1 year,1年,,1
+d:2_pence,kgc:PhysicalObject,2 pence,2ペンス,,1
+d:4700_GBP,kgc:PhysicalObject,4700 GBP,4700ポンド,,2
+d:5_feet_7_inches,kgc:Object,5 feet 7 inches,5フィート7インチ,,1
+d:5_years_2_months,kgc:Object,5 years 2 months,5年2ヶ月,,1
+d:60_GBP,kgc:PhysicalObject,60 GBP,60ポンド,,1
+d:6_O_clock,kgc:AbstractTime,6 O'clock,六時,,1
+d:Address,kgc:Object,Address,,,0
+d:Address_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,Address of Hosmer,ホズマの住所,,2
+d:Address_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,Address of Sutherland,サザランドの住所,,1
+d:After_a_week,kgc:AbstractTime,After a week,一週間後,,1
+d:After_death,kgc:Object,After death,,,0
+d:After_death_of_father_of_Sutherland,kgc:AbstractTime|kgc:OFobj,After death of father of Sutherland,サザランドの父の死後,,1
+d:Andova,kgc:Place,Andova,アンドーヴァ,,1
+d:Appeal,kgc:Object,Appeal,,,0
+d:Appeal_of_breach_of_pledge,kgc:OFobj|kgc:PhysicalObject,Appeal of breach of pledge,誓約不履行の訴え,,1
+d:Appearance,kgc:PhysicalObject,Appearance,姿,,1
+d:Armchair,kgc:PhysicalObject,Armchair,肘掛け椅子|肘掛椅子,,2
+d:Around,kgc:PhysicalObject,Around,回り,,1
+d:Assault_threat,kgc:Object,Assault threat,暴行の脅迫,,1
+d:At_full_speed,kgc:Object,At full speed,全速力,,1
+d:At_last,kgc:Object,At last,最後,,1
+d:Auckland,kgc:Place,Auckland,オークランド,,1
+d:Back_and_forth,kgc:Object,Back and forth,前後に,,1
+d:Before,kgc:Object,Before,以前,,1
+d:Before_Hosmer,kgc:Object,Before Hosmer,ホズマより先,,1
+d:Before_return,kgc:Object,Before return,,,0
+d:Before_return_of_father_of_Sutherland,kgc:OFobj,Before return of father of Sutherland,サザランドの父の帰国前,,1
+d:Before_the_wedding,kgc:AbstractTime,Before the wedding,結婚式前,,1
+d:Between_seams,kgc:Object,Between seams,,,0
+d:Between_seams_of_window,kgc:OFobj|kgc:Place,Between seams of window,窓掛けの合わせ目の間,,1
+d:Bible,kgc:PhysicalObject,Bible,聖書,,1
+d:Big_problem,kgc:PhysicalObject,Big problem,大問題,,1
+d:Black_beads,kgc:PhysicalObject,Black beads,黒のビーズ,,1
+d:Blackboard_color,kgc:Object,Blackboard color,,,0
+d:Bordeaux,kgc:Object,Bordeaux,,,0
+d:Bowler_hat,kgc:PhysicalObject,Bowler hat,山高帽,,1
+d:Boy,kgc:Person,Boy,給仕服の少年,,1
+d:Chair,kgc:PhysicalObject,Chair,椅子,,4
+d:Character_position,kgc:PhysicalObject,Character position,文字の位置,,1
+d:Church,kgc:PhysicalObject,Church,教会,,2
+d:Clothes_to_wear,kgc:PhysicalObject,Clothes to wear,着る服,,1
+d:Color_glasses,kgc:PhysicalObject,Color glasses,色眼鏡,,4
+d:Company,kgc:PhysicalObject,Company,会社,,1
+d:Compassion,kgc:PhysicalObject,Compassion,思いやり,,1
+d:Corridor,kgc:PhysicalObject,Corridor,廊下,,1
+d:Coworker,kgc:PhysicalObject,Coworker,同僚,,1
+d:Crime,kgc:PhysicalObject,Crime,犯罪,,1
+d:Current,kgc:Object,Current,現在,,1
+d:Customer,kgc:PhysicalObject,Customer,客,,1
+d:Dance_Party,kgc:PhysicalObject,Dance Party,舞踏会,,1
+d:Dance_party,kgc:Object|kgc:PhysicalObject,Dance party,舞踏会,,5
+d:Danger,kgc:PhysicalObject,Danger,危険,,1
+d:Deep_motive,kgc:PhysicalObject,Deep motive,深い動機,,1
+d:Dramatically,kgc:Object,Dramatically,劇的に,,1
+d:Earning,kgc:PhysicalObject,Earning,稼ぎ,,2
+d:England,kgc:Place,England,イングランド,,1
+d:Etheridge,kgc:Person,Etheridge,エサリッジ,,1
+d:Eyes,kgc:Object,Eyes,,,0
+d:Eyes_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,Eyes of Hosmer,ホズマの目,,1
+d:Face_value,kgc:Object,Face value,,,0
+d:Face_value_of_heritage,kgc:OFobj|kgc:PhysicalObject,Face value of heritage,遺産の額面,,1
+d:Family_calamity,kgc:PhysicalObject,Family calamity,家庭の災難,,1
+d:Father,kgc:Object,Father,,,0
+d:Father_of_Sutherland,kgc:OFobj,Father of Sutherland,,,1
+d:Fengchurch_Street,kgc:Place,Fengchurch Street,フェンチャーチ街,,1
+d:First_walk,kgc:AbstractTime,First walk,初散歩,,1
+d:For_the_time_being,kgc:AbstractTime,For the time being,当分の間,,1
+d:Forever,kgc:AbstractTime,Forever,永遠,,2
+d:France,kgc:Place,France,フランス,,3
+d:France_office,kgc:Object,France office,,,0
+d:France_office_of_company_of_Bordeaux,kgc:OFobj|kgc:PhysicalObject,France office of company of Bordeaux,ボルドーの会社のフランス事務所,,1
+d:Friday,kgc:AbstractTime,Friday,金曜日,,1
+d:Gallow,kgc:PhysicalObject,Gallow,絞首台,,1
+d:Gas_Industry,kgc:Object,Gas Industry,,,0
+d:Glove,kgc:Object,Glove,,,0
+d:Hague,kgc:Place,Hague,ハーグ,,1
+d:Handwritten_letter,kgc:PhysicalObject,Handwritten letter,手書きの手紙,,1
+d:Hardy,kgc:Person,Hardy,ハーディ,,3
+d:Holmes,kgc:Person|kgc:PhysicalObject,Holmes,ホームズ,,239
+d:Holmes_s_office,kgc:Place,Holmes's office,ホームズの事務所,,1
+d:Horizontal_shelf,kgc:PhysicalObject,Horizontal shelf,横棚,,1
+d:Hosma,kgc:Object,Hosma,,,0
+d:Hosmer,kgc:Person|kgc:PhysicalObject,Hosmer,ホズマ|サザランド,,75
+d:Hosmer_s_statement,kgc:Object,Hosmer's statement,,,8
+d:Hosmer_s_thoughts,kgc:Object,Hosmer's thoughts,,,2
+d:House,kgc:Object,House,,,0
+d:House_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,House of Sutherland,家,,3
+d:House_of_Windibank,kgc:OFobj|kgc:PhysicalObject,House of Windibank,家,,2
+d:Hunting_whistle,kgc:PhysicalObject,Hunting whistle,狩猟鞭,,1
+d:Illegally,kgc:Object,Illegally,不法拘束で,,1
+d:Immediately,kgc:Object,Immediately,すぐに,,3
+d:Important,kgc:Object,Important,,,0
+d:Important_of_minor,kgc:OFobj|kgc:PhysicalObject,Important of minor,細事の大事,,1
+d:Important_point,kgc:PhysicalObject,Important point,大事な点,,2
+d:Incident,kgc:PhysicalObject,Incident,事件,,2
+d:Industries,kgc:Object,Industries,,,0
+d:Industries_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,Industries of Hosmer,ホズマの業種,,1
+d:Inquirer_advertisement,kgc:PhysicalObject,Inquirer advertisement,尋ね人広告,,3
+d:Inscription,kgc:PhysicalObject,Inscription,座右の銘,,1
+d:Jacket,kgc:Object,Jacket,,,0
+d:Just_before_the_letter_arrives,kgc:Object,Just before the letter arrives,手紙が着く直前,,1
+d:Last_Friday,kgc:AbstractTime,Last Friday,先週金曜日,,2
+d:Last_Satuaday,kgc:Object,Last Satuaday,先週土曜日,,1
+d:Late,kgc:PhysicalObject,Late,遅刻,,1
+d:Left_and_right_separate_shoes,kgc:PhysicalObject,Left and right separate shoes,左右別の靴,,1
+d:Left_wrist_double_wire,kgc:Object,Left wrist double wire,,,0
+d:Left_wrist_double_wire_of_Plush_weave,kgc:OFobj|kgc:PhysicalObject,Left wrist double wire of Plush weave,左のフラシ織の手首の二重線,,1
+d:Less_than,kgc:PhysicalObject,Less than,以下,,1
+d:Letter_1,kgc:PhysicalObject,Letter 1,手紙1,,1
+d:Letter_2,kgc:PhysicalObject,Letter 2,手紙2,,1
+d:Life,kgc:Object,Life,,,0
+d:Life_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,Life of Hosmer,ホズマの生死,,1
+d:Like_handwriting,kgc:Object,Like handwriting,筆跡のように,,1
+d:Love,kgc:PhysicalObject,Love,情,,1
+d:Man,kgc:Person,Man,男,,1
+d:Many_times,kgc:Object,Many times,何度も,,1
+d:Method,kgc:Object,Method,,,0
+d:Method_of_Watson,kgc:OFobj|kgc:PhysicalObject,Method of Watson,ワトソンの方法,,1
+d:Money,kgc:PhysicalObject,Money,金,,1
+d:Morning,kgc:AbstractTime,Morning,朝,,1
+d:Morning_of_wedding_day,kgc:OFobj,Morning of wedding day,結婚式当日の朝,,1
+d:Moth,kgc:PhysicalObject,Moth,鞭|髯,,3
+d:Mystery,kgc:PhysicalObject,Mystery,謎,,1
+d:Near_sight,kgc:PhysicalObject,Near sight,近眼,,3
+d:Ned,kgc:Person,Ned,ネッド,,2
+d:Note,kgc:PhysicalObject,Note,メモ,,1
+d:Office,kgc:PhysicalObject,Office,事務所,,1
+d:Office_of_Redon_Hall_Street,kgc:OFobj|kgc:PhysicalObject,Office of Redon Hall Street,レドンホール街の事務所,,2
+d:On_the_sleeve,kgc:Object,On the sleeve,袖,,1
+d:One_Typewriter,kgc:PhysicalObject,One Typewriter,１つのタイプライター,,1
+d:One_hundred_dollars,kgc:PhysicalObject,One hundred dollars,百ドル,,1
+d:Opposite_door,kgc:PhysicalObject,Opposite door,反対の戸,,1
+d:Other_carriages,kgc:PhysicalObject,Other carriages,他の馬車,,1
+d:Oversight,kgc:Object,Oversight,,,0
+d:Oversight_of_others,kgc:OFobj|kgc:PhysicalObject,Oversight of others,他人の見落とし,,1
+d:Pavement_opposite,kgc:Place,Pavement opposite,向かいの舗道,,1
+d:Personal_statement,kgc:PhysicalObject,Personal statement,人相書,,3
+d:Place,kgc:PhysicalObject,Place,ホズマの居場所,,1
+d:Pledge,kgc:PhysicalObject,Pledge,誓約,,1
+d:Plush_weave,kgc:Object|kgc:PhysicalObject,Plush weave,フラシ織,,3
+d:Post_Office,kgc:Object,Post Office,,,0
+d:Post_Office_of_Redon_Hall_Street,kgc:OFobj|kgc:PhysicalObject,Post Office of Redon Hall Street,レドンホール街郵便局,,1
+d:Purple_plush,kgc:PhysicalObject,Purple plush,紫のフラシ天|紫色のフラシ天,,2
+d:Quickly,kgc:Object,Quickly,急いで,,1
+d:Quotation_from_Balzac,kgc:PhysicalObject,Quotation from Balzac,バルザックからの引用,,1
+d:Red_brick_feather,kgc:PhysicalObject,Red brick feather,赤煉瓦色の羽根,,1
+d:Red_feather,kgc:PhysicalObject,Red feather,赤い羽根,,1
+d:Redon_Hall_Street,kgc:Object|kgc:Place,Redon Hall Street,レドンホール街,,1
+d:Required,kgc:Object,Required,所用,,1
+d:Right_glove,kgc:Object,Right glove,,,0
+d:Right_wrist_double_wire,kgc:Object,Right wrist double wire,,,0
+d:Right_wrist_double_wire_of_Plush_weave,kgc:OFobj|kgc:PhysicalObject,Right wrist double wire of Plush weave,右のフラシ織の手首の二重線,,1
+d:Romance,kgc:Object,Romance,色恋沙汰,,1
+d:Room,kgc:Object,Room,,,0
+d:Room_of_Holmes,kgc:OFobj,Room of Holmes,,,0
+d:Saint_St._Savior_Church,kgc:PhysicalObject,Saint St. Savior Church,聖セントセイヴィア教会,,1
+d:Saint_St_Pancras_Hotel,kgc:Place,Saint St Pancras Hotel,聖セントパンクラス・ホテル,,1
+d:Same_incident,kgc:PhysicalObject,Same incident,同一の事件,,3
+d:Scarf,kgc:PhysicalObject,Scarf,襟巻き,,1
+d:Service_Boy,kgc:Object,Service Boy,給仕服の少年,,3
+d:Shoelaces,kgc:PhysicalObject,Shoelaces,靴ひも,,1
+d:Single_women,kgc:Person,Single women,独身女性,,1
+d:Small_black_ball_ornament,kgc:PhysicalObject,Small black ball ornament,小粒の黒玉の飾り,,1
+d:Small_round_gold_earring,kgc:PhysicalObject,Small round gold earring,小振りの丸い金の耳飾り,,1
+d:Solution,kgc:PhysicalObject,Solution,解決,,1
+d:Someone,kgc:PhysicalObject,Someone,人,,1
+d:Street,kgc:PhysicalObject,Street,通り,,2
+d:Sunday_school_events,kgc:PhysicalObject,Sunday school events,日曜学校の催し,,1
+d:Surprised,kgc:Object,Surprised,驚いて,,1
+d:Sutherland,kgc:Person|kgc:PhysicalObject,Sutherland,サザランド|サザランドと,,270
+d:Sutherland&#39;s_remark,kgc:Object,Sutherland&#39;s remark,,,0
+d:Sutherland_House,kgc:PhysicalObject,Sutherland House,サザランドの家,,1
+d:Sutherland_s_thoughts,kgc:Object,Sutherland's thoughts,,,4
+d:Terrible_things,kgc:PhysicalObject,Terrible things,ひどい目に,,1
+d:The_Horseman,kgc:PhysicalObject,The Horseman,辻馬車の御者|御者,,3
+d:The_speaker_s_statement,kgc:Object,The speaker's statement,,,1
+d:Thumb_nail,kgc:PhysicalObject,Thumb nail,親指の爪,,1
+d:Time_wasted,kgc:PhysicalObject,Time wasted,無駄な時間,,1
+d:Tommorw_evening_6_o_clock,kgc:AbstractTime,Tommorw evening 6 o'clock,明晩六時,,1
+d:Tonsillitis,kgc:PhysicalObject,Tonsillitis,扁桃炎,,1
+d:Totenham_Court_street,kgc:Place,Totenham Court street,トテナム・コート通り,,1
+d:Trace,kgc:PhysicalObject,Trace,跡,,1
+d:Treatment,kgc:Object,Treatment,,,0
+d:Treatment_of_serious_patients,kgc:OFobj|kgc:PhysicalObject,Treatment of serious patients,重篤な患者の治療,,1
+d:Two_letters,kgc:PhysicalObject,Two letters,二通手紙,,1
+d:Typewriter,kgc:PhysicalObject,Typewriter,タイプライター,,1
+d:Typing,kgc:Object,Typing,タイプ打ち,,1
+d:Under_hansom_carriage,kgc:PhysicalObject,Under hansom carriage,辻馬車の下,,2
+d:Up_to_20_sheets,kgc:PhysicalObject,Up to 20 sheets,最大20枚,,1
+d:Villain,kgc:PhysicalObject,Villain,悪党,,1
+d:Violet_ink,kgc:PhysicalObject,Violet ink,すみれ色のインク,,2
+d:Watson,kgc:Person,Watson,ワトソン,,59
+d:Weak_throat,kgc:PhysicalObject,Weak throat,弱い喉,,1
+d:West_House&Marbank,kgc:PhysicalObject,West House&Marbank,ウェストハウス＆マーバンク,,1
+d:Windibank,kgc:Person|kgc:PhysicalObject,Windibank,ウィンディバンク|ウィンディバンクの物腰,,129
+d:Windibank_s_Thoughts,kgc:Object,Windibank's Thoughts,,,1
+d:With_voice,kgc:PhysicalObject,With voice,声,,1
+d:Woman,kgc:Person|kgc:PhysicalObject,Woman,女性|女,,11
+d:Women,kgc:Object,Women,,,0
+d:Wrist_double_wire,kgc:Object,Wrist double wire,,,0
+d:Wrist_double_wire_of_Plush_weave,kgc:OFobj|kgc:PhysicalObject,Wrist double wire of Plush weave,フラシ織の手首の二重線,,2
+d:address,kgc:Object,address,,,0
+d:address_of_sender_of_letter,kgc:OFobj|kgc:PhysicalObject,address of sender of letter,手紙の差出人の住所,,1
+d:advice,kgc:PhysicalObject,advice,助言,,1
+d:advice_of_Holmes,kgc:OFobj|kgc:PhysicalObject,advice of Holmes,ホームズの助言,,1
+d:after_dance,kgc:Object,after dance,舞踏会の後,,1
+d:age,kgc:Object,age,,,0
+d:age_of_Windibank,kgc:OFobj|kgc:PhysicalObject,age of Windibank,ウィンディバンクの年,,1
+d:appearance,kgc:Object,appearance,,,0
+d:appearance_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,appearance of Hosmer,ホズマの身だしなみ,,1
+d:appearance_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,appearance of Sutherland,サザランドの身なり,,1
+d:behavior,kgc:Object,behavior,,,0
+d:behavior_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,behavior of Hosmer,ホズマの振る舞い,,1
+d:bell,kgc:PhysicalObject,bell,呼び鈴,,1
+d:bible,kgc:Object,bible,聖書,,1
+d:black_mustache,kgc:PhysicalObject,black mustache,黒い頬髯口髭,,1
+d:black_whisker,kgc:PhysicalObject,black whisker,黒い頬髯口髭,,1
+d:body,kgc:Object,body,,,0
+d:body_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,body of Hosmer,ホズマの体格,,1
+d:body_of_Windibank,kgc:OFobj|kgc:PhysicalObject,body of Windibank,ウィンディバンクの体格,,1
+d:breach,kgc:Object,breach,,,0
+d:breach_of_pledge,kgc:OFobj,breach of pledge,,,0
+d:breakfast,kgc:PhysicalObject,breakfast,朝食,,1
+d:brother,kgc:Object,brother,,,0
+d:brother_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,brother of Sutherland,サザランドの兄弟親友,,1
+d:button,kgc:Object,button,,,0
+d:button_of_Glove,kgc:OFobj|kgc:PhysicalObject,button of Glove,手袋の釦,,1
+d:chair,kgc:PhysicalObject,chair,椅子,,1
+d:character,kgc:Object,character,,,0
+d:character_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,character of Sutherland,サザランドの性格,,1
+d:character_of_typewriter,kgc:OFobj|kgc:PhysicalObject,character of typewriter,タイプライターの文字,,1
+d:characteristics,kgc:Object,characteristics,,,0
+d:characteristics_of_type,kgc:OFobj|kgc:PhysicalObject,characteristics of type,タイプの特徴,,1
+d:clothes,kgc:PhysicalObject,clothes,衣服,,1
+d:clothes_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,clothes of Hosmer,ホズマの服装,,3
+d:clue,kgc:Object,clue,,,0
+d:clue_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,clue of Hosmer,ホズマの手がかり,,1
+d:coat,kgc:Object,coat,,,0
+d:coat_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,coat of Sutherland,サザランドの上着,,2
+d:cold_sweat,kgc:PhysicalObject,cold sweat,冷や汗,,1
+d:color,kgc:PhysicalObject,color,色,,1
+d:color_of_face_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,color of face of Hosmer,ホズマの顔色,,1
+d:color_of_face_of_Windibank,kgc:OFobj|kgc:PhysicalObject,color of face of Windibank,ウィンディバンクの顔色,,1
+d:company,kgc:Object,company,会社,,1
+d:company_in_Central_City,kgc:PhysicalObject,company in Central City,中心区シティの会社,,1
+d:company_of_Bordeaux,kgc:OFobj,company of Bordeaux,,,0
+d:company_of_Windibank,kgc:OFobj|kgc:PhysicalObject,company of Windibank,ウィンディバンクの会社,,1
+d:cruel,kgc:Object,cruel,残酷で身勝手な,,1
+d:cuffs,kgc:Object,cuffs,,,0
+d:cuffs_of_Sutherland,kgc:OFobj,cuffs of Sutherland,サザランドの袖口に,,1
+d:dance,kgc:PhysicalObject,dance,舞踏会,,3
+d:dance_of_Gas_Industry,kgc:OFobj|kgc:PhysicalObject,dance of Gas Industry,ガス工組合の舞踏会,,1
+d:danger,kgc:Object,danger,,,0
+d:danger_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,danger of Hosmer,ホズマの危険,,1
+d:dark_blue,kgc:Object,dark blue,鼠色だ,,1
+d:date,kgc:PhysicalObject,date,日付,,1
+d:day_after_dance,kgc:Object,day after dance,舞踏会の翌日,,1
+d:dead,kgc:Object,dead,死んだよう,,1
+d:death,kgc:Object,death,,,0
+d:death_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,death of Hosmer,ホズマの生死,,1
+d:death_of_husband_of_Etheridge,kgc:OFobj|kgc:PhysicalObject,death of husband of Etheridge,エサリッジの夫の死亡,,1
+d:detail,kgc:Object,detail,細部,,1
+d:die,kgc:Object,die,死んだ,,1
+d:dignity,kgc:PhysicalObject,dignity,気品,,1
+d:disguise,kgc:PhysicalObject,disguise,変装,,2
+d:dividend,kgc:Object,dividend,,,0
+d:dividend_of_heritage,kgc:OFobj|kgc:PhysicalObject,dividend of heritage,遺産の配当,,1
+d:door,kgc:PhysicalObject,door,扉,,4
+d:door_of_Room_of_Holmes,kgc:OFobj|kgc:PhysicalObject,door of Room of Holmes,部屋の扉,,1
+d:e,kgc:PhysicalObject,e,e,,2
+d:edge,kgc:Object,edge,,,0
+d:edge_of_hem,kgc:OFobj,edge of hem,裾のふさ縁に,,1
+d:every_day,kgc:AbstractTime,every day,毎日,,1
+d:existence,kgc:Object,existence,,,0
+d:existence_of_Windibank,kgc:OFobj,existence of Windibank,ウィンディバンクがいる間,,1
+d:eyes,kgc:Object,eyes,,,0
+d:eyes_of_Windibank,kgc:OFobj|kgc:PhysicalObject,eyes of Windibank,ウィンディバンクの灰色の瞳,,1
+d:face,kgc:PhysicalObject,face,顔,,1
+d:face_of_Hosmer,kgc:OFobj,face of Hosmer,,,0
+d:face_of_Windibank,kgc:OFobj|kgc:PhysicalObject,face of Windibank,ウィンディバンクの顔,,2
+d:father,kgc:Object,father,,,0
+d:father_of_Sutherland,kgc:OFobj|kgc:Person,father of Sutherland,サザランドの父,,4
+d:feature,kgc:Object,feature,,,0
+d:feature_of_type,kgc:OFobj|kgc:PhysicalObject,feature of type,タイプの特徴,,1
+d:finger,kgc:Object,finger,,,0
+d:finger_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,finger of Sutherland,サザランドの指,,1
+d:footsteps,kgc:PhysicalObject,footsteps,足音,,1
+d:friend,kgc:Object,friend,,,0
+d:friend_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,friend of Sutherland,サザランドの兄弟親友,,1
+d:friend_of_father_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,friend of father of Sutherland,サザランドの父の友人,,1
+d:gavel,kgc:PhysicalObject,gavel,小禿,,1
+d:glasses,kgc:PhysicalObject,glasses,眼鏡,,1
+d:gloves,kgc:PhysicalObject,gloves,手袋,,2
+d:gloves_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,gloves of Sutherland,サザランドの手袋,,1
+d:hair,kgc:Object,hair,,,0
+d:hair_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,hair of Hosmer,ホズマの髪,,1
+d:handwriting,kgc:Object,handwriting,,,0
+d:handwriting_of_Windibank,kgc:OFobj|kgc:PhysicalObject,handwriting of Windibank,ウィンディバンクの筆跡,,2
+d:hansom_carriage,kgc:Person|kgc:PhysicalObject,hansom carriage,ハンソム馬車|辻馬車,,6
+d:hat,kgc:PhysicalObject,hat,帽子,,2
+d:head,kgc:Object,head,,,0
+d:head_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,head of Hosmer,ホズマの頭頂,,1
+d:heart,kgc:Object,heart,,,0
+d:heart_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,heart of Sutherland,サザランドの心,,2
+d:height,kgc:Object,height,,,0
+d:height_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,height of Hosmer,ホズマの身長,,1
+d:help,kgc:Object,help,,,0
+d:help_of_mother_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,help of mother of Sutherland,サザランドの母の助け,,1
+d:hem,kgc:Object,hem,,,0
+d:heritage,kgc:PhysicalObject,heritage,遺産,,1
+d:home,kgc:PhysicalObject,home,家庭,,3
+d:house,kgc:Object,house,,,0
+d:house_of_Holmes,kgc:OFobj|kgc:Place,house of Holmes,ホームズの家,,2
+d:husband,kgc:Object,husband,,,0
+d:husband_of_Etheridge,kgc:OFobj|kgc:Person,husband of Etheridge,エサリッジの夫,,1
+d:income,kgc:Object,income,,,0
+d:income_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,income of Sutherland,サザランドの収入|サザランドの稼ぎで,,2
+d:invitation,kgc:Object,invitation,,,0
+d:invitation_of_dance_of_Gas_Industry,kgc:OFobj|kgc:PhysicalObject,invitation of dance of Gas Industry,ガス工組合の舞踏会の招待状,,1
+d:knee,kgc:Object,knee,,,0
+d:knee_of_Man,kgc:OFobj|kgc:PhysicalObject,knee of Man,男のズボンの膝,,1
+d:large_money,kgc:Object,large money,大金,,1
+d:last_year,kgc:AbstractTime,last year,昨年,,1
+d:law,kgc:PhysicalObject,law,法律,,2
+d:left_shes,kgc:Object,left shes,,,0
+d:left_shes_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,left shes of Sutherland,サザランドの左右の靴,,1
+d:less_than_60_GBP,kgc:PhysicalObject,less than 60 GBP,60ポンド以下の収入で,,1
+d:letter,kgc:PhysicalObject,letter,手紙,,13
+d:letter_2,kgc:PhysicalObject,letter 2,手紙2,,1
+d:letter_by_Typewriter,kgc:PhysicalObject,letter by Typewriter,タイプライターの手紙,,1
+d:letter_of_Hosma,kgc:OFobj|kgc:PhysicalObject,letter of Hosma,ホズマの手紙,,6
+d:letter_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,letter of Sutherland,サザランドの手紙,,1
+d:letter_of_Windibank,kgc:OFobj|kgc:PhysicalObject,letter of Windibank,ウィンディバンクの手紙,,3
+d:letter_of_type,kgc:OFobj|kgc:PhysicalObject,letter of type,タイプ打ちの手紙|タイプの手紙,,3
+d:lip,kgc:Object,lip,,,0
+d:lip_of_Windibank,kgc:OFobj|kgc:PhysicalObject,lip of Windibank,ウィンディバンクの唇,,1
+d:location,kgc:Object,location,,,0
+d:location_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,location of Hosmer,ホズマの居場所|ホズマの行方,,2
+d:love,kgc:Object,love,,,0
+d:love_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,love of Sutherland,サザランドの愛,,1
+d:machine,kgc:PhysicalObject,machine,機械,,1
+d:margin,kgc:PhysicalObject,margin,余裕,,1
+d:mark,kgc:Object,mark,,,0
+d:mark_of_nose_glasses,kgc:OFobj|kgc:PhysicalObject,mark of nose glasses,鼻眼鏡の跡,,1
+d:meaning,kgc:Object,meaning,,,0
+d:meaning_of_word_of_Holmes,kgc:OFobj|kgc:PhysicalObject,meaning of word of Holmes,ホームズの言葉の意味に,,1
+d:minor,kgc:Object,minor,,,0
+d:missing,kgc:Object,missing,失踪時,,3
+d:missing_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,missing of Hosmer,ホズマ失踪|ホズマ失踪に,,7
+d:money,kgc:PhysicalObject,money,お金,,4
+d:money_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,money of Sutherland,サザランドのお金|サザランドの金,,3
+d:more_than_Sutherland,kgc:PhysicalObject,more than Sutherland,サザランド,,1
+d:morning,kgc:Object,morning,,,0
+d:morning_of_wedding_day,kgc:OFobj,morning of wedding day,結婚式の当日の朝,,1
+d:mother,kgc:PhysicalObject,mother,母,,1
+d:mother_of_Sutherland,kgc:OFobj|kgc:Person,mother of Sutherland,サザランドの母|サザランドの父,,20
+d:mother_of_Sutherland&#39_s_remark,kgc:OFobj,mother of Sutherland&#39;s remark,,,1
+d:mustache,kgc:PhysicalObject,mustache,口髯|口髭,,2
+d:neck,kgc:Object,neck,,,0
+d:neck_of_clothes,kgc:OFobj,neck of clothes,衣服の首元,,1
+d:newspaper,kgc:PhysicalObject,newspaper,新聞,,1
+d:nobody,kgc:PhysicalObject,nobody,誰も,,1
+d:nose_glasses,kgc:Object,nose glasses,,,0
+d:one_quarter,kgc:PhysicalObject,one quarter,四分の一,,1
+d:one_sheet,kgc:PhysicalObject,one sheet,1枚で,,1
+d:one_year,kgc:AbstractTime,one year,一年,,2
+d:others,kgc:PhysicalObject,others,他人,,4
+d:paper,kgc:PhysicalObject,paper,論文,,1
+d:parent,kgc:Person,parent,親,,1
+d:parents,kgc:PhysicalObject,parents,親,,1
+d:parents_of_Sutherland,kgc:OFobj,parents of Sutherland,親,,1
+d:past,kgc:AbstractTime,past,過去,,1
+d:pavement,kgc:PhysicalObject,pavement,舗道,,1
+d:people,kgc:Object,people,,,0
+d:people_of_Dance_party,kgc:OFobj|kgc:PhysicalObject,people of Dance party,舞踏会の人,,1
+d:personalities,kgc:Object,personalities,,,0
+d:personalities_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,personalities of Hosmer,ホズマの人相書き,,1
+d:pledge,kgc:Object,pledge,,,0
+d:police,kgc:Person|kgc:PhysicalObject,police,警察,,2
+d:police_officer,kgc:Object,police officer,警察官,,1
+d:praise,kgc:Object,praise,,,0
+d:praise_of_mother_of_Sutherland,kgc:OFobj,praise of mother of Sutherland,サザランドの母の賞賛,,1
+d:property,kgc:Object,property,,,0
+d:property_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,property of Hosmer,自分の財産,,1
+d:r,kgc:PhysicalObject,r,r,,2
+d:relation,kgc:Object,relation,,,0
+d:relation_of_Hosma,kgc:OFobj|kgc:PhysicalObject,relation of Hosma,サザランドとホズマとの関係,,1
+d:relation_of_same-aged_people,kgc:OFobj|kgc:PhysicalObject,relation of same-aged people,同年代の人間との交際,,1
+d:reply,kgc:PhysicalObject,reply,返事,,1
+d:respect,kgc:PhysicalObject,respect,敬意,,1
+d:right,kgc:Object,right,,,0
+d:right_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,right of Sutherland,権利,,1
+d:right_shoes,kgc:Object,right shoes,,,0
+d:right_shoes_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,right shoes of Sutherland,サザランドの左右の靴,,1
+d:road,kgc:PhysicalObject,road,道,,2
+d:romance,kgc:Object,romance,色恋沙汰,,1
+d:sad,kgc:Object,sad,悲しみ,,1
+d:same-aged_people,kgc:Object,same-aged people,,,0
+d:selfish,kgc:Object,selfish,残酷で身勝手な,,1
+d:sender,kgc:Object,sender,,,0
+d:sender_of_letter,kgc:OFobj,sender of letter,,,0
+d:serious_patients,kgc:Object,serious patients,,,0
+d:shoes,kgc:Object,shoes,,,0
+d:shoes_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,shoes of Sutherland,サザランドの靴,,1
+d:shop,kgc:Object,shop,,,0
+d:shop_of_father_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,shop of father of Sutherland,店|店を|サザランドの父の店,,4
+d:signature,kgc:PhysicalObject,signature,署名,,4
+d:signature_of_letter,kgc:OFobj|kgc:PhysicalObject,signature of letter,手紙の署名,,1
+d:simply,kgc:Object,simply,簡単に,,1
+d:sin,kgc:PhysicalObject,sin,罪,,2
+d:sleeve,kgc:PhysicalObject,sleeve,袖,,1
+d:sleeve_of_Jacket,kgc:OFobj|kgc:PhysicalObject,sleeve of Jacket,上着の袖,,1
+d:sleeve_of_Woman,kgc:OFobj|kgc:PhysicalObject,sleeve of Woman,女の袖,,1
+d:someone,kgc:Object,someone,,,0
+d:someone_of_Company,kgc:OFobj,someone of Company,,,1
+d:speak,kgc:Object,speak,,,0
+d:speak_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,speak of Hosmer,ホズマの話し方,,1
+d:story,kgc:Object,story,,,0
+d:story_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,story of Sutherland,サザランドの話,,2
+d:straw_hat,kgc:Object,straw hat,,,0
+d:straw_hat_of_Blackboard_color,kgc:OFobj|kgc:PhysicalObject,straw hat of Blackboard color,黒板色の鍔広麦わら帽子,,2
+d:string,kgc:Object,string,,,0
+d:string_of_bell,kgc:OFobj|kgc:PhysicalObject,string of bell,呼び鈴の紐,,1
+d:this_morning,kgc:AbstractTime,this morning,今朝,,2
+d:this_week,kgc:AbstractTime,this week,今週,,1
+d:thought,kgc:Object,thought,,,0
+d:thought_of_Sutherland,kgc:OFobj|kgc:PhysicalObject,thought of Sutherland,サザランドの思い,,1
+d:thumb,kgc:Object,thumb,,,0
+d:thumb_of_Right_glove,kgc:OFobj|kgc:PhysicalObject,thumb of Right glove,右手袋の親指,,1
+d:together,kgc:Object,together,一緒に,,1
+d:treat,kgc:PhysicalObject,treat,ごまかし,,1
+d:trouble,kgc:Object,trouble,,,0
+d:trouble_of_Women,kgc:OFobj|kgc:PhysicalObject,trouble of Women,女性の悩み,,1
+d:truth,kgc:PhysicalObject,truth,事実|真相,,2
+d:twice,kgc:Object,twice,二度,,1
+d:type,kgc:PhysicalObject,type,タイプ,,1
+d:typewriter,kgc:Object,typewriter,タイプ|タイプライター,,2
+d:typewritter,kgc:Object,typewritter,タイプで,,1
+d:value,kgc:PhysicalObject,value,価値,,1
+d:voice,kgc:PhysicalObject,voice,声,,1
+d:voice_of_Hosmer,kgc:OFobj|kgc:PhysicalObject,voice of Hosmer,ホズマの声,,1
+d:wedding,kgc:PhysicalObject,wedding,結婚式,,2
+d:wedding_day,kgc:Object,wedding day,,,0
+d:whiskers,kgc:PhysicalObject,whiskers,頬髯,,1
+d:whisper,kgc:Object,whisper,ささやくように,,1
+d:window,kgc:PhysicalObject,window,窓,,1
+d:woman,kgc:PhysicalObject,woman,女,,1
+d:word,kgc:Object,word,,,0
+d:word_of_Holmes,kgc:OFobj,word of Holmes,,,0
+d:workplace,kgc:Object,workplace,,,0
+d:workplace_of_Windibank,kgc:OFobj|kgc:PhysicalObject,workplace of Windibank,ウィンディバンクの職場,,1
+d:yield,kgc:PhysicalObject,yield,利回り,,1
+d:yield_of_heritage,kgc:OFobj|kgc:PhysicalObject,yield of heritage,利回り,,1
+d:young,kgc:AbstractTime,young,若い,,1
+pred:2500_GBP,kgc:Property,2500 GBP,2500ポンドである,,1
+pred:Accept,kgc:Object,Accept,,,0
+pred:Appear,kgc:Object,Appear,,,0
+pred:BeInTime,kgc:Object,BeInTime,,,0
+pred:BeUsed,kgc:Object,BeUsed,,,0
+pred:Believe,kgc:Object,Believe,,,0
+pred:Break,kgc:Object,Break,,,0
+pred:Camberwell,kgc:Property,Camberwell,キャンバウェルである,,1
+pred:Catch,kgc:Object,Catch,,,0
+pred:Cheat,kgc:Object,Cheat,,,0
+pred:Come,kgc:Object,Come,,,0
+pred:Complain,kgc:Object,Complain,,,0
+pred:Continue,kgc:Object,Continue,,,0
+pred:Escape,kgc:Object,Escape,,,0
+pred:Exist,kgc:Object,Exist,,,0
+pred:Find,kgc:Object,Find,,,0
+pred:Forget,kgc:Object,Forget,,,0
+pred:Go,kgc:Object,Go,,,0
+pred:Handle,kgc:Object,Handle,,,0
+pred:Have,kgc:Object,Have,,,0
+pred:Hesitate,kgc:Object,Hesitate,,,0
+pred:Hosmer,kgc:Property,Hosmer,ホズマ,,1
+pred:Hosmer_Aingel,kgc:Property,Hosmer Aingel,ホズマ・エインジェル,,1
+pred:Important,kgc:Object,Important,,,0
+pred:Issue,kgc:Object,Issue,,,0
+pred:Know,kgc:Object,Know,,,0
+pred:Like,kgc:Object,Like,,,0
+pred:Love,kgc:Object,Love,,,0
+pred:Meet,kgc:Object,Meet,,,0
+pred:Ned,kgc:Object,Ned,,,0
+pred:New_Zealand,kgc:Object,New Zealand,,,0
+pred:Reach,kgc:Object,Reach,,,0
+pred:Redon_Hall_Street_office,kgc:Object,Redon Hall Street office,,,0
+pred:Redon_Hall_street,kgc:Property,Redon Hall street,レドンホール街である,,1
+pred:RelyOn,kgc:Object,RelyOn,,,0
+pred:Say,kgc:Object,Say,,,0
+pred:See,kgc:Object,See,,,0
+pred:Send,kgc:Object,Send,,,0
+pred:Show,kgc:Object,Show,,,0
+pred:Sleep,kgc:Object,Sleep,,,0
+pred:Solve,kgc:Object,Solve,,,0
+pred:Stop,kgc:Object,Stop,,,0
+pred:Sue,kgc:Object,Sue,,,0
+pred:Sutherland,kgc:Object,Sutherland,,,0
+pred:Think,kgc:Object,Think,,,0
+pred:Throw,kgc:Object,Throw,,,0
+pred:Understand,kgc:Object,Understand,,,0
+pred:Want,kgc:Object,Want,,,0
+pred:West_House&Marbank,kgc:Object,West House&Marbank,,,0
+pred:Windibank,kgc:Object,Windibank,,,0
+pred:Worry,kgc:Object,Worry,,,0
+pred:absent,kgc:Property,absent,ない,,1
+pred:agree,kgc:Action,agree,賛成する,,1
+pred:albert_chain,kgc:Object,albert chain,,,0
+pred:albert_chain_of_gold,kgc:OFobj|kgc:Property,albert chain of gold,金のアルバート鎖である,,1
+pred:angree,kgc:Property,angree,腹を立てている,,1
+pred:angry,kgc:Action,angry,怒る,,2
+pred:apologize,kgc:Action,apologize,謝る,,1
+pred:appear,kgc:Action,appear,現れる,,1
+pred:approach,kgc:Action,approach,近寄る,,1
+pred:around_30_years_old,kgc:Property,around 30 years old,30歳前後である,,1
+pred:arrive,kgc:Action,arrive,到着する,,1
+pred:ask,kgc:Action,ask,尋ねる,,2
+pred:asleep,kgc:Property,asleep,眠っている,,1
+pred:attached,kgc:Action|kgc:Property,attached,付いている,,5
+pred:attend,kgc:Action,attend,立ち会う,,2
+pred:bad,kgc:Action,bad,悪い,,3
+pred:beBeaten,kgc:Action,beBeaten,叩かれる,,1
+pred:beConvinced,kgc:Action,beConvinced,断定している,,1
+pred:bePleased,kgc:Action,bePleased,喜ぶ,,2
+pred:beSurprised,kgc:Action,beSurprised,驚く,,2
+pred:beTeased,kgc:Action,beTeased,からかわれる,,1
+pred:beTypeed,kgc:Action,beTypeed,タイプである,,1
+pred:beWritten,kgc:Action,beWritten,書かれている,,4
+pred:believe,kgc:Action,believe,信じる,,3
+pred:bind,kgc:Action,bind,束縛する,,1
+pred:black,kgc:Property,black,黒い,,2
+pred:black_best,kgc:Property,black best,黒のベストである,,1
+pred:black_frock_coat,kgc:Property,black frock coat,黒のフロックコートである,,1
+pred:blurred,kgc:Property,blurred,不鮮明である,,2
+pred:blush,kgc:Action,blush,赤らめる,,1
+pred:bother,kgc:Action,bother,煩わせる,,1
+pred:breakUp,kgc:Action,breakUp,別れる,,1
+pred:brown,kgc:Property,brown,茶褐色だ,,1
+pred:busy,kgc:Action,busy,忙しい,,1
+pred:call,kgc:Action,call,呼ぶ,,1
+pred:calm,kgc:Property,calm,穏やかである,,1
+pred:canBeUsed,kgc:Action|kgc:CanAction,canBeUsed,使える,,1
+pred:canSolve,kgc:Action|kgc:CanAction,canSolve,解決できる,,2
+pred:canSue,kgc:Action|kgc:CanAction,canSue,訴えることができる,,1
+pred:canUnderstand,kgc:Action|kgc:CanAction,canUnderstand,理解できる,,1
+pred:cannotCatch,kgc:Action|kgc:CanNotAction,cannotCatch,捉えられない,,1
+pred:cannotCheat,kgc:Action|kgc:CanNotAction,cannotCheat,騙せない,,1
+pred:cannotCome,kgc:Action|kgc:CanNotAction,cannotCome,来られない,,1
+pred:cannotEscape,kgc:Action|kgc:CanNotAction,cannotEscape,逃げられない,,1
+pred:cannotFind,kgc:Action|kgc:CanNotAction,cannotFind,見つからない,,1
+pred:cannotHandle,kgc:Action|kgc:CanNotAction,cannotHandle,扱えない,,1
+pred:cannotMeet,kgc:Action|kgc:CanNotAction,cannotMeet,会えない,,1
+pred:cannotSleep,kgc:Action|kgc:CanNotAction,cannotSleep,眠れない,,1
+pred:cannotStop,kgc:Action|kgc:CanNotAction,cannotStop,止められない,,1
+pred:cannotUnderstand,kgc:Action|kgc:CanNotAction,cannotUnderstand,理解できない,,1
+pred:careless,kgc:Property,careless,呑気である,,1
+pred:carry,kgc:Action,carry,運ぶ,,1
+pred:catch,kgc:Action,catch,捕まえる,,2
+pred:chaseAway,kgc:Action,chaseAway,追い払う,,1
+pred:close,kgc:Action,close,閉める,,2
+pred:close_eye,kgc:Property,close eye,近眼である,,1
+pred:come,kgc:Action,come,来る,,5
+pred:comeBack,kgc:Action,comeBack,戻ってくる,,1
+pred:comeIn,kgc:Action,comeIn,入ってくる,,1
+pred:concentrateOn,kgc:Action,concentrateOn,専念する,,1
+pred:confirm,kgc:Action,confirm,確認する,,1
+pred:consult,kgc:Action,consult,相談する,,1
+pred:contact,kgc:Action,contact,連絡する,,1
+pred:continue,kgc:Action,continue,続けている,,1
+pred:correct,kgc:Action,correct,正しい,,1
+pred:correspond,kgc:Action,correspond,対応する,,1
+pred:cross,kgc:Action,cross,渡る,,1
+pred:cry,kgc:Action,cry,泣く,,1
+pred:deny,kgc:Action,deny,否定する,,1
+pred:deposit,kgc:Action,deposit,預けている,,1
+pred:different,kgc:Property,different,異なる,,2
+pred:disappear,kgc:Action,disappear,消える,,2
+pred:disguise,kgc:Action,disguise,せいにする,,1
+pred:dissatisfied,kgc:Property,dissatisfied,不満だ,,1
+pred:do,kgc:Action,do,行う,,2
+pred:drop,kgc:Action,drop,落とす,,1
+pred:earn,kgc:Action,earn,稼ぐ,,1
+pred:easygoing,kgc:Property,easygoing,のんきである,,1
+pred:eat,kgc:Action,eat,食べる,,1
+pred:echo,kgc:Action,echo,響く,,1
+pred:encounter,kgc:Action,encounter,遭う,,1
+pred:engage,kgc:Action,engage,婚約する,,2
+pred:engrave,kgc:Action,engrave,刻む,,1
+pred:enough,kgc:Property,enough,十分である,,3
+pred:enter,kgc:Action,enter,入る,,2
+pred:enthusiastic,kgc:Property,enthusiastic,熱心だ,,1
+pred:equalTo,kgc:Action,equalTo,である,,2
+pred:escape,kgc:Action,escape,逃げる,,1
+pred:examine,kgc:Action,examine,調べる,,1
+pred:exist,kgc:Action,exist,存在する,,9
+pred:expensive_cloth,kgc:Property,expensive cloth,高価な生地である,,1
+pred:father-in-law,kgc:Object,father-in-law,,,0
+pred:father-in-law_of_Sutherland,kgc:OFobj|kgc:Property,father-in-law of Sutherland,サザランドの義理の父,,1
+pred:feel,kgc:Action,feel,感じる,,4
+pred:feelRestless,kgc:Action,feelRestless,そわそわする,,1
+pred:field_head,kgc:Property,field head,現場頭である,,1
+pred:find,kgc:Action,find,見つける,,4
+pred:fine,kgc:Property,fine,元気である,,1
+pred:focus,kgc:Action|kgc:Property,focus,集中している,,3
+pred:foreign_business,kgc:Object,foreign business,,,0
+pred:foreign_business_of_West_House&Marbank,kgc:OFobj|kgc:Property,foreign business of West House&Marbank,ウェストハウス＆マーバンクの外商,,1
+pred:foreign_trade,kgc:Object,foreign trade,,,0
+pred:foreign_trade_of_wine,kgc:OFobj|kgc:Property,foreign trade of wine,ワインの外商である,,1
+pred:forget,kgc:Action,forget,忘れる,,2
+pred:free,kgc:Property,free,自由である,,1
+pred:gain,kgc:Action,gain,獲得する,,2
+pred:gentle,kgc:Property,gentle,紳士である,,1
+pred:get,kgc:Action,get,得る,,4
+pred:getMarriedAgain,kgc:Action,getMarriedAgain,再婚する,,1
+pred:getOn,kgc:Action,getOn,乗る,,1
+pred:getOut,kgc:Action,getOut,出て行く,,1
+pred:go,kgc:Action,go,行く,,11
+pred:goOut,kgc:Action,goOut,出ていく,,2
+pred:gold,kgc:Object,gold,,,0
+pred:good,kgc:Action|kgc:Property,good,良い,,4
+pred:good-natured,kgc:Property,good-natured,お人好しである,,1
+pred:grab,kgc:Action,grab,つかむ,,1
+pred:greet,kgc:Action,greet,挨拶する,,1
+pred:handOver,kgc:Action,handOver,渡す,,4
+pred:hanging,kgc:Action,hanging,ぶら下げている,,1
+pred:happen,kgc:Action,happen,起こる,,3
+pred:happy,kgc:Action|kgc:Property,happy,嬉しい,,2
+pred:have,kgc:Action|kgc:Property,have,持つ,,21
+pred:healthy,kgc:Property,healthy,健康である,,1
+pred:hear,kgc:Action,hear,聞く,,2
+pred:heritage,kgc:Object,heritage,,,0
+pred:heritage_of_Ned,kgc:OFobj|kgc:Property,heritage of Ned,ネッドの遺産である,,1
+pred:hesitating,kgc:Property,hesitating,訥々である,,1
+pred:hold,kgc:Action,hold,握る,,2
+pred:ice,kgc:Object,ice,,,0
+pred:imply,kgc:Action,imply,ほのめかす,,1
+pred:important,kgc:Property,important,重要である,,2
+pred:improve,kgc:Action,improve,上達する,,1
+pred:increase,kgc:Action,increase,増す,,1
+pred:infinite,kgc:Property,infinite,無限である,,1
+pred:inform,kgc:Action,inform,知らせる,,1
+pred:insist,kgc:Action,insist,言い張る,,1
+pred:interesting,kgc:Property,interesting,興味深い,,2
+pred:irritated,kgc:Property,irritated,いらだっている,,1
+pred:is,kgc:Property,is,ウィンディバンクである,,1
+pred:jumpOut,kgc:Action,jumpOut,飛び出す,,2
+pred:jumpUp,kgc:Action,jumpUp,飛び上がる,,1
+pred:know,kgc:Action,know,知る,,7
+pred:largest_claret_importer,kgc:Property,largest claret importer,最大のクラレット輸入業者,,1
+pred:laugh,kgc:Action,laugh,笑う,,2
+pred:lead,kgc:Action,lead,率いる,,1
+pred:leave,kgc:Action,leave,去る,,1
+pred:leaveBehind,kgc:Action,leaveBehind,置いていく,,1
+pred:let,kgc:Action,let,させる,,2
+pred:letter,kgc:Object,letter,,,0
+pred:letter_of_Windibank,kgc:OFobj|kgc:Property,letter of Windibank,ウィンディバンクの手紙である,,1
+pred:live,kgc:Action,live,住む,,2
+pred:lock,kgc:Action,lock,施錠する,,1
+pred:lookAround,kgc:Action,lookAround,ながめ回す,,2
+pred:lose,kgc:Action,lose,失う,,1
+pred:love,kgc:Action,love,愛する,,4
+pred:manual_sewing_machine,kgc:Object,manual sewing machine,,,0
+pred:mark,kgc:Object,mark,,,0
+pred:mark_of_manual_sewing_machine,kgc:OFobj|kgc:Property,mark of manual sewing machine,手動ミシンの跡である,,2
+pred:mark_of_type,kgc:OFobj|kgc:Property,mark of type,タイプの跡である,,2
+pred:marry,kgc:Action,marry,結婚する,,4
+pred:match,kgc:Action,match,一致する,,1
+pred:meet,kgc:Action,meet,会う,,7
+pred:meeting,kgc:Action,meeting,会っている,,1
+pred:mess,kgc:Action,mess,いじる,,1
+pred:miss,kgc:Action,miss,欠けている,,2
+pred:move,kgc:Action,move,動く,,2
+pred:need,kgc:Action,need,必要とする,,1
+pred:notAccept,kgc:Action|kgc:NotAction,notAccept,承知しない,,1
+pred:notAngry,kgc:Property,notAngry,怒っていない,,1
+pred:notAppear,kgc:Action|kgc:NotAction,notAppear,現れない,,1
+pred:notBeInTime,kgc:Action|kgc:NotAction,notBeInTime,間に合わない,,1
+pred:notBelieve,kgc:Action|kgc:NotAction,notBelieve,信じない,,1
+pred:notBreak,kgc:Action|kgc:NotAction,notBreak,破っていない,,1
+pred:notComplain,kgc:Action|kgc:NotAction,notComplain,訴えない,,1
+pred:notContinue,kgc:Action|kgc:NotAction,notContinue,続かない,,1
+pred:notEqualTo,kgc:Property,notEqualTo,ではない,,1
+pred:notExist,kgc:Action|kgc:NotAction,notExist,存在しない,,3
+pred:notForget,kgc:Action|kgc:NotAction,notForget,忘れない,,1
+pred:notGo,kgc:Action|kgc:NotAction,notGo,行かない,,1
+pred:notHave,kgc:Action|kgc:NotAction,notHave,not持つ,,6
+pred:notHesitate,kgc:Action|kgc:NotAction,notHesitate,ためらわない,,1
+pred:notImportant,kgc:Action|kgc:NotAction,notImportant,はない,,1
+pred:notIssue,kgc:Action|kgc:NotAction,notIssue,出さない,,1
+pred:notKnow,kgc:Action|kgc:NotAction,notKnow,知らない,,6
+pred:notLike,kgc:Action|kgc:NotAction,notLike,嫌がる,,1
+pred:notLove,kgc:Action|kgc:NotAction,notLove,愛さない,,2
+pred:notMeet,kgc:Action|kgc:NotAction,notMeet,会わない,,1
+pred:notReach,kgc:Action|kgc:NotAction,notReach,届かない,,1
+pred:notRelyOn,kgc:Action|kgc:NotAction,notRelyOn,頼らない,,1
+pred:notRich,kgc:Property,notRich,裕福ではない,,1
+pred:notSay,kgc:Action|kgc:NotAction,notSay,言わない,,1
+pred:notSee,kgc:Action|kgc:NotAction,notSee,見ていない,,1
+pred:notSend,kgc:Action|kgc:NotAction,notSend,送らない,,1
+pred:notShow,kgc:Action|kgc:NotAction,notShow,見せない,,1
+pred:notThink,kgc:Action|kgc:NotAction,notThink,思わない,,1
+pred:notThrow,kgc:Action|kgc:NotAction,notThrow,捨てない,,1
+pred:notUnderstand,kgc:Action|kgc:NotAction,notUnderstand,わからない,,1
+pred:notWant,kgc:Action|kgc:NotAction,notWant,したくない,,5
+pred:notWorry,kgc:Action|kgc:NotAction,notWorry,心配しない,,1
+pred:notice,kgc:Action|kgc:NotAction,notice,気づく,,3
+pred:older,kgc:Property,older,年上である,,1
+pred:open,kgc:Action,open,開く,,1
+pred:overlook,kgc:Action,overlook,見落としている,,2
+pred:pale,kgc:Property,pale,青ざめる,,1
+pred:payAttention,kgc:Action,payAttention,気を配る,,1
+pred:peep,kgc:Action,peep,覗く,,1
+pred:pity,kgc:Property,pity,残念である,,1
+pred:plumbing_business,kgc:Property,plumbing business,配管業である,,1
+pred:process,kgc:Action,process,処理する,,1
+pred:prohibit,kgc:Action,prohibit,禁じる,,1
+pred:pullOut,kgc:Action,pullOut,引きだす,,1
+pred:punish,kgc:Action,punish,懲らしめる,,1
+pred:put,kgc:Action,put,置く,,1
+pred:putOn,kgc:Action,putOn,乗せる,,1
+pred:putOut,kgc:Action,putOut,出す,,1
+pred:puzzled,kgc:Action,puzzled,戸惑っている,,1
+pred:quarter_five,kgc:Property,quarter five,四分五厘である,,1
+pred:reach,kgc:Action,reach,届く,,1
+pred:rebel,kgc:Action,rebel,反抗する,,1
+pred:receive,kgc:Action,receive,受け取る,,3
+pred:recognize,kgc:Action,recognize,わかる,,3
+pred:recommend,kgc:Action,recommend,勧める,,1
+pred:relate,kgc:Property,relate,関係する,,1
+pred:relaxed,kgc:Property,relaxed,おっとりしている,,1
+pred:relive,kgc:Action,relive,安心する,,1
+pred:remove,kgc:Action,remove,取り除く,,1
+pred:repeat,kgc:Action,repeat,重ねる,,1
+pred:report,kgc:Action,report,報告する,,1
+pred:request,kgc:Action,request,要求する,,1
+pred:return,kgc:Action,return,帰る,,1
+pred:rob,kgc:Action,rob,奪う,,1
+pred:safe,kgc:Property,safe,安全である,,1
+pred:say,kgc:Action,say,言う,,73
+pred:see,kgc:Action,see,見る,,5
+pred:seem,kgc:Property,seem,ようである,,2
+pred:sell,kgc:Action,sell,売る,,2
+pred:send,kgc:Action,send,送る,,6
+pred:shadow,kgc:Action,shadow,跡をつける,,1
+pred:shares,kgc:Object,shares,,,0
+pred:shares_of_New_Zealand,kgc:OFobj|kgc:Property,shares of New Zealand,ニュージーランド株である,,1
+pred:sharp,kgc:Action,sharp,鋭い,,1
+pred:shy,kgc:Property,shy,内気である,,2
+pred:sit,kgc:Action,sit,座る,,2
+pred:small,kgc:Property,small,小さい,,1
+pred:sneer,kgc:Action,sneer,冷笑する,,1
+pred:solve,kgc:Action,solve,解決する,,1
+pred:stand,kgc:Action,stand,立つ,,4
+pred:stressful,kgc:Property,stressful,つらい,,2
+pred:sufferFrom,kgc:Action,sufferFrom,患う,,1
+pred:surprise,kgc:Action,surprise,驚く,,1
+pred:swear,kgc:Action,swear,誓う,,3
+pred:talk,kgc:Action,talk,会話をする,,1
+pred:tearOff,kgc:Action,tearOff,引きちぎる,,1
+pred:teller,kgc:Object,teller,,,0
+pred:teller_of_Redon_Hall_Street_office,kgc:OFobj|kgc:Property,teller of Redon Hall Street office,レドンホール街の事務所の出納係である,,1
+pred:thin,kgc:Property,thin,薄い,,1
+pred:think,kgc:Action,think,思う,,11
+pred:thinking,kgc:Action,thinking,思っている,,1
+pred:tightly,kgc:Property,tightly,きっちりしている,,1
+pred:town_girl,kgc:Property,town girl,町娘である,,1
+pred:try,kgc:Action,try,しようとする,,1
+pred:type,kgc:Object,type,,,0
+pred:typist,kgc:Property,typist,タイプ打ちである,,2
+pred:uncle,kgc:Object,uncle,,,0
+pred:uncle_of_Sutherland,kgc:OFobj|kgc:Property,uncle of Sutherland,サザランドの伯父,,1
+pred:understand,kgc:Action,understand,理解する,,1
+pred:unforgettable,kgc:Action,unforgettable,忘れられない,,1
+pred:unknown,kgc:Property,unknown,不明である,,1
+pred:unwillingToGo,kgc:Action,unwillingToGo,行きたくない,,1
+pred:visit,kgc:Action,visit,訪れる,,2
+pred:want,kgc:Action,want,したい,,12
+pred:waste,kgc:Action,waste,無駄にする,,1
+pred:wealthy,kgc:Property,wealthy,裕福である,,1
+pred:wear,kgc:Action|kgc:Property,wear,着る,,8
+pred:wearOut,kgc:Action,wearOut,摩滅する,,1
+pred:welcome,kgc:Action,welcome,迎える,,1
+pred:whisper,kgc:Action,whisper,囁く,,1
+pred:wine,kgc:Object,wine,,,0
+pred:working,kgc:Action,working,働いている,,2
+pred:worn,kgc:Action,worn,すり切れている,,1
+pred:worry,kgc:Action,worry,悩む,,3
+pred:write,kgc:Action,write,書く,,4
+pred:writing,kgc:Action,writing,書いている,,1
+pred:ｍedium_height,kgc:Property,ｍedium height,中背である,,1

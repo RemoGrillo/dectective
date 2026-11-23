@@ -1,0 +1,392 @@
+sent_id,para_id,start,end,n_words,text
+P001.S01,P001,0,187,34,"“My dear fellow,” said Sherlock Holmes as we sat on either side of the fire in his lodgings at Baker Street, “life is infinitely stranger than anything which the mind of man could invent."
+P001.S02,P001,188,277,15,We would not dare to conceive the things which are really mere commonplaces of existence.
+P001.S03,P001,278,700,68,"If we could fly out of that window hand in hand, hover over this great city, gently remove the roofs, and peep in at the queer things which are going on, the strange coincidences, the plannings, the cross-purposes, the wonderful chains of events, working through generations, and leading to the most outré results, it would make all fiction with its conventionalities and foreseen conclusions most stale and unprofitable.”"
+P002.S01,P002,702,749,10,"“And yet I am not convinced of it,” I answered."
+P002.S02,P002,750,842,18,"“The cases which come to light in the papers are, as a rule, bald enough, and vulgar enough."
+P002.S03,P002,843,990,25,"We have in our police reports realism pushed to its extreme limits, and yet the result is, it must be confessed, neither fascinating nor artistic.”"
+P003.S01,P003,992,1091,15,"“A certain selection and discretion must be used in producing a realistic effect,” remarked Holmes."
+P003.S02,P003,1092,1295,35,"“This is wanting in the police report, where more stress is laid, perhaps, upon the platitudes of the magistrate than upon the details, which to an observer contain the vital essence of the whole matter."
+P003.S03,P003,1296,1362,11,"Depend upon it, there is nothing so unnatural as the commonplace.”"
+P004.S01,P004,1364,1391,6,I smiled and shook my head.
+P004.S02,P004,1392,1434,7,“I can quite understand your thinking so.”
+P004.S03,P004,1435,1442,2,I said.
+P004.S04,P004,1443,1638,31,"“Of course, in your position of unofficial adviser and helper to everybody who is absolutely puzzled, throughout three continents, you are brought in contact with all that is strange and bizarre."
+P004.S05,P004,1639,1730,19,But here”—I picked up the morning paper from the ground—“let us put it to a practical test.
+P004.S06,P004,1731,1775,9,Here is the first heading upon which I come.
+P004.S07,P004,1776,1810,6,‘A husband’s cruelty to his wife.’
+P004.S08,P004,1811,1914,21,"There is half a column of print, but I know without reading it that it is all perfectly familiar to me."
+P004.S09,P004,1915,2031,20,"There is, of course, the other woman, the drink, the push, the blow, the bruise, the sympathetic sister or landlady."
+P004.S10,P004,2032,2088,9,The crudest of writers could invent nothing more crude.”
+P005.S01,P005,2090,2213,21,"“Indeed, your example is an unfortunate one for your argument,” said Holmes, taking the paper and glancing his eye down it."
+P005.S02,P005,2214,2340,23,"“This is the Dundas separation case, and, as it happens, I was engaged in clearing up some small points in connection with it."
+P005.S03,P005,2341,2654,58,"The husband was a teetotaler, there was no other woman, and the conduct complained of was that he had drifted into the habit of winding up every meal by taking out his false teeth and hurling them at his wife, which, you will allow, is not an action likely to occur to the imagination of the average story-teller."
+P005.S04,P005,2655,2747,17,"Take a pinch of snuff, Doctor, and acknowledge that I have scored over you in your example.”"
+P006.S01,P006,2749,2834,18,"He held out his snuffbox of old gold, with a great amethyst in the centre of the lid."
+P006.S02,P006,2835,2946,21,Its splendour was in such contrast to his homely ways and simple life that I could not help commenting upon it.
+P007.S01,P007,2948,3012,14,"“Ah,” said he, “I forgot that I had not seen you for some weeks."
+P007.S02,P007,3013,3129,23,It is a little souvenir from the King of Bohemia in return for my assistance in the case of the Irene Adler papers.”
+P008.S01,P008,3131,3146,3,“And the ring?”
+P008.S02,P008,3147,3222,12,"I asked, glancing at a remarkable brilliant which sparkled upon his finger."
+P009.S01,P009,3224,3442,42,"“It was from the reigning family of Holland, though the matter in which I served them was of such delicacy that I cannot confide it even to you, who have been good enough to chronicle one or two of my little problems.”"
+P010.S01,P010,3444,3480,8,“And have you any on hand just now?”
+P010.S02,P010,3481,3503,4,I asked with interest.
+P011.S01,P011,3505,3573,12,"“Some ten or twelve, but none which present any feature of interest."
+P011.S02,P011,3574,3636,8,"They are important, you understand, without being interesting."
+P011.S03,P011,3637,3832,35,"Indeed, I have found that it is usually in unimportant matters that there is a field for the observation, and for the quick analysis of cause and effect which gives the charm to an investigation."
+P011.S04,P011,3833,3946,23,"The larger crimes are apt to be the simpler, for the bigger the crime the more obvious, as a rule, is the motive."
+P011.S05,P011,3947,4104,26,"In these cases, save for one rather intricate matter which has been referred to me from Marseilles, there is nothing which presents any features of interest."
+P011.S06,P011,4105,4252,28,"It is possible, however, that I may have something better before very many minutes are over, for this is one of my clients, or I am much mistaken.”"
+P012.S01,P012,4254,4380,21,He had risen from his chair and was standing between the parted blinds gazing down into the dull neutral-tinted London street.
+P012.S02,P012,4381,4638,47,"Looking over his shoulder, I saw that on the pavement opposite there stood a large woman with a heavy fur boa round her neck, and a large curling red feather in a broad-brimmed hat which was tilted in a coquettish Duchess of Devonshire fashion over her ear."
+P012.S03,P012,4639,4828,31,"From under this great panoply she peeped up in a nervous, hesitating fashion at our windows, while her body oscillated backward and forward, and her fingers fidgeted with her glove buttons."
+P012.S04,P012,4829,4963,26,"Suddenly, with a plunge, as of the swimmer who leaves the bank, she hurried across the road, and we heard the sharp clang of the bell."
+P013.S01,P013,4965,5052,14,"“I have seen those symptoms before,” said Holmes, throwing his cigarette into the fire."
+P013.S02,P013,5053,5117,10,“Oscillation upon the pavement always means an affaire de coeur.
+P013.S03,P013,5118,5211,17,"She would like advice, but is not sure that the matter is not too delicate for communication."
+P013.S04,P013,5212,5250,7,And yet even here we may discriminate.
+P013.S05,P013,5251,5370,23,"When a woman has been seriously wronged by a man she no longer oscillates, and the usual symptom is a broken bell wire."
+P013.S06,P013,5371,5486,24,"Here we may take it that there is a love matter, but that the maiden is not so much angry as perplexed, or grieved."
+P013.S07,P013,5487,5539,10,But here she comes in person to resolve our doubts.”
+P014.S01,P014,5541,5764,40,"As he spoke there was a tap at the door, and the boy in buttons entered to announce Miss Mary Sutherland, while the lady herself loomed behind his small black figure like a full-sailed merchant-man behind a tiny pilot boat."
+P014.S02,P014,5765,5992,40,"Sherlock Holmes welcomed her with the easy courtesy for which he was remarkable, and, having closed the door and bowed her into an armchair, he looked her over in the minute and yet abstracted fashion which was peculiar to him."
+P015.S01,P015,5994,6099,21,"“Do you not find,” he said, “that with your short sight it is a little trying to do so much typewriting?”"
+P016.S01,P016,6101,6188,16,"“I did at first,” she answered, “but now I know where the letters are without looking.”"
+P016.S02,P016,6189,6347,26,"Then, suddenly realising the full purport of his words, she gave a violent start and looked up, with fear and astonishment upon her broad, good-humoured face."
+P016.S03,P016,6348,6431,15,"“You’ve heard about me, Mr. Holmes,” she cried, “else how could you know all that?”"
+P017.S01,P017,6433,6504,12,"“Never mind,” said Holmes, laughing; “it is my business to know things."
+P017.S02,P017,6505,6563,10,Perhaps I have trained myself to see what others overlook.
+P017.S03,P017,6564,6607,9,"If not, why should you come to consult me?”"
+P018.S01,P018,6609,6760,30,"“I came to you, sir, because I heard of you from Mrs. Etherege, whose husband you found so easy when the police and everyone had given him up for dead."
+P018.S02,P018,6761,6812,12,"Oh, Mr. Holmes, I wish you would do as much for me."
+P018.S03,P018,6813,6994,39,"I’m not rich, but still I have a hundred a year in my own right, besides the little that I make by the machine, and I would give it all to know what has become of Mr. Hosmer Angel.”"
+P019.S01,P019,6996,7132,25,"“Why did you come away to consult me in such a hurry?” asked Sherlock Holmes, with his finger-tips together and his eyes to the ceiling."
+P020.S01,P020,7134,7216,14,Again a startled look came over the somewhat vacuous face of Miss Mary Sutherland.
+P020.S02,P020,7217,7359,31,"“Yes, I did bang out of the house,” she said, “for it made me angry to see the easy way in which Mr. Windibank—that is, my father—took it all."
+P020.S03,P020,7360,7579,50,"He would not go to the police, and he would not go to you, and so at last, as he would do nothing and kept on saying that there was no harm done, it made me mad, and I just on with my things and came right away to you.”"
+P021.S01,P021,7581,7664,12,"“Your father,” said Holmes, “your stepfather, surely, since the name is different.”"
+P022.S01,P022,7666,7686,3,"“Yes, my stepfather."
+P022.S02,P022,7687,7795,21,"I call him father, though it sounds funny, too, for he is only five years and two months older than myself.”"
+P023.S01,P023,7797,7824,5,“And your mother is alive?”
+P024.S01,P024,7826,7861,7,"“Oh, yes, mother is alive and well."
+P024.S02,P024,7862,8010,26,"I wasn’t best pleased, Mr. Holmes, when she married again so soon after father’s death, and a man who was nearly fifteen years younger than herself."
+P024.S03,P024,8011,8266,47,"Father was a plumber in the Tottenham Court Road, and he left a tidy business behind him, which mother carried on with Mr. Hardy, the foreman; but when Mr. Windibank came he made her sell the business, for he was very superior, being a traveller in wines."
+P024.S04,P024,8267,8386,23,"They got £4700 for the goodwill and interest, which wasn’t near as much as father could have got if he had been alive.”"
+P025.S01,P025,8388,8570,27,"I had expected to see Sherlock Holmes impatient under this rambling and inconsequential narrative, but, on the contrary, he had listened with the greatest concentration of attention."
+P026.S01,P026,8572,8643,13,"“Your own little income,” he asked, “does it come out of the business?”"
+P027.S01,P027,8645,8658,3,"“Oh, no, sir."
+P027.S02,P027,8659,8724,14,It is quite separate and was left me by my uncle Ned in Auckland.
+P027.S03,P027,8725,8772,10,"It is in New Zealand stock, paying 4½ per cent."
+P027.S04,P027,8773,8857,15,"Two thousand five hundred pounds was the amount, but I can only touch the interest.”"
+P028.S01,P028,8859,8900,6,"“You interest me extremely,” said Holmes."
+P028.S02,P028,8901,9057,32,"“And since you draw so large a sum as a hundred a year, with what you earn into the bargain, you no doubt travel a little and indulge yourself in every way."
+P028.S03,P028,9058,9139,17,I believe that a single lady can get on very nicely upon an income of about £60.”
+P029.S01,P029,9141,9350,46,"“I could do with much less than that, Mr. Holmes, but you understand that as long as I live at home I don’t wish to be a burden to them, and so they have the use of the money just while I am staying with them."
+P029.S02,P029,9351,9393,9,"Of course, that is only just for the time."
+P029.S03,P029,9394,9537,28,"Mr. Windibank draws my interest every quarter and pays it over to mother, and I find that I can do pretty well with what I earn at typewriting."
+P029.S04,P029,9538,9628,19,"It brings me twopence a sheet, and I can often do from fifteen to twenty sheets in a day.”"
+P030.S01,P030,9630,9690,11,"“You have made your position very clear to me,” said Holmes."
+P030.S02,P030,9691,9776,16,"“This is my friend, Dr. Watson, before whom you can speak as freely as before myself."
+P030.S03,P030,9777,9845,12,Kindly tell us now all about your connection with Mr. Hosmer Angel.”
+P031.S01,P031,9847,9943,17,"A flush stole over Miss Sutherland’s face, and she picked nervously at the fringe of her jacket."
+P031.S02,P031,9944,9996,10,"“I met him first at the gasfitters’ ball,” she said."
+P031.S03,P031,9997,10114,21,"“They used to send father tickets when he was alive, and then afterwards they remembered us, and sent them to mother."
+P031.S04,P031,10115,10151,8,Mr. Windibank did not wish us to go.
+P031.S05,P031,10152,10188,8,He never did wish us to go anywhere.
+P031.S06,P031,10189,10265,16,He would get quite mad if I wanted so much as to join a Sunday-school treat.
+P031.S07,P031,10266,10349,19,"But this time I was set on going, and I would go; for what right had he to prevent?"
+P031.S08,P031,10350,10439,19,"He said the folk were not fit for us to know, when all father’s friends were to be there."
+P031.S09,P031,10440,10563,28,"And he said that I had nothing fit to wear, when I had my purple plush that I had never so much as taken out of the drawer."
+P031.S10,P031,10564,10766,42,"At last, when nothing else would do, he went off to France upon the business of the firm, but we went, mother and I, with Mr. Hardy, who used to be our foreman, and it was there I met Mr. Hosmer Angel.”"
+P032.S01,P032,10768,10894,23,"“I suppose,” said Holmes, “that when Mr. Windibank came back from France he was very annoyed at your having gone to the ball.”"
+P033.S01,P033,10896,10933,8,"“Oh, well, he was very good about it."
+P033.S02,P033,10934,11069,25,"He laughed, I remember, and shrugged his shoulders, and said there was no use denying anything to a woman, for she would have her way.”"
+P034.S01,P034,11071,11078,2,“I see.
+P034.S02,P034,11079,11171,16,"Then at the gasfitters’ ball you met, as I understand, a gentleman called Mr. Hosmer Angel.”"
+P035.S01,P035,11173,11183,2,"“Yes, sir."
+P035.S02,P035,11184,11444,56,"I met him that night, and he called next day to ask if we had got home all safe, and after that we met him—that is to say, Mr. Holmes, I met him twice for walks, but after that father came back again, and Mr. Hosmer Angel could not come to the house any more.”"
+P036.S01,P036,11446,11451,1,“No?”
+P037.S01,P037,11453,11509,10,"“Well, you know father didn’t like anything of the sort."
+P037.S02,P037,11510,11634,26,"He wouldn’t have any visitors if he could help it, and he used to say that a woman should be happy in her own family circle."
+P037.S03,P037,11635,11745,25,"But then, as I used to say to mother, a woman wants her own circle to begin with, and I had not got mine yet.”"
+P038.S01,P038,11747,11779,6,“But how about Mr. Hosmer Angel?
+P038.S02,P038,11780,11815,8,Did he make no attempt to see you?”
+P039.S01,P039,11817,11972,32,"“Well, father was going off to France again in a week, and Hosmer wrote and said that it would be safer and better not to see each other until he had gone."
+P039.S02,P039,11973,12036,13,"We could write in the meantime, and he used to write every day."
+P039.S03,P039,12037,12116,17,"I took the letters in in the morning, so there was no need for father to know.”"
+P040.S01,P040,12118,12167,9,“Were you engaged to the gentleman at this time?”
+P041.S01,P041,12169,12190,4,"“Oh, yes, Mr. Holmes."
+P041.S02,P041,12191,12241,10,We were engaged after the first walk that we took.
+P041.S03,P041,12242,12252,2,Hosmer—Mr.
+P041.S04,P041,12253,12312,11,Angel—was a cashier in an office in Leadenhall Street—and—”
+P042.S01,P042,12314,12328,2,“What office?”
+P043.S01,P043,12330,12381,10,"“That’s the worst of it, Mr. Holmes, I don’t know.”"
+P044.S01,P044,12383,12409,5,"“Where did he live, then?”"
+P045.S01,P045,12411,12438,5,“He slept on the premises.”
+P046.S01,P046,12440,12473,6,“And you don’t know his address?”
+P047.S01,P047,12475,12517,7,“No—except that it was Leadenhall Street.”
+P048.S01,P048,12519,12562,7,"“Where did you address your letters, then?”"
+P049.S01,P049,12564,12630,12,"“To the Leadenhall Street Post Office, to be left till called for."
+P049.S02,P049,12631,12977,69,"He said that if they were sent to the office he would be chaffed by all the other clerks about having letters from a lady, so I offered to typewrite them, like he did his, but he wouldn’t have that, for he said that when I wrote them they seemed to come from me, but when they were typewritten he always felt that the machine had come between us."
+P049.S03,P049,12978,13083,22,"That will just show you how fond he was of me, Mr. Holmes, and the little things that he would think of.”"
+P050.S01,P050,13085,13123,6,"“It was most suggestive,” said Holmes."
+P050.S02,P050,13124,13216,17,“It has long been an axiom of mine that the little things are infinitely the most important.
+P050.S03,P050,13217,13282,11,Can you remember any other little things about Mr. Hosmer Angel?”
+P051.S01,P051,13284,13319,8,"“He was a very shy man, Mr. Holmes."
+P051.S02,P051,13320,13430,22,"He would rather walk with me in the evening than in the daylight, for he said that he hated to be conspicuous."
+P051.S03,P051,13431,13468,6,Very retiring and gentlemanly he was.
+P051.S04,P051,13469,13495,5,Even his voice was gentle.
+P051.S05,P051,13496,13653,30,"He’d had the quinsy and swollen glands when he was young, he told me, and it had left him with a weak throat, and a hesitating, whispering fashion of speech."
+P051.S06,P051,13654,13791,26,"He was always well dressed, very neat and plain, but his eyes were weak, just as mine are, and he wore tinted glasses against the glare.”"
+P052.S01,P052,13793,13875,12,"“Well, and what happened when Mr. Windibank, your stepfather, returned to France?”"
+P053.S01,P053,13877,13977,18,“Mr. Hosmer Angel came to the house again and proposed that we should marry before father came back.
+P053.S02,P053,13978,14109,25,"He was in dreadful earnest and made me swear, with my hands on the Testament, that whatever happened I would always be true to him."
+P053.S03,P053,14110,14197,19,"Mother said he was quite right to make me swear, and that it was a sign of his passion."
+P053.S04,P053,14198,14280,18,Mother was all in his favour from the first and was even fonder of him than I was.
+P053.S05,P053,14281,14495,41,"Then, when they talked of marrying within the week, I began to ask about father; but they both said never to mind about father, but just to tell him afterwards, and mother said she would make it all right with him."
+P053.S06,P053,14496,14533,7,"I didn’t quite like that, Mr. Holmes."
+P053.S07,P053,14534,14809,57,"It seemed funny that I should ask his leave, as he was only a few years older than me; but I didn’t want to do anything on the sly, so I wrote to father at Bordeaux, where the company has its French offices, but the letter came back to me on the very morning of the wedding.”"
+P054.S01,P054,14811,14833,4,"“It missed him, then?”"
+P055.S01,P055,14835,14900,12,"“Yes, sir; for he had started to England just before it arrived.”"
+P056.S01,P056,14902,14928,4,“Ha! that was unfortunate.
+P056.S02,P056,14929,14977,8,"Your wedding was arranged, then, for the Friday."
+P056.S03,P056,14978,15002,6,Was it to be in church?”
+P057.S01,P057,15004,15032,5,"“Yes, sir, but very quietly."
+P057.S02,P057,15033,15149,22,"It was to be at St. Saviour’s, near King’s Cross, and we were to have breakfast afterwards at the St. Pancras Hotel."
+P057.S03,P057,15150,15328,37,"Hosmer came for us in a hansom, but as there were two of us he put us both into it and stepped himself into a four-wheeler, which happened to be the only other cab in the street."
+P057.S04,P057,15329,15517,39,"We got to the church first, and when the four-wheeler drove up we waited for him to step out, but he never did, and when the cabman got down from the box and looked there was no one there!"
+P057.S05,P057,15518,15629,24,"The cabman said that he could not imagine what had become of him, for he had seen him get in with his own eyes."
+P057.S06,P057,15630,15759,25,"That was last Friday, Mr. Holmes, and I have never seen or heard anything since then to throw any light upon what became of him.”"
+P058.S01,P058,15761,15834,13,"“It seems to me that you have been very shamefully treated,” said Holmes."
+P059.S01,P059,15836,15849,3,"“Oh, no, sir!"
+P059.S02,P059,15850,15890,10,He was too good and kind to leave me so.
+P059.S03,P059,15891,16147,49,"Why, all the morning he was saying to me that, whatever happened, I was to be true; and that even if something quite unforeseen occurred to separate us, I was always to remember that I was pledged to him, and that he would claim his pledge sooner or later."
+P059.S04,P059,16148,16245,17,"It seemed strange talk for a wedding-morning, but what has happened since gives a meaning to it.”"
+P060.S01,P060,16247,16271,4,“Most certainly it does.
+P060.S02,P060,16272,16353,13,"Your own opinion is, then, that some unforeseen catastrophe has occurred to him?”"
+P061.S01,P061,16355,16365,2,"“Yes, sir."
+P061.S02,P061,16366,16441,15,"I believe that he foresaw some danger, or else he would not have talked so."
+P061.S03,P061,16442,16490,9,And then I think that what he foresaw happened.”
+P062.S01,P062,16492,16547,12,“But you have no notion as to what it could have been?”
+P063.S01,P063,16549,16556,1,“None.”
+P064.S01,P064,16558,16577,3,“One more question.
+P064.S02,P064,16578,16615,7,How did your mother take the matter?”
+P065.S01,P065,16617,16689,15,"“She was angry, and said that I was never to speak of the matter again.”"
+P066.S01,P066,16691,16708,3,“And your father?
+P066.S02,P066,16709,16727,4,Did you tell him?”
+P067.S01,P067,16729,16836,20,"“Yes; and he seemed to think, with me, that something had happened, and that I should hear of Hosmer again."
+P067.S02,P067,16837,16944,21,"As he said, what interest could anyone have in bringing me to the doors of the church, and then leaving me?"
+P067.S03,P067,16945,17151,41,"Now, if he had borrowed my money, or if he had married me and got my money settled on him, there might be some reason, but Hosmer was very independent about money and never would look at a shilling of mine."
+P067.S04,P067,17152,17186,6,"And yet, what could have happened?"
+P067.S05,P067,17187,17214,6,And why could he not write?
+P067.S06,P067,17215,17292,17,"Oh, it drives me half-mad to think of it, and I can’t sleep a wink at night.”"
+P067.S07,P067,17293,17375,16,She pulled a little handkerchief out of her muff and began to sob heavily into it.
+P068.S01,P068,17377,17500,23,"“I shall glance into the case for you,” said Holmes, rising, “and I have no doubt that we shall reach some definite result."
+P068.S02,P068,17501,17595,20,"Let the weight of the matter rest upon me now, and do not let your mind dwell upon it further."
+P068.S03,P068,17596,17691,19,"Above all, try to let Mr. Hosmer Angel vanish from your memory, as he has done from your life.”"
+P069.S01,P069,17693,17735,8,“Then you don’t think I’ll see him again?”
+P070.S01,P070,17737,17750,3,“I fear not.”
+P071.S01,P071,17752,17784,6,“Then what has happened to him?”
+P072.S01,P072,17786,17828,8,“You will leave that question in my hands.
+P072.S02,P072,17829,17918,17,I should like an accurate description of him and any letters of his which you can spare.”
+P073.S01,P073,17920,17982,10,"“I advertised for him in last Saturday’s Chronicle,” said she."
+P073.S02,P073,17983,18037,11,“Here is the slip and here are four letters from him.”
+P074.S01,P074,18039,18050,2,“Thank you.
+P074.S02,P074,18051,18069,3,And your address?”
+P075.S01,P075,18071,18103,5,"“No. 31 Lyon Place, Camberwell.”"
+P076.S01,P076,18105,18154,8,"“Mr. Angel’s address you never had, I understand."
+P076.S02,P076,18155,18197,7,Where is your father’s place of business?”
+P077.S01,P077,18199,18284,12,"“He travels for Westhouse & Marbank, the great claret importers of Fenchurch Street.”"
+P078.S01,P078,18286,18297,2,“Thank you.
+P078.S02,P078,18298,18340,7,You have made your statement very clearly.
+P078.S03,P078,18341,18420,15,"You will leave the papers here, and remember the advice which I have given you."
+P078.S04,P078,18421,18503,17,"Let the whole incident be a sealed book, and do not allow it to affect your life.”"
+P079.S01,P079,18505,18558,11,"“You are very kind, Mr. Holmes, but I cannot do that."
+P079.S02,P079,18559,18585,6,I shall be true to Hosmer.
+P079.S03,P079,18586,18629,9,He shall find me ready when he comes back.”
+P080.S01,P080,18631,18771,24,"For all the preposterous hat and the vacuous face, there was something noble in the simple faith of our visitor which compelled our respect."
+P080.S02,P080,18772,18902,25,"She laid her little bundle of papers upon the table and went her way, with a promise to come again whenever she might be summoned."
+P081.S01,P081,18904,19077,30,"Sherlock Holmes sat silent for a few minutes with his fingertips still pressed together, his legs stretched out in front of him, and his gaze directed upward to the ceiling."
+P081.S02,P081,19078,19320,48,"Then he took down from the rack the old and oily clay pipe, which was to him as a counsellor, and, having lit it, he leaned back in his chair, with the thick blue cloud-wreaths spinning up from him, and a look of infinite languor in his face."
+P082.S01,P082,19322,19377,8,"“Quite an interesting study, that maiden,” he observed."
+P082.S02,P082,19378,19474,18,"“I found her more interesting than her little problem, which, by the way, is rather a trite one."
+P082.S03,P082,19475,19608,26,"You will find parallel cases, if you consult my index, in Andover in ’77, and there was something of the sort at The Hague last year."
+P082.S04,P082,19609,19689,17,"Old as is the idea, however, there were one or two details which were new to me."
+P082.S05,P082,19690,19735,7,But the maiden herself was most instructive.”
+P083.S01,P083,19737,19825,17,"“You appeared to read a good deal upon her which was quite invisible to me,” I remarked."
+P084.S01,P084,19827,19864,5,"“Not invisible but unnoticed, Watson."
+P084.S02,P084,19865,19938,15,"You did not know where to look, and so you missed all that was important."
+P084.S03,P084,19939,20085,25,"I can never bring you to realise the importance of sleeves, the suggestiveness of thumb-nails, or the great issues that may hang from a boot-lace."
+P084.S04,P084,20086,20140,9,"Now, what did you gather from that woman’s appearance?"
+P084.S05,P084,20141,20154,2,Describe it.”
+P085.S01,P085,20156,20247,15,"“Well, she had a slate-coloured, broad-brimmed straw hat, with a feather of a brickish red."
+P085.S02,P085,20248,20344,18,"Her jacket was black, with black beads sewn upon it, and a fringe of little black jet ornaments."
+P085.S03,P085,20345,20451,19,"Her dress was brown, rather darker than coffee colour, with a little purple plush at the neck and sleeves."
+P085.S04,P085,20452,20522,12,Her gloves were greyish and were worn through at the right forefinger.
+P085.S05,P085,20523,20550,5,Her boots I didn’t observe.
+P085.S06,P085,20551,20682,21,"She had small round, hanging gold earrings, and a general air of being fairly well-to-do in a vulgar, comfortable, easy-going way.”"
+P086.S01,P086,20684,20747,9,Sherlock Holmes clapped his hands softly together and chuckled.
+P087.S01,P087,20749,20805,9,"“’Pon my word, Watson, you are coming along wonderfully."
+P087.S02,P087,20806,20844,7,You have really done very well indeed.
+P087.S03,P087,20845,20973,25,"It is true that you have missed everything of importance, but you have hit upon the method, and you have a quick eye for colour."
+P087.S04,P087,20974,21056,12,"Never trust to general impressions, my boy, but concentrate yourself upon details."
+P087.S05,P087,21057,21103,9,My first glance is always at a woman’s sleeve.
+P087.S06,P087,21104,21172,15,In a man it is perhaps better first to take the knee of the trouser.
+P087.S07,P087,21173,21279,19,"As you observe, this woman had plush upon her sleeves, which is a most useful material for showing traces."
+P087.S08,P087,21280,21395,18,"The double line a little above the wrist, where the typewritist presses against the table, was beautifully defined."
+P087.S09,P087,21396,21591,37,"The sewing-machine, of the hand type, leaves a similar mark, but only on the left arm, and on the side of it farthest from the thumb, instead of being right across the broadest part, as this was."
+P087.S10,P087,21592,21771,33,"I then glanced at her face, and, observing the dint of a pince-nez at either side of her nose, I ventured a remark upon short sight and typewriting, which seemed to surprise her.”"
+P088.S01,P088,21773,21791,3,“It surprised me.”
+P089.S01,P089,21793,21822,5,"“But, surely, it was obvious."
+P089.S02,P089,21823,22063,43,"I was then much surprised and interested on glancing down to observe that, though the boots which she was wearing were not unlike each other, they were really odd ones; the one having a slightly decorated toe-cap, and the other a plain one."
+P089.S03,P089,22064,22169,21,"One was buttoned only in the two lower buttons out of five, and the other at the first, third, and fifth."
+P089.S04,P089,22170,22351,34,"Now, when you see that a young lady, otherwise neatly dressed, has come away from home with odd boots, half-buttoned, it is no great deduction to say that she came away in a hurry.”"
+P090.S01,P090,22353,22369,3,“And what else?”
+P090.S02,P090,22370,22449,13,"I asked, keenly interested, as I always was, by my friend’s incisive reasoning."
+P091.S01,P091,22451,22551,18,"“I noted, in passing, that she had written a note before leaving home but after being fully dressed."
+P091.S02,P091,22552,22701,27,"You observed that her right glove was torn at the forefinger, but you did not apparently see that both glove and finger were stained with violet ink."
+P091.S03,P091,22702,22757,12,She had written in a hurry and dipped her pen too deep.
+P091.S04,P091,22758,22841,16,"It must have been this morning, or the mark would not remain clear upon the finger."
+P091.S05,P091,22842,22928,15,"All this is amusing, though rather elementary, but I must go back to business, Watson."
+P091.S06,P091,22929,23003,12,Would you mind reading me the advertised description of Mr. Hosmer Angel?”
+P092.S01,P092,23005,23049,9,I held the little printed slip to the light.
+P093.S01,P093,23051,23137,14,"“Missing,” it said, “on the morning of the fourteenth, a gentleman named Hosmer Angel."
+P093.S02,P093,23138,23335,30,"About five ft. seven in. in height; strongly built, sallow complexion, black hair, a little bald in the centre, bushy, black side-whiskers and moustache; tinted glasses, slight infirmity of speech."
+P093.S03,P093,23336,23514,27,"Was dressed, when last seen, in black frock-coat faced with silk, black waistcoat, gold Albert chain, and grey Harris tweed trousers, with brown gaiters over elastic-sided boots."
+P093.S04,P093,23515,23577,11,Known to have been employed in an office in Leadenhall Street.
+P093.S05,P093,23578,23596,2,Anybody bringing—”
+P094.S01,P094,23598,23626,5,"“That will do,” said Holmes."
+P094.S02,P094,23627,23709,13,"“As to the letters,” he continued, glancing over them, “they are very commonplace."
+P094.S03,P094,23710,23783,14,"Absolutely no clue in them to Mr. Angel, save that he quotes Balzac once."
+P094.S04,P094,23784,23856,12,"There is one remarkable point, however, which will no doubt strike you.”"
+P095.S01,P095,23858,23893,5,"“They are typewritten,” I remarked."
+P096.S01,P096,23895,23944,8,"“Not only that, but the signature is typewritten."
+P096.S02,P096,23945,23998,10,Look at the neat little ‘Hosmer Angel’ at the bottom.
+P096.S03,P096,23999,24095,16,"There is a date, you see, but no superscription except Leadenhall Street, which is rather vague."
+P096.S04,P096,24096,24181,15,"The point about the signature is very suggestive—in fact, we may call it conclusive.”"
+P097.S01,P097,24183,24193,2,“Of what?”
+P098.S01,P098,24195,24279,17,"“My dear fellow, is it possible you do not see how strongly it bears upon the case?”"
+P099.S01,P099,24281,24420,28,“I cannot say that I do unless it were that he wished to be able to deny his signature if an action for breach of promise were instituted.”
+P100.S01,P100,24422,24450,6,"“No, that was not the point."
+P100.S02,P100,24451,24518,11,"However, I shall write two letters, which should settle the matter."
+P100.S03,P100,24519,24682,31,"One is to a firm in the City, the other is to the young lady’s stepfather, Mr. Windibank, asking him whether he could meet us here at six o’clock tomorrow evening."
+P100.S04,P100,24683,24753,14,It is just as well that we should do business with the male relatives.
+P100.S05,P100,24754,24895,27,"And now, Doctor, we can do nothing until the answers to those letters come, so we may put our little problem upon the shelf for the interim.”"
+P101.S01,P101,24897,25178,51,I had had so many reasons to believe in my friend’s subtle powers of reasoning and extraordinary energy in action that I felt that he must have some solid grounds for the assured and easy demeanour with which he treated the singular mystery which he had been called upon to fathom.
+P101.S02,P101,25179,25498,61,"Once only had I known him to fail, in the case of the King of Bohemia and of the Irene Adler photograph; but when I looked back to the weird business of the Sign of Four, and the extraordinary circumstances connected with the Study in Scarlet, I felt that it would be a strange tangle indeed which he could not unravel."
+P102.S01,P102,25500,25762,50,"I left him then, still puffing at his black clay pipe, with the conviction that when I came again on the next evening I would find that he held in his hands all the clues which would lead up to the identity of the disappearing bridegroom of Miss Mary Sutherland."
+P103.S01,P103,25764,25912,29,"A professional case of great gravity was engaging my own attention at the time, and the whole of next day I was busy at the bedside of the sufferer."
+P103.S02,P103,25913,26129,43,"It was not until close upon six o’clock that I found myself free and was able to spring into a hansom and drive to Baker Street, half afraid that I might be too late to assist at the dénouement of the little mystery."
+P103.S03,P103,26130,26250,21,"I found Sherlock Holmes alone, however, half asleep, with his long, thin form curled up in the recesses of his armchair."
+P103.S04,P103,26251,26430,33,"A formidable array of bottles and test-tubes, with the pungent cleanly smell of hydrochloric acid, told me that he had spent his day in the chemical work which was so dear to him."
+P104.S01,P104,26432,26459,5,"“Well, have you solved it?”"
+P104.S02,P104,26460,26481,5,I asked as I entered.
+P105.S01,P105,26483,26488,1,“Yes.
+P105.S02,P105,26489,26522,6,It was the bisulphate of baryta.”
+P106.S01,P106,26524,26546,4,"“No, no, the mystery!”"
+P106.S02,P106,26547,26555,2,I cried.
+P107.S01,P107,26557,26567,2,"“Oh, that!"
+P107.S02,P107,26568,26620,11,I thought of the salt that I have been working upon.
+P107.S03,P107,26621,26729,20,"There was never any mystery in the matter, though, as I said yesterday, some of the details are of interest."
+P107.S04,P107,26730,26811,16,"The only drawback is that there is no law, I fear, that can touch the scoundrel.”"
+P108.S01,P108,26813,26886,13,"“Who was he, then, and what was his object in deserting Miss Sutherland?”"
+P109.S01,P109,26888,27046,33,"The question was hardly out of my mouth, and Holmes had not yet opened his lips to reply, when we heard a heavy footfall in the passage and a tap at the door."
+P110.S01,P110,27048,27114,10,"“This is the girl’s stepfather, Mr. James Windibank,” said Holmes."
+P110.S02,P110,27115,27173,14,“He has written to me to say that he would be here at six.
+P110.S03,P110,27174,27183,2,Come in!”
+P111.S01,P111,27185,27392,32,"The man who entered was a sturdy, middle-sized fellow, some thirty years of age, clean-shaven, and sallow-skinned, with a bland, insinuating manner, and a pair of wonderfully sharp and penetrating grey eyes."
+P111.S02,P111,27393,27539,27,"He shot a questioning glance at each of us, placed his shiny top-hat upon the sideboard, and with a slight bow sidled down into the nearest chair."
+P112.S01,P112,27541,27590,6,"“Good-evening, Mr. James Windibank,” said Holmes."
+P112.S02,P112,27591,27700,20,"“I think that this typewritten letter is from you, in which you made an appointment with me for six o’clock?”"
+P113.S01,P113,27702,27712,2,"“Yes, sir."
+P113.S02,P113,27713,27793,19,"I am afraid that I am a little late, but I am not quite my own master, you know."
+P113.S03,P113,27794,27938,29,"I am sorry that Miss Sutherland has troubled you about this little matter, for I think it is far better not to wash linen of the sort in public."
+P113.S04,P113,27939,28129,38,"It was quite against my wishes that she came, but she is a very excitable, impulsive girl, as you may have noticed, and she is not easily controlled when she has made up her mind on a point."
+P113.S05,P113,28130,28295,32,"Of course, I did not mind you so much, as you are not connected with the official police, but it is not pleasant to have a family misfortune like this noised abroad."
+P113.S06,P113,28296,28381,15,"Besides, it is a useless expense, for how could you possibly find this Hosmer Angel?”"
+P114.S01,P114,28383,28508,21,"“On the contrary,” said Holmes quietly; “I have every reason to believe that I will succeed in discovering Mr. Hosmer Angel.”"
+P115.S01,P115,28510,28568,10,Mr. Windibank gave a violent start and dropped his gloves.
+P115.S02,P115,28569,28606,8,"“I am delighted to hear it,” he said."
+P116.S01,P116,28608,28731,20,"“It is a curious thing,” remarked Holmes, “that a typewriter has really quite as much individuality as a man’s handwriting."
+P116.S02,P116,28732,28794,12,"Unless they are quite new, no two of them write exactly alike."
+P116.S03,P116,28795,28866,14,"Some letters get more worn than others, and some wear only on one side."
+P116.S04,P116,28867,29030,33,"Now, you remark in this note of yours, Mr. Windibank, that in every case there is some little slurring over of the ‘e,’ and a slight defect in the tail of the ‘r.’"
+P116.S05,P116,29031,29105,11,"There are fourteen other characteristics, but those are the more obvious.”"
+P117.S01,P117,29107,29281,31,"“We do all our correspondence with this machine at the office, and no doubt it is a little worn,” our visitor answered, glancing keenly at Holmes with his bright little eyes."
+P118.S01,P118,29283,29382,17,"“And now I will show you what is really a very interesting study, Mr. Windibank,” Holmes continued."
+P118.S02,P118,29383,29491,19,“I think of writing another little monograph some of these days on the typewriter and its relation to crime.
+P118.S03,P118,29492,29554,12,It is a subject to which I have devoted some little attention.
+P118.S04,P118,29555,29623,13,I have here four letters which purport to come from the missing man.
+P118.S05,P118,29624,29649,4,They are all typewritten.
+P118.S06,P118,29650,29863,39,"In each case, not only are the ‘e’s’ slurred and the ‘r’s’ tailless, but you will observe, if you care to use my magnifying lens, that the fourteen other characteristics to which I have alluded are there as well.”"
+P119.S01,P119,29865,29925,12,Mr. Windibank sprang out of his chair and picked up his hat.
+P119.S02,P119,29926,30002,14,"“I cannot waste time over this sort of fantastic talk, Mr. Holmes,” he said."
+P119.S03,P119,30003,30080,17,"“If you can catch the man, catch him, and let me know when you have done it.”"
+P120.S01,P120,30082,30154,12,"“Certainly,” said Holmes, stepping over and turning the key in the door."
+P120.S02,P120,30155,30202,10,"“I let you know, then, that I have caught him!”"
+P121.S01,P121,30204,30312,20,"“What! where?” shouted Mr. Windibank, turning white to his lips and glancing about him like a rat in a trap."
+P122.S01,P122,30314,30369,10,"“Oh, it won’t do—really it won’t,” said Holmes suavely."
+P122.S02,P122,30370,30425,10,"“There is no possible getting out of it, Mr. Windibank."
+P122.S03,P122,30426,30562,27,"It is quite too transparent, and it was a very bad compliment when you said that it was impossible for me to solve so simple a question."
+P122.S04,P122,30563,30576,2,That’s right!
+P122.S05,P122,30577,30611,8,Sit down and let us talk it over.”
+P123.S01,P123,30613,30707,18,"Our visitor collapsed into a chair, with a ghastly face and a glitter of moisture on his brow."
+P123.S02,P123,30708,30747,6,"“It—it’s not actionable,” he stammered."
+P124.S01,P124,30749,30787,9,“I am very much afraid that it is not.
+P124.S02,P124,30788,30910,23,"But between ourselves, Windibank, it was as cruel and selfish and heartless a trick in a petty way as ever came before me."
+P124.S03,P124,30911,31001,19,"Now, let me just run over the course of events, and you will contradict me if I go wrong.”"
+P125.S01,P125,31003,31108,21,"The man sat huddled up in his chair, with his head sunk upon his breast, like one who is utterly crushed."
+P125.S02,P125,31109,31275,31,"Holmes stuck his feet up on the corner of the mantelpiece and, leaning back with his hands in his pockets, began talking, rather to himself, as it seemed, than to us."
+P126.S01,P126,31277,31440,33,"“The man married a woman very much older than himself for her money,” said he, “and he enjoyed the use of the money of the daughter as long as she lived with them."
+P126.S02,P126,31441,31554,21,"It was a considerable sum, for people in their position, and the loss of it would have made a serious difference."
+P126.S03,P126,31555,31593,8,It was worth an effort to preserve it.
+P126.S04,P126,31594,31823,39,"The daughter was of a good, amiable disposition, but affectionate and warm-hearted in her ways, so that it was evident that with her fair personal advantages, and her little income, she would not be allowed to remain single long."
+P126.S05,P126,31824,31939,23,"Now her marriage would mean, of course, the loss of a hundred a year, so what does her stepfather do to prevent it?"
+P126.S06,P126,31940,32055,23,He takes the obvious course of keeping her at home and forbidding her to seek the company of people of her own age.
+P126.S07,P126,32056,32109,10,But soon he found that that would not answer forever.
+P126.S08,P126,32110,32228,19,"She became restive, insisted upon her rights, and finally announced her positive intention of going to a certain ball."
+P126.S09,P126,32229,32269,7,What does her clever stepfather do then?
+P126.S10,P126,32270,32337,13,He conceives an idea more creditable to his head than to his heart.
+P126.S11,P126,32338,32705,63,"With the connivance and assistance of his wife he disguised himself, covered those keen eyes with tinted glasses, masked the face with a moustache and a pair of bushy whiskers, sunk that clear voice into an insinuating whisper, and doubly secure on account of the girl’s short sight, he appears as Mr. Hosmer Angel, and keeps off other lovers by making love himself.”"
+P127.S01,P127,32707,32758,10,"“It was only a joke at first,” groaned our visitor."
+P127.S02,P127,32759,32819,11,“We never thought that she would have been so carried away.”
+P128.S01,P128,32821,32838,3,“Very likely not.
+P128.S02,P128,32839,33043,36,"However that may be, the young lady was very decidedly carried away, and, having quite made up her mind that her stepfather was in France, the suspicion of treachery never for an instant entered her mind."
+P128.S03,P128,33044,33171,20,"She was flattered by the gentleman’s attentions, and the effect was increased by the loudly expressed admiration of her mother."
+P128.S04,P128,33172,33313,30,"Then Mr. Angel began to call, for it was obvious that the matter should be pushed as far as it would go if a real effect were to be produced."
+P128.S05,P128,33314,33436,18,"There were meetings, and an engagement, which would finally secure the girl’s affections from turning towards anyone else."
+P128.S06,P128,33437,33484,9,But the deception could not be kept up forever.
+P128.S07,P128,33485,33541,8,These pretended journeys to France were rather cumbrous.
+P128.S08,P128,33542,33771,44,The thing to do was clearly to bring the business to an end in such a dramatic manner that it would leave a permanent impression upon the young lady’s mind and prevent her from looking upon any other suitor for some time to come.
+P128.S09,P128,33772,33931,27,"Hence those vows of fidelity exacted upon a Testament, and hence also the allusions to a possibility of something happening on the very morning of the wedding."
+P128.S10,P128,33932,34113,35,"James Windibank wished Miss Sutherland to be so bound to Hosmer Angel, and so uncertain as to his fate, that for ten years to come, at any rate, she would not listen to another man."
+P128.S11,P128,34114,34306,39,"As far as the church door he brought her, and then, as he could go no farther, he conveniently vanished away by the old trick of stepping in at one door of a four-wheeler and out at the other."
+P128.S12,P128,34307,34360,10,"I think that was the chain of events, Mr. Windibank!”"
+P129.S01,P129,34362,34514,28,"Our visitor had recovered something of his assurance while Holmes had been talking, and he rose from his chair now with a cold sneer upon his pale face."
+P130.S01,P130,34516,34691,40,"“It may be so, or it may not, Mr. Holmes,” said he, “but if you are so very sharp you ought to be sharp enough to know that it is you who are breaking the law now, and not me."
+P130.S02,P130,34692,34851,29,"I have done nothing actionable from the first, but as long as you keep that door locked you lay yourself open to an action for assault and illegal constraint.”"
+P131.S01,P131,34853,35001,26,"“The law cannot, as you say, touch you,” said Holmes, unlocking and throwing open the door, “yet there never was a man who deserved punishment more."
+P131.S02,P131,35002,35092,19,"If the young lady has a brother or a friend, he ought to lay a whip across your shoulders."
+P131.S03,P131,35093,35301,42,"By Jove!” he continued, flushing up at the sight of the bitter sneer upon the man’s face, “it is not part of my duties to my client, but here’s a hunting crop handy, and I think I shall just treat myself to—”"
+P131.S04,P131,35302,35546,49,"He took two swift steps to the whip, but before he could grasp it there was a wild clatter of steps upon the stairs, the heavy hall door banged, and from the window we could see Mr. James Windibank running at the top of his speed down the road."
+P132.S01,P132,35548,35657,17,"“There’s a cold-blooded scoundrel!” said Holmes, laughing, as he threw himself down into his chair once more."
+P132.S02,P132,35658,35757,19,"“That fellow will rise from crime to crime until he does something very bad, and ends on a gallows."
+P132.S03,P132,35758,35828,12,"The case has, in some respects, been not entirely devoid of interest.”"
+P133.S01,P133,35830,35902,13,"“I cannot now entirely see all the steps of your reasoning,” I remarked."
+P134.S01,P134,35904,36155,47,"“Well, of course it was obvious from the first that this Mr. Hosmer Angel must have some strong object for his curious conduct, and it was equally clear that the only man who really profited by the incident, as far as we could see, was the stepfather."
+P134.S02,P134,36156,36281,23,"Then the fact that the two men were never together, but that the one always appeared when the other was away, was suggestive."
+P134.S03,P134,36282,36394,20,"So were the tinted spectacles and the curious voice, which both hinted at a disguise, as did the bushy whiskers."
+P134.S04,P134,36395,36608,35,"My suspicions were all confirmed by his peculiar action in typewriting his signature, which, of course, inferred that his handwriting was so familiar to her that she would recognise even the smallest sample of it."
+P134.S05,P134,36609,36709,17,"You see all these isolated facts, together with many minor ones, all pointed in the same direction.”"
+P135.S01,P135,36711,36741,6,“And how did you verify them?”
+P136.S01,P136,36743,36805,11,"“Having once spotted my man, it was easy to get corroboration."
+P136.S02,P136,36806,36848,9,I knew the firm for which this man worked.
+P136.S03,P136,36849,37131,50,"Having taken the printed description, I eliminated everything from it which could be the result of a disguise—the whiskers, the glasses, the voice, and I sent it to the firm, with a request that they would inform me whether it answered to the description of any of their travellers."
+P136.S04,P136,37132,37279,27,"I had already noticed the peculiarities of the typewriter, and I wrote to the man himself at his business address asking him if he would come here."
+P136.S05,P136,37280,37378,15,"As I expected, his reply was typewritten and revealed the same trivial but characteristic defects."
+P136.S06,P136,37379,37558,29,"The same post brought me a letter from Westhouse & Marbank, of Fenchurch Street, to say that the description tallied in every respect with that of their employee, James Windibank."
+P136.S07,P136,37559,37571,2,Voilà tout!”
+P137.S01,P137,37573,37595,3,“And Miss Sutherland?”
+P138.S01,P138,37597,37636,9,“If I tell her she will not believe me.
+P138.S02,P138,37637,37789,28,"You may remember the old Persian saying, ‘There is danger for him who taketh the tiger cub, and danger also for whoso snatches a delusion from a woman.’"
+P138.S03,P138,37790,37872,17,"There is as much sense in Hafiz as in Horace, and as much knowledge of the world.”"

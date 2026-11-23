@@ -1,0 +1,44 @@
+{
+  "note": "Display labels for story entities (gold IRIs; simulation IRIs are mapped through prototype/gold/sim_name_map.json) and phrases for predicates/classes used when rendering propositions as English sentences.",
+  "entities": {
+    "mary": "Mary Sutherland", "windibank": "James Windibank", "hosmer": "Hosmer Angel", "mother": "Mary's mother",
+    "holmes": "Holmes", "watson": "Watson", "analyst": "the editors' what-if", "solver": "the reader",
+    "app_mary_sutherland": "the name 'Mary Sutherland'", "app_windibank": "the name 'Windibank'", "app_hosmer_angel": "the name 'Hosmer Angel'",
+    "journey_france_1": "the first journey to France (the ball)", "journey_france_2": "the second journey to France",
+    "disappearance": "the disappearance at the church", "ball": "the gasfitters' ball",
+    "letter_H1": "Hosmer's letter no. 1", "letter_H2": "Hosmer's letter no. 2", "letter_H3": "Hosmer's letter no. 3", "letter_H4": "Hosmer's letter no. 4",
+    "letter_W": "Windibank's typed reply", "machine_H": "the machine that typed Hosmer's letters", "office_machine": "the office typewriter at Westhouse & Marbank",
+    "profile_eR14": "the defect profile (slurred 'e', tailless 'r', fourteen more)", "occ_cashier_leadenhall": "a cashier in an office in Leadenhall Street",
+    "occ_wine_traveller": "a traveller in wines", "westhouse_marbank": "Westhouse & Marbank", "westhouse_staff": "the office staff",
+    "tinted_glasses": "tinted glasses", "impersonation": "the impersonation of 'Hosmer Angel'", "motive_keep_income": "keeping the daughter's income",
+    "purpose_deny_signature": "being able to deny the signature", "wish_hosmer_found": "a wish that Hosmer be found",
+    "other_clerk": "another clerk", "hyp_telling": "a (hypothetical) telling to Mary", "hyp_reaction": "Mary's (hypothetical) reaction",
+    "reaction_start": "Windibank's violent start",
+    "ca_holmes_reconstruction": "Holmes's explanation", "ca_hosmer_cashier": "Hosmer's self-description", "ca_mary_france": "Mary's statement about the journey",
+    "ca_windibank_reassure": "Windibank's reassurance", "ca_windibank_delighted": "Windibank's reply to Holmes", "ca_windibank_machine": "Windibank's remark on the typewriter", "ca_holmes_prediction": "Holmes's prediction", "q1": "another clerk", "e1": "the gasfitters' ball", "e2": "the disappearance at the church",
+    "j1": "the first journey to France (the ball)", "j2": "the second journey to France", "d1": "Hosmer's letter no. 1", "d2": "Hosmer's letter no. 2",
+    "d9": "Windibank's typed reply", "m1": "the machine that typed Hosmer's letters", "m2": "the office typewriter", "f1": "the defect profile",
+    "o1": "a traveller in wines", "o2": "a cashier in Leadenhall Street", "g1": "Westhouse & Marbank", "g2": "the office staff", "x1": "tinted glasses",
+    "u1": "being able to deny the signature", "u2": "a wish that Hosmer be found",
+    "pA": "Mary Sutherland", "pB": "James Windibank", "pC": "Hosmer Angel", "pD": "Mary's mother", "pH": "Holmes", "pW": "Watson",
+    "nA": "the name 'Mary Sutherland'", "nB": "the name 'Windibank'", "nC": "the name 'Hosmer Angel'"
+  },
+  "classes": {
+    "ActualJourney": "was an actual journey", "PretendedJourney": "was only a pretended journey", "Journey": "was an announced journey",
+    "InvoluntaryDisappearance": "was involuntary — something happened to him", "VoluntaryDisappearance": "was deliberate",
+    "Disappearance": "was a disappearance", "WeakSighted": "has weak eyes", "KeenSighted": "has keen eyes",
+    "ExpectedToReturn": "will come back", "Impersonation": "was an impersonation", "TypewrittenLetter": "is a typewritten letter",
+    "Typewriter": "is a typewriter", "Occupation": "is an occupation", "CommunicativeAct": "is an act of telling",
+    "E21_Person": "is a person", "E41_Appellation": "is a name", "E5_Event": "is an event", "E74_Group": "is a group"
+  },
+  "predicates": {
+    "sameAs": "is the same person as", "hasOccupation": "works as", "engagedTo": "is engaged to", "stepfatherOf": "is the stepfather of",
+    "spouseOf": "is married to", "attended": "attended", "traveller": "was undertaken by", "disappearedPerson": "concerned", "wore": "wore",
+    "writtenBy": "was written by", "purportsToBeFrom": "purports to come from", "typedOn": "was typed on", "hasDefectProfile": "has",
+    "showsDefectProfile": "shows", "usedBy": "is used by", "employedBy": "is employed by", "assisted": "assisted in",
+    "usedAppellation": "used", "P1_is_identified_by": "is identified by", "P14_carried_out_by": "was carried out by", "P11_had_participant": "involved",
+    "addressee": "was addressed to", "hasContent": "had the content", "reportedBy": "is reported by", "motive": "was motivated by",
+    "purpose": "served the purpose of", "rejects": "rejects", "believes": "believes", "establishes": "concludes",
+    "conjectures": "supposes", "uttered": "said", "heldBy": "is held by"
+  }
+}

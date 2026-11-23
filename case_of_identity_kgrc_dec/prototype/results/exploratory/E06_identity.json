@@ -1,0 +1,145 @@
+{ 
+  "data" : "./prototype/exploratory/E06_identity.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 158.152787 ,
+  "input_quads" : 12 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 275.211096 ,
+        "cpu_ms" : 259.043227 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 7 ,
+        "heap_delta_mb" : 13.418212890625 ,
+        "phases" : {
+            "load_ms" : 32.781714 ,
+            "handlePermeation_ms" : 149.574922 ,
+            "enumerate_ms" : 85.592746
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.421314 ,
+            "http://example.org/x#S#enumerate" : 0.479131 ,
+            "http://example.org/x#JimmyB#enumerate" : 33.127033 ,
+            "http://example.org/x#LoisC#enumerate" : 34.341089 ,
+            "http://example.org/x#LoisB#enumerate" : 15.852475
+          } ,
+        "query_first_ms" : 51.21357 ,
+        "query_second_ms" : 2.473108
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#JimmyB" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 2 ,
+              "base_after" : 20 ,
+              "permeated_in" : 652 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ "http://example.org/x#S" ] ,
+              "materialised" : 671 ,
+              "inferred_trivial" : 15 ,
+              "inferred_nontrivial" : 2 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#LoisB" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 1 ,
+              "base_after" : 19 ,
+              "permeated_in" : 652 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ "http://example.org/x#S" ] ,
+              "materialised" : 662 ,
+              "inferred_trivial" : 9 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#LoisC" : {
+              "type" : "named/conjectural" ,
+              "asserted" : 1 ,
+              "base_after" : 39 ,
+              "permeated_in" : 675 ,
+              "permeated_in_nontrivial" : 5 ,
+              "receives_from" : [ 
+                  "http://example.org/x#S" ,
+                  "http://w3id.org/conjectures/reality"
+                ] ,
+              "materialised" : 682 ,
+              "inferred_trivial" : 5 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 652 ,
+              "inferred_trivial" : 651 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 4 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 681 ,
+              "inferred_trivial" : 670 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 6
+            }
+        } ,
+      "n_worlds" : 5 ,
+      "asserted_total" : 9 ,
+      "materialised_total" : 3348 ,
+      "permeated_total" : 1979 ,
+      "inferred_total" : 1354 ,
+      "inferred_trivial_total" : 1350 ,
+      "inferred_nontrivial_total" : 4 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 4 ,
+      "dec_diagnostic_total" : 6 ,
+      "distinct_triples_all_worlds" : 688 ,
+      "redundancy" : 4.866279069767442 ,
+      "inconsistency_pairs" : 6 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/x#JimmyB http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/x#LoisB http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/x#LoisC http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalWorld" ,
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate" ,
+          "http://example.org/x#supposes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalPredicate"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/x#S s=http://www.w3.org/2000/01/rdf-schema#domain p=http://www.w3.org/2000/01/rdf-schema#domain o=http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 51.21357 ,
+      "query_second_ms" : 2.473108 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "http://example.org/x#S | http://www.w3.org/2000/01/rdf-schema#domain http://www.w3.org/2000/01/rdf-schema#domain http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" ]
+    } ,
+  "materialised_sha256" : "e679b3725412feb9972b338fd7f2fee4b0b5772199e2debda90046a806ea0f28"
+}

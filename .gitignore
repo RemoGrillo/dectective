@@ -1,0 +1,43 @@
+# --- Third-party code and tools (recreated by scripts/setup_vendor.sh) ---
+# dec-reasoner (fvitali/dec-reasoner @ e6775b39), KGRC-RDF (@ d62328bd),
+# Maven 3.9.9 and the local Maven repository (vendor/m2)
+case_of_identity_kgrc_dec/vendor/
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / web build ---
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+npm-debug.log*
+
+# --- Java / Maven build ---
+target/
+
+# --- Sources that must not be redistributed (re-fetched by scripts/acquire.py) ---
+# The typeset PDF from sherlock-holm.es carries no explicit licence (see README, "Fonti e licenze").
+case_of_identity_kgrc_dec/sources/text/iden.pdf
+
+# --- Jena TDB runtime leftovers ---
+tdb.lock
+Data-0*/
+
+# --- Editors / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Local secrets ---
+.env
+.env.*

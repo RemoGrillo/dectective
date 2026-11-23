@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# Negation devices: kgc:Not, NotAction/CanNotAction typed predicates, pred:not* / pred:cannot*
+SELECT ?device (COUNT(*) AS ?n) WHERE {
+  { ?s kgc:Not ?x . BIND("kgc:Not" AS ?device) }
+  UNION { ?s kgc:canNot ?x . BIND("kgc:canNot" AS ?device) }
+  UNION { ?s kgc:hasPredicate ?p . ?p rdf:type kgc:NotAction . BIND("hasPredicate typed kgc:NotAction" AS ?device) }
+  UNION { ?s kgc:hasPredicate ?p . FILTER(REGEX(STR(?p), "/predicate/(not|cannot|canNot)[A-Z]")) BIND("hasPredicate pred:not*/cannot*" AS ?device) }
+} GROUP BY ?device

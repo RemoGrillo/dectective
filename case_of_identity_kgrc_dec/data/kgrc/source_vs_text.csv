@@ -1,0 +1,537 @@
+scene,source_en,best_sentence,token_set_ratio,partial_ratio,verbatim_substring_of_doyle
+d:001,Holmes stood out of a chair,P129.S01,77.3,48.1,False
+d:002,Holmes stood between the windowed seams,P028.S01,52.5,40.0,False
+d:004,Sutherland wraps around on the opposite pavement,P012.S02,66.7,54.2,False
+d:005,Sutherland is wearing a hat,P113.S03,65.0,55.6,False
+d:006,Sutherland has red feathers,P113.S03,68.3,70.4,False
+d:007,Sutherland stands,P113.S03,74.1,76.5,False
+d:008,Sutherland's gaze is directed at the window,P081.S01,56.7,65.1,False
+d:010,Sutherland moves back and forth,P128.S10,62.2,64.5,False
+d:011,Sutherland is tinkering with the glove button,P113.S03,54.8,53.3,False
+d:012,Sutherland jumps the road,P113.S03,71.8,68.0,False
+d:013,Sutherland crosses the way,P113.S03,70.0,65.4,False
+d:014,Holmes hears a call bell,P079.S02,56.0,47.1,False
+d:015,Holmes said the following,P001.S01,75.0,52.0,False
+d:016,The present movement has been before,P132.S03,52.8,53.3,False
+d:017,Women are thrilled at the pavement,P012.S02,52.2,64.7,False
+d:018,The above is color love Saya,P087.S08,48.6,51.9,False
+d:019,Sutherland wants advice,P113.S03,60.6,65.2,False
+d:020,Sutherland suffers from,P113.S03,60.6,65.2,False
+d:021,Sutherland wants to consult people,P113.S03,55.3,61.8,False
+d:022,Holmes found that,P103.S03,82.8,64.7,False
+d:023,Women encounter awful eyes from men,P067.S05,45.2,43.1,False
+d:024,Women do not hesitate,P067.S05,54.2,54.5,False
+d:025,Woman tears off the string of the doorbell,P120.S01,50.9,56.8,False
+d:026,Interpretation is color love Saya,P060.S01,45.6,50.0,False
+d:027,The woman is not angry,P013.S06,70.6,63.6,False
+d:028,Women are puzzled,P074.S02,40.0,35.7,False
+d:029,The woman is in distress,P125.S01,54.5,57.1,False
+d:030,Women's troubles can be solved quickly,P079.S02,50.0,38.5,False
+d:031,The door of the room is struck,P005.S03,60.5,50.0,False
+d:032,A boy in charge of service came in,P057.S03,48.8,50.0,False
+d:033,A boy at the service uniform tells Sutherland,P113.S03,47.5,52.6,False
+d:034,Sutherland appears,P113.S03,71.4,72.2,False
+d:035,Holmes welcomes Sutherland,P113.S03,55.6,53.8,False
+d:036,Holmes shuts the door,P014.S02,83.3,52.4,False
+d:037,Holmes recommends an armchair,P014.S02,47.4,58.6,False
+d:038,Holmes looks over Sutherland,P014.S02,56.4,57.1,False
+d:039,Holmes said the following,P001.S01,75.0,52.0,False
+d:040,Myopia is hard to type,P056.S03,47.8,47.1,False
+d:041,Sutherland said the following,P113.S03,65.1,58.6,False
+d:042,Myopia is hard,P022.S01,41.2,37.0,False
+d:043,Sutherland knows the position of the character,P113.S03,57.6,54.3,False
+d:044,Sutherland notices the meaning of the words of Holmes,P138.S03,56.1,50.0,False
+d:045,Sutherland was surprised,P089.S02,70.3,62.5,False
+d:047,Sutherland thought that,P113.S03,78.9,60.9,False
+d:048,Holmes already knows Sutherland,P137.S01,52.8,70.6,False
+d:049,Holmes said the following,P001.S01,75.0,52.0,False
+d:051,Holmes finds out that others overlook,P053.S06,54.1,47.1,False
+d:052,Sutherland said the following,P113.S03,65.1,58.6,False
+d:053,Sutherland heard Holmes from Etheridge,P137.S01,50.0,62.5,False
+d:054,Holmes easily found Etheridge's husband,P018.S01,50.0,56.4,False
+d:055,Police had ruled that Esridge's husband had died,P005.S03,53.3,47.9,False
+d:056,Sutherland is not rich,P113.S03,87.2,68.2,False
+d:057,Sutherland earns one hundred dollars a year,P018.S03,49.1,48.8,False
+d:058,Sutherland is a typing,P113.S03,74.3,63.6,False
+d:060,Holmes find Hosmer,P114.S01,83.9,61.1,False
+d:062,Sutherland hands over to Holmes,P125.S02,65.2,48.4,False
+d:063,Sutherland jumped out of the house,P113.S03,66.7,61.8,False
+d:064,Sutherland is angry,P113.S03,81.2,73.7,False
+d:065,Windibank is naive,P024.S03,66.7,66.7,False
+d:066,Windibank does not want to go to the police,P031.S04,63.2,70.8,False
+d:067,Windibank does not want to visit Holmes,P031.S04,64.0,66.7,False
+d:068,Windibank is Sutherland's father-in-law,P119.S01,46.3,52.2,False
+d:069,Windibank is 5 years and 2 months older than Sutherland,P022.S02,70.6,67.3,False
+d:070,mother of Sutherland is fine,P113.S03,72.7,60.7,False
+d:071,mother of Sutherland is strong,P113.S03,69.6,66.7,False
+d:072,mother of Sutherland remarried after Sutherland&#39;s father&#39;s death,P020.S01,45.5,41.5,False
+d:073,Sutherland's father is a plumber in Totenham Court,P024.S03,52.9,75.3,False
+d:074,Sutherland's father left a store,P076.S02,48.6,51.6,False
+d:075,mother of Sutherland continued with Hardy,P031.S10,50.9,56.1,False
+d:076,Hardy is the head of the scene,P105.S02,54.2,47.5,False
+d:077,Windibank sold her father's shop in Sutherland,P128.S10,60.6,64.3,False
+d:078,Windibank is a wine commerce,P024.S03,56.4,60.7,False
+d:079,Sutherland's father';s store sold for ｡・4700,P076.S02,46.5,45.0,False
+d:080,Sutherland thinks the following,P113.S03,62.2,61.3,False
+d:081,Sutherland's father thinks of,P076.S02,50.7,50.0,False
+d:082,4700 pounds is small,P005.S02,57.1,50.0,False
+d:083,Watson thinks that,P100.S01,52.2,51.4,False
+d:084,Holmes is annoyed with Sutherland's story,P086.S01,55.8,56.1,False
+d:085,Holmes are concentrating on Sutherland's story,P086.S01,51.4,50.0,False
+d:086,Sutherland said the following,P113.S03,65.1,58.6,False
+d:087,Sutherland's income is Ned&#39;s heritage,P108.S01,45.5,46.3,False
+d:088,Ned is Sutherland's uncle,P027.S02,64.9,53.7,False
+d:089,Ned is in Auckland,P027.S02,66.7,88.2,False
+d:090,Heritage is a New Zealand strain,P027.S03,60.9,72.7,False
+d:091,The dividend of the heritage is quarter and five o'clock,P087.S06,50.0,41.1,False
+d:092,The face value of the heritage is ｡・2500,P041.S02,51.1,47.2,False
+d:093,Sutherland gives yield,P113.S03,62.5,63.6,False
+d:094,Holmes thought the following,P107.S02,56.4,58.3,False
+d:095,Sutherland is interesting,P082.S02,71.8,68.0,False
+d:096,Sutherland gets 100 pounds a year,P137.S01,50.9,62.5,False
+d:097,Sutherland makes money,P113.S03,62.5,72.7,False
+d:098,Sutherland has room,P113.S03,84.8,89.5,False
+d:099,60 pounds is enough for single women,P029.S02,51.3,47.6,False
+d:100,Sutherland said the following,P113.S03,65.1,58.6,False
+d:101,Sutherland earns less than ｡・60,P113.S03,48.8,58.1,False
+d:102,Sutherland does not rely on parents,P113.S03,57.1,60.0,False
+d:103,Sutherland keeps money with her parents,P091.S03,55.3,47.2,False
+d:104,Sutherland is with parents,P113.S03,66.7,61.5,False
+d:105,Windibank draws a quarter from the yield,P029.S03,73.0,63.0,False
+d:106,Windibank passes to mother of Sutherland,P128.S10,73.0,64.1,False
+d:107,Sutherland earns enough for Sutherland,P113.S03,68.3,57.9,False
+d:108,Sutherland gets 2 pence with one,P092.S01,50.0,46.9,False
+d:109,Sutherland processes up to 20 cards in a day,P113.S03,53.3,50.0,False
+d:110,Holmes listens to Sutherland about the relationship between Sutherland and Hosma,P039.S02,52.4,46.0,False
+d:111,Sutherland blushes,P113.S03,71.4,72.2,False
+d:112,Sutherland pinches the sleeves of the jacket,P113.S03,59.6,54.5,False
+d:113,Sutherland said the following,P113.S03,65.1,58.6,False
+d:114,Sutherland Meets Hosmer at the Gas Industry Association Ball,P128.S10,50.0,56.7,False
+d:115,Sutherland's father had sent an invitation to the Gas Association&#39;s ball to Sutherland,P020.S01,50.9,49.3,False
+d:116,Sutherland's and Sutherland&#39;s mother went to the ball after Sutherland&#39;s father&#39;s death,P031.S01,49.4,45.0,False
+d:117,Windibank does not know,P031.S04,72.2,73.9,False
+d:118,Sutherland and mother of Sutherland go to a ball,P128.S10,63.0,54.9,False
+d:119,Sutherland and mother of Sutherland go out,P128.S10,62.2,54.8,False
+d:120,Windibank goes mad below,P024.S03,54.5,66.7,False
+d:121,Sutherland goes to Sunday school event,P113.S03,51.0,57.9,False
+d:122,Sutherland told the ball to join,P113.S03,69.4,59.4,False
+d:123,Windibank can not stop Sutherland,P128.S10,84.2,69.7,False
+d:124,Windibank says,P024.S03,78.3,78.6,False
+d:125,People in the ball have no value,P002.S03,51.2,46.9,False
+d:126,Sutherland's father&#39;s friend participates in a ball,P091.S03,47.3,44.7,False
+d:127,Windibank said,P032.S01,100.0,78.6,False
+d:128,Sutherland has no clothes to wear,P113.S03,68.0,66.7,False
+d:130,Sutherland said the following,P113.S03,65.1,58.6,False
+d:131,Sutherland wore purple plush,P031.S09,60.0,64.3,False
+d:132,Windibank went to France for work.,P032.S01,71.7,61.8,False
+d:133,Sutherland and her mother and Hardy went to the ball,P031.S10,62.9,53.8,False
+d:134,Sutherland met Hosmer at the ball,P128.S10,75.5,54.5,False
+d:135,Holmes thought the following,P107.S02,56.4,58.3,False
+d:136,Windibank complained of,P005.S03,72.2,69.6,False
+d:137,Sutherland went to a ball,P113.S03,68.4,64.0,False
+d:138,Sutherland thought that,P113.S03,78.9,60.9,False
+d:139,Windibank is happy,P024.S03,66.7,66.7,False
+d:140,Sutherland said the following,P113.S03,65.1,58.6,False
+d:141,Windibank laughed,P024.S03,69.2,76.5,False
+d:142,Windibank said,P032.S01,100.0,78.6,False
+d:143,Woman is free,P103.S02,47.1,53.8,False
+d:144,Sutherland said the following,P113.S03,65.1,58.6,False
+d:145,Sutherland met Hosmer at a ball,P128.S10,78.4,54.8,False
+d:146,Hosmer visits Sutherland's house the day after the ball,P035.S02,67.5,51.2,False
+d:147,Sutherland meets Hosmer after the ball,P128.S10,61.8,55.3,False
+d:148,Sutherland has met Hosmer twice,P128.S10,70.8,54.8,False
+d:149,Windibank returned home,P024.S03,56.2,65.2,False
+d:150,Hosmer can not come home,P035.S02,90.9,62.5,False
+d:151,Windibank dislikes,P024.S03,66.7,61.1,False
+d:152,The customer enters the house,P073.S02,48.2,48.3,False
+d:153,Windibank thought that,P029.S03,77.8,56.4,False
+d:154,Women are happy at home,P029.S01,46.7,56.5,False
+d:155,Sutherland said the following,P113.S03,65.1,58.6,False
+d:156,Sutherland told her mother,P024.S03,55.6,50.0,False
+d:157,Women want a home,P029.S01,52.2,52.9,False
+d:158,Sutherland has no home,P113.S03,77.8,77.3,False
+d:159,Windibank goes to France a week later,P032.S01,67.9,64.9,False
+d:160,Hosmer said the following,P114.S01,75.0,46.2,False
+d:161,Hosmer does not meet Sutherland while Windibank is,P128.S10,76.5,47.9,False
+d:163,Sutherland said the following,P113.S03,65.1,58.6,False
+d:164,Sutherland and Hosmer wrote a letter every day,P128.S10,62.7,54.3,False
+d:165,Sutherland received a letter in the morning,P053.S07,63.5,58.1,False
+d:166,Windibank does not know the letter,P031.S04,60.0,62.3,False
+d:167,Sutherland was engaged to Hosmer at the first walk,P041.S02,72.0,69.8,False
+d:168,Hosmer is the teller of Redon Hall Street office,P093.S04,52.3,50.6,False
+d:169,Sutherland does not know the industry of Hosmer,P018.S03,63.8,48.9,False
+d:170,Hosmer lives in the office of Redon Hall Street,P093.S04,54.7,65.2,False
+d:171,Sutherland knows the following,P113.S03,63.6,56.7,False
+d:172,Hosmer's address is on Redon Hall Street,P004.S06,47.6,42.4,False
+d:173,Sutherland sent a letter to Redon Hall Street Post Office,P049.S01,63.4,63.8,False
+d:174,Hosmer said the following,P114.S01,75.0,46.2,False
+d:176,Sutherland's letter arrives at the office,P031.S01,49.6,56.1,False
+d:178,Hosmer is teased by colleagues,P079.S02,53.6,37.8,False
+d:179,Hosmer does not want to receive typing letters,P116.S03,53.0,47.6,False
+d:180,Handwritten letter feels Sutherland,P064.S02,47.2,42.4,False
+d:181,Typing letter feels machine,P045.S01,48.1,45.8,False
+d:182,Sutherland said the following,P113.S03,65.1,58.6,False
+d:183,Hosmer loves Sutherland,P128.S10,85.0,65.2,False
+d:184,Hosmer pays attention,P103.S01,60.0,57.1,False
+d:185,Holmes said the inscription of Zayedomo (below),P001.S01,55.4,48.9,False
+d:186,The importance of minor matters is infinite,P076.S02,54.1,50.8,False
+d:187,Sutherland said the following,P113.S03,65.1,58.6,False
+d:188,Hosmer is shy,P035.S02,81.8,61.5,False
+d:192,Hosmer is shy,P035.S02,81.8,61.5,False
+d:193,Hosmer is a gentleman,P034.S02,92.3,71.4,False
+d:194,Hosmer's voice is thin,P004.S06,51.5,62.5,False
+d:195,Hosmer suffered tonsillitis when he was young,P031.S10,57.1,42.2,False
+d:197,Hosmer has a weak throat,P018.S03,66.7,50.0,False
+d:198,Hosmer speaks whisperly,P041.S01,45.5,34.5,False
+d:199,The appearance of Hosmer is good,P076.S02,51.4,49.1,False
+d:200,Hosmer's eyes are bad,P041.S01,52.4,41.2,False
+d:201,Hosmer has colored glasses,P018.S03,55.6,46.2,False
+d:202,Hosmer said the following,P114.S01,75.0,46.2,False
+d:203,Hosmer wants to marry Sutherland before his father's return home,P053.S01,57.9,54.4,False
+d:204,Hosmer was keen,P126.S11,84.6,60.0,False
+d:205,Hosmer gave the Bible to Sutherland,P128.S10,72.7,54.3,False
+d:206,Hosmer has made Sutherland vow:,P128.S10,70.8,54.8,False
+d:207,Sutherland believes in Hosmer,P128.S10,73.9,62.1,False
+d:208,mother of Sutherland agreed with the above,P031.S10,60.0,52.4,False
+d:209,mother of Sutherland loved Hosmer more than Sutherland,P128.S10,56.7,57.4,False
+d:210,Hosmer said the following,P114.S01,75.0,46.2,False
+d:211,Hosmer will marry Sutherland this week,P128.S10,61.8,50.0,False
+d:212,Sutherland worried about Windibank,P128.S10,74.1,55.9,False
+d:213,mother of Sutherland and Hosmer said,P128.S10,73.7,58.3,False
+d:214,Sutherland Worries About Windibank,P128.S10,74.1,58.8,False
+d:215,mother of Sutherland corresponds to Windibank,P128.S10,67.6,55.6,False
+d:216,Sutherland wants to report to Windibank before the wedding,P128.S10,59.0,48.3,False
+d:217,Windibank works at the French office of the Bordeaux company,P053.S07,60.0,53.3,False
+d:218,Sutherland sent a letter to Windibank,P128.S10,76.7,51.4,False
+d:219,The letter came back to Sutherland on the morning of the wedding day,P053.S07,73.3,83.1,False
+d:220,The letter did not reach Windibank,P031.S04,66.7,46.8,False
+d:221,Windibank left for England just before the letter arrived,P055.S01,67.2,72.3,False
+d:223,Wedding will be on friday,P072.S01,44.8,42.1,False
+d:224,Weddings will take place at St. Savior Church,P004.S06,44.9,39.4,False
+d:226,Sutherland and Hosmer eat breakfast at Saint St Pancras Hotel,P057.S02,59.9,65.5,False
+d:227,Last Friday,P088.S01,34.5,45.5,False
+d:228,Hosmer put mother of Sutherland and Sutherland&#39;s mother on a Hansom carriage,P093.S01,49.0,45.5,False
+d:229,Hosmer got on a carriage,P067.S03,76.9,50.0,False
+d:230,There were no other carriages in the street,P057.S03,56.7,72.0,False
+d:231,Sutherland and mother of Sutherland arrived at the church before Hosmer,P031.S10,57.1,49.3,False
+d:232,Hosmer wasn't in a cart,P018.S03,64.7,43.5,False
+d:233,A chariot wandered under the chariot,P025.S01,48.6,47.2,False
+d:234,There was no one under the cart,P057.S04,62.2,75.5,False
+d:235,He does not know where Hosmer is,P018.S03,63.8,50.8,False
+d:236,He saw the following,P012.S02,51.9,55.0,False
+d:237,Hosmer gets into the cart,P057.S03,75.0,58.3,False
+d:239,Hosmer does not send letters,P018.S03,52.6,47.6,False
+d:240,Hosmer does not show up,P038.S01,61.8,44.4,False
+d:241,Sutherland does not know where Hosmer is,P128.S10,68.9,65.0,False
+d:242,Hosmer does not throw away Sutherland,P128.S10,72.4,52.1,False
+d:243,Last Friday morning,P004.S05,53.8,47.4,False
+d:244,Sutherland believes in Hosmer,P128.S10,73.9,62.1,False
+d:245,Sutherland swore the above,P113.S03,70.0,65.4,False
+d:247,Sutherland leaves with Hosmer,P128.S10,73.9,55.2,False
+d:248,Sutherland now understands the language of Hosmer,P113.S03,51.5,46.9,False
+d:249,Sutherland thinks the following,P113.S03,62.2,61.3,False
+d:250,Hosmer knew about the danger,P038.S01,70.0,51.9,False
+d:252,Hosmer said above,P039.S01,78.6,58.8,False
+d:253,Sutherland said the following,P113.S03,65.1,58.6,False
+d:254,Sutherland does not know the danger of Hosmer,P018.S03,65.7,53.3,False
+d:255,Sutherland reported Hosmer's disappearance to Sutherland&#39;s mother and Windibank,P031.S04,50.0,43.5,False
+d:256,mother of Sutherland got mad at Hosmer&#39;s disappearance,P086.S01,51.2,42.7,False
+d:257,mother of Sutherland said to Sutherland:,P053.S05,59.6,52.5,False
+d:258,Sutherland does not speak Hosmer's disappearance,P086.S01,52.3,51.4,False
+d:259,Windibank said,P032.S01,100.0,78.6,False
+d:260,Hosmer will contact Sutherland,P128.S10,72.3,53.3,False
+d:261,Sutherland said the following,P113.S03,65.1,58.6,False
+d:262,Hosmer owns his property,P126.S11,58.8,45.8,False
+d:263,Hosmer does not want Sutherland's money,P108.S01,48.1,50.7,False
+d:264,Sutherland can not sleep,P113.S03,73.7,66.7,False
+d:265,Sutherland cried,P113.S03,76.9,68.8,False
+d:266,Holmes said the following,P001.S01,75.0,52.0,False
+d:267,Holmes examines Hosmer's disappearance,P028.S01,45.6,43.3,False
+d:268,Holmes can solve Hosmer's disappearance,P086.S01,49.0,46.2,False
+d:269,Sutherland forgets Hosmer,P128.S10,81.0,64.0,False
+d:270,Sutherland can not see Hosmer,P128.S10,84.0,55.2,False
+d:271,Holmes wants Hosmer's personalities,P050.S01,54.8,45.2,False
+d:272,Holmes wants a letter from Hosmer,P114.S01,56.5,51.5,False
+d:273,Sutherland said the following,P113.S03,65.1,58.6,False
+d:274,Last Saturday,P104.S02,43.8,46.2,False
+d:275,Sutherland asked Holmes to give adverts,P051.S01,51.4,41.4,False
+d:276,Sutherland gave Hosmer a letter to Holmes,P128.S10,65.6,56.1,False
+d:277,Sutherland said the following,P113.S03,65.1,58.6,False
+d:278,Sutherland's address is Camberwell,P075.S01,48.5,52.2,False
+d:279,Sutherland does not know Hosmer's address,P108.S01,50.9,41.5,False
+d:280,Hosmer is a foreign company in West House &amp; Marbank,P093.S01,45.3,43.6,False
+d:281,West House &amp; Marbank is the largest claret importer on Fenchurch Street,P077.S01,71.2,84.7,False
+d:282,Holmes said the following,P001.S01,75.0,52.0,False
+d:283,Sutherland will not forget Holmes' advice,P094.S01,52.2,57.1,False
+d:284,Sutherland forgets Hosmer's disappearance,P086.S01,53.8,54.0,False
+d:285,Sutherland said the following,P113.S03,65.1,58.6,False
+d:286,Sutherland can not forget Hosmer,P128.S10,79.2,62.5,False
+d:287,Sutherland believes in Hosmer,P128.S10,73.9,62.1,False
+d:288,Watson felt noble and respect for Sutherland,P128.S10,58.1,53.7,False
+d:289,Sutherland went out of Holmes's house,P086.S01,52.0,52.8,False
+d:290,Sutherland will come to Holmes when called,P086.S01,55.2,55.4,False
+d:291,Holmes said the following,P001.S01,75.0,52.0,False
+d:292,Sutherland is interesting,P082.S02,71.8,68.0,False
+d:293,Holmes knows the same case,P001.S01,55.6,57.7,False
+d:294,The same incident happened in Andova in 1977,P071.S01,49.3,56.7,False
+d:295,The same incident happened in The Hague last year,P082.S03,54.8,67.5,False
+d:296,Watson said the following,P001.S01,48.5,52.0,False
+d:297,Holmes can read Sutherland,P137.S01,62.5,70.6,False
+d:298,Watson can not read Sutherland,P113.S03,63.6,60.0,False
+d:299,Holmes said the following,P001.S01,75.0,52.0,False
+d:300,Watson overlooks an important point,P017.S02,49.5,44.4,False
+d:301,Sleeves are important,P118.S05,43.5,47.6,False
+d:302,Thumb nail talks,P122.S05,40.0,50.0,False
+d:303,Shoe laces lead to major problems,P013.S07,44.7,48.5,False
+d:304,Watson said the following,P001.S01,48.5,52.0,False
+d:305,Sutherland wore a straw hat with a blackboard color,P020.S01,50.4,45.1,False
+d:306,A red-brick feather was on a blackboard-colored straw hat,P085.S01,56.9,53.1,False
+d:307,Sutherland's jacket was black,P085.S02,71.1,77.6,False
+d:308,Black beads were attached to the jacket of Sutherland,P113.S03,54.8,50.0,False
+d:309,A small black beaded ornament is attached to the hem border edge,P085.S02,51.9,48.4,False
+d:310,The clothes were brown,P118.S05,46.8,45.2,False
+d:311,A purple plush is attached to the neck and sleeves of the garment,P085.S03,58.1,71.8,False
+d:312,The gloves were scarlet,P085.S04,64.7,76.2,False
+d:313,The thumb of the right glove is worn,P087.S09,61.5,58.3,False
+d:314,Watson has not seen Sutherland shoes,P113.S03,66.7,64.8,False
+d:315,Sutherland was hanging a small round gold earring,P085.S06,58.0,68.9,False
+d:316,Sutherland is rich,P113.S03,83.9,77.8,False
+d:317,Sutherland is a leisure,P113.S03,72.2,65.2,False
+d:318,Sutherland is warm,P113.S03,83.9,77.8,False
+d:319,Sutherland is a town girl,P113.S03,68.4,64.0,False
+d:321,Holmes laughed,P001.S01,60.0,64.3,False
+d:322,Holmes said the following,P001.S01,75.0,52.0,False
+d:323,Watson improved,P084.S01,42.3,54.5,False
+d:324,Watson overlooks an important point,P017.S02,49.5,44.4,False
+d:325,The way is right,P087.S09,72.0,56.2,False
+d:326,Watson looks at the color,P100.S01,49.1,52.4,False
+d:327,Watson pays attention to details,P118.S03,51.1,48.3,False
+d:328,Holmes look at a woman's sleeve,P087.S05,59.7,75.5,False
+d:329,Holmes looks at the knee of a man's pants,P109.S01,61.0,46.3,False
+d:330,A plush weave is attached to the cuffs of Sutherland,P113.S03,61.3,50.6,False
+d:331,The plush weave marks,P118.S05,43.5,51.6,False
+d:332,Plush weave is an expensive fabric,P082.S05,43.0,40.7,False
+d:333,The double line on the wrist is a trace of the type,P087.S08,61.8,66.7,False
+d:334,The double wire on the wrist is the mark of a manual sewing machine,P004.S10,53.8,46.9,False
+d:335,The double line on the left wrist is the mark of a manual sewing machine,P087.S06,56.1,44.1,False
+d:336,The right wrist double line is a trace of type,P004.S10,54.9,54.1,False
+d:337,Sutherland has a trace of nose glasses,P113.S03,61.8,63.2,False
+d:339,Holmes surprised Sutherland with myopia and type,P088.S01,66.7,66.7,False
+d:33a,The woman is Sutherland,P113.S03,72.2,69.6,False
+d:341,Watson was surprised,P089.S02,78.8,65.0,False
+d:342,Holmes said the following,P001.S01,75.0,52.0,False
+d:343,Sutherland's left and right shoes are different,P031.S01,50.3,57.4,False
+d:345,Sutherland's appearance is tight,P086.S01,46.3,52.5,False
+d:346,Sutherland wears different left and right shoes,P108.S01,53.4,51.1,False
+d:348,Holmes noticed the following,P136.S04,56.4,60.7,False
+d:349,This morning,P004.S05,73.7,75.0,False
+d:350,This morning Sutherland wrote a note,P053.S07,58.8,55.6,False
+d:351,Sutherland gloves have violet ink,P113.S03,46.5,54.5,False
+d:352,Sutherland's finger has violet ink,P091.S02,55.3,63.2,False
+d:353,Watson said the following,P001.S01,48.5,52.0,False
+d:354,Inquirer ad is written below,P096.S01,49.4,60.0,False
+d:355,Hosmer disappeared on the morning of the 14th,P093.S01,67.7,66.7,False
+d:356,Hosmer's height is 5 feet 7 inches,P004.S06,53.8,51.9,False
+d:357,Hosmer's physique is good,P079.S02,47.1,37.5,False
+d:358,The color of Hosmer is bad,P005.S03,51.4,46.2,False
+d:359,Hosmer's hair is black,P079.S02,50.0,41.4,False
+d:360,There is a small boat on the top of Hosmer's head,P006.S01,56.7,49.5,False
+d:361,Hosmer has a black cheek and mouth,P018.S03,64.0,50.0,False
+d:362,Hosmer has colored glasses,P018.S03,55.6,46.2,False
+d:363,Hosmer's way of speaking is jealous,P079.S02,49.2,37.5,False
+d:364,At the time of disappearance is a black frock coat,P087.S06,50.9,44.4,False
+d:365,At the time of disappearance is a black vest,P105.S02,51.9,51.7,False
+d:366,Dress at the time of disappearance is the Albert chain of gold,P087.S06,53.8,45.8,False
+d:367,In the past,P087.S06,70.6,55.6,False
+d:368,Letters have no clues to Hosmer,P018.S03,62.2,51.6,False
+d:369,The letter has a quote from Balzac,P136.S06,66.7,51.6,False
+d:370,The letter is written in type,P118.S05,66.7,60.9,False
+d:371,Holmes said the following,P001.S01,75.0,52.0,False
+d:372,Signature is written in type,P096.S01,62.3,73.1,False
+d:373,Signature is Hosmer Aingel,P038.S01,55.2,66.7,False
+d:374,Letter has a date,P013.S05,45.5,47.1,False
+d:375,The sender's address is Redon Hall Street,P048.S01,45.2,50.0,False
+d:376,Signature is important,P096.S01,47.9,72.7,False
+d:377,Watson said the following,P001.S01,48.5,52.0,False
+d:378,Signature repeals vow,P051.S04,42.6,37.8,False
+d:380,Hosma received an appeal against breach of covenants,P067.S01,46.7,46.2,False
+d:381,Holmes said the following,P001.S01,75.0,52.0,False
+d:382,The above is not important,P005.S03,55.6,53.8,False
+d:383,Hosmer's disappearance resolves,P013.S07,48.2,58.1,False
+d:385,Holmes and Watson write two letters,P050.S01,52.1,35.7,False
+d:386,Letter 1 is sent to a company in Central City,P087.S06,49.5,47.2,False
+d:387,Letter 2 sent to Windibank,P029.S03,63.2,56.4,False
+d:388,Holmes writes the following to letter 2,P092.S01,60.8,50.0,False
+d:389,Holmes wants to see Windibank at 6 o'clock in the evening,P131.S04,57.5,49.1,False
+d:390,Watson dedicated to the treatment of critically ill patients,P039.S02,49.6,45.6,False
+d:391,At six o'clock,P100.S03,35.3,85.7,False
+d:392,Watson thought the following,P107.S02,56.4,58.3,False
+d:393,Watson is not in time for a solution,P113.S03,53.1,52.8,False
+d:394,Holmes was sleeping in an armchair,P014.S02,64.0,61.8,False
+d:395,Holmes said the following,P001.S01,75.0,52.0,False
+d:396,The incident has no mystery,P082.S05,47.2,55.6,False
+d:397,Holmes can not catch the villain,P109.S01,60.9,62.5,False
+d:398,Footsteps echo in the corridor,P013.S07,46.3,46.7,False
+d:399,Holmes said the following,P001.S01,75.0,52.0,False
+d:400,Windibank came,P024.S03,100.0,100.0,False
+d:401,Windibank's physique is good,P031.S04,53.1,57.1,False
+d:402,Windibank is medium-sized,P024.S03,52.9,56.0,False
+d:403,The age of Windibank is around 30 years old,P122.S02,57.1,43.6,False
+d:404,Windibank has no bribe,P024.S03,58.1,63.6,False
+d:405,The color of Windibank is bad,P119.S01,58.5,59.6,False
+d:406,Windibank's behavior is calm,P031.S04,50.0,58.2,False
+d:407,Windibank's gray eyes are sharp,P115.S01,49.4,64.5,False
+d:408,Windibank saw Holmes and Watson,P024.S03,59.1,58.1,False
+d:409,Windibank put a bowler hat on the side shelf,P024.S03,58.1,56.8,False
+d:410,Windibank greets Holmes,P024.S03,56.2,65.2,False
+d:411,Windibank sat in a chair,P119.S01,76.9,62.5,False
+d:412,Holmes said the following,P001.S01,75.0,52.0,False
+d:413,The type letter is a Windibank letter,P136.S06,57.1,55.9,False
+d:414,Windibank said,P032.S01,100.0,78.6,False
+d:415,Windibank worried about being late,P024.S03,61.2,52.9,False
+d:416,Windibank is busy,P024.S03,69.2,64.7,False
+d:417,Windibank apologizes for,P024.S03,70.3,54.2,False
+d:418,Sutherland bothers Holmes,P113.S03,57.1,68.0,False
+d:419,Windibank does not want,P031.S04,72.2,73.9,False
+d:420,Sutherland comes to Holmes,P113.S03,66.7,65.4,False
+d:421,Sutherland talks about family misfortune,P113.S05,59.6,67.5,False
+d:422,Sutherland moves quickly,P113.S03,58.8,62.5,False
+d:423,Windibank is pleased to,P029.S03,68.6,60.9,False
+d:424,Holmes is not a police officer,P109.S01,57.1,56.7,False
+d:425,Windibank wants to avoid unnecessary expenses,P031.S04,56.8,62.1,False
+d:426,Windibank thinks the following,P024.S03,60.5,53.3,False
+d:427,Holmes can not find Hosmer,P114.S01,66.7,50.0,False
+d:428,Holmes said the following,P001.S01,75.0,52.0,False
+d:429,Holmes find Hosmer,P114.S01,83.9,61.1,False
+d:430,Windibank dropped her gloves in surprise,P115.S01,65.3,61.3,False
+d:432,Windibank was pleased with,P024.S03,81.8,65.4,False
+d:433,Holmes find Hosmer,P114.S01,83.9,61.1,False
+d:434,Holmes said the following,P001.S01,75.0,52.0,False
+d:435,Typewriter letters differ like handwriting,P073.S02,47.9,50.7,False
+d:436,In the Windibank letter,P024.S03,72.2,65.2,False
+d:438,In the Windibank letter,P024.S03,72.2,65.2,False
+d:439,Windibank's letter has 14 features,P011.S05,52.2,50.0,False
+d:440,Windibank said,P032.S01,100.0,78.6,False
+d:441,Windibank's workplace has one machine,P119.S01,49.5,54.1,False
+d:443,Letters wear out,P051.S04,42.9,41.4,False
+d:444,Holmes said the following,P001.S01,75.0,52.0,False
+d:445,Holmes is writing a dissertation (below),P004.S06,45.2,47.2,False
+d:446,Typewriters are involved in crime,P118.S05,48.3,52.9,False
+d:447,letter of Hosma is written in type,P096.S01,55.4,52.3,False
+d:448,In letter of Hosma,P053.S07,66.7,55.6,False
+d:449,In the letter of Hosmer r is missing,P004.S06,57.5,39.3,False
+d:450,letter of Hosma has 14 features,P011.S05,65.2,51.6,False
+d:451,Windibank jumped out of the chair,P119.S01,80.0,78.8,False
+d:452,Windibank grabbed a hat,P024.S03,64.7,65.2,False
+d:453,Windibank said,P032.S01,100.0,78.6,False
+d:454,Windibank has no wasted time,P031.S04,56.2,64.3,False
+d:455,Windibank asks Holmes:,P024.S03,58.1,63.6,False
+d:456,Holmes Tells Windibank,P024.S03,58.1,54.5,False
+d:458,Holmes catches Hosmer,P114.S01,76.5,47.6,False
+d:459,Holmes locked the door,P014.S02,81.1,68.2,False
+d:460,Holmes said the following,P001.S01,75.0,52.0,False
+d:461,Holmes caught Hosmer,P114.S01,78.8,50.0,False
+d:462,Windibank asked Holmes where Hosmer was,P112.S01,59.1,60.3,False
+d:463,Windibank's lips were deep blue,P115.S01,47.2,52.6,False
+d:464,Windibank looked around,P024.S03,56.2,60.9,False
+d:465,Holmes said the following,P001.S01,75.0,52.0,False
+d:466,Windibank can not escape from Holmes,P032.S01,56.0,58.3,False
+d:467,Windibank sat in a chair,P119.S01,76.9,62.5,False
+d:468,Windibank's face seemed dead,P031.S04,46.9,53.3,False
+d:469,Windibank's forehead has cold sweat,P067.S04,52.2,48.0,False
+d:470,Windibank said,P032.S01,100.0,78.6,False
+d:471,Holmes does not sue Windibank,P031.S04,61.9,47.6,False
+d:472,Holmes said the following,P001.S01,75.0,52.0,False
+d:473,Holmes is sorry,P001.S01,75.0,66.7,False
+d:474,Holmes first met a cruel and selfish treat,P124.S02,62.3,66.7,False
+d:475,Windibank married for money with mother of Sutherland,P024.S03,64.1,50.9,False
+d:476,Windibank can use Sutherland gold,P128.S10,75.5,72.7,False
+d:478,Windibank lives with Sutherland,P128.S10,78.4,77.4,False
+d:479,Sutherland's money is big money,P137.S01,51.1,62.5,False
+d:480,Windibank Wants Sutherland Gold,P128.S10,78.4,67.7,False
+d:481,Sutherland is funny,P113.S03,81.2,73.7,False
+d:482,Sutherland has emotions and compassion,P113.S03,53.8,57.9,False
+d:483,The character of Sutherland is good,P113.S03,62.7,60.0,False
+d:484,Sutherland has money,P113.S03,82.4,80.0,False
+d:486,Sutherland gets married soon,P024.S02,60.0,60.7,False
+d:488,Windibank loses 100 pounds in a year,P024.S03,56.0,50.0,False
+d:490,Windibank will not leave Sutherland from home,P128.S10,69.6,62.9,False
+d:491,Windibank prohibits Sutherland from dating with people of the same age,P122.S02,54.4,41.2,False
+d:492,The above does not continue,P087.S08,50.0,52.4,False
+d:493,Sutherland defy Windibank,P128.S10,88.9,60.0,False
+d:494,Sutherland claims rights,P113.S03,58.8,62.5,False
+d:495,Sutherland wants to go to a ball,P113.S03,61.9,65.6,False
+d:496,Windibank gets the help of mother of Sutherland,P024.S03,62.5,55.3,False
+d:497,Windibank disguises,P024.S03,64.3,57.9,False
+d:498,Windibank wore colored glasses,P051.S06,57.1,60.0,False
+d:499,Windibank wore a mustache,P024.S03,61.1,68.0,False
+d:500,Windibank whispered,P024.S03,64.3,63.2,False
+d:501,Disguise is safe,P084.S05,41.4,52.2,False
+d:503,Sutherland is nearsighted,P113.S03,68.4,64.0,False
+d:504,Windibank is Hosmer,P128.S10,91.4,68.4,False
+d:505,Windibank chases others from Sutherland,P128.S10,67.8,64.9,False
+d:507,Sutherland loves Windibank,P128.S10,87.0,65.4,False
+d:508,Windibank did not think of,P031.S04,79.1,76.9,False
+d:509,Windibank robs Sutherland,P128.S10,88.9,60.0,False
+d:510,Holmes said the following,P001.S01,75.0,52.0,False
+d:511,Sutherland loved Hosmer,P128.S10,85.0,65.2,False
+d:512,Sutherland thinks that,P113.S03,81.1,68.2,False
+d:513,Windibank is in France,P032.S01,84.2,59.1,False
+d:514,Sutherland's thoughts grow with Sutherland&#39;s mother&#39;s praise,P108.S01,45.3,40.6,False
+d:515,Hosmer met Sutherland many times,P128.S10,69.4,56.2,False
+d:516,Windibank was relieved,P024.S03,74.3,63.6,False
+d:518,Windibank gets engaged with Sutherland,P128.S10,69.0,68.4,False
+d:519,Sutherland's love does not go to others,P108.S01,53.7,43.6,False
+d:520,"Forever, Windibank can't fool Sutherland",P128.S10,66.7,61.5,False
+d:521,Windibank needs:,P024.S03,72.0,68.8,False
+d:522,Windibank breaks up with Sutherland dramatically,P128.S10,58.8,59.1,False
+d:524,Forever,P041.S03,35.3,46.2,False
+d:525,For the time being,P024.S03,66.7,55.6,False
+d:527,Windibank made Sutherland swear in the Bible,P024.S03,64.6,63.6,False
+d:528,Windibank hints at,P029.S03,80.0,66.7,False
+d:529,An incident occurs on the morning of the wedding day,P053.S07,52.3,69.6,False
+d:530,Windibank wanted to,P029.S03,77.4,64.7,False
+d:531,Sutherland tied to Hosma,P113.S03,70.3,62.5,False
+d:532,Sutherland does not love others,P113.S03,62.2,58.1,False
+d:534,Life and death of Hosmer is unknown,P018.S03,54.2,48.6,False
+d:535,Windibank carried Sutherland to the church,P128.S10,70.8,71.4,False
+d:537,Windibank has disappeared,P024.S03,52.9,60.0,False
+d:538,Windibank came out of the opposite door,P131.S04,70.0,56.4,False
+d:539,Windibank stood out of the chair,P119.S01,81.5,78.1,False
+d:540,Windibank laughed,P024.S03,69.2,76.5,False
+d:541,Windibank said,P032.S01,100.0,78.6,False
+d:542,Windibank does not know the facts,P031.S04,63.8,64.5,False
+d:543,Windibank has not beat the law,P031.S04,60.6,60.4,False
+d:544,Windibank can sue Holmes for beating threat and illegal detention,P122.S02,53.3,40.8,False
+d:547,Holmes is closing the door,P014.S02,73.2,61.5,False
+d:548,Holmes said the following,P001.S01,75.0,52.0,False
+d:549,Law can not handle Windibank,P029.S03,63.4,48.8,False
+d:550,Holmes opened the door,P109.S01,87.2,59.1,False
+d:551,Holmes said the following,P001.S01,75.0,52.0,False
+d:552,Windibank has sins,P024.S03,66.7,66.7,False
+d:553,Sutherland brothers best friend wins Windibank,P128.S10,60.6,54.3,False
+d:554,Watson said the following,P001.S01,48.5,52.0,False
+d:555,Watson wants to try a hunting whistle,P056.S03,52.5,54.2,False
+d:556,Watson got close to the wolf,P103.S02,60.0,53.6,False
+d:557,Windibank ran away at full speed,P131.S04,72.0,59.4,False
+d:558,Holmes said the following,P001.S01,75.0,52.0,False
+d:559,Windibank Overlaps Sin,P024.S03,58.1,54.5,False
+d:560,Finally,P066.S02,32.0,33.3,False
+d:561,The behavior of Hosmer had a deep motive,P067.S03,54.5,52.5,False
+d:562,Windibank Gets Money,P024.S03,62.1,65.0,False
+d:563,Windibank and Hosmer do not appear together,P128.S10,71.6,51.2,False
+d:564,Colored glasses and voices and whistles reminiscent of disguise,P134.S03,47.9,54.0,False
+d:565,The signature was a type,P096.S04,70.3,66.7,False
+d:566,Sutherland knows Windibank handwriting,P128.S10,69.0,53.6,False
+d:568,Sutherland notices Windibank handwriting,P128.S10,66.7,55.2,False
+d:569,Holmes knows the company of Windibank,P131.S04,60.4,51.4,False
+d:570,Holmes removed eyebrows,P028.S01,50.0,43.5,False
+d:571,Holmes confirmed with the company,P014.S02,62.5,72.7,False
+d:572,Holmes was aware of the features of the type,P109.S01,63.0,47.7,False
+d:573,Holmes sent a letter to Windibank,P131.S04,59.6,54.5,False
+d:574,The reply was a typing,P118.S05,59.6,63.2,False
+d:575,The characteristics of the type matched Hosmer,P118.S06,58.5,65.2,False
+d:576,The company said the following,P053.S07,53.7,60.0,False
+d:577,The document is Windibank,P031.S04,59.0,52.6,False
+d:578,Sutherland does not believe in Holmes,P113.S03,63.0,54.1,False
+d:580,Holmes tell the truth to Sutherland,P113.S03,65.4,54.5,False

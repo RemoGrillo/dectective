@@ -1,0 +1,2601 @@
+[
+ {
+  "asserted": 126,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T01a_identity_in_reality",
+  "inconsistency_pairs": 1,
+  "kind": "test",
+  "materialise_ms_median": 130.932143,
+  "materialised": 2998,
+  "n_worlds": 3,
+  "query_file": "prototype/fixtures/T01_who_is_hosmer/T01a_identity_in_reality.rq",
+  "question": "Who is Hosmer Angel in the reference reconstruction?",
+  "slice": "prototype/fixtures/T01_who_is_hosmer/slices/T01a_identity_in_reality.trig",
+  "test": "T01_who_is_hosmer",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "lookup",
+   "dataset": "gold",
+   "expected": [
+    "x=http://example.org/dectective/story/windibank"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P126.S11",
+    "P127.S01",
+    "P136.S06"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Reads Holmes's accepted conclusion (epistemic world permeated into reality). Not a deduction of identity.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "x=http://example.org/dectective/story/windibank"
+    ],
+    "flat": [
+     "x=http://example.org/dectective/story/windibank"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 128,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction"
+    ]
+   },
+   "test": "T01_who_is_hosmer",
+   "world_time": "reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 126,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T01b_identity_in_holmes_world",
+  "inconsistency_pairs": 1,
+  "kind": "test",
+  "materialise_ms_median": 131.387624,
+  "materialised": 2998,
+  "n_worlds": 3,
+  "query_file": "prototype/fixtures/T01_who_is_hosmer/T01b_identity_in_holmes_world.rq",
+  "question": "Who is Hosmer Angel in the reference reconstruction?",
+  "slice": "prototype/fixtures/T01_who_is_hosmer/slices/T01b_identity_in_holmes_world.trig",
+  "test": "T01_who_is_hosmer",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": false
+   },
+   "axioms_or_assumptions": [],
+   "classification": "lookup",
+   "dataset": "gold",
+   "expected": [
+    "x=http://example.org/dectective/story/windibank"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P126.S11"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Context-scoped lookup: answerable without DEC permeation.",
+   "observed": {
+    "asserted": [
+     "x=http://example.org/dectective/story/windibank"
+    ],
+    "ctx": [
+     "x=http://example.org/dectective/story/windibank"
+    ],
+    "dec": [
+     "x=http://example.org/dectective/story/windibank"
+    ],
+    "flat": [
+     "x=http://example.org/dectective/story/windibank"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 128,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction"
+    ]
+   },
+   "test": "T01_who_is_hosmer",
+   "world_time": "w:holmes_reconstruction"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 126,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T01c_identity_consequence",
+  "inconsistency_pairs": 1,
+  "kind": "test",
+  "materialise_ms_median": 116.140425,
+  "materialised": 2998,
+  "n_worlds": 3,
+  "query_file": "prototype/fixtures/T01_who_is_hosmer/T01c_identity_consequence.rq",
+  "question": "Who is Hosmer Angel in the reference reconstruction?",
+  "slice": "prototype/fixtures/T01_who_is_hosmer/slices/T01c_identity_consequence.trig",
+  "test": "T01_who_is_hosmer",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "owl:sameAs substitution (OWL)"
+   ],
+   "classification": "derivable",
+   "dataset": "gold",
+   "expected": true,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P051.S06",
+    "P093.S02",
+    "P126.S11"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Engine-derived: Hosmer's observed glasses transfer to Windibank under the reconstructed identity.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 128,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction"
+    ]
+   },
+   "test": "T01_who_is_hosmer",
+   "world_time": "reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 154,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T02a_mary_identity",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 159.622874,
+  "materialised": 4130,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T02_mary_knows_identity/T02a_mary_identity.rq",
+  "question": "Does Mary hold the identity Hosmer = Windibank?",
+  "slice": "prototype/fixtures/T02_mary_knows_identity/slices/T02a_mary_identity.trig",
+  "test": "T02_mary_knows_identity",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "gold",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P079.S02",
+    "P079.S03",
+    "P138.S01"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "False here means 'not attributed', NOT 'Mary believes they differ' (no differentFrom is attributed).",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 157,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T02_mary_knows_identity",
+   "world_time": "w:mary_D1 (D1, last attested)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 154,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T02b_mary_opacity",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 164.823762,
+  "materialised": 4130,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T02_mary_knows_identity/T02b_mary_opacity.rq",
+  "question": "Does Mary hold the identity Hosmer = Windibank?",
+  "slice": "prototype/fixtures/T02_mary_knows_identity/slices/T02b_mary_opacity.trig",
+  "test": "T02_mary_knows_identity",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "owl:sameAs must not cross into Mary's world"
+   ],
+   "classification": "not-determined",
+   "dataset": "gold",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S02"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Referential opacity: Mary is engaged to Hosmer de dicto; substitution only in reality.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 157,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T02_mary_knows_identity",
+   "world_time": "w:mary_D1"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 154,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T02c_mary_engaged_de_re_reality",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 180.597429,
+  "materialised": 4130,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T02_mary_knows_identity/T02c_mary_engaged_de_re_reality.rq",
+  "question": "Does Mary hold the identity Hosmer = Windibank?",
+  "slice": "prototype/fixtures/T02_mary_knows_identity/slices/T02c_mary_engaged_de_re_reality.trig",
+  "test": "T02_mary_knows_identity",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "owl:sameAs substitution",
+    "engagedTo symmetric"
+   ],
+   "classification": "derivable",
+   "dataset": "gold",
+   "expected": true,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S02",
+    "P126.S11"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "note": "De re in reality the engagement was with the person Windibank (KGRC 507/518 put this inside Mary's attitude).",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 157,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T02_mary_knows_identity",
+   "world_time": "reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 157,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1"
+  ],
+  "excludedAxioms": [],
+  "id": "T03a_weak_sight_not_fact",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 2067.191102,
+  "materialised": 4176,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T03_identity_dependent_conclusions/T03a_weak_sight_not_fact.rq",
+  "question": "Which local conclusions depend on the availability of the identity?",
+  "slice": "prototype/fixtures/T03_identity_dependent_conclusions/slices/T03a_weak_sight_not_fact.trig",
+  "test": "T03_identity_dependent_conclusions",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "WeakSighted disjoint KeenSighted"
+   ],
+   "classification": "not-determined",
+   "dataset": "gold",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P051.S06",
+    "P111.S01",
+    "P126.S11"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Mary's belief about Hosmer's eyes must stay in her world; flattening + identity makes reality inconsistent.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 161,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T03_identity_dependent_conclusions",
+   "world_time": "reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 157,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1"
+  ],
+  "excludedAxioms": [],
+  "id": "T03b_where_engaged_to_windibank",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 2056.728851,
+  "materialised": 4176,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T03_identity_dependent_conclusions/T03b_where_engaged_to_windibank.rq",
+  "question": "Which local conclusions depend on the availability of the identity?",
+  "slice": "prototype/fixtures/T03_identity_dependent_conclusions/slices/T03b_where_engaged_to_windibank.trig",
+  "test": "T03_identity_dependent_conclusions",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "gold",
+   "expected": [],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S02"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "No named world should contain the substituted engagement: Mary's world lacks identity; Holmes's worlds do not mention the engagement unless they receive reality (conjectural).",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [],
+    "flat": [
+     "g=http://example.org/dectective/world/holmes_reconstruction",
+     "g=http://example.org/dectective/world/mary_D1",
+     "g=http://example.org/dectective/world/shared",
+     "g=http://w3id.org/conjectures/reality"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 161,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T03_identity_dependent_conclusions",
+   "world_time": "all named worlds"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 96,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C3",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T03c_engaged_only_under_hypothesis",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 139.796067,
+  "materialised": 3896,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T03s_identity_dependent_conclusions_sim/T03c_engaged_only_under_hypothesis.rq",
+  "question": "Same rules, identity available (solver hypothesis) or absent (Mary).",
+  "slice": "prototype/fixtures/T03s_identity_dependent_conclusions_sim/slices/T03c_engaged_only_under_hypothesis.trig",
+  "test": "T03s_identity_dependent_conclusions_sim",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "owl:sameAs in w20 (hypothesis)",
+    "conjectural world receives reality"
+   ],
+   "classification": "derivable",
+   "dataset": "C3",
+   "expected": [
+    "g=http://example.org/dectective/world/w20"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S02"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Only the identity hypothesis world derives it; Mary's world (w01) does not.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "g=http://example.org/dectective/world/w20"
+    ],
+    "flat": [
+     "g=http://example.org/dectective/world/shared",
+     "g=http://example.org/dectective/world/w01",
+     "g=http://example.org/dectective/world/w20",
+     "g=http://w3id.org/conjectures/reality"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 99,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w01",
+     "http://example.org/dectective/world/w20"
+    ]
+   },
+   "test": "T03s_identity_dependent_conclusions_sim",
+   "world_time": "w:w20 at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w20",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 174,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T04a_acts",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 238.733165,
+  "materialised": 3769,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T04_who_said_what/T04a_acts.rq",
+  "question": "What was said, by whom, to whom (communicative event vs truth of content)?",
+  "slice": "prototype/fixtures/T04_who_said_what/slices/T04a_acts.trig",
+  "test": "T04_who_said_what",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "lookup",
+   "dataset": "gold",
+   "expected": null,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S03",
+    "P031.S10",
+    "P067.S01",
+    "P115.S02",
+    "P117.S01",
+    "P138.S01"
+   ],
+   "matches_expected": {
+    "asserted": null,
+    "ctx": null,
+    "dec": null,
+    "flat": null
+   },
+   "note": "Lookup; with identity in reality the speaker of Hosmer's act is also Windibank (de re). Expected set checked per configuration.",
+   "observed": {
+    "asserted": [
+     "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank",
+     "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+    ],
+    "ctx": [
+     "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank",
+     "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+    ],
+    "dec": [
+     "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/hosmer",
+     "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank",
+     "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+    ],
+    "flat": [
+     "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson",
+     "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/hosmer",
+     "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank",
+     "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes",
+     "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary",
+     "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 177,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/v_hosmer_cashier"
+    ]
+   },
+   "test": "T04_who_said_what",
+   "world_time": "reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/v_hosmer_cashier",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 144,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T04b_said_vs_true",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 157.367233,
+  "materialised": 3084,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T04_who_said_what/T04b_said_vs_true.rq",
+  "question": "What was said, by whom, to whom (communicative event vs truth of content)?",
+  "slice": "prototype/fixtures/T04_who_said_what/slices/T04b_said_vs_true.trig",
+  "test": "T04_who_said_what",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "lookup",
+   "dataset": "gold",
+   "expected": [
+    "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=false^^http://www.w3.org/2001/XMLSchema#boolean"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S03"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Saying p does not make p true.",
+   "observed": {
+    "asserted": [
+     "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=false^^http://www.w3.org/2001/XMLSchema#boolean"
+    ],
+    "ctx": [
+     "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=false^^http://www.w3.org/2001/XMLSchema#boolean"
+    ],
+    "dec": [
+     "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=false^^http://www.w3.org/2001/XMLSchema#boolean"
+    ],
+    "flat": [
+     "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=true^^http://www.w3.org/2001/XMLSchema#boolean"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 147,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/v_hosmer_cashier"
+    ]
+   },
+   "test": "T04_who_said_what",
+   "world_time": "w:v_hosmer_cashier vs reality"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/v_hosmer_cashier",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 201,
+  "checkInconsistencies": true,
+  "closedFor": [
+   "http://example.org/dectective/profile#hasOccupation"
+  ],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_mary_france",
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_windibank_reassure",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_hosmer_cashier",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/v_hosmer_cashier http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/v_hosmer_cashier http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/v_hosmer_cashier http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/v_hosmer_cashier http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/v_mary_france http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/v_mary_france http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/v_mary_france http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/v_mary_france http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/v_windibank_reassure http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/v_windibank_reassure http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/v_windibank_reassure http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/v_windibank_reassure http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_hosmer_cashier",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_mary_france",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_windibank_reassure",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/windibank_beliefs http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_hosmer_cashier",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_mary_france",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_windibank_reassure",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs"
+  ],
+  "excludedAxioms": [],
+  "id": "T05a_content_vs_speaker_belief",
+  "inconsistency_pairs": 21,
+  "kind": "test",
+  "materialise_ms_median": 15504.089388,
+  "materialised": 6277,
+  "n_worlds": 8,
+  "query_file": "prototype/fixtures/T05_insincerity/T05a_content_vs_speaker_belief.rq",
+  "question": "Which statements are insincere? (content vs speaker's contemporaneous beliefs)",
+  "slice": "prototype/fixtures/T05_insincerity/slices/T05a_content_vs_speaker_belief.trig",
+  "test": "T05_insincerity",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [
+    "identity (reconstruction)",
+    "self-knowledge of the speaker (W06, analyst)",
+    "closedFor hasOccupation (assumption)",
+    "Voluntary disjoint Involuntary"
+   ],
+   "classification": "derivable",
+   "dataset": "gold",
+   "expected": [
+    "content=http://example.org/dectective/world/v_hosmer_cashier",
+    "content=http://example.org/dectective/world/v_windibank_reassure"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P041.S03",
+    "P067.S01",
+    "P126.S11",
+    "P128.S10"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Insincerity derivable only under the listed assumptions; Mary's report of the reassurance is hedged ('seemed to think').",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "content=http://example.org/dectective/world/v_hosmer_cashier",
+     "content=http://example.org/dectective/world/v_windibank_reassure"
+    ],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 207,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1",
+     "http://example.org/dectective/world/v_hosmer_cashier",
+     "http://example.org/dectective/world/v_mary_france",
+     "http://example.org/dectective/world/v_windibank_reassure",
+     "http://example.org/dectective/world/windibank_beliefs"
+    ]
+   },
+   "test": "T05_insincerity",
+   "world_time": "verbatim content vs w:windibank_beliefs (time of the utterances)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/v_hosmer_cashier",
+   "http://example.org/dectective/world/v_mary_france",
+   "http://example.org/dectective/world/v_windibank_reassure",
+   "http://example.org/dectective/world/windibank_beliefs",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 201,
+  "checkInconsistencies": true,
+  "closedFor": [
+   "http://example.org/dectective/profile#hasOccupation"
+  ],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_mary_france",
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_windibank_reassure",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_hosmer_cashier",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/v_hosmer_cashier http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/v_hosmer_cashier http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/v_hosmer_cashier http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/v_hosmer_cashier http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/v_mary_france http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/v_mary_france http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/v_mary_france http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/v_mary_france http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/v_windibank_reassure http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/v_windibank_reassure http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs",
+   "http://example.org/dectective/world/v_windibank_reassure http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/v_windibank_reassure http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_hosmer_cashier",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_mary_france",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_windibank_reassure",
+   "http://example.org/dectective/world/windibank_beliefs http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/windibank_beliefs http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_hosmer_cashier",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_mary_france",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/v_windibank_reassure",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/windibank_beliefs"
+  ],
+  "excludedAxioms": [],
+  "id": "T05b_sincere_but_false",
+  "inconsistency_pairs": 21,
+  "kind": "test",
+  "materialise_ms_median": 15596.946399,
+  "materialised": 6277,
+  "n_worlds": 8,
+  "query_file": "prototype/fixtures/T05_insincerity/T05b_sincere_but_false.rq",
+  "question": "Which statements are insincere? (content vs speaker's contemporaneous beliefs)",
+  "slice": "prototype/fixtures/T05_insincerity/slices/T05b_sincere_but_false.trig",
+  "test": "T05_insincerity",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [
+    "ActualJourney disjoint PretendedJourney"
+   ],
+   "classification": "derivable",
+   "dataset": "gold",
+   "expected": [
+    "content=http://example.org/dectective/world/v_mary_france"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P031.S10",
+    "P128.S02",
+    "P128.S07"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "A false statement can be sincere.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "content=http://example.org/dectective/world/v_mary_france"
+    ],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 207,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1",
+     "http://example.org/dectective/world/v_hosmer_cashier",
+     "http://example.org/dectective/world/v_mary_france",
+     "http://example.org/dectective/world/v_windibank_reassure",
+     "http://example.org/dectective/world/windibank_beliefs"
+    ]
+   },
+   "test": "T05_insincerity",
+   "world_time": "w:v_mary_france vs reality and vs w:mary_D1"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/v_hosmer_cashier",
+   "http://example.org/dectective/world/v_mary_france",
+   "http://example.org/dectective/world/v_windibank_reassure",
+   "http://example.org/dectective/world/windibank_beliefs",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 175,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1"
+  ],
+  "excludedAxioms": [],
+  "id": "T06a_belief_worlds_vs_reality",
+  "inconsistency_pairs": 6,
+  "kind": "test",
+  "materialise_ms_median": 3832.424867,
+  "materialised": 5266,
+  "n_worlds": 5,
+  "query_file": "prototype/fixtures/T06_divergence/T06a_belief_worlds_vs_reality.rq",
+  "question": "Which divergences between perspectives are justified by the text?",
+  "slice": "prototype/fixtures/T06_divergence/slices/T06a_belief_worlds_vs_reality.trig",
+  "test": "T06_divergence",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [
+    "ActualJourney disjoint PretendedJourney",
+    "Voluntary disjoint Involuntary",
+    "WeakSighted disjoint KeenSighted (+identity)"
+   ],
+   "classification": "incompatible",
+   "dataset": "gold",
+   "expected": [
+    "w=http://example.org/dectective/world/mary_D1"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P031.S10",
+    "P039.S01",
+    "P051.S06",
+    "P061.S02",
+    "P128.S02",
+    "P128.S07",
+    "P111.S01"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Genuine textual disagreement; 'delusional' is DEC's technical label (cf. Holmes's own word 'delusion', P138.S02).",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "w=http://example.org/dectective/world/mary_D1"
+    ],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 179,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_prediction",
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T06_divergence",
+   "world_time": "w:mary_D1 vs reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_prediction",
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 175,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/holmes_reconstruction http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1"
+  ],
+  "excludedAxioms": [],
+  "id": "T06b_mary_delusional_label",
+  "inconsistency_pairs": 6,
+  "kind": "test",
+  "materialise_ms_median": 3812.064055,
+  "materialised": 5266,
+  "n_worlds": 5,
+  "query_file": "prototype/fixtures/T06_divergence/T06b_mary_delusional_label.rq",
+  "question": "Which divergences between perspectives are justified by the text?",
+  "slice": "prototype/fixtures/T06_divergence/slices/T06b_mary_delusional_label.trig",
+  "test": "T06_divergence",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [],
+   "classification": "incompatible",
+   "dataset": "gold",
+   "expected": true,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P128.S02",
+    "P138.S02"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Technical classification relative to data and axioms.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 179,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_prediction",
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T06_divergence",
+   "world_time": "w:mary_D1"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_prediction",
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 155,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [
+   "http://example.org/dectective/world/mary_D1 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/mary_D1"
+  ],
+  "excludedAxioms": [
+   "ActualJourney",
+   "VoluntaryDisappearance"
+  ],
+  "id": "T06c_ablation",
+  "inconsistency_pairs": 3,
+  "kind": "ablation",
+  "materialise_ms_median": 2112.021586,
+  "materialised": 4158,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T06x_divergence_ablation_journeys/T06c_ablation.rq",
+  "question": "Ablation: without the journey and disappearance axioms, does Mary's world still disagree?",
+  "slice": "prototype/fixtures/T06x_divergence_ablation_journeys/slices/T06c_ablation.trig",
+  "test": "T06x_divergence_ablation_journeys",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [
+    "WeakSighted disjoint KeenSighted (+identity)"
+   ],
+   "classification": "incompatible",
+   "dataset": "gold",
+   "expected": [
+    "w=http://example.org/dectective/world/mary_D1"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P051.S06",
+    "P111.S01"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Expected to remain incompatible through the eyesight axiom alone.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "w=http://example.org/dectective/world/mary_D1"
+    ],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [
+     "ActualJourney",
+     "VoluntaryDisappearance"
+    ],
+    "total_after": 159,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T06x_divergence_ablation_journeys",
+   "world_time": "w:mary_D1 vs reality"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 82,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "C3",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T07a_C3",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 1412.653291,
+  "materialised": 3898,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T07_hypotheses_vs_evidence_C3/T07a_C3.rq",
+  "question": "Which hypotheses are incompatible with the evidence available at C3?",
+  "slice": "prototype/fixtures/T07_hypotheses_vs_evidence_C3/slices/T07a_C3.trig",
+  "test": "T07_hypotheses_vs_evidence_C3",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": false
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "C3",
+   "expected": [],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P111.S01",
+    "P116.S04",
+    "P118.S06"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Both hypotheses remain admissible at C3: compatibility is not proof.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 85,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w20",
+     "http://example.org/dectective/world/w21"
+    ]
+   },
+   "test": "T07_hypotheses_vs_evidence_C3",
+   "world_time": "solver worlds w20, w21 at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 93,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "C4",
+  "diagnostics": [
+   "http://example.org/dectective/world/w10 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w21",
+   "http://example.org/dectective/world/w20 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w21",
+   "http://example.org/dectective/world/w21 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w10",
+   "http://example.org/dectective/world/w21 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21 http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality",
+   "http://example.org/dectective/world/w21 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld",
+   "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w21"
+  ],
+  "excludedAxioms": [],
+  "id": "T07b_C4",
+  "inconsistency_pairs": 6,
+  "kind": "test",
+  "materialise_ms_median": 3638.37879,
+  "materialised": 4985,
+  "n_worlds": 5,
+  "query_file": "prototype/fixtures/T07_hypotheses_vs_evidence_C4/T07b_C4.rq",
+  "question": "Same question after the reconstruction is accepted (C4).",
+  "slice": "prototype/fixtures/T07_hypotheses_vs_evidence_C4/slices/T07b_C4.trig",
+  "test": "T07_hypotheses_vs_evidence_C4",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [
+    "Voluntary disjoint Involuntary"
+   ],
+   "classification": "incompatible",
+   "dataset": "C4",
+   "expected": [
+    "h=http://example.org/dectective/world/w21"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P128.S11"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "note": "H2 (something happened to him) is incompatible with the settled reconstruction.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "h=http://example.org/dectective/world/w21"
+    ],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 97,
+    "total_full": 397,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w10",
+     "http://example.org/dectective/world/w20",
+     "http://example.org/dectective/world/w21"
+    ]
+   },
+   "test": "T07_hypotheses_vs_evidence_C4",
+   "world_time": "solver worlds at C4"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w10",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 130,
+  "checkInconsistencies": true,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T07c_watson",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 2127.728848,
+  "materialised": 4281,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T07w_watson_rejected/T07c_watson.rq",
+  "question": "Is Watson's rejected hypothesis incompatible with the reconstruction?",
+  "slice": "prototype/fixtures/T07w_watson_rejected/slices/T07c_watson.trig",
+  "test": "T07w_watson_rejected",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": false
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "gold",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P099.S01",
+    "P100.S01"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Rejected by Holmes but not logically incompatible: no contradiction is manufactured.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": false
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 134,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_reconstruction",
+     "http://example.org/dectective/world/watson_hyp"
+    ]
+   },
+   "test": "T07w_watson_rejected",
+   "world_time": "w:watson_hyp"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/watson_hyp",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 67,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C2",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T08a_identity_C2",
+  "inconsistency_pairs": 1,
+  "kind": "test",
+  "materialise_ms_median": 100.337987,
+  "materialised": 2720,
+  "n_worlds": 3,
+  "query_file": "prototype/fixtures/T08_update_C2/T08a_identity_C2.rq",
+  "question": "Snapshot C2: is the identity a fact? are the machines identified?",
+  "slice": "prototype/fixtures/T08_update_C2/slices/T08a_identity_C2.trig",
+  "test": "T08_update_C2",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "C2",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P096.S04",
+    "P100.S03"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 69,
+    "total_full": 368,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w20"
+    ]
+   },
+   "test": "T08_update_C2",
+   "world_time": "reality at C2"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w20",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 88,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C3",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T08b_identity_C3",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 130.900379,
+  "materialised": 3993,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T08_update_C3/T08b_identity_C3.rq",
+  "question": "Snapshot C3 (new documentary evidence).",
+  "slice": "prototype/fixtures/T08_update_C3/slices/T08b_identity_C3.trig",
+  "test": "T08_update_C3",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "C3",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P116.S04",
+    "P118.S06"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Evidence added, identity still conjectural (no settle operation in DEC).",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 90,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w20",
+     "http://example.org/dectective/world/w22"
+    ]
+   },
+   "test": "T08_update_C3",
+   "world_time": "reality at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w22",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 105,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C4",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T08c_identity_C4",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 167.867222,
+  "materialised": 3830,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T08_update_C4/T08c_identity_C4.rq",
+  "question": "Snapshot C4 (reconstruction accepted).",
+  "slice": "prototype/fixtures/T08_update_C4/slices/T08c_identity_C4.trig",
+  "test": "T08_update_C4",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "C4 settlement emulated by typing w10 epistemic"
+   ],
+   "classification": "lookup",
+   "dataset": "C4",
+   "expected": true,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P126.S11",
+    "P127.S01"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Manual update of the world type; snapshots C2/C3 are separate files and are not altered.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 108,
+    "total_full": 397,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w01",
+     "http://example.org/dectective/world/w10"
+    ]
+   },
+   "test": "T08_update_C4",
+   "world_time": "reality at C4"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w10",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 88,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C3",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T08d_same_machine_C3",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 143.945919,
+  "materialised": 3993,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T08_update_C3/T08d_same_machine_C3.rq",
+  "question": "Snapshot C3 (new documentary evidence).",
+  "slice": "prototype/fixtures/T08_update_C3/slices/T08d_same_machine_C3.trig",
+  "test": "T08_update_C3",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "hasDefectProfile inverse-functional (Holmes's principle) only in w22"
+   ],
+   "classification": "derivable",
+   "dataset": "C3",
+   "expected": true,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P116.S01",
+    "P116.S02",
+    "P118.S06"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "note": "New consequence available only in the later snapshot.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 90,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w20",
+     "http://example.org/dectective/world/w22"
+    ]
+   },
+   "test": "T08_update_C3",
+   "world_time": "w:w22 at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w22",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 105,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C4",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T08e_mary_unchanged_C4",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 177.06215,
+  "materialised": 3830,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T08_update_C4/T08e_mary_unchanged_C4.rq",
+  "question": "Snapshot C4 (reconstruction accepted).",
+  "slice": "prototype/fixtures/T08_update_C4/slices/T08e_mary_unchanged_C4.trig",
+  "test": "T08_update_C4",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "C4",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P079.S02"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Reader learns the identity; Mary's world does not.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 108,
+    "total_full": 397,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w01",
+     "http://example.org/dectective/world/w10"
+    ]
+   },
+   "test": "T08_update_C4",
+   "world_time": "w:w01 at C4"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w10",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 93,
+  "checkInconsistencies": true,
+  "closedFor": [
+   "http://example.org/dectective/profile#writtenBy"
+  ],
+  "dataset": "C3",
+  "diagnostics": [
+   "http://example.org/dectective/world/w22 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w22 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w24",
+   "http://example.org/dectective/world/w23 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w24",
+   "http://example.org/dectective/world/w24 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w24 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w23"
+  ],
+  "excludedAxioms": [],
+  "id": "T09a_typed_on_office_machine",
+  "inconsistency_pairs": 6,
+  "kind": "test",
+  "materialise_ms_median": 2535.088185,
+  "materialised": 5059,
+  "n_worlds": 5,
+  "query_file": "prototype/fixtures/T09_typewriter_C3/T09a_typed_on_office_machine.rq",
+  "question": "What can be inferred from the typewritten documents at C3?",
+  "slice": "prototype/fixtures/T09_typewriter_C3/slices/T09a_typed_on_office_machine.trig",
+  "test": "T09_typewriter_C3",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "axioms_or_assumptions": [
+    "hasDefectProfile inverse-functional (Holmes's individuality principle, caveat 'unless new')"
+   ],
+   "classification": "derivable",
+   "dataset": "C3",
+   "expected": [
+    "l=http://example.org/dectective/story/d1",
+    "l=http://example.org/dectective/story/d2"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P116.S01",
+    "P116.S02",
+    "P118.S06",
+    "P117.S01"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Same machine is derivable only under the explicit premise; not in reality.",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "l=http://example.org/dectective/story/d1",
+     "l=http://example.org/dectective/story/d2"
+    ],
+    "flat": [
+     "l=http://example.org/dectective/story/d1",
+     "l=http://example.org/dectective/story/d2"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 97,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w22",
+     "http://example.org/dectective/world/w23",
+     "http://example.org/dectective/world/w24"
+    ]
+   },
+   "test": "T09_typewriter_C3",
+   "world_time": "w:w22 at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 93,
+  "checkInconsistencies": true,
+  "closedFor": [
+   "http://example.org/dectective/profile#writtenBy"
+  ],
+  "dataset": "C3",
+  "diagnostics": [
+   "http://example.org/dectective/world/w22 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w22 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w24",
+   "http://example.org/dectective/world/w23 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w24",
+   "http://example.org/dectective/world/w24 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w24 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w23"
+  ],
+  "excludedAxioms": [],
+  "id": "T09b_same_machine_not_fact",
+  "inconsistency_pairs": 6,
+  "kind": "test",
+  "materialise_ms_median": 2531.917163,
+  "materialised": 5059,
+  "n_worlds": 5,
+  "query_file": "prototype/fixtures/T09_typewriter_C3/T09b_same_machine_not_fact.rq",
+  "question": "What can be inferred from the typewritten documents at C3?",
+  "slice": "prototype/fixtures/T09_typewriter_C3/slices/T09b_same_machine_not_fact.trig",
+  "test": "T09_typewriter_C3",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "C3",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P118.S06"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Without the premise the machine identity is not a fact.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 97,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w22",
+     "http://example.org/dectective/world/w23",
+     "http://example.org/dectective/world/w24"
+    ]
+   },
+   "test": "T09_typewriter_C3",
+   "world_time": "reality at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 93,
+  "checkInconsistencies": true,
+  "closedFor": [
+   "http://example.org/dectective/profile#writtenBy"
+  ],
+  "dataset": "C3",
+  "diagnostics": [
+   "http://example.org/dectective/world/w22 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w22 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w24",
+   "http://example.org/dectective/world/w23 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w24",
+   "http://example.org/dectective/world/w24 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w24 http://w3id.org/conjectures/disagreesWith http://example.org/dectective/world/w23"
+  ],
+  "excludedAxioms": [],
+  "id": "T09c_authorship_alternatives",
+  "inconsistency_pairs": 6,
+  "kind": "test",
+  "materialise_ms_median": 2630.75155,
+  "materialised": 5059,
+  "n_worlds": 5,
+  "query_file": "prototype/fixtures/T09_typewriter_C3/T09c_authorship_alternatives.rq",
+  "question": "What can be inferred from the typewritten documents at C3?",
+  "slice": "prototype/fixtures/T09_typewriter_C3/slices/T09c_authorship_alternatives.trig",
+  "test": "T09_typewriter_C3",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": true,
+    "flat": false
+   },
+   "axioms_or_assumptions": [
+    "closedFor writtenBy (single author, assumption)"
+   ],
+   "classification": "not-determined",
+   "dataset": "C3",
+   "expected": [
+    "h=http://example.org/dectective/world/w23 x=http://example.org/dectective/world/w24",
+    "h=http://example.org/dectective/world/w24 x=http://example.org/dectective/world/w23"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P117.S01"
+   ],
+   "matches_expected": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": false
+   },
+   "note": "The two authorship hypotheses exclude each other only under the closure; neither is incompatible with the C3 evidence (shared office machine).",
+   "observed": {
+    "asserted": [],
+    "ctx": [],
+    "dec": [
+     "h=http://example.org/dectective/world/w23 x=http://example.org/dectective/world/w22",
+     "h=http://example.org/dectective/world/w23 x=http://example.org/dectective/world/w24",
+     "h=http://example.org/dectective/world/w24 x=http://example.org/dectective/world/w22",
+     "h=http://example.org/dectective/world/w24 x=http://example.org/dectective/world/w23"
+    ],
+    "flat": []
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 97,
+    "total_full": 392,
+    "worlds_selected": [
+     "http://example.org/dectective/world/w22",
+     "http://example.org/dectective/world/w23",
+     "http://example.org/dectective/world/w24"
+    ]
+   },
+   "test": "T09_typewriter_C3",
+   "world_time": "w23 vs w24 at C3"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 176,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T10a_no_telling_event",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 174.714292,
+  "materialised": 4727,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T10_finale/T10a_no_telling_event.rq",
+  "question": "Does the ending modify Mary's beliefs?",
+  "slice": "prototype/fixtures/T10_finale/slices/T10a_no_telling_event.trig",
+  "test": "T10_finale",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "not-determined",
+   "dataset": "gold",
+   "expected": false,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P137.S01",
+    "P138.S01"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "No act of Holmes addressed to Mary exists in the text; the telling exists only inside his prediction.",
+   "observed": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 178,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_prediction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T10_finale",
+   "world_time": "reality (gold)"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_prediction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 146,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T10b_rejection_only_predicted",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 132.714544,
+  "materialised": 3890,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T10_finale/T10b_rejection_only_predicted.rq",
+  "question": "Does the ending modify Mary's beliefs?",
+  "slice": "prototype/fixtures/T10_finale/slices/T10b_rejection_only_predicted.trig",
+  "test": "T10_finale",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": true
+   },
+   "axioms_or_assumptions": [],
+   "classification": "lookup",
+   "dataset": "gold",
+   "expected": [
+    "g=http://example.org/dectective/world/holmes_prediction"
+   ],
+   "instrumented_equivalent": true,
+   "justification": [
+    "P138.S01"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": false
+   },
+   "note": "Mary's rejection is a predicted, hypothetical reaction.",
+   "observed": {
+    "asserted": [
+     "g=http://example.org/dectective/world/holmes_prediction"
+    ],
+    "ctx": [
+     "g=http://example.org/dectective/world/holmes_prediction"
+    ],
+    "dec": [
+     "g=http://example.org/dectective/world/holmes_prediction"
+    ],
+    "flat": [
+     "g=http://example.org/dectective/world/holmes_prediction",
+     "g=http://example.org/dectective/world/mary_D1",
+     "g=http://example.org/dectective/world/shared",
+     "g=http://w3id.org/conjectures/reality"
+    ]
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 148,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_prediction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T10_finale",
+   "world_time": "w:holmes_prediction"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_prediction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 146,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "T10c_mary_last_belief",
+  "inconsistency_pairs": 3,
+  "kind": "test",
+  "materialise_ms_median": 126.652767,
+  "materialised": 3890,
+  "n_worlds": 4,
+  "query_file": "prototype/fixtures/T10_finale/T10c_mary_last_belief.rq",
+  "question": "Does the ending modify Mary's beliefs?",
+  "slice": "prototype/fixtures/T10_finale/slices/T10c_mary_last_belief.trig",
+  "test": "T10_finale",
+  "test_result": {
+   "answer_needs_inference": {
+    "asserted": false,
+    "ctx": false,
+    "dec": false,
+    "flat": false
+   },
+   "axioms_or_assumptions": [],
+   "classification": "lookup",
+   "dataset": "gold",
+   "expected": true,
+   "instrumented_equivalent": true,
+   "justification": [
+    "P079.S03"
+   ],
+   "matches_expected": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": true
+   },
+   "note": "Mary's last attested belief is unchanged; KGRC d:578 instead asserts 'Sutherland does not believe in Holmes' categorically.",
+   "observed": {
+    "asserted": true,
+    "ctx": true,
+    "dec": true,
+    "flat": true
+   },
+   "preserved_ctx": true,
+   "preserved_dec": null,
+   "slice": {
+    "excluded_axioms": [],
+    "total_after": 148,
+    "total_full": 465,
+    "worlds_selected": [
+     "http://example.org/dectective/world/holmes_prediction",
+     "http://example.org/dectective/world/mary_D1"
+    ]
+   },
+   "test": "T10_finale",
+   "world_time": "w:mary_D1"
+  },
+  "worlds": [
+   "http://example.org/dectective/world/holmes_prediction",
+   "http://example.org/dectective/world/mary_D1",
+   "http://example.org/dectective/world/shared",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 155,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "gold",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "complement-gold",
+  "inconsistency_pairs": 28,
+  "kind": "complement",
+  "materialise_ms_median": 934.053153,
+  "materialised": 8378,
+  "n_worlds": 9,
+  "question": "Complementary materialisation (6 worlds never in a test slice)",
+  "slice": "prototype/results/edition_complement/slice.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/h_author_other",
+   "http://example.org/dectective/world/holmes_mother",
+   "http://example.org/dectective/world/holmes_motive",
+   "http://example.org/dectective/world/holmes_reconstruction",
+   "http://example.org/dectective/world/holmes_same_machine",
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/v_windibank_delighted",
+   "http://example.org/dectective/world/v_windibank_machine",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 352,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C1",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "complement-C1",
+  "inconsistency_pairs": 15,
+  "kind": "complement",
+  "materialise_ms_median": 3387.371947,
+  "materialised": 12988,
+  "n_worlds": 7,
+  "question": "Whole checkpoint C1 without conflict-check flags",
+  "slice": "prototype/results/edition_complement/snapshot_C1.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w03",
+   "http://example.org/dectective/world/w04",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 159,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C1",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "leakage-C1",
+  "inconsistency_pairs": 15,
+  "kind": "leakage-check",
+  "materialise_ms_median": 895.969529,
+  "materialised": 6294,
+  "n_worlds": 7,
+  "question": "Reality-reaching slice of C1 (leakage check)",
+  "slice": "prototype/results/leakage_C1.reality_slice.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 361,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C2",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "complement-C2",
+  "inconsistency_pairs": 21,
+  "kind": "complement",
+  "materialise_ms_median": 3711.192701,
+  "materialised": 15966,
+  "n_worlds": 8,
+  "question": "Whole checkpoint C2 without conflict-check flags",
+  "slice": "prototype/results/edition_complement/snapshot_C2.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w03",
+   "http://example.org/dectective/world/w04",
+   "http://example.org/dectective/world/w05",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 167,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C2",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "leakage-C2",
+  "inconsistency_pairs": 21,
+  "kind": "leakage-check",
+  "materialise_ms_median": 971.285418,
+  "materialised": 7726,
+  "n_worlds": 8,
+  "question": "Reality-reaching slice of C2 (leakage check)",
+  "slice": "prototype/results/leakage_C2.reality_slice.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w05",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 385,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C3",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "complement-C3",
+  "inconsistency_pairs": 55,
+  "kind": "complement",
+  "materialise_ms_median": 5246.228901,
+  "materialised": 25147,
+  "n_worlds": 12,
+  "question": "Whole checkpoint C3 without conflict-check flags",
+  "slice": "prototype/results/edition_complement/snapshot_C3.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w03",
+   "http://example.org/dectective/world/w04",
+   "http://example.org/dectective/world/w05",
+   "http://example.org/dectective/world/w06",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 184,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C3",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "leakage-C3",
+  "inconsistency_pairs": 55,
+  "kind": "leakage-check",
+  "materialise_ms_median": 1151.909779,
+  "materialised": 12181,
+  "n_worlds": 12,
+  "question": "Reality-reaching slice of C3 (leakage check)",
+  "slice": "prototype/results/leakage_C3.reality_slice.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w05",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 390,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C4",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "complement-C4",
+  "inconsistency_pairs": 66,
+  "kind": "complement",
+  "materialise_ms_median": 9109.302302,
+  "materialised": 28091,
+  "n_worlds": 13,
+  "question": "Whole checkpoint C4 without conflict-check flags",
+  "slice": "prototype/results/edition_complement/snapshot_C4.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w03",
+   "http://example.org/dectective/world/w04",
+   "http://example.org/dectective/world/w05",
+   "http://example.org/dectective/world/w06",
+   "http://example.org/dectective/world/w10",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ },
+ {
+  "asserted": 189,
+  "checkInconsistencies": false,
+  "closedFor": [],
+  "dataset": "C4",
+  "diagnostics": [],
+  "excludedAxioms": [],
+  "id": "leakage-C4",
+  "inconsistency_pairs": 66,
+  "kind": "leakage-check",
+  "materialise_ms_median": 1836.137438,
+  "materialised": 13651,
+  "n_worlds": 13,
+  "question": "Reality-reaching slice of C4 (leakage check)",
+  "slice": "prototype/results/leakage_C4.reality_slice.trig",
+  "test_result": null,
+  "worlds": [
+   "http://example.org/dectective/world/shared",
+   "http://example.org/dectective/world/w01",
+   "http://example.org/dectective/world/w05",
+   "http://example.org/dectective/world/w10",
+   "http://example.org/dectective/world/w20",
+   "http://example.org/dectective/world/w21",
+   "http://example.org/dectective/world/w22",
+   "http://example.org/dectective/world/w23",
+   "http://example.org/dectective/world/w24",
+   "http://w3id.org/conjectures/reality"
+  ]
+ }
+]

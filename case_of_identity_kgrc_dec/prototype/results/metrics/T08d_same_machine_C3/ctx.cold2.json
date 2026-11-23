@@ -1,0 +1,125 @@
+{ 
+  "data" : "./prototype/fixtures/T08_update_C3/slices/T08d_same_machine_C3.trig" ,
+  "query" : "./prototype/fixtures/T08_update_C3/T08d_same_machine_C3.rq" ,
+  "config" : "ctx" ,
+  "instrumented" : false ,
+  "parse_ms" : 177.022297 ,
+  "input_quads" : 90 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 504.813844 ,
+        "cpu_ms" : 479.085126 ,
+        "gc_count" : 3 ,
+        "gc_ms" : 16 ,
+        "heap_delta_mb" : 34.22802734375 ,
+        "phases" : {
+            "build_ms" : 25.580584 ,
+            "enumerate_ms" : 303.020711 ,
+            "validate_ms" : 166.157021
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 91.882922 ,
+            "http://example.org/dectective/world/w20" : 120.45953 ,
+            "http://example.org/dectective/world/shared" : 46.433852 ,
+            "http://example.org/dectective/world/w22" : 44.158471
+          } ,
+        "query_first_ms" : 69.425287 ,
+        "query_second_ms" : 1.417064
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/shared" : {
+              "type" : "shared(ctx)" ,
+              "asserted" : 29 ,
+              "base_after" : 29 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 847 ,
+              "inferred_trivial" : 818 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/w20" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 1 ,
+              "base_after" : 30 ,
+              "permeated_in" : 847 ,
+              "permeated_in_nontrivial" : 1 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 855 ,
+              "inferred_trivial" : 6 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/w22" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 1 ,
+              "base_after" : 30 ,
+              "permeated_in" : 847 ,
+              "permeated_in_nontrivial" : 1 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 848 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "reality(ctx)" ,
+              "asserted" : 57 ,
+              "base_after" : 86 ,
+              "permeated_in" : 847 ,
+              "permeated_in_nontrivial" : 1 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1001 ,
+              "inferred_trivial" : 92 ,
+              "inferred_nontrivial" : 5 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 88 ,
+      "materialised_total" : 3551 ,
+      "permeated_total" : 2541 ,
+      "inferred_total" : 922 ,
+      "inferred_trivial_total" : 916 ,
+      "inferred_nontrivial_total" : 6 ,
+      "inferred_taxonomic_total" : 3 ,
+      "inferred_substantive_total" : 3 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1004 ,
+      "redundancy" : 3.5368525896414345 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 69.425287 ,
+      "query_second_ms" : 1.417064 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "761175f2f315ded1319c22a79d20a702ed0622114f1eb2cf89e7be2e69aefa32"
+}

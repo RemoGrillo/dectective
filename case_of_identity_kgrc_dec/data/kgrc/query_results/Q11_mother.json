@@ -1,0 +1,134 @@
+[
+ {
+  "s": "d:070",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland is fine",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:071",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland is strong",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:072",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland remarried after Sutherland&#39;s father&#39;s death",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:075",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland continued with Hardy",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:106",
+  "role": "kgc:whom",
+  "src": "Windibank passes to mother of Sutherland",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:116",
+  "role": "kgc:subject",
+  "src": "Sutherland's and Sutherland&#39;s mother went to the ball after Sutherland&#39;s father&#39;s death",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:118",
+  "role": "kgc:subject",
+  "src": "Sutherland and mother of Sutherland go to a ball",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:119",
+  "role": "kgc:subject",
+  "src": "Sutherland and mother of Sutherland go out",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:133",
+  "role": "kgc:subject",
+  "src": "Sutherland and her mother and Hardy went to the ball",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:208",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland agreed with the above",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:209",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland loved Hosmer more than Sutherland",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:213",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland and Hosmer said",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:215",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland corresponds to Windibank",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:228",
+  "role": "kgc:what",
+  "src": "Hosmer put mother of Sutherland and Sutherland&#39;s mother on a Hansom carriage",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:231",
+  "role": "kgc:subject",
+  "src": "Sutherland and mother of Sutherland arrived at the church before Hosmer",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:255",
+  "role": "kgc:whom",
+  "src": "Sutherland reported Hosmer's disappearance to Sutherland&#39;s mother and Windibank",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:256",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland got mad at Hosmer&#39;s disappearance",
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:257",
+  "role": "kgc:subject",
+  "src": "mother of Sutherland said to Sutherland:",
+  "info": null
+ },
+ {
+  "s": "d:475",
+  "role": "kgc:what",
+  "src": "Windibank married for money with mother of Sutherland",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:71a",
+  "role": "kgc:subject",
+  "src": null,
+  "info": "d:Sutherland"
+ },
+ {
+  "s": "d:help_of_mother_of_Sutherland",
+  "role": "kgc:ofWhole",
+  "src": null,
+  "info": null
+ },
+ {
+  "s": "d:praise_of_mother_of_Sutherland",
+  "role": "kgc:ofWhole",
+  "src": null,
+  "info": null
+ }
+]

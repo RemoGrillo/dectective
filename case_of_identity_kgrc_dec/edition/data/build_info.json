@@ -1,0 +1,26 @@
+{
+ "families": {
+  "ACaseOfIdentity": 7217,
+  "annotation": 5085,
+  "asserted": 457,
+  "default": 1786,
+  "runs": 1021,
+  "snapshot": 82206,
+  "snapshot-asserted": 1488,
+  "text": 2797,
+  "timeline": 671,
+  "world": 14147
+ },
+ "parsed_back": 116875,
+ "propositions": 261,
+ "quads": 116875,
+ "runs": 39,
+ "sha256": {
+  "catalog.json": "7439694a63031d02cae078ddfb0ebee48bf0c7a57a41b986cfcb6f8212c22f78",
+  "edition.nq": "331e9d5ac9821d1c280d467bc10959617dd3c6b550e2eb1271d3b7d10a8fc557",
+  "provenance.json": "29e35814d219b39f2222a72f0dc24769912d1cb965fc268e5f8991aa0797f823",
+  "runs.json": "5ef9dedb348c708bc5bf6fdf23ca527e8c99006096ab341b65d0824897f79c40",
+  "text.json": "e81f2bc426a5842245080da8b1178d8e8448e6fea889db38c77c382f8acea84f",
+  "timeline.json": "c1492887e5048d2eb29f751b8341e5a7226c3cb4a63ed33a19fbfb722ffe10a6"
+ }
+}

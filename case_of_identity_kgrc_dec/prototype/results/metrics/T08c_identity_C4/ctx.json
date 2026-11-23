@@ -1,0 +1,345 @@
+{ 
+  "data" : "./prototype/fixtures/T08_update_C4/slices/T08c_identity_C4.trig" ,
+  "query" : "./prototype/fixtures/T08_update_C4/T08c_identity_C4.rq" ,
+  "config" : "ctx" ,
+  "instrumented" : false ,
+  "parse_ms" : 181.027274 ,
+  "input_quads" : 108 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : -1 ,
+        "warmup" : true ,
+        "materialise_total_ms" : 861.526139 ,
+        "cpu_ms" : 823.172978 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 24 ,
+        "heap_delta_mb" : 44.031341552734375 ,
+        "phases" : {
+            "build_ms" : 27.358031 ,
+            "enumerate_ms" : 423.552942 ,
+            "validate_ms" : 403.568752
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 118.987728 ,
+            "http://example.org/dectective/world/w01" : 70.317832 ,
+            "http://example.org/dectective/world/shared" : 84.171777 ,
+            "http://example.org/dectective/world/w10" : 149.985387
+          } ,
+        "query_first_ms" : 38.021764 ,
+        "query_second_ms" : 0.66745
+      } ,
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 374.764923 ,
+        "cpu_ms" : 356.990109 ,
+        "gc_count" : 3 ,
+        "gc_ms" : 15 ,
+        "heap_delta_mb" : 14.798667907714844 ,
+        "phases" : {
+            "build_ms" : 2.508644 ,
+            "enumerate_ms" : 177.273769 ,
+            "validate_ms" : 193.538214
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 28.574581 ,
+            "http://example.org/dectective/world/w01" : 36.192869 ,
+            "http://example.org/dectective/world/shared" : 35.578208 ,
+            "http://example.org/dectective/world/w10" : 76.884652
+          } ,
+        "query_first_ms" : 0.794386 ,
+        "query_second_ms" : 0.251073
+      } ,
+      { 
+        "rep" : 1 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 256.436922 ,
+        "cpu_ms" : 249.80919 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 6 ,
+        "heap_delta_mb" : 113.83157348632812 ,
+        "phases" : {
+            "build_ms" : 2.478384 ,
+            "enumerate_ms" : 135.373983 ,
+            "validate_ms" : 117.08513
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 22.112328 ,
+            "http://example.org/dectective/world/w01" : 21.736319 ,
+            "http://example.org/dectective/world/shared" : 29.841673 ,
+            "http://example.org/dectective/world/w10" : 61.647976
+          } ,
+        "query_first_ms" : 0.902173 ,
+        "query_second_ms" : 0.274401
+      } ,
+      { 
+        "rep" : 2 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 250.447533 ,
+        "cpu_ms" : 241.049876 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 42.93913269042969 ,
+        "phases" : {
+            "build_ms" : 1.888522 ,
+            "enumerate_ms" : 134.316096 ,
+            "validate_ms" : 113.044191
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 22.964572 ,
+            "http://example.org/dectective/world/w01" : 22.955692 ,
+            "http://example.org/dectective/world/shared" : 24.478686 ,
+            "http://example.org/dectective/world/w10" : 63.876857
+          } ,
+        "query_first_ms" : 0.795046 ,
+        "query_second_ms" : 0.220903
+      } ,
+      { 
+        "rep" : 3 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 183.460492 ,
+        "cpu_ms" : 170.973426 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 11 ,
+        "heap_delta_mb" : 88.24761962890625 ,
+        "phases" : {
+            "build_ms" : 1.251243 ,
+            "enumerate_ms" : 108.743273 ,
+            "validate_ms" : 72.389038
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 16.075646 ,
+            "http://example.org/dectective/world/w01" : 17.125294 ,
+            "http://example.org/dectective/world/shared" : 24.314497 ,
+            "http://example.org/dectective/world/w10" : 51.202517
+          } ,
+        "query_first_ms" : 0.739148 ,
+        "query_second_ms" : 0.298241
+      } ,
+      { 
+        "rep" : 4 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 158.870552 ,
+        "cpu_ms" : 152.034925 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 6 ,
+        "heap_delta_mb" : 45.703948974609375 ,
+        "phases" : {
+            "build_ms" : 1.194615 ,
+            "enumerate_ms" : 84.59816 ,
+            "validate_ms" : 71.999501
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 14.758556 ,
+            "http://example.org/dectective/world/w01" : 16.550541 ,
+            "http://example.org/dectective/world/shared" : 13.93571 ,
+            "http://example.org/dectective/world/w10" : 39.331734
+          } ,
+        "query_first_ms" : 0.688139 ,
+        "query_second_ms" : 0.174415
+      } ,
+      { 
+        "rep" : 5 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 170.208801 ,
+        "cpu_ms" : 157.612985 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 12 ,
+        "heap_delta_mb" : 85.177001953125 ,
+        "phases" : {
+            "build_ms" : 0.844535 ,
+            "enumerate_ms" : 94.182022 ,
+            "validate_ms" : 74.192974
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 15.384466 ,
+            "http://example.org/dectective/world/w01" : 14.487164 ,
+            "http://example.org/dectective/world/shared" : 18.585119 ,
+            "http://example.org/dectective/world/w10" : 45.710383
+          } ,
+        "query_first_ms" : 0.743418 ,
+        "query_second_ms" : 0.180514
+      } ,
+      { 
+        "rep" : 6 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 171.122003 ,
+        "cpu_ms" : 164.244226 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 6 ,
+        "heap_delta_mb" : 40.58982849121094 ,
+        "phases" : {
+            "build_ms" : 1.093227 ,
+            "enumerate_ms" : 88.119175 ,
+            "validate_ms" : 80.97714
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 17.707576 ,
+            "http://example.org/dectective/world/w01" : 17.548032 ,
+            "http://example.org/dectective/world/shared" : 15.172212 ,
+            "http://example.org/dectective/world/w10" : 37.672245
+          } ,
+        "query_first_ms" : 0.743947 ,
+        "query_second_ms" : 0.170295
+      } ,
+      { 
+        "rep" : 7 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 187.107224 ,
+        "cpu_ms" : 174.417326 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 12 ,
+        "heap_delta_mb" : 87.8712387084961 ,
+        "phases" : {
+            "build_ms" : 0.906443 ,
+            "enumerate_ms" : 97.994997 ,
+            "validate_ms" : 87.142566
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 14.339627 ,
+            "http://example.org/dectective/world/w01" : 15.657838 ,
+            "http://example.org/dectective/world/shared" : 19.684667 ,
+            "http://example.org/dectective/world/w10" : 48.284985
+          } ,
+        "query_first_ms" : 0.719738 ,
+        "query_second_ms" : 0.192044
+      } ,
+      { 
+        "rep" : 8 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 204.071407 ,
+        "cpu_ms" : 196.518612 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 7 ,
+        "heap_delta_mb" : 53.0494384765625 ,
+        "phases" : {
+            "build_ms" : 1.304152 ,
+            "enumerate_ms" : 101.46343 ,
+            "validate_ms" : 100.063163
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 16.881686 ,
+            "http://example.org/dectective/world/w01" : 16.222816 ,
+            "http://example.org/dectective/world/shared" : 18.06997 ,
+            "http://example.org/dectective/world/w10" : 50.263079
+          } ,
+        "query_first_ms" : 0.770097 ,
+        "query_second_ms" : 0.202844
+      } ,
+      { 
+        "rep" : 9 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 171.182039 ,
+        "cpu_ms" : 159.930376 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 11 ,
+        "heap_delta_mb" : 89.69174194335938 ,
+        "phases" : {
+            "build_ms" : 1.00206 ,
+            "enumerate_ms" : 94.79069 ,
+            "validate_ms" : 74.300611
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 17.659373 ,
+            "http://example.org/dectective/world/w01" : 17.740011 ,
+            "http://example.org/dectective/world/shared" : 18.318523 ,
+            "http://example.org/dectective/world/w10" : 41.048544
+          } ,
+        "query_first_ms" : 0.685819 ,
+        "query_second_ms" : 0.181445
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/shared" : {
+              "type" : "shared(ctx)" ,
+              "asserted" : 40 ,
+              "base_after" : 40 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 884 ,
+              "inferred_trivial" : 841 ,
+              "inferred_nontrivial" : 3 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 3 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/w01" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 7 ,
+              "base_after" : 47 ,
+              "permeated_in" : 884 ,
+              "permeated_in_nontrivial" : 11 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 913 ,
+              "inferred_trivial" : 18 ,
+              "inferred_nontrivial" : 4 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/w10" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 4 ,
+              "base_after" : 44 ,
+              "permeated_in" : 884 ,
+              "permeated_in_nontrivial" : 11 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 907 ,
+              "inferred_trivial" : 15 ,
+              "inferred_nontrivial" : 4 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "reality(ctx)" ,
+              "asserted" : 54 ,
+              "base_after" : 94 ,
+              "permeated_in" : 884 ,
+              "permeated_in_nontrivial" : 11 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1029 ,
+              "inferred_trivial" : 86 ,
+              "inferred_nontrivial" : 5 ,
+              "inferred_taxonomic" : 3 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 105 ,
+      "materialised_total" : 3733 ,
+      "permeated_total" : 2652 ,
+      "inferred_total" : 976 ,
+      "inferred_trivial_total" : 960 ,
+      "inferred_nontrivial_total" : 16 ,
+      "inferred_taxonomic_total" : 9 ,
+      "inferred_substantive_total" : 7 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1043 ,
+      "redundancy" : 3.5790987535953978 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 0.685819 ,
+      "query_second_ms" : 0.181445 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "f19fd5a55572b6a383057facf4bfe9fd645fd16c4682896ff2c9192cafa02828"
+}

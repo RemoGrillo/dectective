@@ -1,0 +1,31 @@
+{
+  "note": "gold<->simulation name map; for leakage checking and evaluation only, never given to the solver",
+  "map": {
+    "st:mary": "st:pA",
+    "st:windibank": "st:pB",
+    "st:hosmer": "st:pC",
+    "st:mother": "st:pD",
+    "st:holmes": "st:pH",
+    "st:watson": "st:pW",
+    "st:app_mary_sutherland": "st:nA",
+    "st:app_windibank": "st:nB",
+    "st:app_hosmer_angel": "st:nC",
+    "st:journey_france_1": "st:j1",
+    "st:journey_france_2": "st:j2",
+    "st:disappearance": "st:e2",
+    "st:ball": "st:e1",
+    "st:letter_H1": "st:d1",
+    "st:letter_H2": "st:d2",
+    "st:machine_H": "st:m1",
+    "st:office_machine": "st:m2",
+    "st:letter_W": "st:d9",
+    "st:profile_eR14": "st:f1",
+    "st:occ_wine_traveller": "st:o1",
+    "st:occ_cashier_leadenhall": "st:o2",
+    "st:westhouse_marbank": "st:g1",
+    "st:westhouse_staff": "st:g2",
+    "st:tinted_glasses": "st:x1",
+    "st:purpose_deny_signature": "st:u1",
+    "st:wish_hosmer_found": "st:u2"
+  }
+}

@@ -1,0 +1,558 @@
+scene,types,subject,hasPredicate,hasProperty,infoSource,embedded_in,what,whom,who,when,where,why,how,from,to,on,time,then,because,therefore,if,at_the_same_time,otherwise,and,after,Not,can,canNot,source_en,source_ja
+d:001,kgc:Situation,d:Holmes,pred:stand,,,,,,,d:1891-09-01T10,d:Holmes_s_office,,,d:Chair,,,1891-09-01T10:00:00,d:002,,,,,,,,,,,Holmes stood out of a chair,ホームズは椅子から立った
+d:002,kgc:Situation,d:Holmes,pred:stand,,,,,,,,d:Between_seams_of_window,,,,,,,d:004,,,,,,,,,,,Holmes stood between the windowed seams,ホームズは窓掛けの合わせ目の間に立った
+d:004,kgc:Situation,d:Sutherland,pred:exist,,,,,,,,d:Pavement_opposite,,,,,,,,,,,d:005,,,,,,,Sutherland wraps around on the opposite pavement,サザランドが向かいの舗道で襟巻きを巻いている
+d:005,kgc:Situation,d:Sutherland,,pred:wear,,,d:hat,,,,,,,,,,,,,,,d:006,,,,,,,Sutherland is wearing a hat,サザランドが帽子をかぶっている
+d:006,kgc:Situation,d:Sutherland,,pred:wear,,,d:Red_feather,,,,,,,,,,,,,,,d:007,,,,,,,Sutherland has red feathers,サザランドが赤い羽根をつけている
+d:007,kgc:Situation,d:Sutherland,pred:stand,,,,,,,,,,,,,,,,,,,d:008,,,,,,,Sutherland stands,サザランドが立っている
+d:008,kgc:Situation,,pred:see,,,d:016,d:Sutherland,,,d:010,,,,,d:window,,,d:010,,,,,,,,,,,Sutherland's gaze is directed at the window,サザランドの視線が窓へ向けられている
+d:010,kgc:Situation,d:Sutherland,pred:move,,,d:016,,,,,,,d:Back_and_forth,,,,,,,,,d:011,,,,,,,Sutherland moves back and forth,サザランドが前後に動く
+d:011,kgc:Situation,d:Sutherland,pred:mess,,,d:016,d:button_of_Glove,,,,,,,,,,,d:012,,,,,,,,,,,Sutherland is tinkering with the glove button,サザランドは手袋の釦をいじっている
+d:012,kgc:Situation,d:Sutherland,pred:jumpOut,,,d:016,,,,,,,,d:road,,,,d:013,,,,,,,,,,,Sutherland jumps the road,サザランドは道を飛び出す
+d:013,kgc:Situation,d:Sutherland,pred:cross,,,d:016,d:road,,,,,,,,,,,d:014,,,,,,,,,,,Sutherland crosses the way,サザランドは道を渡る
+d:014,kgc:Situation,d:Holmes,pred:hear,,,,d:bell,,,,,,,,,,,d:015,,,,,,,,,,,Holmes hears a call bell,ホームズは呼び鈴を聞く
+d:015,kgc:Situation,d:Holmes,pred:say,,,,d:016|d:017|d:018|d:019|d:020|d:021,,,,,,,,,,,d:031,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:016,kgc:Statement,,pred:exist,,d:Holmes,d:015,d:008|d:009|d:010|d:011|d:012|d:013,,,d:Before,,,,,,,,,,,,,,,,,,,The present movement has been before,今の素振りは以前にもあった
+d:017,kgc:Statement,d:Woman,pred:feelRestless,,d:Holmes,d:015,,,,,d:pavement,,,,,,,,,,,,,,,,,,Women are thrilled at the pavement,女性が舗道でそわそわする
+d:018,kgc:Statement,d:017,pred:equalTo,,d:Holmes,d:015,d:Romance,,,,,,,,,,,,,,,,,,,,,,The above is color love Saya,上記は色恋沙汰である
+d:019,kgc:Statement,d:Sutherland,pred:want,,d:Holmes,d:015,d:advice,,,,,,,,,,,,,,,,,,,,,,Sutherland wants advice,サザランドは助言を欲しい
+d:020,kgc:Statement,d:Sutherland,pred:worry,,d:Holmes,d:015,d:021,,,,,,,,,,,,,,,,,,,,,,Sutherland suffers from,サザランドは以下を悩んでいる
+d:021,kgc:Statement,d:Sutherland,pred:want,,d:Holmes,d:015|d:020,d:21a,,,,,,,,,,,,,,,,,,,,,,Sutherland wants to consult people,サザランドは人に相談したい
+d:022,kgc:Situation,d:Holmes,pred:recognize,,,,d:023|d:024|d:025|d:026|d:027|d:028|d:029|d:030,,,,,,,,,,,,,,,,,,,,,,Holmes found that,ホームズは以下をわかった
+d:023,kgc:Statement,d:Woman,pred:encounter,,d:Holmes,d:022,d:Terrible_things,,,,,,,d:Man,,,,,,,,,,,,,,,Women encounter awful eyes from men,女性は男からひどい目に遭う
+d:024,kgc:Statement,d:Woman,pred:notHesitate,,d:Holmes,d:022,d:025,,,,,,,,,,,,,,,,,,,,,,Women do not hesitate,女性はためらわない
+d:025,kgc:Statement,d:Woman,pred:tearOff,,d:Holmes,d:022|d:024,d:string_of_bell,,,,,,,,,,,,,,,,,,,,,,Woman tears off the string of the doorbell,女性は呼び鈴の紐を引きちぎる
+d:026,kgc:Statement,d:Woman,,pred:have,d:Holmes,d:022,d:romance,,,,,d:027|d:028|d:029|d:030,,,,,,,,,,,,,,,,,Interpretation is color love Saya,解釈は色恋沙汰である
+d:027,kgc:Statement,d:Woman,,pred:notAngry,d:Holmes,d:022,,,,,,,,,,,,,,,,,,,,,,,The woman is not angry,女性は怒っていない
+d:028,kgc:Statement,d:Woman,pred:puzzled,,d:Holmes,d:022,,,,,,,,,,,,,,,,,,,,,,,Women are puzzled,女性は戸惑っている
+d:029,kgc:Statement,d:Woman,pred:feel,,d:Holmes,d:022,d:sad,,,,,,,,,,,,,,,,,,,,,,The woman is in distress,女性は悲嘆に暮れている
+d:030,kgc:Statement,d:trouble_of_Women,pred:canSolve,,d:Holmes,d:022,,,,,,,d:Immediately,,,,,,,,,,,,,,,,Women's troubles can be solved quickly,女性の悩みはすぐに解ける
+d:031,kgc:Situation,,pred:beBeaten,,,,d:door_of_Room_of_Holmes,,,,,,,,,,,d:032,,,,,,,,,,,The door of the room is struck,部屋の扉が叩かれる
+d:032,kgc:Situation,d:Boy,pred:comeIn,,,,,,,,,,,,,,,d:033,,,,,,,,,,,A boy in charge of service came in,給仕服の少年が入ってきた
+d:033,kgc:Situation,d:Service_Boy,pred:say,,,,d:034|d:33a,,,,,,,,,,,d:035,,,,,,,,,,,A boy at the service uniform tells Sutherland,給仕服の少年が告げる
+d:034,kgc:Statement,d:Sutherland,pred:appear,,d:Service_Boy,d:033,,,,,,,,,,,,,,,,,,,,,,,Sutherland appears,サザランドが現れる
+d:035,kgc:Situation,d:Holmes,pred:welcome,,,,d:Sutherland,,,,,,,,,,,d:036,,,,,,,,,,,Holmes welcomes Sutherland,ホームズはサザランドを迎える
+d:036,kgc:Situation,d:Holmes,pred:close,,,,d:door,,,,,,,,,,,d:037,,,,,,,,,,,Holmes shuts the door,ホームズは扉を閉める
+d:037,kgc:Situation,d:Holmes,pred:recommend,,,,d:Armchair,,,,,,,,,,,d:038,,,,,,,,,,,Holmes recommends an armchair,ホームズは肘掛け椅子を勧める
+d:038,kgc:Situation,d:Holmes,pred:lookAround,,,,d:Sutherland,,,,,,,,,,,d:039,,,,,,,,,,,Holmes looks over Sutherland,ホームズはサザランドをながめ回す
+d:039,kgc:Situation,d:Holmes,pred:say,,,,d:040,,,,,,,,,,,d:041,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:040,kgc:Statement,,,pred:stressful,d:Holmes,d:039,d:Near_sight,,,d:Typing,,,,,,,,,,,,,,,,,,,Myopia is hard to type,近眼はタイプ打ちにつらい
+d:041,kgc:Situation,d:Sutherland,pred:say,,,,d:042|d:043,,,,,,,,,,,d:044,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:042,kgc:Statement,d:Near_sight,,pred:stressful,d:Holmes,d:041,,,,,,,,,,,,,,,,,,,,,,,Myopia is hard,近眼はつらい
+d:043,kgc:Statement,d:Sutherland,pred:recognize,,d:Holmes,d:041,d:Character_position,,,,,,,,,,,,,,,,,,,,,,Sutherland knows the position of the character,サザランドは文字の位置がわかる
+d:044,kgc:Situation,d:Sutherland,pred:notice,,,,d:meaning_of_word_of_Holmes,,,,,,,,,,,d:045,,,,,,,,,,,Sutherland notices the meaning of the words of Holmes,サザランドはホームズの言葉の意味に気づく
+d:045,kgc:Situation,d:Sutherland,pred:beSurprised,,,,,,,,,,,,,,,d:047,,,,,,,,,,,Sutherland was surprised,サザランドは驚いた
+d:047,kgc:Situation,d:Sutherland,pred:think,,,,d:048,,,,,,,,,,,d:049,,,,,,,,,,,Sutherland thought that,サザランドは以下を思った
+d:048,kgc:Statement,d:Holmes,pred:know,,d:Sutherland,d:047,d:Sutherland,,,,,,,,,,,,,,,,,,,,,,Holmes already knows Sutherland,ホームズはサザランドをすでに知っている
+d:049,kgc:Situation,d:Holmes,pred:say,,,,d:051,,,,,,,,,,,d:052,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:04a,kgc:Situation,d:Sutherland,,pred:wear,,,d:Scarf,,,,,,,,,,,,,,,,,,,,,,,
+d:051,kgc:Statement,d:Holmes,pred:recognize,,d:Holmes,d:049,d:Oversight_of_others,,,,,,,,,,,,,,,,,,,,,,Holmes finds out that others overlook,ホームズは他人の見落としがわかる
+d:052,kgc:Situation,d:Sutherland,pred:say,,,,d:053|d:054|d:055|d:056|d:057|d:058|d:059|d:060|d:061|d:062|d:063|d:064|d:065|d:066|d:067|d:068|d:069|d:070|d:071|d:072|d:073|d:074|d:075|d:076|d:077|d:078|d:079|d:080|d:081|d:082,,,,,,,,,,,d:083,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:053,kgc:Statement,d:Sutherland,pred:hear,,d:Sutherland,d:052,d:Holmes,,,,,,,d:Etheridge,,,,,,,,,,,,,,,Sutherland heard Holmes from Etheridge,サザランドはホームズをエサリッジから聞いた
+d:054,kgc:Statement,d:Holmes,pred:find,,d:Sutherland,d:052,d:husband_of_Etheridge,,,,,,d:simply,,,,,,,,,,,,,,,,Holmes easily found Etheridge's husband,ホームズはエサリッジの夫を簡単に見つけた
+d:055,kgc:Statement,d:police,pred:beConvinced,,d:Sutherland,d:052,d:death_of_husband_of_Etheridge,,,,,,,,,,,,,,,,,,,,,,Police had ruled that Esridge's husband had died,警察はエサリッジの夫の死亡を断定していた
+d:056,kgc:Statement,d:Sutherland,,pred:notRich,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Sutherland is not rich,サザランドは裕福ではない
+d:057,kgc:Statement,d:Sutherland,pred:earn,,d:Sutherland,d:052,d:One_hundred_dollars,,,d:one_year,,,,,,,,,,,,,,,,,,,Sutherland earns one hundred dollars a year,サザランドは一年に百ドルを稼ぐ
+d:058,kgc:Statement,d:Sutherland,,pred:typist,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Sutherland is a typing,サザランドはタイプ打ちである
+d:060,kgc:Statement,d:Holmes,pred:find,,d:Sutherland,d:052,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,Holmes find Hosmer,ホームズがホズマを見つける
+d:062,kgc:Statement,d:Sutherland,pred:handOver,,d:Sutherland,d:052,d:Earning|d:Holmes,,,,,,,,,,,,,,d:060,,,,,,,,Sutherland hands over to Holmes,サザランドは稼ぎをホームズに渡す
+d:063,kgc:Statement,d:Sutherland,pred:jumpOut,,d:Sutherland,d:052,,,,,,,,d:House_of_Sutherland,,,,,,,,,,,,,,,Sutherland jumped out of the house,サザランドは家を飛び出した
+d:064,kgc:Statement,d:Sutherland,,pred:angree,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Sutherland is angry,サザランドは腹を立てている
+d:065,kgc:Statement,d:Windibank,,pred:careless,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Windibank is naive,ウィンディバンクは呑気である
+d:066,kgc:Statement,d:Windibank,pred:unwillingToGo,,d:Sutherland,d:052,,,,,d:police,,,,,,,,,,,,,,,,,,Windibank does not want to go to the police,ウィンディバンクは警察に行きたくない
+d:067,kgc:Statement,d:Windibank,pred:notWant,,d:Sutherland,d:052,d:67a,,,,,,,,,,,,,,,,,,,,,,Windibank does not want to visit Holmes,ウィンディバンクはホームズを訪ねたくない
+d:068,kgc:Statement,d:Windibank,,pred:father-in-law_of_Sutherland,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Windibank is Sutherland's father-in-law,ウィンディバンクはサザランドの義理の父である
+d:069,kgc:Statement,d:Windibank,,pred:older,d:Sutherland,d:052,,d:Sutherland,,,,,d:5_years_2_months,,,,,,,,,,,,,,,,Windibank is 5 years and 2 months older than Sutherland,ウィンディバンクはサザランドより5年2ヶ月年上である
+d:070,kgc:Statement,d:mother_of_Sutherland,,pred:fine,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,mother of Sutherland is fine,サザランドの母は元気である
+d:071,kgc:Statement,d:mother_of_Sutherland,,pred:healthy,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,mother of Sutherland is strong,サザランドの母は丈夫である
+d:072,kgc:Statement,d:mother_of_Sutherland,pred:getMarriedAgain,,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,mother of Sutherland remarried after Sutherland&#39;s father&#39;s death,サザランドの母はサザランドの父の死後に再婚した
+d:073,kgc:Statement,d:father_of_Sutherland,,pred:plumbing_business,d:Sutherland,d:052,,,,,d:Totenham_Court_street,,,,,,,,,,,,,,,,,,Sutherland's father is a plumber in Totenham Court,サザランドの父はトテナム・コート通りで配管業である
+d:074,kgc:Statement,d:father_of_Sutherland,pred:leaveBehind,,d:Sutherland,d:052,d:shop_of_father_of_Sutherland,,,d:After_death_of_father_of_Sutherland,,,,,,,,,,,,,,,,,,,Sutherland's father left a store,サザランドの父は店を残した
+d:075,kgc:Statement,d:mother_of_Sutherland,pred:continue,,d:Sutherland,d:052,d:shop_of_father_of_Sutherland,d:Hardy,,,,,,,,,,,,,,,,,,,,,mother of Sutherland continued with Hardy,サザランドの母はハーディと続けていた
+d:076,kgc:Statement,d:Hardy,,pred:field_head,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Hardy is the head of the scene,ハーディは現場頭である
+d:077,kgc:Statement,d:Windibank,pred:sell,,d:Sutherland,d:052,d:shop_of_father_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Windibank sold her father's shop in Sutherland,ウィンディバンクはサザランドの父の店を売らせた
+d:078,kgc:Statement,d:Windibank,,pred:foreign_trade_of_wine,d:Sutherland,d:052,,,,,,,,,,,,,,,,,,,,,,,Windibank is a wine commerce,ウィンディバンクはワインの外商である
+d:079,kgc:Statement,d:Sutherland,pred:sell,,d:Sutherland,d:052,d:shop_of_father_of_Sutherland,,,,,,,,,,,d:79a,,,,,,,,,,,Sutherland's father';s store sold for ｡・4700,サザランドの父の店は4700ポンドで売れた
+d:080,kgc:Situation,d:Sutherland,pred:think,,,d:052,d:081,,,,,,,,,,,,,,,,,,,,,,Sutherland thinks the following,サザランドは以下を思う
+d:081,kgc:Statement,d:father_of_Sutherland,pred:think,,d:Sutherland,d:052|d:080,d:082,,,,,,,,,,,,,,,,,,,,,,Sutherland's father thinks of,サザランドの父が以下を思う
+d:082,kgc:Thought,d:4700_GBP,,pred:small,d:Father_of_Sutherland,d:052|d:081,,,,,,,,,,,,,,,,,,,,,,,4700 pounds is small,4700ポンドは少額である
+d:083,kgc:Situation,d:Watson,pred:think,,,,d:084,,,,,,,,,,,d:085,,,,,,,,,,,Watson thinks that,ワトソンは以下を思う
+d:084,kgc:Thought,d:Holmes,,pred:irritated,d:Watson,d:083,d:story_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Holmes is annoyed with Sutherland's story,ホームズはサザランドの話にいらだっている
+d:085,kgc:Situation,d:Holmes,pred:focus,,,,d:story_of_Sutherland,,,,,,,,,,,d:086,,,,,,,,,,,Holmes are concentrating on Sutherland's story,ホームズはサザランドの話に集中している
+d:086,kgc:Situation,d:Sutherland,pred:say,,,,d:087|d:088|d:089|d:090|d:091|d:092|d:093,,,,,,,,,,,d:094,,,,,,,,,,,Sutherland said the following,サザランドが以下を言った
+d:087,kgc:Statement,,,pred:heritage_of_Ned,d:Sutherland,d:086,d:income_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland's income is Ned&#39;s heritage,サザランドの収入はネッドの遺産である
+d:088,kgc:Statement,d:Ned,,pred:uncle_of_Sutherland,d:Sutherland,d:086,,,,,,,,,,,,,,,,,,,,,,,Ned is Sutherland's uncle,ネッドはサザランドの伯父である
+d:089,kgc:Statement,d:Ned,pred:exist,,d:Sutherland,d:086,,,,,d:Auckland,,,,,,,,,,,,,,,,,,Ned is in Auckland,ネッドはオークランドにいる
+d:090,kgc:Statement,,,pred:shares_of_New_Zealand,d:Sutherland,d:086,d:heritage,,,,,,,,,,,,,,,,,,,,,,Heritage is a New Zealand strain,遺産はニュージーランド株である
+d:091,kgc:Statement,,,pred:quarter_five,d:Sutherland,d:086,d:dividend_of_heritage,,,,,,,,,,,,,,,,,,,,,,The dividend of the heritage is quarter and five o'clock,遺産の配当は四分五厘である
+d:092,kgc:Statement,,,pred:2500_GBP,d:Sutherland,d:086,d:Face_value_of_heritage,,,,,,,,,,,,,,,,,,,,,,The face value of the heritage is ｡・2500,遺産の額面は2500ポンドである
+d:093,kgc:Statement,d:Sutherland,pred:get,,d:Sutherland,d:086,d:yield_of_heritage,,,,,,,,,,,,,,,,,,,,,,Sutherland gives yield,サザランドは利回りを貰える
+d:094,kgc:Situation,d:Holmes,pred:think,,,,d:095|d:096|d:097|d:098|d:099,,,,,,,,,,,d:100,,,,,,,,,,,Holmes thought the following,ホームズは以下を思った
+d:095,kgc:Thought,d:Sutherland,,pred:interesting,d:Holmes,d:094,,,,,,,,,,,,,,,,,,,,,,,Sutherland is interesting,サザランドは興味深い
+d:096,kgc:Thought,d:Sutherland,pred:get,,d:Holmes,d:094,d:100_GBP,,,d:one_year,,,,,,,,,,,,,,,,,,,Sutherland gets 100 pounds a year,サザランドは一年に100ポンドをもらえる
+d:097,kgc:Thought,d:Sutherland,pred:have,,d:Holmes,d:094,d:Earning,,,,,,,,,,,,,,,,,,,,,,Sutherland makes money,サザランドは稼ぎを持つ
+d:098,kgc:Thought,d:Sutherland,pred:have,,d:Holmes,d:094,d:margin,,,,,,,,,,,,,,,,,,,,,,Sutherland has room,サザランドは余裕を持つ
+d:099,kgc:Thought,d:Single_women,,pred:enough,d:Holmes,d:094,d:60_GBP,,,,,,,,,,,,,,,,,,,,,,60 pounds is enough for single women,独身女性は60ポンドで十分である
+d:100,kgc:Situation,d:Sutherland,pred:say,,,,d:101|d:102|d:103|d:104|d:105|d:106|d:107|d:108|d:109,,,,,,,,,,,d:110,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:101,kgc:Statement,d:Sutherland,,pred:enough,d:Sutherland,d:100,d:less_than_60_GBP,,,,,,,,,,,,,,,,,,,,,,Sutherland earns less than ｡・60,サザランドは60ポンド以下の収入で十分である
+d:102,kgc:Statement,d:Sutherland,pred:notRelyOn,,d:Sutherland,d:100,d:parents,,,,,,,,,,,,,,,,,,,,,,Sutherland does not rely on parents,サザランドは親に頼らない
+d:103,kgc:Statement,d:Sutherland,pred:deposit,,d:Sutherland,d:100,d:money,d:parent,,d:104,,,,,,,,,,,,,,,,,,,Sutherland keeps money with her parents,サザランドは親にお金を預けている
+d:104,kgc:Situation,d:Sutherland,pred:exist,,,d:100,d:parents_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland is with parents,サザランドは親といる
+d:105,kgc:Statement,d:Windibank,pred:pullOut,,d:Sutherland,d:100,d:one_quarter,,,,,,,d:yield,,,,,,,,,,,,,,,Windibank draws a quarter from the yield,ウィンディバンクは利回りから四分の一を引き出す
+d:106,kgc:Statement,d:Windibank,pred:handOver,,d:Sutherland,d:100,,d:mother_of_Sutherland,,,,,,,,,,,,,,,,,,,,,Windibank passes to mother of Sutherland,ウィンディバンクはサザランドの母に渡す
+d:107,kgc:Statement,d:Sutherland,,pred:enough,d:Sutherland,d:100,d:income_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland earns enough for Sutherland,サザランドはサザランドの稼ぎで十分である
+d:108,kgc:Statement,d:Sutherland,pred:gain,,d:Sutherland,d:100,d:2_pence|d:one_sheet,,,,,,,,,,,,,,,,,,,,,,Sutherland gets 2 pence with one,サザランドは1枚で2ペンスを得る
+d:109,kgc:Statement,d:Sutherland,pred:process,,d:Sutherland,d:100,d:Up_to_20_sheets,,,d:1_day,,,,,,,,,,,,,,,,,,,Sutherland processes up to 20 cards in a day,サザランドは１日で最大20枚を処理する
+d:110,kgc:Situation,d:Holmes,pred:ask,,,,d:relation_of_Hosma,d:Sutherland,,,,,,,,,,d:111,,,,,,,,,,,Holmes listens to Sutherland about the relationship between Sutherland and Hosma,ホームズはサザランドとホズマとの関係をサザランドに聞く
+d:111,kgc:Situation,d:Sutherland,pred:blush,,,,d:face,,,,,,,,,,,d:112,,,,,,,,,,,Sutherland blushes,サザランドは顔を赤らめる
+d:112,kgc:Situation,d:Sutherland,pred:hold,,,,d:sleeve_of_Jacket,,,,,,,,,,,d:113,,,,,,,,,,,Sutherland pinches the sleeves of the jacket,サザランドは上着の袖をつまむ
+d:113,kgc:Situation,d:Sutherland,pred:say,,,,d:114|d:115|d:116|d:117|d:118|d:119|d:120|d:121|d:122|d:123|d:124|d:126|d:127|d:128,,,,,,,,,,,d:130,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:114,kgc:Statement,d:Sutherland,pred:meet,,d:Sutherland,d:113,d:Hosmer,,,d:1890-09-01,d:dance_of_Gas_Industry,,,,,,1890-09-01T00:00:00,,,,,,,,,,,,Sutherland Meets Hosmer at the Gas Industry Association Ball,サザランドはガス工組合の舞踏会でホズマと出会う
+d:115,kgc:Statement,d:father_of_Sutherland,pred:send,,d:Sutherland,d:113,d:invitation_of_dance_of_Gas_Industry,d:Sutherland,,d:1889-09-01,,,,,,,1889-09-01T00:00:00,d:116,,,,,,,,,,,Sutherland's father had sent an invitation to the Gas Association&#39;s ball to Sutherland,サザランドの父はガス工組合の舞踏会の招待状をサザランドに送っていた
+d:116,kgc:Statement,d:Sutherland|d:mother_of_Sutherland,pred:go,,d:Sutherland,d:113,,,,,,,,,d:dance,,,d:117,,,,,,,d:71a,,,,Sutherland's and Sutherland&#39;s mother went to the ball after Sutherland&#39;s father&#39;s death,サザランドとサザランドの母はサザランドの父の死後も舞踏会に行った
+d:117,kgc:Statement,d:Windibank,pred:notAccept,,d:Sutherland,d:113,d:118|d:119,,,,,,,,,,,d:120,,,,,,,,,,,Windibank does not know,ウィンディバンクは以下を承知しない
+d:118,kgc:Statement,d:Sutherland|d:mother_of_Sutherland,pred:go,,d:Sutherland,d:113|d:117,,,,,,,,,d:dance,,,,,,,,,,,,,,Sutherland and mother of Sutherland go to a ball,サザランドとサザランドの母が舞踏会に行く
+d:119,kgc:Statement,d:Sutherland|d:mother_of_Sutherland,pred:goOut,,d:Sutherland,d:113|d:117,,,,,,,,,,,,,,,,,,,,,,,Sutherland and mother of Sutherland go out,サザランドとサザランドの母が外出する
+d:120,kgc:Statement,d:Windibank,pred:angry,,d:Sutherland,d:113,d:121,,,,,,,,,,,d:122,,,,,,,,,,,Windibank goes mad below,ウィンディバンクは以下で狂う
+d:121,kgc:Statement,d:Sutherland,pred:go,,d:Sutherland,d:113|d:120,,,,,,,,,d:Sunday_school_events,,,,,,,,,,,,,,Sutherland goes to Sunday school event,サザランドが日曜学校の催しに行く
+d:122,kgc:Situation|kgc:Statement,d:Sutherland,pred:say,,d:Sutherland,d:113,d:122a,,,,,,,,,,,d:123,,,,,,,,,,,Sutherland told the ball to join,サザランドは舞踏会参加を言った
+d:123,kgc:Statement,d:Windibank,pred:cannotStop,,d:Sutherland,d:113,d:122a,,,,,,,,,,,d:124,,,,,,,,,,,Windibank can not stop Sutherland,ウィンディバンクはサザランドを止められない
+d:124,kgc:Statement,d:Windibank,pred:say,,d:Sutherland,d:113,d:125,,,,,,,,,,,d:127,,,,,,,,,,,Windibank says,ウィンディバンクは以下を言う
+d:125,kgc:Statement,d:people_of_Dance_party,pred:notHave,,d:Windibank,d:124,d:value,,,,,,,,,,,,,,,,,,,,,,People in the ball have no value,舞踏会の人は価値を持たない
+d:126,kgc:Statement,d:friend_of_father_of_Sutherland,pred:attend,,d:Sutherland,d:113,,,,,d:Dance_party,,,,,,,,,,,,,,,,,,Sutherland's father&#39;s friend participates in a ball,サザランドの父の友人は舞踏会に参加している
+d:127,kgc:Situation,d:Windibank,pred:say,,,d:113,d:128,,,,,,,,,,,d:131,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:128,kgc:Statement,d:Sutherland,pred:notHave,,d:Windibank,d:113|d:127,d:Clothes_to_wear,,,,,,,,,,,,,,,,,,,,,,Sutherland has no clothes to wear,サザランドは着る服を持たない
+d:130,kgc:Situation,d:Sutherland,pred:say,,,,d:131|d:132|d:133|d:134,,,,,,,,,,,d:135,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:131,kgc:Statement,d:Sutherland,pred:wear,,d:Sutherland,d:130,d:Purple_plush,,,,,,,,,,,d:132,,,,,,,,,,,Sutherland wore purple plush,サザランドは紫のフラシ天を着た
+d:132,kgc:Statement,d:Windibank,pred:go,,d:Sutherland,d:130,,,,,,d:Required,,,d:France,,,d:133,,,,,,,,,,,Windibank went to France for work.,ウィンディバンクは所用のためフランスへ行った
+d:133,kgc:Statement,d:Hardy|d:Sutherland|d:mother_of_Sutherland,pred:go,,d:Sutherland,d:130,,,,,d:Dance_party,,,,,,,d:134,,,,,,,,,,,Sutherland and her mother and Hardy went to the ball,サザランドとサザランドの母とハーディは舞踏会に行った
+d:134,kgc:Statement,d:Sutherland,pred:meet,,d:Sutherland,d:130,,d:Hosmer,,,d:Dance_party,,,,,,,,,,,,,,,,,,Sutherland met Hosmer at the ball,サザランドは舞踏会でホズマに会った
+d:135,kgc:Situation,d:Holmes,pred:think,,,,d:136|d:137,,,,,,,,,,,d:138,,,,,,,,,,,Holmes thought the following,ホームズは以下を思った
+d:136,kgc:Thought,d:Windibank,,pred:dissatisfied,d:Holmes,d:135,d:137,,,,,,,,,,,,,,,,,,,,,,Windibank complained of,ウィンディバンクは以下を不満だった
+d:137,kgc:Thought,d:Sutherland,pred:attend,,d:Holmes,d:135|d:136,,,,,d:Dance_party,,,,,,,,,,,,,,,,,,Sutherland went to a ball,サザランドが舞踏会に出た
+d:138,kgc:Situation,d:Sutherland,pred:think,,,,d:139,,,,,,,,,,,d:140,,,,,,,,,,,Sutherland thought that,サザランドは以下を思った
+d:139,kgc:Thought,d:Windibank,pred:happy,,d:Sutherland_s_thoughts,d:138,,,,,,,,,,,,,,,,,,,,,,,Windibank is happy,ウィンディバンクは嬉しい
+d:140,kgc:Situation,d:Sutherland,pred:say,,,,d:141,,,,,,,,,,,d:144,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:141,kgc:Statement,d:Windibank,pred:laugh,,d:Sutherland,d:140,,,,,,,,,,,,,,,,,,,,,,,Windibank laughed,ウィンディバンクは笑った
+d:142,kgc:Situation,d:Windibank,pred:say,,,,d:143,,,,,,,,,,,,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:143,kgc:Statement,d:woman,,pred:free,d:Windibank,d:142,,,,,,,,,,,,,,,,,,,,,,,Woman is free,女は自由である
+d:144,kgc:Situation,d:Sutherland,pred:say,,,,d:145|d:146|d:147|d:148|d:149|d:150|d:151|d:152,,,,,,,,,,,d:155,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:145,kgc:Statement,d:Sutherland,pred:meet,,d:Sutherland,d:144,,d:Hosmer,,,d:dance,,,,,,,d:146,,,,,,,,,,,Sutherland met Hosmer at a ball,サザランドは舞踏会でホズマに出会った
+d:146,kgc:Statement,d:Hosmer,pred:visit,,d:Sutherland,d:144,,,,d:day_after_dance,d:Sutherland_House,,,,,,,d:147,,,,,,,,,,,Hosmer visits Sutherland's house the day after the ball,ホズマは舞踏会の翌日にサザランドの家を訪ねる
+d:147,kgc:Statement,d:Sutherland,pred:meet,,d:Sutherland,d:144,,d:Hosmer,,d:after_dance,,,,,,,,d:148,,,,,,,,,,,Sutherland meets Hosmer after the ball,サザランドは舞踏会の後もホズマに会う
+d:148,kgc:Statement,d:Sutherland,pred:meeting,,d:Sutherland,d:144,,d:Hosmer,,d:twice,,,,,,,,d:149,,,,,,,,,,,Sutherland has met Hosmer twice,サザランドはホズマと二度会っている
+d:149,kgc:Statement,d:Windibank,pred:return,,d:Sutherland,d:144,,,,,d:House_of_Windibank,,,,,,,d:150,,,,,,,,,,,Windibank returned home,ウィンディバンクは家に戻った
+d:150,kgc:Statement,d:Hosmer,pred:cannotCome,,d:Sutherland,d:144,,,,,d:House_of_Sutherland,,,,,,,,d:151,,,,,,,,,,Hosmer can not come home,ホズマは家に来られない
+d:151,kgc:Statement,d:Windibank,pred:notLike,,d:Sutherland,d:144,d:152,,,,,,,,,,,,,,,,,,,,,,Windibank dislikes,ウィンディバンクは以下が嫌いである
+d:152,kgc:Statement,d:Customer,pred:enter,,d:Sutherland,d:144|d:151,,,,,d:House_of_Sutherland,,,,,,,,,,,,,,,,,,The customer enters the house,客が家に入る
+d:153,kgc:Situation,d:Windibank,pred:think,,,,d:154,,,,,,,,,,,,,,,,,,,,,,Windibank thought that,ウィンディバンクは以下を思った
+d:154,kgc:Thought,d:Woman,,pred:happy,d:Windibank_s_Thoughts,d:153,,,,,d:home,,,,,,,,,,,,,,,,,,Women are happy at home,家庭内で女性は幸せである
+d:155,kgc:Situation,d:Sutherland,pred:say,,,,d:156|d:157|d:158|d:159|d:160,,,,,,,,,,,d:163,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:156,kgc:Statement,d:Sutherland,pred:say,,d:Sutherland,d:155,,d:mother,,,,,,,,,,,,,,,,,,,,,Sutherland told her mother,サザランドは母に言った
+d:157,kgc:Statement,d:Woman,pred:want,,d:Sutherland,d:155,d:home,,,,,,,,,,,,,,,,,,,,,,Women want a home,女性は家庭が欲しい
+d:158,kgc:Statement,d:Sutherland,,pred:absent,d:Sutherland,d:155,d:home,,,,,,,,,,,,,,,,,,,,,,Sutherland has no home,サザランドは家庭がない
+d:159,kgc:Statement,d:Windibank,pred:go,,d:Sutherland,d:155,,,,d:After_a_week,d:France,,,,,,,,,,,,,,,,,,Windibank goes to France a week later,ウィンディバンクは一週間後にフランスへ行く
+d:160,kgc:Statement,d:Hosmer,pred:say,,d:Sutherland,d:155,d:161,,,,,,,,,,,,,,,,,,,,,,Hosmer said the following,ホズマは以下を言った
+d:161,kgc:Situation|kgc:Statement,d:Hosmer,,,d:Hosmer_s_statement,d:160,,d:Sutherland,,,,,,,,,,,,,,,,,,,,,Hosmer does not meet Sutherland while Windibank is,ホズマはウィンディバンクがいる間にサザランドと会わない
+d:162,kgc:Situation,,pred:notMeet,,,,,,,d:existence_of_Windibank,,,,,,,,,,,,,,,,,,,,
+d:163,kgc:Situation,d:Sutherland,pred:say,,,,d:164|d:165|d:166|d:167|d:168|d:169|d:170|d:171|d:172|d:173|d:174|d:175|d:176|d:177|d:178|d:179|d:180|d:181,,,,,,,,,,,d:182,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:164,kgc:Statement,d:Hosmer|d:Sutherland,pred:write,,d:Sutherland,d:163,d:letter,,,d:every_day,,,,,,,,d:165,,,,,,,,,,,Sutherland and Hosmer wrote a letter every day,サザランドとホズマは毎日、手紙を書いた
+d:165,kgc:Statement,d:Sutherland,pred:receive,,d:Sutherland,d:163,d:letter,,,d:Morning,,,,,,,,d:166,,,,,,,,,,,Sutherland received a letter in the morning,サザランドは手紙を朝受け取った
+d:166,kgc:Statement,d:Windibank,pred:notKnow,,d:Sutherland,d:163,d:letter,,,,,,,,,,,d:167,,,,,,,,,,,Windibank does not know the letter,ウィンディバンクは手紙を知らない
+d:167,kgc:Statement,d:Sutherland,pred:engage,,d:Sutherland,d:163,,d:Hosmer,,d:First_walk,,,,,,,,d:169,,,,,,,,,,,Sutherland was engaged to Hosmer at the first walk,サザランドは初散歩の時にホズマと婚約した
+d:168,kgc:Statement,d:Hosmer,,pred:teller_of_Redon_Hall_Street_office,d:Sutherland,d:163,,,,,,,,,,,,,,,,,,,,,,,Hosmer is the teller of Redon Hall Street office,ホズマはレドンホール街の事務所の出納係である
+d:169,kgc:Statement,d:Sutherland,pred:notKnow,,d:Sutherland,d:163,d:Industries_of_Hosmer,,,,,,,,,,,d:170,,,,,,,,,,,Sutherland does not know the industry of Hosmer,サザランドはホズマの業種を知らない
+d:170,kgc:Statement,d:Hosmer,pred:live,,d:Sutherland,d:163,,,,,d:Office_of_Redon_Hall_Street,,,,,,,d:171,,,,,,,,,,,Hosmer lives in the office of Redon Hall Street,ホズマはレドンホール街の事務所に住んでいる
+d:171,kgc:Statement,d:Sutherland,pred:know,,d:Sutherland,d:163,d:172|d:173,,,,,,,,,,,d:174,,,,,,,,,,,Sutherland knows the following,サザランドは以下を知っている
+d:172,kgc:Statement,d:Address_of_Hosmer,pred:exist,,d:Sutherland,d:163|d:171,,,,,d:Redon_Hall_Street,,,,,,,,,,,,,,,,,,Hosmer's address is on Redon Hall Street,ホズマの住所はレドンホール街にある
+d:173,kgc:Statement,d:Sutherland,pred:send,,d:Sutherland,d:163|d:171,d:letter,,,,,,,,d:Post_Office_of_Redon_Hall_Street,,,,,,,,,,,,,,Sutherland sent a letter to Redon Hall Street Post Office,サザランドは手紙をレドンホール街郵便局へ送った
+d:174,kgc:Situation,d:Hosmer,pred:say,,,d:163,d:176|d:177|d:178|d:179|d:180|d:181,,,,,,,,,,,,,,,,,,,,,,Hosmer said the following,ホズマは以下を言った
+d:176,kgc:Statement,d:letter_of_Sutherland,pred:reach,,d:Hosmer_s_statement,d:163|d:174,,,,,,,,,d:Office,,,,,,,,,,,,,,Sutherland's letter arrives at the office,サザランドの手紙が事務所に届く
+d:178,kgc:Statement,d:Hosmer,pred:beTeased,,d:Hosmer_s_statement,d:163|d:174,,d:Coworker,,,,,,,,,,,,d:179,d:176,,,,,,,,Hosmer is teased by colleagues,ホズマは同僚にからかわれる
+d:179,kgc:Statement,d:Hosmer,pred:notWant,,d:Hosmer_s_statement,d:163|d:174,d:179a,,,,,,,,,,,d:180,,,,,,,,,,,Hosmer does not want to receive typing letters,ホズマはタイプ打ちの手紙を受け取りたくない
+d:180,kgc:Statement,d:Sutherland,pred:feel,,d:Hosmer_s_statement,d:163|d:174,d:Handwritten_letter,,,,,,,,,,,,,,,d:181,,,,,,,Handwritten letter feels Sutherland,手書きの手紙はサザランドを感じる
+d:181,kgc:Statement,,pred:feel,,d:Hosmer_s_statement,d:163|d:174,d:letter_of_type|d:machine,,,,,,,,,,,,,,,,,,,,,,Typing letter feels machine,タイプ打ちの手紙は機械を感じる
+d:182,kgc:Situation,d:Sutherland,pred:say,,,,d:183|d:184,,,,,,,,,,,d:185,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:183,kgc:Statement,d:Hosmer,pred:love,,d:Sutherland,d:182,,d:Sutherland,,,,,,,,,,,,d:184,,,,,,,,,Hosmer loves Sutherland,ホズマはサザランドを愛している
+d:184,kgc:Statement,d:Hosmer,pred:payAttention,,d:Sutherland,d:182,,,,,,,,,,,,,,,,,,,,,,,Hosmer pays attention,ホズマは気を配る
+d:185,kgc:Situation,d:Holmes,pred:say,,,,d:186|d:Inscription,,,,,,,,,,,d:187,,,,,,,,,,,Holmes said the inscription of Zayedomo (below),ホームズは座右（以下）の銘を言った
+d:186,kgc:Statement,,,pred:infinite,d:Holmes,d:185,d:Important_of_minor,,,,,,,,,,,,,,,,,,,,,,The importance of minor matters is infinite,細事の大事は無限である
+d:187,kgc:Situation,d:Sutherland,pred:say,,,,d:188|d:189|d:190|d:191|d:192|d:193|d:194|d:195|d:196|d:197|d:198|d:199|d:200|d:201|d:202|d:204|d:205|d:206|d:207|d:208|d:209|d:212|d:213|d:214|d:215|d:216|d:217|d:218|d:219|d:220|d:221|d:222|d:223|d:224|d:225|d:226|d:227|d:228|d:229|d:230|d:231|d:232|d:233|d:234|d:235|d:236|d:239|d:240|d:241|d:242|d:243|d:244|d:245|d:246|d:247|d:248,,,,,,,,,,,d:249,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:188,kgc:Statement,d:Hosmer,,pred:shy,d:Sutherland,d:187,,,,,,,,,,,,,,,,,,,,,,,Hosmer is shy,ホズマは恥ずかしがり屋である
+d:192,kgc:Statement,d:Hosmer,,pred:shy,d:Sutherland,d:187,,,,,,,,,,,,,,,,,,,,,,,Hosmer is shy,ホズマは内気である
+d:193,kgc:Statement,d:Hosmer,,pred:gentle,d:Sutherland,d:187,,,,,,,,,,,,,,,,,,,,,,,Hosmer is a gentleman,ホズマは紳士らしい
+d:194,kgc:Statement,,,pred:thin,d:Sutherland,d:187,d:voice_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Hosmer's voice is thin,ホズマの声が細い
+d:195,kgc:Statement,d:Hosmer,pred:sufferFrom,,d:Sutherland,d:187,d:Tonsillitis,,,d:young,,,,,,,,,,,,,,,,,,,Hosmer suffered tonsillitis when he was young,ホズマは若いときに扁桃炎を患った
+d:196,kgc:Situation,,,,,d:187,,,,,,,,,,,,d:197,,,,,,,,,,,,
+d:197,kgc:Statement,d:Hosmer,pred:have,,d:Sutherland,d:187,d:Weak_throat,,,,,,,,,,,,,,,,,,,,,,Hosmer has a weak throat,ホズマは弱い喉を持つ
+d:198,kgc:Statement,d:Hosmer,pred:talk,,d:Sutherland,d:187,,,,,,,d:whisper,,,,,,,,,,,,,,,,Hosmer speaks whisperly,ホズマはささやくように話す
+d:199,kgc:Statement,,,pred:good,d:Sutherland,d:187,d:appearance_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,The appearance of Hosmer is good,ホズマの身だしなみはよい
+d:200,kgc:Statement,,pred:bad,,d:Sutherland,d:187,d:Eyes_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Hosmer's eyes are bad,ホズマの目は悪い
+d:201,kgc:Statement,d:Hosmer,pred:have,,d:Sutherland,d:187,d:Color_glasses,,,,,,,,,,,,,,,,,,,,,,Hosmer has colored glasses,ホズマは色眼鏡を持つ
+d:202,kgc:Situation,d:Hosmer,pred:say,,,d:187,d:203,,,,,,,,,,,,,,,,,,,,,,Hosmer said the following,ホズマは以下を言った
+d:203,kgc:Thought,d:Hosmer,pred:want,,d:Hosmer_s_thoughts,d:202,d:203a,,,,,,,,,,,,,,,,,,,,,,Hosmer wants to marry Sutherland before his father's return home,ホズマはサザランドの父の帰国前にサザランドと結婚したい
+d:204,kgc:Statement,d:Hosmer,,pred:enthusiastic,d:Sutherland,d:187,,,,,,,,,,,,,,,,,,,,,,,Hosmer was keen,ホズマは熱心だった
+d:205,kgc:Statement,d:Hosmer,pred:let,,d:Sutherland,d:187,d:205a|d:206,d:Sutherland,,,,,,,,,,,,,,,,,,,,,Hosmer gave the Bible to Sutherland,ホズマはサザランドに聖書を持たせた
+d:206,kgc:Statement,d:Hosmer,pred:swear,,d:Sutherland,d:187|d:205,d:207,,,,,,,,,,,,,,,,,,,,,,Hosmer has made Sutherland vow:,ホズマは以下をサザランドに誓わせた
+d:207,kgc:Statement,d:Sutherland,pred:believe,,d:Sutherland,d:187|d:206,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,Sutherland believes in Hosmer,サザランドはホズマを信じる
+d:208,kgc:Statement,d:mother_of_Sutherland,pred:agree,,d:Sutherland,d:187,,d:207,,,,,,,,,,,,,,,,,,,,,mother of Sutherland agreed with the above,サザランドの母は上記に賛成だった
+d:209,kgc:Statement,d:mother_of_Sutherland,pred:love,,d:Sutherland,d:187,,d:Hosmer,,,,,d:more_than_Sutherland,,,,,,,,,,,,,,,,mother of Sutherland loved Hosmer more than Sutherland,サザランドの母はホズマをサザランドより愛していた
+d:210,kgc:Situation,d:Hosmer,pred:say,,,,d:211,,,,,,,,,,,,,,,,,,,,,,Hosmer said the following,ホズマは以下を言った
+d:211,kgc:Statement,d:Hosmer,pred:marry,,d:Hosmer_s_statement,d:210,,d:Sutherland,,d:1891-08-14T14|d:this_week,,,,,,,1891-08-14T14:00:00,,,,,,,,d:215,,,,Hosmer will marry Sutherland this week,ホズマは今週、サザランドと結婚する
+d:212,kgc:Statement,d:Sutherland,pred:worry,,d:Sutherland,d:187,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Sutherland worried about Windibank,サザランドはウィンディバンクを心配した
+d:213,kgc:Statement,d:Hosmer|d:mother_of_Sutherland,pred:say,,d:Sutherland,d:187,d:Less_than,,,,,,,,,,,,,,,,,,,,,,mother of Sutherland and Hosmer said,サザランドの母とホズマは以下を言った
+d:214,kgc:Statement,d:Sutherland,pred:notWorry,,d:Sutherland,d:187,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Sutherland Worries About Windibank,サザランドはウィンディバンクを心配しない
+d:215,kgc:Statement,d:mother_of_Sutherland,pred:correspond,,d:Sutherland,d:187,,d:Windibank,,,,,,,,,,,,,,,,,,,,,mother of Sutherland corresponds to Windibank,サザランドの母はウィンディバンクに対応する
+d:216,kgc:Statement,d:Sutherland,pred:want,,d:Sutherland,d:187,d:216a,,,,,,,,,,,,,,,,,,,,,,Sutherland wants to report to Windibank before the wedding,サザランドは結婚式前にウィンディバンクに報告したい
+d:217,kgc:Statement,d:Windibank,pred:working,,d:Sutherland,d:187,,,,,d:France_office_of_company_of_Bordeaux,,,,,,,,,,,,,,,,,,Windibank works at the French office of the Bordeaux company,ウィンディバンクはボルドーの会社のフランス事務所で働いている
+d:218,kgc:Statement,d:Sutherland,pred:send,,d:Sutherland,d:187,d:letter,,,,,,,,d:Windibank,,,d:219,,,,,,,,,,,Sutherland sent a letter to Windibank,サザランドはウィンディバンクに手紙を送った
+d:219,kgc:Statement,,pred:comeBack,,d:Sutherland,d:187,d:letter,,,d:1891-08-14T08|d:Morning_of_wedding_day,,,,,d:Sutherland,,1891-08-14T08:00:00,d:220,,,,,,,,,,,The letter came back to Sutherland on the morning of the wedding day,手紙は結婚式当日の朝にサザランドに戻ってきた
+d:21a,kgc:Statement,d:Sutherland,pred:consult,,d:Holmes,d:021,,d:Someone,,,,,,,,,,,,,,,,,,,,,,
+d:220,kgc:Statement,,pred:notReach,,d:Sutherland,d:187,d:letter,,,,,,,,d:Windibank,,,d:221,,,,,,,,,,,The letter did not reach Windibank,手紙はウィンディバンクに届かなかった
+d:221,kgc:Statement,d:Windibank,pred:go,,d:Sutherland,d:187,,,,d:1891-08-27T08|d:Just_before_the_letter_arrives,,,,,d:England,,1891-08-27T08:00:00,,,,,,,,,,,,Windibank left for England just before the letter arrived,ウィンディバンクは手紙が着く直前にイングランドへ発った
+d:223,kgc:Statement,,pred:do,,d:Sutherland,d:187,d:wedding,,,d:1891-08-14T14|d:Friday,,,,,,,1891-08-14T14:00:00,,,,,d:224,,,,,,,Wedding will be on friday,結婚式は金曜日に行う
+d:224,kgc:Statement,d:wedding,pred:do,,d:Sutherland,d:187,,,,,d:Saint_St._Savior_Church,,,,,,,,,,,,,,,,,,Weddings will take place at St. Savior Church,結婚式は聖セントセイヴィア教会で行う
+d:226,kgc:Statement,d:Hosmer|d:Sutherland,pred:eat,,d:Sutherland,d:187,d:breakfast,,,d:1891-08-14T09:30,d:Saint_St_Pancras_Hotel,,,,,,1891-08-14T09:30:00,,,,,,,,,,,,Sutherland and Hosmer eat breakfast at Saint St Pancras Hotel,サザランドとホズマは聖セントパンクラス・ホテルで朝食を食べる
+d:227,kgc:Statement,d:Hosmer,pred:come,,d:Sutherland,d:187,,,,d:1891-08-14T09|d:Last_Friday,,,d:hansom_carriage,,,,1891-08-14T00:00:00|1891-08-14T09:00:00,d:228,,,,,,,,,,,Last Friday,先週の金曜日、ホズマはハンソム馬車で来た
+d:228,kgc:Statement,d:Hosmer,pred:putOn,,d:Sutherland,d:187,d:Sutherland|d:mother_of_Sutherland,,,,d:hansom_carriage,,,,,,,d:229,,,,,,,,,,,Hosmer put mother of Sutherland and Sutherland&#39;s mother on a Hansom carriage,ホズマはサザランドとサザランドの母をハンソム馬車に乗せた
+d:229,kgc:Statement,d:Hosmer,pred:getOn,,d:Sutherland,d:187,,,,,d:hansom_carriage,,,,,,,,,,,d:230,,,,,,,Hosmer got on a carriage,ホズマは辻馬車に乗った
+d:230,kgc:Statement,d:Other_carriages,pred:notExist,,d:Sutherland,d:187,,,,,d:Street,,,,,,,,,,,d:231,,,,,,,There were no other carriages in the street,通りには他の馬車はいなかった
+d:231,kgc:Statement,d:Sutherland|d:mother_of_Sutherland,pred:arrive,,d:Sutherland,d:187,,,,d:Before_Hosmer,d:Church,,,,,,,d:232,,,,,,,,,,,Sutherland and mother of Sutherland arrived at the church before Hosmer,サザランドとサザランドの母はホズマより先に教会に着いた
+d:232,kgc:Statement,d:Hosmer,pred:notExist,,d:Sutherland,d:187,,,,,d:hansom_carriage,,,,,,,d:233,,,,,,,,,,,Hosmer wasn't in a cart,ホズマは辻馬車にいなかった
+d:233,kgc:Statement,d:The_Horseman,pred:peep,,d:Sutherland,d:187,,,,,d:Under_hansom_carriage,,,,,,,d:234,,,,,,,,,,,A chariot wandered under the chariot,辻馬車の御者が辻馬車の下を覗いた
+d:234,kgc:Statement,d:nobody,pred:notExist,,d:Sutherland,d:187,,,,,d:Under_hansom_carriage,,,,,,,d:235,,,,,,,,,,,There was no one under the cart,辻馬車の下には誰もいなかった
+d:235,kgc:Statement,d:The_Horseman,pred:notUnderstand,,d:Sutherland,d:187,d:location_of_Hosmer,,,,,,,,,,,d:236,,,,,,,,,,,He does not know where Hosmer is,御者はホズマの居場所が分からない
+d:236,kgc:Statement,d:The_Horseman,pred:see,,d:Sutherland,d:187,d:237,,,,,,,,,,,d:239,,,,,,,,,,,He saw the following,御者は以下を見た
+d:237,kgc:Statement,d:Hosmer,pred:enter,,d:The_speaker_s_statement,d:236,,,,,d:hansom_carriage,,,,,,,d:239,,,,,,,,,,,Hosmer gets into the cart,ホズマが辻馬車に入る
+d:239,kgc:Statement,d:Hosmer,pred:notSend,,d:Sutherland,d:187,d:letter,,,,,,,,,,,d:240,,,,,,,,,,,Hosmer does not send letters,ホズマは手紙を送らない
+d:240,kgc:Statement,d:Hosmer,pred:notShow,,d:Sutherland,d:187,d:Appearance,,,,,,,,,,,d:241,,,,,,,,,,,Hosmer does not show up,ホズマは姿を見せない
+d:241,kgc:Statement,d:Sutherland,pred:notKnow,,d:Sutherland,d:187,d:location_of_Hosmer,,,,,,,,,,,d:242,,,,,,,,,,,Sutherland does not know where Hosmer is,サザランドはホズマの行方をわからない
+d:242,kgc:Statement,d:Hosmer,pred:notThrow,,d:Sutherland,d:187,d:Sutherland,,,,,,,,,,,,,,,,,,,,,,Hosmer does not throw away Sutherland,ホズマはサザランドを捨てない
+d:243,kgc:Statement,d:Hosmer,pred:say,,d:Sutherland,d:187|d:248,d:244,d:Sutherland,,d:1891-08-14T08|d:Last_Friday,,,,,,,1891-08-14T08:00:00,,,,,,,,,,,,Last Friday morning,先週の金曜日の朝、ホズマはサザランドに以下を言った
+d:244,kgc:Statement,d:Sutherland,pred:believe,,d:Sutherland,d:187|d:243|d:245|d:252,,d:Hosmer,,,,,,,,,,,,,d:247,,,,,,,,Sutherland believes in Hosmer,サザランドはホズマを信じる
+d:245,kgc:Statement,d:Sutherland,pred:swear,,d:Sutherland,d:187,d:244,,,,,,,,,,,,,,,,,,,,,,Sutherland swore the above,サザランドは上記を誓った
+d:247,kgc:Statement,d:Sutherland,pred:leave,,d:Sutherland,d:187,,,,,,,,d:Hosmer,,,,,,,,,,,,,,,Sutherland leaves with Hosmer,サザランドがホズマと離れる
+d:248,kgc:Statement,d:Sutherland,pred:understand,,d:Sutherland,d:187,d:243,,,d:1891-09-01T10|d:Current,,,,,,,1891-09-01T10:00:00,,,,,,,,,,,,Sutherland now understands the language of Hosmer,現在、サザランドはホズマの言葉を理解した
+d:249,kgc:Situation,d:Sutherland,pred:think,,,,d:250|d:252,,,,,,,,,,,d:261,,,,,,,,,,,Sutherland thinks the following,サザランドは以下を思う
+d:250,kgc:Thought,d:Hosmer,pred:know,,d:Sutherland_s_thoughts,d:249,d:Danger,,,,,,,,,,,,,d:252,,,,,,,,,Hosmer knew about the danger,ホズマは危険を知っていた
+d:252,kgc:Thought,d:Hosmer,pred:say,,d:Sutherland_s_thoughts,d:249,d:244,,,,,,,,,,,,,,,,,,,,,,Hosmer said above,ホズマは上記を言った
+d:253,kgc:Situation,d:Sutherland,pred:say,,,,d:254|d:255|d:256,,,,,,,,,,,d:261,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:254,kgc:Statement,d:Sutherland,pred:notKnow,,d:Sutherland,d:253,d:danger_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Sutherland does not know the danger of Hosmer,サザランドはホズマの危険を知らない
+d:255,kgc:Statement,d:Sutherland,pred:say,,d:Sutherland,d:253,d:missing_of_Hosmer,d:Windibank|d:mother_of_Sutherland,,,,,,,,,,d:256,,,,,,,,,,,Sutherland reported Hosmer's disappearance to Sutherland&#39;s mother and Windibank,サザランドはサザランドの母とウィンディバンクにホズマ失踪を伝えた
+d:256,kgc:Statement,d:mother_of_Sutherland,pred:angry,,d:Sutherland,d:253,d:missing_of_Hosmer,,,,,,,,,,,d:257,,,,,,,,,,,mother of Sutherland got mad at Hosmer&#39;s disappearance,サザランドの母はホズマ失踪に怒った
+d:257,kgc:Situation,d:mother_of_Sutherland,pred:say,,,,d:258,d:Sutherland,,,,,,,,,,d:259,,,,,,,,,,,mother of Sutherland said to Sutherland:,サザランドの母はサザランドに以下を言った
+d:258,kgc:Statement,d:Sutherland,pred:notSay,,d:mother_of_Sutherland&#39_s_remark,d:257,d:missing_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Sutherland does not speak Hosmer's disappearance,サザランドはホズマ失踪を話さない
+d:259,kgc:Situation,d:Windibank,pred:say,,,,d:260,,,,,,,,,,,,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:260,kgc:Statement,d:Hosmer,pred:contact,,d:Windibank,d:259,,d:Sutherland,,,,,,,,,,,,,,,,,,,,,Hosmer will contact Sutherland,ホズマはサザランドに連絡する
+d:261,kgc:Situation,d:Sutherland,pred:say,,,,d:262|d:263|d:264|d:265,,,,,,,,,,,d:266,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:262,kgc:Statement,d:Hosmer,pred:have,,d:Sutherland,d:261,d:property_of_Hosmer,,,,,,,,,,,,,d:263,,,,,,,,,Hosmer owns his property,ホズマは自分の財産を持っている
+d:263,kgc:Statement,d:Hosmer,pred:notWant,,d:Sutherland,d:261,d:money_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Hosmer does not want Sutherland's money,ホズマはサザランドのお金を欲してない
+d:264,kgc:Statement,d:Sutherland,pred:cannotSleep,,d:Sutherland,d:261,,,,,,,,,,,,d:265,,,,,,,,,,,Sutherland can not sleep,サザランドは眠れない
+d:265,kgc:Statement,d:Sutherland,pred:cry,,d:Sutherland,d:261,,,,,,,,,,,,,,,,,,,,,,,Sutherland cried,サザランドは泣いた
+d:266,kgc:Situation,d:Holmes,pred:say,,,,d:267|d:268|d:269|d:270|d:271|d:272,,,,,,,,,,,d:273,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:267,kgc:Statement,d:Holmes,pred:examine,,d:Holmes,d:266,d:missing_of_Hosmer,,,,,,,,,,,d:268,,,,,,,,,,,Holmes examines Hosmer's disappearance,ホームズはホズマ失踪を調べる
+d:268,kgc:Statement,d:Holmes,pred:canSolve,,d:Holmes,d:266,d:missing_of_Hosmer,,,,,,,,,,,d:269,,,,,,,,,,,Holmes can solve Hosmer's disappearance,ホームズはホズマ失踪を解決できる
+d:269,kgc:Statement,d:Sutherland,pred:forget,,d:Holmes,d:266,d:Hosmer,,,,,,,,,,,,d:270,,,,,,,,,,Sutherland forgets Hosmer,サザランドはホズマを忘れる
+d:270,kgc:Statement,d:Sutherland,pred:cannotMeet,,d:Holmes,d:266,,d:Hosmer,,,,,,,,,,,,,,,,,,,,,Sutherland can not see Hosmer,サザランドはホズマに会えない
+d:271,kgc:Statement,d:Holmes,pred:want,,d:Holmes,d:266,d:personalities_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Holmes wants Hosmer's personalities,ホームズはホズマの人相書きを欲しい
+d:272,kgc:Statement,d:Holmes,pred:want,,d:Holmes,d:266,d:letter_of_Hosma,,,,,,,,,,,,,,,,,,,,,,Holmes wants a letter from Hosmer,ホームズはホズマの手紙を欲しい
+d:273,kgc:Situation,d:Sutherland,pred:say,,,,d:274,,,,,,,,,,,d:275,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:274,kgc:Statement,d:Sutherland,pred:putOut,,d:Sutherland,d:273,d:Inquirer_advertisement,,,d:1891-08-29|d:Last_Satuaday,,,,,d:newspaper,,1891-08-29T00:00:00,,,,,,,,,,,,Last Saturday,先週の土曜に、サザランドは新聞に尋ね人広告を出した
+d:275,kgc:Situation,d:Sutherland,pred:handOver,,,,d:Inquirer_advertisement,d:Holmes,,,,,,,,,,d:276,,,,,,,,,,,Sutherland asked Holmes to give adverts,サザランドはホームズに尋ね人広告を渡した
+d:276,kgc:Situation,d:Sutherland,pred:handOver,,,,d:letter_of_Hosma,d:Holmes,,,,,,,,,,d:277,,,,,,,,,,,Sutherland gave Hosmer a letter to Holmes,サザランドはホームズにホズマの手紙を渡した
+d:277,kgc:Situation,d:Sutherland,pred:say,,,,d:278|d:279|d:280|d:281,,,,,,,,,,,d:282,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:278,kgc:Statement,d:Address_of_Sutherland,,pred:Camberwell,d:Sutherland,d:277,,,,,,,,,,,,,,,,,,,,,,,Sutherland's address is Camberwell,サザランドの住所はキャンバウェルである
+d:279,kgc:Statement,d:Sutherland,pred:notKnow,,d:Sutherland,d:277,d:Address_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Sutherland does not know Hosmer's address,サザランドはホズマの住所を知らない
+d:280,kgc:Statement,d:Windibank,,pred:foreign_business_of_West_House&Marbank,d:Sutherland,d:277,,,,,,,,,,,,,,,,,,,,,,,Hosmer is a foreign company in West House &amp; Marbank,ウィンディバンクはウェストハウス＆マーバンクの外商である
+d:281,kgc:Statement,d:West_House&Marbank,,pred:largest_claret_importer,d:Sutherland,d:277,,,,,d:Fengchurch_Street,,,,,,,,,,,,,,,,,,West House &amp; Marbank is the largest claret importer on Fenchurch Street,フェンチャーチ街で、ウェストハウス＆マーバンクは最大のクラレット輸入業者である
+d:282,kgc:Situation,d:Holmes,pred:say,,,,d:283|d:284,,,,,,,,,,,d:285,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:283,kgc:Statement,d:Sutherland,pred:notForget,,d:Holmes,d:282,d:advice_of_Holmes,,,,,,,,,,,,,,,,,,,,,,Sutherland will not forget Holmes' advice,サザランドはホームズの助言を忘れない
+d:284,kgc:Statement,d:Sutherland,pred:forget,,d:Holmes,d:282,d:missing_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Sutherland forgets Hosmer's disappearance,サザランドはホズマ失踪を忘れる
+d:285,kgc:Situation,d:Sutherland,pred:say,,,,d:286|d:287,,,,,,,,,,,d:288,,,,,,,,,,,Sutherland said the following,サザランドは以下を言った
+d:286,kgc:Statement,d:Sutherland,pred:unforgettable,,d:Sutherland,d:285,,d:Hosmer,,,,,,,,,,,,,,,,,,,,,Sutherland can not forget Hosmer,サザランドはホズマを忘れられない
+d:287,kgc:Statement,d:Sutherland,pred:believe,,d:Sutherland,d:285,,d:Hosmer,,,,,,,,,,,,,,,,,,,,,Sutherland believes in Hosmer,サザランドはホズマを信じている
+d:288,kgc:Situation,d:Watson,pred:feel,,,,d:dignity|d:respect,d:Sutherland,,,,,,,,,,d:289,,,,,,,,,,,Watson felt noble and respect for Sutherland,ワトソンはサザランドに気品と敬意を感じた
+d:289,kgc:Situation,d:Sutherland,pred:getOut,,,,,,,,,,,d:house_of_Holmes,,,,d:290,,,,,,,,,,,Sutherland went out of Holmes's house,サザランドはホームズの家から出て行った
+d:290,kgc:Situation,d:Sutherland,pred:come,,,,,,,,d:house_of_Holmes,,,,,,,d:291,,,d:290a,,,,,,,,Sutherland will come to Holmes when called,サザランドは呼ばれたらホームズに来る
+d:291,kgc:Situation,d:Holmes,pred:say,,,,d:292|d:293|d:294|d:295,,,,,,,,,,,d:296,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:292,kgc:Statement,d:Sutherland,,pred:interesting,d:Holmes,d:291,,,,,,,,,,,,,,,,,,,,,,,Sutherland is interesting,サザランドは興味深い
+d:293,kgc:Statement,d:Holmes,pred:know,,d:Holmes,d:291,d:Same_incident,,,,,,,,,,,,,,,,,,,,,,Holmes knows the same case,同一の事件をホームズは知っている
+d:294,kgc:Statement,,pred:happen,,d:Holmes,d:291,d:Same_incident,,,d:1877|d:1877-06-01,d:Andova,,,,,,1877-06-01T00:00:00,,,,,,,,,,,,The same incident happened in Andova in 1977,77年に、同一の事件がアンドーヴァで起きた
+d:295,kgc:Statement,,pred:happen,,d:Holmes,d:291,d:Same_incident,,,d:1890-06-01|d:last_year,d:Hague,,,,,,1890-06-01T00:00:00,,,,,,,,,,,,The same incident happened in The Hague last year,昨年、同一の事件がハーグで起きた
+d:296,kgc:Situation,d:Watson,pred:say,,,,d:297|d:298,,,,,,,,,,,d:299,,,,,,,,,,,Watson said the following,ワトソンは以下を言った
+d:297,kgc:Statement,d:Holmes|d:Sutherland,pred:canUnderstand,,d:Watson,d:296,,,,,,,,,,,,,,,,,,,,,,,Holmes can read Sutherland,ホームズはサザランドを読み取れる
+d:298,kgc:Statement,d:Sutherland|d:Watson,pred:cannotUnderstand,,d:Watson,d:296,,,,,,,,,,,,,,,,,,,,,,,Watson can not read Sutherland,ワトソンはサザランドを読み取れない
+d:299,kgc:Situation,d:Holmes,pred:say,,,,d:300|d:301|d:302|d:303,,,,,,,,,,,d:304,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:300,kgc:Statement,d:Watson,pred:overlook,,d:Holmes,d:299,d:Important_point,,,,,,,,,,,,,,,,,,,,,,Watson overlooks an important point,ワトソンは大事な点を見落としている
+d:301,kgc:Statement,,,pred:important,d:Holmes,d:299,d:sleeve,,,,,,,,,,,,,,,,,,,,,,Sleeves are important,袖は重要である
+d:302,kgc:Statement,,pred:say,,d:Holmes,d:299,d:Thumb_nail,,,,,,,,,,,,,,,,,,,,,,Thumb nail talks,親指の爪は語る
+d:303,kgc:Statement,d:Shoelaces,pred:lead,,d:Holmes,d:299,d:Big_problem,,,,,,,,,,,,,,,,,,,,,,Shoe laces lead to major problems,靴ひもは大問題を導く
+d:304,kgc:Situation,d:Watson,pred:say,,,,d:305|d:306|d:307|d:308|d:309|d:310|d:311|d:312|d:313|d:314|d:315|d:316|d:317|d:318|d:319,,,,,,,,,,,d:321,,,,,,,,,,,Watson said the following,ワトソンは以下を言った
+d:305,kgc:Statement,d:Sutherland,,pred:wear,d:Watson,d:304,d:straw_hat_of_Blackboard_color,,,,,,,,,,,,,,,,,,,,,,Sutherland wore a straw hat with a blackboard color,サザランドは黒板色の鍔広麦わら帽子をかぶっていた
+d:306,kgc:Statement,,,pred:attached,d:Watson,d:304,d:Red_brick_feather,,,,,,,,,d:straw_hat_of_Blackboard_color,,,,,,,,,,,,,A red-brick feather was on a blackboard-colored straw hat,赤煉瓦色の羽根が黒板色の鍔広麦わら帽子についていた
+d:307,kgc:Statement,,,pred:black,d:Watson,d:304,d:coat_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland's jacket was black,サザランドの上着は黒だった
+d:308,kgc:Statement,,pred:attached,,d:Watson,d:304,d:Black_beads,,,,,,,,,d:coat_of_Sutherland,,,,,,,,,,,,,Black beads were attached to the jacket of Sutherland,黒のビーズがサザランドの上着には付いていた
+d:309,kgc:Statement,,pred:attached,,d:Watson,d:304,d:Small_black_ball_ornament,,,,,,,,,d:edge_of_hem,,,,,,,,,,,,,A small black beaded ornament is attached to the hem border edge,小粒の黒玉の飾りが裾のふさ縁に付いている
+d:310,kgc:Statement,,,pred:brown,d:Watson,d:304,d:clothes,,,,,,,,,,,,,,,,,,,,,,The clothes were brown,衣服は茶褐色だった
+d:311,kgc:Statement,,pred:attached,,d:Watson,d:304,d:Purple_plush,,,,,,,,,d:On_the_sleeve|d:neck_of_clothes,,,,,,,,,,,,,A purple plush is attached to the neck and sleeves of the garment,紫色のフラシ天が衣服の首元と袖に付いている
+d:312,kgc:Statement,,,,d:Watson,d:304,d:gloves,,,,,,,,,,,,,,,,,,,,,,The gloves were scarlet,手袋は鼠色だった
+d:313,kgc:Statement,,pred:worn,,d:Watson,d:304,d:thumb_of_Right_glove,,,,,,,,,,,,,,,,,,,,,,The thumb of the right glove is worn,右手袋の親指がすり切れている
+d:314,kgc:Statement,d:Watson,pred:notSee,,d:Watson,d:304,d:shoes_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Watson has not seen Sutherland shoes,ワトソンはサザランドの靴を見ていない
+d:315,kgc:Statement,d:Sutherland,pred:hanging,,d:Watson,d:304,d:Small_round_gold_earring,,,,,,,,,,,,,,,,,,,,,,Sutherland was hanging a small round gold earring,サザランドは小振りの丸い金の耳飾りをぶら下げていた
+d:316,kgc:Thought,d:Sutherland,,pred:wealthy,d:Watson,d:304,,,,,,,,,,,,,,,,,,,,,,,Sutherland is rich,サザランドは裕福である
+d:317,kgc:Thought,d:Sutherland,,pred:easygoing,d:Watson,d:304,,,,,,,,,,,,,,,,,,,,,,,Sutherland is a leisure,サザランドはのんきである
+d:318,kgc:Thought,d:Sutherland,,pred:relaxed,d:Watson,d:304,,,,,,,,,,,,,,,,,,,,,,,Sutherland is warm,サザランドはおっとりしている
+d:319,kgc:Thought,d:Sutherland,,pred:town_girl,d:Watson,d:304,,,,,,,,,,,,d:321,,,,,,,,,,,Sutherland is a town girl,サザランドは町娘である
+d:321,kgc:Situation,d:Holmes,pred:laugh,,,,,,,,,,,,,,,d:322,,,,,,,,,,,Holmes laughed,ホームズは笑った
+d:322,kgc:Situation,d:Holmes,pred:say,,,,d:323|d:324|d:325|d:326|d:327|d:328|d:329|d:330|d:331|d:332|d:333|d:334|d:335|d:336|d:337|d:339|d:341,,,,,,,,,,,d:342,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:323,kgc:Statement,d:Watson,pred:improve,,d:Holmes,d:322,,,,,,,,,,,,,,,,,,,,,,,Watson improved,ワトソンは上達した
+d:324,kgc:Statement,d:Watson,pred:overlook,,d:Holmes,d:322,d:Important_point,,,,,,,,,,,,,,,,,,,,,,Watson overlooks an important point,ワトソンは大事な点を見落としている
+d:325,kgc:Statement,,pred:correct,,d:Holmes,d:322,d:Method_of_Watson,,,,,,,,,,,,,,,,,,,,,,The way is right,方法は正しい
+d:326,kgc:Statement,d:Watson,,pred:focus,d:Holmes,d:322,d:color,,,,,,,,,,,,,,,,,,,,,,Watson looks at the color,ワトソンは色に目ざとい
+d:327,kgc:Statement,d:Watson,pred:focus,,d:Holmes,d:322,d:detail,,,,,,,,,,,,,,,,,,,,,,Watson pays attention to details,ワトソンは細部に注目する
+d:328,kgc:Statement,d:Holmes,pred:see,,d:Holmes,d:322,d:sleeve_of_Woman,,,,,,,,,,,,,,,,,,,,,,Holmes look at a woman's sleeve,ホームズは女の袖を見る
+d:329,kgc:Statement,d:Holmes,pred:see,,d:Holmes,d:322,d:knee_of_Man,,,,,,,,,,,,,,,,,,,,,,Holmes looks at the knee of a man's pants,ホームズは男のズボンの膝を見る
+d:330,kgc:Statement,,pred:attached,,d:Holmes,d:322,d:Plush_weave,,,,,,,,,d:cuffs_of_Sutherland,,,,,,,,,,,,,A plush weave is attached to the cuffs of Sutherland,フラシ織がサザランドの袖口に付いている
+d:331,kgc:Statement,,pred:shadow,,d:Holmes,d:322,d:Plush_weave|d:Trace,,,,,,,,,,,,,,,,,,,,,,The plush weave marks,フラシ織は跡をつける
+d:332,kgc:Statement,,,pred:expensive_cloth,d:Holmes,d:322,d:Plush_weave,,,,,,,,,,,,,,,,,,,,,,Plush weave is an expensive fabric,フラシ織は高価な生地である
+d:333,kgc:Statement,,,pred:mark_of_type,d:Holmes,d:322,d:Wrist_double_wire_of_Plush_weave,,,,,,,,,,,,,,,,,,,,,,The double line on the wrist is a trace of the type,手首の二重線はタイプの跡である
+d:334,kgc:Statement,,,pred:mark_of_manual_sewing_machine,d:Holmes,d:322,d:Wrist_double_wire_of_Plush_weave,,,,,,,,,,,,,,,,,,,,,,The double wire on the wrist is the mark of a manual sewing machine,手首の二重線は手動ミシンの跡である
+d:335,kgc:Statement,,,pred:mark_of_manual_sewing_machine,d:Holmes,d:322,d:Left_wrist_double_wire_of_Plush_weave,,,,,,,,,,,,,,,,,,,,,,The double line on the left wrist is the mark of a manual sewing machine,左の手首の二重線は手動ミシンの跡である
+d:336,kgc:Statement,,,pred:mark_of_type,d:Holmes,d:322,d:Right_wrist_double_wire_of_Plush_weave,,,,,,,,,,,,,,,,,,,,,,The right wrist double line is a trace of type,右の手首の二重線はタイプの跡である
+d:337,kgc:Statement,d:Sutherland,pred:have,,d:Holmes,d:322,d:mark_of_nose_glasses,,,,,,,,,,,,,d:339,,,,,,,,,Sutherland has a trace of nose glasses,サザランドは鼻眼鏡の跡を持っている
+d:339,kgc:Statement,d:Holmes,pred:surprise,,d:Holmes,d:322,d:Sutherland,,,,,,d:Near_sight|d:type,,,,,,,,,d:341,,,,,,,Holmes surprised Sutherland with myopia and type,ホームズは近眼とタイプでサザランドを驚かせた
+d:33a,kgc:Statement,d:Woman,pred:say,,d:Service_Boy,d:033,,d:Sutherland,,,,,,,,,,d:034,,,,,,,,,,,The woman is Sutherland,女がサザランドである
+d:341,kgc:Situation,d:Watson,pred:beSurprised,,,d:322,,,,,,,,,,,,,,,,,,,,,,,Watson was surprised,ワトソンは驚いた
+d:342,kgc:Situation,d:Holmes,pred:say,,,,d:343|d:344|d:345|d:346,,,,,,,,,,,d:348,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:343,kgc:Statement,,,pred:different,d:Holmes,d:342,d:left_shes_of_Sutherland|d:right_shoes_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland's left and right shoes are different,サザランドの左右の靴は異なる
+d:345,kgc:Statement,,,pred:tightly,d:Holmes,d:342,d:appearance_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland's appearance is tight,サザランドの身なりはきっちりしている
+d:346,kgc:Statement,d:Sutherland,,pred:wear,d:Holmes,d:342,d:Left_and_right_separate_shoes,,,,,,,,,,,,,d:348,,,,,,,,,Sutherland wears different left and right shoes,サザランドは左右別の靴を履いている
+d:348,kgc:Situation,d:Holmes,pred:notice,,,,d:349|d:350|d:351|d:352,,,,,,,,,,,d:353,,,,,,,,,,,Holmes noticed the following,ホームズは以下に気づいた
+d:349,kgc:Statement,d:Sutherland,pred:come,,d:Holmes,d:348,,,,d:1891-09-01T10|d:this_morning,d:Holmes,,d:Quickly,,,,1891-09-01T10:00:00,,,,,,,,,,,,This morning,今朝、サザランドが急いでホームズに来た
+d:350,kgc:Statement,d:Sutherland,pred:write,,d:Holmes,d:348,d:Note,,,d:1891-09-01T09|d:this_morning,,,,,,,1891-09-01T09:00:00,,,,,,,,,,,,This morning Sutherland wrote a note,今朝、サザランドはメモを書いた
+d:351,kgc:Statement,,pred:have,,d:Holmes,d:348,d:Violet_ink|d:gloves_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland gloves have violet ink,サザランドの手袋はすみれ色のインクを持つ
+d:352,kgc:Statement,,pred:have,,d:Holmes,d:348,d:Violet_ink|d:finger_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland's finger has violet ink,サザランドの指はすみれ色のインクを持つ
+d:353,kgc:Situation,d:Watson,pred:say,,,,d:354|d:355|d:356|d:357|d:358|d:359|d:360|d:361|d:362|d:363|d:364|d:365|d:366|d:367|d:368|d:369|d:370,,,,,,,,,,,d:371,,,,,,,,,,,Watson said the following,ワトソンは以下を言った
+d:354,kgc:Statement,,pred:beWritten,,d:Watson,d:353,d:355|d:356|d:357|d:358|d:359|d:360|d:361|d:362|d:363|d:364|d:365|d:366|d:367|d:Inquirer_advertisement,,,,,,,,,,,,,,,,,,,,,,Inquirer ad is written below,尋ね人広告は以下を書かれている
+d:355,kgc:Statement,d:Hosmer,pred:disappear,,d:Watson,d:353|d:354,,,,d:14th_Monday|d:1891-08-14T09,,,,,,,1891-08-14T09:00:00,,,,,,,,,,,,Hosmer disappeared on the morning of the 14th,ホズマは14日朝失踪した
+d:356,kgc:Statement,d:height_of_Hosmer,pred:equalTo,,d:Watson,d:353|d:354,d:5_feet_7_inches,,,,,,,,,,,,,,,,,,,,,,Hosmer's height is 5 feet 7 inches,ホズマの身長は5フィート7インチである
+d:357,kgc:Statement,,,pred:good,d:Watson,d:353|d:354,d:body_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Hosmer's physique is good,ホズマの体格はよい
+d:358,kgc:Statement,,pred:bad,,d:Watson,d:353|d:354,d:color_of_face_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,The color of Hosmer is bad,ホズマの顔色は悪い
+d:359,kgc:Statement,,,pred:black,d:Watson,d:353|d:354,d:hair_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Hosmer's hair is black,ホズマの髪は黒である
+d:360,kgc:Statement,,pred:exist,,d:Watson,d:353|d:354,d:gavel,,,,d:head_of_Hosmer,,,,,,,,,,,,,,,,,,There is a small boat on the top of Hosmer's head,ホズマの頭頂には小禿がある
+d:361,kgc:Statement,d:Hosmer,pred:have,,d:Watson,d:353|d:354,d:black_mustache|d:black_whisker,,,,,,,,,,,,,,,,,,,,,,Hosmer has a black cheek and mouth,ホズマは黒い頬髯口髭を持つ
+d:362,kgc:Statement,d:Hosmer,pred:have,,d:Watson,d:353|d:354,d:Color_glasses,,,,,,,,,,,,,,,,,,,,,,Hosmer has colored glasses,ホズマは色眼鏡を持つ
+d:363,kgc:Statement,,,pred:hesitating,d:Watson,d:353|d:354,d:speak_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,Hosmer's way of speaking is jealous,ホズマの話し方は訥々である
+d:364,kgc:Statement,,,pred:black_frock_coat,d:Watson,d:353|d:354,d:clothes_of_Hosmer,,,d:1891-08-14T08|d:missing,,,,,,,1891-08-14T08:00:00,,,,,,,,,,,,At the time of disappearance is a black frock coat,失踪時の服装は黒のフロックコートである
+d:365,kgc:Statement,,,pred:black_best,d:Watson,d:353|d:354,d:clothes_of_Hosmer,,,d:1891-08-14T08|d:missing,,,,,,,1891-08-14T08:00:00,,,,,,,,,,,,At the time of disappearance is a black vest,失踪時の服装は黒のベストである
+d:366,kgc:Statement,,,pred:albert_chain_of_gold,d:Watson,d:353|d:354,d:clothes_of_Hosmer,,,d:1891-08-14T08|d:missing,,,,,,,1891-08-14T08:00:00,,,,,,,,,,,,Dress at the time of disappearance is the Albert chain of gold,失踪時の服装は金のアルバート鎖である
+d:367,kgc:Statement,d:Hosmer,pred:working,,d:Watson,d:353|d:354,,,,d:past,d:Office_of_Redon_Hall_Street,,,,,,,,,,,,,,,,,,In the past,過去に、ホズマはレドンホール街の事務所で働いていた
+d:368,kgc:Statement,,pred:notHave,,d:Watson,d:353,d:clue_of_Hosmer|d:letter,,,,,,,,,,,,,,,,,,,,,,Letters have no clues to Hosmer,手紙はホズマの手がかりを持たない
+d:369,kgc:Statement,,pred:exist,,d:Watson,d:353,d:Quotation_from_Balzac,,,,,,,,,d:letter,,,,,,,,,,,,,The letter has a quote from Balzac,手紙には、バルザックからの引用がある
+d:370,kgc:Statement,,pred:beWritten,,d:Watson,d:353,d:letter,,,,,,d:typewritter,,,,,,,,,,,,,,,,The letter is written in type,手紙はタイプで書かれている
+d:371,kgc:Situation,d:Holmes,pred:say,,,,d:372|d:373|d:374|d:375|d:376,,,,,,,,,,,d:377,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:372,kgc:Statement,,pred:beWritten,,d:Holmes,d:371,d:signature,,,,,,d:typewriter,,,,,,,,,,,,,,,,Signature is written in type,署名はタイプで書かれている
+d:373,kgc:Statement,,,pred:Hosmer_Aingel,d:Holmes,d:371,d:signature,,,,,,,,,,,,,,,,,,,,,,Signature is Hosmer Aingel,署名はホズマ・エインジェルである
+d:374,kgc:Statement,,pred:have,,d:Holmes,d:371,d:date|d:letter,,,,,,,,,,,,,,,,,,,,,,Letter has a date,手紙は日付を持つ
+d:375,kgc:Statement,,,pred:Redon_Hall_street,d:Holmes,d:371,d:address_of_sender_of_letter,,,,,,,,,,,,,,,,,,,,,,The sender's address is Redon Hall Street,差出人の住所はレドンホール街である
+d:376,kgc:Statement,,,pred:important,d:Holmes,d:371,d:signature_of_letter,,,,,,,,,,,,,,,,,,,,,,Signature is important,署名は重要である
+d:377,kgc:Situation,d:Watson,pred:say,,,,d:378|d:380,,,,,,,,,,,d:381,,,,,,,,,,,Watson said the following,ワトソンは以下を言った
+d:378,kgc:Statement,d:signature,pred:deny,,d:Watson,d:377|d:382,d:Pledge,,,d:380,,,,,,,,,,,,,,,,,,,Signature repeals vow,署名は誓約を否認する
+d:380,kgc:Statement,d:Hosmer,pred:receive,,d:Watson,d:377|d:382,d:Appeal_of_breach_of_pledge,,,,,,,,,,,,,,,,,,,,,,Hosma received an appeal against breach of covenants,ホズマが誓約不履行の訴えを受けた
+d:381,kgc:Situation,d:Holmes,pred:say,,,,d:382|d:383|d:384|d:385|d:386|d:387|d:388|d:389,,,,,,,,,,,d:390,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:382,kgc:Statement,,pred:notImportant,,d:Holmes,d:381,d:378|d:380,,,,,,,,,,,,,,,,,,,,,,The above is not important,上記は重要ではない
+d:383,kgc:Statement,,pred:solve,,d:Holmes,d:381,d:missing_of_Hosmer,,,,,,,,,,,,,,d:385,,,,,,,,Hosmer's disappearance resolves,ホズマ失踪は解決する
+d:385,kgc:Statement,d:Holmes|d:Watson,pred:write,,d:Holmes,d:381,d:Two_letters,,,,,,,,,,,,,,,,,,,,,,Holmes and Watson write two letters,ホームズとワトソンが二通手紙を書く
+d:386,kgc:Statement,,pred:send,,d:Holmes,d:381,d:Letter_1,,,,,,,,d:company_in_Central_City,,,,,,,,,,,,,,Letter 1 is sent to a company in Central City,手紙1は中心区シティの会社へ送る
+d:387,kgc:Statement,,pred:send,,d:Holmes,d:381,d:Letter_2,,,,,,,,d:Windibank,,,,,,,,,,,,,,Letter 2 sent to Windibank,手紙2はウィンディバンクへ送る
+d:388,kgc:Statement,d:Holmes,pred:write,,d:Holmes,d:381,d:389,,,,d:letter_2,,,,,,,,,,,,,,,,,,Holmes writes the following to letter 2,ホームズは手紙2に以下を書く
+d:389,kgc:Statement,d:Holmes,pred:want,,d:Holmes,d:381|d:388,d:389a,,,,,,,,,,,,,,,,,,,,,,Holmes wants to see Windibank at 6 o'clock in the evening,明晩六時に、ホームズがウィンディバンクに会いたい
+d:390,kgc:Situation,d:Watson,pred:concentrateOn,,,,,d:Treatment_of_serious_patients,,d:1891-09-02T12,,,,,,,1891-09-02T12:00:00,d:391,,,,,,,,,,,Watson dedicated to the treatment of critically ill patients,ワトソンは重篤な患者の治療に専念した
+d:391,kgc:Situation,d:Watson,pred:go,,,,,,,d:1891-09-02T18|d:6_O_clock,,,,,d:Holmes,,1891-09-02T18:00:00,d:392,,,,,,,,,,,At six o'clock,六時に、ワトソンはホームズへ行った
+d:392,kgc:Situation,d:Watson,pred:think,,,,d:393,,,,,,,,,,,d:394,,,,,,,,,,,Watson thought the following,ワトソンは以下を思った
+d:393,kgc:Thought,d:Watson,pred:notBeInTime,,d:Watson,d:392,,d:Solution,,,,,,,,,,,,,,,,,,,,,Watson is not in time for a solution,ワトソンは解決に間に合わない
+d:394,kgc:Situation,d:Holmes,,pred:asleep,,,,,,,d:Armchair,,,,,,,d:395,,,,,,,,,,,Holmes was sleeping in an armchair,ホームズは肘掛椅子で寝ていた
+d:395,kgc:Situation,d:Holmes,pred:say,,,,d:396|d:397,,,,,,,,,,,d:398,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:396,kgc:Statement,,pred:notHave,,d:Holmes,d:395,d:Incident|d:Mystery,,,,,,,,,,,,,,,,,,,,,,The incident has no mystery,事件は謎を持たない
+d:397,kgc:Statement,d:Holmes,pred:cannotCatch,,d:Holmes,d:395,d:Villain,,,,,,,,,,,,,,,,,,,,,,Holmes can not catch the villain,ホームズは悪党を捉えられない
+d:398,kgc:Situation,,pred:echo,,,,d:footsteps,,,,d:Corridor,,,,,,,d:399,,,,,,,,,,,Footsteps echo in the corridor,足音が廊下で響く
+d:399,kgc:Situation,d:Holmes,pred:say,,,,d:400,,,,,,,,,,,d:400,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:400,kgc:Statement,d:Windibank,pred:come,,d:Holmes,d:399,,,,,d:Holmes,,,,,,,d:408,,,,,,,,,,,Windibank came,ウィンディバンクが来た
+d:401,kgc:Situation,,,pred:good,,,d:body_of_Windibank,,,,,,,,,,,,,,,,,,,,,,Windibank's physique is good,ウィンディバンクの体格はいい
+d:402,kgc:Situation,d:Windibank,,pred:ｍedium_height,,,,,,,,,,,,,,,,,,,,,,,,,Windibank is medium-sized,ウィンディバンクは中背である
+d:403,kgc:Situation,,,pred:around_30_years_old,,,d:age_of_Windibank,,,,,,,,,,,,,,,,,,,,,,The age of Windibank is around 30 years old,ウィンディバンクの年は30歳前後である
+d:404,kgc:Situation,d:Windibank,pred:notHave,,,,d:mustache,,,,,,,,,,,,,,,,,,,,,,Windibank has no bribe,ウィンディバンクは髯を持たない
+d:405,kgc:Situation,,pred:bad,,,,d:color_of_face_of_Windibank,,,,,,,,,,,,,,,,,,,,,,The color of Windibank is bad,ウィンディバンクの顔色は悪い
+d:406,kgc:Situation,,,pred:calm,,,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Windibank's behavior is calm,ウィンディバンクの物腰は穏やかである
+d:407,kgc:Situation,,pred:sharp,,,,d:eyes_of_Windibank,,,,,,,,,,,,,,,,,,,,,,Windibank's gray eyes are sharp,ウィンディバンクの灰色の瞳は鋭い
+d:408,kgc:Situation,d:Windibank,pred:see,,,,,d:Holmes|d:Watson,,,,,,,,,,d:409,,,,,,,,,,,Windibank saw Holmes and Watson,ウィンディバンクはホームズとワトソンを見た
+d:409,kgc:Situation,d:Windibank,pred:put,,,,d:Bowler_hat,,,,d:Horizontal_shelf,,,,,,,d:410,,,,,,,,,,,Windibank put a bowler hat on the side shelf,ウィンディバンクは山高帽を横棚に置いた
+d:410,kgc:Situation,d:Windibank,pred:greet,,,,,d:Holmes,,,,,,,,,,d:411,,,,,,,,,,,Windibank greets Holmes,ウィンディバンクはホームズに挨拶した
+d:411,kgc:Situation,d:Windibank,pred:sit,,,,d:chair,,,,,,,,,,,d:412,,,,,,,,,,,Windibank sat in a chair,ウィンディバンクは椅子に座った
+d:412,kgc:Situation,d:Holmes,pred:say,,,,d:413,,,,,,,,,,,d:414,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:413,kgc:Statement,,,pred:letter_of_Windibank,d:Holmes,d:412,d:letter_of_type,,,,,,,,,,,,,,,,,,,,,,The type letter is a Windibank letter,タイプの手紙はウィンディバンクの手紙である
+d:414,kgc:Situation,d:Windibank,pred:say,,,,d:415|d:416|d:417|d:418|d:419|d:420|d:421|d:422|d:423|d:424|d:425,,,,,,,,,,,d:426,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:415,kgc:Statement,d:Windibank,pred:worry,,d:Windibank,d:414,d:Late,,,,,,,,,,,,,,,,,,,,,,Windibank worried about being late,ウィンディバンクは遅刻を心配した
+d:416,kgc:Statement,d:Windibank,pred:busy,,d:Windibank,d:414,,,,,,,,,,,,,,,,,,,,,,,Windibank is busy,ウィンディバンクは忙しい
+d:417,kgc:Statement,d:Windibank,pred:apologize,,d:Windibank,d:414,d:418,,,,,,,,,,,,,,,,,,,,,,Windibank apologizes for,ウィンディバンクは以下を謝る
+d:418,kgc:Statement,d:Sutherland,pred:bother,,d:Windibank,d:414|d:417,d:Holmes,,,,,,,,,,,,,,,,,,,,,,Sutherland bothers Holmes,サザランドがホームズを煩わせる
+d:419,kgc:Statement,d:Windibank,pred:notWant,,d:Windibank,d:414,d:420,,,,,,,,,,,,,,,,,,,,,,Windibank does not want,ウィンディバンクは以下を望まない
+d:420,kgc:Statement,d:Sutherland,pred:come,,d:Windibank,d:414|d:419,,,,,d:Holmes,,,,,,,,,,,,,,,,,,Sutherland comes to Holmes,サザランドがホームズに来る
+d:421,kgc:Statement,d:Sutherland,pred:say,,d:Windibank,d:414,d:Family_calamity,,,,,,,,,,,,,,,,,,,,,,Sutherland talks about family misfortune,サザランドが家庭の災難を話す
+d:422,kgc:Statement,d:Sutherland,pred:move,,d:Windibank,d:414,,,,,,,d:Immediately,,,,,,,,,,,,,,,,Sutherland moves quickly,サザランドはすぐに動く
+d:423,kgc:Statement,d:Windibank,pred:bePleased,,d:Windibank,d:414,d:424,,,,,,,,,,,,,,,,,,,,,,Windibank is pleased to,ウィンディバンクは以下に喜ぶ
+d:424,kgc:Statement,d:Holmes,,pred:notEqualTo,d:Windibank,d:414|d:423,d:police_officer,,,,,,,,,,,,,,,,,,,,,,Holmes is not a police officer,ホームズは警察官憲ではない
+d:425,kgc:Statement,d:Windibank,pred:notWant,,d:Windibank,d:414,d:425a,,,,,,,,,,,,,,,,,,,,,,Windibank wants to avoid unnecessary expenses,ウィンディバンクは無用の出費を避けたい
+d:426,kgc:Situation,d:Windibank,pred:think,,,,d:427,,,,,,,,,,,d:428,,,,,,,,,,,Windibank thinks the following,ウィンディバンクは以下を思う
+d:427,kgc:Situation,d:Holmes,pred:cannotFind,,,d:426,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,Holmes can not find Hosmer,ホームズはホズマを見つけられない
+d:428,kgc:Situation,d:Holmes,pred:say,,,,d:429,,,,,,,,,,,d:430,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:429,kgc:Statement,d:Holmes,pred:find,,d:Holmes,d:428,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,Holmes find Hosmer,ホームズはホズマを見つける
+d:430,kgc:Situation,d:Windibank,,,,,d:gloves,,,,,,d:Surprised,,,,,d:432,,,,,,,,,,,Windibank dropped her gloves in surprise,ウィンディバンクは驚いて手袋を落とした
+d:431,kgc:Situation,,pred:drop,,,,,,,,,,,,,,,,,,,,,,,,,,,
+d:432,kgc:Situation,d:Windibank,pred:bePleased,,,,d:433,,,,,,,,,,,d:434,,,,,,,,,,,Windibank was pleased with,ウィンディバンクは以下を喜んだ
+d:433,kgc:Situation,d:Holmes,pred:find,,,d:432,,d:Hosmer,,,,,,,,,,,,,,,,,,,,,Holmes find Hosmer,ホームズがホズマを見つける
+d:434,kgc:Situation,d:Holmes,pred:say,,,,d:435|d:436|d:437|d:438|d:439,,,,,,,,,,,d:440,,,,,,,,,,,Holmes said the following,ホームズが以下を言った
+d:435,kgc:Statement,,,pred:different,d:Holmes,d:434,d:letter_by_Typewriter,,,,,,d:Like_handwriting,,,,,,,,,,,,,,,,Typewriter letters differ like handwriting,タイプの手紙は筆跡のように異なる
+d:436,kgc:Statement,,,pred:blurred,d:Holmes,d:434,d:e,,,,d:letter_of_Windibank,,,,,,,,,,,,,d:438,,,,,In the Windibank letter,ウィンディバンクの手紙では、eが不鮮明である
+d:438,kgc:Statement,,pred:miss,,d:Holmes,d:434,d:r,,,,d:letter_of_Windibank,,,,,,,,,,,,,,,,,,In the Windibank letter,ウィンディバンクの手紙では、rが欠けている
+d:439,kgc:Statement,,pred:have,,d:Holmes,d:434,d:14_features|d:letter_of_Windibank,,,,,,,,,,,,,,,,,,,,,,Windibank's letter has 14 features,ウィンディバンクの手紙は14の特徴を持つ
+d:440,kgc:Situation,d:Windibank,pred:say,,,,d:441|d:443,,,,,,,,,,,d:444,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:441,kgc:Statement,,pred:have,,d:Windibank,d:440,d:One_Typewriter|d:workplace_of_Windibank,,,,,,,,,,,,,d:443,,,,,,,,,Windibank's workplace has one machine,ウィンディバンクの職場は１つの機械を持つ
+d:443,kgc:Statement,,pred:wearOut,,d:Windibank,d:440,d:character_of_typewriter,,,,,,,,,,,,,,,,,,,,,,Letters wear out,文字が摩滅する
+d:444,kgc:Situation,d:Holmes,pred:say,,,,d:445|d:446|d:447|d:448|d:449|d:450,,,,,,,,,,,d:451,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:445,kgc:Statement,d:Holmes,pred:writing,,d:Holmes,d:444,d:446|d:paper,,,,,,,,,,,,,,,,,,,,,,Holmes is writing a dissertation (below),ホームズは論文（以下）を書いている
+d:446,kgc:Statement,,,pred:relate,d:Holmes,d:444|d:445,d:Crime|d:Typewriter,,,,,,,,,,,,,,,,,,,,,,Typewriters are involved in crime,タイプライターは犯罪と関係している
+d:447,kgc:Statement,,pred:beWritten,,d:Holmes,d:444,d:letter_of_Hosma,,,,,,d:typewriter,,,,,,,,,,,,,,,,letter of Hosma is written in type,ホズマの手紙はタイプライターで書かれている
+d:448,kgc:Statement,,,pred:blurred,d:Holmes,d:444,d:e,,,,d:letter_of_Hosma,,,,,,,,,,,,,,,,,,In letter of Hosma,ホズマの手紙では、eが不鮮明である
+d:449,kgc:Statement,,pred:miss,,d:Holmes,d:444,d:r,,,,d:letter_of_Hosma,,,,,,,,,,,,,,,,,,In the letter of Hosmer r is missing,ホズマの手紙では、rが欠けている
+d:450,kgc:Statement,,pred:have,,d:Holmes,d:444,d:14_features|d:letter_of_Hosma,,,,,,,,,,,,,,,,,,,,,,letter of Hosma has 14 features,ホズマの手紙は14の特徴を持つ
+d:451,kgc:Situation,d:Windibank,pred:jumpUp,,,,,,,,,,,d:Chair,,,,d:452,,,,,,,,,,,Windibank jumped out of the chair,ウィンディバンクは椅子から跳び上がった
+d:452,kgc:Situation,d:Windibank,pred:grab,,,,d:hat,,,,,,,,,,,d:453,,,,,,,,,,,Windibank grabbed a hat,ウィンディバンクは帽子をつかんだ
+d:453,kgc:Situation,d:Windibank,pred:say,,,,d:454,,,,,,,,,,,d:455,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:454,kgc:Statement,d:Windibank,pred:notHave,,d:Windibank,d:453,d:Time_wasted,,,,,,,,,,,,,,,,,,,,,,Windibank has no wasted time,ウィンディバンクは無駄な時間を持たない
+d:455,kgc:Situation,d:Windibank,pred:request,,,,d:456,d:Holmes,,,,,,,,,,d:459,,,,,,,,,,,Windibank asks Holmes:,ウィンディバンクは以下をホームズに頼む
+d:456,kgc:Situation,d:Holmes,pred:inform,,,d:455,,d:Windibank,,d:458,,,,,,,,,,,,,,,,,,,Holmes Tells Windibank,ホームズがウィンディバンクに知らせる
+d:458,kgc:Situation,d:Holmes,pred:catch,,,,,d:Hosmer,,,,,,,,,,,,,,,,,,,,,Holmes catches Hosmer,ホームズがホズマを捕まえる
+d:459,kgc:Situation,d:Holmes,pred:lock,,,,d:door,,,,,,,,,,,d:460,,,,,,,,,,,Holmes locked the door,ホームズは扉をロックした
+d:460,kgc:Situation,d:Holmes,pred:say,,,,d:461,,,,,,,,,,,d:462,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:461,kgc:Statement,d:Holmes,pred:catch,,d:Holmes,d:460,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,Holmes caught Hosmer,ホームズはホズマを捕まえた
+d:462,kgc:Situation,d:Windibank,pred:ask,,,,d:Place,d:Holmes,,,,,,,,,,d:463,,,,,,,,,,,Windibank asked Holmes where Hosmer was,ウィンディバンクはホズマの居場所をホームズに尋ねた
+d:463,kgc:Situation,d:lip_of_Windibank,,pred:pale,,,,,,,,,,,,,,d:464,,,,,,,,,,,Windibank's lips were deep blue,ウィンディバンクの唇は真っ青だった
+d:464,kgc:Situation,d:Windibank,pred:lookAround,,,,d:Around,,,,,,,,,,,d:465,,,,,,,,,,,Windibank looked around,ウィンディバンクは回りを見まわした
+d:465,kgc:Situation,d:Holmes,pred:say,,,,d:466,,,,,,,,,,,d:467,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:466,kgc:Statement,d:Windibank,pred:cannotEscape,,d:Holmes,d:465,,,,,,,,d:Holmes,,,,,,,,,,,,,,,Windibank can not escape from Holmes,ウィンディバンクはホームズから逃げられない
+d:467,kgc:Situation,d:Windibank,pred:sit,,,,,,,,,,,,,d:Chair,,d:468,,,,,,,,,,,Windibank sat in a chair,ウィンディバンクは椅子に座った
+d:468,kgc:Situation,d:face_of_Windibank,,pred:seem,,,d:dead,,,,,,,,,,,d:469,,,,,,,,,,,Windibank's face seemed dead,ウィンディバンクの顔は死んだようだった
+d:469,kgc:Situation,,pred:have,,,,d:cold_sweat|d:face_of_Windibank,,,,,,,,,,,d:470,,,,,,,,,,,Windibank's forehead has cold sweat,ウィンディバンクの額は冷や汗を持つ
+d:470,kgc:Situation,d:Windibank,pred:say,,,,d:471,,,,,,,,,,,d:472,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:471,kgc:Statement,d:Holmes,pred:notComplain,,d:Windibank,d:470,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Holmes does not sue Windibank,ホームズはウィンディバンクを訴えない
+d:472,kgc:Situation,d:Holmes,pred:say,,,,d:473|d:474|d:475|d:476|d:477|d:478|d:479|d:480|d:481|d:482|d:483|d:484|d:485|d:486|d:487|d:488|d:489|d:490|d:491|d:492|d:493|d:494|d:495|d:496|d:497|d:498|d:499|d:500|d:501|d:502|d:503|d:504|d:505|d:506|d:507,,,,,,,,,,,d:508,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:473,kgc:Statement,d:Holmes,,pred:pity,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,Holmes is sorry,ホームズは残念である
+d:474,kgc:Statement,d:Holmes,pred:meet,,d:Holmes,d:472,d:treat,,,,,,d:cruel|d:selfish,,,,,,,,,,,,,,,,Holmes first met a cruel and selfish treat,ホームズは初めて残酷で身勝手なごまかしに会った
+d:475,kgc:Statement,d:Windibank,pred:marry,,d:Holmes,d:472,d:mother_of_Sutherland,,,,,d:money,,,,,,,,,,,,,,,,,Windibank married for money with mother of Sutherland,ウィンディバンクはサザランドの母とお金のために結婚した
+d:476,kgc:Statement,d:Windibank,pred:canBeUsed,,d:Holmes,d:472,d:money_of_Sutherland,,,d:478,,,,,,,,,,,,,,,,,,,Windibank can use Sutherland gold,ウィンディバンクはサザランドの金が使える
+d:478,kgc:Statement,d:Windibank,pred:live,,d:Holmes,d:472,d:Sutherland,,,,,,,,,,,,,,,,,,,,,,Windibank lives with Sutherland,ウィンディバンクがサザランドと住んでいる
+d:479,kgc:Statement,d:Sutherland,pred:have,,d:Holmes,d:472,d:large_money,,,,,,,,,,,,,,,,,,,,,,Sutherland's money is big money,サザランドの金は大金である
+d:480,kgc:Statement,d:Windibank,pred:want,,d:Holmes,d:472,d:money_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Windibank Wants Sutherland Gold,ウィンディバンクはサザランドの金が欲しい
+d:481,kgc:Statement,d:Sutherland,,pred:good-natured,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,Sutherland is funny,サザランドはお人好しである
+d:482,kgc:Statement,d:Sutherland,pred:have,,d:Holmes,d:472,d:Compassion|d:Love,,,,,,,,,,,,,,,,,,,,,,Sutherland has emotions and compassion,サザランドは情と思いやりを持つ
+d:483,kgc:Statement,d:character_of_Sutherland,pred:good,,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,The character of Sutherland is good,サザランドの性格は良い
+d:484,kgc:Statement,d:Sutherland,pred:have,,d:Holmes,d:472,d:Money,,,,,,,,,,,,,d:486,,,,,,,,,Sutherland has money,サザランドは金を持っている
+d:486,kgc:Statement,,pred:marry,,d:Holmes,d:472,,,,,,,d:Immediately,,,,,d:488,,,,,,,,,,,Sutherland gets married soon,サザランドはすぐに結婚する
+d:488,kgc:Statement,d:Windibank,pred:lose,,d:Holmes,d:472,d:100_GBP,,,d:1_year,,,,,,,,,,d:490,,,,,,,,,Windibank loses 100 pounds in a year,ウィンディバンクは1年で100ポンドを失う
+d:490,kgc:Statement,d:Windibank,pred:notIssue,,d:Holmes,d:472,d:Sutherland,,,,,,,d:House_of_Windibank,,,,,,,,,,,,,,,Windibank will not leave Sutherland from home,ウィンディバンクはサザランドを家から出さない
+d:491,kgc:Statement,d:Windibank,pred:prohibit,,d:Holmes,d:472,d:relation_of_same-aged_people,,,,,,,,d:Sutherland,,,,,,,,,,,,,,Windibank prohibits Sutherland from dating with people of the same age,ウィンディバンクはサザランドに同年代の人間との交際を禁じる
+d:492,kgc:Statement,d:491,pred:notContinue,,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,The above does not continue,上記は続かない
+d:493,kgc:Statement,d:Sutherland,pred:rebel,,d:Holmes,d:472,,d:Windibank,,,,,,,,,,,,,,,,,,,,,Sutherland defy Windibank,サザランドはウィンディバンクに反抗する
+d:494,kgc:Statement,d:Sutherland,pred:insist,,d:Holmes,d:472,d:right_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Sutherland claims rights,サザランドは権利を主張する
+d:495,kgc:Statement,d:Sutherland,pred:want,,d:Holmes,d:472,d:495a,,,,,,,,,,,,,,,,,,,,,,Sutherland wants to go to a ball,サザランドは舞踏会に行きたい
+d:496,kgc:Statement,d:Windibank,pred:get,,d:Holmes,d:472,d:help_of_mother_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Windibank gets the help of mother of Sutherland,ウィンディバンクはサザランドの母の助けを得る
+d:497,kgc:Statement,d:Windibank,pred:disguise,,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,Windibank disguises,ウィンディバンクは変装する
+d:498,kgc:Statement,d:Windibank,pred:wear,,d:Holmes,d:472,d:Color_glasses,,,,,,,,,,,,,,,,,,,,,,Windibank wore colored glasses,ウィンディバンクは色眼鏡を着けた
+d:499,kgc:Statement,d:Windibank,pred:wear,,d:Holmes,d:472,d:mustache|d:whiskers,,,,,,,,,,,,,,,,,,,,,,Windibank wore a mustache,ウィンディバンクは口髭頬髯を着けた
+d:500,kgc:Statement,d:Windibank,pred:whisper,,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,Windibank whispered,ウィンディバンクはささやいた
+d:501,kgc:Statement,d:disguise,,pred:safe,d:Holmes,d:472,,,,,,,,,,,,,d:503,,,,,,,,,,Disguise is safe,変装は安全である
+d:503,kgc:Statement,d:Sutherland,,pred:close_eye,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,Sutherland is nearsighted,サザランドは近眼である
+d:504,kgc:Statement,d:Windibank,,pred:Hosmer,d:Holmes,d:472,,,,,,,,,,,,,,,,,,,,,,,Windibank is Hosmer,ウィンディバンクはホズマである
+d:505,kgc:Statement,d:Windibank,pred:chaseAway,,d:Holmes,d:472,d:others,,,,,,,d:Sutherland,,,,,d:507,,,,,,,,,,Windibank chases others from Sutherland,ウィンディバンクはサザランドから他人を追い払う
+d:507,kgc:Statement,d:Sutherland,pred:love,,d:Holmes,d:472,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Sutherland loves Windibank,サザランドがウィンディバンクを愛する
+d:508,kgc:Situation,d:Windibank,pred:notThink,,,,d:509,,,,,,,,,,,d:510,,,,,,,,,,,Windibank did not think of,ウィンディバンクは以下を思わなかった
+d:509,kgc:Statement,d:Windibank,pred:rob,,d:Windibank,d:508,d:heart_of_Sutherland,,,,,,,,,,,,,,,,,,,,,,Windibank robs Sutherland,ウィンディバンクはサザランドの心を奪う
+d:510,kgc:Situation,d:Holmes,pred:say,,,,d:511|d:512|d:514|d:515|d:516|d:517|d:518|d:519|d:520|d:521|d:522|d:523|d:524|d:525|d:526|d:527|d:528|d:529|d:530|d:531|d:532|d:533|d:534|d:535|d:536|d:537|d:538,,,,,,,,,,,d:539,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:511,kgc:Statement,d:Sutherland,pred:love,,d:Holmes,d:510,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,Sutherland loved Hosmer,サザランドはホズマを愛した
+d:512,kgc:Statement,d:Sutherland,pred:thinking,,d:Holmes,d:510,d:513,,,,,,,,,,,,,,,,,,,,,,Sutherland thinks that,サザランドは以下を思っている
+d:513,kgc:Thought,d:Windibank,pred:exist,,d:Sutherland_s_thoughts,d:512,,,,,d:France,,,,,,,,,,,,,,,,,,Windibank is in France,ウィンディバンクはフランスにいる
+d:514,kgc:Statement,d:thought_of_Sutherland,pred:increase,,d:Holmes,d:510,,,,,,d:praise_of_mother_of_Sutherland,,,,,,,,,,,,,,,,,Sutherland's thoughts grow with Sutherland&#39;s mother&#39;s praise,サザランドの思いはサザランドの母の賞賛で増す
+d:515,kgc:Statement,d:Hosmer,pred:meet,,d:Holmes,d:510,d:Sutherland,,,,,,d:Many_times,,,,,,,,,,,,,,,,Hosmer met Sutherland many times,ホズマはサザランドと何度も会った
+d:516,kgc:Statement,d:Windibank,pred:relive,,d:Holmes,d:510,,,,d:518,,,,,,,,,,,,,,,,,,,Windibank was relieved,ウィンディバンクは安心した
+d:518,kgc:Statement,d:Windibank,pred:engage,,d:Holmes,d:510,d:Sutherland,,,,,,,,,,,,,,,,,,,,,,Windibank gets engaged with Sutherland,ウィンディバンクはサザランドと婚約する
+d:519,kgc:Statement,d:love_of_Sutherland,pred:notGo,,d:Holmes,d:510,,,,,,,,,d:others,,,,,,,,,,,,,,Sutherland's love does not go to others,サザランドの愛は他人に行かない
+d:520,kgc:Statement,d:Windibank,pred:cannotCheat,,d:Holmes,d:510,d:Sutherland,,,d:Forever,,,,,,,,,,,,,,,,,,,"Forever, Windibank can't fool Sutherland",永遠に、ウィンディバンクはサザランドを騙せない
+d:521,kgc:Statement,d:Windibank,pred:need,,d:Holmes,d:510,d:522,,,,,,,,,,,,,,,,,,,,,,Windibank needs:,ウィンディバンクは以下が必要である
+d:522,kgc:Statement,d:Windibank,pred:breakUp,,d:Holmes,d:510|d:521,d:Sutherland,,,,,,d:Dramatically,,,,,d:524,,,,,,,,,,,Windibank breaks up with Sutherland dramatically,ウィンディバンクは劇的にサザランドと別れる
+d:524,kgc:Statement,d:heart_of_Sutherland,pred:engrave,,d:Holmes,d:510,d:Windibank,,,d:Forever,,,,,,,,,,,,,,,,,,,Forever,永遠に、サザランドの心はウィンディバンクを刻む
+d:525,kgc:Statement,d:Sutherland,pred:notLove,,d:Holmes,d:510,d:others,,,d:For_the_time_being,,,,,,,,,,d:526,,,,,,,,,For the time being,当分の間、サザランドは他人を愛さない
+d:527,kgc:Statement,d:Windibank,pred:let,,d:Holmes,d:510,d:527a,d:Sutherland,,,,,,,,,,,,,,,,,,,,,Windibank made Sutherland swear in the Bible,ウィンディバンクはサザランドに聖書で誓わせた
+d:528,kgc:Statement,d:Windibank,pred:imply,,d:Holmes,d:510,d:529,,,,,,,,,,,,,,,,,,,,,,Windibank hints at,ウィンディバンクは以下をほのめかした
+d:529,kgc:Statement,,pred:happen,,d:Holmes,d:510|d:528,d:Incident,,,d:1891-08-14T10|d:morning_of_wedding_day,,,,,,,1891-08-14T10:00:00,,,,,,,,,,,,An incident occurs on the morning of the wedding day,結婚式の当日の朝に事件が起こる
+d:530,kgc:Statement,d:Windibank,pred:want,,d:Holmes,d:510,d:531,,,,,,,,,,,,,,,,,,,,,,Windibank wanted to,ウィンディバンクは以下を望んだ
+d:531,kgc:Statement,d:Hosmer,pred:bind,,d:Holmes,d:510|d:530,,,,,,,,,,,,,,,,,,,,,,,Sutherland tied to Hosma,サザランドがホズマに縛られる
+d:532,kgc:Statement,d:Sutherland,pred:notLove,,d:Holmes,d:510,d:others,,,,,,,,,,,,d:534,,,,,,,,,,Sutherland does not love others,サザランドが他人を愛さない
+d:534,kgc:Statement,d:Life_of_Hosmer|d:death_of_Hosmer,,pred:unknown,d:Holmes,d:510,,,,,,,,,,,,,,,,,,,,,,,Life and death of Hosmer is unknown,ホズマの生死が不明である
+d:535,kgc:Statement,d:Windibank,pred:carry,,d:Holmes,d:510,d:Sutherland,,,,,,,,d:Church,,,d:537,,,,,,,,,,,Windibank carried Sutherland to the church,ウィンディバンクは教会にサザランドを運んだ
+d:537,kgc:Statement,d:Windibank,pred:disappear,,d:Holmes,d:510,,,,,,,,,,,,,,,,,,,,,,,Windibank has disappeared,ウィンディバンクは消えた
+d:538,kgc:Statement,d:Windibank,pred:goOut,,d:Holmes,d:510,,,,,,,,d:Opposite_door,,,,,,,,,,,,,,,Windibank came out of the opposite door,ウィンディバンクは反対の戸から出た
+d:539,kgc:Situation,d:Windibank,pred:stand,,,,,,,,,,,d:Chair,,,,d:540,,,,,,,,,,,Windibank stood out of the chair,ウィンディバンクは椅子から立った
+d:540,kgc:Situation,d:Windibank,pred:sneer,,,,,,,,,,,,,,,d:541,,,,,,,,,,,Windibank laughed,ウィンディバンクは冷笑した
+d:541,kgc:Situation,d:Windibank,pred:say,,,,d:542|d:543|d:544|d:545|d:546|d:547,,,,,,,,,,,d:548,,,,,,,,,,,Windibank said,ウィンディバンクは以下を言った
+d:542,kgc:Statement,d:Windibank,pred:notKnow,,d:Windibank,d:541,d:truth,,,,,,,,,,,,,,,,,,,,,,Windibank does not know the facts,ウィンディバンクは事実を知らない
+d:543,kgc:Statement,d:Windibank,pred:notBreak,,d:Windibank,d:541,d:law,,,,,,,,,,,,,,,,,,,,,,Windibank has not beat the law,ウィンディバンクは法律を破っていない
+d:544,kgc:Statement,d:Windibank,pred:canSue,,d:Windibank,d:541,d:Holmes,,,d:547,,d:Assault_threat|d:Illegally,,,,,,,,,,,,,,,,,Windibank can sue Holmes for beating threat and illegal detention,ウィンディバンクはホームズを暴行の脅迫と不法拘束で訴えることができる
+d:547,kgc:Statement,d:Holmes,pred:close,,d:Windibank,d:541,d:door,,,,,,,,,,,,,,,,,,,,,,Holmes is closing the door,ホームズは扉を閉めている
+d:548,kgc:Situation,d:Holmes,pred:say,,,,d:549,,,,,,,,,,,d:550,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:549,kgc:Statement,d:law,pred:cannotHandle,,d:Holmes,d:548,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Law can not handle Windibank,法律はウィンディバンクを扱えない
+d:550,kgc:Situation,d:Holmes,pred:open,,,,d:door,,,,,,,,,,,d:551,,,,,,,,,,,Holmes opened the door,ホームズは扉を開けた
+d:551,kgc:Situation,d:Holmes,pred:say,,,,d:552|d:553,,,,,,,,,,,d:554,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:552,kgc:Statement,d:Windibank,pred:have,,d:Holmes,d:551,d:sin,,,,,,,,,,,,,,,,,,,,,,Windibank has sins,ウィンディバンクは罪を持つ
+d:553,kgc:Statement,d:brother_of_Sutherland|d:friend_of_Sutherland,pred:punish,,d:Holmes,d:551,d:Windibank,,,,,,,,,,,,,,,,,,,,,,Sutherland brothers best friend wins Windibank,サザランドの兄弟親友がウィンディバンクを懲らしめる
+d:554,kgc:Situation,d:Watson,pred:say,,,,d:555,,,,,,,,,,,d:555,,,,,,,,,,,Watson said the following,ワトソンは以下を言った
+d:555,kgc:Statement,d:Watson,pred:want,,d:Watson,d:554,d:555a,,,,,,,,,,,d:556,,,,,,,,,,,Watson wants to try a hunting whistle,ワトソンは狩猟鞭を試したい
+d:556,kgc:Situation,d:Watson,pred:approach,,,,,,,,,,,,d:Moth,,,d:557,,,,,,,,,,,Watson got close to the wolf,ワトソンは鞭へ近寄った
+d:557,kgc:Situation,d:Windibank,pred:escape,,,,,,,,,,d:At_full_speed,,,,,d:558,,,,,,,,,,,Windibank ran away at full speed,ウィンディバンクは全速力で逃げた
+d:558,kgc:Situation,d:Holmes,pred:say,,,,d:559|d:560|d:561|d:562|d:563|d:564|d:565|d:566|d:567|d:568|d:569|d:570|d:571|d:572|d:573|d:574|d:575|d:576|d:578|d:579|d:580,,,,,,,,,,,d:558,,,,,,,,,,,Holmes said the following,ホームズは以下を言った
+d:559,kgc:Statement,d:Windibank,pred:repeat,,d:Holmes,d:558,d:sin,,,,,,,,,,,,,,,,,,,,,,Windibank Overlaps Sin,ウィンディバンクは罪を重ねる
+d:560,kgc:Statement,d:Windibank,pred:go,,d:Holmes,d:558,,,,d:At_last,,,,,d:Gallow,,,,,,,,,,,,,,Finally,最後に、ウィンディバンクは絞首台に行く
+d:561,kgc:Statement,,pred:have,,d:Holmes,d:558,d:Deep_motive|d:behavior_of_Hosmer,,,,,,,,,,,,,,,,,,,,,,The behavior of Hosmer had a deep motive,ホズマの振る舞いは深い動機を持っていた
+d:562,kgc:Statement,d:Windibank,pred:gain,,d:Holmes,d:558,d:money,,,,,,,,,,,,,,,,,,,,,,Windibank Gets Money,ウィンディバンクがお金を得る
+d:563,kgc:Statement,d:Hosmer|d:Windibank,pred:notAppear,,d:Holmes,d:558,,,,,,,d:together,,,,,,,,,,,,,,,,Windibank and Hosmer do not appear together,ウィンディバンクとホズマは一緒に現れない
+d:564,kgc:Statement,,,pred:seem,d:Holmes,d:558,d:Color_glasses|d:Moth|d:With_voice|d:disguise,,,,,,,,,,,,,,,,,,,,,,Colored glasses and voices and whistles reminiscent of disguise,色眼鏡と声と髯は変装を思わせる
+d:565,kgc:Statement,,pred:beTypeed,,d:Holmes,d:558,d:signature,,,,,,,,,,,,,,,,,,,,,,The signature was a type,署名がタイプであった
+d:566,kgc:Statement,d:Sutherland,pred:know,,d:Holmes,d:558,d:handwriting_of_Windibank,,,,,,,,,,,,,d:568,,,,,,,,,Sutherland knows Windibank handwriting,サザランドはウィンディバンクの筆跡を知っている
+d:568,kgc:Statement,d:Sutherland,pred:notice,,d:Holmes,d:558,d:handwriting_of_Windibank,,,,,,,,,,,,,,,,,,,,,,Sutherland notices Windibank handwriting,サザランドはウィンディバンクの筆跡に気づく
+d:569,kgc:Statement,d:Holmes,pred:know,,d:Holmes,d:558,d:company_of_Windibank,,,,,,,,,,,,,,,,,,,,,,Holmes knows the company of Windibank,ホームズはウィンディバンクの会社を知っている
+d:570,kgc:Statement,d:Holmes,pred:remove,,d:Holmes,d:558,d:Moth|d:glasses|d:voice,,,,,,,d:Personal_statement,,,,,,,,,,,,,,,Holmes removed eyebrows,ホームズは人相書から髯、眼鏡、声を取り除いた
+d:571,kgc:Statement,d:Holmes,pred:confirm,,d:Holmes,d:558,d:Personal_statement,,,,d:Company,,,,,,,,,,,,,,,,,,Holmes confirmed with the company,ホームズは人相書を会社に確認した
+d:572,kgc:Statement,d:Holmes,pred:know,,d:Holmes,d:558,d:characteristics_of_type,,,,,,,,,,,,,,,,,,,,,,Holmes was aware of the features of the type,ホームズはタイプの特徴に気づいていた
+d:573,kgc:Statement,d:Holmes,pred:send,,d:Holmes,d:558,d:letter,d:Windibank,,,,,,,,,,,,,,,,,,,,,Holmes sent a letter to Windibank,ホームズはウィンディバンクに手紙を送った
+d:574,kgc:Statement,d:reply,,pred:typist,d:Holmes,d:558,,,,,,,,,,,,,,,,,,,,,,,The reply was a typing,返事はタイプ打ちだった
+d:575,kgc:Statement,d:feature_of_type,pred:match,,d:Holmes,d:558,d:Hosmer,,,,,,,,,,,,,,,,,,,,,,The characteristics of the type matched Hosmer,タイプの特徴がホズマと一致した
+d:576,kgc:Statement,d:company,pred:say,,d:Holmes,d:558,d:577,,,,,,,,,,,,,,,,,,,,,,The company said the following,会社は以下を言った
+d:577,kgc:Statement,d:Personal_statement,,pred:is,d:someone_of_Company,d:576,d:Windibank,,,,,,,,,,,,,,,,,,,,,,The document is Windibank,人相書はウィンディバンクである
+d:578,kgc:Statement,d:Sutherland,pred:notBelieve,,d:Holmes,d:558,d:Holmes,,,,,,,,,,,,,,,,,,,,,,Sutherland does not believe in Holmes,サザランドはホームズを信じない
+d:579,kgc:Situation,,,,,d:558,,,,,,,,,,,,,,,d:580,,,,,,,,,
+d:580,kgc:Statement,d:Holmes,pred:say,,d:Holmes,d:558,d:truth,d:Sutherland,,,,,,,,,,,,,,,,,,,,,Holmes tell the truth to Sutherland,ホームズが真相をサザランドに伝える
+d:67a,kgc:Statement,d:Windibank,pred:visit,,d:Sutherland,d:067,,d:Holmes,,,,,,,,,,,,,,,,,,,,,,
+d:71a,kgc:Statement,d:mother_of_Sutherland,,,d:Sutherland,,,,,d:1889-10-01,,,,,,,1889-10-01T00:00:00,d:072,,,,,,,,,,,,
+d:79a,kgc:Statement,d:Sutherland,pred:get,,d:Sutherland,,d:4700_GBP,,,,,,,,,,,,,,,,,,,,,,,
+d:122a,kgc:Statement,d:Sutherland,pred:go,,d:Sutherland,d:122|d:123,d:Dance_party,,,,,,,,,,,,,,,,,,,,,,,
+d:179a,kgc:Statement,d:Hosmer,pred:receive,,d:Hosmer_s_statement,d:179,d:letter_of_type,,,,,,,,,,,,,,,,,,,,,,,
+d:203a,kgc:Thought,d:Hosmer,pred:marry,,d:Hosmer_s_thoughts,d:203,,d:Sutherland,,d:Before_return_of_father_of_Sutherland,,,,,,,,,,,,,,,,,,,,
+d:205a,kgc:Statement,d:Hosmer,pred:hold,,d:Sutherland,d:205,d:Bible,,,,,,,,,,,,,,,,,,,,,,,
+d:216a,kgc:Statement,d:Sutherland,pred:report,,d:Sutherland,d:216,d:Windibank,,,d:Before_the_wedding,,,,,,,,,,,,,,,,,,,,
+d:228a,kgc:Statement,d:hansom_carriage,pred:exist,,d:Sutherland,,,,,,d:Street,,,,,,,,,,,,,,,,,,,
+d:290a,kgc:Situation,d:Holmes,pred:call,,,,d:Sutherland,,,,,,,,,,,,,,,,,,,,,,,
+d:389a,kgc:Statement,d:Holmes,pred:meet,,d:Holmes,d:389,,d:Windibank,,d:1891-09-02T18|d:Tommorw_evening_6_o_clock,,,,,,,1891-09-02T18:00:00,,,,,,,,,,,,,
+d:425a,kgc:Statement,d:Windibank,pred:waste,,d:Windibank,d:425,d:money,,,,,,,,,,,,,,,,,,,,,,,
+d:495a,kgc:Statement,d:Sutherland,pred:go,,d:Holmes,d:495,,,,,d:Dance_Party,,,,,,,,,,,,,,,,,,,
+d:527a,kgc:Statement,d:Sutherland,pred:swear,,d:Holmes,d:527,,,,,,,d:bible,,,,,,,,,,,,,,,,,
+d:555a,kgc:Statement,d:Watson,pred:try,,d:Watson,d:555,d:Hunting_whistle,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,10 @@
+@prefix : <http://example.org/x#> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# closedFor with IDENTICAL values in two worlds: per the paper this is NOT a disagreement.
+:B1 { :letter :typedBy :machineW . }
+:ann :believes :B1 .
+:B2 { :letter :typedBy :machineW . }
+:bob :believes :B2 .
+:believes a dec:doxasticPredicate .
+rdf:subject dec:closedFor :typedBy .

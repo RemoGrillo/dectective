@@ -1,0 +1,109 @@
+{ 
+  "data" : "./prototype/exploratory/E02_doxastic.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 169.13806 ,
+  "input_quads" : 6 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 213.618059 ,
+        "cpu_ms" : 196.02726 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 5.362586975097656 ,
+        "phases" : {
+            "load_ms" : 37.248815 ,
+            "handlePermeation_ms" : 123.120615 ,
+            "enumerate_ms" : 44.212767
+          } ,
+        "per_world_ms" : {
+            "http://example.org/x#D#enumerate" : 40.404401 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.351583 ,
+            "http://example.org/x#S#enumerate" : 0.876293
+          } ,
+        "query_first_ms" : 54.094604 ,
+        "query_second_ms" : 2.658595
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#D" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 1 ,
+              "base_after" : 16 ,
+              "permeated_in" : 649 ,
+              "permeated_in_nontrivial" : 1 ,
+              "receives_from" : [ "http://example.org/x#S" ] ,
+              "materialised" : 665 ,
+              "inferred_trivial" : 14 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 649 ,
+              "inferred_trivial" : 648 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 2 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 672 ,
+              "inferred_trivial" : 665 ,
+              "inferred_nontrivial" : 2 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 3
+            }
+        } ,
+      "n_worlds" : 3 ,
+      "asserted_total" : 4 ,
+      "materialised_total" : 1986 ,
+      "permeated_total" : 649 ,
+      "inferred_total" : 1330 ,
+      "inferred_trivial_total" : 1327 ,
+      "inferred_nontrivial_total" : 3 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 3 ,
+      "dec_diagnostic_total" : 3 ,
+      "distinct_triples_all_worlds" : 675 ,
+      "redundancy" : 2.942222222222222 ,
+      "inconsistency_pairs" : 1 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/x#D http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/x#D s=http://www.w3.org/2000/01/rdf-schema#domain p=http://www.w3.org/2000/01/rdf-schema#domain o=http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 54.094604 ,
+      "query_second_ms" : 2.658595 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "http://example.org/x#D | http://www.w3.org/2000/01/rdf-schema#domain http://www.w3.org/2000/01/rdf-schema#domain http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" ]
+    } ,
+  "materialised_sha256" : "b2e53d3ff3f31e85ad0d41f2f2cb377242d05fc1f604e4d3159441a273a2e49e"
+}

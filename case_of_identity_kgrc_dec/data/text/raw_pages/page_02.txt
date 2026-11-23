@@ -1,0 +1,5 @@
+0	front_matter	This text is provided to you “as-is” without any warranty. No warranties of any kind, expressed or implied, are made to you as to the text
+0	front_matter	or any medium it may be on, including but not limited to warranties of merchantablity or ﬁtness for a particular purpose.
+0	front_matter	This text was formatted from various free ASCII and HTML variants. See http://sherlock-holm.es for an electronic form of this text and
+0	front_matter	additional information about it.
+0	front_matter	This text comes from the collection’s version 3.1.

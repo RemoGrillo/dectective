@@ -1,0 +1,916 @@
+{
+  "file": "sources/kgrc/ACaseOfIdentity.ttl",
+  "parser": "rdflib 7.6.0",
+  "basic": {
+    "triples": 7217,
+    "distinct_subjects": 1415,
+    "distinct_iris_any_position": 1496,
+    "blank_nodes": 0,
+    "literal_occurrences": 2538,
+    "distinct_literals": 2355,
+    "literal_datatypes": {
+      "rdf:langString": 2511,
+      "http://www.w3.org/2001/XMLSchema#dateTime": 26,
+      "xsd:string(plain)": 1
+    }
+  },
+  "namespaces": {
+    "http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/": {
+      "s": 6023,
+      "o": 2419
+    },
+    "http://kgc.knowledge-graph.jp/ontology/kgc.owl#": {
+      "p": 4136,
+      "o": 1578,
+      "s": 114
+    },
+    "http://kgc.knowledge-graph.jp/data/predicate/": {
+      "s": 1074,
+      "o": 617
+    },
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#": {
+      "p": 1587
+    },
+    "http://www.w3.org/2000/01/rdf-schema#": {
+      "p": 1492
+    },
+    "http://www.w3.org/2002/07/owl#": {
+      "o": 61
+    },
+    "http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland&#": {
+      "s": 4,
+      "o": 1
+    },
+    "http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland&#": {
+      "s": 2,
+      "o": 1
+    },
+    "http://creativecommons.org/ns#": {
+      "p": 2
+    },
+    "http://www.w3.org/2001/XMLSchema#": {
+      "o": 1
+    },
+    "https://creativecommons.org/licenses/by/4.0/": {
+      "o": 1
+    }
+  },
+  "classes": {
+    "kgc:Statement": 389,
+    "kgc:PhysicalObject": 248,
+    "kgc:Object": 213,
+    "kgc:Action": 206,
+    "kgc:Situation": 149,
+    "kgc:OFobj": 129,
+    "kgc:Property": 75,
+    "owl:ObjectProperty": 42,
+    "kgc:NotAction": 30,
+    "kgc:Thought": 21,
+    "kgc:AbstractTime": 21,
+    "kgc:Person": 18,
+    "owl:Class": 17,
+    "kgc:Place": 13,
+    "kgc:CanNotAction": 10,
+    "kgc:CanAction": 4,
+    "owl:AnnotationProperty": 1,
+    "owl:DatatypeProperty": 1
+  },
+  "predicates": {
+    "rdf:type": 1587,
+    "rdfs:label": 1438,
+    "kgc:source": 1073,
+    "kgc:what": 801,
+    "kgc:subject": 482,
+    "kgc:hasPredicate": 457,
+    "kgc:infoSource": 410,
+    "kgc:then": 168,
+    "kgc:ofWhole": 159,
+    "kgc:ofPart": 129,
+    "kgc:hasProperty": 94,
+    "kgc:when": 75,
+    "kgc:where": 53,
+    "kgc:whom": 51,
+    "rdfs:subPropertyOf": 39,
+    "kgc:Not": 30,
+    "kgc:time": 26,
+    "kgc:how": 24,
+    "kgc:to": 20,
+    "kgc:from": 15,
+    "rdfs:subClassOf": 13,
+    "kgc:therefore": 11,
+    "kgc:at_the_same_time": 10,
+    "kgc:canNot": 10,
+    "kgc:why": 9,
+    "kgc:on": 8,
+    "kgc:if": 6,
+    "kgc:because": 5,
+    "kgc:can": 4,
+    "kgc:after": 2,
+    "http://creativecommons.org/ns#attributionName": 1,
+    "rdfs:range": 1,
+    "kgc:whoｍ": 1,
+    "rdfs:comment": 1,
+    "kgc:": 1,
+    "http://creativecommons.org/ns#license": 1,
+    "kgc:hadPredicate": 1,
+    "kgc:and": 1
+  },
+  "action_vocabulary": {
+    "distinct_hasPredicate_values": 206,
+    "distinct_hasProperty_values": 75,
+    "top_hasPredicate": {
+      "pred:say": 73,
+      "pred:have": 20,
+      "pred:want": 12,
+      "pred:think": 11,
+      "pred:go": 11,
+      "pred:exist": 9,
+      "pred:know": 7,
+      "pred:meet": 7,
+      "pred:send": 6,
+      "pred:notHave": 6,
+      "pred:notKnow": 6,
+      "pred:see": 5,
+      "pred:notWant": 5,
+      "pred:come": 5,
+      "pred:stand": 4,
+      "pred:feel": 4,
+      "pred:find": 4,
+      "pred:handOver": 4,
+      "pred:get": 4,
+      "pred:write": 4,
+      "pred:love": 4,
+      "pred:marry": 4,
+      "pred:attached": 4,
+      "pred:beWritten": 4,
+      "pred:worry": 3,
+      "pred:recognize": 3,
+      "pred:notice": 3,
+      "pred:wear": 3,
+      "pred:receive": 3,
+      "pred:bad": 3
+    }
+  },
+  "literal_languages_by_predicate": {
+    "kgc:source": {
+      "en": 536,
+      "ja": 536
+    },
+    "rdfs:label": {
+      "en": 796,
+      "ja": 642
+    },
+    "kgc:time": {
+      "none": 26
+    },
+    "http://creativecommons.org/ns#attributionName": {
+      "none": 1
+    },
+    "rdfs:comment": {
+      "ja": 1
+    }
+  },
+  "scenes": {
+    "method": "subjects typed kgc:Statement|Situation|Thought|Talk (a node with two scene types counted once)",
+    "scene_nodes": 557,
+    "type_combinations": {
+      "kgc:Statement": 387,
+      "kgc:Situation": 147,
+      "kgc:Thought": 21,
+      "kgc:Situation+kgc:Statement": 2
+    },
+    "numeric_ids": 539,
+    "numeric_id_range": [
+      1,
+      580
+    ],
+    "suffixed_ids": [
+      "04a",
+      "122a",
+      "179a",
+      "203a",
+      "205a",
+      "216a",
+      "21a",
+      "228a",
+      "290a",
+      "33a",
+      "389a",
+      "425a",
+      "495a",
+      "527a",
+      "555a",
+      "67a",
+      "71a",
+      "79a"
+    ],
+    "missing_numeric_ids_in_range": 41,
+    "missing_ids_sample": [
+      3,
+      9,
+      46,
+      50,
+      59,
+      61,
+      129,
+      175,
+      177,
+      189,
+      190,
+      191,
+      222,
+      225,
+      238,
+      246,
+      251,
+      320,
+      338,
+      340,
+      344,
+      347,
+      379,
+      384,
+      437,
+      442,
+      457,
+      477,
+      485,
+      487,
+      489,
+      502,
+      506,
+      517,
+      523,
+      526,
+      533,
+      536,
+      545,
+      546
+    ],
+    "with_source_en": 536,
+    "with_source_ja": 536,
+    "without_hasPredicate_or_hasProperty": {
+      "count": 6,
+      "ids": [
+        "161",
+        "196",
+        "312",
+        "430",
+        "579",
+        "71a"
+      ]
+    },
+    "with_infoSource_by_type": {
+      "kgc:Statement": {
+        "with": 389,
+        "total": 389
+      },
+      "kgc:Situation": {
+        "with": 2,
+        "total": 149
+      },
+      "kgc:Thought": {
+        "with": 21,
+        "total": 21
+      }
+    },
+    "paper_table1_reference": {
+      "scenes": 544,
+      "hasPredicate": 449,
+      "hasProperty": 86,
+      "subject": 464,
+      "infoSource": 396,
+      "infoReceiver": 0,
+      "note": "Kozaki et al. 2023, Table 1 (same file blob 022b8cb7 on branch ikgrc2023)"
+    },
+    "counting_alternatives": {
+      "all_scene_nodes": {
+        "n": 557,
+        "hasPredicate_triples": 457,
+        "hasProperty_triples": 94,
+        "subject_triples": 482,
+        "infoSource_triples": 410,
+        "what_triples": 801,
+        "when_triples": 75,
+        "whom_triples": 51,
+        "how_triples": 24,
+        "why_triples": 9,
+        "time_triples": 26
+      },
+      "numeric_id_scenes_only": {
+        "n": 539,
+        "hasPredicate_triples": 441,
+        "hasProperty_triples": 93,
+        "subject_triples": 464,
+        "infoSource_triples": 394,
+        "what_triples": 792,
+        "when_triples": 70,
+        "whom_triples": 46,
+        "how_triples": 23,
+        "why_triples": 9,
+        "time_triples": 24
+      },
+      "any_subject": {
+        "hasPredicate_triples": 457,
+        "hasProperty_triples": 94,
+        "subject_triples": 482,
+        "infoSource_triples": 410,
+        "what_triples": 801,
+        "when_triples": 75,
+        "whom_triples": 51,
+        "how_triples": 24,
+        "why_triples": 9,
+        "time_triples": 26
+      },
+      "subjects_with_hasPredicate_or_hasProperty": 551
+    }
+  },
+  "scene_relations_triples": {
+    "then": 168,
+    "because": 5,
+    "therefore": 11,
+    "if": 6,
+    "at_the_same_time": 10,
+    "otherwise": 0,
+    "and": 1,
+    "after": 2
+  },
+  "then_graph": {
+    "edges": 168,
+    "nodes": 187,
+    "weak_components": 20,
+    "largest_component": 113,
+    "is_dag": false,
+    "nodes_outdeg_gt1": [],
+    "nodes_indeg_gt1": [
+      "239",
+      "261",
+      "321",
+      "558"
+    ],
+    "edges_to_lower_numeric_id": [],
+    "scene_nodes_not_in_then_graph": 370,
+    "kgc_time_values": {
+      "1877-06-01T00:00:00": 1,
+      "1889-09-01T00:00:00": 1,
+      "1889-10-01T00:00:00": 1,
+      "1890-06-01T00:00:00": 1,
+      "1890-09-01T00:00:00": 1,
+      "1891-08-14T08:00:00": 5,
+      "1891-08-14T09:00:00": 2,
+      "1891-08-14T09:30:00": 1,
+      "1891-08-14T10:00:00": 1,
+      "1891-08-14T14:00:00": 2,
+      "1891-08-27T08:00:00": 1,
+      "1891-08-29T00:00:00": 1,
+      "1891-09-01T09:00:00": 1,
+      "1891-09-01T10:00:00": 3,
+      "1891-09-02T12:00:00": 1,
+      "1891-09-02T18:00:00": 2
+    },
+    "then_edges_against_kgc_time": []
+  },
+  "embedding": {
+    "what_edges_between_scenes": 470,
+    "embedding_parents": 117,
+    "max_nesting_depth": 3,
+    "say_scenes": 73,
+    "say_scenes_with_embedded_scene": 66,
+    "embedded_statement_infoSource_equals_parent_subject": {
+      "same": 391,
+      "different": 63,
+      "embedded_without_infoSource": 16,
+      "different_examples": [
+        [
+          "d:020",
+          [
+            "d:Sutherland"
+          ],
+          "d:021",
+          [
+            "d:Holmes"
+          ]
+        ],
+        [
+          "d:021",
+          [
+            "d:Sutherland"
+          ],
+          "d:21a",
+          [
+            "d:Holmes"
+          ]
+        ],
+        [
+          "d:024",
+          [
+            "d:Woman"
+          ],
+          "d:025",
+          [
+            "d:Holmes"
+          ]
+        ],
+        [
+          "d:041",
+          [
+            "d:Sutherland"
+          ],
+          "d:042",
+          [
+            "d:Holmes"
+          ]
+        ],
+        [
+          "d:041",
+          [
+            "d:Sutherland"
+          ],
+          "d:043",
+          [
+            "d:Holmes"
+          ]
+        ],
+        [
+          "d:052",
+          [
+            "d:Sutherland"
+          ],
+          "d:082",
+          [
+            "d:Father_of_Sutherland"
+          ]
+        ],
+        [
+          "d:081",
+          [
+            "d:father_of_Sutherland"
+          ],
+          "d:082",
+          [
+            "d:Father_of_Sutherland"
+          ]
+        ],
+        [
+          "d:067",
+          [
+            "d:Windibank"
+          ],
+          "d:67a",
+          [
+            "d:Sutherland"
+          ]
+        ],
+        [
+          "d:117",
+          [
+            "d:Windibank"
+          ],
+          "d:118",
+          [
+            "d:Sutherland"
+          ]
+        ],
+        [
+          "d:117",
+          [
+            "d:Windibank"
+          ],
+          "d:119",
+          [
+            "d:Sutherland"
+          ]
+        ],
+        [
+          "d:120",
+          [
+            "d:Windibank"
+          ],
+          "d:121",
+          [
+            "d:Sutherland"
+          ]
+        ],
+        [
+          "d:113",
+          [
+            "d:Sutherland"
+          ],
+          "d:128",
+          [
+            "d:Windibank"
+          ]
+        ],
+        [
+          "d:123",
+          [
+            "d:Windibank"
+          ],
+          "d:122a",
+          [
+            "d:Sutherland"
+          ]
+        ],
+        [
+          "d:136",
+          [
+            "d:Windibank"
+          ],
+          "d:137",
+          [
+            "d:Holmes"
+          ]
+        ],
+        [
+          "d:138",
+          [
+            "d:Sutherland"
+          ],
+          "d:139",
+          [
+            "d:Sutherland_s_thoughts"
+          ]
+        ],
+        [
+          "d:151",
+          [
+            "d:Windibank"
+          ],
+          "d:152",
+          [
+            "d:Sutherland"
+          ]
+        ],
+        [
+          "d:153",
+          [
+            "d:Windibank"
+          ],
+          "d:154",
+          [
+            "d:Windibank_s_Thoughts"
+          ]
+        ],
+        [
+          "d:160",
+          [
+            "d:Hosmer"
+          ],
+          "d:161",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:163",
+          [
+            "d:Sutherland"
+          ],
+          "d:176",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:174",
+          [
+            "d:Hosmer"
+          ],
+          "d:176",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:163",
+          [
+            "d:Sutherland"
+          ],
+          "d:178",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:174",
+          [
+            "d:Hosmer"
+          ],
+          "d:178",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:163",
+          [
+            "d:Sutherland"
+          ],
+          "d:179",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:174",
+          [
+            "d:Hosmer"
+          ],
+          "d:179",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ],
+        [
+          "d:163",
+          [
+            "d:Sutherland"
+          ],
+          "d:180",
+          [
+            "d:Hosmer_s_statement"
+          ]
+        ]
+      ]
+    }
+  },
+  "infoSource_values": {
+    "d:Holmes": 171,
+    "d:Sutherland": 153,
+    "d:Watson": 40,
+    "d:Windibank": 25,
+    "d:Hosmer_s_statement": 8,
+    "d:Sutherland_s_thoughts": 4,
+    "d:Service_Boy": 2,
+    "d:Hosmer_s_thoughts": 2,
+    "d:Father_of_Sutherland": 1,
+    "d:Windibank_s_Thoughts": 1,
+    "d:The_speaker_s_statement": 1,
+    "d:mother_of_Sutherland&#39_s_remark": 1,
+    "d:someone_of_Company": 1
+  },
+  "infoSource_not_typed_person": [
+    "d:Father_of_Sutherland",
+    "d:Hosmer_s_statement",
+    "d:Hosmer_s_thoughts",
+    "d:Service_Boy",
+    "d:Sutherland_s_thoughts",
+    "d:The_speaker_s_statement",
+    "d:Windibank_s_Thoughts",
+    "d:mother_of_Sutherland&#39_s_remark",
+    "d:someone_of_Company"
+  ],
+  "entities": {
+    "method": "distinct subjects with rdf:type kgc:<Class> (multi-typing allowed; not disjoint)",
+    "Person": 18,
+    "Place": 13,
+    "PhysicalObject": 248,
+    "Object": 213,
+    "OFobj": 129,
+    "AbstractTime": 21,
+    "Property": 75,
+    "Action": 206,
+    "NotAction": 30,
+    "CanNotAction": 10,
+    "CanAction": 4,
+    "Animal": 0,
+    "persons": {
+      "d:Boy": [
+        "Boy",
+        "給仕服の少年"
+      ],
+      "d:Etheridge": [
+        "Etheridge",
+        "エサリッジ"
+      ],
+      "d:Hardy": [
+        "Hardy",
+        "ハーディ"
+      ],
+      "d:Holmes": [
+        "Holmes",
+        "ホームズ"
+      ],
+      "d:Hosmer": [
+        "Hosmer",
+        "サザランド",
+        "ホズマ"
+      ],
+      "d:Man": [
+        "Man",
+        "男"
+      ],
+      "d:Ned": [
+        "Ned",
+        "ネッド"
+      ],
+      "d:Single_women": [
+        "Single women",
+        "独身女性"
+      ],
+      "d:Sutherland": [
+        "Sutherland",
+        "サザランド",
+        "サザランドと"
+      ],
+      "d:Watson": [
+        "Watson",
+        "ワトソン"
+      ],
+      "d:Windibank": [
+        "Windibank",
+        "ウィンディバンク",
+        "ウィンディバンクの物腰"
+      ],
+      "d:Woman": [
+        "Woman",
+        "女",
+        "女性"
+      ],
+      "d:father_of_Sutherland": [
+        "father of Sutherland",
+        "サザランドの父"
+      ],
+      "d:hansom_carriage": [
+        "hansom carriage",
+        "ハンソム馬車",
+        "辻馬車"
+      ],
+      "d:husband_of_Etheridge": [
+        "husband of Etheridge",
+        "エサリッジの夫"
+      ],
+      "d:mother_of_Sutherland": [
+        "mother of Sutherland",
+        "サザランドの母",
+        "サザランドの父"
+      ],
+      "d:parent": [
+        "parent",
+        "親"
+      ],
+      "d:police": [
+        "police",
+        "警察"
+      ]
+    }
+  },
+  "identity": {
+    "owl_sameAs": 0,
+    "owl_differentFrom": 0,
+    "hasProperty_pred_Hosmer": [
+      "d:504"
+    ],
+    "pred_Hosmer_vs_d_Hosmer_linked": false,
+    "labels_Hosmer": [
+      "Hosmer",
+      "サザランド",
+      "ホズマ"
+    ],
+    "labels_Windibank": [
+      "Windibank",
+      "ウィンディバンク",
+      "ウィンディバンクの物腰"
+    ],
+    "scenes_mentioning_Hosmer": 75,
+    "scenes_mentioning_Windibank": 129
+  },
+  "negation_modality": {
+    "kgc_Not_triples": 30,
+    "kgc_can_triples": 4,
+    "kgc_canNot_triples": 10,
+    "kgc_if_triples": 6,
+    "hasPredicate_negative_lexical": {
+      "pred:notHave": 6,
+      "pred:notKnow": 6,
+      "pred:notWant": 5,
+      "pred:notExist": 3,
+      "pred:notLove": 2,
+      "pred:notHesitate": 1,
+      "pred:notRelyOn": 1,
+      "pred:notAccept": 1,
+      "pred:cannotStop": 1,
+      "pred:cannotCome": 1,
+      "pred:notLike": 1,
+      "pred:notMeet": 1,
+      "pred:notWorry": 1,
+      "pred:notReach": 1,
+      "pred:notUnderstand": 1,
+      "pred:notSend": 1,
+      "pred:notShow": 1,
+      "pred:notThrow": 1,
+      "pred:notSay": 1,
+      "pred:cannotSleep": 1,
+      "pred:cannotMeet": 1,
+      "pred:notForget": 1,
+      "pred:cannotUnderstand": 1,
+      "pred:notSee": 1,
+      "pred:notImportant": 1,
+      "pred:notBeInTime": 1,
+      "pred:cannotCatch": 1,
+      "pred:cannotFind": 1,
+      "pred:cannotEscape": 1,
+      "pred:notComplain": 1,
+      "pred:notIssue": 1,
+      "pred:notContinue": 1,
+      "pred:notThink": 1,
+      "pred:notGo": 1,
+      "pred:cannotCheat": 1,
+      "pred:notBreak": 1,
+      "pred:cannotHandle": 1,
+      "pred:notAppear": 1,
+      "pred:notBelieve": 1
+    },
+    "Thought_scenes": 21
+  },
+  "schema": {
+    "inline_declared_properties": 44,
+    "kgc_terms_used": 44,
+    "kgc_terms_used_not_in_2023ikgrc_kgc_owl": [
+      "kgc:",
+      "kgc:CanAction",
+      "kgc:PhysicalObject",
+      "kgc:after",
+      "kgc:and",
+      "kgc:can",
+      "kgc:hadPredicate",
+      "kgc:source",
+      "kgc:whoｍ"
+    ],
+    "kgc_terms_used_not_in_root_kgc_owl": [
+      "kgc:",
+      "kgc:CanAction",
+      "kgc:PhysicalObject",
+      "kgc:after",
+      "kgc:and",
+      "kgc:can",
+      "kgc:hadPredicate",
+      "kgc:source",
+      "kgc:whoｍ"
+    ],
+    "kgc_terms_used_not_declared_anywhere": [
+      "kgc:",
+      "kgc:CanAction",
+      "kgc:PhysicalObject",
+      "kgc:after",
+      "kgc:and",
+      "kgc:hadPredicate",
+      "kgc:whoｍ"
+    ],
+    "terms_2023ikgrc_kgc_owl": 58,
+    "terms_root_kgc_owl": 62,
+    "in_root_not_in_2023": [
+      "http://kgc.knowledge-graph.jp/ontology/kgc.owl",
+      "http://purl.org/dc/elements/1.1/description",
+      "http://purl.org/dc/elements/1.1/title",
+      "http://www.w3.org/2001/XMLSchema#DateTime"
+    ],
+    "in_2023_not_in_root": [],
+    "pred_namespace_terms_declared_in_any_schema": 0,
+    "inline_comment_namespace": "comments in the TTL header cite http://kgc.knowledge-graph.jp/ontology/kgcc.owl# (double 'c'); the declared prefix is kgc.owl#"
+  },
+  "anomalies_summary": {
+    "odd_predicate_iris": 3,
+    "case_insensitive_duplicate_iris": 21,
+    "iris_containing_html_entities": 2,
+    "literals_containing_html_entities": 13,
+    "en_tagged_literals_with_japanese_script": 3,
+    "en_tagged_literals_with_japanese_script_count": 3,
+    "untagged_plain_literals": 1,
+    "untagged_plain_literals_count": 1,
+    "persons_with_multiple_japanese_labels": 6,
+    "infoSource_iri_case_variant_of_person": 1,
+    "scenes_without_hasPredicate_or_hasProperty": 2
+  },
+  "source_vs_doyle": {
+    "method": "each kgc:source@en of a scene vs all 389 normalised sentences; rapidfuzz token_set_ratio best match; verbatim = exact substring (len>=25)",
+    "en_sources": 536,
+    "verbatim_substrings": 0,
+    "token_set_ratio_quartiles": [
+      52.8,
+      61.5,
+      71.4
+    ],
+    "share_ratio_ge_90": 0.022,
+    "interpretation_note": "token_set_ratio rewards word overlap of short paraphrases; high values do not mean quotation"
+  },
+  "entity_table_rows": 796,
+  "entities_with_en_label": 796,
+  "sparql_result_rows": {
+    "Q01_scene_types": 3,
+    "Q02_infosource_by_type": 17,
+    "Q03_speech_embedding": 385,
+    "Q04_identity_explicit": 3,
+    "Q05_who_is_hosmer_kgrc": 1,
+    "Q06_negation": 4,
+    "Q07_mental_predicates": 39,
+    "Q08_scene_relations": 12,
+    "Q09_ending": 41,
+    "Q10_typewriter_signature": 53,
+    "Q11_mother": 22,
+    "Q12_money": 21,
+    "Q13_holmes_acts": 56,
+    "Q14_france_absence": 6,
+    "Q15_mary_beliefs": 24
+  }
+}

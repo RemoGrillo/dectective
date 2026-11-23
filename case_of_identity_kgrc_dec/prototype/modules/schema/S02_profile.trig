@@ -1,0 +1,123 @@
+@prefix st:   <http://example.org/dectective/story/> .
+@prefix w:    <http://example.org/dectective/world/> .
+@prefix prof: <http://example.org/dectective/profile#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix inf:  <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix dec:  <http://w3id.org/conjectures/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+w:shared {
+<http://example.org/dectective/profile#ActualJourney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#ActualJourney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/dectective/profile#Journey> .
+<http://example.org/dectective/profile#CommunicativeAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#CommunicativeAct> <http://www.w3.org/2000/01/rdf-schema#comment> "An act of telling or writing addressed to someone. Unlike crminf:I1 Argumentation (and E13, a subclass of I1 in CRMinf 1.2.1) it does NOT presuppose sincerity: the speaker's belief in the content is represented separately, if at all." .
+<http://example.org/dectective/profile#CommunicativeAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+<http://example.org/dectective/profile#Disappearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#Disappearance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://example.org/dectective/profile#ExpectedToReturn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#ExpectedToReturn> <http://www.w3.org/2000/01/rdf-schema#comment> "Person whom the believer expects to come back (used only inside belief worlds)." .
+<http://example.org/dectective/profile#ExpectedToReturn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#Impersonation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#Impersonation> <http://www.w3.org/2000/01/rdf-schema#comment> "Acting under a persona identified by an appellation that is not one's own." .
+<http://example.org/dectective/profile#Impersonation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+<http://example.org/dectective/profile#InvoluntaryDisappearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#InvoluntaryDisappearance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/dectective/profile#Disappearance> .
+<http://example.org/dectective/profile#Journey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#Journey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
+<http://example.org/dectective/profile#KeenSighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#KeenSighted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#Letter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#Letter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> .
+<http://example.org/dectective/profile#Occupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#Occupation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://example.org/dectective/profile#PretendedJourney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#PretendedJourney> <http://www.w3.org/2000/01/rdf-schema#comment> "A journey announced but not performed." .
+<http://example.org/dectective/profile#PretendedJourney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/dectective/profile#Journey> .
+<http://example.org/dectective/profile#Typewriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#Typewriter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> .
+<http://example.org/dectective/profile#TypewrittenLetter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#TypewrittenLetter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/dectective/profile#Letter> .
+<http://example.org/dectective/profile#VoluntaryDisappearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#VoluntaryDisappearance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/dectective/profile#Disappearance> .
+<http://example.org/dectective/profile#WeakSighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/dectective/profile#WeakSighted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#addressee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#addressee> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#CommunicativeAct> .
+<http://example.org/dectective/profile#addressee> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://example.org/dectective/profile#assisted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#assisted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in> .
+<http://example.org/dectective/profile#attended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#attended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#attended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+<http://example.org/dectective/profile#believes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#believes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://example.org/dectective/profile#conjectures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#conjectures> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://example.org/dectective/profile#disappearedPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#disappearedPerson> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Disappearance> .
+<http://example.org/dectective/profile#disappearedPerson> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P11_had_participant> .
+<http://example.org/dectective/profile#employedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#employedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#employedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+<http://example.org/dectective/profile#engagedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#engagedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://example.org/dectective/profile#engagedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#engagedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#establishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#establishes> <http://www.w3.org/2000/01/rdf-schema#comment> "The actor's account accepted by the narrative as part of the reference reconstruction." .
+<http://example.org/dectective/profile#establishes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://example.org/dectective/profile#hasContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#hasContent> <http://www.w3.org/2000/01/rdf-schema#comment> "The proposition set communicated (encoded as a named graph). Communicating it does not imply belief." .
+<http://example.org/dectective/profile#hasContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#CommunicativeAct> .
+<http://example.org/dectective/profile#hasContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://example.org/dectective/profile#hasDefectProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#hasDefectProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." .
+<http://example.org/dectective/profile#hasDefectProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Typewriter> .
+<http://example.org/dectective/profile#hasOccupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/dectective/profile#Occupation> .
+<http://example.org/dectective/profile#heldBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#heldBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Local shortcut: holder of a belief (CRMinf links it only indirectly via I1/I7 P14 and J2)." .
+<http://example.org/dectective/profile#heldBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://example.org/dectective/profile#heldBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://example.org/dectective/profile#motive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#purportsToBeFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#purportsToBeFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Apparent sender as shown on the document; not authorship." .
+<http://example.org/dectective/profile#purportsToBeFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Letter> .
+<http://example.org/dectective/profile#purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#rejects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Who reports the act in the text (e.g. Mary reporting Hosmer's words)." .
+<http://example.org/dectective/profile#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#CommunicativeAct> .
+<http://example.org/dectective/profile#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://example.org/dectective/profile#showsDefectProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#showsDefectProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#TypewrittenLetter> .
+<http://example.org/dectective/profile#spouseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#spouseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://example.org/dectective/profile#stepfatherOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#stepfatherOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#stepfatherOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#traveller> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Journey> .
+<http://example.org/dectective/profile#traveller> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+<http://example.org/dectective/profile#typedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#typedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#TypewrittenLetter> .
+<http://example.org/dectective/profile#typedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/dectective/profile#Typewriter> .
+<http://example.org/dectective/profile#usedAppellation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#usedAppellation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Impersonation> .
+<http://example.org/dectective/profile#usedAppellation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+<http://example.org/dectective/profile#usedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#usedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Typewriter> .
+<http://example.org/dectective/profile#uttered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#uttered> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbatim content of a communicative act; no commitment of the speaker implied." .
+<http://example.org/dectective/profile#uttered> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://example.org/dectective/profile#wore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#wore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://example.org/dectective/profile#writtenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/dectective/profile#writtenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/dectective/profile#Letter> .
+<http://example.org/dectective/profile#writtenBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+}
+

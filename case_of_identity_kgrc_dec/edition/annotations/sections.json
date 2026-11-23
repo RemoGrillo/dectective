@@ -1,0 +1,91 @@
+{
+  "note": "Curated table of contents. Paragraph ranges refer to data/text/segments.csv. Stages (internal ids C1-C4, G) = what a first-time reader knows at the end of the given paragraph (spoiler-free reading). 'label' is the stage name shown in the UI, 'desc' a one-line explanation.",
+  "sections": [
+    {
+      "id": "I",
+      "title": "Baker Street",
+      "subtitle": "Life is infinitely stranger than fiction",
+      "from": "P001",
+      "to": "P013"
+    },
+    {
+      "id": "II",
+      "title": "The Client",
+      "subtitle": "Miss Mary Sutherland",
+      "from": "P014",
+      "to": "P030"
+    },
+    {
+      "id": "III",
+      "title": "Mary's Account",
+      "subtitle": "The gasfitters' ball, the letters, the church",
+      "from": "P031",
+      "to": "P080"
+    },
+    {
+      "id": "IV",
+      "title": "Holmes and Watson",
+      "subtitle": "Sleeves, boots and a typewritten signature",
+      "from": "P081",
+      "to": "P102"
+    },
+    {
+      "id": "V",
+      "title": "The Next Evening",
+      "subtitle": "Mr. James Windibank calls",
+      "from": "P103",
+      "to": "P118"
+    },
+    {
+      "id": "VI",
+      "title": "The Unmasking",
+      "subtitle": "It was only a joke at first",
+      "from": "P119",
+      "to": "P132"
+    },
+    {
+      "id": "VII",
+      "title": "Voilà tout",
+      "subtitle": "How Holmes verified it",
+      "from": "P133",
+      "to": "P138"
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "C1",
+      "after": "P080",
+      "page": 4,
+      "label": "Mary's visit",
+      "desc": "Mary has told her story and left Baker Street."
+    },
+    {
+      "id": "C2",
+      "after": "P100",
+      "page": 6,
+      "label": "The clues",
+      "desc": "Holmes has read the letters and written two of his own."
+    },
+    {
+      "id": "C3",
+      "after": "P118",
+      "page": 7,
+      "label": "The typewriter",
+      "desc": "Windibank has called; the typed letters are compared."
+    },
+    {
+      "id": "C4",
+      "after": "P130",
+      "page": 8,
+      "label": "The unmasking",
+      "desc": "Holmes has named the culprit; Windibank has answered."
+    },
+    {
+      "id": "G",
+      "after": "P138",
+      "page": 9,
+      "label": "The whole story",
+      "desc": "Everything, solution included."
+    }
+  ]
+}

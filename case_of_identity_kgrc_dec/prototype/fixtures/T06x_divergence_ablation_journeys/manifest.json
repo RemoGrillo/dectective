@@ -1,0 +1,41 @@
+{
+  "dataset": "gold",
+  "question": "Ablation: without the journey and disappearance axioms, does Mary's world still disagree?",
+  "seed_iris": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/story/mary"
+  ],
+  "require_modules": [
+    "W01_mary_D1",
+    "W02_holmes_reconstruction",
+    "F03_courtship",
+    "F05_windibank_visit"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "exclude_axioms": [
+    "ActualJourney",
+    "VoluntaryDisappearance"
+  ],
+  "queries": [
+    {
+      "id": "T06c_ablation",
+      "file": "T06c_ablation.rq",
+      "expected": [
+        "w=http://example.org/dectective/world/mary_D1"
+      ],
+      "classification": "incompatible",
+      "justification": [
+        "P051.S06",
+        "P111.S01"
+      ],
+      "axioms_or_assumptions": [
+        "WeakSighted disjoint KeenSighted (+identity)"
+      ],
+      "world_time": "w:mary_D1 vs reality",
+      "note": "Expected to remain incompatible through the eyesight axiom alone."
+    }
+  ]
+}

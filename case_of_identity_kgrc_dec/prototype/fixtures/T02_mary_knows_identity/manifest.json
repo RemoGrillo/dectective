@@ -1,0 +1,60 @@
+{
+  "dataset": "gold",
+  "question": "Does Mary hold the identity Hosmer = Windibank?",
+  "seed_iris": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/story/mary"
+  ],
+  "require_modules": [
+    "W01_mary_D1",
+    "W02_holmes_reconstruction",
+    "F03_courtship"
+  ],
+  "queries": [
+    {
+      "id": "T02a_mary_identity",
+      "file": "T02a_mary_identity.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P079.S02",
+        "P079.S03",
+        "P138.S01"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:mary_D1 (D1, last attested)",
+      "note": "False here means 'not attributed', NOT 'Mary believes they differ' (no differentFrom is attributed)."
+    },
+    {
+      "id": "T02b_mary_opacity",
+      "file": "T02b_mary_opacity.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P041.S02"
+      ],
+      "axioms_or_assumptions": [
+        "owl:sameAs must not cross into Mary's world"
+      ],
+      "world_time": "w:mary_D1",
+      "note": "Referential opacity: Mary is engaged to Hosmer de dicto; substitution only in reality."
+    },
+    {
+      "id": "T02c_mary_engaged_de_re_reality",
+      "file": "T02c_mary_engaged_de_re_reality.rq",
+      "expected": true,
+      "classification": "derivable",
+      "justification": [
+        "P041.S02",
+        "P126.S11"
+      ],
+      "axioms_or_assumptions": [
+        "owl:sameAs substitution",
+        "engagedTo symmetric"
+      ],
+      "world_time": "reality (gold)",
+      "note": "De re in reality the engagement was with the person Windibank (KGRC 507/518 put this inside Mary's attitude)."
+    }
+  ]
+}

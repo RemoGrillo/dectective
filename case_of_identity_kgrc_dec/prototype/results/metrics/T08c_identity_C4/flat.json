@@ -1,0 +1,245 @@
+{ 
+  "data" : "./prototype/fixtures/T08_update_C4/slices/T08c_identity_C4.trig" ,
+  "query" : "./prototype/fixtures/T08_update_C4/T08c_identity_C4.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 180.671878 ,
+  "input_quads" : 108 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : -1 ,
+        "warmup" : true ,
+        "materialise_total_ms" : 403.293086 ,
+        "cpu_ms" : 383.598484 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 17.936294555664062 ,
+        "phases" : {
+            "build_ms" : 23.237261 ,
+            "enumerate_ms" : 197.589455 ,
+            "validate_ms" : 175.10493
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 56.952289 ,
+        "query_second_ms" : 0.876502
+      } ,
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 208.270483 ,
+        "cpu_ms" : 188.514771 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 18 ,
+        "heap_delta_mb" : 15.281486511230469 ,
+        "phases" : {
+            "build_ms" : 3.201136 ,
+            "enumerate_ms" : 112.257883 ,
+            "validate_ms" : 92.469575
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.015607 ,
+        "query_second_ms" : 0.483015
+      } ,
+      { 
+        "rep" : 1 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 118.418756 ,
+        "cpu_ms" : 115.597342 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 19.078948974609375 ,
+        "phases" : {
+            "build_ms" : 2.400712 ,
+            "enumerate_ms" : 62.925992 ,
+            "validate_ms" : 52.731743
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.004058 ,
+        "query_second_ms" : 0.417426
+      } ,
+      { 
+        "rep" : 2 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 126.175304 ,
+        "cpu_ms" : 123.527177 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 1 ,
+        "heap_delta_mb" : 21.779647827148438 ,
+        "phases" : {
+            "build_ms" : 2.002586 ,
+            "enumerate_ms" : 62.111778 ,
+            "validate_ms" : 61.732271
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.943779 ,
+        "query_second_ms" : 0.32808
+      } ,
+      { 
+        "rep" : 3 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 138.574043 ,
+        "cpu_ms" : 125.695882 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 13 ,
+        "heap_delta_mb" : 10.809349060058594 ,
+        "phases" : {
+            "build_ms" : 2.15603 ,
+            "enumerate_ms" : 68.405905 ,
+            "validate_ms" : 67.707108
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.918881 ,
+        "query_second_ms" : 0.414696
+      } ,
+      { 
+        "rep" : 4 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 98.769431 ,
+        "cpu_ms" : 97.359385 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 1 ,
+        "heap_delta_mb" : 20.59783935546875 ,
+        "phases" : {
+            "build_ms" : 1.324467 ,
+            "enumerate_ms" : 55.949869 ,
+            "validate_ms" : 41.205005
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.840093 ,
+        "query_second_ms" : 0.234262
+      } ,
+      { 
+        "rep" : 5 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 118.579531 ,
+        "cpu_ms" : 103.788138 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 13 ,
+        "heap_delta_mb" : 11.71466064453125 ,
+        "phases" : {
+            "build_ms" : 1.323467 ,
+            "enumerate_ms" : 63.249652 ,
+            "validate_ms" : 53.711371
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.891171 ,
+        "query_second_ms" : 0.253962
+      } ,
+      { 
+        "rep" : 6 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 121.252214 ,
+        "cpu_ms" : 111.70562 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 32.166595458984375 ,
+        "phases" : {
+            "build_ms" : 1.274178 ,
+            "enumerate_ms" : 62.284423 ,
+            "validate_ms" : 57.416841
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.996017 ,
+        "query_second_ms" : 0.372788
+      } ,
+      { 
+        "rep" : 7 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 117.674054 ,
+        "cpu_ms" : 114.38173 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 3 ,
+        "heap_delta_mb" : 13.136322021484375 ,
+        "phases" : {
+            "build_ms" : 1.430994 ,
+            "enumerate_ms" : 61.804657 ,
+            "validate_ms" : 54.122202
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.869422 ,
+        "query_second_ms" : 0.241622
+      } ,
+      { 
+        "rep" : 8 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 119.392448 ,
+        "cpu_ms" : 106.125894 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 10 ,
+        "heap_delta_mb" : 11.06976318359375 ,
+        "phases" : {
+            "build_ms" : 1.350787 ,
+            "enumerate_ms" : 62.500284 ,
+            "validate_ms" : 55.242367
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.998118 ,
+        "query_second_ms" : 0.237952
+      } ,
+      { 
+        "rep" : 9 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 116.618537 ,
+        "cpu_ms" : 108.242391 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 33.8170166015625 ,
+        "phases" : {
+            "build_ms" : 1.55974 ,
+            "enumerate_ms" : 68.413604 ,
+            "validate_ms" : 46.383092
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.716157 ,
+        "query_second_ms" : 0.220543
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 107 ,
+              "base_after" : 107 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1085 ,
+              "inferred_trivial" : 936 ,
+              "inferred_nontrivial" : 42 ,
+              "inferred_taxonomic" : 6 ,
+              "inferred_substantive" : 36 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 107 ,
+      "materialised_total" : 1085 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 978 ,
+      "inferred_trivial_total" : 936 ,
+      "inferred_nontrivial_total" : 42 ,
+      "inferred_taxonomic_total" : 6 ,
+      "inferred_substantive_total" : 36 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1085 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : true ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 0.716157 ,
+      "query_second_ms" : 0.220543 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "0942a861e1eb496f722c51977c8763600054c85fb2107877f6ceb7c90cfb45bc"
+}

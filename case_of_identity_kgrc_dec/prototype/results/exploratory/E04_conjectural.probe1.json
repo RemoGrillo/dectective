@@ -1,0 +1,113 @@
+{ 
+  "data" : "./prototype/exploratory/E04_conjectural.trig" ,
+  "query" : "./prototype/results/exploratory/E04_conjectural.probe1.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 143.316543 ,
+  "input_quads" : 6 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 189.627855 ,
+        "cpu_ms" : 177.828978 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 7.391593933105469 ,
+        "phases" : {
+            "load_ms" : 29.271138 ,
+            "handlePermeation_ms" : 121.768296 ,
+            "enumerate_ms" : 30.119845
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.371676 ,
+            "http://example.org/x#S#enumerate" : 0.679607 ,
+            "http://example.org/x#C#enumerate" : 27.836591
+          } ,
+        "query_first_ms" : 38.368715 ,
+        "query_second_ms" : 0.841986
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#C" : {
+              "type" : "named/conjectural" ,
+              "asserted" : 1 ,
+              "base_after" : 33 ,
+              "permeated_in" : 669 ,
+              "permeated_in_nontrivial" : 4 ,
+              "receives_from" : [ 
+                  "http://example.org/x#S" ,
+                  "http://w3id.org/conjectures/reality"
+                ] ,
+              "materialised" : 678 ,
+              "inferred_trivial" : 7 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 649 ,
+              "inferred_trivial" : 648 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 2 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 672 ,
+              "inferred_trivial" : 665 ,
+              "inferred_nontrivial" : 2 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 3
+            }
+        } ,
+      "n_worlds" : 3 ,
+      "asserted_total" : 4 ,
+      "materialised_total" : 1999 ,
+      "permeated_total" : 669 ,
+      "inferred_total" : 1323 ,
+      "inferred_trivial_total" : 1320 ,
+      "inferred_nontrivial_total" : 3 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 3 ,
+      "dec_diagnostic_total" : 3 ,
+      "distinct_triples_all_worlds" : 681 ,
+      "redundancy" : 2.935389133627019 ,
+      "inconsistency_pairs" : 1 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/x#C http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalWorld" ,
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#supposes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalPredicate"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 38.368715 ,
+      "query_second_ms" : 0.841986 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "28e8c17c27e44b29170ad71d07e13da46f6bb951f7da1a45c9a96c5cf3377deb"
+}

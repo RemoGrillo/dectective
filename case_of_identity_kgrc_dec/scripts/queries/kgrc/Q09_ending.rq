@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# The ending: Holmes's conditional prediction about Mary (scenes 578-580 and their parent act)
+SELECT ?s ?p ?o WHERE {
+  VALUES ?s { d:558 d:578 d:579 d:580 }
+  ?s ?p ?o . FILTER(?p != kgc:source || lang(?o) = "en")
+} ORDER BY ?s ?p

@@ -1,0 +1,11 @@
+@prefix : <http://example.org/x#> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# closedFor where B1 has two subjects and only the second one also occurs (with a different value) in B2.
+# A real disagreement exists on :s2; the loop's 'break' on the first unmatched subject may hide it.
+:B1 { :s1 :typedBy :m1 . :s2 :typedBy :m2 . :s3 :typedBy :m3 . :s4 :typedBy :m4 . }
+:ann :believes :B1 .
+:B2 { :s4 :typedBy :mX . }
+:bob :believes :B2 .
+:believes a dec:doxasticPredicate .
+rdf:subject dec:closedFor :typedBy .

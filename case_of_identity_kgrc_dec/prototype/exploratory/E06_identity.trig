@@ -1,0 +1,15 @@
+@prefix : <http://example.org/x#> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+# Identity in reality vs. a doxastic and a conjectural world (Superman-style).
+:S { :canFly a owl:ObjectProperty . } :S a dec:sharedWorld .
+:superman owl:sameAs :clark .
+:LoisB { :superman :canDo :flying . }
+:lois :believes :LoisB . :believes a dec:doxasticPredicate .
+:LoisC { :superman :canDo :flying . }
+:lois :supposes :LoisC . :supposes a dec:conjecturalPredicate .
+# identity asserted INSIDE a doxastic world substitutes locally
+:JimmyB { :superman owl:sameAs :clark . :superman :canDo :flying . }
+:jimmy :believes :JimmyB .

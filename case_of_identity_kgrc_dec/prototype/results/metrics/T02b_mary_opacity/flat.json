@@ -1,0 +1,245 @@
+{ 
+  "data" : "./prototype/fixtures/T02_mary_knows_identity/slices/T02b_mary_opacity.trig" ,
+  "query" : "./prototype/fixtures/T02_mary_knows_identity/T02b_mary_opacity.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 171.81995 ,
+  "input_quads" : 157 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : -1 ,
+        "warmup" : true ,
+        "materialise_total_ms" : 386.24067 ,
+        "cpu_ms" : 370.046057 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 26.145172119140625 ,
+        "phases" : {
+            "build_ms" : 22.338201 ,
+            "enumerate_ms" : 208.77799 ,
+            "validate_ms" : 149.803618
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 63.954829 ,
+        "query_second_ms" : 0.835642
+      } ,
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 313.362405 ,
+        "cpu_ms" : 297.099131 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 14 ,
+        "heap_delta_mb" : 25.224365234375 ,
+        "phases" : {
+            "build_ms" : 3.068555 ,
+            "enumerate_ms" : 223.373762 ,
+            "validate_ms" : 86.457572
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.348669 ,
+        "query_second_ms" : 0.637887
+      } ,
+      { 
+        "rep" : 1 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 198.051582 ,
+        "cpu_ms" : 190.506282 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 4 ,
+        "heap_delta_mb" : 17.019302368164062 ,
+        "phases" : {
+            "build_ms" : 2.685818 ,
+            "enumerate_ms" : 116.542009 ,
+            "validate_ms" : 78.468169
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.134004 ,
+        "query_second_ms" : 0.394049
+      } ,
+      { 
+        "rep" : 2 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 184.003466 ,
+        "cpu_ms" : 165.969501 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 15 ,
+        "heap_delta_mb" : 20.8453369140625 ,
+        "phases" : {
+            "build_ms" : 2.395847 ,
+            "enumerate_ms" : 102.286447 ,
+            "validate_ms" : 78.924353
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.170616 ,
+        "query_second_ms" : 0.3984
+      } ,
+      { 
+        "rep" : 3 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 167.934531 ,
+        "cpu_ms" : 157.485175 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 10 ,
+        "heap_delta_mb" : 44.56190490722656 ,
+        "phases" : {
+            "build_ms" : 2.107835 ,
+            "enumerate_ms" : 89.533676 ,
+            "validate_ms" : 75.978886
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.231391 ,
+        "query_second_ms" : 0.511878
+      } ,
+      { 
+        "rep" : 4 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 177.794309 ,
+        "cpu_ms" : 174.43817 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 18.448577880859375 ,
+        "phases" : {
+            "build_ms" : 2.146578 ,
+            "enumerate_ms" : 102.116294 ,
+            "validate_ms" : 73.134516
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.243902 ,
+        "query_second_ms" : 0.647367
+      } ,
+      { 
+        "rep" : 5 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 197.327379 ,
+        "cpu_ms" : 174.469092 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 21 ,
+        "heap_delta_mb" : 17.46369171142578 ,
+        "phases" : {
+            "build_ms" : 1.756259 ,
+            "enumerate_ms" : 104.869588 ,
+            "validate_ms" : 90.229608
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.507341 ,
+        "query_second_ms" : 0.615696
+      } ,
+      { 
+        "rep" : 6 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 153.400915 ,
+        "cpu_ms" : 143.260384 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 9 ,
+        "heap_delta_mb" : 40.235565185546875 ,
+        "phases" : {
+            "build_ms" : 2.128978 ,
+            "enumerate_ms" : 87.223032 ,
+            "validate_ms" : 63.734281
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 1.112072 ,
+        "query_second_ms" : 0.349196
+      } ,
+      { 
+        "rep" : 7 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 143.296347 ,
+        "cpu_ms" : 140.376197 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 2 ,
+        "heap_delta_mb" : 20.800071716308594 ,
+        "phases" : {
+            "build_ms" : 1.61617 ,
+            "enumerate_ms" : 76.94411 ,
+            "validate_ms" : 64.3896
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.959051 ,
+        "query_second_ms" : 0.252589
+      } ,
+      { 
+        "rep" : 8 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 128.448746 ,
+        "cpu_ms" : 115.676419 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 12 ,
+        "heap_delta_mb" : 22.819122314453125 ,
+        "phases" : {
+            "build_ms" : 1.361611 ,
+            "enumerate_ms" : 72.316337 ,
+            "validate_ms" : 54.409451
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.968202 ,
+        "query_second_ms" : 0.243918
+      } ,
+      { 
+        "rep" : 9 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 124.208782 ,
+        "cpu_ms" : 114.682929 ,
+        "gc_count" : 1 ,
+        "gc_ms" : 9 ,
+        "heap_delta_mb" : 42.377655029296875 ,
+        "phases" : {
+            "build_ms" : 1.110723 ,
+            "enumerate_ms" : 65.937655 ,
+            "validate_ms" : 56.854782
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 0.915278 ,
+        "query_second_ms" : 0.234558
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 153 ,
+              "base_after" : 153 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1222 ,
+              "inferred_trivial" : 1015 ,
+              "inferred_nontrivial" : 54 ,
+              "inferred_taxonomic" : 8 ,
+              "inferred_substantive" : 46 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 153 ,
+      "materialised_total" : 1222 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1069 ,
+      "inferred_trivial_total" : 1015 ,
+      "inferred_nontrivial_total" : 54 ,
+      "inferred_taxonomic_total" : 8 ,
+      "inferred_substantive_total" : 46 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1222 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : true ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 0.915278 ,
+      "query_second_ms" : 0.234558 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "flat | http://example.org/dectective/story/mary http://example.org/dectective/profile#engagedTo http://example.org/dectective/story/windibank" ]
+    } ,
+  "materialised_sha256" : "0df0a58d23ee1ef4a6155b12aaff79bc4a8bd432f2168d67d2e005955da97a58"
+}

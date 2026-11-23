@@ -1,0 +1,102 @@
+1	body	“Yes, sir; for he had started to England just before
+1	body	it arrived.”
+1	body	“Ha! that was unfortunate. Your wedding was
+1	body	arranged, then, for the Friday. Was it to be in church?”
+1	body	“Yes, sir, but very quietly.
+1	body	It was to be at St.
+1	body	Saviour’s, near King’s Cross, and we were to have
+1	body	breakfast afterwards at the St. Pancras Hotel. Hosmer
+1	body	came for us in a hansom, but as there were two of
+1	body	us he put us both into it and stepped himself into a
+1	body	four-wheeler, which happened to be the only other
+1	body	cab in the street. We got to the church ﬁrst, and when
+1	body	the four-wheeler drove up we waited for him to step
+1	body	out, but he never did, and when the cabman got down
+1	body	from the box and looked there was no one there! The
+1	body	cabman said that he could not imagine what had be-
+1	body	come of him, for he had seen him get in with his own
+1	body	eyes. That was last Friday, Mr. Holmes, and I have
+1	body	never seen or heard anything since then to throw any
+1	body	light upon what became of him.”
+1	body	“It seems to me that you have been very shame-
+1	body	fully treated,” said Holmes.
+1	body	“Oh, no, sir! He was too good and kind to leave
+1	body	me so. Why, all the morning he was saying to me that,
+1	body	whatever happened, I was to be true; and that even
+1	body	if something quite unforeseen occurred to separate
+1	body	us, I was always to remember that I was pledged to
+1	body	him, and that he would claim his pledge sooner or
+1	body	later. It seemed strange talk for a wedding-morning,
+1	body	but what has happened since gives a meaning to it.”
+1	body	“Most certainly it does. Your own opinion is, then,
+1	body	that some unforeseen catastrophe has occurred to
+1	body	him?”
+1	body	“Yes, sir. I believe that he foresaw some danger, or
+1	body	else he would not have talked so. And then I think
+1	body	that what he foresaw happened.”
+1	body	“But you have no notion as to what it could have
+1	body	been?”
+1	body	“None.”
+1	body	“One more question. How did your mother take
+1	body	the matter?”
+1	body	“She was angry, and said that I was never to speak
+1	body	of the matter again.”
+1	body	“And your father? Did you tell him?”
+1	body	“Yes; and he seemed to think, with me, that some-
+1	body	thing had happened, and that I should hear of Hos-
+1	body	mer again. As he said, what interest could anyone
+1	body	have in bringing me to the doors of the church, and
+1	body	then leaving me? Now, if he had borrowed my money,
+1	body	or if he had married me and got my money settled
+1	body	on him, there might be some reason, but Hosmer was
+1	page_number	4
+2	body	very independent about money and never would look
+2	body	at a shilling of mine. And yet, what could have hap-
+2	body	pened? And why could he not write? Oh, it drives
+2	body	me half-mad to think of it, and I can’t sleep a wink
+2	body	at night.” She pulled a little handkerchief out of her
+2	body	muff and began to sob heavily into it.
+2	body	“I shall glance into the case for you,” said Holmes,
+2	body	rising, “and I have no doubt that we shall reach some
+2	body	deﬁnite result. Let the weight of the matter rest upon
+2	body	me now, and do not let your mind dwell upon it fur-
+2	body	ther. Above all, try to let Mr. Hosmer Angel vanish
+2	body	from your memory, as he has done from your life.”
+2	body	“Then you don’t think I’ll see him again?”
+2	body	“I fear not.”
+2	body	“Then what has happened to him?”
+2	body	“You will leave that question in my hands.
+2	body	I
+2	body	should like an accurate description of him and any
+2	body	letters of his which you can spare.”
+2	body	“I advertised for him in last Saturday’s Chronicle,”
+2	body	said she. “Here is the slip and here are four letters
+2	body	from him.”
+2	body	“Thank you. And your address?”
+2	body	“No. 31 Lyon Place, Camberwell.”
+2	body	“Mr. Angel’s address you never had, I understand.
+2	body	Where is your father’s place of business?”
+2	body	“He travels for Westhouse & Marbank, the great
+2	body	claret importers of Fenchurch Street.”
+2	body	“Thank you. You have made your statement very
+2	body	clearly. You will leave the papers here, and remember
+2	body	the advice which I have given you. Let the whole
+2	body	incident be a sealed book, and do not allow it to affect
+2	body	your life.”
+2	body	“You are very kind, Mr. Holmes, but I cannot do
+2	body	that. I shall be true to Hosmer. He shall ﬁnd me ready
+2	body	when he comes back.”
+2	body	For all the preposterous hat and the vacuous face,
+2	body	there was something noble in the simple faith of our
+2	body	visitor which compelled our respect. She laid her little
+2	body	bundle of papers upon the table and went her way,
+2	body	with a promise to come again whenever she might be
+2	body	summoned.
+2	body	Sherlock Holmes sat silent for a few minutes with
+2	body	his ﬁngertips still pressed together, his legs stretched
+2	body	out in front of him, and his gaze directed upward to
+2	body	the ceiling. Then he took down from the rack the old
+2	body	and oily clay pipe, which was to him as a counsellor,
+2	body	and, having lit it, he leaned back in his chair, with the
+2	body	thick blue cloud-wreaths spinning up from him, and
+2	body	a look of inﬁnite languor in his face.

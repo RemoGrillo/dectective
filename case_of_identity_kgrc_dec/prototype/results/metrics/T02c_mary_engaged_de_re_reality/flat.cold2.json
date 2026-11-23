@@ -1,0 +1,75 @@
+{ 
+  "data" : "./prototype/fixtures/T02_mary_knows_identity/slices/T02c_mary_engaged_de_re_reality.trig" ,
+  "query" : "./prototype/fixtures/T02_mary_knows_identity/T02c_mary_engaged_de_re_reality.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 175.802383 ,
+  "input_quads" : 157 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 401.329241 ,
+        "cpu_ms" : 381.492447 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 25.887168884277344 ,
+        "phases" : {
+            "build_ms" : 23.637832 ,
+            "enumerate_ms" : 209.644736 ,
+            "validate_ms" : 160.212317
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 63.771506 ,
+        "query_second_ms" : 0.95147
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 153 ,
+              "base_after" : 153 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1222 ,
+              "inferred_trivial" : 1015 ,
+              "inferred_nontrivial" : 54 ,
+              "inferred_taxonomic" : 8 ,
+              "inferred_substantive" : 46 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 153 ,
+      "materialised_total" : 1222 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1069 ,
+      "inferred_trivial_total" : 1015 ,
+      "inferred_nontrivial_total" : 54 ,
+      "inferred_taxonomic_total" : 8 ,
+      "inferred_substantive_total" : 46 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1222 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : true ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 63.771506 ,
+      "query_second_ms" : 0.95147 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "flat | http://example.org/dectective/story/mary http://example.org/dectective/profile#engagedTo http://example.org/dectective/story/windibank" ]
+    } ,
+  "materialised_sha256" : "0df0a58d23ee1ef4a6155b12aaff79bc4a8bd432f2168d67d2e005955da97a58"
+}

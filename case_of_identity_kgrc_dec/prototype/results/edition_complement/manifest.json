@@ -1,0 +1,22 @@
+{
+  "dataset": "gold",
+  "question": "Complementary materialisation for the digital edition (no conflict check)",
+  "seed_iris": [],
+  "require_modules": [
+    "W03_holmes_mother",
+    "W04_holmes_motive",
+    "W11_v_windibank_delighted",
+    "W12_v_windibank_machine",
+    "W13_holmes_same_machine",
+    "W14_h_author_other",
+    "W02_holmes_reconstruction",
+    "F01_persons",
+    "F02_occupation",
+    "F03_courtship",
+    "F04_documents",
+    "F05_windibank_visit",
+    "F07_comm_acts_visit"
+  ],
+  "dec_flags": [],
+  "closed_for": []
+}

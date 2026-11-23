@@ -1,0 +1,43 @@
+{
+  "dataset": "C4",
+  "question": "Snapshot C4 (reconstruction accepted).",
+  "seed_iris": [
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/story/pB"
+  ],
+  "require_modules": [
+    "sW10_holmes",
+    "sF07_reconstruction",
+    "sW01_mary",
+    "sF03_comm"
+  ],
+  "queries": [
+    {
+      "id": "T08c_identity_C4",
+      "file": "T08c_identity_C4.rq",
+      "expected": true,
+      "classification": "lookup",
+      "justification": [
+        "P126.S11",
+        "P127.S01"
+      ],
+      "axioms_or_assumptions": [
+        "C4 settlement emulated by typing w10 epistemic"
+      ],
+      "world_time": "reality at C4",
+      "note": "Manual update of the world type; snapshots C2/C3 are separate files and are not altered."
+    },
+    {
+      "id": "T08e_mary_unchanged_C4",
+      "file": "T08e_mary_unchanged_C4.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P079.S02"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:w01 at C4",
+      "note": "Reader learns the identity; Mary's world does not."
+    }
+  ]
+}

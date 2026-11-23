@@ -1,0 +1,1420 @@
+@prefix ns1: <http://example.org/dectective/profile#> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix ns4: <http://w3id.org/conjectures/> .
+@prefix ns5: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/dectective/world/holmes_prediction> {
+    <http://example.org/dectective/story/hyp_reaction> ns1:rejects <http://example.org/dectective/story/hyp_telling> .
+
+    <http://example.org/dectective/story/hyp_telling> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/mary> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/holmes> .
+}
+
+{
+    <http://example.org/dectective/story/adoption_mary> a ns3:I7_Belief_Adoption ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/mary> ;
+        ns3:J2_concluded_that <http://example.org/dectective/story/belief_mary_D1> ;
+        ns3:J7_is_based_on_evidence_from <http://example.org/dectective/story/letter_H1> .
+
+    <http://example.org/dectective/story/ca_holmes_explanation> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/watson> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/holmes> .
+
+    <http://example.org/dectective/story/ca_holmes_prediction> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/watson> ;
+        ns1:hasContent <http://example.org/dectective/world/holmes_prediction> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/holmes> .
+
+    <http://example.org/dectective/story/ca_holmes_reconstruction> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/windibank> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/holmes> .
+
+    <http://example.org/dectective/story/ca_hosmer_cashier> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/mary> ;
+        ns1:reportedBy <http://example.org/dectective/story/mary> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/ca_mary_france> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/mary> .
+
+    <http://example.org/dectective/story/ca_windibank_delighted> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/ca_windibank_machine> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/ca_windibank_reassure> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/mary> ;
+        ns1:reportedBy <http://example.org/dectective/story/mary> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/inference_holmes> a ns3:I5_Inference_Making ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/holmes> ;
+        ns3:J2_concluded_that <http://example.org/dectective/story/belief_holmes_identity> ;
+        ns3:J3_applied <http://example.org/dectective/story/logic_convergent_abduction> .
+
+    <http://example.org/dectective/story/letter_W> a ns1:TypewrittenLetter ;
+        ns1:showsDefectProfile <http://example.org/dectective/story/profile_eR14> ;
+        ns1:typedOn <http://example.org/dectective/story/office_machine> ;
+        ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/reaction_start> a ns2:E5_Event ;
+        ns2:P11_had_participant <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/world/shared> a ns4:sharedWorld .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/001> a ns5:Situation ;
+        ns5:from <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Chair> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/stand> ;
+        ns5:source "Holmes stood out of a chair"@en,
+            "ホームズは椅子から立った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/002> ;
+        ns5:time "1891-09-01T10:00:00"^^xsd:dateTime ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/1891-09-01T10> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes_s_office> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/022> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/recognize> ;
+        ns5:source "Holmes found that"@en,
+            "ホームズは以下をわかった"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/023>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/024>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/025>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/026>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/027>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/028>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/029>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/030> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/04a> a ns5:Situation ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Scarf> .
+
+    ns1:believes a ns4:doxasticPredicate .
+
+    ns1:establishes a ns4:epistemicPredicate .
+
+    <http://example.org/dectective/story/letter_H2> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/letter_H3> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/letter_H4> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/app_mary_sutherland> a ns2:E41_Appellation ;
+        rdfs:label "Mary Sutherland" .
+
+    <http://example.org/dectective/story/app_windibank> a ns2:E41_Appellation ;
+        rdfs:label "Windibank" .
+
+    <http://example.org/dectective/story/belief_holmes_identity> a ns3:I2_Belief ;
+        ns1:heldBy <http://example.org/dectective/story/holmes> ;
+        ns3:J4_that <http://example.org/dectective/world/holmes_reconstruction> ;
+        ns3:J5_holds_to_be "TRUE" .
+
+    <http://example.org/dectective/story/belief_mary_D1> a ns3:I2_Belief ;
+        ns1:heldBy <http://example.org/dectective/story/mary> ;
+        ns3:J4_that <http://example.org/dectective/world/mary_D1> ;
+        ns3:J5_holds_to_be "TRUE" .
+
+    <http://example.org/dectective/story/disappearance> a ns1:Disappearance ;
+        ns1:disappearedPerson <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:Journey ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/journey_france_2> a ns1:Journey ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/mother> a ns2:E21_Person .
+
+    <http://example.org/dectective/story/occ_wine_traveller> a ns1:Occupation .
+
+    <http://example.org/dectective/story/office_machine> a ns1:Typewriter ;
+        ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> ;
+        ns1:usedBy <http://example.org/dectective/story/westhouse_staff> .
+
+    <http://example.org/dectective/story/westhouse_marbank> a ns2:E74_Group .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/002> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/stand> ;
+        ns5:source "Holmes stood between the windowed seams"@en,
+            "ホームズは窓掛けの合わせ目の間に立った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/004> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Between_seams_of_window> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/004> a ns5:Situation ;
+        ns5:at_the_same_time <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/005> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        ns5:source "Sutherland wraps around on the opposite pavement"@en,
+            "サザランドが向かいの舗道で襟巻きを巻いている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Pavement_opposite> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/005> a ns5:Situation ;
+        ns5:at_the_same_time <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/006> ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        ns5:source "Sutherland is wearing a hat"@en,
+            "サザランドが帽子をかぶっている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/hat> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/006> a ns5:Situation ;
+        ns5:at_the_same_time <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/007> ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        ns5:source "Sutherland has red feathers"@en,
+            "サザランドが赤い羽根をつけている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Red_feather> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/007> a ns5:Situation ;
+        ns5:at_the_same_time <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/008> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/stand> ;
+        ns5:source "Sutherland stands"@en,
+            "サザランドが立っている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/014> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/hear> ;
+        ns5:source "Holmes hears a call bell"@en,
+            "ホームズは呼び鈴を聞く"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/015> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/bell> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/015> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Holmes said the following"@en,
+            "ホームズは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/031> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/016>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/017>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/018>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/019>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/020>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/021> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/016> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "The present movement has been before"@en,
+            "今の素振りは以前にもあった"@ja ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/008>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/009>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/010>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/011>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/012>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/013> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Before> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/018> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "The above is color love Saya"@en,
+            "上記は色恋沙汰である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/017> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Romance> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/019> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/want> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland wants advice"@en,
+            "サザランドは助言を欲しい"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/advice> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/020> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/worry> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland suffers from"@en,
+            "サザランドは以下を悩んでいる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/021> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/023> a ns5:Statement ;
+        ns5:from <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Man> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/encounter> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Women encounter awful eyes from men"@en,
+            "女性は男からひどい目に遭う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Terrible_things> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/024> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notHesitate> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Women do not hesitate"@en,
+            "女性はためらわない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/025> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/026> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Interpretation is color love Saya"@en,
+            "解釈は色恋沙汰である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/romance> ;
+        ns5:why <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/027>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/028>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/029>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/030> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/031> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/beBeaten> ;
+        ns5:source "The door of the room is struck"@en,
+            "部屋の扉が叩かれる"@ja ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/032> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/door_of_Room_of_Holmes> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/032> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/comeIn> ;
+        ns5:source "A boy in charge of service came in"@en,
+            "給仕服の少年が入ってきた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Boy> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/033> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/033> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "A boy at the service uniform tells Sutherland"@en,
+            "給仕服の少年が告げる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Service_Boy> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/035> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/034>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/33a> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/034> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/appear> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Service_Boy> ;
+        ns5:source "Sutherland appears"@en,
+            "サザランドが現れる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/035> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/welcome> ;
+        ns5:source "Holmes welcomes Sutherland"@en,
+            "ホームズはサザランドを迎える"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/036> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/036> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/close> ;
+        ns5:source "Holmes shuts the door"@en,
+            "ホームズは扉を閉める"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/037> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/door> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/037> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/recommend> ;
+        ns5:source "Holmes recommends an armchair"@en,
+            "ホームズは肘掛け椅子を勧める"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/038> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Armchair> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/038> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/lookAround> ;
+        ns5:source "Holmes looks over Sutherland"@en,
+            "ホームズはサザランドをながめ回す"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/039> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/039> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Holmes said the following"@en,
+            "ホームズは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/041> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/040> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/040> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/stressful> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Myopia is hard to type"@en,
+            "近眼はタイプ打ちにつらい"@ja ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Near_sight> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Typing> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/041> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Sutherland said the following"@en,
+            "サザランドは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/044> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/042>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/043> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/042> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/stressful> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Myopia is hard"@en,
+            "近眼はつらい"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Near_sight> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/043> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/recognize> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland knows the position of the character"@en,
+            "サザランドは文字の位置がわかる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Character_position> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/044> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notice> ;
+        ns5:source "Sutherland notices the meaning of the words of Holmes"@en,
+            "サザランドはホームズの言葉の意味に気づく"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/045> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/meaning_of_word_of_Holmes> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/045> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/beSurprised> ;
+        ns5:source "Sutherland was surprised"@en,
+            "サザランドは驚いた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/047> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/047> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        ns5:source "Sutherland thought that"@en,
+            "サザランドは以下を思った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/049> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/048> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/048> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/know> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Holmes already knows Sutherland"@en,
+            "ホームズはサザランドをすでに知っている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/049> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Holmes said the following"@en,
+            "ホームズは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/052> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/051> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/051> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/recognize> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Holmes finds out that others overlook"@en,
+            "ホームズは他人の見落としがわかる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Oversight_of_others> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/052> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Sutherland said the following"@en,
+            "サザランドは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/083> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/053>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/054>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/055>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/056>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/057>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/058>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/059>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/060>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/061>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/062>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/063>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/064>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/065>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/066>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/067>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/068>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/069>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/070>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/071>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/072>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/073>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/074>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/075>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/076>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/077>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/078>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/079>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/080>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/081>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/082> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/053> a ns5:Statement ;
+        ns5:from <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Etheridge> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/hear> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland heard Holmes from Etheridge"@en,
+            "サザランドはホームズをエサリッジから聞いた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/054> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/find> ;
+        ns5:how <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/simply> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Holmes easily found Etheridge's husband"@en,
+            "ホームズはエサリッジの夫を簡単に見つけた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/husband_of_Etheridge> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/055> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/beConvinced> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Police had ruled that Esridge's husband had died"@en,
+            "警察はエサリッジの夫の死亡を断定していた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/police> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/death_of_husband_of_Etheridge> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/056> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/notRich> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland is not rich"@en,
+            "サザランドは裕福ではない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/057> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/earn> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland earns one hundred dollars a year"@en,
+            "サザランドは一年に百ドルを稼ぐ"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/One_hundred_dollars> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/one_year> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/058> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/typist> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland is a typing"@en,
+            "サザランドはタイプ打ちである"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/062> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/handOver> ;
+        ns5:if <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/060> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland hands over to Holmes"@en,
+            "サザランドは稼ぎをホームズに渡す"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Earning>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/063> a ns5:Statement ;
+        ns5:from <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/House_of_Sutherland> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/jumpOut> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland jumped out of the house"@en,
+            "サザランドは家を飛び出した"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/064> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/angree> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland is angry"@en,
+            "サザランドは腹を立てている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/065> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/careless> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank is naive"@en,
+            "ウィンディバンクは呑気である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/066> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/unwillingToGo> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank does not want to go to the police"@en,
+            "ウィンディバンクは警察に行きたくない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/police> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/067> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notWant> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank does not want to visit Holmes"@en,
+            "ウィンディバンクはホームズを訪ねたくない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/67a> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/068> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/father-in-law_of_Sutherland> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank is Sutherland's father-in-law"@en,
+            "ウィンディバンクはサザランドの義理の父である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/069> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/older> ;
+        ns5:how <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/5_years_2_months> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank is 5 years and 2 months older than Sutherland"@en,
+            "ウィンディバンクはサザランドより5年2ヶ月年上である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:whom <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/070> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/fine> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "mother of Sutherland is fine"@en,
+            "サザランドの母は元気である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/071> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/healthy> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "mother of Sutherland is strong"@en,
+            "サザランドの母は丈夫である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/072> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/getMarriedAgain> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "mother of Sutherland remarried after Sutherland&#39;s father&#39;s death"@en,
+            "サザランドの母はサザランドの父の死後に再婚した"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/073> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/plumbing_business> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's father is a plumber in Totenham Court"@en,
+            "サザランドの父はトテナム・コート通りで配管業である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/father_of_Sutherland> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Totenham_Court_street> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/074> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/leaveBehind> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's father left a store"@en,
+            "サザランドの父は店を残した"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/father_of_Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/shop_of_father_of_Sutherland> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/After_death_of_father_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/075> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/continue> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "mother of Sutherland continued with Hardy"@en,
+            "サザランドの母はハーディと続けていた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/shop_of_father_of_Sutherland> ;
+        ns5:whom <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Hardy> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/076> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/field_head> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Hardy is the head of the scene"@en,
+            "ハーディは現場頭である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Hardy> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/077> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/sell> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank sold her father's shop in Sutherland"@en,
+            "ウィンディバンクはサザランドの父の店を売らせた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/shop_of_father_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/078> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/foreign_trade_of_wine> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank is a wine commerce"@en,
+            "ウィンディバンクはワインの外商である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/079> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/sell> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's father';s store sold for ｡・4700"@en,
+            "サザランドの父の店は4700ポンドで売れた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/79a> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/shop_of_father_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/080> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        ns5:source "Sutherland thinks the following"@en,
+            "サザランドは以下を思う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/081> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/083> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        ns5:source "Watson thinks that"@en,
+            "ワトソンは以下を思う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Watson> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/085> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/084> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/084> a ns5:Thought ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/irritated> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Watson> ;
+        ns5:source "Holmes is annoyed with Sutherland's story"@en,
+            "ホームズはサザランドの話にいらだっている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/story_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/085> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/focus> ;
+        ns5:source "Holmes are concentrating on Sutherland's story"@en,
+            "ホームズはサザランドの話に集中している"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/086> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/story_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/086> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Sutherland said the following"@en,
+            "サザランドが以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/094> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/087>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/088>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/089>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/090>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/091>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/092>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/093> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/087> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/heritage_of_Ned> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's income is Ned&#39;s heritage"@en,
+            "サザランドの収入はネッドの遺産である"@ja ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/income_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/088> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/uncle_of_Sutherland> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Ned is Sutherland's uncle"@en,
+            "ネッドはサザランドの伯父である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Ned> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/089> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Ned is in Auckland"@en,
+            "ネッドはオークランドにいる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Ned> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Auckland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/090> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/shares_of_New_Zealand> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Heritage is a New Zealand strain"@en,
+            "遺産はニュージーランド株である"@ja ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/heritage> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/091> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/quarter_five> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "The dividend of the heritage is quarter and five o'clock"@en,
+            "遺産の配当は四分五厘である"@ja ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/dividend_of_heritage> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/092> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/2500_GBP> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "The face value of the heritage is ｡・2500"@en,
+            "遺産の額面は2500ポンドである"@ja ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Face_value_of_heritage> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/093> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/get> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland gives yield"@en,
+            "サザランドは利回りを貰える"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/yield_of_heritage> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/094> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        ns5:source "Holmes thought the following"@en,
+            "ホームズは以下を思った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/100> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/095>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/096>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/097>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/098>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/099> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/095> a ns5:Thought ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/interesting> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland is interesting"@en,
+            "サザランドは興味深い"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/096> a ns5:Thought ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/get> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland gets 100 pounds a year"@en,
+            "サザランドは一年に100ポンドをもらえる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/100_GBP> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/one_year> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/097> a ns5:Thought ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland makes money"@en,
+            "サザランドは稼ぎを持つ"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Earning> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/098> a ns5:Thought ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland has room"@en,
+            "サザランドは余裕を持つ"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/margin> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/099> a ns5:Thought ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/enough> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "60 pounds is enough for single women"@en,
+            "独身女性は60ポンドで十分である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Single_women> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/60_GBP> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/100> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Sutherland said the following"@en,
+            "サザランドは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/110> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/101>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/102>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/103>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/104>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/105>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/106>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/107>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/108>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/109> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/100_GBP> a ns5:PhysicalObject ;
+        rdfs:label "100 GBP"@en,
+            "100ポンド"@ja .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/101> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/enough> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland earns less than ｡・60"@en,
+            "サザランドは60ポンド以下の収入で十分である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/less_than_60_GBP> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/102> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notRelyOn> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland does not rely on parents"@en,
+            "サザランドは親に頼らない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/parents> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/103> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/deposit> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland keeps money with her parents"@en,
+            "サザランドは親にお金を預けている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/money> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/104> ;
+        ns5:whom <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/parent> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/105> a ns5:Statement ;
+        ns5:from <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/yield> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/pullOut> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank draws a quarter from the yield"@en,
+            "ウィンディバンクは利回りから四分の一を引き出す"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/one_quarter> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/106> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/handOver> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank passes to mother of Sutherland"@en,
+            "ウィンディバンクはサザランドの母に渡す"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:whom <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/107> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/enough> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland earns enough for Sutherland"@en,
+            "サザランドはサザランドの稼ぎで十分である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/income_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/108> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/gain> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland gets 2 pence with one"@en,
+            "サザランドは1枚で2ペンスを得る"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/2_pence>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/one_sheet> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/109> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/process> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland processes up to 20 cards in a day"@en,
+            "サザランドは１日で最大20枚を処理する"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Up_to_20_sheets> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/1_day> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/110> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/ask> ;
+        ns5:source "Holmes listens to Sutherland about the relationship between Sutherland and Hosma"@en,
+            "ホームズはサザランドとホズマとの関係をサザランドに聞く"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/111> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/relation_of_Hosma> ;
+        ns5:whom <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/111> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/blush> ;
+        ns5:source "Sutherland blushes"@en,
+            "サザランドは顔を赤らめる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/112> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/face> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/112> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/hold> ;
+        ns5:source "Sutherland pinches the sleeves of the jacket"@en,
+            "サザランドは上着の袖をつまむ"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/113> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/sleeve_of_Jacket> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/113> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Sutherland said the following"@en,
+            "サザランドは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/130> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/114>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/115>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/116>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/117>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/118>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/119>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/120>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/121>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/122>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/123>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/124>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/126>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/127>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/128> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/114> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/meet> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland Meets Hosmer at the Gas Industry Association Ball"@en,
+            "サザランドはガス工組合の舞踏会でホズマと出会う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:time "1890-09-01T00:00:00"^^xsd:dateTime ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Hosmer> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/1890-09-01> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/dance_of_Gas_Industry> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/115> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/send> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's father had sent an invitation to the Gas Association&#39;s ball to Sutherland"@en,
+            "サザランドの父はガス工組合の舞踏会の招待状をサザランドに送っていた"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/father_of_Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/116> ;
+        ns5:time "1889-09-01T00:00:00"^^xsd:dateTime ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/invitation_of_dance_of_Gas_Industry> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/1889-09-01> ;
+        ns5:whom <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/125> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notHave> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:source "People in the ball have no value"@en,
+            "舞踏会の人は価値を持たない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/people_of_Dance_party> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/value> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/126> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/attend> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's father&#39;s friend participates in a ball"@en,
+            "サザランドの父の友人は舞踏会に参加している"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/friend_of_father_of_Sutherland> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Dance_party> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/130> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Sutherland said the following"@en,
+            "サザランドは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/135> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/131>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/132>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/133>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/134> .
+
+    <http://example.org/dectective/story/app_hosmer_angel> a ns2:E41_Appellation ;
+        rdfs:label "Hosmer Angel" .
+
+    <http://example.org/dectective/story/letter_H1> a ns1:TypewrittenLetter ;
+        ns1:purportsToBeFrom <http://example.org/dectective/story/hosmer> ;
+        ns1:showsDefectProfile <http://example.org/dectective/story/profile_eR14> ;
+        ns1:typedOn <http://example.org/dectective/story/machine_H> .
+
+    <http://example.org/dectective/story/ball> a ns2:E5_Event .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/008> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        ns5:source "Sutherland's gaze is directed at the window"@en,
+            "サザランドの視線が窓へ向けられている"@ja ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/010> ;
+        ns5:to <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/window> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:when <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/010> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/011> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/mess> ;
+        ns5:source "Sutherland is tinkering with the glove button"@en,
+            "サザランドは手袋の釦をいじっている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/012> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/button_of_Glove> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/012> a ns5:Situation ;
+        ns5:from <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/road> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/jumpOut> ;
+        ns5:source "Sutherland jumps the road"@en,
+            "サザランドは道を飛び出す"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/013> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/013> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/cross> ;
+        ns5:source "Sutherland crosses the way"@en,
+            "サザランドは道を渡る"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/014> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/road> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/017> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/feelRestless> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Women are thrilled at the pavement"@en,
+            "女性が舗道でそわそわする"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/pavement> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/021> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/want> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Sutherland wants to consult people"@en,
+            "サザランドは人に相談したい"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/21a> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/025> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/tearOff> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Woman tears off the string of the doorbell"@en,
+            "女性は呼び鈴の紐を引きちぎる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/string_of_bell> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/027> a ns5:Statement ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/notAngry> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "The woman is not angry"@en,
+            "女性は怒っていない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/028> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/puzzled> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Women are puzzled"@en,
+            "女性は戸惑っている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/029> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/feel> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "The woman is in distress"@en,
+            "女性は悲嘆に暮れている"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Woman> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/sad> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/030> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/canSolve> ;
+        ns5:how <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Immediately> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:source "Women's troubles can be solved quickly"@en,
+            "女性の悩みはすぐに解ける"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/trouble_of_Women> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/060> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/find> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Holmes find Hosmer"@en,
+            "ホームズがホズマを見つける"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Holmes> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Hosmer> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/081> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's father thinks of"@en,
+            "サザランドの父が以下を思う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/father_of_Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/082> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/082> a ns5:Thought ;
+        ns5:hasProperty <http://kgc.knowledge-graph.jp/data/predicate/small> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Father_of_Sutherland> ;
+        ns5:source "4700 pounds is small"@en,
+            "4700ポンドは少額である"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/4700_GBP> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/104> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        ns5:source "Sutherland is with parents"@en,
+            "サザランドは親といる"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/parents_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/116> a ns5:Statement ;
+        ns5:after <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/71a> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/go> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland's and Sutherland&#39;s mother went to the ball after Sutherland&#39;s father&#39;s death"@en,
+            "サザランドとサザランドの母はサザランドの父の死後も舞踏会に行った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/117> ;
+        ns5:to <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/dance> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/117> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notAccept> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank does not know"@en,
+            "ウィンディバンクは以下を承知しない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/120> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/118>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/119> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/118> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/go> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland and mother of Sutherland go to a ball"@en,
+            "サザランドとサザランドの母が舞踏会に行く"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> ;
+        ns5:to <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/dance> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/119> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/goOut> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland and mother of Sutherland go out"@en,
+            "サザランドとサザランドの母が外出する"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/120> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/angry> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank goes mad below"@en,
+            "ウィンディバンクは以下で狂う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/122> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/121> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/121> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/go> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland goes to Sunday school event"@en,
+            "サザランドが日曜学校の催しに行く"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:to <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sunday_school_events> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/122> a ns5:Situation,
+            ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland told the ball to join"@en,
+            "サザランドは舞踏会参加を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/123> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/122a> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/122a> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/go> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Dance_party> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/123> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/cannotStop> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank can not stop Sutherland"@en,
+            "ウィンディバンクはサザランドを止められない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/124> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/122a> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/124> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank says"@en,
+            "ウィンディバンクは以下を言う"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/127> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/125> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/127> a ns5:Situation ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        ns5:source "Windibank said"@en,
+            "ウィンディバンクは以下を言った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/131> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/128> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/128> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/notHave> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:source "Sutherland has no clothes to wear"@en,
+            "サザランドは着る服を持たない"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Clothes_to_wear> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/131> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland wore purple plush"@en,
+            "サザランドは紫のフラシ天を着た"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/132> ;
+        ns5:what <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Purple_plush> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/132> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/go> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Windibank went to France for work."@en,
+            "ウィンディバンクは所用のためフランスへ行った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Windibank> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/133> ;
+        ns5:to <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/France> ;
+        ns5:why <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Required> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/133> a ns5:Statement ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/go> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland and her mother and Hardy went to the ball"@en,
+            "サザランドとサザランドの母とハーディは舞踏会に行った"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Hardy>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland>,
+            <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/mother_of_Sutherland> ;
+        ns5:then <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/134> ;
+        ns5:where <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Dance_party> .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/134> ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/meet> ;
+        ns5:infoSource <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> ;
+        ns5:source "Sutherland met Hosmer at the ball"@en .
+
+    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/010> a ns5:Situation ;
+        ns5:at_the_same_time <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/011> ;
+        ns5:hasPredicate <http://kgc.knowledge-graph.jp/data/predicate/move> ;
+        ns5:how <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Back_and_forth> ;
+        ns5:source "Sutherland moves back and forth"@en,
+            "サザランドが前後に動く"@ja ;
+        ns5:subject <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/Sutherland> .
+
+    <http://example.org/dectective/story/machine_H> a ns1:Typewriter ;
+        ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> .
+
+    <http://example.org/dectective/story/holmes> a ns2:E21_Person ;
+        ns1:believes <http://example.org/dectective/world/holmes_prediction> ;
+        ns1:establishes <http://example.org/dectective/world/holmes_reconstruction> .
+
+    <http://example.org/dectective/story/hosmer> a ns2:E21_Person ;
+        ns1:attended <http://example.org/dectective/story/ball> ;
+        ns1:wore <http://example.org/dectective/story/tinted_glasses> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/app_hosmer_angel> .
+
+    <http://example.org/dectective/story/mary> a ns2:E21_Person ;
+        ns1:attended <http://example.org/dectective/story/ball> ;
+        ns1:believes <http://example.org/dectective/world/mary_D1> ;
+        ns1:engagedTo <http://example.org/dectective/story/hosmer> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/app_mary_sutherland> .
+
+    <http://example.org/dectective/story/windibank> a ns1:KeenSighted,
+            ns2:E21_Person ;
+        ns1:employedBy <http://example.org/dectective/story/westhouse_marbank> ;
+        ns1:hasOccupation <http://example.org/dectective/story/occ_wine_traveller> ;
+        ns1:spouseOf <http://example.org/dectective/story/mother> ;
+        ns1:stepfatherOf <http://example.org/dectective/story/mary> ;
+        ns2:P1_is_identified_by <http://example.org/dectective/story/app_windibank> .
+
+    _:nedb341ff876b42218c3526673cd64851b1 ns4:checkInconsistencies true .
+}
+
+<http://example.org/dectective/world/mary_D1> {
+    <http://example.org/dectective/story/disappearance> a ns1:InvoluntaryDisappearance ;
+        ns1:disappearedPerson <http://example.org/dectective/story/hosmer> .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:ActualJourney ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/journey_france_2> a ns1:ActualJourney ;
+        ns1:traveller <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/hosmer> a ns1:ExpectedToReturn,
+            ns1:WeakSighted ;
+        ns1:hasOccupation <http://example.org/dectective/story/occ_cashier_leadenhall> .
+
+    <http://example.org/dectective/story/mary> ns1:engagedTo <http://example.org/dectective/story/hosmer> .
+}
+
+<http://example.org/dectective/world/holmes_reconstruction> {
+    <http://example.org/dectective/story/impersonation> a ns1:Impersonation ;
+        ns1:usedAppellation <http://example.org/dectective/story/app_hosmer_angel> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/letter_H2> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/letter_H3> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/letter_H4> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/disappearance> a ns1:VoluntaryDisappearance .
+
+    <http://example.org/dectective/story/journey_france_1> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/journey_france_2> a ns1:PretendedJourney .
+
+    <http://example.org/dectective/story/letter_H1> ns1:writtenBy <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/hosmer> owl:sameAs <http://example.org/dectective/story/windibank> .
+}
+
+<http://example.org/dectective/world/shared> {
+    ns1:addressee a owl:ObjectProperty .
+
+    ns1:attended a owl:ObjectProperty .
+
+    ns1:disappearedPerson a owl:ObjectProperty .
+
+    ns1:employedBy a owl:ObjectProperty .
+
+    ns1:engagedTo a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:hasContent a owl:ObjectProperty .
+
+    ns1:hasDefectProfile a owl:ObjectProperty .
+
+    ns1:hasOccupation a owl:ObjectProperty .
+
+    ns1:heldBy a owl:ObjectProperty .
+
+    ns1:purportsToBeFrom a owl:ObjectProperty .
+
+    ns1:rejects a owl:ObjectProperty .
+
+    ns1:reportedBy a owl:ObjectProperty .
+
+    ns1:showsDefectProfile a owl:ObjectProperty .
+
+    ns1:spouseOf a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:stepfatherOf a owl:ObjectProperty .
+
+    ns1:traveller a owl:ObjectProperty .
+
+    ns1:typedOn a owl:ObjectProperty .
+
+    ns1:usedAppellation a owl:ObjectProperty .
+
+    ns1:usedBy a owl:ObjectProperty .
+
+    ns1:wore a owl:ObjectProperty .
+
+    ns1:writtenBy a owl:ObjectProperty .
+
+    ns1:ExpectedToReturn a owl:Class .
+
+    ns1:Impersonation a owl:Class .
+
+    ns1:Letter a owl:Class .
+
+    ns1:Occupation a owl:Class .
+
+    ns1:VoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance ;
+        owl:disjointWith ns1:InvoluntaryDisappearance .
+
+    ns1:WeakSighted a owl:Class ;
+        owl:disjointWith ns1:KeenSighted .
+
+    ns1:believes a owl:ObjectProperty .
+
+    ns1:establishes a owl:ObjectProperty .
+
+    ns1:ActualJourney a owl:Class ;
+        rdfs:subClassOf ns1:Journey ;
+        owl:disjointWith ns1:PretendedJourney .
+
+    ns1:InvoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance .
+
+    ns1:KeenSighted a owl:Class .
+
+    ns1:Typewriter a owl:Class .
+
+    ns1:Disappearance a owl:Class .
+
+    ns1:PretendedJourney a owl:Class ;
+        rdfs:subClassOf ns1:Journey .
+
+    ns1:Journey a owl:Class .
+
+    ns1:TypewrittenLetter a owl:Class ;
+        rdfs:subClassOf ns1:Letter .
+
+    ns1:CommunicativeAct a owl:Class .
+}
+

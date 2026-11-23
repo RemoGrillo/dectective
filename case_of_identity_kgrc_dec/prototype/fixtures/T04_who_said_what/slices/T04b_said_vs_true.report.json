@@ -1,0 +1,51 @@
+{
+  "dataset": "gold",
+  "query": "prototype/fixtures/T04_who_said_what/T04b_said_vs_true.rq",
+  "k": 2,
+  "seeds": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/mary",
+    "http://example.org/dectective/story/occ_cashier_leadenhall",
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/world/v_hosmer_cashier"
+  ],
+  "worlds_selected": [
+    "http://example.org/dectective/world/holmes_reconstruction",
+    "http://example.org/dectective/world/v_hosmer_cashier"
+  ],
+  "modules_candidate": 30,
+  "fact_triples_selected": 93,
+  "governing_triples": 2,
+  "dec_config_triples": 3,
+  "schema_triples": 37,
+  "crm_terms": 0,
+  "excluded_axioms": [],
+  "schema_mode": "minimal",
+  "sizes_after": {
+    "default": 98,
+    "http://example.org/dectective/world/v_hosmer_cashier": 1,
+    "http://example.org/dectective/world/shared": 37,
+    "http://example.org/dectective/world/holmes_reconstruction": 11
+  },
+  "sizes_full_by_graph": {
+    "w:shared": 293,
+    "default": 129,
+    "w:mary_D1": 10,
+    "w:holmes_reconstruction": 11,
+    "w:holmes_mother": 1,
+    "w:holmes_motive": 1,
+    "w:watson_hyp": 1,
+    "w:windibank_beliefs": 4,
+    "w:holmes_prediction": 4,
+    "w:v_hosmer_cashier": 1,
+    "w:v_mary_france": 1,
+    "w:v_windibank_reassure": 2,
+    "w:v_windibank_delighted": 1,
+    "w:v_windibank_machine": 2,
+    "w:holmes_same_machine": 1,
+    "w:h_author_other": 3
+  },
+  "total_after": 147,
+  "total_full": 465,
+  "inconsistency_pairs_upper_bound": 6
+}

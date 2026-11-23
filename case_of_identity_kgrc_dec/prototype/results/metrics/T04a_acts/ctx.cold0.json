@@ -1,0 +1,133 @@
+{ 
+  "data" : "./prototype/fixtures/T04_who_said_what/slices/T04a_acts.trig" ,
+  "query" : "./prototype/fixtures/T04_who_said_what/T04a_acts.rq" ,
+  "config" : "ctx" ,
+  "instrumented" : false ,
+  "parse_ms" : 191.787794 ,
+  "input_quads" : 177 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 848.8357 ,
+        "cpu_ms" : 793.417931 ,
+        "gc_count" : 4 ,
+        "gc_ms" : 28 ,
+        "heap_delta_mb" : 111.19357299804688 ,
+        "phases" : {
+            "build_ms" : 28.267789 ,
+            "enumerate_ms" : 522.650689 ,
+            "validate_ms" : 286.95987
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality" : 154.053901 ,
+            "http://example.org/dectective/world/shared" : 106.553906 ,
+            "http://example.org/dectective/world/holmes_reconstruction" : 189.371641 ,
+            "http://example.org/dectective/world/v_hosmer_cashier" : 72.598133
+          } ,
+        "query_first_ms" : 70.641752 ,
+        "query_second_ms" : 3.230728
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/holmes_reconstruction" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 11 ,
+              "base_after" : 78 ,
+              "permeated_in" : 1040 ,
+              "permeated_in_nontrivial" : 68 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1115 ,
+              "inferred_trivial" : 33 ,
+              "inferred_nontrivial" : 31 ,
+              "inferred_taxonomic" : 15 ,
+              "inferred_substantive" : 16 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/shared" : {
+              "type" : "shared(ctx)" ,
+              "asserted" : 67 ,
+              "base_after" : 67 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1040 ,
+              "inferred_trivial" : 927 ,
+              "inferred_nontrivial" : 46 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 46 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://example.org/dectective/world/v_hosmer_cashier" : {
+              "type" : "named(ctx)" ,
+              "asserted" : 1 ,
+              "base_after" : 68 ,
+              "permeated_in" : 1040 ,
+              "permeated_in_nontrivial" : 68 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1047 ,
+              "inferred_trivial" : 6 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "reality(ctx)" ,
+              "asserted" : 95 ,
+              "base_after" : 162 ,
+              "permeated_in" : 1040 ,
+              "permeated_in_nontrivial" : 68 ,
+              "receives_from" : [ "http://example.org/dectective/world/shared" ] ,
+              "materialised" : 1393 ,
+              "inferred_trivial" : 129 ,
+              "inferred_nontrivial" : 129 ,
+              "inferred_taxonomic" : 79 ,
+              "inferred_substantive" : 50 ,
+              "dec_diagnostic" : 0 ,
+              "valid" : true
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 174 ,
+      "materialised_total" : 4595 ,
+      "permeated_total" : 3120 ,
+      "inferred_total" : 1301 ,
+      "inferred_trivial_total" : 1095 ,
+      "inferred_nontrivial_total" : 206 ,
+      "inferred_taxonomic_total" : 94 ,
+      "inferred_substantive_total" : 112 ,
+      "dec_diagnostic_total" : 0 ,
+      "distinct_triples_all_worlds" : 1436 ,
+      "redundancy" : 3.199860724233983 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ 
+          "act=http://example.org/dectective/story/ca_holmes_explanation speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_prediction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/watson" ,
+          "act=http://example.org/dectective/story/ca_holmes_reconstruction speaker=http://example.org/dectective/story/holmes addressee=http://example.org/dectective/story/windibank" ,
+          "act=http://example.org/dectective/story/ca_hosmer_cashier speaker=http://example.org/dectective/story/hosmer addressee=http://example.org/dectective/story/mary" ,
+          "act=http://example.org/dectective/story/ca_mary_france speaker=http://example.org/dectective/story/mary addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_delighted speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_machine speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/holmes" ,
+          "act=http://example.org/dectective/story/ca_windibank_reassure speaker=http://example.org/dectective/story/windibank addressee=http://example.org/dectective/story/mary"
+        ] ,
+      "n_rows" : 8 ,
+      "query_first_ms" : 70.641752 ,
+      "query_second_ms" : 3.230728 ,
+      "matched_triples" : 24 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "b7a6c91efa52f9c6fc43438369de4cf0a204a533afcba3e0c7172eba2f98ddc5"
+}

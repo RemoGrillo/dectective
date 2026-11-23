@@ -1,0 +1,96 @@
+{ 
+  "data" : "./prototype/results/timeline/step_06.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 323.599167 ,
+  "input_quads" : 318 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 2095.244435 ,
+        "cpu_ms" : 1983.185738 ,
+        "gc_count" : 5 ,
+        "gc_ms" : 42 ,
+        "heap_delta_mb" : 159.44686889648438 ,
+        "phases" : {
+            "load_ms" : 62.404153 ,
+            "handlePermeation_ms" : 2021.071622 ,
+            "enumerate_ms" : 3.366682
+          } ,
+        "per_world_ms" : {
+            "http://w3id.org/conjectures/reality#enumerate" : 0.817245 ,
+            "http://example.org/dectective/world/shared#enumerate" : 1.254788
+          } ,
+        "query_first_ms" : 40.762476 ,
+        "query_second_ms" : 2.457717
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/dectective/world/shared" : {
+              "type" : "named/shared" ,
+              "asserted" : 293 ,
+              "base_after" : 293 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 2166 ,
+              "inferred_trivial" : 1256 ,
+              "inferred_nontrivial" : 617 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 617 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 20 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 2591 ,
+              "inferred_trivial" : 1568 ,
+              "inferred_nontrivial" : 998 ,
+              "inferred_taxonomic" : 78 ,
+              "inferred_substantive" : 920 ,
+              "dec_diagnostic" : 5
+            }
+        } ,
+      "n_worlds" : 2 ,
+      "asserted_total" : 313 ,
+      "materialised_total" : 4757 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 4439 ,
+      "inferred_trivial_total" : 2824 ,
+      "inferred_nontrivial_total" : 1615 ,
+      "inferred_taxonomic_total" : 78 ,
+      "inferred_substantive_total" : 1537 ,
+      "dec_diagnostic_total" : 5 ,
+      "distinct_triples_all_worlds" : 2591 ,
+      "redundancy" : 1.8359706676958703 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ 
+          "http://example.org/dectective/profile#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate" ,
+          "http://example.org/dectective/profile#conjectures http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/conjecturalPredicate" ,
+          "http://example.org/dectective/profile#establishes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/epistemicPredicate" ,
+          "http://example.org/dectective/profile#uttered http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimPredicate" ,
+          "http://example.org/dectective/world/shared http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/dectective/world/shared s=http://www.cidoc-crm.org/cidoc-crm/E55_Type p=http://www.w3.org/2000/01/rdf-schema#subClassOf o=http://www.cidoc-crm.org/cidoc-crm/E55_Type" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 40.762476 ,
+      "query_second_ms" : 2.457717 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "http://example.org/dectective/world/shared | http://www.cidoc-crm.org/cidoc-crm/E55_Type http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.cidoc-crm.org/cidoc-crm/E55_Type" ]
+    } ,
+  "materialised_sha256" : "95a0e02cbcf82c27a7dcd3505afcf3026d5a9a501b74ccc2e459b1a995465e8a"
+}

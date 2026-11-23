@@ -1,0 +1,23 @@
+[
+ {
+  "s": "d:504",
+  "p": "kgc:hasProperty",
+  "o": "pred:Hosmer",
+  "src": "Windibank is Hosmer",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:018",
+  "p": "pred:equalTo",
+  "o": "d:Romance",
+  "src": "The above is color love Saya",
+  "info": "d:Holmes"
+ },
+ {
+  "s": "d:356",
+  "p": "pred:equalTo",
+  "o": "d:5_feet_7_inches",
+  "src": "Hosmer's height is 5 feet 7 inches",
+  "info": "d:Watson"
+ }
+]

@@ -1,0 +1,602 @@
+{
+  "E01_verbatim": {
+    "checks": [
+      {
+        "world": "V",
+        "triple": ":x type :A",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "verbatim keeps its content"
+      },
+      {
+        "world": "V",
+        "triple": ":x type :B",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "no inference inside verbatim (paper §5.1, README)"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :A",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "verbatim content does not permeate to reality"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":S": "named/shared",
+      ":V": "named/verbatim",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":V http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:verbatimWorld",
+      ":said http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:verbatimPredicate"
+    ]
+  },
+  "E02_doxastic": {
+    "checks": [
+      {
+        "world": "D",
+        "triple": ":x type :B",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "doxastic receives shared and infers locally"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :A",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "doxastic does not permeate to reality"
+      },
+      {
+        "world": "D",
+        "triple": ":y type :A",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "reality does not enter a doxastic world"
+      }
+    ],
+    "sparql_probes": [
+      {
+        "query": "ASK { GRAPH dec:reality { :x a :A } }",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "SPARQL: doxastic content absent from reality"
+      },
+      {
+        "query": "ASK { GRAPH :D { :x a :B } }",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "SPARQL: local inference visible inside the doxastic world"
+      }
+    ],
+    "world_types": {
+      ":D": "named/doxastic",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":D http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate"
+    ]
+  },
+  "E03_epistemic": {
+    "checks": [
+      {
+        "world": "K",
+        "triple": ":x type :B",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "epistemic infers locally with shared"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :A",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "epistemic content permeates to reality"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :B",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "epistemic consequences are factual in reality"
+      }
+    ],
+    "sparql_probes": [
+      {
+        "query": "ASK { GRAPH dec:reality { :x a :B } }",
+        "expected": true,
+        "observed": false,
+        "verdict": "DIFFERS",
+        "note": "SPARQL: epistemic consequence visible in GRAPH dec:reality"
+      },
+      {
+        "query": "ASK { :x a :B }",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "SPARQL: epistemic consequence visible in the default graph"
+      }
+    ],
+    "world_types": {
+      ":K": "named/epistemic",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":K http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:epistemicWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":knows http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:epistemicPredicate"
+    ]
+  },
+  "E04_conjectural": {
+    "checks": [
+      {
+        "world": "C",
+        "triple": ":x type :Z",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "conjectural receives reality and infers with its hypothesis"
+      },
+      {
+        "world": "C",
+        "triple": ":x type :B",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "conjectural receives shared consequences"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :Z",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "conjectural consequences do not go back to reality"
+      }
+    ],
+    "sparql_probes": [
+      {
+        "query": "ASK { GRAPH :C { :x a :Z } }",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "SPARQL: conjectural consequence visible in its world"
+      },
+      {
+        "query": "ASK { GRAPH dec:reality { :x a :Z } }",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "SPARQL: conjectural consequence absent from reality"
+      }
+    ],
+    "world_types": {
+      ":C": "named/conjectural",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":C http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:conjecturalWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":supposes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:conjecturalPredicate"
+    ]
+  },
+  "E05_default_named": {
+    "checks": [
+      {
+        "world": "U",
+        "triple": ":x type :B",
+        "expected": true,
+        "observed": false,
+        "verdict": "DIFFERS",
+        "note": "paper §5.1: untyped named graph defaults to a doxastic world (local inference)"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :A",
+        "expected": null,
+        "observed": false,
+        "verdict": "observed-only",
+        "note": "observe: does an untyped named graph permeate to reality?"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":S": "named/shared",
+      ":U": "named/verbatim",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld"
+    ]
+  },
+  "E06_identity": {
+    "checks": [
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":clark canDo :flying",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "Lois's belief does not become a fact"
+      },
+      {
+        "world": "LoisB",
+        "triple": ":clark canDo :flying",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "Superman paradox blocked: reality's sameAs does not enter a doxastic world"
+      },
+      {
+        "world": "LoisC",
+        "triple": ":clark canDo :flying",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "conjectural world receives reality's sameAs: substitution happens there"
+      },
+      {
+        "world": "JimmyB",
+        "triple": ":clark canDo :flying",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "identity asserted inside a doxastic world substitutes locally"
+      }
+    ],
+    "sparql_probes": [
+      {
+        "query": "ASK { GRAPH :LoisB { :clark :canDo :flying } }",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "SPARQL: no Superman substitution in Lois's doxastic world"
+      },
+      {
+        "query": "ASK { GRAPH :LoisC { :clark :canDo :flying } }",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "SPARQL: substitution in the conjectural world"
+      }
+    ],
+    "world_types": {
+      ":JimmyB": "named/doxastic",
+      ":LoisB": "named/doxastic",
+      ":LoisC": "named/conjectural",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":JimmyB http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":LoisB http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":LoisC http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:conjecturalWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      ":supposes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:conjecturalPredicate"
+    ]
+  },
+  "E07_nested": {
+    "checks": [
+      {
+        "world": "MaryB",
+        "triple": ":x type :B",
+        "expected": null,
+        "observed": false,
+        "verdict": "observed-only",
+        "note": "observe: is a world governed only from INSIDE another world recognised (inference with shared)?"
+      },
+      {
+        "world": "HolmesB",
+        "triple": ":mary believes :MaryB",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "Holmes's world keeps the attribution"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":mary believes :MaryB",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "the inner attribution is not a fact"
+      }
+    ],
+    "sparql_probes": [
+      {
+        "query": "ASK { GRAPH :MaryB { :x a :B } }",
+        "expected": null,
+        "observed": false,
+        "verdict": "observed-only",
+        "note": "SPARQL: inner world gets inference with shared?"
+      }
+    ],
+    "world_types": {
+      ":HolmesB": "named/doxastic",
+      ":MaryB": "named/verbatim",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":HolmesB http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate"
+    ]
+  },
+  "E08_verbatim_conflict": {
+    "checks": [
+      {
+        "world": "*",
+        "triple": ":B dec:disagreesWith dec:reality",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "doxastic world in conflict with reality -> disagreesWith dec:reality"
+      },
+      {
+        "world": "*",
+        "triple": ":V dec:disagreesWith dec:reality",
+        "expected": null,
+        "observed": true,
+        "verdict": "observed-only",
+        "note": "observe: verbatim world flagged as well? (verbatim has no inference but the check reasons on the union)"
+      },
+      {
+        "world": "*",
+        "triple": ":V type dec:delusionalWorld",
+        "expected": null,
+        "observed": true,
+        "verdict": "observed-only",
+        "note": "observe: verbatim world typed delusional?"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":B": "named/doxastic",
+      ":S": "named/shared",
+      ":V": "named/verbatim",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      "62bfd6ff4b2f14cfc7a359dbb7078722 dec:checkInconsistencies \"true\"^^http://www.w3.org/2001/XMLSchema#boolean",
+      ":B dec:disagreesWith dec:reality",
+      ":B http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      ":B http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":V dec:disagreesWith dec:reality",
+      ":V http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      ":V http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:verbatimWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      ":said http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:verbatimPredicate",
+      "dec:reality dec:disagreesWith :B",
+      "dec:reality dec:disagreesWith :V"
+    ]
+  },
+  "E09_closedfor": {
+    "checks": [
+      {
+        "world": "*",
+        "triple": ":B dec:disagreesWith :K",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "closedFor: different objects for the same subject disagree"
+      },
+      {
+        "world": "*",
+        "triple": ":B type dec:delusionalWorld",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "doxastic world disagreeing with reality (via epistemic K) is delusional"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":B": "named/doxastic",
+      ":K": "named/epistemic",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":B dec:disagreesWith :K",
+      ":B dec:disagreesWith dec:reality",
+      ":B http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      ":B http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":K dec:disagreesWith :B",
+      ":K http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:epistemicWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      ":knows http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:epistemicPredicate",
+      "dec:reality dec:disagreesWith :B",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject dec:closedFor :typedBy"
+    ]
+  },
+  "E10_disjoint_doxastic": {
+    "checks": [
+      {
+        "world": "*",
+        "triple": ":B dec:disagreesWith :K",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "OWL disjointness in shared yields disagreement"
+      },
+      {
+        "world": "*",
+        "triple": ":B type dec:delusionalWorld",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "and a delusional classification of Mary's world (technical label)"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":B": "named/doxastic",
+      ":K": "named/epistemic",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      "02ce5ec50312b2c43f63bafa1ae387ed dec:checkInconsistencies \"true\"^^http://www.w3.org/2001/XMLSchema#boolean",
+      ":B dec:disagreesWith :K",
+      ":B dec:disagreesWith dec:reality",
+      ":B http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      ":B http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":K dec:disagreesWith :B",
+      ":K http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:epistemicWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      ":knows http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:epistemicPredicate",
+      "dec:reality dec:disagreesWith :B"
+    ]
+  },
+  "E11_reification": {
+    "checks": [
+      {
+        "world": "*",
+        "triple": ":x type :B",
+        "expected": null,
+        "observed": false,
+        "verdict": "observed-only",
+        "note": "observe: reified statement under a doxastic predicate gets local inference?"
+      },
+      {
+        "world": "http://w3id.org/conjectures/reality",
+        "triple": ":x type :A",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "reified belief does not become a fact"
+      }
+    ],
+    "sparql_probes": [
+      {
+        "query": "ASK { ?st rdf:subject :x ; rdf:predicate rdf:type ; rdf:object :B . }",
+        "expected": null,
+        "observed": true,
+        "verdict": "observed-only",
+        "note": "SPARQL: inferred triple re-emitted as a reified statement?"
+      },
+      {
+        "query": "ASK { :eve :believes ?st . ?st rdf:subject :x ; rdf:predicate rdf:type ; rdf:object :B . }",
+        "expected": null,
+        "observed": true,
+        "verdict": "observed-only",
+        "note": "SPARQL: ... and governed by :believes?"
+      },
+      {
+        "query": "ASK { GRAPH dec:reality { :x a :A } }",
+        "expected": false,
+        "observed": false,
+        "verdict": "as documented",
+        "note": "SPARQL: reified belief not factual"
+      }
+    ],
+    "world_types": {
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      ":eve :believes dec:reification/6fa560e0#:eve",
+      "dec:reification/6fa560e0#:eve http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld"
+    ]
+  },
+  "E13_closedfor_same_value": {
+    "checks": [
+      {
+        "world": "*",
+        "triple": ":B1 dec:disagreesWith :B2",
+        "expected": false,
+        "observed": true,
+        "verdict": "DIFFERS",
+        "note": "paper §5.2: only DIFFERENT objects for the same subject disagree"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":B1": "named/doxastic",
+      ":B2": "named/doxastic",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":B1 dec:disagreesWith :B2",
+      ":B1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":B2 dec:disagreesWith :B1",
+      ":B2 http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject dec:closedFor :typedBy"
+    ]
+  },
+  "E14_closedfor_break": {
+    "checks": [
+      {
+        "world": "*",
+        "triple": ":B1 dec:disagreesWith :B2",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "real disagreement on :s4 (m4 vs mX) must be detected regardless of iteration order"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":B1": "named/doxastic",
+      ":B2": "named/doxastic",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":B1 dec:disagreesWith :B2",
+      ":B1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":B2 dec:disagreesWith :B1",
+      ":B2 http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject dec:closedFor :typedBy"
+    ]
+  },
+  "E12_union_identity_leak": {
+    "checks": [
+      {
+        "world": "LoisB",
+        "triple": ":clark canDo :flying",
+        "expected": true,
+        "observed": true,
+        "verdict": "as documented",
+        "note": "identity put in SHARED leaks into every non-verbatim world (configuration hazard)"
+      }
+    ],
+    "sparql_probes": [],
+    "world_types": {
+      ":LoisB": "named/doxastic",
+      ":S": "named/shared",
+      "dec:reality": "default/reality"
+    },
+    "dec_diagnostics": [
+      ":LoisB http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticWorld",
+      ":S http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:sharedWorld",
+      ":believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:doxasticPredicate"
+    ]
+  }
+}

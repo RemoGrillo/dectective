@@ -1,0 +1,48 @@
+{
+  "dataset": "gold",
+  "question": "Which local conclusions depend on the availability of the identity?",
+  "seed_iris": [
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/story/mary",
+    "http://example.org/dectective/story/hosmer"
+  ],
+  "require_modules": [
+    "W01_mary_D1",
+    "W02_holmes_reconstruction",
+    "F03_courtship",
+    "F05_windibank_visit"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "queries": [
+    {
+      "id": "T03a_weak_sight_not_fact",
+      "file": "T03a_weak_sight_not_fact.rq",
+      "expected": false,
+      "classification": "not-determined",
+      "justification": [
+        "P051.S06",
+        "P111.S01",
+        "P126.S11"
+      ],
+      "axioms_or_assumptions": [
+        "WeakSighted disjoint KeenSighted"
+      ],
+      "world_time": "reality (gold)",
+      "note": "Mary's belief about Hosmer's eyes must stay in her world; flattening + identity makes reality inconsistent."
+    },
+    {
+      "id": "T03b_where_engaged_to_windibank",
+      "file": "T03b_where_engaged_to_windibank.rq",
+      "expected": [],
+      "classification": "not-determined",
+      "justification": [
+        "P041.S02"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "all named worlds",
+      "note": "No named world should contain the substituted engagement: Mary's world lacks identity; Holmes's worlds do not mention the engagement unless they receive reality (conjectural)."
+    }
+  ]
+}

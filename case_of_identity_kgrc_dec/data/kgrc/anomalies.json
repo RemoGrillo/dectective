@@ -1,0 +1,167 @@
+{
+  "odd_predicate_iris": {
+    "kgc:whoｍ": 1,
+    "kgc:": 1,
+    "kgc:hadPredicate": 1
+  },
+  "case_insensitive_duplicate_iris": [
+    [
+      "d:Eyes",
+      "d:eyes"
+    ],
+    [
+      "d:Father_of_Sutherland",
+      "d:father_of_Sutherland"
+    ],
+    [
+      "d:Father",
+      "d:father"
+    ],
+    [
+      "d:Morning_of_wedding_day",
+      "d:morning_of_wedding_day"
+    ],
+    [
+      "d:Money",
+      "d:money"
+    ],
+    [
+      "d:Someone",
+      "d:someone"
+    ],
+    [
+      "d:Love",
+      "d:love"
+    ],
+    [
+      "d:House",
+      "d:house"
+    ],
+    [
+      "d:Bible",
+      "d:bible"
+    ],
+    [
+      "d:Letter_2",
+      "d:letter_2"
+    ],
+    [
+      "d:Address",
+      "d:address"
+    ],
+    [
+      "d:Dance_Party",
+      "d:Dance_party"
+    ],
+    [
+      "d:Romance",
+      "d:romance"
+    ],
+    [
+      "d:Morning",
+      "d:morning"
+    ],
+    [
+      "d:Danger",
+      "d:danger"
+    ],
+    [
+      "d:Woman",
+      "d:woman"
+    ],
+    [
+      "d:Pledge",
+      "d:pledge"
+    ],
+    [
+      "d:Typewriter",
+      "d:typewriter"
+    ],
+    [
+      "d:Chair",
+      "d:chair"
+    ],
+    [
+      "d:Company",
+      "d:company"
+    ],
+    [
+      "d:Appearance",
+      "d:appearance"
+    ]
+  ],
+  "iris_containing_html_entities": [
+    "d:Sutherland&#39;s_remark",
+    "d:mother_of_Sutherland&#39_s_remark"
+  ],
+  "literals_containing_html_entities": 13,
+  "en_tagged_literals_with_japanese_script": [
+    [
+      "d:092",
+      "The face value of the heritage is ｡・2500"
+    ],
+    [
+      "d:079",
+      "Sutherland's father';s store sold for ｡・4700"
+    ],
+    [
+      "d:101",
+      "Sutherland earns less than ｡・60"
+    ]
+  ],
+  "en_tagged_literals_with_japanese_script_count": 3,
+  "untagged_plain_literals": [
+    [
+      "d:metadata",
+      "http://creativecommons.org/ns#attributionName",
+      "SIG-SWO, JSAI"
+    ]
+  ],
+  "untagged_plain_literals_count": 1,
+  "persons_with_multiple_japanese_labels": {
+    "d:Sutherland": [
+      "サザランド",
+      "Sutherland",
+      "サザランドと"
+    ],
+    "d:Hosmer": [
+      "ホズマ",
+      "Hosmer",
+      "サザランド"
+    ],
+    "d:mother_of_Sutherland": [
+      "mother of Sutherland",
+      "サザランドの母",
+      "サザランドの父"
+    ],
+    "d:hansom_carriage": [
+      "ハンソム馬車",
+      "hansom carriage",
+      "辻馬車"
+    ],
+    "d:Woman": [
+      "女性",
+      "Woman",
+      "女"
+    ],
+    "d:Windibank": [
+      "ウィンディバンク",
+      "Windibank",
+      "ウィンディバンクの物腰"
+    ]
+  },
+  "infoSource_iri_case_variant_of_person": [
+    "d:Father_of_Sutherland"
+  ],
+  "scenes_without_hasPredicate_or_hasProperty": {
+    "count": 6,
+    "ids": [
+      "161",
+      "196",
+      "312",
+      "430",
+      "579",
+      "71a"
+    ]
+  }
+}

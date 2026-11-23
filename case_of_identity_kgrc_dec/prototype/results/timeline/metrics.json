@@ -1,0 +1,357 @@
+{
+ "dec_commit": "e6775b39",
+ "flags": "no checkInconsistencies, no closedFor",
+ "steps": [
+  {
+   "step": 0,
+   "sentence": null,
+   "asserted": 298,
+   "worlds": 2,
+   "materialised": 4619,
+   "inferred_substantive": 1533,
+   "ms": 2280.6
+  },
+  {
+   "step": 1,
+   "sentence": "P014.S01",
+   "asserted": 311,
+   "worlds": 2,
+   "materialised": 4732,
+   "inferred_substantive": 1534,
+   "ms": 1955.3
+  },
+  {
+   "step": 2,
+   "sentence": "P018.S03",
+   "asserted": 312,
+   "worlds": 2,
+   "materialised": 4734,
+   "inferred_substantive": 1535,
+   "ms": 2050.3
+  },
+  {
+   "step": 3,
+   "sentence": "P020.S02",
+   "asserted": 313,
+   "worlds": 2,
+   "materialised": 4736,
+   "inferred_substantive": 1536,
+   "ms": 2052.1
+  },
+  {
+   "step": 4,
+   "sentence": "P021.S01",
+   "asserted": 314,
+   "worlds": 2,
+   "materialised": 4737,
+   "inferred_substantive": 1536,
+   "ms": 1772.6
+  },
+  {
+   "step": 5,
+   "sentence": "P024.S02",
+   "asserted": 315,
+   "worlds": 2,
+   "materialised": 4739,
+   "inferred_substantive": 1537,
+   "ms": 1958.8
+  },
+  {
+   "step": 6,
+   "sentence": "P024.S03",
+   "asserted": 318,
+   "worlds": 2,
+   "materialised": 4757,
+   "inferred_substantive": 1537,
+   "ms": 2095.2
+  },
+  {
+   "step": 7,
+   "sentence": "P031.S02",
+   "asserted": 320,
+   "worlds": 2,
+   "materialised": 4767,
+   "inferred_substantive": 1537,
+   "ms": 1874.0
+  },
+  {
+   "step": 8,
+   "sentence": "P031.S10",
+   "asserted": 340,
+   "worlds": 4,
+   "materialised": 7364,
+   "inferred_substantive": 1691,
+   "ms": 2575.9
+  },
+  {
+   "step": 9,
+   "sentence": "P039.S01",
+   "asserted": 344,
+   "worlds": 4,
+   "materialised": 7399,
+   "inferred_substantive": 1703,
+   "ms": 2961.2
+  },
+  {
+   "step": 10,
+   "sentence": "P041.S02",
+   "asserted": 346,
+   "worlds": 4,
+   "materialised": 7427,
+   "inferred_substantive": 1705,
+   "ms": 2823.4
+  },
+  {
+   "step": 11,
+   "sentence": "P041.S04",
+   "asserted": 354,
+   "worlds": 5,
+   "materialised": 7470,
+   "inferred_substantive": 1710,
+   "ms": 2808.9
+  },
+  {
+   "step": 12,
+   "sentence": "P051.S06",
+   "asserted": 356,
+   "worlds": 5,
+   "materialised": 7475,
+   "inferred_substantive": 1710,
+   "ms": 2728.4
+  },
+  {
+   "step": 13,
+   "sentence": "P057.S04",
+   "asserted": 359,
+   "worlds": 5,
+   "materialised": 7503,
+   "inferred_substantive": 1718,
+   "ms": 2617.7
+  },
+  {
+   "step": 14,
+   "sentence": "P059.S02",
+   "asserted": 360,
+   "worlds": 5,
+   "materialised": 7504,
+   "inferred_substantive": 1718,
+   "ms": 2632.3
+  },
+  {
+   "step": 15,
+   "sentence": "P067.S01",
+   "asserted": 369,
+   "worlds": 6,
+   "materialised": 7538,
+   "inferred_substantive": 1723,
+   "ms": 2579.5
+  },
+  {
+   "step": 16,
+   "sentence": "P077.S01",
+   "asserted": 370,
+   "worlds": 6,
+   "materialised": 7539,
+   "inferred_substantive": 1723,
+   "ms": 2390.4
+  },
+  {
+   "step": 17,
+   "sentence": "P094.S02",
+   "asserted": 372,
+   "worlds": 6,
+   "materialised": 7546,
+   "inferred_substantive": 1723,
+   "ms": 2536.6
+  },
+  {
+   "step": 18,
+   "sentence": "P099.S01",
+   "asserted": 374,
+   "worlds": 7,
+   "materialised": 10396,
+   "inferred_substantive": 1723,
+   "ms": 3162.2
+  },
+  {
+   "step": 19,
+   "sentence": "P111.S01",
+   "asserted": 375,
+   "worlds": 7,
+   "materialised": 10398,
+   "inferred_substantive": 1723,
+   "ms": 3234.1
+  },
+  {
+   "step": 20,
+   "sentence": "P112.S01",
+   "asserted": 376,
+   "worlds": 7,
+   "materialised": 10426,
+   "inferred_substantive": 1723,
+   "ms": 2928.9
+  },
+  {
+   "step": 21,
+   "sentence": "P115.S01",
+   "asserted": 378,
+   "worlds": 7,
+   "materialised": 10450,
+   "inferred_substantive": 1726,
+   "ms": 2899.2
+  },
+  {
+   "step": 22,
+   "sentence": "P115.S02",
+   "asserted": 384,
+   "worlds": 8,
+   "materialised": 10510,
+   "inferred_substantive": 1731,
+   "ms": 2975.0
+  },
+  {
+   "step": 23,
+   "sentence": "P116.S01",
+   "asserted": 386,
+   "worlds": 9,
+   "materialised": 13435,
+   "inferred_substantive": 1731,
+   "ms": 3716.6
+  },
+  {
+   "step": 24,
+   "sentence": "P116.S04",
+   "asserted": 390,
+   "worlds": 9,
+   "materialised": 13492,
+   "inferred_substantive": 1731,
+   "ms": 3740.8
+  },
+  {
+   "step": 25,
+   "sentence": "P117.S01",
+   "asserted": 403,
+   "worlds": 11,
+   "materialised": 16622,
+   "inferred_substantive": 1736,
+   "ms": 4833.6
+  },
+  {
+   "step": 26,
+   "sentence": "P118.S04",
+   "asserted": 412,
+   "worlds": 11,
+   "materialised": 16866,
+   "inferred_substantive": 1736,
+   "ms": 4382.7
+  },
+  {
+   "step": 27,
+   "sentence": "P118.S05",
+   "asserted": 414,
+   "worlds": 11,
+   "materialised": 16870,
+   "inferred_substantive": 1736,
+   "ms": 4481.5
+  },
+  {
+   "step": 28,
+   "sentence": "P118.S06",
+   "asserted": 416,
+   "worlds": 11,
+   "materialised": 16886,
+   "inferred_substantive": 1744,
+   "ms": 5132.4
+  },
+  {
+   "step": 29,
+   "sentence": "P124.S02",
+   "asserted": 419,
+   "worlds": 11,
+   "materialised": 16954,
+   "inferred_substantive": 1749,
+   "ms": 4773.5
+  },
+  {
+   "step": 30,
+   "sentence": "P126.S01",
+   "asserted": 421,
+   "worlds": 12,
+   "materialised": 20063,
+   "inferred_substantive": 1749,
+   "ms": 5702.1
+  },
+  {
+   "step": 31,
+   "sentence": "P126.S11",
+   "asserted": 441,
+   "worlds": 15,
+   "materialised": 29278,
+   "inferred_substantive": 2098,
+   "ms": 10662.0
+  },
+  {
+   "step": 32,
+   "sentence": "P128.S02",
+   "asserted": 443,
+   "worlds": 15,
+   "materialised": 29306,
+   "inferred_substantive": 2098,
+   "ms": 12747.6
+  },
+  {
+   "step": 33,
+   "sentence": "P128.S07",
+   "asserted": 444,
+   "worlds": 15,
+   "materialised": 29323,
+   "inferred_substantive": 2098,
+   "ms": 12918.9
+  },
+  {
+   "step": 34,
+   "sentence": "P128.S10",
+   "asserted": 446,
+   "worlds": 15,
+   "materialised": 29349,
+   "inferred_substantive": 2098,
+   "ms": 11747.4
+  },
+  {
+   "step": 35,
+   "sentence": "P134.S01",
+   "asserted": 449,
+   "worlds": 15,
+   "materialised": 29451,
+   "inferred_substantive": 2103,
+   "ms": 11188.4
+  },
+  {
+   "step": 36,
+   "sentence": "P134.S04",
+   "asserted": 453,
+   "worlds": 15,
+   "materialised": 29571,
+   "inferred_substantive": 2115,
+   "ms": 10764.5
+  },
+  {
+   "step": 37,
+   "sentence": "P138.S01",
+   "asserted": 462,
+   "worlds": 16,
+   "materialised": 32227,
+   "inferred_substantive": 2232,
+   "ms": 11053.2
+  }
+ ],
+ "averages": {
+  "asserted": 380.0,
+  "materialised": 13509.2,
+  "inferred_substantive": 1763.7,
+  "ms": 4688.0
+ },
+ "total_ms": 173457.2,
+ "monotonic": true,
+ "violations": []
+}

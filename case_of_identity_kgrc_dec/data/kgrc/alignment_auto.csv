@@ -1,0 +1,558 @@
+scene,types,infoSource,source_en,sent_id,para_id,cosine,placed_by,status
+d:001,kgc:Situation,,Holmes stood out of a chair,P001.S01,P001,0.051,score,auto
+d:002,kgc:Situation,,Holmes stood between the windowed seams,P003.S03,P003,0.0,interpolation,auto
+d:004,kgc:Situation,,Sutherland wraps around on the opposite pavement,P004.S06,P004,0.0,interpolation,auto
+d:04a,kgc:Situation,,,P005.S02,P005,0.0,interpolation,auto
+d:005,kgc:Situation,,Sutherland is wearing a hat,P007.S02,P007,0.0,interpolation,auto
+d:006,kgc:Situation,,Sutherland has red feathers,P011.S01,P011,0.0,interpolation,auto
+d:007,kgc:Situation,,Sutherland stands,P012.S01,P012,0.247,score,auto
+d:008,kgc:Situation,,Sutherland's gaze is directed at the window,P012.S03,P012,0.113,score,auto
+d:010,kgc:Situation,,Sutherland moves back and forth,P012.S03,P012,0.0,interpolation,auto
+d:011,kgc:Situation,,Sutherland is tinkering with the glove button,P012.S03,P012,0.227,score,auto
+d:012,kgc:Situation,,Sutherland jumps the road,P012.S04,P012,0.151,score,auto
+d:013,kgc:Situation,,Sutherland crosses the way,P012.S04,P012,0.0,interpolation,auto
+d:014,kgc:Situation,,Holmes hears a call bell,P012.S04,P012,0.167,score,auto
+d:015,kgc:Situation,,Holmes said the following,P012.S04,P012,0.0,interpolation,auto
+d:016,kgc:Statement,d:Holmes,The present movement has been before,P013.S01,P013,0.157,score,auto
+d:017,kgc:Statement,d:Holmes,Women are thrilled at the pavement,P013.S02,P013,0.209,score,auto
+d:018,kgc:Statement,d:Holmes,The above is color love Saya,P013.S02,P013,0.0,interpolation,auto
+d:019,kgc:Statement,d:Holmes,Sutherland wants advice,P013.S03,P013,0.267,score,auto
+d:020,kgc:Statement,d:Holmes,Sutherland suffers from,P013.S03,P013,0.0,interpolation,auto
+d:021,kgc:Statement,d:Holmes,Sutherland wants to consult people,P013.S03,P013,0.0,interpolation,auto
+d:21a,kgc:Statement,d:Holmes,,P013.S03,P013,0.0,interpolation,auto
+d:022,kgc:Situation,,Holmes found that,P013.S03,P013,0.0,interpolation,auto
+d:023,kgc:Statement,d:Holmes,Women encounter awful eyes from men,P013.S03,P013,0.0,interpolation,auto
+d:024,kgc:Statement,d:Holmes,Women do not hesitate,P013.S03,P013,0.0,interpolation,auto
+d:025,kgc:Statement,d:Holmes,Woman tears off the string of the doorbell,P013.S05,P013,0.072,score,auto
+d:026,kgc:Statement,d:Holmes,Interpretation is color love Saya,P013.S06,P013,0.172,score,auto
+d:027,kgc:Statement,d:Holmes,The woman is not angry,P013.S06,P013,0.293,score,auto
+d:028,kgc:Statement,d:Holmes,Women are puzzled,P013.S06,P013,0.0,interpolation,auto
+d:029,kgc:Statement,d:Holmes,The woman is in distress,P013.S06,P013,0.0,interpolation,auto
+d:030,kgc:Statement,d:Holmes,Women's troubles can be solved quickly,P013.S06,P013,0.0,interpolation,auto
+d:031,kgc:Situation,,The door of the room is struck,P014.S01,P014,0.067,score,auto
+d:032,kgc:Situation,,A boy in charge of service came in,P014.S01,P014,0.094,score,auto
+d:033,kgc:Situation,,A boy at the service uniform tells Sutherland,P014.S01,P014,0.142,score,auto
+d:33a,kgc:Statement,d:Service_Boy,The woman is Sutherland,P014.S01,P014,0.117,score,auto
+d:034,kgc:Statement,d:Service_Boy,Sutherland appears,P014.S01,P014,0.104,score,auto
+d:035,kgc:Situation,,Holmes welcomes Sutherland,P014.S02,P014,0.258,score,auto
+d:036,kgc:Situation,,Holmes shuts the door,P014.S02,P014,0.157,score,auto
+d:037,kgc:Situation,,Holmes recommends an armchair,P014.S02,P014,0.204,score,auto
+d:038,kgc:Situation,,Holmes looks over Sutherland,P016.S01,P016,0.221,score,auto
+d:039,kgc:Situation,,Holmes said the following,P016.S01,P016,0.0,interpolation,auto
+d:040,kgc:Statement,d:Holmes,Myopia is hard to type,P016.S01,P016,0.0,interpolation,auto
+d:041,kgc:Situation,,Sutherland said the following,P016.S01,P016,0.0,interpolation,auto
+d:042,kgc:Statement,d:Holmes,Myopia is hard,P016.S01,P016,0.0,interpolation,auto
+d:043,kgc:Statement,d:Holmes,Sutherland knows the position of the character,P016.S01,P016,0.132,score,auto
+d:044,kgc:Situation,,Sutherland notices the meaning of the words of Holmes,P016.S02,P016,0.136,score,auto
+d:045,kgc:Situation,,Sutherland was surprised,P016.S02,P016,0.0,interpolation,auto
+d:047,kgc:Situation,,Sutherland thought that,P016.S02,P016,0.0,interpolation,auto
+d:048,kgc:Statement,d:Sutherland,Holmes already knows Sutherland,P016.S03,P016,0.269,score,auto
+d:049,kgc:Situation,,Holmes said the following,P016.S03,P016,0.0,interpolation,auto
+d:051,kgc:Statement,d:Holmes,Holmes finds out that others overlook,P017.S02,P017,0.515,score,auto
+d:052,kgc:Situation,,Sutherland said the following,P017.S02,P017,0.0,interpolation,auto
+d:053,kgc:Statement,d:Sutherland,Sutherland heard Holmes from Etheridge,P018.S01,P018,0.122,score,auto
+d:054,kgc:Statement,d:Sutherland,Holmes easily found Etheridge's husband,P018.S01,P018,0.215,score,auto
+d:055,kgc:Statement,d:Sutherland,Police had ruled that Esridge's husband had died,P018.S01,P018,0.192,score,auto
+d:056,kgc:Statement,d:Sutherland,Sutherland is not rich,P018.S03,P018,0.261,score,auto
+d:057,kgc:Statement,d:Sutherland,Sutherland earns one hundred dollars a year,P018.S03,P018,0.211,score,auto
+d:058,kgc:Statement,d:Sutherland,Sutherland is a typing,P020.S01,P020,0.164,score,auto
+d:060,kgc:Statement,d:Sutherland,Holmes find Hosmer,P020.S01,P020,0.0,interpolation,auto
+d:062,kgc:Statement,d:Sutherland,Sutherland hands over to Holmes,P020.S01,P020,0.186,score,auto
+d:063,kgc:Statement,d:Sutherland,Sutherland jumped out of the house,P020.S02,P020,0.19,score,auto
+d:064,kgc:Statement,d:Sutherland,Sutherland is angry,P020.S02,P020,0.263,score,auto
+d:065,kgc:Statement,d:Sutherland,Windibank is naive,P020.S02,P020,0.119,score,auto
+d:066,kgc:Statement,d:Sutherland,Windibank does not want to go to the police,P020.S02,P020,0.113,score,auto
+d:067,kgc:Statement,d:Sutherland,Windibank does not want to visit Holmes,P020.S02,P020,0.094,score,auto
+d:67a,kgc:Statement,d:Sutherland,,P020.S02,P020,0.0,interpolation,auto
+d:068,kgc:Statement,d:Sutherland,Windibank is Sutherland's father-in-law,P020.S02,P020,0.214,score,auto
+d:069,kgc:Statement,d:Sutherland,Windibank is 5 years and 2 months older than Sutherland,P022.S02,P022,0.459,score,auto
+d:070,kgc:Statement,d:Sutherland,mother of Sutherland is fine,P023.S01,P023,0.294,score,auto
+d:071,kgc:Statement,d:Sutherland,mother of Sutherland is strong,P023.S01,P023,0.31,score,auto
+d:71a,kgc:Statement,d:Sutherland,,P023.S01,P023,0.0,interpolation,auto
+d:072,kgc:Statement,d:Sutherland,mother of Sutherland remarried after Sutherland&#39;s father&#39;s death,P024.S02,P024,0.263,score,auto
+d:073,kgc:Statement,d:Sutherland,Sutherland's father is a plumber in Totenham Court,P024.S03,P024,0.289,score,auto
+d:074,kgc:Statement,d:Sutherland,Sutherland's father left a store,P024.S03,P024,0.154,score,auto
+d:075,kgc:Statement,d:Sutherland,mother of Sutherland continued with Hardy,P024.S03,P024,0.203,score,auto
+d:076,kgc:Statement,d:Sutherland,Hardy is the head of the scene,P024.S03,P024,0.128,score,auto
+d:077,kgc:Statement,d:Sutherland,Windibank sold her father's shop in Sutherland,P024.S03,P024,0.102,score,auto
+d:078,kgc:Statement,d:Sutherland,Windibank is a wine commerce,P024.S03,P024,0.057,score,auto
+d:079,kgc:Statement,d:Sutherland,Sutherland's father';s store sold for ｡・4700,P024.S04,P024,0.09,score,auto
+d:79a,kgc:Statement,d:Sutherland,,P024.S04,P024,0.0,interpolation,auto
+d:080,kgc:Situation,,Sutherland thinks the following,P024.S04,P024,0.0,interpolation,auto
+d:081,kgc:Statement,d:Sutherland,Sutherland's father thinks of,P024.S04,P024,0.137,score,auto
+d:082,kgc:Thought,d:Father_of_Sutherland,4700 pounds is small,P024.S04,P024,0.0,interpolation,auto
+d:083,kgc:Situation,,Watson thinks that,P024.S04,P024,0.0,interpolation,auto
+d:084,kgc:Thought,d:Watson,Holmes is annoyed with Sutherland's story,P025.S01,P025,0.043,score,auto
+d:085,kgc:Situation,,Holmes are concentrating on Sutherland's story,P025.S01,P025,0.042,score,auto
+d:086,kgc:Situation,,Sutherland said the following,P025.S01,P025,0.0,interpolation,auto
+d:087,kgc:Statement,d:Sutherland,Sutherland's income is Ned&#39;s heritage,P026.S01,P026,0.258,score,auto
+d:088,kgc:Statement,d:Sutherland,Ned is Sutherland's uncle,P027.S02,P027,0.558,score,auto
+d:089,kgc:Statement,d:Sutherland,Ned is in Auckland,P027.S02,P027,0.634,score,auto
+d:090,kgc:Statement,d:Sutherland,Heritage is a New Zealand strain,P027.S03,P027,0.365,score,auto
+d:091,kgc:Statement,d:Sutherland,The dividend of the heritage is quarter and five o'clock,P027.S04,P027,0.131,score,auto
+d:092,kgc:Statement,d:Sutherland,The face value of the heritage is ｡・2500,P027.S04,P027,0.0,interpolation,auto
+d:093,kgc:Statement,d:Sutherland,Sutherland gives yield,P027.S04,P027,0.0,interpolation,auto
+d:094,kgc:Situation,,Holmes thought the following,P028.S01,P028,0.18,score,auto
+d:095,kgc:Thought,d:Holmes,Sutherland is interesting,P028.S01,P028,0.333,score,auto
+d:096,kgc:Thought,d:Holmes,Sutherland gets 100 pounds a year,P028.S03,P028,0.189,score,auto
+d:097,kgc:Thought,d:Holmes,Sutherland makes money,P028.S03,P028,0.0,interpolation,auto
+d:098,kgc:Thought,d:Holmes,Sutherland has room,P028.S03,P028,0.0,interpolation,auto
+d:099,kgc:Thought,d:Holmes,60 pounds is enough for single women,P028.S03,P028,0.206,score,auto
+d:100,kgc:Situation,,Sutherland said the following,P028.S03,P028,0.0,interpolation,auto
+d:101,kgc:Statement,d:Sutherland,Sutherland earns less than ｡・60,P029.S01,P029,0.205,score,auto
+d:102,kgc:Statement,d:Sutherland,Sutherland does not rely on parents,P029.S01,P029,0.0,interpolation,auto
+d:103,kgc:Statement,d:Sutherland,Sutherland keeps money with her parents,P029.S01,P029,0.138,score,auto
+d:104,kgc:Situation,,Sutherland is with parents,P029.S01,P029,0.0,interpolation,auto
+d:105,kgc:Statement,d:Sutherland,Windibank draws a quarter from the yield,P029.S03,P029,0.418,score,auto
+d:106,kgc:Statement,d:Sutherland,Windibank passes to mother of Sutherland,P029.S03,P029,0.195,score,auto
+d:107,kgc:Statement,d:Sutherland,Sutherland earns enough for Sutherland,P031.S01,P031,0.201,score,auto
+d:108,kgc:Statement,d:Sutherland,Sutherland gets 2 pence with one,P031.S01,P031,0.137,score,auto
+d:109,kgc:Statement,d:Sutherland,Sutherland processes up to 20 cards in a day,P031.S01,P031,0.113,score,auto
+d:110,kgc:Situation,,Holmes listens to Sutherland about the relationship between Sutherland and Hosma,P031.S01,P031,0.15,score,auto
+d:111,kgc:Situation,,Sutherland blushes,P031.S01,P031,0.161,score,auto
+d:112,kgc:Situation,,Sutherland pinches the sleeves of the jacket,P031.S01,P031,0.303,score,auto
+d:113,kgc:Situation,,Sutherland said the following,P031.S01,P031,0.0,interpolation,auto
+d:114,kgc:Statement,d:Sutherland,Sutherland Meets Hosmer at the Gas Industry Association Ball,P031.S02,P031,0.174,score,auto
+d:115,kgc:Statement,d:Sutherland,Sutherland's father had sent an invitation to the Gas Association&#39;s ball to Sutherland,P031.S02,P031,0.161,score,auto
+d:116,kgc:Statement,d:Sutherland,Sutherland's and Sutherland&#39;s mother went to the ball after Sutherland&#39;s father&#39;s death,P031.S02,P031,0.166,score,auto
+d:117,kgc:Statement,d:Sutherland,Windibank does not know,P031.S04,P031,0.428,score,auto
+d:118,kgc:Statement,d:Sutherland,Sutherland and mother of Sutherland go to a ball,P031.S04,P031,0.0,interpolation,auto
+d:119,kgc:Statement,d:Sutherland,Sutherland and mother of Sutherland go out,P031.S04,P031,0.0,interpolation,auto
+d:120,kgc:Statement,d:Sutherland,Windibank goes mad below,P031.S04,P031,0.205,score,auto
+d:121,kgc:Statement,d:Sutherland,Sutherland goes to Sunday school event,P031.S06,P031,0.369,score,auto
+d:122,kgc:Situation|kgc:Statement,d:Sutherland,Sutherland told the ball to join,P031.S06,P031,0.222,score,auto
+d:122a,kgc:Statement,d:Sutherland,,P031.S06,P031,0.0,interpolation,auto
+d:123,kgc:Statement,d:Sutherland,Windibank can not stop Sutherland,P031.S06,P031,0.0,interpolation,auto
+d:124,kgc:Statement,d:Sutherland,Windibank says,P031.S06,P031,0.0,interpolation,auto
+d:125,kgc:Statement,d:Windibank,People in the ball have no value,P031.S06,P031,0.0,interpolation,auto
+d:126,kgc:Statement,d:Sutherland,Sutherland's father&#39;s friend participates in a ball,P031.S08,P031,0.312,score,auto
+d:127,kgc:Situation,,Windibank said,P031.S08,P031,0.0,interpolation,auto
+d:128,kgc:Statement,d:Windibank,Sutherland has no clothes to wear,P031.S09,P031,0.197,score,auto
+d:130,kgc:Situation,,Sutherland said the following,P031.S09,P031,0.0,interpolation,auto
+d:131,kgc:Statement,d:Sutherland,Sutherland wore purple plush,P031.S09,P031,0.371,score,auto
+d:132,kgc:Statement,d:Sutherland,Windibank went to France for work.,P031.S10,P031,0.386,score,auto
+d:133,kgc:Statement,d:Sutherland,Sutherland and her mother and Hardy went to the ball,P031.S10,P031,0.447,score,auto
+d:134,kgc:Statement,d:Sutherland,Sutherland met Hosmer at the ball,P031.S10,P031,0.209,score,auto
+d:135,kgc:Situation,,Holmes thought the following,P032.S01,P032,0.092,score,auto
+d:136,kgc:Thought,d:Holmes,Windibank complained of,P032.S01,P032,0.13,score,auto
+d:137,kgc:Thought,d:Holmes,Sutherland went to a ball,P032.S01,P032,0.194,score,auto
+d:138,kgc:Situation,,Sutherland thought that,P032.S01,P032,0.0,interpolation,auto
+d:139,kgc:Thought,d:Sutherland_s_thoughts,Windibank is happy,P032.S01,P032,0.13,score,auto
+d:140,kgc:Situation,,Sutherland said the following,P032.S01,P032,0.0,interpolation,auto
+d:141,kgc:Statement,d:Sutherland,Windibank laughed,P033.S02,P033,0.284,score,auto
+d:142,kgc:Situation,,Windibank said,P033.S02,P033,0.0,interpolation,auto
+d:143,kgc:Statement,d:Windibank,Woman is free,P033.S02,P033,0.157,score,auto
+d:144,kgc:Situation,,Sutherland said the following,P033.S02,P033,0.0,interpolation,auto
+d:145,kgc:Statement,d:Sutherland,Sutherland met Hosmer at a ball,P034.S02,P034,0.521,score,auto
+d:146,kgc:Statement,d:Sutherland,Hosmer visits Sutherland's house the day after the ball,P035.S02,P035,0.326,score,auto
+d:147,kgc:Statement,d:Sutherland,Sutherland meets Hosmer after the ball,P035.S02,P035,0.214,score,auto
+d:148,kgc:Statement,d:Sutherland,Sutherland has met Hosmer twice,P035.S02,P035,0.428,score,auto
+d:149,kgc:Statement,d:Sutherland,Windibank returned home,P035.S02,P035,0.118,score,auto
+d:150,kgc:Statement,d:Sutherland,Hosmer can not come home,P035.S02,P035,0.296,score,auto
+d:151,kgc:Statement,d:Sutherland,Windibank dislikes,P035.S02,P035,0.0,interpolation,auto
+d:152,kgc:Statement,d:Sutherland,The customer enters the house,P035.S02,P035,0.115,score,auto
+d:153,kgc:Situation,,Windibank thought that,P035.S02,P035,0.0,interpolation,auto
+d:154,kgc:Thought,d:Windibank_s_Thoughts,Women are happy at home,P037.S02,P037,0.235,score,auto
+d:155,kgc:Situation,,Sutherland said the following,P037.S02,P037,0.0,interpolation,auto
+d:156,kgc:Statement,d:Sutherland,Sutherland told her mother,P037.S03,P037,0.142,score,auto
+d:157,kgc:Statement,d:Sutherland,Women want a home,P037.S03,P037,0.18,score,auto
+d:158,kgc:Statement,d:Sutherland,Sutherland has no home,P037.S03,P037,0.0,interpolation,auto
+d:159,kgc:Statement,d:Sutherland,Windibank goes to France a week later,P039.S01,P039,0.226,score,auto
+d:160,kgc:Statement,d:Sutherland,Hosmer said the following,P039.S01,P039,0.0,interpolation,auto
+d:161,kgc:Situation|kgc:Statement,d:Hosmer_s_statement,Hosmer does not meet Sutherland while Windibank is,P039.S01,P039,0.068,score,auto
+d:162,kgc:Situation,,,P039.S01,P039,0.0,interpolation,auto
+d:163,kgc:Situation,,Sutherland said the following,P039.S01,P039,0.0,interpolation,auto
+d:164,kgc:Statement,d:Sutherland,Sutherland and Hosmer wrote a letter every day,P039.S02,P039,0.304,score,auto
+d:165,kgc:Statement,d:Sutherland,Sutherland received a letter in the morning,P039.S03,P039,0.325,score,auto
+d:166,kgc:Statement,d:Sutherland,Windibank does not know the letter,P039.S03,P039,0.421,score,auto
+d:167,kgc:Statement,d:Sutherland,Sutherland was engaged to Hosmer at the first walk,P041.S02,P041,0.633,score,auto
+d:168,kgc:Statement,d:Sutherland,Hosmer is the teller of Redon Hall Street office,P041.S03,P041,0.277,score,auto
+d:169,kgc:Statement,d:Sutherland,Sutherland does not know the industry of Hosmer,P041.S03,P041,0.373,score,auto
+d:170,kgc:Statement,d:Sutherland,Hosmer lives in the office of Redon Hall Street,P041.S03,P041,0.277,score,auto
+d:171,kgc:Statement,d:Sutherland,Sutherland knows the following,P041.S03,P041,0.0,interpolation,auto
+d:172,kgc:Statement,d:Sutherland,Hosmer's address is on Redon Hall Street,P041.S03,P041,0.31,score,auto
+d:173,kgc:Statement,d:Sutherland,Sutherland sent a letter to Redon Hall Street Post Office,P041.S03,P041,0.0,interpolation,auto
+d:174,kgc:Situation,,Hosmer said the following,P041.S03,P041,0.0,interpolation,auto
+d:176,kgc:Statement,d:Hosmer_s_statement,Sutherland's letter arrives at the office,P041.S03,P041,0.0,interpolation,auto
+d:178,kgc:Statement,d:Hosmer_s_statement,Hosmer is teased by colleagues,P041.S03,P041,0.359,score,auto
+d:179,kgc:Statement,d:Hosmer_s_statement,Hosmer does not want to receive typing letters,P041.S03,P041,0.301,score,auto
+d:179a,kgc:Statement,d:Hosmer_s_statement,,P041.S03,P041,0.0,interpolation,auto
+d:180,kgc:Statement,d:Hosmer_s_statement,Handwritten letter feels Sutherland,P041.S03,P041,0.0,interpolation,auto
+d:181,kgc:Statement,d:Hosmer_s_statement,Typing letter feels machine,P041.S03,P041,0.0,interpolation,auto
+d:182,kgc:Situation,,Sutherland said the following,P041.S03,P041,0.0,interpolation,auto
+d:183,kgc:Statement,d:Sutherland,Hosmer loves Sutherland,P041.S03,P041,0.41,score,auto
+d:184,kgc:Statement,d:Sutherland,Hosmer pays attention,P041.S03,P041,0.431,score,auto
+d:185,kgc:Situation,,Holmes said the inscription of Zayedomo (below),P041.S03,P041,0.0,interpolation,auto
+d:186,kgc:Statement,d:Holmes,The importance of minor matters is infinite,P041.S03,P041,0.0,interpolation,auto
+d:187,kgc:Situation,,Sutherland said the following,P041.S03,P041,0.0,interpolation,auto
+d:188,kgc:Statement,d:Sutherland,Hosmer is shy,P041.S03,P041,0.517,score,auto
+d:192,kgc:Statement,d:Sutherland,Hosmer is shy,P041.S03,P041,0.517,score,auto
+d:193,kgc:Statement,d:Sutherland,Hosmer is a gentleman,P041.S03,P041,0.578,score,auto
+d:194,kgc:Statement,d:Sutherland,Hosmer's voice is thin,P041.S03,P041,0.417,score,auto
+d:195,kgc:Statement,d:Sutherland,Hosmer suffered tonsillitis when he was young,P041.S03,P041,0.324,score,auto
+d:196,kgc:Situation,,,P041.S03,P041,0.0,interpolation,auto
+d:197,kgc:Statement,d:Sutherland,Hosmer has a weak throat,P041.S03,P041,0.404,score,auto
+d:198,kgc:Statement,d:Sutherland,Hosmer speaks whisperly,P041.S03,P041,0.384,score,auto
+d:199,kgc:Statement,d:Sutherland,The appearance of Hosmer is good,P041.S03,P041,0.43,score,auto
+d:200,kgc:Statement,d:Sutherland,Hosmer's eyes are bad,P041.S03,P041,0.448,score,auto
+d:201,kgc:Statement,d:Sutherland,Hosmer has colored glasses,P041.S03,P041,0.396,score,auto
+d:202,kgc:Situation,,Hosmer said the following,P041.S03,P041,0.0,interpolation,auto
+d:203,kgc:Thought,d:Hosmer_s_thoughts,Hosmer wants to marry Sutherland before his father's return home,P041.S03,P041,0.267,score,auto
+d:203a,kgc:Thought,d:Hosmer_s_thoughts,,P041.S03,P041,0.0,interpolation,auto
+d:204,kgc:Statement,d:Sutherland,Hosmer was keen,P041.S03,P041,0.517,score,auto
+d:205,kgc:Statement,d:Sutherland,Hosmer gave the Bible to Sutherland,P041.S03,P041,0.346,score,auto
+d:205a,kgc:Statement,d:Sutherland,,P041.S03,P041,0.0,interpolation,auto
+d:206,kgc:Statement,d:Sutherland,Hosmer has made Sutherland vow:,P041.S03,P041,0.384,score,auto
+d:207,kgc:Statement,d:Sutherland,Sutherland believes in Hosmer,P041.S03,P041,0.41,score,auto
+d:208,kgc:Statement,d:Sutherland,mother of Sutherland agreed with the above,P041.S03,P041,0.0,interpolation,auto
+d:209,kgc:Statement,d:Sutherland,mother of Sutherland loved Hosmer more than Sutherland,P041.S03,P041,0.312,score,auto
+d:210,kgc:Situation,,Hosmer said the following,P041.S03,P041,0.0,interpolation,auto
+d:211,kgc:Statement,d:Hosmer_s_statement,Hosmer will marry Sutherland this week,P041.S03,P041,0.374,score,auto
+d:212,kgc:Statement,d:Sutherland,Sutherland worried about Windibank,P041.S03,P041,0.0,interpolation,auto
+d:213,kgc:Statement,d:Sutherland,mother of Sutherland and Hosmer said,P041.S03,P041,0.504,score,auto
+d:214,kgc:Statement,d:Sutherland,Sutherland Worries About Windibank,P041.S03,P041,0.0,interpolation,auto
+d:215,kgc:Statement,d:Sutherland,mother of Sutherland corresponds to Windibank,P041.S03,P041,0.0,interpolation,auto
+d:216,kgc:Statement,d:Sutherland,Sutherland wants to report to Windibank before the wedding,P041.S03,P041,0.0,interpolation,auto
+d:216a,kgc:Statement,d:Sutherland,,P041.S03,P041,0.0,interpolation,auto
+d:217,kgc:Statement,d:Sutherland,Windibank works at the French office of the Bordeaux company,P041.S03,P041,0.0,interpolation,auto
+d:218,kgc:Statement,d:Sutherland,Sutherland sent a letter to Windibank,P041.S03,P041,0.0,interpolation,auto
+d:219,kgc:Statement,d:Sutherland,The letter came back to Sutherland on the morning of the wedding day,P041.S03,P041,0.0,interpolation,auto
+d:220,kgc:Statement,d:Sutherland,The letter did not reach Windibank,P041.S03,P041,0.0,interpolation,auto
+d:221,kgc:Statement,d:Sutherland,Windibank left for England just before the letter arrived,P041.S03,P041,0.0,interpolation,auto
+d:223,kgc:Statement,d:Sutherland,Wedding will be on friday,P041.S03,P041,0.0,interpolation,auto
+d:224,kgc:Statement,d:Sutherland,Weddings will take place at St. Savior Church,P041.S03,P041,0.0,interpolation,auto
+d:226,kgc:Statement,d:Sutherland,Sutherland and Hosmer eat breakfast at Saint St Pancras Hotel,P041.S03,P041,0.239,score,auto
+d:227,kgc:Statement,d:Sutherland,Last Friday,P041.S03,P041,0.0,interpolation,auto
+d:228,kgc:Statement,d:Sutherland,Hosmer put mother of Sutherland and Sutherland&#39;s mother on a Hansom carriage,P041.S03,P041,0.24,score,auto
+d:228a,kgc:Statement,d:Sutherland,,P041.S03,P041,0.0,interpolation,auto
+d:229,kgc:Statement,d:Sutherland,Hosmer got on a carriage,P041.S03,P041,0.4,score,auto
+d:230,kgc:Statement,d:Sutherland,There were no other carriages in the street,P041.S03,P041,0.0,interpolation,auto
+d:231,kgc:Statement,d:Sutherland,Sutherland and mother of Sutherland arrived at the church before Hosmer,P041.S03,P041,0.275,score,auto
+d:232,kgc:Statement,d:Sutherland,Hosmer wasn't in a cart,P041.S03,P041,0.384,score,auto
+d:233,kgc:Statement,d:Sutherland,A chariot wandered under the chariot,P041.S03,P041,0.0,interpolation,auto
+d:234,kgc:Statement,d:Sutherland,There was no one under the cart,P041.S03,P041,0.0,interpolation,auto
+d:235,kgc:Statement,d:Sutherland,He does not know where Hosmer is,P041.S03,P041,0.67,score,auto
+d:236,kgc:Statement,d:Sutherland,He saw the following,P041.S03,P041,0.0,interpolation,auto
+d:237,kgc:Statement,d:The_speaker_s_statement,Hosmer gets into the cart,P041.S03,P041,0.4,score,auto
+d:239,kgc:Statement,d:Sutherland,Hosmer does not send letters,P041.S03,P041,0.447,score,auto
+d:240,kgc:Statement,d:Sutherland,Hosmer does not show up,P041.S03,P041,0.562,score,auto
+d:241,kgc:Statement,d:Sutherland,Sutherland does not know where Hosmer is,P041.S03,P041,0.512,score,auto
+d:242,kgc:Statement,d:Sutherland,Hosmer does not throw away Sutherland,P041.S03,P041,0.395,score,auto
+d:243,kgc:Statement,d:Sutherland,Last Friday morning,P041.S03,P041,0.0,interpolation,auto
+d:244,kgc:Statement,d:Sutherland,Sutherland believes in Hosmer,P041.S03,P041,0.41,score,auto
+d:245,kgc:Statement,d:Sutherland,Sutherland swore the above,P041.S03,P041,0.0,interpolation,auto
+d:247,kgc:Statement,d:Sutherland,Sutherland leaves with Hosmer,P041.S03,P041,0.467,score,auto
+d:248,kgc:Statement,d:Sutherland,Sutherland now understands the language of Hosmer,P041.S03,P041,0.332,score,auto
+d:249,kgc:Situation,,Sutherland thinks the following,P041.S03,P041,0.0,interpolation,auto
+d:250,kgc:Thought,d:Sutherland_s_thoughts,Hosmer knew about the danger,P041.S03,P041,0.404,score,auto
+d:252,kgc:Thought,d:Sutherland_s_thoughts,Hosmer said above,P041.S03,P041,0.0,interpolation,auto
+d:253,kgc:Situation,,Sutherland said the following,P041.S03,P041,0.0,interpolation,auto
+d:254,kgc:Statement,d:Sutherland,Sutherland does not know the danger of Hosmer,P041.S03,P041,0.401,score,auto
+d:255,kgc:Statement,d:Sutherland,Sutherland reported Hosmer's disappearance to Sutherland&#39;s mother and Windibank,P041.S03,P041,0.27,score,auto
+d:256,kgc:Statement,d:Sutherland,mother of Sutherland got mad at Hosmer&#39;s disappearance,P041.S03,P041,0.297,score,auto
+d:257,kgc:Situation,,mother of Sutherland said to Sutherland:,P041.S03,P041,0.0,interpolation,auto
+d:258,kgc:Statement,d:mother_of_Sutherland&#39_s_remark,Sutherland does not speak Hosmer's disappearance,P041.S03,P041,0.346,score,auto
+d:259,kgc:Situation,,Windibank said,P041.S03,P041,0.0,interpolation,auto
+d:260,kgc:Statement,d:Windibank,Hosmer will contact Sutherland,P041.S03,P041,0.433,score,auto
+d:261,kgc:Situation,,Sutherland said the following,P041.S03,P041,0.0,interpolation,auto
+d:262,kgc:Statement,d:Sutherland,Hosmer owns his property,P041.S03,P041,0.359,score,auto
+d:263,kgc:Statement,d:Sutherland,Hosmer does not want Sutherland's money,P041.S03,P041,0.385,score,auto
+d:264,kgc:Statement,d:Sutherland,Sutherland can not sleep,P041.S03,P041,0.0,interpolation,auto
+d:265,kgc:Statement,d:Sutherland,Sutherland cried,P041.S03,P041,0.0,interpolation,auto
+d:266,kgc:Situation,,Holmes said the following,P041.S03,P041,0.0,interpolation,auto
+d:267,kgc:Statement,d:Holmes,Holmes examines Hosmer's disappearance,P041.S03,P041,0.344,score,auto
+d:268,kgc:Statement,d:Holmes,Holmes can solve Hosmer's disappearance,P041.S03,P041,0.358,score,auto
+d:269,kgc:Statement,d:Holmes,Sutherland forgets Hosmer,P041.S03,P041,0.41,score,auto
+d:270,kgc:Statement,d:Holmes,Sutherland can not see Hosmer,P041.S03,P041,0.512,score,auto
+d:271,kgc:Statement,d:Holmes,Holmes wants Hosmer's personalities,P041.S03,P041,0.377,score,auto
+d:272,kgc:Statement,d:Holmes,Holmes wants a letter from Hosmer,P041.S03,P041,0.45,score,auto
+d:273,kgc:Situation,,Sutherland said the following,P068.S03,P068,0.0,interpolation,auto
+d:274,kgc:Statement,d:Sutherland,Last Saturday,P073.S01,P073,0.696,score,auto
+d:275,kgc:Situation,,Sutherland asked Holmes to give adverts,P073.S01,P073,0.0,interpolation,auto
+d:276,kgc:Situation,,Sutherland gave Hosmer a letter to Holmes,P073.S02,P073,0.206,score,auto
+d:277,kgc:Situation,,Sutherland said the following,P073.S02,P073,0.0,interpolation,auto
+d:278,kgc:Statement,d:Sutherland,Sutherland's address is Camberwell,P074.S02,P074,0.549,score,auto
+d:279,kgc:Statement,d:Sutherland,Sutherland does not know Hosmer's address,P074.S02,P074,0.573,score,auto
+d:280,kgc:Statement,d:Sutherland,Hosmer is a foreign company in West House &amp; Marbank,P077.S01,P077,0.132,score,auto
+d:281,kgc:Statement,d:Sutherland,West House &amp; Marbank is the largest claret importer on Fenchurch Street,P077.S01,P077,0.56,score,auto
+d:282,kgc:Situation,,Holmes said the following,P077.S01,P077,0.0,interpolation,auto
+d:283,kgc:Statement,d:Holmes,Sutherland will not forget Holmes' advice,P078.S03,P078,0.265,score,auto
+d:284,kgc:Statement,d:Holmes,Sutherland forgets Hosmer's disappearance,P079.S02,P079,0.189,score,auto
+d:285,kgc:Situation,,Sutherland said the following,P079.S02,P079,0.0,interpolation,auto
+d:286,kgc:Statement,d:Sutherland,Sutherland can not forget Hosmer,P079.S02,P079,0.237,score,auto
+d:287,kgc:Statement,d:Sutherland,Sutherland believes in Hosmer,P079.S02,P079,0.237,score,auto
+d:288,kgc:Situation,,Watson felt noble and respect for Sutherland,P080.S01,P080,0.305,score,auto
+d:289,kgc:Situation,,Sutherland went out of Holmes's house,P080.S02,P080,0.185,score,auto
+d:290,kgc:Situation,,Sutherland will come to Holmes when called,P080.S02,P080,0.109,score,auto
+d:290a,kgc:Situation,,,P080.S02,P080,0.0,interpolation,auto
+d:291,kgc:Situation,,Holmes said the following,P080.S02,P080,0.0,interpolation,auto
+d:292,kgc:Statement,d:Holmes,Sutherland is interesting,P082.S01,P082,0.239,score,auto
+d:293,kgc:Statement,d:Holmes,Holmes knows the same case,P082.S01,P082,0.0,interpolation,auto
+d:294,kgc:Statement,d:Holmes,The same incident happened in Andova in 1977,P082.S01,P082,0.0,interpolation,auto
+d:295,kgc:Statement,d:Holmes,The same incident happened in The Hague last year,P082.S03,P082,0.393,score,auto
+d:296,kgc:Situation,,Watson said the following,P082.S03,P082,0.0,interpolation,auto
+d:297,kgc:Statement,d:Watson,Holmes can read Sutherland,P083.S01,P083,0.275,score,auto
+d:298,kgc:Statement,d:Watson,Watson can not read Sutherland,P084.S01,P084,0.312,score,auto
+d:299,kgc:Situation,,Holmes said the following,P084.S01,P084,0.0,interpolation,auto
+d:300,kgc:Statement,d:Holmes,Watson overlooks an important point,P084.S02,P084,0.287,score,auto
+d:301,kgc:Statement,d:Holmes,Sleeves are important,P084.S02,P084,0.405,score,auto
+d:302,kgc:Statement,d:Holmes,Thumb nail talks,P084.S03,P084,0.362,score,auto
+d:303,kgc:Statement,d:Holmes,Shoe laces lead to major problems,P084.S03,P084,0.0,interpolation,auto
+d:304,kgc:Situation,,Watson said the following,P084.S03,P084,0.0,interpolation,auto
+d:305,kgc:Statement,d:Watson,Sutherland wore a straw hat with a blackboard color,P085.S01,P085,0.239,score,auto
+d:306,kgc:Statement,d:Watson,A red-brick feather was on a blackboard-colored straw hat,P085.S01,P085,0.442,score,auto
+d:307,kgc:Statement,d:Watson,Sutherland's jacket was black,P085.S02,P085,0.523,score,auto
+d:308,kgc:Statement,d:Watson,Black beads were attached to the jacket of Sutherland,P085.S02,P085,0.524,score,auto
+d:309,kgc:Statement,d:Watson,A small black beaded ornament is attached to the hem border edge,P085.S02,P085,0.392,score,auto
+d:310,kgc:Statement,d:Watson,The clothes were brown,P085.S03,P085,0.202,score,auto
+d:311,kgc:Statement,d:Watson,A purple plush is attached to the neck and sleeves of the garment,P085.S03,P085,0.464,score,auto
+d:312,kgc:Statement,d:Watson,The gloves were scarlet,P085.S04,P085,0.287,score,auto
+d:313,kgc:Statement,d:Watson,The thumb of the right glove is worn,P085.S04,P085,0.339,score,auto
+d:314,kgc:Statement,d:Watson,Watson has not seen Sutherland shoes,P085.S04,P085,0.0,interpolation,auto
+d:315,kgc:Statement,d:Watson,Sutherland was hanging a small round gold earring,P085.S06,P085,0.579,score,auto
+d:316,kgc:Thought,d:Watson,Sutherland is rich,P085.S06,P085,0.0,interpolation,auto
+d:317,kgc:Thought,d:Watson,Sutherland is a leisure,P085.S06,P085,0.0,interpolation,auto
+d:318,kgc:Thought,d:Watson,Sutherland is warm,P085.S06,P085,0.0,interpolation,auto
+d:319,kgc:Thought,d:Watson,Sutherland is a town girl,P085.S06,P085,0.0,interpolation,auto
+d:321,kgc:Situation,,Holmes laughed,P086.S01,P086,0.107,score,auto
+d:322,kgc:Situation,,Holmes said the following,P086.S01,P086,0.0,interpolation,auto
+d:323,kgc:Statement,d:Holmes,Watson improved,P087.S01,P087,0.227,score,auto
+d:324,kgc:Statement,d:Holmes,Watson overlooks an important point,P087.S01,P087,0.179,score,auto
+d:325,kgc:Statement,d:Holmes,The way is right,P087.S01,P087,0.0,interpolation,auto
+d:326,kgc:Statement,d:Holmes,Watson looks at the color,P087.S01,P087,0.203,score,auto
+d:327,kgc:Statement,d:Holmes,Watson pays attention to details,P087.S01,P087,0.182,score,auto
+d:328,kgc:Statement,d:Holmes,Holmes look at a woman's sleeve,P087.S05,P087,0.545,score,auto
+d:329,kgc:Statement,d:Holmes,Holmes looks at the knee of a man's pants,P087.S06,P087,0.34,score,auto
+d:330,kgc:Statement,d:Holmes,A plush weave is attached to the cuffs of Sutherland,P087.S07,P087,0.137,score,auto
+d:331,kgc:Statement,d:Holmes,The plush weave marks,P087.S07,P087,0.181,score,auto
+d:332,kgc:Statement,d:Holmes,Plush weave is an expensive fabric,P087.S07,P087,0.145,score,auto
+d:333,kgc:Statement,d:Holmes,The double line on the wrist is a trace of the type,P087.S08,P087,0.42,score,auto
+d:334,kgc:Statement,d:Holmes,The double wire on the wrist is the mark of a manual sewing machine,P087.S08,P087,0.245,score,auto
+d:335,kgc:Statement,d:Holmes,The double line on the left wrist is the mark of a manual sewing machine,P087.S08,P087,0.351,score,auto
+d:336,kgc:Statement,d:Holmes,The right wrist double line is a trace of type,P087.S08,P087,0.4,score,auto
+d:337,kgc:Statement,d:Holmes,Sutherland has a trace of nose glasses,P087.S10,P087,0.148,score,auto
+d:339,kgc:Statement,d:Holmes,Holmes surprised Sutherland with myopia and type,P088.S01,P088,0.472,score,auto
+d:341,kgc:Situation,,Watson was surprised,P088.S01,P088,0.738,score,auto
+d:342,kgc:Situation,,Holmes said the following,P088.S01,P088,0.0,interpolation,auto
+d:343,kgc:Statement,d:Holmes,Sutherland's left and right shoes are different,P088.S01,P088,0.0,interpolation,auto
+d:345,kgc:Statement,d:Holmes,Sutherland's appearance is tight,P088.S01,P088,0.0,interpolation,auto
+d:346,kgc:Statement,d:Holmes,Sutherland wears different left and right shoes,P089.S02,P089,0.096,score,auto
+d:348,kgc:Situation,,Holmes noticed the following,P089.S02,P089,0.0,interpolation,auto
+d:349,kgc:Statement,d:Holmes,This morning,P089.S02,P089,0.0,interpolation,auto
+d:350,kgc:Statement,d:Holmes,This morning Sutherland wrote a note,P091.S01,P091,0.185,score,auto
+d:351,kgc:Statement,d:Holmes,Sutherland gloves have violet ink,P091.S02,P091,0.317,score,auto
+d:352,kgc:Statement,d:Holmes,Sutherland's finger has violet ink,P091.S02,P091,0.437,score,auto
+d:353,kgc:Situation,,Watson said the following,P091.S02,P091,0.0,interpolation,auto
+d:354,kgc:Statement,d:Watson,Inquirer ad is written below,P091.S03,P091,0.205,score,auto
+d:355,kgc:Statement,d:Watson,Hosmer disappeared on the morning of the 14th,P093.S01,P093,0.311,score,auto
+d:356,kgc:Statement,d:Watson,Hosmer's height is 5 feet 7 inches,P093.S01,P093,0.088,score,auto
+d:357,kgc:Statement,d:Watson,Hosmer's physique is good,P093.S01,P093,0.113,score,auto
+d:358,kgc:Statement,d:Watson,The color of Hosmer is bad,P093.S01,P093,0.107,score,auto
+d:359,kgc:Statement,d:Watson,Hosmer's hair is black,P093.S02,P093,0.348,score,auto
+d:360,kgc:Statement,d:Watson,There is a small boat on the top of Hosmer's head,P093.S02,P093,0.0,interpolation,auto
+d:361,kgc:Statement,d:Watson,Hosmer has a black cheek and mouth,P093.S02,P093,0.147,score,auto
+d:362,kgc:Statement,d:Watson,Hosmer has colored glasses,P093.S02,P093,0.111,score,auto
+d:363,kgc:Statement,d:Watson,Hosmer's way of speaking is jealous,P093.S02,P093,0.0,interpolation,auto
+d:364,kgc:Statement,d:Watson,At the time of disappearance is a black frock coat,P093.S03,P093,0.331,score,auto
+d:365,kgc:Statement,d:Watson,At the time of disappearance is a black vest,P093.S03,P093,0.133,score,auto
+d:366,kgc:Statement,d:Watson,Dress at the time of disappearance is the Albert chain of gold,P093.S03,P093,0.248,score,auto
+d:367,kgc:Statement,d:Watson,In the past,P093.S03,P093,0.0,interpolation,auto
+d:368,kgc:Statement,d:Watson,Letters have no clues to Hosmer,P094.S02,P094,0.206,score,auto
+d:369,kgc:Statement,d:Watson,The letter has a quote from Balzac,P094.S02,P094,0.17,score,auto
+d:370,kgc:Statement,d:Watson,The letter is written in type,P094.S02,P094,0.186,score,auto
+d:371,kgc:Situation,,Holmes said the following,P094.S02,P094,0.0,interpolation,auto
+d:372,kgc:Statement,d:Holmes,Signature is written in type,P096.S01,P096,0.392,score,auto
+d:373,kgc:Statement,d:Holmes,Signature is Hosmer Aingel,P096.S01,P096,0.408,score,auto
+d:374,kgc:Statement,d:Holmes,Letter has a date,P096.S03,P096,0.335,score,auto
+d:375,kgc:Statement,d:Holmes,The sender's address is Redon Hall Street,P096.S03,P096,0.096,score,auto
+d:376,kgc:Statement,d:Holmes,Signature is important,P096.S04,P096,0.277,score,auto
+d:377,kgc:Situation,,Watson said the following,P096.S04,P096,0.0,interpolation,auto
+d:378,kgc:Statement,d:Watson,Signature repeals vow,P096.S04,P096,0.198,score,auto
+d:380,kgc:Statement,d:Watson,Hosma received an appeal against breach of covenants,P099.S01,P099,0.135,score,auto
+d:381,kgc:Situation,,Holmes said the following,P099.S01,P099,0.0,interpolation,auto
+d:382,kgc:Statement,d:Holmes,The above is not important,P099.S01,P099,0.0,interpolation,auto
+d:383,kgc:Statement,d:Holmes,Hosmer's disappearance resolves,P099.S01,P099,0.0,interpolation,auto
+d:385,kgc:Statement,d:Holmes,Holmes and Watson write two letters,P100.S02,P100,0.535,score,auto
+d:386,kgc:Statement,d:Holmes,Letter 1 is sent to a company in Central City,P100.S02,P100,0.114,score,auto
+d:387,kgc:Statement,d:Holmes,Letter 2 sent to Windibank,P100.S02,P100,0.184,score,auto
+d:388,kgc:Statement,d:Holmes,Holmes writes the following to letter 2,P100.S02,P100,0.18,score,auto
+d:389,kgc:Statement,d:Holmes,Holmes wants to see Windibank at 6 o'clock in the evening,P100.S03,P100,0.321,score,auto
+d:389a,kgc:Statement,d:Holmes,,P100.S03,P100,0.0,interpolation,auto
+d:390,kgc:Situation,,Watson dedicated to the treatment of critically ill patients,P100.S03,P100,0.0,interpolation,auto
+d:391,kgc:Situation,,At six o'clock,P100.S03,P100,0.409,score,auto
+d:392,kgc:Situation,,Watson thought the following,P100.S03,P100,0.0,interpolation,auto
+d:393,kgc:Thought,d:Watson,Watson is not in time for a solution,P103.S01,P103,0.123,score,auto
+d:394,kgc:Situation,,Holmes was sleeping in an armchair,P103.S03,P103,0.241,score,auto
+d:395,kgc:Situation,,Holmes said the following,P103.S03,P103,0.0,interpolation,auto
+d:396,kgc:Statement,d:Holmes,The incident has no mystery,P106.S01,P106,0.674,score,auto
+d:397,kgc:Statement,d:Holmes,Holmes can not catch the villain,P110.S01,P110,0.097,score,auto
+d:398,kgc:Situation,,Footsteps echo in the corridor,P110.S01,P110,0.0,interpolation,auto
+d:399,kgc:Situation,,Holmes said the following,P110.S01,P110,0.0,interpolation,auto
+d:400,kgc:Statement,d:Holmes,Windibank came,P112.S01,P112,0.268,score,auto
+d:401,kgc:Situation,,Windibank's physique is good,P112.S01,P112,0.426,score,auto
+d:402,kgc:Situation,,Windibank is medium-sized,P112.S01,P112,0.154,score,auto
+d:403,kgc:Situation,,The age of Windibank is around 30 years old,P112.S01,P112,0.129,score,auto
+d:404,kgc:Situation,,Windibank has no bribe,P112.S01,P112,0.196,score,auto
+d:405,kgc:Situation,,The color of Windibank is bad,P112.S01,P112,0.158,score,auto
+d:406,kgc:Situation,,Windibank's behavior is calm,P112.S01,P112,0.148,score,auto
+d:407,kgc:Situation,,Windibank's gray eyes are sharp,P112.S01,P112,0.144,score,auto
+d:408,kgc:Situation,,Windibank saw Holmes and Watson,P112.S01,P112,0.265,score,auto
+d:409,kgc:Situation,,Windibank put a bowler hat on the side shelf,P112.S01,P112,0.115,score,auto
+d:410,kgc:Situation,,Windibank greets Holmes,P112.S01,P112,0.298,score,auto
+d:411,kgc:Situation,,Windibank sat in a chair,P112.S01,P112,0.188,score,auto
+d:412,kgc:Situation,,Holmes said the following,P112.S01,P112,0.0,interpolation,auto
+d:413,kgc:Statement,d:Holmes,The type letter is a Windibank letter,P112.S01,P112,0.152,score,auto
+d:414,kgc:Situation,,Windibank said,P112.S01,P112,0.0,interpolation,auto
+d:415,kgc:Statement,d:Windibank,Windibank worried about being late,P112.S01,P112,0.158,score,auto
+d:416,kgc:Statement,d:Windibank,Windibank is busy,P112.S01,P112,0.212,score,auto
+d:417,kgc:Statement,d:Windibank,Windibank apologizes for,P112.S01,P112,0.196,score,auto
+d:418,kgc:Statement,d:Windibank,Sutherland bothers Holmes,P112.S01,P112,0.11,score,auto
+d:419,kgc:Statement,d:Windibank,Windibank does not want,P112.S01,P112,0.236,score,auto
+d:420,kgc:Statement,d:Windibank,Sutherland comes to Holmes,P112.S01,P112,0.124,score,auto
+d:421,kgc:Statement,d:Windibank,Sutherland talks about family misfortune,P112.S01,P112,0.0,interpolation,auto
+d:422,kgc:Statement,d:Windibank,Sutherland moves quickly,P112.S01,P112,0.0,interpolation,auto
+d:423,kgc:Statement,d:Windibank,Windibank is pleased to,P112.S01,P112,0.212,score,auto
+d:424,kgc:Statement,d:Windibank,Holmes is not a police officer,P112.S01,P112,0.107,score,auto
+d:425,kgc:Statement,d:Windibank,Windibank wants to avoid unnecessary expenses,P112.S01,P112,0.114,score,auto
+d:425a,kgc:Statement,d:Windibank,,P112.S01,P112,0.0,interpolation,auto
+d:426,kgc:Situation,,Windibank thinks the following,P112.S02,P112,0.249,score,auto
+d:427,kgc:Situation,,Holmes can not find Hosmer,P113.S06,P113,0.392,score,auto
+d:428,kgc:Situation,,Holmes said the following,P113.S06,P113,0.0,interpolation,auto
+d:429,kgc:Statement,d:Holmes,Holmes find Hosmer,P113.S06,P113,0.392,score,auto
+d:430,kgc:Situation,,Windibank dropped her gloves in surprise,P115.S01,P115,0.572,score,auto
+d:431,kgc:Situation,,,P115.S01,P115,0.0,interpolation,auto
+d:432,kgc:Situation,,Windibank was pleased with,P115.S01,P115,0.151,score,auto
+d:433,kgc:Situation,,Holmes find Hosmer,P116.S01,P116,0.088,score,auto
+d:434,kgc:Situation,,Holmes said the following,P116.S01,P116,0.0,interpolation,auto
+d:435,kgc:Statement,d:Holmes,Typewriter letters differ like handwriting,P116.S01,P116,0.335,score,auto
+d:436,kgc:Statement,d:Holmes,In the Windibank letter,P116.S03,P116,0.241,score,auto
+d:438,kgc:Statement,d:Holmes,In the Windibank letter,P116.S03,P116,0.241,score,auto
+d:439,kgc:Statement,d:Holmes,Windibank's letter has 14 features,P116.S03,P116,0.164,score,auto
+d:440,kgc:Situation,,Windibank said,P116.S03,P116,0.0,interpolation,auto
+d:441,kgc:Statement,d:Windibank,Windibank's workplace has one machine,P116.S03,P116,0.0,interpolation,auto
+d:443,kgc:Statement,d:Windibank,Letters wear out,P116.S03,P116,0.541,score,auto
+d:444,kgc:Situation,,Holmes said the following,P116.S03,P116,0.0,interpolation,auto
+d:445,kgc:Statement,d:Holmes,Holmes is writing a dissertation (below),P118.S02,P118,0.197,score,auto
+d:446,kgc:Statement,d:Holmes,Typewriters are involved in crime,P118.S02,P118,0.358,score,auto
+d:447,kgc:Statement,d:Holmes,letter of Hosma is written in type,P118.S04,P118,0.132,score,auto
+d:448,kgc:Statement,d:Holmes,In letter of Hosma,P118.S04,P118,0.189,score,auto
+d:449,kgc:Statement,d:Holmes,In the letter of Hosmer r is missing,P118.S04,P118,0.497,score,auto
+d:450,kgc:Statement,d:Holmes,letter of Hosma has 14 features,P118.S04,P118,0.15,score,auto
+d:451,kgc:Situation,,Windibank jumped out of the chair,P119.S01,P119,0.354,score,auto
+d:452,kgc:Situation,,Windibank grabbed a hat,P119.S01,P119,0.372,score,auto
+d:453,kgc:Situation,,Windibank said,P119.S01,P119,0.0,interpolation,auto
+d:454,kgc:Statement,d:Windibank,Windibank has no wasted time,P119.S01,P119,0.141,score,auto
+d:455,kgc:Situation,,Windibank asks Holmes:,P119.S01,P119,0.198,score,auto
+d:456,kgc:Situation,,Holmes Tells Windibank,P119.S01,P119,0.181,score,auto
+d:458,kgc:Situation,,Holmes catches Hosmer,P119.S03,P119,0.598,score,auto
+d:459,kgc:Situation,,Holmes locked the door,P120.S01,P120,0.289,score,auto
+d:460,kgc:Situation,,Holmes said the following,P120.S01,P120,0.0,interpolation,auto
+d:461,kgc:Statement,d:Holmes,Holmes caught Hosmer,P120.S02,P120,0.553,score,auto
+d:462,kgc:Situation,,Windibank asked Holmes where Hosmer was,P121.S01,P121,0.118,score,auto
+d:463,kgc:Situation,,Windibank's lips were deep blue,P121.S01,P121,0.261,score,auto
+d:464,kgc:Situation,,Windibank looked around,P122.S02,P122,0.182,score,auto
+d:465,kgc:Situation,,Holmes said the following,P122.S02,P122,0.0,interpolation,auto
+d:466,kgc:Statement,d:Holmes,Windibank can not escape from Holmes,P122.S02,P122,0.194,score,auto
+d:467,kgc:Situation,,Windibank sat in a chair,P122.S02,P122,0.2,score,auto
+d:468,kgc:Situation,,Windibank's face seemed dead,P122.S02,P122,0.167,score,auto
+d:469,kgc:Situation,,Windibank's forehead has cold sweat,P122.S02,P122,0.137,score,auto
+d:470,kgc:Situation,,Windibank said,P122.S02,P122,0.0,interpolation,auto
+d:471,kgc:Statement,d:Windibank,Holmes does not sue Windibank,P122.S02,P122,0.194,score,auto
+d:472,kgc:Situation,,Holmes said the following,P122.S02,P122,0.0,interpolation,auto
+d:473,kgc:Statement,d:Holmes,Holmes is sorry,P122.S03,P122,0.0,interpolation,auto
+d:474,kgc:Statement,d:Holmes,Holmes first met a cruel and selfish treat,P124.S02,P124,0.314,score,auto
+d:475,kgc:Statement,d:Holmes,Windibank married for money with mother of Sutherland,P126.S01,P126,0.394,score,auto
+d:476,kgc:Statement,d:Holmes,Windibank can use Sutherland gold,P126.S01,P126,0.149,score,auto
+d:478,kgc:Statement,d:Holmes,Windibank lives with Sutherland,P126.S01,P126,0.23,score,auto
+d:479,kgc:Statement,d:Holmes,Sutherland's money is big money,P126.S01,P126,0.362,score,auto
+d:480,kgc:Statement,d:Holmes,Windibank Wants Sutherland Gold,P126.S01,P126,0.0,interpolation,auto
+d:481,kgc:Statement,d:Holmes,Sutherland is funny,P126.S01,P126,0.0,interpolation,auto
+d:482,kgc:Statement,d:Holmes,Sutherland has emotions and compassion,P126.S01,P126,0.0,interpolation,auto
+d:483,kgc:Statement,d:Holmes,The character of Sutherland is good,P126.S01,P126,0.0,interpolation,auto
+d:484,kgc:Statement,d:Holmes,Sutherland has money,P126.S01,P126,0.369,score,auto
+d:486,kgc:Statement,d:Holmes,Sutherland gets married soon,P126.S01,P126,0.149,score,auto
+d:488,kgc:Statement,d:Holmes,Windibank loses 100 pounds in a year,P126.S05,P126,0.339,score,auto
+d:490,kgc:Statement,d:Holmes,Windibank will not leave Sutherland from home,P126.S06,P126,0.157,score,auto
+d:491,kgc:Statement,d:Holmes,Windibank prohibits Sutherland from dating with people of the same age,P126.S06,P126,0.27,score,auto
+d:492,kgc:Statement,d:Holmes,The above does not continue,P128.S04,P128,0.0,interpolation,auto
+d:493,kgc:Statement,d:Holmes,Sutherland defy Windibank,P128.S10,P128,0.192,score,auto
+d:494,kgc:Statement,d:Holmes,Sutherland claims rights,P128.S10,P128,0.117,score,auto
+d:495,kgc:Statement,d:Holmes,Sutherland wants to go to a ball,P128.S10,P128,0.119,score,auto
+d:495a,kgc:Statement,d:Holmes,,P128.S10,P128,0.0,interpolation,auto
+d:496,kgc:Statement,d:Holmes,Windibank gets the help of mother of Sutherland,P128.S10,P128,0.164,score,auto
+d:497,kgc:Statement,d:Holmes,Windibank disguises,P128.S12,P128,0.21,score,auto
+d:498,kgc:Statement,d:Holmes,Windibank wore colored glasses,P128.S12,P128,0.136,score,auto
+d:499,kgc:Statement,d:Holmes,Windibank wore a mustache,P128.S12,P128,0.153,score,auto
+d:500,kgc:Statement,d:Holmes,Windibank whispered,P128.S12,P128,0.221,score,auto
+d:501,kgc:Statement,d:Holmes,Disguise is safe,P128.S12,P128,0.0,interpolation,auto
+d:503,kgc:Statement,d:Holmes,Sutherland is nearsighted,P128.S12,P128,0.0,interpolation,auto
+d:504,kgc:Statement,d:Holmes,Windibank is Hosmer,P128.S12,P128,0.285,score,auto
+d:505,kgc:Statement,d:Holmes,Windibank chases others from Sutherland,P128.S12,P128,0.141,score,auto
+d:507,kgc:Statement,d:Holmes,Sutherland loves Windibank,P128.S12,P128,0.167,score,auto
+d:508,kgc:Situation,,Windibank did not think of,P128.S12,P128,0.602,score,auto
+d:509,kgc:Statement,d:Windibank,Windibank robs Sutherland,P128.S12,P128,0.167,score,auto
+d:510,kgc:Situation,,Holmes said the following,P128.S12,P128,0.0,interpolation,auto
+d:511,kgc:Statement,d:Holmes,Sutherland loved Hosmer,P128.S12,P128,0.0,interpolation,auto
+d:512,kgc:Statement,d:Holmes,Sutherland thinks that,P128.S12,P128,0.31,score,auto
+d:513,kgc:Thought,d:Sutherland_s_thoughts,Windibank is in France,P128.S12,P128,0.244,score,auto
+d:514,kgc:Statement,d:Holmes,Sutherland's thoughts grow with Sutherland&#39;s mother&#39;s praise,P128.S12,P128,0.0,interpolation,auto
+d:515,kgc:Statement,d:Holmes,Hosmer met Sutherland many times,P128.S12,P128,0.0,interpolation,auto
+d:516,kgc:Statement,d:Holmes,Windibank was relieved,P128.S12,P128,0.195,score,auto
+d:518,kgc:Statement,d:Holmes,Windibank gets engaged with Sutherland,P128.S12,P128,0.161,score,auto
+d:519,kgc:Statement,d:Holmes,Sutherland's love does not go to others,P128.S12,P128,0.0,interpolation,auto
+d:520,kgc:Statement,d:Holmes,"Forever, Windibank can't fool Sutherland",P128.S12,P128,0.141,score,auto
+d:521,kgc:Statement,d:Holmes,Windibank needs:,P128.S12,P128,0.21,score,auto
+d:522,kgc:Statement,d:Holmes,Windibank breaks up with Sutherland dramatically,P128.S12,P128,0.139,score,auto
+d:524,kgc:Statement,d:Holmes,Forever,P128.S12,P128,0.0,interpolation,auto
+d:525,kgc:Statement,d:Holmes,For the time being,P128.S12,P128,0.0,interpolation,auto
+d:527,kgc:Statement,d:Holmes,Windibank made Sutherland swear in the Bible,P128.S12,P128,0.131,score,auto
+d:527a,kgc:Statement,d:Holmes,,P128.S12,P128,0.0,interpolation,auto
+d:528,kgc:Statement,d:Holmes,Windibank hints at,P128.S12,P128,0.21,score,auto
+d:529,kgc:Statement,d:Holmes,An incident occurs on the morning of the wedding day,P128.S12,P128,0.0,interpolation,auto
+d:530,kgc:Statement,d:Holmes,Windibank wanted to,P128.S12,P128,0.234,score,auto
+d:531,kgc:Statement,d:Holmes,Sutherland tied to Hosma,P128.S12,P128,0.0,interpolation,auto
+d:532,kgc:Statement,d:Holmes,Sutherland does not love others,P128.S12,P128,0.0,interpolation,auto
+d:534,kgc:Statement,d:Holmes,Life and death of Hosmer is unknown,P128.S12,P128,0.0,interpolation,auto
+d:535,kgc:Statement,d:Holmes,Windibank carried Sutherland to the church,P128.S12,P128,0.157,score,auto
+d:537,kgc:Statement,d:Holmes,Windibank has disappeared,P128.S12,P128,0.21,score,auto
+d:538,kgc:Statement,d:Holmes,Windibank came out of the opposite door,P128.S12,P128,0.16,score,auto
+d:539,kgc:Situation,,Windibank stood out of the chair,P128.S12,P128,0.177,score,auto
+d:540,kgc:Situation,,Windibank laughed,P128.S12,P128,0.228,score,auto
+d:541,kgc:Situation,,Windibank said,P128.S12,P128,0.0,interpolation,auto
+d:542,kgc:Statement,d:Windibank,Windibank does not know the facts,P128.S12,P128,0.194,score,auto
+d:543,kgc:Statement,d:Windibank,Windibank has not beat the law,P130.S01,P130,0.194,score,auto
+d:544,kgc:Statement,d:Windibank,Windibank can sue Holmes for beating threat and illegal detention,P130.S02,P130,0.114,score,auto
+d:547,kgc:Statement,d:Windibank,Holmes is closing the door,P131.S01,P131,0.199,score,auto
+d:548,kgc:Situation,,Holmes said the following,P131.S01,P131,0.0,interpolation,auto
+d:549,kgc:Statement,d:Holmes,Law can not handle Windibank,P131.S01,P131,0.17,score,auto
+d:550,kgc:Situation,,Holmes opened the door,P131.S01,P131,0.42,score,auto
+d:551,kgc:Situation,,Holmes said the following,P131.S01,P131,0.0,interpolation,auto
+d:552,kgc:Statement,d:Holmes,Windibank has sins,P131.S01,P131,0.0,interpolation,auto
+d:553,kgc:Statement,d:Holmes,Sutherland brothers best friend wins Windibank,P131.S02,P131,0.292,score,auto
+d:554,kgc:Situation,,Watson said the following,P131.S02,P131,0.0,interpolation,auto
+d:555,kgc:Statement,d:Watson,Watson wants to try a hunting whistle,P131.S03,P131,0.126,score,auto
+d:555a,kgc:Statement,d:Watson,,P131.S03,P131,0.0,interpolation,auto
+d:556,kgc:Situation,,Watson got close to the wolf,P131.S03,P131,0.0,interpolation,auto
+d:557,kgc:Situation,,Windibank ran away at full speed,P131.S04,P131,0.157,score,auto
+d:558,kgc:Situation,,Holmes said the following,P131.S04,P131,0.0,interpolation,auto
+d:559,kgc:Statement,d:Holmes,Windibank Overlaps Sin,P131.S04,P131,0.053,score,auto
+d:560,kgc:Statement,d:Holmes,Finally,P131.S04,P131,0.0,interpolation,auto
+d:561,kgc:Statement,d:Holmes,The behavior of Hosmer had a deep motive,P131.S04,P131,0.0,interpolation,auto
+d:562,kgc:Statement,d:Holmes,Windibank Gets Money,P131.S04,P131,0.066,score,auto
+d:563,kgc:Statement,d:Holmes,Windibank and Hosmer do not appear together,P134.S02,P134,0.396,score,auto
+d:564,kgc:Statement,d:Holmes,Colored glasses and voices and whistles reminiscent of disguise,P134.S03,P134,0.126,score,auto
+d:565,kgc:Statement,d:Holmes,The signature was a type,P134.S04,P134,0.162,score,auto
+d:566,kgc:Statement,d:Holmes,Sutherland knows Windibank handwriting,P134.S04,P134,0.169,score,auto
+d:568,kgc:Statement,d:Holmes,Sutherland notices Windibank handwriting,P134.S04,P134,0.155,score,auto
+d:569,kgc:Statement,d:Holmes,Holmes knows the company of Windibank,P134.S04,P134,0.0,interpolation,auto
+d:570,kgc:Statement,d:Holmes,Holmes removed eyebrows,P134.S04,P134,0.0,interpolation,auto
+d:571,kgc:Statement,d:Holmes,Holmes confirmed with the company,P134.S04,P134,0.2,score,auto
+d:572,kgc:Statement,d:Holmes,Holmes was aware of the features of the type,P134.S04,P134,0.0,interpolation,auto
+d:573,kgc:Statement,d:Holmes,Holmes sent a letter to Windibank,P136.S03,P136,0.144,score,auto
+d:574,kgc:Statement,d:Holmes,The reply was a typing,P136.S05,P136,0.245,score,auto
+d:575,kgc:Statement,d:Holmes,The characteristics of the type matched Hosmer,P136.S05,P136,0.175,score,auto
+d:576,kgc:Statement,d:Holmes,The company said the following,P136.S05,P136,0.0,interpolation,auto
+d:577,kgc:Statement,d:someone_of_Company,The document is Windibank,P136.S06,P136,0.095,score,auto
+d:578,kgc:Statement,d:Holmes,Sutherland does not believe in Holmes,P138.S01,P138,0.467,score,auto
+d:579,kgc:Situation,,,P138.S01,P138,0.0,interpolation,auto
+d:580,kgc:Statement,d:Holmes,Holmes tell the truth to Sutherland,P138.S01,P138,0.368,score,auto

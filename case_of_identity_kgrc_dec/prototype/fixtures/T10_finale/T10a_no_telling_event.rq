@@ -1,0 +1,8 @@
+PREFIX st: <http://example.org/dectective/story/>
+PREFIX w: <http://example.org/dectective/world/>
+PREFIX prof: <http://example.org/dectective/profile#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX dec: <http://w3id.org/conjectures/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK { ?act a prof:CommunicativeAct ; crm:P14_carried_out_by st:holmes ; prof:addressee st:mary . }

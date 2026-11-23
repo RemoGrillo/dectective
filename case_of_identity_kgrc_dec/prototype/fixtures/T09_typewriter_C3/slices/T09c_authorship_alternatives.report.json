@@ -1,0 +1,52 @@
+{
+  "dataset": "C3",
+  "query": "prototype/fixtures/T09_typewriter_C3/T09c_authorship_alternatives.rq",
+  "k": 2,
+  "seeds": [
+    "http://example.org/dectective/story/d1",
+    "http://example.org/dectective/story/d2",
+    "http://example.org/dectective/story/m1",
+    "http://example.org/dectective/story/m2",
+    "http://example.org/dectective/story/pB",
+    "http://example.org/dectective/story/pC",
+    "http://example.org/dectective/world/w23",
+    "http://example.org/dectective/world/w24"
+  ],
+  "worlds_selected": [
+    "http://example.org/dectective/world/w22",
+    "http://example.org/dectective/world/w23",
+    "http://example.org/dectective/world/w24"
+  ],
+  "modules_candidate": 23,
+  "fact_triples_selected": 55,
+  "governing_triples": 3,
+  "dec_config_triples": 4,
+  "schema_triples": 29,
+  "crm_terms": 0,
+  "excluded_axioms": [],
+  "schema_mode": "minimal",
+  "sizes_after": {
+    "default": 62,
+    "http://example.org/dectective/world/shared": 29,
+    "http://example.org/dectective/world/w22": 1,
+    "http://example.org/dectective/world/w23": 2,
+    "http://example.org/dectective/world/w24": 3
+  },
+  "sizes_full_by_graph": {
+    "default": 79,
+    "w:w01": 7,
+    "w:w03": 1,
+    "w:w04": 2,
+    "w:w20": 1,
+    "w:w21": 1,
+    "w:w05": 1,
+    "w:w06": 1,
+    "w:w22": 1,
+    "w:w23": 2,
+    "w:w24": 3,
+    "w:shared": 293
+  },
+  "total_after": 97,
+  "total_full": 392,
+  "inconsistency_pairs_upper_bound": 10
+}

@@ -1,0 +1,9 @@
+@prefix : <http://example.org/x#> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+# Reified statement governed by a doxastic predicate (KGRC-like pattern after transformation).
+:S { :A rdfs:subClassOf :B . } :S a dec:sharedWorld .
+:st1 a rdf:Statement ; rdf:subject :x ; rdf:predicate rdf:type ; rdf:object :A .
+:eve :believes :st1 . :believes a dec:doxasticPredicate .

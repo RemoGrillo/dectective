@@ -1,0 +1,60 @@
+{
+  "T05a_closedFor_only": {
+    "dropped": "checkInconsistencies",
+    "rows": [
+      "content=w:v_hosmer_cashier"
+    ],
+    "mat_ms": 1143.894561,
+    "diagnostics": [
+      "dec:reality dec:disagreesWith w:mary_D1",
+      "dec:reality dec:disagreesWith w:v_hosmer_cashier",
+      "dec:reality dec:disagreesWith w:windibank_beliefs",
+      "w:mary_D1 dec:disagreesWith dec:reality",
+      "w:mary_D1 dec:disagreesWith w:v_hosmer_cashier",
+      "w:mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      "w:v_hosmer_cashier dec:disagreesWith dec:reality",
+      "w:v_hosmer_cashier dec:disagreesWith w:mary_D1",
+      "w:v_hosmer_cashier dec:disagreesWith w:windibank_beliefs",
+      "w:v_hosmer_cashier http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      "w:windibank_beliefs dec:disagreesWith dec:reality",
+      "w:windibank_beliefs dec:disagreesWith w:v_hosmer_cashier",
+      "w:windibank_beliefs http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld"
+    ]
+  },
+  "T05a_owlcheck_only": {
+    "dropped": "closedFor",
+    "rows": [
+      "content=w:v_windibank_reassure"
+    ],
+    "mat_ms": 15373.773292,
+    "diagnostics": [
+      "dec:reality dec:disagreesWith w:mary_D1",
+      "dec:reality dec:disagreesWith w:v_mary_france",
+      "dec:reality dec:disagreesWith w:v_windibank_reassure",
+      "w:holmes_reconstruction dec:disagreesWith w:mary_D1",
+      "w:holmes_reconstruction dec:disagreesWith w:v_mary_france",
+      "w:holmes_reconstruction dec:disagreesWith w:v_windibank_reassure",
+      "w:mary_D1 dec:disagreesWith dec:reality",
+      "w:mary_D1 dec:disagreesWith w:holmes_reconstruction",
+      "w:mary_D1 dec:disagreesWith w:windibank_beliefs",
+      "w:mary_D1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      "w:v_mary_france dec:disagreesWith dec:reality",
+      "w:v_mary_france dec:disagreesWith w:holmes_reconstruction",
+      "w:v_mary_france dec:disagreesWith w:windibank_beliefs",
+      "w:v_mary_france http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      "w:v_windibank_reassure dec:disagreesWith dec:reality",
+      "w:v_windibank_reassure dec:disagreesWith w:holmes_reconstruction",
+      "w:v_windibank_reassure dec:disagreesWith w:windibank_beliefs",
+      "w:v_windibank_reassure http://www.w3.org/1999/02/22-rdf-syntax-ns#type dec:delusionalWorld",
+      "w:windibank_beliefs dec:disagreesWith w:mary_D1",
+      "w:windibank_beliefs dec:disagreesWith w:v_mary_france",
+      "w:windibank_beliefs dec:disagreesWith w:v_windibank_reassure"
+    ]
+  },
+  "T09c_no_closedFor": {
+    "dropped": "closedFor",
+    "rows": [],
+    "mat_ms": 3652.418858,
+    "diagnostics": []
+  }
+}

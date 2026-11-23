@@ -1,0 +1,565 @@
+{
+ "note": "Speaker of the direct speech in each paragraph (single annotator, read against data/text/segments.csv). 'narrator' = Watson's narration without direct speech; 'document' = the printed advertisement (written by Mary, read aloud by Watson). Whether a paragraph also contains narration is computed from the text by build_edition_data.py.",
+ "agents": {
+  "holmes": "Sherlock Holmes",
+  "watson": "Dr. Watson",
+  "mary": "Mary Sutherland",
+  "windibank": "James Windibank",
+  "narrator": "Narration (Watson)",
+  "document": "Printed advertisement"
+ },
+ "paragraphs": [
+  {
+   "para": "P001",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P002",
+   "speaker": "watson"
+  },
+  {
+   "para": "P003",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P004",
+   "speaker": "watson"
+  },
+  {
+   "para": "P005",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P006",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P007",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P008",
+   "speaker": "watson"
+  },
+  {
+   "para": "P009",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P010",
+   "speaker": "watson"
+  },
+  {
+   "para": "P011",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P012",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P013",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P014",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P015",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P016",
+   "speaker": "mary"
+  },
+  {
+   "para": "P017",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P018",
+   "speaker": "mary"
+  },
+  {
+   "para": "P019",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P020",
+   "speaker": "mary"
+  },
+  {
+   "para": "P021",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P022",
+   "speaker": "mary"
+  },
+  {
+   "para": "P023",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P024",
+   "speaker": "mary"
+  },
+  {
+   "para": "P025",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P026",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P027",
+   "speaker": "mary"
+  },
+  {
+   "para": "P028",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P029",
+   "speaker": "mary"
+  },
+  {
+   "para": "P030",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P031",
+   "speaker": "mary"
+  },
+  {
+   "para": "P032",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P033",
+   "speaker": "mary"
+  },
+  {
+   "para": "P034",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P035",
+   "speaker": "mary"
+  },
+  {
+   "para": "P036",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P037",
+   "speaker": "mary"
+  },
+  {
+   "para": "P038",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P039",
+   "speaker": "mary"
+  },
+  {
+   "para": "P040",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P041",
+   "speaker": "mary"
+  },
+  {
+   "para": "P042",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P043",
+   "speaker": "mary"
+  },
+  {
+   "para": "P044",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P045",
+   "speaker": "mary"
+  },
+  {
+   "para": "P046",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P047",
+   "speaker": "mary"
+  },
+  {
+   "para": "P048",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P049",
+   "speaker": "mary"
+  },
+  {
+   "para": "P050",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P051",
+   "speaker": "mary"
+  },
+  {
+   "para": "P052",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P053",
+   "speaker": "mary"
+  },
+  {
+   "para": "P054",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P055",
+   "speaker": "mary"
+  },
+  {
+   "para": "P056",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P057",
+   "speaker": "mary"
+  },
+  {
+   "para": "P058",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P059",
+   "speaker": "mary"
+  },
+  {
+   "para": "P060",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P061",
+   "speaker": "mary"
+  },
+  {
+   "para": "P062",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P063",
+   "speaker": "mary"
+  },
+  {
+   "para": "P064",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P065",
+   "speaker": "mary"
+  },
+  {
+   "para": "P066",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P067",
+   "speaker": "mary"
+  },
+  {
+   "para": "P068",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P069",
+   "speaker": "mary"
+  },
+  {
+   "para": "P070",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P071",
+   "speaker": "mary"
+  },
+  {
+   "para": "P072",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P073",
+   "speaker": "mary"
+  },
+  {
+   "para": "P074",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P075",
+   "speaker": "mary"
+  },
+  {
+   "para": "P076",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P077",
+   "speaker": "mary"
+  },
+  {
+   "para": "P078",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P079",
+   "speaker": "mary"
+  },
+  {
+   "para": "P080",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P081",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P082",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P083",
+   "speaker": "watson"
+  },
+  {
+   "para": "P084",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P085",
+   "speaker": "watson"
+  },
+  {
+   "para": "P086",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P087",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P088",
+   "speaker": "watson"
+  },
+  {
+   "para": "P089",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P090",
+   "speaker": "watson"
+  },
+  {
+   "para": "P091",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P092",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P093",
+   "speaker": "document"
+  },
+  {
+   "para": "P094",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P095",
+   "speaker": "watson"
+  },
+  {
+   "para": "P096",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P097",
+   "speaker": "watson"
+  },
+  {
+   "para": "P098",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P099",
+   "speaker": "watson"
+  },
+  {
+   "para": "P100",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P101",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P102",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P103",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P104",
+   "speaker": "watson"
+  },
+  {
+   "para": "P105",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P106",
+   "speaker": "watson"
+  },
+  {
+   "para": "P107",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P108",
+   "speaker": "watson"
+  },
+  {
+   "para": "P109",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P110",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P111",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P112",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P113",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P114",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P115",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P116",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P117",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P118",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P119",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P120",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P121",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P122",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P123",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P124",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P125",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P126",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P127",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P128",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P129",
+   "speaker": "narrator"
+  },
+  {
+   "para": "P130",
+   "speaker": "windibank"
+  },
+  {
+   "para": "P131",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P132",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P133",
+   "speaker": "watson"
+  },
+  {
+   "para": "P134",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P135",
+   "speaker": "watson"
+  },
+  {
+   "para": "P136",
+   "speaker": "holmes"
+  },
+  {
+   "para": "P137",
+   "speaker": "watson"
+  },
+  {
+   "para": "P138",
+   "speaker": "holmes"
+  }
+ ]
+}

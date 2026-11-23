@@ -1,0 +1,74 @@
+{ 
+  "data" : "./prototype/sim/C4.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 202.750138 ,
+  "input_quads" : 397 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 1325.463708 ,
+        "cpu_ms" : 1227.993745 ,
+        "gc_count" : 10 ,
+        "gc_ms" : 79 ,
+        "heap_delta_mb" : 39.367027282714844 ,
+        "phases" : {
+            "build_ms" : 26.607858 ,
+            "enumerate_ms" : 803.290923 ,
+            "validate_ms" : 491.013383
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 41.106344 ,
+        "query_second_ms" : 1.739775
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 391 ,
+              "base_after" : 391 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 2778 ,
+              "inferred_trivial" : 1396 ,
+              "inferred_nontrivial" : 989 ,
+              "inferred_taxonomic" : 260 ,
+              "inferred_substantive" : 729 ,
+              "dec_diagnostic" : 2 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 391 ,
+      "materialised_total" : 2778 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 2385 ,
+      "inferred_trivial_total" : 1396 ,
+      "inferred_nontrivial_total" : 989 ,
+      "inferred_taxonomic_total" : 260 ,
+      "inferred_substantive_total" : 729 ,
+      "dec_diagnostic_total" : 2 ,
+      "distinct_triples_all_worlds" : 2778 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/dectective/world/w24 s=http://www.cidoc-crm.org/cidoc-crm/E55_Type p=http://www.w3.org/2000/01/rdf-schema#subClassOf o=http://www.cidoc-crm.org/cidoc-crm/E55_Type" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 41.106344 ,
+      "query_second_ms" : 1.739775 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "flat | http://www.cidoc-crm.org/cidoc-crm/E55_Type http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.cidoc-crm.org/cidoc-crm/E55_Type" ]
+    } ,
+  "materialised_sha256" : "887b009da2db2694831502fd7c1e89d0aee89eb833d563b7e90a29cc322bc56b"
+}

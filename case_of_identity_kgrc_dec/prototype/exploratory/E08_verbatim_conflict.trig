@@ -1,0 +1,13 @@
+@prefix : <http://example.org/x#> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+# Does a verbatim world that conflicts with reality get flagged (inconsistency check reasons on the union)?
+:S { :Man owl:disjointWith :Woman . } :S a dec:sharedWorld .
+:p a :Man .
+:V { :p a :Woman . }
+:ann :said :V . :said a dec:verbatimPredicate .
+:B { :p a :Woman . }
+:ann :believes :B . :believes a dec:doxasticPredicate .
+[] dec:checkInconsistencies true .

@@ -1,0 +1,50 @@
+{
+  "dataset": "gold",
+  "question": "What was said, by whom, to whom (communicative event vs truth of content)?",
+  "seed_iris": [
+    "http://example.org/dectective/story/hosmer",
+    "http://example.org/dectective/story/mary",
+    "http://example.org/dectective/story/windibank",
+    "http://example.org/dectective/world/v_hosmer_cashier"
+  ],
+  "require_modules": [
+    "F06_comm_acts",
+    "F07_comm_acts_visit",
+    "F08_holmes_acts",
+    "W08_v_hosmer_cashier",
+    "W02_holmes_reconstruction"
+  ],
+  "queries": [
+    {
+      "id": "T04a_acts",
+      "file": "T04a_acts.rq",
+      "expected": null,
+      "classification": "lookup",
+      "justification": [
+        "P041.S03",
+        "P031.S10",
+        "P067.S01",
+        "P115.S02",
+        "P117.S01",
+        "P138.S01"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "reality (gold)",
+      "note": "Lookup; with identity in reality the speaker of Hosmer's act is also Windibank (de re). Expected set checked per configuration."
+    },
+    {
+      "id": "T04b_said_vs_true",
+      "file": "T04b_said_vs_true.rq",
+      "expected": [
+        "said=true^^http://www.w3.org/2001/XMLSchema#boolean true=false^^http://www.w3.org/2001/XMLSchema#boolean"
+      ],
+      "classification": "lookup",
+      "justification": [
+        "P041.S03"
+      ],
+      "axioms_or_assumptions": [],
+      "world_time": "w:v_hosmer_cashier vs reality",
+      "note": "Saying p does not make p true."
+    }
+  ]
+}

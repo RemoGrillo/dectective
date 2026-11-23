@@ -1,0 +1,683 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dec: <http://w3id.org/conjectures/> .
+@prefix inf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof1: <http://example.org/dectective/profile#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix st: <http://example.org/dectective/story/> .
+@prefix w: <http://example.org/dectective/world/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+w:watson_hyp {
+    st:letter_H1 prof1:purpose st:purpose_deny_signature .
+}
+
+w:holmes_motive {
+    st:windibank prof1:motive st:motive_keep_income .
+}
+
+w:holmes_prediction {
+    st:hyp_reaction prof1:rejects st:hyp_telling .
+
+    st:hyp_telling a prof1:CommunicativeAct ;
+        prof1:addressee st:mary ;
+        crm:P14_carried_out_by st:holmes .
+}
+
+w:shared {
+    crm:E18_Physical_Thing a rdfs:Class ;
+        rdfs:subClassOf crm:E72_Legal_Object .
+
+    crm:E19_Physical_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E18_Physical_Thing .
+
+    crm:E1_CRM_Entity a rdfs:Class .
+
+    crm:E20_Biological_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E19_Physical_Object .
+
+    crm:E21_Person a rdfs:Class ;
+        rdfs:subClassOf crm:E20_Biological_Object,
+            crm:E39_Actor .
+
+    crm:E22_Human-Made_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E19_Physical_Object,
+            crm:E24_Physical_Human-Made_Thing .
+
+    crm:E24_Physical_Human-Made_Thing a rdfs:Class ;
+        rdfs:subClassOf crm:E18_Physical_Thing,
+            crm:E71_Human-Made_Thing .
+
+    crm:E28_Conceptual_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E71_Human-Made_Thing .
+
+    crm:E2_Temporal_Entity a rdfs:Class ;
+        rdfs:subClassOf crm:E1_CRM_Entity .
+
+    crm:E31_Document a rdfs:Class ;
+        rdfs:subClassOf crm:E73_Information_Object .
+
+    crm:E39_Actor a rdfs:Class ;
+        rdfs:subClassOf crm:E77_Persistent_Item .
+
+    crm:E41_Appellation a rdfs:Class ;
+        rdfs:subClassOf crm:E90_Symbolic_Object .
+
+    crm:E4_Period a rdfs:Class ;
+        rdfs:subClassOf crm:E2_Temporal_Entity,
+            crm:E92_Spacetime_Volume .
+
+    crm:E52_Time-Span a rdfs:Class ;
+        rdfs:subClassOf crm:E1_CRM_Entity .
+
+    crm:E55_Type a rdfs:Class ;
+        rdfs:subClassOf crm:E28_Conceptual_Object .
+
+    crm:E5_Event a rdfs:Class ;
+        rdfs:subClassOf crm:E4_Period .
+
+    crm:E70_Thing a rdfs:Class ;
+        rdfs:subClassOf crm:E77_Persistent_Item .
+
+    crm:E71_Human-Made_Thing a rdfs:Class ;
+        rdfs:subClassOf crm:E70_Thing .
+
+    crm:E72_Legal_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E70_Thing .
+
+    crm:E73_Information_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E89_Propositional_Object,
+            crm:E90_Symbolic_Object .
+
+    crm:E74_Group a rdfs:Class ;
+        rdfs:subClassOf crm:E39_Actor .
+
+    crm:E77_Persistent_Item a rdfs:Class ;
+        rdfs:subClassOf crm:E1_CRM_Entity .
+
+    crm:E7_Activity a rdfs:Class ;
+        rdfs:subClassOf crm:E5_Event .
+
+    crm:E89_Propositional_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E28_Conceptual_Object .
+
+    crm:E90_Symbolic_Object a rdfs:Class ;
+        rdfs:subClassOf crm:E28_Conceptual_Object,
+            crm:E72_Legal_Object .
+
+    crm:E92_Spacetime_Volume a rdfs:Class ;
+        rdfs:subClassOf crm:E1_CRM_Entity .
+
+    inf:I1_Argumentation a rdfs:Class ;
+        rdfs:subClassOf crm:E7_Activity .
+
+    inf:I2_Belief a rdfs:Class ;
+        rdfs:subClassOf crm:E2_Temporal_Entity .
+
+    inf:I3_Inference_Logic a rdfs:Class ;
+        rdfs:subClassOf crm:E89_Propositional_Object .
+
+    inf:I4_Proposition_Set a rdfs:Class ;
+        rdfs:subClassOf crm:E89_Propositional_Object .
+
+    inf:I5_Inference_Making a rdfs:Class ;
+        rdfs:subClassOf inf:I1_Argumentation .
+
+    inf:I7_Belief_Adoption a rdfs:Class ;
+        rdfs:subClassOf inf:I1_Argumentation .
+
+    prof1:ActualJourney a owl:Class ;
+        rdfs:subClassOf prof1:Journey ;
+        owl:disjointWith prof1:PretendedJourney .
+
+    prof1:ExpectedToReturn a owl:Class ;
+        rdfs:comment "Person whom the believer expects to come back (used only inside belief worlds)." ;
+        rdfs:subClassOf crm:E21_Person .
+
+    prof1:VoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf prof1:Disappearance ;
+        owl:disjointWith prof1:InvoluntaryDisappearance .
+
+    prof1:WeakSighted a owl:Class ;
+        rdfs:subClassOf crm:E21_Person ;
+        owl:disjointWith prof1:KeenSighted .
+
+    prof1:addressee a owl:ObjectProperty ;
+        rdfs:domain prof1:CommunicativeAct ;
+        rdfs:range crm:E39_Actor .
+
+    prof1:assisted a owl:ObjectProperty ;
+        rdfs:subPropertyOf crm:P11i_participated_in .
+
+    prof1:attended a owl:ObjectProperty ;
+        rdfs:domain crm:E21_Person ;
+        rdfs:range crm:E5_Event .
+
+    prof1:believes a owl:ObjectProperty ;
+        rdfs:range inf:I4_Proposition_Set .
+
+    prof1:conjectures a owl:ObjectProperty ;
+        rdfs:range inf:I4_Proposition_Set .
+
+    prof1:disappearedPerson a owl:ObjectProperty ;
+        rdfs:domain prof1:Disappearance ;
+        rdfs:subPropertyOf crm:P11_had_participant .
+
+    prof1:employedBy a owl:ObjectProperty ;
+        rdfs:domain crm:E21_Person ;
+        rdfs:range crm:E74_Group .
+
+    prof1:engagedTo a owl:ObjectProperty,
+            owl:SymmetricProperty ;
+        rdfs:domain crm:E21_Person ;
+        rdfs:range crm:E21_Person .
+
+    prof1:establishes a owl:ObjectProperty ;
+        rdfs:comment "The actor's account accepted by the narrative as part of the reference reconstruction." ;
+        rdfs:range inf:I4_Proposition_Set .
+
+    prof1:hasContent a owl:ObjectProperty ;
+        rdfs:comment "The proposition set communicated (encoded as a named graph). Communicating it does not imply belief." ;
+        rdfs:domain prof1:CommunicativeAct ;
+        rdfs:range inf:I4_Proposition_Set .
+
+    prof1:hasDefectProfile a owl:ObjectProperty ;
+        rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
+        rdfs:domain prof1:Typewriter .
+
+    prof1:hasOccupation a owl:ObjectProperty ;
+        rdfs:domain crm:E21_Person ;
+        rdfs:range prof1:Occupation .
+
+    prof1:heldBy a owl:ObjectProperty ;
+        rdfs:comment "Local shortcut: holder of a belief (CRMinf links it only indirectly via I1/I7 P14 and J2)." ;
+        rdfs:domain inf:I2_Belief ;
+        rdfs:range crm:E39_Actor .
+
+    prof1:motive a owl:ObjectProperty .
+
+    prof1:purportsToBeFrom a owl:ObjectProperty ;
+        rdfs:comment "Apparent sender as shown on the document; not authorship." ;
+        rdfs:domain prof1:Letter .
+
+    prof1:purpose a owl:ObjectProperty .
+
+    prof1:rejects a owl:ObjectProperty .
+
+    prof1:reportedBy a owl:ObjectProperty ;
+        rdfs:comment "Who reports the act in the text (e.g. Mary reporting Hosmer's words)." ;
+        rdfs:domain prof1:CommunicativeAct ;
+        rdfs:range crm:E39_Actor .
+
+    prof1:showsDefectProfile a owl:ObjectProperty ;
+        rdfs:domain prof1:TypewrittenLetter .
+
+    prof1:spouseOf a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    prof1:stepfatherOf a owl:ObjectProperty ;
+        rdfs:domain crm:E21_Person ;
+        rdfs:range crm:E21_Person .
+
+    prof1:traveller a owl:ObjectProperty ;
+        rdfs:domain prof1:Journey ;
+        rdfs:subPropertyOf crm:P14_carried_out_by .
+
+    prof1:typedOn a owl:ObjectProperty ;
+        rdfs:domain prof1:TypewrittenLetter ;
+        rdfs:range prof1:Typewriter .
+
+    prof1:usedAppellation a owl:ObjectProperty ;
+        rdfs:domain prof1:Impersonation ;
+        rdfs:range crm:E41_Appellation .
+
+    prof1:usedBy a owl:ObjectProperty ;
+        rdfs:domain prof1:Typewriter .
+
+    prof1:uttered a owl:ObjectProperty ;
+        rdfs:comment "Verbatim content of a communicative act; no commitment of the speaker implied." ;
+        rdfs:range inf:I4_Proposition_Set .
+
+    prof1:wore a owl:ObjectProperty ;
+        rdfs:domain crm:E21_Person .
+
+    prof1:writtenBy a owl:ObjectProperty ;
+        rdfs:domain prof1:Letter ;
+        rdfs:range crm:E21_Person .
+
+    crm:P1_is_identified_by a rdf:Property ;
+        rdfs:domain crm:E1_CRM_Entity ;
+        rdfs:range crm:E41_Appellation ;
+        owl:inverseOf crm:P1i_identifies .
+
+    crm:P4_has_time-span a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E52_Time-Span ;
+        owl:inverseOf crm:P4i_is_time-span_of .
+
+    inf:J1_used_as_premise a rdf:Property ;
+        rdfs:domain inf:I5_Inference_Making ;
+        rdfs:range inf:I2_Belief ;
+        rdfs:subPropertyOf crm:P17_was_motivated_by ;
+        owl:inverseOf inf:J1i_was_premise_for .
+
+    inf:J2_concluded_that a rdf:Property ;
+        rdfs:domain inf:I1_Argumentation ;
+        rdfs:range inf:I2_Belief ;
+        rdfs:subPropertyOf crm:P175_starts_before_or_with_the_start_of,
+            crm:P175i_starts_after_or_with_the_start_of,
+            crm:P185_ends_before_the_end_of ;
+        owl:inverseOf inf:J2i_was_concluded_by .
+
+    inf:J3_applied a rdf:Property ;
+        rdfs:domain inf:I5_Inference_Making ;
+        rdfs:range inf:I3_Inference_Logic ;
+        rdfs:subPropertyOf crm:P16_used_specific_object ;
+        owl:inverseOf inf:J3i_was_applied_by .
+
+    inf:J4_that a rdf:Property ;
+        rdfs:domain inf:I2_Belief ;
+        rdfs:range inf:I4_Proposition_Set ;
+        owl:inverseOf inf:J4i_is_subject_of .
+
+    inf:J5_holds_to_be a rdf:Property ;
+        rdfs:domain inf:I2_Belief .
+
+    inf:J7_is_based_on_evidence_from a rdf:Property ;
+        rdfs:domain inf:I7_Belief_Adoption ;
+        rdfs:range crm:E73_Information_Object ;
+        rdfs:subPropertyOf crm:P16_used_specific_object ;
+        owl:inverseOf inf:J7i_is_evidence_for .
+
+    prof1:Impersonation a owl:Class ;
+        rdfs:comment "Acting under a persona identified by an appellation that is not one's own." ;
+        rdfs:subClassOf crm:E7_Activity .
+
+    prof1:InvoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf prof1:Disappearance .
+
+    prof1:KeenSighted a owl:Class ;
+        rdfs:subClassOf crm:E21_Person .
+
+    prof1:Occupation a owl:Class ;
+        rdfs:subClassOf crm:E55_Type .
+
+    prof1:PretendedJourney a owl:Class ;
+        rdfs:comment "A journey announced but not performed." ;
+        rdfs:subClassOf prof1:Journey .
+
+    crm:P14_carried_out_by a rdf:Property ;
+        rdfs:domain crm:E7_Activity ;
+        rdfs:range crm:E39_Actor ;
+        rdfs:subPropertyOf crm:P11_had_participant ;
+        owl:inverseOf crm:P14i_performed .
+
+    crm:P17_was_motivated_by a rdf:Property ;
+        rdfs:domain crm:E7_Activity ;
+        rdfs:range crm:E1_CRM_Entity ;
+        rdfs:subPropertyOf crm:P15_was_influenced_by ;
+        owl:inverseOf crm:P17i_motivated .
+
+    crm:P184_ends_before_or_with_the_end_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        rdfs:subPropertyOf crm:P174_starts_before_the_end_of ;
+        owl:inverseOf crm:P184i_ends_with_or_after_the_end_of .
+
+    crm:P185_ends_before_the_end_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        rdfs:subPropertyOf crm:P184_ends_before_or_with_the_end_of ;
+        owl:inverseOf crm:P185i_ends_after_the_end_of .
+
+    prof1:TypewrittenLetter a owl:Class ;
+        rdfs:subClassOf prof1:Letter .
+
+    crm:P11i_participated_in a rdf:Property ;
+        rdfs:domain crm:E39_Actor ;
+        rdfs:range crm:E5_Event ;
+        rdfs:subPropertyOf crm:P12i_was_present_at ;
+        owl:inverseOf crm:P11_had_participant .
+
+    crm:P12i_was_present_at a rdf:Property ;
+        rdfs:domain crm:E77_Persistent_Item ;
+        rdfs:range crm:E5_Event ;
+        owl:inverseOf crm:P12_occurred_in_the_presence_of .
+
+    crm:P15_was_influenced_by a rdf:Property ;
+        rdfs:domain crm:E7_Activity ;
+        rdfs:range crm:E1_CRM_Entity ;
+        owl:inverseOf crm:P15i_influenced .
+
+    crm:P16_used_specific_object a rdf:Property ;
+        rdfs:domain crm:E7_Activity ;
+        rdfs:range crm:E70_Thing ;
+        rdfs:subPropertyOf crm:P12_occurred_in_the_presence_of,
+            crm:P15_was_influenced_by ;
+        owl:inverseOf crm:P16i_was_used_for .
+
+    crm:P173_starts_before_or_with_the_end_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        owl:inverseOf crm:P173i_ends_after_or_with_the_start_of .
+
+    crm:P173i_ends_after_or_with_the_start_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        owl:inverseOf crm:P173_starts_before_or_with_the_end_of .
+
+    crm:P174i_ends_after_the_start_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        rdfs:subPropertyOf crm:P173i_ends_after_or_with_the_start_of ;
+        owl:inverseOf crm:P174_starts_before_the_end_of .
+
+    crm:P175_starts_before_or_with_the_start_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        rdfs:subPropertyOf crm:P174_starts_before_the_end_of ;
+        owl:inverseOf crm:P175i_starts_after_or_with_the_start_of .
+
+    crm:P175i_starts_after_or_with_the_start_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        rdfs:subPropertyOf crm:P174i_ends_after_the_start_of ;
+        owl:inverseOf crm:P175_starts_before_or_with_the_start_of .
+
+    prof1:Disappearance a owl:Class ;
+        rdfs:subClassOf crm:E5_Event .
+
+    prof1:Journey a owl:Class ;
+        rdfs:subClassOf crm:E7_Activity .
+
+    prof1:Letter a owl:Class ;
+        rdfs:subClassOf crm:E22_Human-Made_Object .
+
+    prof1:Typewriter a owl:Class ;
+        rdfs:subClassOf crm:E22_Human-Made_Object .
+
+    crm:P11_had_participant a rdf:Property ;
+        rdfs:domain crm:E5_Event ;
+        rdfs:range crm:E39_Actor ;
+        rdfs:subPropertyOf crm:P12_occurred_in_the_presence_of ;
+        owl:inverseOf crm:P11i_participated_in .
+
+    crm:P12_occurred_in_the_presence_of a rdf:Property ;
+        rdfs:domain crm:E5_Event ;
+        rdfs:range crm:E77_Persistent_Item ;
+        owl:inverseOf crm:P12i_was_present_at .
+
+    crm:P174_starts_before_the_end_of a rdf:Property ;
+        rdfs:domain crm:E2_Temporal_Entity ;
+        rdfs:range crm:E2_Temporal_Entity ;
+        rdfs:subPropertyOf crm:P173_starts_before_or_with_the_end_of ;
+        owl:inverseOf crm:P174i_ends_after_the_start_of .
+
+    prof1:CommunicativeAct a owl:Class ;
+        rdfs:comment "An act of telling or writing addressed to someone. Unlike crminf:I1 Argumentation (and E13, a subclass of I1 in CRMinf 1.2.1) it does NOT presuppose sincerity: the speaker's belief in the content is represented separately, if at all." ;
+        rdfs:subClassOf crm:E7_Activity .
+}
+
+w:v_windibank_reassure {
+    st:disappearance a prof1:InvoluntaryDisappearance .
+
+    st:hosmer a prof1:ExpectedToReturn .
+}
+
+w:holmes_same_machine {
+    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
+}
+
+w:v_hosmer_cashier {
+    st:hosmer prof1:hasOccupation st:occ_cashier_leadenhall .
+}
+
+w:v_windibank_machine {
+    st:letter_W prof1:typedOn st:office_machine .
+
+    st:office_machine prof1:usedBy st:westhouse_staff .
+}
+
+w:h_author_other {
+    st:letter_H1 prof1:writtenBy st:other_clerk .
+
+    st:other_clerk a crm:E21_Person ;
+        prof1:employedBy st:westhouse_marbank .
+}
+
+w:holmes_reconstruction {
+    st:impersonation a prof1:Impersonation ;
+        prof1:usedAppellation st:app_hosmer_angel ;
+        crm:P14_carried_out_by st:windibank .
+
+    st:journey_france_1 a prof1:PretendedJourney .
+
+    st:journey_france_2 a prof1:PretendedJourney .
+
+    st:letter_H2 prof1:writtenBy st:windibank .
+
+    st:letter_H3 prof1:writtenBy st:windibank .
+
+    st:letter_H4 prof1:writtenBy st:windibank .
+
+    st:disappearance a prof1:VoluntaryDisappearance .
+
+    st:hosmer owl:sameAs st:windibank .
+
+    st:letter_H1 prof1:writtenBy st:windibank .
+}
+
+w:v_mary_france {
+    st:journey_france_1 a prof1:ActualJourney .
+}
+
+w:v_windibank_delighted {
+    st:windibank prof1:motive st:wish_hosmer_found .
+}
+
+w:mary_D1 {
+    st:journey_france_2 a prof1:ActualJourney ;
+        prof1:traveller st:windibank .
+
+    st:mary prof1:engagedTo st:hosmer .
+
+    st:disappearance a prof1:InvoluntaryDisappearance ;
+        prof1:disappearedPerson st:hosmer .
+
+    st:journey_france_1 a prof1:ActualJourney ;
+        prof1:traveller st:windibank .
+
+    st:hosmer a prof1:ExpectedToReturn,
+            prof1:WeakSighted ;
+        prof1:hasOccupation st:occ_cashier_leadenhall .
+}
+
+{
+    st:adoption_mary a inf:I7_Belief_Adoption ;
+        crm:P14_carried_out_by st:mary ;
+        inf:J2_concluded_that st:belief_mary_D1 ;
+        inf:J7_is_based_on_evidence_from st:letter_H1 .
+
+    st:analyst prof1:conjectures w:h_author_other .
+
+    st:ca_holmes_explanation a prof1:CommunicativeAct ;
+        prof1:addressee st:watson ;
+        crm:P14_carried_out_by st:holmes .
+
+    st:ca_holmes_prediction a prof1:CommunicativeAct ;
+        prof1:addressee st:watson ;
+        prof1:hasContent w:holmes_prediction ;
+        crm:P14_carried_out_by st:holmes .
+
+    st:ca_holmes_reconstruction a prof1:CommunicativeAct ;
+        prof1:addressee st:windibank ;
+        crm:P14_carried_out_by st:holmes .
+
+    st:ca_hosmer_cashier a prof1:CommunicativeAct ;
+        prof1:addressee st:mary ;
+        prof1:hasContent w:v_hosmer_cashier ;
+        prof1:reportedBy st:mary ;
+        crm:P14_carried_out_by st:hosmer .
+
+    st:ca_mary_france a prof1:CommunicativeAct ;
+        prof1:addressee st:holmes ;
+        prof1:hasContent w:v_mary_france ;
+        crm:P14_carried_out_by st:mary .
+
+    st:ca_windibank_delighted a prof1:CommunicativeAct ;
+        prof1:addressee st:holmes ;
+        prof1:hasContent w:v_windibank_delighted ;
+        crm:P14_carried_out_by st:windibank .
+
+    st:ca_windibank_machine a prof1:CommunicativeAct ;
+        prof1:addressee st:holmes ;
+        prof1:hasContent w:v_windibank_machine ;
+        crm:P14_carried_out_by st:windibank .
+
+    st:ca_windibank_reassure a prof1:CommunicativeAct ;
+        prof1:addressee st:mary ;
+        prof1:hasContent w:v_windibank_reassure ;
+        prof1:reportedBy st:mary ;
+        crm:P14_carried_out_by st:windibank .
+
+    st:inference_holmes a inf:I5_Inference_Making ;
+        crm:P14_carried_out_by st:holmes ;
+        inf:J2_concluded_that st:belief_holmes_identity ;
+        inf:J3_applied st:logic_convergent_abduction .
+
+    st:reaction_start a crm:E5_Event ;
+        crm:P11_had_participant st:windibank .
+
+    w:shared a dec:sharedWorld .
+
+    rdf:subject dec:closedFor prof1:hasOccupation,
+            prof1:writtenBy .
+
+    prof1:believes a dec:doxasticPredicate .
+
+    prof1:conjectures a dec:conjecturalPredicate .
+
+    prof1:establishes a dec:epistemicPredicate .
+
+    prof1:uttered a dec:verbatimPredicate .
+
+    st:letter_H2 a prof1:TypewrittenLetter ;
+        prof1:purportsToBeFrom st:hosmer ;
+        prof1:typedOn st:machine_H .
+
+    st:letter_H3 a prof1:TypewrittenLetter ;
+        prof1:purportsToBeFrom st:hosmer ;
+        prof1:typedOn st:machine_H .
+
+    st:letter_H4 a prof1:TypewrittenLetter ;
+        prof1:purportsToBeFrom st:hosmer ;
+        prof1:typedOn st:machine_H .
+
+    st:letter_W a prof1:TypewrittenLetter ;
+        prof1:showsDefectProfile st:profile_eR14 ;
+        prof1:typedOn st:office_machine ;
+        prof1:writtenBy st:windibank .
+
+    st:app_mary_sutherland a crm:E41_Appellation ;
+        rdfs:label "Mary Sutherland" .
+
+    st:app_windibank a crm:E41_Appellation ;
+        rdfs:label "Windibank" .
+
+    st:belief_holmes_identity a inf:I2_Belief ;
+        prof1:heldBy st:holmes ;
+        inf:J4_that w:holmes_reconstruction ;
+        inf:J5_holds_to_be "TRUE" .
+
+    st:belief_mary_D1 a inf:I2_Belief ;
+        prof1:heldBy st:mary ;
+        inf:J4_that w:mary_D1 ;
+        inf:J5_holds_to_be "TRUE" .
+
+    st:journey_france_2 a prof1:Journey ;
+        prof1:traveller st:windibank .
+
+    st:logic_convergent_abduction a inf:I3_Inference_Logic ;
+        rdfs:label "convergent circumstantial evidence (abductive), P134.S05" .
+
+    st:app_hosmer_angel a crm:E41_Appellation ;
+        rdfs:label "Hosmer Angel" .
+
+    st:mother a crm:E21_Person .
+
+    st:occ_wine_traveller a prof1:Occupation .
+
+    st:westhouse_marbank a crm:E74_Group .
+
+    st:ball a crm:E5_Event .
+
+    st:disappearance a prof1:Disappearance ;
+        prof1:disappearedPerson st:hosmer .
+
+    st:journey_france_1 a prof1:Journey ;
+        prof1:traveller st:windibank .
+
+    st:office_machine a prof1:Typewriter ;
+        prof1:hasDefectProfile st:profile_eR14 ;
+        prof1:usedBy st:westhouse_staff .
+
+    st:watson a crm:E21_Person ;
+        prof1:conjectures w:watson_hyp .
+
+    st:letter_H1 a prof1:TypewrittenLetter ;
+        prof1:purportsToBeFrom st:hosmer ;
+        prof1:showsDefectProfile st:profile_eR14 ;
+        prof1:typedOn st:machine_H .
+
+    st:machine_H a prof1:Typewriter ;
+        prof1:hasDefectProfile st:profile_eR14 .
+
+    st:holmes a crm:E21_Person ;
+        prof1:believes w:holmes_prediction ;
+        prof1:conjectures w:holmes_mother,
+            w:holmes_motive,
+            w:holmes_same_machine ;
+        prof1:establishes w:holmes_reconstruction .
+
+    st:mary a crm:E21_Person ;
+        prof1:attended st:ball ;
+        prof1:believes w:mary_D1 ;
+        prof1:engagedTo st:hosmer ;
+        prof1:uttered w:v_mary_france ;
+        crm:P1_is_identified_by st:app_mary_sutherland .
+
+    st:hosmer a crm:E21_Person ;
+        prof1:attended st:ball ;
+        prof1:uttered w:v_hosmer_cashier ;
+        prof1:wore st:tinted_glasses ;
+        crm:P1_is_identified_by st:app_hosmer_angel .
+
+    st:windibank a prof1:KeenSighted,
+            crm:E21_Person ;
+        prof1:believes w:windibank_beliefs ;
+        prof1:employedBy st:westhouse_marbank ;
+        prof1:hasOccupation st:occ_wine_traveller ;
+        prof1:spouseOf st:mother ;
+        prof1:stepfatherOf st:mary ;
+        prof1:uttered w:v_windibank_delighted,
+            w:v_windibank_machine,
+            w:v_windibank_reassure ;
+        crm:P1_is_identified_by st:app_windibank .
+
+    _:nebc4853af13a48beaba65862d6454c44b2 dec:checkInconsistencies true .
+}
+
+w:holmes_mother {
+    st:mother prof1:assisted st:impersonation .
+}
+
+w:windibank_beliefs {
+    st:disappearance a prof1:VoluntaryDisappearance .
+
+    st:journey_france_1 a prof1:PretendedJourney .
+
+    st:windibank prof1:hasOccupation st:occ_wine_traveller ;
+        owl:sameAs st:hosmer .
+}
+

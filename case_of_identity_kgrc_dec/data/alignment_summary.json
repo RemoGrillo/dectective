@@ -1,0 +1,192 @@
+{
+  "survey_all_units": {
+    "denominator_units": 55,
+    "coverage_counts": {
+      "partial": 28,
+      "distorted": 15,
+      "present": 11,
+      "absent": 1
+    },
+    "by_theme": {
+      "belief": {
+        "partial": 4,
+        "distorted": 2,
+        "present": 1
+      },
+      "clue": {
+        "partial": 2,
+        "present": 1,
+        "distorted": 1
+      },
+      "deception": {
+        "partial": 9,
+        "distorted": 5
+      },
+      "ending": {
+        "distorted": 1
+      },
+      "identity": {
+        "present": 2,
+        "partial": 3
+      },
+      "mother": {
+        "partial": 2,
+        "distorted": 1
+      },
+      "motive": {
+        "distorted": 3,
+        "partial": 2,
+        "present": 2
+      },
+      "reasoning": {
+        "distorted": 1,
+        "partial": 3,
+        "present": 1
+      },
+      "timeline": {
+        "present": 2,
+        "partial": 1,
+        "absent": 1
+      },
+      "typewriter": {
+        "partial": 2,
+        "present": 2,
+        "distorted": 1
+      }
+    },
+    "by_info_status": {
+      "admitted": {
+        "distorted": 3
+      },
+      "believed": {
+        "distorted": 1,
+        "partial": 1,
+        "present": 1
+      },
+      "commissive": {
+        "distorted": 2
+      },
+      "documentary": {
+        "partial": 1
+      },
+      "hypothesized": {
+        "partial": 3,
+        "distorted": 1
+      },
+      "observed": {
+        "present": 5,
+        "partial": 2
+      },
+      "predicted": {
+        "partial": 1,
+        "distorted": 1
+      },
+      "reconstructed": {
+        "present": 1,
+        "partial": 6,
+        "absent": 1
+      },
+      "reported": {
+        "distorted": 7,
+        "partial": 14,
+        "present": 4
+      }
+    }
+  },
+  "detailed_units": {
+    "denominator_units": 42,
+    "coverage_counts": {
+      "distorted": 13,
+      "partial": 21,
+      "present": 7,
+      "absent": 1
+    },
+    "by_theme": {
+      "belief": {
+        "distorted": 2,
+        "partial": 3
+      },
+      "clue": {
+        "distorted": 1
+      },
+      "deception": {
+        "partial": 7,
+        "distorted": 5
+      },
+      "ending": {
+        "distorted": 1
+      },
+      "identity": {
+        "partial": 3,
+        "present": 1
+      },
+      "mother": {
+        "partial": 2,
+        "distorted": 1
+      },
+      "motive": {
+        "distorted": 2,
+        "partial": 1,
+        "present": 1
+      },
+      "reasoning": {
+        "partial": 2,
+        "present": 1
+      },
+      "timeline": {
+        "present": 2,
+        "partial": 1,
+        "absent": 1
+      },
+      "typewriter": {
+        "partial": 2,
+        "present": 2,
+        "distorted": 1
+      }
+    },
+    "by_info_status": {
+      "admitted": {
+        "distorted": 3
+      },
+      "believed": {
+        "distorted": 1,
+        "partial": 1
+      },
+      "commissive": {
+        "distorted": 2
+      },
+      "documentary": {
+        "partial": 1
+      },
+      "hypothesized": {
+        "partial": 1
+      },
+      "observed": {
+        "partial": 2,
+        "present": 3
+      },
+      "predicted": {
+        "partial": 1,
+        "distorted": 1
+      },
+      "reconstructed": {
+        "present": 1,
+        "partial": 5,
+        "absent": 1
+      },
+      "reported": {
+        "distorted": 6,
+        "partial": 10,
+        "present": 3
+      }
+    }
+  },
+  "auto_vs_manual": {
+    "scene_iris_in_manual_units": 369,
+    "auto_candidate_within_1_paragraph": 250,
+    "note": "agreement measured only on scenes cited in manual units; not a global accuracy"
+  },
+  "distinct_scenes_cited": 369,
+  "text_units_denominator_note": "units are curated passage groups (1-6 sentences); story has 138 paragraphs / 391 sentences",
+  "sentences_covered_by_units": 126
+}

@@ -1,0 +1,133 @@
+{ 
+  "data" : "./prototype/exploratory/E08_verbatim_conflict.trig" ,
+  "query" : "./prototype/exploratory/probe.rq" ,
+  "config" : "dec" ,
+  "instrumented" : false ,
+  "parse_ms" : 135.95344 ,
+  "input_quads" : 10 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 2048 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 1360.416922 ,
+        "cpu_ms" : 1307.023873 ,
+        "gc_count" : 6 ,
+        "gc_ms" : 25 ,
+        "heap_delta_mb" : 56.91603088378906 ,
+        "phases" : {
+            "load_ms" : 30.197725 ,
+            "handlePermeation_ms" : 1324.634329 ,
+            "enumerate_ms" : 1.232245
+          } ,
+        "per_world_ms" : {
+            "http://example.org/x#B#enumerate" : 0.245157 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.20053 ,
+            "http://example.org/x#S#enumerate" : 0.221198 ,
+            "http://example.org/x#V#enumerate" : 0.013219
+          } ,
+        "query_first_ms" : 33.107812 ,
+        "query_second_ms" : 1.608276
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "http://example.org/x#B" : {
+              "type" : "named/doxastic" ,
+              "asserted" : 1 ,
+              "base_after" : 19 ,
+              "permeated_in" : 652 ,
+              "permeated_in_nontrivial" : 2 ,
+              "receives_from" : [ "http://example.org/x#S" ] ,
+              "materialised" : 669 ,
+              "inferred_trivial" : 16 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#S" : {
+              "type" : "named/shared" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 652 ,
+              "inferred_trivial" : 650 ,
+              "inferred_nontrivial" : 1 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 1 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://example.org/x#V" : {
+              "type" : "named/verbatim" ,
+              "asserted" : 1 ,
+              "base_after" : 1 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1 ,
+              "inferred_trivial" : 0 ,
+              "inferred_nontrivial" : 0 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 0 ,
+              "dec_diagnostic" : 0
+            } ,
+          "http://w3id.org/conjectures/reality" : {
+              "type" : "default/reality" ,
+              "asserted" : 3 ,
+              "base_after" : 0 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 689 ,
+              "inferred_trivial" : 672 ,
+              "inferred_nontrivial" : 2 ,
+              "inferred_taxonomic" : 0 ,
+              "inferred_substantive" : 2 ,
+              "dec_diagnostic" : 12
+            }
+        } ,
+      "n_worlds" : 4 ,
+      "asserted_total" : 6 ,
+      "materialised_total" : 2011 ,
+      "permeated_total" : 652 ,
+      "inferred_total" : 1341 ,
+      "inferred_trivial_total" : 1338 ,
+      "inferred_nontrivial_total" : 3 ,
+      "inferred_taxonomic_total" : 0 ,
+      "inferred_substantive_total" : 3 ,
+      "dec_diagnostic_total" : 12 ,
+      "distinct_triples_all_worlds" : 690 ,
+      "redundancy" : 2.9144927536231884 ,
+      "inconsistency_pairs" : 3 ,
+      "dec_diagnostics" : [ 
+          "62bfd6ff4b2f14cfc7a359dbb7078722 http://w3id.org/conjectures/checkInconsistencies \"true\"^^http://www.w3.org/2001/XMLSchema#boolean" ,
+          "http://example.org/x#B http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality" ,
+          "http://example.org/x#B http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld" ,
+          "http://example.org/x#B http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticWorld" ,
+          "http://example.org/x#S http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/sharedWorld" ,
+          "http://example.org/x#V http://w3id.org/conjectures/disagreesWith http://w3id.org/conjectures/reality" ,
+          "http://example.org/x#V http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/delusionalWorld" ,
+          "http://example.org/x#V http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimWorld" ,
+          "http://example.org/x#believes http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/doxasticPredicate" ,
+          "http://example.org/x#said http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://w3id.org/conjectures/verbatimPredicate" ,
+          "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/x#B" ,
+          "http://w3id.org/conjectures/reality http://w3id.org/conjectures/disagreesWith http://example.org/x#V"
+        ]
+    } ,
+  "query_result" : {
+      "type" : "SELECT" ,
+      "rows" : [ "g=http://example.org/x#B s=http://www.w3.org/2000/01/rdf-schema#domain p=http://www.w3.org/2000/01/rdf-schema#domain o=http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" ] ,
+      "n_rows" : 1 ,
+      "query_first_ms" : 33.107812 ,
+      "query_second_ms" : 1.608276 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "http://example.org/x#B | http://www.w3.org/2000/01/rdf-schema#domain http://www.w3.org/2000/01/rdf-schema#domain http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" ]
+    } ,
+  "materialised_sha256" : "762224f69bb5a91b466991ddfbd45ac8bd42c57cb3ea01562ed67bacffbe25a0"
+}

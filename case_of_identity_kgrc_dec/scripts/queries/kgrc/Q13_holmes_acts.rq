@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# Content embedded under Holmes's reconstruction (472) and explanation (558) acts
+SELECT ?act ?content ?src ?info WHERE {
+  VALUES ?act { d:472 d:558 }
+  ?act kgc:what ?content .
+  OPTIONAL { ?content kgc:source ?src FILTER(lang(?src)="en") }
+  OPTIONAL { ?content kgc:infoSource ?info }
+} ORDER BY ?act ?content

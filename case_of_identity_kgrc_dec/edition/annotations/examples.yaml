@@ -1,0 +1,251 @@
+# Natural-language question <-> SPARQL query pairs for the edition's endpoint.
+# The prefix block below is prepended to every query. Graph naming: see the SPARQL Lab guide.
+prefixes: |
+  PREFIX st:   <http://example.org/dectective/story/>
+  PREFIX w:    <http://example.org/dectective/world/>
+  PREFIX prof: <http://example.org/dectective/profile#>
+  PREFIX dec:  <http://w3id.org/conjectures/>
+  PREFIX ed:   <http://example.org/dectective/edition#>
+  PREFIX crm:  <http://www.cidoc-crm.org/cidoc-crm/>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX kgc:  <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+  PREFIX d:    <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+
+examples:
+  - id: text-mary-speaks
+    category: Text & annotation
+    question: Which paragraphs of "Mary's Account" are spoken by Mary?
+    sparql: |
+      SELECT ?paragraph ?page WHERE {
+        GRAPH <http://example.org/dectective/edition/text> {
+          ?paragraph a ed:Paragraph ; ed:speaker st:mary ; ed:printedPage ?page ;
+                     ed:inSection <http://example.org/dectective/edition/text/section/III> .
+        }
+      } ORDER BY ?paragraph
+  - id: text-support-reconstruction
+    category: Text & annotation
+    question: Which sentences of the text support Holmes's solution?
+    sparql: |
+      SELECT DISTINCT ?sentence ?text WHERE {
+        GRAPH <http://example.org/dectective/edition/annotation> {
+          ?prop a ed:Proposition ; ed:world "holmes_reconstruction" ; ed:supportedBy ?sentence .
+        }
+        GRAPH <http://example.org/dectective/edition/text> { ?sentence ed:text ?text }
+      } ORDER BY ?sentence
+  - id: text-kgrc-distortions
+    category: Text & annotation
+    question: Where does KGRC distort the text, and with which scenes?
+    sparql: |
+      SELECT ?unit ?content ?issue (GROUP_CONCAT(STRAFTER(STR(?scene), "ACaseOfIdentity/"); separator=" ") AS ?kgrcScenes) WHERE {
+        GRAPH <http://example.org/dectective/edition/annotation> {
+          ?unit a ed:AlignmentUnit ; ed:coverage "distorted" ; ed:propositionalContent ?content ; ed:issue ?issue .
+          OPTIONAL { ?unit ed:kgrcScene ?scene }
+        }
+      } GROUP BY ?unit ?content ?issue ORDER BY ?unit
+  - id: said-who-whom
+    category: Who said what
+    question: Who said what, to whom, and who reports it?
+    sparql: |
+      SELECT ?act ?speaker ?addressee ?reporter ?content WHERE {
+        GRAPH <http://example.org/dectective/asserted/reality> {
+          ?act a prof:CommunicativeAct ; crm:P14_carried_out_by ?speaker .
+          OPTIONAL { ?act prof:addressee ?addressee }
+          OPTIONAL { ?act prof:reportedBy ?reporter }
+          OPTIONAL { ?act prof:hasContent ?content }
+        }
+      } ORDER BY ?act
+  - id: said-false
+    category: Who said what
+    question: Which recorded statements are false in Reality (according to DEC)?
+    sparql: |
+      SELECT DISTINCT ?statement ?speaker WHERE {
+        ?act prof:hasContent ?statement ; crm:P14_carried_out_by ?speaker .
+        ?statement dec:disagreesWith ?r .
+        FILTER(?r IN (dec:reality, <urn:x-arq:DefaultGraphNode>))
+        FILTER NOT EXISTS { ?speaker owl:sameAs ?other . FILTER(?other != ?speaker) GRAPH <http://example.org/dectective/asserted/reality> { ?act crm:P14_carried_out_by ?other } }
+      } ORDER BY ?statement
+  - id: beliefs-mary
+    category: Beliefs and points of view
+    question: What does Mary believe (what her beliefs state, before inference)?
+    sparql: |
+      SELECT ?s ?p ?o WHERE { GRAPH <http://example.org/dectective/asserted/mary_D1> { ?s ?p ?o } } ORDER BY ?s ?p
+  - id: worlds-governed
+    category: Beliefs and points of view
+    question: Which points of view (DEC worlds) exist, of which type, and whose are they?
+    sparql: |
+      SELECT ?world ?type ?agent ?stance WHERE {
+        VALUES ?stance { prof:believes prof:establishes prof:conjectures prof:uttered }
+        GRAPH <http://example.org/dectective/asserted/reality> { ?agent ?stance ?world }
+        GRAPH <http://example.org/dectective/edition/annotation> { ?world ed:decType ?type }
+      } ORDER BY ?type ?world
+  - id: beliefs-journey
+    category: Beliefs and points of view
+    question: What kind of journey was the first journey to France, in each point of view?
+    sparql: |
+      SELECT ?world ?kind WHERE {
+        GRAPH ?world { st:journey_france_1 a ?kind }
+        FILTER(?kind IN (prof:ActualJourney, prof:PretendedJourney))
+        FILTER(STRSTARTS(STR(?world), STR(w:)) || ?world = dec:reality)
+      } ORDER BY ?kind ?world
+  - id: identity-hosmer
+    category: Identity and names
+    question: Who is Hosmer Angel in Reality?
+    sparql: |
+      SELECT ?x WHERE { st:hosmer owl:sameAs ?x FILTER(?x != st:hosmer) }
+  - id: identity-mary
+    category: Identity and names
+    question: Does Mary hold the identity Hosmer = Windibank?
+    sparql: |
+      ASK { GRAPH w:mary_D1 { st:hosmer owl:sameAs st:windibank } }
+  - id: identity-name
+    category: Identity and names
+    question: Whom does the name "Hosmer Angel" pick out in Reality — stated or inferred by DEC?
+    sparql: |
+      SELECT ?person ?asserted WHERE {
+        ?person crm:P1_is_identified_by st:app_hosmer_angel .
+        BIND(EXISTS { GRAPH <http://example.org/dectective/asserted/reality> { ?person crm:P1_is_identified_by st:app_hosmer_angel } } AS ?asserted)
+      }
+  - id: identity-dere
+    category: Identity and names
+    question: In which points of view is Mary engaged to Windibank (de re vs de dicto)?
+    sparql: |
+      SELECT ?world WHERE { GRAPH ?world { st:mary prof:engagedTo st:windibank } FILTER(STRSTARTS(STR(?world), STR(w:)) || ?world = dec:reality) }
+  - id: dec-delusional
+    category: Lies, delusions, conflicts
+    question: Which points of view does DEC label delusional, and in which runs?
+    sparql: |
+      SELECT ?world (GROUP_CONCAT(DISTINCT STRAFTER(STR(?run), "run/"); separator=", ") AS ?runs) WHERE {
+        GRAPH <http://example.org/dectective/edition/runs> { ?d ed:relation dec:delusionalWorld ; ed:world ?world ; ed:run ?run }
+      } GROUP BY ?world ORDER BY ?world
+  - id: dec-disagreements
+    category: Lies, delusions, conflicts
+    question: Which pairs of points of view conflict according to DEC (whole story)?
+    sparql: |
+      SELECT DISTINCT ?world ?other WHERE {
+        GRAPH <http://example.org/dectective/edition/runs> {
+          ?d ed:relation dec:disagreesWith ; ed:world ?world ; ed:otherWorld ?other ; ed:run ?run .
+          ?run ed:dataset "gold" .
+        }
+        FILTER(STR(?world) < STR(?other))
+      } ORDER BY ?world ?other
+  - id: dec-insincere
+    category: Lies, delusions, conflicts
+    question: Which statements contradict the speaker's own beliefs (lies, T05a)?
+    sparql: |
+      SELECT DISTINCT ?statement WHERE {
+        ?act prof:hasContent ?statement ; crm:P14_carried_out_by ?speaker .
+        ?speaker prof:believes ?beliefs .
+        ?statement dec:disagreesWith ?beliefs .
+      }
+  - id: dec-why-mary
+    category: Lies, delusions, conflicts
+    question: Which shared rules make Mary's beliefs clash with Reality?
+    sparql: |
+      SELECT DISTINCT ?x ?inMary ?inNarrative WHERE {
+        GRAPH w:mary_D1 { ?x a ?inMary }
+        GRAPH dec:reality { ?x a ?inNarrative }
+        { GRAPH <http://example.org/dectective/asserted/shared> { ?inMary owl:disjointWith ?inNarrative } }
+        UNION { GRAPH <http://example.org/dectective/asserted/shared> { ?inNarrative owl:disjointWith ?inMary } }
+      }
+  - id: snap-identity-c3
+    category: Reading without spoilers
+    question: Up to "The typewriter" (stage C3), is the identity already a fact for the reader?
+    sparql: |
+      ASK { GRAPH <http://example.org/dectective/snapshot/C3/reality> { st:pC owl:sameAs st:pB } }
+  - id: snap-machine-c3
+    category: Reading without spoilers
+    question: Up to "The typewriter", under Holmes's typewriter rule, which letters were typed on the office machine?
+    sparql: |
+      SELECT ?letter WHERE { GRAPH <http://example.org/dectective/snapshot/C3/w22> { ?letter prof:typedOn st:m2 ; prof:purportsToBeFrom st:pC } }
+  - id: snap-hypotheses
+    category: Reading without spoilers
+    question: Which of the reader's guesses does DEC find in conflict with Reality, stage by stage?
+    sparql: |
+      SELECT ?dataset ?hypothesis WHERE {
+        GRAPH <http://example.org/dectective/edition/runs> {
+          ?d ed:relation dec:disagreesWith ; ed:world ?hypothesis ; ed:otherWorld ?r ; ed:run ?run .
+          ?run ed:dataset ?dataset .
+        }
+        FILTER(STRENDS(STR(?r), "/reality") || STRENDS(STR(?r), "DefaultGraphNode"))
+        FILTER(REGEX(STR(?hypothesis), "/w2[0-4]$"))
+      } ORDER BY ?dataset ?hypothesis
+  - id: kgrc-solution
+    category: KGRC comparison
+    question: How does the original KGRC graph encode the solution?
+    sparql: |
+      SELECT ?scene ?p ?o WHERE { GRAPH <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity> { VALUES ?scene { d:504 d:507 d:518 } ?scene ?p ?o FILTER(!isLiteral(?o) || lang(?o) = "en") } } ORDER BY ?scene
+  - id: kgrc-aligned
+    category: KGRC comparison
+    question: Which KGRC scenes render Windibank's reported reassurance (P067.S01), and what do they say?
+    sparql: |
+      SELECT ?scene ?alignment ?source WHERE {
+        { GRAPH <http://example.org/dectective/edition/annotation> {
+            ?unit ed:supportedBy <http://example.org/dectective/edition/text/P067.S01> ; ed:kgrcScene ?scene } BIND("curated unit" AS ?alignment) }
+        UNION
+        { GRAPH <http://example.org/dectective/edition/annotation> {
+            ?scene ed:autoAlignedSentence <http://example.org/dectective/edition/text/P067.S01> } BIND("automatic" AS ?alignment) }
+        OPTIONAL { GRAPH <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity> { ?scene kgc:source ?source FILTER(lang(?source) = "en") } }
+      } ORDER BY ?scene
+  - id: kgrc-ending
+    category: KGRC comparison
+    question: KGRC vs the edition on the ending — is Mary's disbelief a fact?
+    sparql: |
+      SELECT ?where ?claim WHERE {
+        { GRAPH <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity> { d:578 kgc:source ?claim FILTER(lang(?claim) = "en") } BIND("KGRC (categorical scene)" AS ?where) }
+        UNION
+        { GRAPH ?g { ?x prof:rejects ?y } BIND(CONCAT("edition: only in ", STR(?g)) AS ?where) BIND("hypothetical rejection" AS ?claim) }
+      }
+  - id: runs-sizes
+    category: DEC provenance and metrics
+    question: Which DEC runs produced the materialised views, with sizes and times?
+    sparql: |
+      SELECT ?run ?kind ?dataset ?worlds ?asserted ?materialised ?ms WHERE {
+        GRAPH <http://example.org/dectective/edition/runs> {
+          ?run a ed:DecRun ; ed:kind ?kind ; ed:dataset ?dataset ; ed:nWorlds ?worlds ; ed:asserted ?asserted ; ed:materialised ?materialised .
+          OPTIONAL { ?run ed:materialiseMs ?ms }
+        }
+      } ORDER BY ?dataset ?run
+  - id: runs-amplification
+    category: DEC provenance and metrics
+    question: How many triples does each DEC world view hold, compared with what is asserted in it?
+    sparql: |
+      SELECT ?world (COUNT(DISTINCT ?t) AS ?materialised) ?asserted WHERE {
+        GRAPH ?world { ?s ?p ?o } BIND(CONCAT(STR(?s), STR(?p), STR(?o)) AS ?t)
+        FILTER(STRSTARTS(STR(?world), STR(w:)))
+        { SELECT ?world (COUNT(*) AS ?asserted) WHERE {
+            GRAPH ?a { ?s2 ?p2 ?o2 } FILTER(STRSTARTS(STR(?a), "http://example.org/dectective/asserted/"))
+            BIND(IRI(CONCAT(STR(w:), STRAFTER(STR(?a), "asserted/"))) AS ?world) } GROUP BY ?world }
+      } GROUP BY ?world ?asserted ORDER BY DESC(?materialised)
+  - id: derived-windibank
+    category: DEC provenance and metrics
+    question: What did DEC infer in Reality about Windibank that nobody stated?
+    sparql: |
+      SELECT ?p ?o WHERE {
+        st:windibank ?p ?o .
+        FILTER NOT EXISTS { GRAPH <http://example.org/dectective/asserted/reality> { st:windibank ?p ?o } }
+        FILTER(STRSTARTS(STR(?p), STR(prof:)) || ?p = crm:P1_is_identified_by)
+      }
+  - id: deductions-unmasking
+    category: Deductions over time
+    question: Which conclusions can DEC draw once Holmes unmasks Windibank (P126.S11), and in which point of view?
+    note: One DEC run per clue on the story read so far (graph edition/timeline; scripts/run_edition_timeline.py).
+    sparql: |
+      SELECT ?graph ?s ?p ?o ?how WHERE {
+        GRAPH <http://example.org/dectective/edition/timeline> {
+          ?clue ed:sentence <http://example.org/dectective/edition/text/P126.S11> .
+          ?c a ed:Conclusion ; ed:firstClue ?clue ; ed:inGraph ?graph ; ed:how ?how ;
+             rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o .
+        }
+      } ORDER BY ?graph ?s ?p
+  - id: deductions-per-clue
+    category: Deductions over time
+    question: How many new conclusions does DEC draw at each clue of the story?
+    sparql: |
+      SELECT ?order ?sentence (COUNT(?c) AS ?newConclusions) WHERE {
+        GRAPH <http://example.org/dectective/edition/timeline> {
+          ?clue a ed:Clue ; ed:order ?order ; ed:sentence ?sentence .
+          OPTIONAL { ?c ed:firstClue ?clue }
+        }
+      } GROUP BY ?order ?sentence ORDER BY ?order

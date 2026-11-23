@@ -1,0 +1,75 @@
+{ 
+  "data" : "./prototype/fixtures/T06_divergence/slices/T06b_mary_delusional_label.trig" ,
+  "query" : "./prototype/fixtures/T06_divergence/T06b_mary_delusional_label.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 191.976555 ,
+  "input_quads" : 179 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 433.223739 ,
+        "cpu_ms" : 411.247448 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 25.746185302734375 ,
+        "phases" : {
+            "build_ms" : 22.482306 ,
+            "enumerate_ms" : 229.983102 ,
+            "validate_ms" : 174.042455
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 66.160462 ,
+        "query_second_ms" : 1.098894
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 175 ,
+              "base_after" : 175 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1294 ,
+              "inferred_trivial" : 1064 ,
+              "inferred_nontrivial" : 54 ,
+              "inferred_taxonomic" : 8 ,
+              "inferred_substantive" : 46 ,
+              "dec_diagnostic" : 1 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 175 ,
+      "materialised_total" : 1294 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1118 ,
+      "inferred_trivial_total" : 1064 ,
+      "inferred_nontrivial_total" : 54 ,
+      "inferred_taxonomic_total" : 8 ,
+      "inferred_substantive_total" : 46 ,
+      "dec_diagnostic_total" : 1 ,
+      "distinct_triples_all_worlds" : 1294 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : false ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 66.160462 ,
+      "query_second_ms" : 1.098894 ,
+      "matched_triples" : 0 ,
+      "matched_non_asserted_triples" : 0 ,
+      "matched_non_asserted_list" : [ ]
+    } ,
+  "materialised_sha256" : "56cfffa1678e2600bb76470a73a059a708a6f4e6d8eb3601fce3c3e2479bd158"
+}

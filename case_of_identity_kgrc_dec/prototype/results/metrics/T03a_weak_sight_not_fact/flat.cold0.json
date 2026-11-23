@@ -1,0 +1,75 @@
+{ 
+  "data" : "./prototype/fixtures/T03_identity_dependent_conclusions/slices/T03a_weak_sight_not_fact.trig" ,
+  "query" : "./prototype/fixtures/T03_identity_dependent_conclusions/T03a_weak_sight_not_fact.rq" ,
+  "config" : "flat" ,
+  "instrumented" : false ,
+  "parse_ms" : 179.489822 ,
+  "input_quads" : 161 ,
+  "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
+  "max_heap_mb" : 4096 ,
+  "reasoner" : "org.apache.jena.reasoner.rulesys.OWLFBRuleReasoner" ,
+  "runs" : [ 
+      { 
+        "rep" : 0 ,
+        "warmup" : false ,
+        "materialise_total_ms" : 452.475899 ,
+        "cpu_ms" : 425.492865 ,
+        "gc_count" : 2 ,
+        "gc_ms" : 8 ,
+        "heap_delta_mb" : 25.752769470214844 ,
+        "phases" : {
+            "build_ms" : 27.106783 ,
+            "enumerate_ms" : 240.521362 ,
+            "validate_ms" : 177.556925
+          } ,
+        "per_world_ms" : { } ,
+        "query_first_ms" : 73.965876 ,
+        "query_second_ms" : 1.042576
+      }
+    ] ,
+  "accounting" : {
+      "worlds" : {
+          "flat" : {
+              "type" : "flat" ,
+              "asserted" : 157 ,
+              "base_after" : 157 ,
+              "permeated_in" : 0 ,
+              "permeated_in_nontrivial" : 0 ,
+              "receives_from" : [ ] ,
+              "materialised" : 1239 ,
+              "inferred_trivial" : 1027 ,
+              "inferred_nontrivial" : 54 ,
+              "inferred_taxonomic" : 8 ,
+              "inferred_substantive" : 46 ,
+              "dec_diagnostic" : 1 ,
+              "valid" : false
+            }
+        } ,
+      "n_worlds" : 1 ,
+      "asserted_total" : 157 ,
+      "materialised_total" : 1239 ,
+      "permeated_total" : 0 ,
+      "inferred_total" : 1081 ,
+      "inferred_trivial_total" : 1027 ,
+      "inferred_nontrivial_total" : 54 ,
+      "inferred_taxonomic_total" : 8 ,
+      "inferred_substantive_total" : 46 ,
+      "dec_diagnostic_total" : 1 ,
+      "distinct_triples_all_worlds" : 1239 ,
+      "redundancy" : 1.0 ,
+      "inconsistency_pairs" : 0 ,
+      "dec_diagnostics" : [ ]
+    } ,
+  "query_result" : {
+      "type" : "ASK" ,
+      "ask" : true ,
+      "rows" : [ ] ,
+      "n_rows" : 0 ,
+      "query_first_ms" : 73.965876 ,
+      "query_second_ms" : 1.042576 ,
+      "matched_triples" : 1 ,
+      "matched_non_asserted_triples" : 1 ,
+      "matched_non_asserted_list" : [ "flat | http://example.org/dectective/story/windibank http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://example.org/dectective/profile#WeakSighted" ]
+    } ,
+  "materialised_sha256" : "a7403a584dbf2e4748cfc9f0bc72c0d5fa32974ed3ea50d882b27673c83eff2f"
+}

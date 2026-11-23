@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="Sherlock Holmes, stories, story, PDF, HTML,
+     ASCII, Printable, Download, EBook, free"/>
+<meta name="flattr:id" content="mr00yn">
+<title>The complete Sherlock Holmes</title>
+<style>
+  html {
+      height: 100%;
+      width: 100%;
+      background-image: url(/stripes-2.png); }
+  body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-size: 110%;
+      line-height: 135%;
+      color: #222;
+      font-family: "Palatino", "Palatino Linotype", "URW Palladio L", "Book Antiqua", serif;
+      font-weight: 300;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto; }
+  h1 {
+      line-height: 140%; }
+  a:link {
+      color: #444; }
+  a:visited {
+      color: #444; }
+  a:hover {
+      color: #f44; }
+  a:active {
+      color: #444; }
+  div#background {
+      max-width: 1024px;
+      margin: 0 auto 0 auto;
+      height: 100%; }
+  div#background-cell {
+      position: relative;
+      z-index: 0;
+      background-image: url(/18-7-4.png);
+      background-repeat: repeat-y;
+      background-size: 1024px auto;
+      max-width: 1024px;
+      background-position: top;
+      margin: 0 auto 0 auto;
+      background-color: #888;
+      min-height: 100%; }
+  div#main-display {
+      margin: 0 auto 0 auto;
+      max-width: 50em;
+      padding: 0 0 8ex 0; }
+  div#backline-outer-wrapper {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      height: 99%;
+      margin: 0; }
+  div#backline-inner-wrapper {
+      max-width: 48em;
+      margin: 0 auto 0 auto;
+      height: 100%;
+      padding: 0 1em 0 1em; }
+  div#backline {
+      width: 100%;
+      margin: 0 auto 0 auto;
+      padding: 0;
+      height: 100%;
+      border: 1px solid #aaa;
+      background-color: rgba(240, 240, 240, 0.3); }
+  div#main-wrapper {
+      position: relative;
+      z-index: 1; }
+  div#main-nav {
+      background-color: #333;
+      border-left: 1px solid #666;
+      border-right: 1px solid #666;
+      padding: 0;
+      margin: 0 0.5em 0 0.5em; }
+  div#main-nav a {
+      display: table-cell;
+      padding: 1.5ex 1em 1.5ex 1em; }
+  div#main-nav-left { float: left; }
+  div#main-nav-right { float: right; }
+  div#main-nav-clearer { clear: both; }
+  div#main-nav a:link {
+      color: #eee }
+  div#main-nav a:visited {
+      color: #eee }
+  div#main-nav a:hover {
+      color: #fff }
+  div#main-nav a:active {
+      color: #fff }
+  div.button-bar {
+      margin: 0 0.5em 4ex 0.5em;
+      text-align: center;
+      padding: 2px 0 0 1em;
+      border-left: 1px solid #666;
+      border-right: 1px solid #666;
+      border-bottom: 1px solid #666;
+      background-color: #444; }
+  div#flattr-button {
+      padding-top: 6px;
+      display: inline-block;
+      width: 130px; }
+  div#twitter-button {
+      padding-top: 6px;
+      display: inline-block;
+      padding-left: 20px;
+      width: 130px; }
+  div#facebook-button {
+      display: inline-block;
+      padding-top: 8px;
+      height: 16px;
+      width: 158px;
+      position: relative;
+      top: -8px; }
+  div#download-wrapper { margin: 0;
+      padding: 0.25ex 0.25em 0.25ex 0.25em;
+      border: 1px solid #aaa;
+      background-color: rgba(240, 240, 240, 0.9); }
+  div#format-wrapper { margin: 12ex 0 0 0;
+      padding: 0.25ex 0.25em 0.25ex 0.25em;
+      border: 1px solid #aaa;
+      background-color: rgba(240, 240, 240, 0.9); }
+  div#download-text{
+      margin: 0 auto 1ex auto;
+      padding: 2ex 0.75em 2ex 0.75em; }
+  table#download-types {
+      border-spacing: 0px 0.5ex;
+      margin-left: 0;
+      width: 100% }
+  table#download-types td {
+      background-color: rgba(48, 48, 48, 0.9);
+      border: 1px solid #888;
+      padding: 1ex 0 0.5ex 0; }
+  table#download-types td a {
+      display: block;
+      padding: 1ex 0.5em 1ex 1em;
+      text-decoration: none }
+  div.download-type-header {
+      border-bottom: 1px solid #666;
+      text-decoration: underline;
+      padding-bottom: 0.3ex;
+      margin-bottom: 0.5ex;
+      font-size: 150%; }
+  table#download-types td:hover {
+      background-color: #555; }
+  table#download-types a:link {
+      color: #ccc; }
+  table#download-types a:visited {
+      color: #ccc; }
+  table#download-types a:hover {
+      color: #fff; }
+  table#download-types a:active {
+      color: #fff; }
+  div#left-column {
+      margin: 0 auto 0 auto; }
+  div#main-header-wrapper {
+      padding: 0 0.25em 0 0.25em;
+      margin: 0 auto 2ex auto; }
+  div#main-header {
+      margin: 0;
+      padding: 2ex 1em 2ex 1em;
+      border: 1px solid #999;
+      background-color: rgba(240, 240, 240, 0.9); }
+  h1.main-header {
+      font-size: 170%;
+      line-height: 120%;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+  div.left-textbox{
+      margin: 0 auto 1ex auto;
+      padding: 2ex 1em 2ex 1em;
+      border: 1px solid #999;
+      background-color: rgba(240, 240, 240, 0.9); }
+  div#feedback-box { margin-top: 2ex }
+  div.general-textbox-wrapper {
+      margin: 0 0.25em 0 0.25em;
+      padding: 0;
+      border: 1px solid #999;
+      background-color: rgba(240, 240, 240, 0.7); }
+  div.general-textbox{
+      margin: 5ex 4em 5ex 4em; }
+  div#colophon-textbox{ }
+  div#story-list-header {
+      }
+  table.story-list {
+      width: 100%;
+      border-spacing: 0px 0.5ex; }
+  td.story-list-left {
+      }
+  td.story-list-right {
+      vertical-align: top;
+      padding-left: 1em;
+      white-space: nowrap;
+      text-align: right; }
+  div.story-box {
+      padding: 1ex 1em 2.5ex 1em;
+      margin: 4ex 0 1ex 0;
+      border: 1px solid #999;
+      background-color: rgba(128, 128, 128, 0.5); }
+  div.stories-title {
+      margin: 6ex 0 2ex 1em;
+      font-size: 120%;
+      font-weight: bold; }
+  div.stories-subtitle {
+      margin: 6ex 0 2ex 0.5em;
+      font-size: 100%;
+      font-weight: bold; }
+  div.stories-title:first-child {
+      margin-top: 3ex }
+  div.story-description {
+      margin-bottom: 1ex;
+      font-size: 90%;
+      font-style:italic; }
+  div#right-column {
+      padding: 0;
+      margin: 0 auto 0 auto; }
+  div.image-wrapper {
+      font-style: italic;
+      line-height: 115%;
+      background-color: #e0e0e0;
+      margin: 0;
+      border: 1px solid #999;
+      padding: 1ex 0 1ex 0; }
+  img#seldom-music-image {
+      width: 80%;
+      height: auto; }
+  img#royal-marine-image {
+      margin: 3ex 10% 0 0;
+      width: 60%;
+      height: auto; }
+  img#door-open-image {
+      margin: 2ex 0 0 0;
+      width: 50%;
+      height: auto; }
+  div#footer-wrapper {
+      position: absolute;
+      z-index: 2;
+      max-width: 50em;
+      bottom: 0;
+      width: 100%;
+      margin: 0; }
+  div#footer {
+      border-top: 1px solid #666;
+      border-left: 1px solid #666;
+      border-right: 1px solid #666;
+      background-color: rgba(48, 48, 48, 1);
+      color: #bbb;
+      font-style: italic;
+      font-size: 90%;
+      text-align: right;
+      padding: 1ex 1em 1ex 1em;
+      margin: 0 0.5em 0 0.5em; }
+  div.below {
+      border-bottom:1px solid #aaa;
+      color:#777;
+      margin-bottom:6ex; }
+  div.below a:link {
+      color: #777; }
+  div.below a:visited {
+      color: #777; }
+  div.copyright {
+      margin-top: 15ex }
+  @media only screen and (max-device-width: 480px) {
+    body {
+      font-size: 90%; }
+    div#main-header-wrapper {
+      width: 85%; }
+    h1.main-header {
+      font-size: 150%; }
+    span.small-screen-linebreak:after {
+      content: '\a';
+      white-space: pre; }
+    span.small-screen-smaller-font {
+      font-size: 80%; }
+    div#format-wrapper {
+      margin-top: 0; }
+    div.general-textbox{
+      margin: 5ex 2em 5ex 2em; }
+    div#left-column {
+      width: 85%; }
+    div#right-column {
+      width: 85%; }
+    td.story-list-right {
+      display: none; }
+    div.stories-title {
+      margin-left: 0; }
+    table#story-list {
+      border-spacing: 0px 1.25ex; } }
+  @media only screen and (min-device-width: 480px) {
+    div#main-header-wrapper {
+      width: 75%; }
+    span.small-screen-linebreak:after {
+      content:'\a';
+      white-space: pre; }
+    span.small-screen-smaller-font {
+      font-size: 80%; }
+    div#left-column {
+      width: 75%; }
+    div#right-column {
+      width: 75%; } }
+  @media only screen and (min-device-width: 480px) and (min-width: 40em) {
+    div#main-header-wrapper {
+      width: auto; }
+    span.small-screen-linebreak:after {
+      content: none;
+      white-space: pre; }
+    span.small-screen-smaller-font {
+      font-size: 100%; }
+    div#left-column {
+      width: 48%;
+      margin-left: 0.5em;
+      float: left; }
+    div#right-column {
+      width: 48%;
+      margin-right: 0.5em;
+      float: right; }
+  table#sherlock-change-log {
+      border-spacing: 0; }
+  td.sherlock-change-log-date {
+      white-space: nowrap;
+      vertical-align: top;
+      border-top: 1px solid #aaa;
+      padding: 0.5ex 0 0.5ex 0; }
+  td.sherlock-change-log-version {
+      width: 5em;
+      vertical-align: top;
+      border-top: 1px solid #aaa;
+      padding: 0.5ex 0 0.5ex 0;
+      text-align: center; }
+  td.sherlock-change-log-text { vertical-align:top ;
+   border-top:1px solid #aaa ; padding: 0.5ex 0 0.5ex 0 }
+  }
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="background">
+<div id="background-cell">
+<div id="main-display">
+<div id="backline-outer-wrapper">
+<div id="backline-inner-wrapper">
+<div id="backline">
+</div> <!-- backline -->
+</div> <!-- backline-inner-wrapper -->
+</div> <!-- backline-outer-wrapper -->
+<div id="main-wrapper">
+
+<nav>
+<div id="main-nav">
+<div id="main-nav-left">
+<a href="/">home</a>
+</div>
+<div id="main-nav-right">
+<a href="/colophon/">colophon</a>
+<a href="/impressum/">impressum</a>
+<a href="/privacy-policy/">privacy policy</a>
+</div>
+<div id="main-nav-clearer"></div>
+</div>
+</nav>
+<div class="button-bar">
+</div>
+
+<div class="general-textbox-wrapper">
+<div class="general-textbox" id="colophon-textbox">
+<h1>Colophon</h1>
+
+<p>
+ Originally, these files from the now
+ copyright-free texts were built as a fun exercise in order to learn about
+ <a href="http://en.wikipedia.org/wiki/TeX">TeX</a>,
+ <a href="http://en.wikipedia.org/wiki/Typesetting">Typesetting</a>
+ and
+ <a href="http://en.wikipedia.org/wiki/Typography">Typography</a>
+ in general. Initially, the stories were transformed into
+ <a href="http://en.wikipedia.org/wiki/XML">XML</a> files containing
+ all requried content and markup information – whether, for example, a dot
+ finishes a sentence or is used as abbreviation punctuation. Using
+ various tools, these files are then converted into PDF, HTML, ePUB
+ or plain-text files. This allows many layout variations without the
+ need to work on all files individually. For example, the A4-sized canon
+ contains 989 pages, the letter variant 995 pages due to it's smaller
+ pages size.
+</p>
+
+<a id="submitting-modified-files"></a>
+<h3 style="padding-top:5ex">Submitting modified files</h3>
+<p>
+Sometimes people send problem reports or improvement suggestions along
+with a large set of already modified story files. While it's great to
+get feedback, since it allows this collection to improve continually,
+please note that modified files cannot be used directly for this collection.
+</p>
+
+<p>
+All the files which are available for download on this site are generated by
+a fully automated process and are not encoded manually. This is
+necessary since every single story is available in many
+variants – “A Scandal in Bohemia”, for example, appears by itself, in the
+“Adventures of Sherlock Holmes”, and both of the canon variants. All these
+four texts are again available in six PDF variants (A4 and letter-sized, both
+again formatted 1-sided, 2-sided and 2-sided-reversed), ePub, HTML and
+ASCII – resulting in a total of 36 variants for SCAN on this site. In case
+these files would all have to be processed manually, a single typo in a
+story would mean that all these 36 texts would have to be fixed by hand.
+</p>
+
+<p>
+The automated process instead uses a single story source file to
+create all the files, so that in case of a typo it's enough to fix the
+source file and let the system take care of the rest. This however
+means that the source files – or the process itself – will have to be
+changed in case of a problem, and that any submitted ePUBs, HTMLs and so
+on cannot be used.
+</p>
+
+<p>
+In general, if you have found any kind of problem, it's perfect to
+simply send a description by mail, but there's no need to modify any files
+yourself.
+</p>
+
+<p>
+These pages are maintained by <a href="http://christoph-ender.de">Christoph
+Ender</a>.
+</p>
+
+<h3 style="margin:20ex 0 3ex 1em">Change Log</h3>
+
+<table id="sherlock-change-log">
+<tr>
+<th class="sherlock-change-log-header">Date</th>
+<th class="sherlock-change-log-header">Version</th>
+<th class="sherlock-change-log-header">Description</th>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">March 15th, 2014</td>
+<td class="sherlock-change-log-version">3.1</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<a id="v3.1"></a>
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed 124 typos and formatting issues. Many thanks and praise to Shreevatsa R. for putting up with all the correction work and providing no less than 112 typo and 7 formatting corrections. Also thanks to Pablo Rodriguez, C L, 陈楠祺 and Franz-Josef Sachse.</li>
+ <li>Renamed “The Reigate Puzzle” into “The Reigate Squires” – see also Chris Redmond's comments headed “A note on title” at <a href="http://www.sherlockian.net/canon/stories/reig.html">sherlockian.net</a>.</li>
+ <li>Auto-generated, individual UUID for every single ePUB and mobi.</li>
+ <li>Fixed build.xml to make zipping work with ant 1.9.</li>
+ <li>Better compression for .zip files – ePUBs and mobs are now a lot smaller.</li>
+ <li>Fixed erroneously placed picture on the titlepage of “The Naval Treaty”.</li>
+ <li>Improved placement for map in NAVA for A4 paper.</li>
+ <li>Replaced RESI's repetition of Watson's Beecher thoughts from CARD, thanks to Shreevatsa R. See also <a href="http://www.sherlockian.net/canon/klinger.html">“The textual problem of ‘The Resident Patient’&#8239;”</a>.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 17th, 2013</td>
+<td class="sherlock-change-log-version">3.0</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<a id="v3.0"></a>
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Implemented .mobi output using Amazon's "kindlegen" version 2.9.</li>
+ <li>Fixed missing closing quotes in storyfile.</li>
+ <li>Reformatted epub HTML output for better legibility.</li>
+ <li>Resized HTML “danc” pictures for fixed height to avoid problems
+     with non-scalable kindlegen y-size.</li>
+ <li>Re-built epub item numeration.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">July 13th, 2013</td>
+<td class="sherlock-change-log-version">2.6</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<a id="v2.6"></a>
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Added “‘What was the month?’ – ‘The sixth from the first.’” to “The
+  Musgrave Ritual”.</li>
+ <li>TeX PDF processing is now done using the
+  <a href="http://mirrors.ctan.org/macros/latex/contrib/microtype/microtype.pdf"
+   >microtype</a> package.</li>
+ <li>ePub files now validate against
+  <a href="http://validator.idpf.org">http://validator.idpf.org</a> – thanks
+  to @lucabelluccini for pointing out the problem.</li>
+ <li>ePub footnotes have been reformatted and back-to-text link added.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 3rd, 2012</td>
+<td class="sherlock-change-log-version">2.5</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed typo in “A Study in Scarlet” thanks to Ravi Shankar aka
+  @mirasravi.</li>
+ <li>Corrected one typo in “The Crooked Man” and one more in the preface to
+  “His Last Bow”, both thanks to Mohamed El Mahrsi aka @MohamedMahrsi.</li>
+ <li>Fixed spelling in “The Adventure of the Golden Pince-Nez”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">March 28th, 2012</td>
+<td class="sherlock-change-log-version">2.4</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed typos in “The Yellow Face”, “The Sign of Four” and the
+  “Stockbroker's Clerk”, thanks to Joe Carey.</li>
+ <li>Fixed one misspelling in the “Reigate Puzzle” and two in the
+  “Naval Treaty”, thanks to Shreevatsa R.</li>
+ <li>Fixed typo in “A Study in Scarlet”, thanks to @mirasravi.</li>
+ <li>Replaced static ePUB identifier with
+  <a href="http://en.wikipedia.org/wiki/Universally_unique_identifier"
+   >UUID</a>.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">January 17th, 2012</td>
+<td class="sherlock-change-log-version">2.3</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed missing charachter in opening of “A Study in Scarlet”, thanks
+  to Aaryoosha.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">January 14th, 2012</td>
+<td class="sherlock-change-log-version">2.2</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Re-added missing postscript and subject lines in “The Sussex
+  Vampire”, thanks to Nektaria.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">January 2nd, 2012</td>
+<td class="sherlock-change-log-version">2.1</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed an overfull page in “The Sign of Four” at the end of
+  Chapter III.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">January 1st, 2012</td>
+<td class="sherlock-change-log-version">2.0</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Re-implemtented the entire build system. Instead of the Makefiles
+  originating from 2003,
+  <a href="http://en.wikipedia.org/wiki/Apache_Ant">Apache Ant</a> is used
+  for general processing.</li>
+ <li>Added ePUB output.</li>
+ <li>Recoded source XML files.</li>
+ <li>Reformatted letters, newspapers and telegrams.</li>
+ <li>Added missing pictures.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 31, 2010</td>
+<td class="sherlock-change-log-version">1.20</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed a typo in “The Sign of the Four”, thanks to Duncan McDougall.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">December 1, 2009</td>
+<td class="sherlock-change-log-version">1.19</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Added “reverse-side-margin” two-page layout. In this layout, the inner
+  margin is larger than the outer for easier binding of the pages.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 27, 2009</td>
+<td class="sherlock-change-log-version">1.18</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed two more typos in “Silver Blaze”, thanks again to Josh Martens.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 10, 2009</td>
+<td class="sherlock-change-log-version">1.17</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed typo in “Silver Blaze”, thanks to Josh Martens.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">July 1, 2009</td>
+<td class="sherlock-change-log-version">1.16</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed typo in “The Final Problem”.</li>
+ <li>Re-added lost images to “The Dancing Men”, thanks to Josh Martens.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">June 4, 2009</td>
+<td class="sherlock-change-log-version">1.15</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed typo in “A Study in Scarlet”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">May 21, 2009</td>
+<td class="sherlock-change-log-version">1.14</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Added prefaces to “His Last Bow” and to the “Case-Book of Sherlock
+  Holmes”.</li>
+ <li>Fixed links in table of contents.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">March 30, 2009</td>
+<td class="sherlock-change-log-version">1.13</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed typo in "The Crooked Man”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">January 28, 2008</td>
+<td class="sherlock-change-log-version">1.12</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed PDF-specific table of contents.</li>
+ <li>Used Yannis Haralambous' baroque initials from the
+  <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/yfonts/"
+   >yfonts package</a> for the story openings.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">September 29, 2007</td>
+<td class="sherlock-change-log-version">1.11</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Corrected an error in CROO.</li>
+ <li>Added the version number to the small print after the title page.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">September 20, 2007</td>
+<td class="sherlock-change-log-version">1.10</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Added spacing between subsequent quotes in the PDFs.</li>
+ <li>Fixed typos in GLOR and REIG and a quote in MUSG.</li>
+ <li>Fixed superfluous empty paragraphs.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">September 10, 2007</td>
+<td class="sherlock-change-log-version">1.9</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Corrected typos in “The Yellow Face” and “The Stockbroker's Clerk”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">September 9, 2007</td>
+<td class="sherlock-change-log-version">1.8</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Switched to
+  <a href="http://en.wikipedia.org/wiki/Text_figures"
+   >old style figures</a>.</li>
+ <li>Fixed a typo in “Silver Blaze”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 30, 2007</td>
+<td class="sherlock-change-log-version">1.7</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed quoting in “The Abbey Grange”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 18, 2007</td>
+<td class="sherlock-change-log-version">1.6</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed list in the HTML issue of “The Five Orange Pips”.</li>
+ <li>Fixed a superfluous dot in “The Man with the Twisted Lip”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">August 12, 2007</td>
+<td class="sherlock-change-log-version">1.5</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Added forgotten left-quote in “The Red-Headed League”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">July 23, 2007</td>
+<td class="sherlock-change-log-version">1.4</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Fixed letter-layout in a number of places.</li>
+ <li>Re-built the index webpage, which now allows much easier access to
+  the 2-sided variants.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">June 11, 2007</td>
+<td class="sherlock-change-log-version">1.3</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Corrected a typo in “The Devil's Foot”.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">June 10, 2007</td>
+<td class="sherlock-change-log-version">1.2</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Re-built the print-space in the letter-sized PDFs to better suit the
+  paper format.</li>
+ <li>Added two-sided PDF output in the respective A4- and
+  Letter-specific directories, not on the print story index yet.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">June 7, 2007</td>
+<td class="sherlock-change-log-version">1.1</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Added plain text output.</li>
+ <li>Re-built the index web page.</li>
+ <li>Archived all changes pre-dating this year.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">June 3, 2007</td>
+<td class="sherlock-change-log-version">1.0</td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Finally finished converting the last texts, did the proofreading,
+  got rid of the last formatting issues and set up the new table of
+  contents.</li>
+ <li>This marks the end of the text conversion and the release of the
+  the first plain collection.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="sherlock-change-log-date">April 14, 2007</td>
+<td class="sherlock-change-log-version"></td>
+<td class="sherlock-change-log-text">
+<div class="hyphenate">
+<ul style="margin:0 0 0 1em; padding:0">
+ <li>Thoroughly proof-read all the current 48 out of 60 stories, eliminating
+  approximately a hundred spelling or formatting errors in the process.</li>
+ <li>Now, only two things remain: Adapting “The Case-Book of Sherlock Holmes”
+  and creating a corrected table of contents.</li>
+</ul>
+</div>
+</td>
+</tr>
+
+</table>
+</div>
+</div>
+
+</div> <!-- main-wrapper-->
+
+<footer>
+<div id="footer-wrapper">
+<div id="footer">
+Current version: 3.1, March 15th, 2014
+</div> <!-- footer -->
+</div> <!-- footer-wrapper -->
+</footer>
+
+</div> <!-- main-display -->
+</div> <!-- background-cell -->
+</div> <!-- background -->
+</body>
+</html>

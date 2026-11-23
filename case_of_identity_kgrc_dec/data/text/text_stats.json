@@ -1,0 +1,10 @@
+{
+  "paragraphs": 138,
+  "sentences": 391,
+  "words_body": 6982,
+  "word_method": "regex [A-Za-zÀ-ÿ0-9½]+(?:[’'\\-][A-Za-zÀ-ÿ0-9]+)* over normalised paragraphs (front matter excluded)",
+  "offset_base": "Unicode code points, 0-based, end-exclusive, data/text/normalized.txt",
+  "first_words": "“My dear fellow,” said Sherlock Holmes as we sat on either s",
+  "last_words": "ere is as much sense in Hafiz as in Horace, and as much knowledge of the world.”",
+  "characters_normalized": 37873
+}

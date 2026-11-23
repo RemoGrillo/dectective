@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX kgc: <http://kgc.knowledge-graph.jp/ontology/kgc.owl#>
+PREFIX pred: <http://kgc.knowledge-graph.jp/data/predicate/>
+PREFIX d: <http://kgc.knowledge-graph.jp/data/ACaseOfIdentity/>
+# "Who is Hosmer?" answered from KGRC by reading scenes whose subject has the property pred:Hosmer.
+# NB: this is a lookup of an explicit conclusion (scene 504), not a deduction.
+SELECT ?scene ?who ?src ?info ?parentAct WHERE {
+  ?scene kgc:hasProperty pred:Hosmer ; kgc:subject ?who .
+  OPTIONAL { ?scene kgc:source ?src FILTER(lang(?src)="en") }
+  OPTIONAL { ?scene kgc:infoSource ?info }
+  OPTIONAL { ?parentAct kgc:what ?scene }
+}

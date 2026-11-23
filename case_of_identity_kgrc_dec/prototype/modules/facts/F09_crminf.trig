@@ -1,0 +1,27 @@
+@prefix st:   <http://example.org/dectective/story/> .
+@prefix w:    <http://example.org/dectective/world/> .
+@prefix prof: <http://example.org/dectective/profile#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix inf:  <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix dec:  <http://w3id.org/conjectures/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+st:belief_mary_D1 a inf:I2_Belief ; prof:heldBy st:mary ; inf:J4_that w:mary_D1 ; inf:J5_holds_to_be "TRUE" .
+st:adoption_mary a inf:I7_Belief_Adoption ; crm:P14_carried_out_by st:mary ; inf:J7_is_based_on_evidence_from st:letter_H1 ; inf:J2_concluded_that st:belief_mary_D1 .
+st:inference_holmes a inf:I5_Inference_Making ; crm:P14_carried_out_by st:holmes ;
+   inf:J3_applied st:logic_convergent_abduction ; inf:J2_concluded_that st:belief_holmes_identity .
+st:logic_convergent_abduction a inf:I3_Inference_Logic ; rdfs:label "convergent circumstantial evidence (abductive), P134.S05" .
+st:belief_holmes_identity a inf:I2_Belief ; prof:heldBy st:holmes ; inf:J4_that w:holmes_reconstruction ; inf:J5_holds_to_be "TRUE" .
+st:mary prof:believes w:mary_D1 .
+st:holmes prof:establishes w:holmes_reconstruction .
+st:holmes prof:conjectures w:holmes_mother .
+st:holmes prof:conjectures w:holmes_motive .
+st:watson prof:conjectures w:watson_hyp .
+st:windibank prof:believes w:windibank_beliefs .
+st:holmes prof:believes w:holmes_prediction .
+st:holmes prof:conjectures w:holmes_same_machine .
+st:analyst prof:conjectures w:h_author_other .
