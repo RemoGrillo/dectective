@@ -57,7 +57,7 @@ export default function AgentPage() {
 
       {diags.length > 0 && (
         <section className="card pad" style={{ marginBottom: 18, borderColor: "var(--red)" }}>
-          <h2>Lies, delusions, mistakes</h2>
+          <h2>Deceptions, illusions, sincere errors</h2>
           <ul className="stance-list">
             {diags.map((d, i) => (
               <li key={i}>

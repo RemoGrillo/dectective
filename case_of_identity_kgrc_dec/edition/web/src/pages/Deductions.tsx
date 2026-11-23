@@ -4,9 +4,8 @@ import { useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router";
 import { useApi, type TConclusion, type TEvent, type TextPayload, type Timeline, type TStep } from "../api";
 import { ErrorBox, Loading } from "../components/Bits";
-import { ConclusionCard, countsByStep, Meter, stepOf, useTimeline } from "../components/DeductionBits";
+import { ConclusionCard, Meter, stepOf, useTimeline } from "../components/DeductionBits";
 import { DiagBadge, RealityDisc } from "../components/Glyphs";
-import { StoryBar } from "../components/StoryBar";
 import { stageOf, useApp, withMode } from "../state";
 import { DIAG, REALITY, VERB, type RealityValue } from "../vocab";
 
@@ -25,29 +24,22 @@ export default function Deductions() {
   const current = Math.min(byAt?.n ?? 1, last);
   const go = (n: number) => setParams((p) => { const x = new URLSearchParams(p); const s = tl.steps.find((y) => y.n === n); if (s) x.set("at", s.sid); return x; }, { replace: true });
   const step = tl.steps.find((s) => s.n === current)!;
-  const counts = countsByStep(tl);
   const firstDeduction = tl.conclusions.find((c) => c.cls === "story")?.step;
   const verdictSteps = [...new Set(tl.events.filter((e) => e.kind === "verdict").map((e) => e.step))];
   const jumps: [string, number | undefined][] = [
     ["The beginning", 1], ["First deduction", firstDeduction], ["The typewriter", tl.conclusions.find((c) => c.world === "holmes_same_machine" && c.cls === "story")?.step],
-    ["The unmasking", tl.identityStep], ["First lie detected", verdictSteps[0]], ["The end", tl.final],
+    ["The unmasking", tl.identityStep], ["First deception detected", verdictSteps[0]], ["The end", tl.final],
   ];
 
   return (
     <div className="page wide" style={{ maxWidth: 1400 }}>
       <div className="page-head">
-        <h1>Deductions</h1>
-        <p className="lede">What DEC can conclude at each point of the story, and what it still can't.</p>
+        <h1>Solve the case</h1>
+        <p className="lede">Follow the investigation clue by clue: what can be worked out at each point, and when a deception, an illusion or a sincere error becomes visible.</p>
       </div>
 
       <section className="card pad" aria-label="The story, clue by clue">
-        <div className="spread" style={{ marginBottom: 4 }}>
-          <h3 style={{ margin: 0 }}>Conclusions DEC can draw, through the story</h3>
-          <span className="small muted">{tl.steps.length} clues · one DEC run each · <span className="red">■</span> verdicts (lies, delusions) that become detectable at that clue</span>
-        </div>
-        <StoryBar steps={tl.steps} order={order} nSentences={order.size} counts={counts} total={tl.totals.conclusions} events={tl.events}
-          current={current} onChange={go} cap={tl.cap} stages={meta?.checkpoints ?? []} />
-        <div className="row" style={{ marginTop: 6 }} role="group" aria-label="Jump to">
+        <div className="row" role="group" aria-label="Jump to">
           <span className="label">Jump to</span>
           {jumps.filter(([, n]) => n && n <= last).map(([l, n]) => <button key={l} className="chip" aria-pressed={current === n} onClick={() => go(n!)}>{l}</button>)}
         </div>
@@ -56,11 +48,14 @@ export default function Deductions() {
 
       <ClueHeader tl={tl} step={step} last={last} go={go} />
 
-      <div className="dd-grid">
-        <NewHere tl={tl} step={step} />
-        <SoFar tl={tl} n={current} />
-        <VersusEnd tl={tl} n={current} />
-      </div>
+      <NewHere tl={tl} step={step} />
+      <details className="more" style={{ marginTop: 16 }}>
+        <summary>Show the full picture <span className="muted">(everything so far, and what is still to come)</span></summary>
+        <div className="dd-grid more-body">
+          <SoFar tl={tl} n={current} />
+          <VersusEnd tl={tl} n={current} />
+        </div>
+      </details>
     </div>
   );
 }
@@ -99,9 +94,9 @@ function NewHere({ tl, step }: { tl: Timeline; step: TStep }) {
   const verdicts = ev.filter((e) => e.kind === "verdict"), settled = ev.filter((e) => e.kind === "reality");
   return (
     <section className="card pad" aria-labelledby="new-h">
-      <h2 id="new-h">New here</h2>
-      {verdicts.length > 0 && <><h4>Now detectable</h4><ul className="plain">{verdicts.map(verdictLine)}</ul></>}
-      <h4>DEC concludes {cons.length > 0 && <span className="muted" style={{ fontWeight: 400 }}>({cons.length})</span>}</h4>
+      <h2 id="new-h">What this clue tells us</h2>
+      {verdicts.length > 0 && <><h4>Now we can tell</h4><ul className="plain">{verdicts.map(verdictLine)}</ul></>}
+      <h4>We can conclude{cons.length > 0 && <span className="muted" style={{ fontWeight: 400 }}>({cons.length})</span>}</h4>
       {cons.length === 0 ? <p className="small muted">No new conclusion at this clue{minor ? ` (only ${minor} minor class inferences)` : ""}.</p> : (
         <div className="stack">{(more ? cons : cons.slice(0, 6)).map((c) => <ConclusionCard key={c.id} c={c} tl={tl} />)}</div>
       )}

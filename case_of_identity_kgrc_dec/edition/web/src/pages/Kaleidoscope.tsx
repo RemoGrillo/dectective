@@ -89,7 +89,7 @@ function Matrix() {
       <div className="matrix-tools">
         <div className="seg" role="group" aria-label="Which facts">
           <button aria-pressed={filter === "clashes"} onClick={() => setFilter("clashes")}>Where views clash ({n("clashes")})</button>
-          <button aria-pressed={filter === "diagnosed"} onClick={() => setFilter("diagnosed")}>Lies &amp; delusions ({n("diagnosed")})</button>
+          <button aria-pressed={filter === "diagnosed"} onClick={() => setFilter("diagnosed")}>Deceptions &amp; illusions ({n("diagnosed")})</button>
           <button aria-pressed={filter === "all"} onClick={() => setFilter("all")}>All facts ({n("all")})</button>
         </div>
         <input type="search" placeholder="Find a fact…" value={text} onChange={(e) => setText(e.target.value)} aria-label="Find a fact" />

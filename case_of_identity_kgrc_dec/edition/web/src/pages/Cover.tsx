@@ -17,7 +17,7 @@ export function Cover() {
           <p className="pitch">Read the story with a reasoner at your side. Every sentence shows what each character says, believes and supposes, checked against what is really true, and why.</p>
           <div className="row" style={{ justifyContent: "center" }}>
             <Link className="btn primary" to={withMode("/read", mode)}>Start reading →</Link>
-            <Link className="btn" to={withMode("/read?s=P067.S01", mode)}>Show me a lie</Link>
+            <Link className="btn" to={withMode("/read?s=P067.S01", mode)}>Show me a deception</Link>
           </div>
         </div>
         <nav className="entry" aria-label="Other ways in">

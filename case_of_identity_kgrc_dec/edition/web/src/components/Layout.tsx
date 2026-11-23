@@ -7,11 +7,21 @@ import { EyeIcon, Medallion } from "./Glyphs";
 
 const NAV = [
   ["/read", "Read"],
+  ["/cast", "Who's who"],
+  ["/deductions", "Solve the case"],
+  ["/questions", "Who lies?"],
+  ["/narrative", "Telling vs truth"],
+] as const;
+
+/** Technical pages: still one click away, but out of the way of a general reader. */
+const RESEARCH = [
+  ["/argument", "The argument"],
+  ["/flow", "Worlds over the clues"],
+  ["/guide", "Graph & DEC"],
   ["/kaleidoscope", "Kaleidoscope"],
-  ["/deductions", "Deductions"],
   ["/dossiers", "Case files"],
-  ["/cast", "Cast"],
   ["/worlds", "Worlds"],
+  ["/competency", "Competency questions"],
   ["/lab", "SPARQL"],
   ["/method", "How it works"],
 ] as const;
@@ -96,6 +106,14 @@ export function Layout() {
             {NAV.map(([to, label]) => (
               <NavLink key={to} to={withMode(to, mode)} className={({ isActive }) => (isActive ? "active" : "")}>{label}</NavLink>
             ))}
+            <details className="research" key={loc.pathname}>
+              <summary className={RESEARCH.some(([to]) => loc.pathname.startsWith(to)) ? "active" : ""}>For researchers ▾</summary>
+              <div className="research-panel">
+                {RESEARCH.map(([to, label]) => (
+                  <NavLink key={to} to={withMode(to, mode)} className={({ isActive }) => (isActive ? "active" : "")}>{label}</NavLink>
+                ))}
+              </div>
+            </details>
           </nav>
           <div className="tools">
             <SpoilerControl />

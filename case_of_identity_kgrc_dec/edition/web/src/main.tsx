@@ -34,6 +34,12 @@ const AgentPage = lazy(() => import("./pages/Agent"));
 const Worlds = lazy(() => import("./pages/Worlds"));
 const SparqlLab = lazy(() => import("./pages/SparqlLab"));
 const Method = lazy(() => import("./pages/Method"));
+const Guide = lazy(() => import("./pages/Guide"));
+const Questions = lazy(() => import("./pages/Questions"));
+const Narrative = lazy(() => import("./pages/Narrative"));
+const Competency = lazy(() => import("./pages/Competency"));
+const Argument = lazy(() => import("./pages/Argument"));
+const Flow = lazy(() => import("./pages/Flow"));
 
 function Root() {
   return <AppState><Outlet /></AppState>;
@@ -59,6 +65,12 @@ const router = createBrowserRouter([
           { path: "/worlds", element: S(<Worlds />) },
           { path: "/lab", element: S(<SparqlLab />) },
           { path: "/method", element: S(<Method />) },
+          { path: "/guide", element: S(<Guide />) },
+          { path: "/questions", element: S(<Questions />) },
+          { path: "/narrative", element: S(<Narrative />) },
+          { path: "/competency", element: S(<Competency />) },
+          { path: "/argument", element: S(<Argument />) },
+          { path: "/flow", element: S(<Flow />) },
           { path: "*", element: <NotFound /> },
         ],
       },

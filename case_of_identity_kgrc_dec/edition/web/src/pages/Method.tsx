@@ -81,7 +81,7 @@ export default function Method() {
         <ul className="small">
           <li>A fact enters at the first sentence that supports it. A point of view (with whoever holds it) enters when its passage and its first content have been read.</li>
           <li>DEC's conclusions only grow from one clue to the next (checked at every run). So whatever holds at a clue still holds afterwards, and a clash appears as soon as both sides are in.</li>
-          <li>Lies, delusions and honest mistakes are computed clue by clue from these views, with the same rules as everywhere else. The identity Hosmer = Windibank only counts once Reality has it.</li>
+          <li>Deceptions, illusions and sincere errors are computed clue by clue from these views, with the same rules as everywhere else. The identity Hosmer = Windibank only counts once Reality has it.</li>
           <li>Each conclusion shows its <em>because</em>: the rule and the premises that make it possible, each with the page where it was read.</li>
         </ul>
         {tl && <p className="small muted" style={{ margin: 0 }}>{tl.steps.length} clues · {tl.totals.conclusions} story-level conclusions (+{tl.totals.minor} minor) · {tl.totals.verdicts} verdicts · DEC runs: average {Math.round(tl.metrics.averages.ms / 100) / 10} s, total {Math.round(tl.metrics.total_ms / 1000)} s · monotonic: {tl.metrics.monotonic ? "yes" : "NO"}.</p>}

@@ -17,9 +17,9 @@ export const VERB_OF_PREDICATE: Record<string, Verb> = { uttered: "says", believ
 export const VERB_OF_DECTYPE: Partial<Record<DecType, Verb>> = { verbatim: "says", doxastic: "believes", epistemic: "concludes", conjectural: "supposes" };
 
 export const DIAG: Record<DiagnosisKind, { label: string; short: string; rule: string; dec: string }> = {
-  lie: { label: "Lie", short: "says it, believes otherwise", rule: "Someone says something that their own beliefs rule out.", dec: "the statement (verbatim world) holds p; the speaker's doxastic world rules p out" },
-  delusion: { label: "Delusion", short: "believes it, Reality rules it out", rule: "Someone believes something that Reality rules out.", dec: "the doxastic world holds p; reality rules p out (DEC: delusional world)" },
-  mistake: { label: "Honest mistake", short: "says and believes it, but it is false", rule: "Someone says what they believe, but Reality rules it out.", dec: "verbatim and doxastic worlds hold p; reality rules p out" },
+  lie: { label: "Deception", short: "says it, believes otherwise", rule: "They say something they know is not true.", dec: "the statement (verbatim world) holds p; the speaker's doxastic world rules p out" },
+  delusion: { label: "Illusion", short: "believes it, but it is not true", rule: "They believe something that is not true in the story.", dec: "the doxastic world holds p; reality rules p out (DEC: delusional world)" },
+  mistake: { label: "Sincere error", short: "says and believes it, but it is false", rule: "They say what they believe, but it is not true in the story.", dec: "verbatim and doxastic worlds hold p; reality rules p out" },
 };
 
 export const REALITY: Record<RealityValue, { label: string; short: string; glyph: string }> = {
@@ -31,7 +31,7 @@ export const REALITY: Record<RealityValue, { label: string; short: string; glyph
 
 /** World kinds, in plain words. */
 export const KIND: Record<DecType, { label: string; plural: string; dec: string }> = {
-  reality: { label: "Reality", plural: "Reality", dec: "reality world" },
+  reality: { label: "What really happened", plural: "What really happened", dec: "reality world" },
   epistemic: { label: "Conclusion", plural: "Conclusions", dec: "epistemic world" },
   doxastic: { label: "Beliefs", plural: "Beliefs", dec: "doxastic world" },
   conjectural: { label: "Guess", plural: "Guesses", dec: "conjectural world" },
