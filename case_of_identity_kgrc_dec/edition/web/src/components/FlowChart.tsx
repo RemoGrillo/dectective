@@ -55,11 +55,15 @@ export function FlowChart({ tl, n, row = 34, onPick, follow = false }: { tl: Tim
   const names = new Map(tl.claims.filter((c) => c.person).map((c) => [person(c.person), c.personName]));
   const speech = tl.steps.filter((st) => PEOPLE.includes(st.speaker)).map((st) => ({ step: st.n, world: "speech", worldTitle: "Speech", person: st.speaker, personName: names.get(st.speaker), verb: "says" as const, text: st.text }));
   const claims = [...tl.claims, ...speech], story = tl.conclusions.filter((c) => c.cls === "story");
-  const lanes = [...new Set([...claims, ...story].map(laneOf))].sort((a, b) => {
+  const everyLane = [...new Set([...claims, ...story].map(laneOf))].sort((a, b) => {
     if (a === "reality" || b === "reality") return a === "reality" ? -1 : 1;
     const [pa, va] = a.split("|"), [pb, vb] = b.split("|");
     return (PEOPLE.indexOf(pa) - PEOPLE.indexOf(pb)) || (VERBS.indexOf(va) - VERBS.indexOf(vb));
   });
+  // a lane appears when its world first appears in the story: before that the row is not there
+  const startOf = (k: string) => (k === "reality" ? 1 : Math.min(...[...claims, ...story].filter((c) => laneOf(c) === k).map((c) => c.step)));
+  const lanes = everyLane.filter((k) => startOf(k) <= n);
+  const has = (k: string) => lanes.includes(k);
   const y = (k: string) => TOP + lanes.indexOf(k) * row + row / 2;
   const x = (s: number) => LEFT + (s - 0.5) * COL;
   const nameOf = (k: string) => (k === "reality" ? "Reality" : [...claims, ...story].find((c) => laneOf(c) === k)?.personName ?? k.split("|")[0]);
@@ -86,11 +90,10 @@ export function FlowChart({ tl, n, row = 34, onPick, follow = false }: { tl: Tim
           </g>
         ))}
         {lanes.map((k, i) => {
-          const steps = [...claims, ...story].filter((c) => laneOf(c) === k).map((c) => c.step);
-          const from = k === "reality" ? 1 : Math.min(...steps);
+          const from = startOf(k);
           const newPerson = i > 0 && k.split("|")[0] !== lanes[i - 1].split("|")[0];
           return (
-            <g key={k} opacity={from > n ? 0.35 : 1}>
+            <g key={k}>
               {newPerson && <line x1={0} x2={W} y1={y(k) - row / 2} y2={y(k) - row / 2} stroke="var(--ink)" strokeWidth="1" />}
               <line x1={LEFT} x2={W - 6} y1={y(k)} y2={y(k)} stroke="var(--line)" />
               {k !== "reality" && <line x1={x(from)} x2={x(Math.max(from, n))} y1={y(k)} y2={y(k)} stroke="var(--ink)" strokeWidth="1.5" opacity=".4" />}
@@ -99,22 +102,22 @@ export function FlowChart({ tl, n, row = 34, onPick, follow = false }: { tl: Tim
             </g>
           );
         })}
-        {diags.map(({ e, home }, i) => (
+        {diags.filter(({ home }) => has(laneOf(home))).map(({ e, home }, i) => (
           <g key={"d" + i} opacity={o(e.step)}>
             <line x1={x(home.step)} x2={x(e.step)} y1={y(laneOf(home))} y2={y(laneOf(home))} stroke={RED} strokeWidth="3" opacity=".55" />
             <line x1={x(e.step)} x2={x(e.step)} y1={y("reality") + 8} y2={y(laneOf(home))} stroke={RED} strokeWidth="1.6" strokeDasharray="2 3" />
           </g>
         ))}
-        {story.filter((c) => c.kind === "accepted").map((c) => (
+        {story.filter((c) => c.kind === "accepted" && has("holmes|concludes")).map((c) => (
           <g key={c.id} opacity={o(c.step)}>
             <line x1={x(c.step)} x2={x(c.step)} y1={y("holmes|concludes")} y2={y("reality") + 9} stroke={BLUE} strokeWidth="2" opacity=".6" />
             <polygon points={`${x(c.step) - 4},${y("reality") + 12} ${x(c.step)},${y("reality") + 6} ${x(c.step) + 4},${y("reality") + 12}`} fill={BLUE} />
           </g>
         ))}
-        {claims.map((c, i) => <circle key={"k" + i} cx={x(c.step)} cy={y(laneOf(c))} r={c.world === "reality" ? 2 : dot} fill="var(--ink)" opacity={o(c.step)} />)}
-        {story.filter((c) => c.kind !== "accepted" || c.world !== "reality").map((c) => <circle key={c.id} cx={x(c.step)} cy={y(laneOf(c))} r={c.world === "reality" ? 3.5 : ring} fill="none" stroke={BLUE} strokeWidth="2" opacity={o(c.step)} />)}
+        {claims.filter((c) => has(laneOf(c))).map((c, i) => <circle key={"k" + i} cx={x(c.step)} cy={y(laneOf(c))} r={c.world === "reality" ? 2 : dot} fill="var(--ink)" opacity={o(c.step)} />)}
+        {story.filter((c) => has(laneOf(c)) && (c.kind !== "accepted" || c.world !== "reality")).map((c) => <circle key={c.id} cx={x(c.step)} cy={y(laneOf(c))} r={c.world === "reality" ? 3.5 : ring} fill="none" stroke={BLUE} strokeWidth="2" opacity={o(c.step)} />)}
         {story.filter((c) => c.kind === "accepted" && c.world === "reality").map((c) => <circle key={c.id} cx={x(c.step)} cy={y("reality")} r={4.5} fill={BLUE} opacity={o(c.step)} />)}
-        {diags.map(({ e, d, home }, i) => <g key={"s" + i} opacity={o(e.step)}><Shape kind={d.kind} x={x(e.step) + (i % 2 ? 4 : -4)} y={y(laneOf(home))} r={row < 24 ? 4.5 : 6} /></g>)}
+        {diags.filter(({ home }) => has(laneOf(home))).map(({ e, d, home }, i) => <g key={"s" + i} opacity={o(e.step)}><Shape kind={d.kind} x={x(e.step) + (i % 2 ? 4 : -4)} y={y(laneOf(home))} r={row < 24 ? 4.5 : 6} /></g>)}
         {/* click targets on top: a column = a clue = a sentence in the text */}
         {tl.steps.map((s) => (
           <rect key={"hit" + s.n} x={x(s.n) - COL / 2} y={0} width={COL} height={H} fill="transparent" onClick={() => onPick?.(s.n)} style={{ cursor: onPick ? "pointer" : "default" }}>
