@@ -1,26 +1,26 @@
 {
  "families": {
   "ACaseOfIdentity": 7217,
-  "annotation": 5085,
-  "asserted": 457,
-  "default": 1786,
-  "runs": 1021,
-  "snapshot": 82206,
-  "snapshot-asserted": 1488,
+  "annotation": 5273,
+  "asserted": 463,
+  "default": 1807,
+  "runs": 1065,
+  "snapshot": 82460,
+  "snapshot-asserted": 1494,
   "text": 2797,
-  "timeline": 671,
-  "world": 14147
+  "timeline": 681,
+  "world": 14239
  },
- "parsed_back": 116875,
- "propositions": 261,
- "quads": 116875,
- "runs": 39,
+ "parsed_back": 117496,
+ "propositions": 273,
+ "quads": 117496,
+ "runs": 40,
  "sha256": {
-  "catalog.json": "7439694a63031d02cae078ddfb0ebee48bf0c7a57a41b986cfcb6f8212c22f78",
-  "edition.nq": "331e9d5ac9821d1c280d467bc10959617dd3c6b550e2eb1271d3b7d10a8fc557",
-  "provenance.json": "29e35814d219b39f2222a72f0dc24769912d1cb965fc268e5f8991aa0797f823",
-  "runs.json": "5ef9dedb348c708bc5bf6fdf23ca527e8c99006096ab341b65d0824897f79c40",
-  "text.json": "e81f2bc426a5842245080da8b1178d8e8448e6fea889db38c77c382f8acea84f",
-  "timeline.json": "c1492887e5048d2eb29f751b8341e5a7226c3cb4a63ed33a19fbfb722ffe10a6"
+  "catalog.json": "7ba1f76fa5f8413b1d538a1322ebf6e3b880b9b2dce963281603712f53b7c6a6",
+  "edition.nq": "65dc315e332f13d11c332b45e192eb396bd75657e76439a959c33c02fe5d2365",
+  "provenance.json": "5e87f04ce3345effb35cc8d85632d795b070b84a9b0dd8532e42bbb77fb19f93",
+  "runs.json": "783a9ec772faf31e0021938a1549e9c33d6e8a57aed024da40e4863669f9c644",
+  "text.json": "9ff8636a3ac608d51186fac0a81e6b6dafa52538d5ff1aa12cf2d1e2cf1dda34",
+  "timeline.json": "4a7b9506e53145bafc7e70cb5912fec8d1fc66947f7bf6eaa2404c5d6d05fa74"
  }
 }

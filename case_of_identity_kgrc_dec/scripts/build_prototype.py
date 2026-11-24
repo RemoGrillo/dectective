@@ -226,6 +226,11 @@ st:holmes prof:conjectures w:holmes_same_machine .
 st:analyst prof:conjectures w:h_author_other .""",
     ["P018.S03", "P073.S01", "P099.S01", "P126.S11", "P128.S10", "P134.S05", "P138.S01"], "reconstructed",
     ["crminf", "governing"], note="st:analyst = extradiegetic annotator introducing an alternative hypothesis for testing (not in the text)")
+mod("F10_comm_act_denial", G, "C4", "fact", "default", """
+st:ca_windibank_denial a prof:CommunicativeAct ; crm:P14_carried_out_by st:windibank ; prof:addressee st:holmes ; prof:hasContent w:v_windibank_denial .
+st:windibank prof:uttered w:v_windibank_denial .""",
+    ["P119.S02", "P119.S03"], "observed", ["communication", "deception", "identity"],
+    note="Windibank's reply to Holmes's comparison of the typewritten letters (P118.S04-S06); added 2026-11-23, after the audit runs")
 
 mod("W01_mary_D1", G, "C1", "world", "w:mary_D1", """
 st:hosmer prof:hasOccupation st:occ_cashier_leadenhall .
@@ -287,6 +292,10 @@ mod("W13_holmes_same_machine", G, "C3", "world", "w:holmes_same_machine", "prof:
 mod("W14_h_author_other", G, "C3", "world", "w:h_author_other", "st:letter_H1 prof:writtenBy st:other_clerk .\nst:other_clerk a crm:E21_Person ; prof:employedBy st:westhouse_marbank .",
     [], "analyst", ["typewriter", "hypothesis"], dec_type="conjectural",
     note="ANALYST alternative (not in the text): another user of the shared office machine (P117) typed the letters")
+mod("W15_v_windibank_denial", G, "C4", "world", "w:v_windibank_denial", "st:windibank owl:differentFrom st:hosmer .",
+    ["P119.S02", "P119.S03"], "observed", ["communication", "deception", "identity"], dec_type="verbatim",
+    note="implicit content: he dismisses Holmes's comparison of the letters as 'fantastic talk' (P119.S02) and speaks of Hosmer Angel "
+         "as another man ('If you can catch the man, catch him', P119.S03)")
 
 # ================================================================== SIMULATION (reader perspective, neutral IRIs)
 NAME_MAP = {"st:mary": "st:pA", "st:windibank": "st:pB", "st:hosmer": "st:pC", "st:mother": "st:pD", "st:holmes": "st:pH",
@@ -366,6 +375,11 @@ mod("sW23_h_author_pB", S, "C3", "world", "w:w23", "st:d1 prof:writtenBy st:pB .
     ["hypothesis", "typewriter"], dec_type="conjectural", note="solver hypothesis: the stepfather typed the letters")
 mod("sW24_h_author_other", S, "C3", "world", "w:w24", "st:d1 prof:writtenBy st:q1 .\nst:q1 a crm:E21_Person ; prof:employedBy st:g1 .", ["P117.S01"], "analyst",
     ["hypothesis", "typewriter"], dec_type="conjectural", note="ANALYST alternative (not in the text): another user of the shared office machine")
+mod("sF09_denial", S, "C4", "fact", "default", """
+st:a4 a prof:CommunicativeAct ; crm:P14_carried_out_by st:pB ; prof:addressee st:pH ; prof:hasContent w:w07 .
+st:pB prof:uttered w:w07 .""", ["P119.S02", "P119.S03"], "observed", ["communication"])
+mod("sW07_v_denial", S, "C4", "world", "w:w07", "st:pB owl:differentFrom st:pC .", ["P119.S02", "P119.S03"], "observed",
+    ["communication", "identity"], dec_type="verbatim", note="implicit content: 'fantastic talk', 'If you can catch the man, catch him'")
 mod("sF07_reconstruction", S, "C4", "fact", "default", "st:pH prof:establishes w:w10 .", ["P126.S11", "P127.S01", "P128.S07"], "reconstructed", ["reconstruction"])
 mod("sW10_holmes", S, "C4", "world", "w:w10", """
 st:pC owl:sameAs st:pB .

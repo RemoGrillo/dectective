@@ -3,7 +3,7 @@
   "query" : "./prototype/exploratory/probe.rq" ,
   "config" : "dec" ,
   "instrumented" : false ,
-  "parse_ms" : 201.997461 ,
+  "parse_ms" : 198.927181 ,
   "input_quads" : 164 ,
   "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
   "max_heap_mb" : 3072 ,
@@ -12,27 +12,27 @@
       { 
         "rep" : 0 ,
         "warmup" : false ,
-        "materialise_total_ms" : 895.969529 ,
-        "cpu_ms" : 859.426541 ,
+        "materialise_total_ms" : 954.757009 ,
+        "cpu_ms" : 898.331912 ,
         "gc_count" : 4 ,
         "gc_ms" : 21 ,
-        "heap_delta_mb" : 118.63339233398438 ,
+        "heap_delta_mb" : 118.59552001953125 ,
         "phases" : {
-            "load_ms" : 42.266376 ,
-            "handlePermeation_ms" : 441.066571 ,
-            "enumerate_ms" : 404.805076
+            "load_ms" : 41.825663 ,
+            "handlePermeation_ms" : 465.088481 ,
+            "enumerate_ms" : 438.74521
           } ,
         "per_world_ms" : {
-            "http://w3id.org/conjectures/reality#enumerate" : 0.701817 ,
-            "http://example.org/dectective/world/shared#enumerate" : 1.351964 ,
-            "http://example.org/dectective/world/w20#enumerate" : 137.496132 ,
-            "http://example.org/dectective/world/w21#enumerate" : 149.997337 ,
-            "http://example.org/dectective/world/w01#enumerate" : 113.064491 ,
-            "http://example.org/dectective/world/w04#enumerate" : 0.160717 ,
-            "http://example.org/dectective/world/w03#enumerate" : 0.029899
+            "http://w3id.org/conjectures/reality#enumerate" : 0.438994 ,
+            "http://example.org/dectective/world/shared#enumerate" : 1.749153 ,
+            "http://example.org/dectective/world/w20#enumerate" : 319.672517 ,
+            "http://example.org/dectective/world/w21#enumerate" : 56.693441 ,
+            "http://example.org/dectective/world/w01#enumerate" : 58.382563 ,
+            "http://example.org/dectective/world/w04#enumerate" : 0.191211 ,
+            "http://example.org/dectective/world/w03#enumerate" : 0.035651
           } ,
-        "query_first_ms" : 38.71965 ,
-        "query_second_ms" : 1.969381
+        "query_first_ms" : 43.669906 ,
+        "query_second_ms" : 2.221026
       }
     ] ,
   "accounting" : {
@@ -172,8 +172,8 @@
       "type" : "SELECT" ,
       "rows" : [ "g=http://example.org/dectective/world/shared s=http://example.org/dectective/profile#assisted p=http://www.w3.org/2000/01/rdf-schema#range o=http://www.w3.org/2002/07/owl#Thing" ] ,
       "n_rows" : 1 ,
-      "query_first_ms" : 38.71965 ,
-      "query_second_ms" : 1.969381 ,
+      "query_first_ms" : 43.669906 ,
+      "query_second_ms" : 2.221026 ,
       "matched_triples" : 1 ,
       "matched_non_asserted_triples" : 1 ,
       "matched_non_asserted_list" : [ "http://example.org/dectective/world/shared | http://example.org/dectective/profile#assisted http://www.w3.org/2000/01/rdf-schema#range http://www.w3.org/2002/07/owl#Thing" ]

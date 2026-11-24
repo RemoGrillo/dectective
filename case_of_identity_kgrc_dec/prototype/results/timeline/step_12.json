@@ -3,7 +3,7 @@
   "query" : "./prototype/exploratory/probe.rq" ,
   "config" : "dec" ,
   "instrumented" : false ,
-  "parse_ms" : 240.317082 ,
+  "parse_ms" : 264.886015 ,
   "input_quads" : 356 ,
   "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
   "max_heap_mb" : 4096 ,
@@ -12,25 +12,25 @@
       { 
         "rep" : 0 ,
         "warmup" : false ,
-        "materialise_total_ms" : 2728.442514 ,
-        "cpu_ms" : 2646.366242 ,
+        "materialise_total_ms" : 3912.155667 ,
+        "cpu_ms" : 2241.546745 ,
         "gc_count" : 6 ,
-        "gc_ms" : 43 ,
-        "heap_delta_mb" : 143.00082397460938 ,
+        "gc_ms" : 44 ,
+        "heap_delta_mb" : 125.55230712890625 ,
         "phases" : {
-            "load_ms" : 51.243208 ,
-            "handlePermeation_ms" : 2043.593084 ,
-            "enumerate_ms" : 625.625007
+            "load_ms" : 49.173202 ,
+            "handlePermeation_ms" : 3295.890986 ,
+            "enumerate_ms" : 560.006829
           } ,
         "per_world_ms" : {
-            "http://w3id.org/conjectures/reality#enumerate" : 0.814906 ,
-            "http://example.org/dectective/world/shared#enumerate" : 1.196149 ,
-            "http://example.org/dectective/world/v_hosmer_cashier#enumerate" : 0.11817 ,
-            "http://example.org/dectective/world/v_mary_france#enumerate" : 0.03593 ,
-            "http://example.org/dectective/world/mary_D1#enumerate" : 621.891312
+            "http://w3id.org/conjectures/reality#enumerate" : 0.735155 ,
+            "http://example.org/dectective/world/shared#enumerate" : 1.125568 ,
+            "http://example.org/dectective/world/v_hosmer_cashier#enumerate" : 0.10765 ,
+            "http://example.org/dectective/world/v_mary_france#enumerate" : 0.027591 ,
+            "http://example.org/dectective/world/mary_D1#enumerate" : 556.450844
           } ,
-        "query_first_ms" : 33.647218 ,
-        "query_second_ms" : 1.50619
+        "query_first_ms" : 30.919701 ,
+        "query_second_ms" : 1.782613
       }
     ] ,
   "accounting" : {
@@ -134,8 +134,8 @@
       "type" : "SELECT" ,
       "rows" : [ "g=http://example.org/dectective/world/shared s=http://www.cidoc-crm.org/cidoc-crm/E55_Type p=http://www.w3.org/2000/01/rdf-schema#subClassOf o=http://www.cidoc-crm.org/cidoc-crm/E55_Type" ] ,
       "n_rows" : 1 ,
-      "query_first_ms" : 33.647218 ,
-      "query_second_ms" : 1.50619 ,
+      "query_first_ms" : 30.919701 ,
+      "query_second_ms" : 1.782613 ,
       "matched_triples" : 1 ,
       "matched_non_asserted_triples" : 1 ,
       "matched_non_asserted_list" : [ "http://example.org/dectective/world/shared | http://www.cidoc-crm.org/cidoc-crm/E55_Type http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.cidoc-crm.org/cidoc-crm/E55_Type" ]

@@ -9,6 +9,10 @@
 @prefix w: <http://example.org/dectective/world/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+w:w22 {
+    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
+}
+
 w:w01 {
     st:e2 a prof1:InvoluntaryDisappearance .
 
@@ -168,10 +172,6 @@ w:shared {
         rdfs:domain prof1:CommunicativeAct ;
         rdfs:range inf:I4_Proposition_Set .
 
-    prof1:hasDefectProfile a owl:ObjectProperty ;
-        rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
-        rdfs:domain prof1:Typewriter .
-
     prof1:hasOccupation a owl:ObjectProperty ;
         rdfs:domain crm:E21_Person ;
         rdfs:range prof1:Occupation .
@@ -298,6 +298,10 @@ w:shared {
         rdfs:subClassOf crm:E21_Person ;
         owl:disjointWith prof1:KeenSighted .
 
+    prof1:hasDefectProfile a owl:ObjectProperty ;
+        rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
+        rdfs:domain prof1:Typewriter .
+
     crm:P14_carried_out_by a rdf:Property ;
         rdfs:domain crm:E7_Activity ;
         rdfs:range crm:E39_Actor ;
@@ -417,26 +421,12 @@ w:shared {
         owl:inverseOf crm:P174i_ends_after_the_start_of .
 }
 
-w:w20 {
-    st:pC owl:sameAs st:pB .
-}
-
-w:w04 {
-    st:e2 a prof1:InvoluntaryDisappearance .
-
-    st:pC a prof1:ExpectedToReturn .
-}
-
 w:w03 {
     st:pC prof1:hasOccupation st:o2 .
 }
 
-w:w05 {
-    st:d1 prof1:purpose st:u1 .
-}
-
-w:w22 {
-    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
+w:w20 {
+    st:pC owl:sameAs st:pB .
 }
 
 {
@@ -550,12 +540,22 @@ w:w22 {
 
 }
 
+w:w21 {
+    st:e2 a prof1:InvoluntaryDisappearance .
+}
+
 w:w06 {
     st:pB prof1:motive st:u2 .
 }
 
-w:w21 {
-    st:e2 a prof1:InvoluntaryDisappearance .
+w:w23 {
+    st:d1 prof1:writtenBy st:pB .
+
+    st:d2 prof1:writtenBy st:pB .
+}
+
+w:w05 {
+    st:d1 prof1:purpose st:u1 .
 }
 
 w:w24 {
@@ -565,9 +565,9 @@ w:w24 {
     st:d1 prof1:writtenBy st:q1 .
 }
 
-w:w23 {
-    st:d2 prof1:writtenBy st:pB .
+w:w04 {
+    st:e2 a prof1:InvoluntaryDisappearance .
 
-    st:d1 prof1:writtenBy st:pB .
+    st:pC a prof1:ExpectedToReturn .
 }
 

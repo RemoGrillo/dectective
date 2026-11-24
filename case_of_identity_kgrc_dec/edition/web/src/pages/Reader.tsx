@@ -7,8 +7,10 @@ import { useApi, type Mark, type TextParagraph, type TextPayload, type TextSente
 import { ErrorBox, Loading } from "../components/Bits";
 import { DiagIcon } from "../components/Glyphs";
 import { SentenceDrawer } from "../components/SentenceDrawer";
+import { reducedMotion, useLast, usePresence } from "../components/Motion";
 import { stageOf, useApp, withMode } from "../state";
 import { Meter, useTimeline } from "../components/DeductionBits";
+import { FlowChart, FlowLegend, type FlowItem } from "../components/FlowChart";
 import { DIAG } from "../vocab";
 
 type Toggle = Exclude<Mark, "annotated">;
@@ -35,10 +37,21 @@ export function Reader() {
   const { data, error } = useApi<TextPayload>(q("/api/text"));
   const [params, setParams] = useSearchParams();
   const sel = params.get("s");
+  // the panel fades out before its column closes; while open, it keeps the last sentence
+  const panel = usePresence(!!sel);
+  const panelSid = useLast(sel);
   const [marks, setMarks] = useState<Set<Toggle>>(loadMarks);
   const [showCases, setShowCases] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.cases") !== "0"; } catch { return true; } });
   const [showDed, setShowDed] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.deductions") !== "0"; } catch { return true; } });
   useEffect(() => { try { window.localStorage.setItem("dectective.deductions", showDed ? "1" : "0"); } catch { /* ignore */ } }, [showDed]);
+  // the modal plot docked under the text: every point of view as a lane, growing clue by clue as you read; its head
+  // also switches the marks in the text on and off. Hidden, it leaves a tab at the bottom of the screen.
+  const [showFlow, setShowFlow] = useState<boolean>(() => { try { return window.localStorage.getItem("dectective.flow") !== "0"; } catch { return true; } });
+  useEffect(() => { try { window.localStorage.setItem("dectective.flow", showFlow ? "1" : "0"); } catch { /* ignore */ } }, [showFlow]);
+  const dock = useRef<HTMLElement>(null);
+  // a mark picked in the timeline: which proposition (or conclusion) of its sentence the panel should show
+  const [focus, setFocus] = useState<{ sid: string; text: string; kind: FlowItem["kind"]; conclusion?: { text: string; world?: string } } | null>(null);
+  const [dockH, setDockH] = useState(0);
   const { data: tl } = useTimeline();
   // clue sentences: how many new story-level conclusions DEC draws there
   const clues = useMemo(() => new Map((tl?.steps ?? []).map((st) => [st.sid, { n: st.n, page: st.page, add: tl!.conclusions.filter((c) => c.step === st.n && c.cls === "story").length }])), [tl]);
@@ -72,8 +85,9 @@ export function Reader() {
   // scroll the selected sentence into view on first load / deep link (after fonts settle)
   const scrolled = useRef(false);
   useEffect(() => {
-    if (!data || !sel || scrolled.current) return;
-    scrolled.current = true;
+    if (!data || scrolled.current) return;
+    scrolled.current = true;      // only on arrival: later selections (a click, the timeline) do their own scrolling
+    if (!sel) return;
     const go = () => document.getElementById("s-" + sel)?.scrollIntoView({ block: "center" });
     requestAnimationFrame(go);
     document.fonts?.ready.then(() => setTimeout(go, 60));
@@ -91,16 +105,33 @@ export function Reader() {
     return () => io.disconnect();
   }, [data, visible.length]);
 
-  // the clue the reader has reached: the last clue sentence above the middle of the screen
+  // the height of the docked timeline: the text, the contents and the panel keep clear of it
+  useEffect(() => {
+    const el = dock.current;
+    if (!el) { setDockH(0); return; }
+    const ro = new ResizeObserver(() => setDockH(el.offsetHeight));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [showFlow, !!tl]); // eslint-disable-line react-hooks/exhaustive-deps
+  // the reading line: 40% down the screen, so that it does not move when the timeline grows a lane as the reader
+  // advances; only if the timeline reaches that high, just above it.
+  const visibleMiddle = useCallback(() => {
+    const head = document.querySelector<HTMLElement>(".masthead")?.getBoundingClientRect().bottom ?? 60;
+    const dockTop = dock.current?.getBoundingClientRect().top ?? window.innerHeight;
+    return Math.max(head + 40, Math.min(window.innerHeight * 0.4, dockTop - 80));
+  }, []);
+
+  // the clue the reader has reached: the last clue sentence above the reading line
   useEffect(() => {
     if (!tl) return;
     let raf = 0;
     const update = () => {
       raf = 0;
       let n = 1;
+      const mid = visibleMiddle();
       for (const st of tl.steps) {
         const el = document.querySelector(`[data-sentence="${st.sid}"]`);
-        if (el && el.getBoundingClientRect().top < window.innerHeight * 0.5) n = st.n;
+        if (el && el.getBoundingClientRect().top < mid) n = st.n;
       }
       setReadingClue(n);
     };
@@ -108,7 +139,30 @@ export function Reader() {
     update();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => { window.removeEventListener("scroll", onScroll); if (raf) cancelAnimationFrame(raf); };
-  }, [tl, visible.length]);
+  }, [tl, visible.length, visibleMiddle]);
+
+  // from the timeline: open the sentence of clue n and bring it to the reading line
+  const goClue = useCallback((n: number) => {
+    const st = tl?.steps.find((x) => x.n === n);
+    if (!st) return;
+    select(st.sid);
+    // if the panel is opening, the text column narrows and reflows: scroll once it has settled
+    const go = () => {
+      const el = document.getElementById("s-" + st.sid);
+      if (el) window.scrollTo({ top: window.scrollY + el.getBoundingClientRect().top - visibleMiddle() + 20, behavior: "smooth" });
+    };
+    if (panel.mounted) go(); else setTimeout(go, reducedMotion() ? 30 : 380);
+  }, [tl, select, visibleMiddle, panel.mounted]);
+  // from a mark in the timeline: open its sentence on the proposition the mark stands for. Where marks share a place,
+  // a verdict comes first, then what the text states, then what DEC concludes.
+  const goItems = useCallback((items: FlowItem[]) => {
+    const it = (["verdict", "claim", "conclusion", "speech"] as const).map((k) => items.find((x) => x.kind === k)).find(Boolean)!;
+    const st = tl?.steps.find((x) => x.n === it.step);
+    // a conclusion of DEC drawn on the same spot (e.g. a blue ring around a black dot) is opened too, in its own section
+    const c = it.kind === "conclusion" ? it : items.find((x) => x.kind === "conclusion" && x.step === it.step);
+    setFocus(st && it.text ? { sid: st.sid, text: it.text, kind: it.kind, conclusion: c?.text ? { text: c.text, world: c.world } : undefined } : null);
+    goClue(it.step);
+  }, [tl, goClue]);
 
   const onKey = (e: React.KeyboardEvent) => {
     const t = e.target as HTMLElement;
@@ -129,8 +183,8 @@ export function Reader() {
   let lastSpeaker = "";
 
   return (
-    <div className="page wide">
-      <div className={`reader ${sel ? "" : "drawer-closed"}`}>
+    <div className="page wide reader-page" style={{ ["--dock-h" as any]: `${showFlow && tl ? dockH : 0}px` }}>
+      <div className={`reader ${panel.mounted ? "" : "drawer-closed"}`}>
         <aside className={`toc ${tocOpen ? "open" : ""}`} aria-label="Contents">
           <div className="spread" style={{ marginBottom: 6 }}>
             <span className="label">Contents</span>
@@ -167,23 +221,6 @@ export function Reader() {
         </aside>
 
         <div className="text-col">
-          <div className="marks-bar" role="group" aria-label="Marks in the text (click to show or hide)">
-            {MARKS.map((m, i) => (
-              <Fragment key={m.id}>
-                {i === 3 && <span className="sep" aria-hidden="true" />}
-                <button className="chip" aria-pressed={marks.has(m.id)} title={m.help}
-                  onClick={() => setMarks((cur) => { const n = new Set(cur); if (n.has(m.id)) n.delete(m.id); else n.add(m.id); return n; })}>
-                  {m.id === "lie" || m.id === "delusion" || m.id === "mistake" ? <DiagIcon kind={m.id} size={16} /> : null}
-                  <span className={`s ${m.sample} click`} style={{ cursor: "inherit", background: "none" }}>{m.label}</span>
-                  <span className="count">{counts[m.id] ?? 0}</span>
-                </button>
-              </Fragment>
-            ))}
-            <span className="sep" aria-hidden="true" />
-            <button className="chip" aria-pressed={showCases} onClick={() => setShowCases(!showCases)} title="Sentences cited by a case file"><span className="case-pin" style={{ margin: 0 }}>▤</span> Case files</button>
-            <button className="chip" aria-pressed={showDed} onClick={() => setShowDed(!showDed)} title="Sentences after which DEC can draw new conclusions"><span className="ded-pin" style={{ margin: 0 }}>⚙</span> New deductions</button>
-            <span className="hint">Underlined sentences open the kaleidoscope.</span>
-          </div>
           <article className="leaf" aria-label="The text of A Case of Identity" onKeyDown={onKey}
             onFocus={(e) => { const sid = (e.target as HTMLElement).dataset.sid; if (sid) setFocused(sid); }}>
             {visible.map((p) => {
@@ -209,6 +246,10 @@ export function Reader() {
                     {p.sentences.map((s, i) => (
                       <Fragment key={s.id}>
                         <Sentence s={s} marks={marks} selected={sel === s.id} tabbable={focusTarget === s.id} clickable={clickable(s)} onSelect={select} />
+                        {showFlow && clues.get(s.id) && (
+                          <button className={`clue-pin ${clues.get(s.id)!.n === readingClue ? "now" : ""}`} onClick={() => select(s.id)}
+                            title={`Clue ${clues.get(s.id)!.n}: column ${clues.get(s.id)!.n} of the modal plot below`}>clue {clues.get(s.id)!.n}</button>
+                        )}
                         {showDed && (clues.get(s.id)?.add ?? 0) > 0 && (
                           <span className="ded-pin" role="presentation" onClick={() => select(s.id)}
                             title={`DEC can now draw ${clues.get(s.id)!.add} new conclusion(s) — clue ${clues.get(s.id)!.n}`}>⚙+{clues.get(s.id)!.add}</span>
@@ -240,12 +281,43 @@ export function Reader() {
           </article>
         </div>
 
-        {sel && (
-          <aside className="drawer" aria-label="The selected sentence">
-            <SentenceDrawer sid={sel} onClose={() => { const s = sel; select(null); requestAnimationFrame(() => document.getElementById("s-" + s)?.focus()); }} />
+        {panel.mounted && panelSid && (
+          <aside className={`drawer ${panel.leaving ? "leaving" : ""}`} aria-label="The selected sentence">
+            <SentenceDrawer sid={panelSid} focus={focus && focus.sid === panelSid ? focus : null} onClose={() => { const s = sel; select(null); requestAnimationFrame(() => s && document.getElementById("s-" + s)?.focus()); }} />
           </aside>
         )}
       </div>
+      {showFlow && tl && (
+        <section className="flow-dock" ref={dock} aria-label="The modal plot: points of view as the story unfolds">
+          <div className="flow-dock-head">
+            <strong className="flow-title">Modal plot</strong>
+            {/* the marks in the text are switched on and off here */}
+            <div className="flow-marks" role="group" aria-label="Marks in the text (click to show or hide)">
+              {MARKS.map((m, i) => (
+                <Fragment key={m.id}>
+                  {i === 3 && <span className="sep" aria-hidden="true" />}
+                  <button className="chip" aria-pressed={marks.has(m.id)} title={m.help}
+                    onClick={() => setMarks((cur) => { const n = new Set(cur); if (n.has(m.id)) n.delete(m.id); else n.add(m.id); return n; })}>
+                    {m.id === "lie" || m.id === "delusion" || m.id === "mistake" ? <DiagIcon kind={m.id} size={15} /> : null}
+                    <span className={`s ${m.sample} click`} style={{ cursor: "inherit", background: "none" }}>{m.label}</span>
+                    <span className="count">{counts[m.id] ?? 0}</span>
+                  </button>
+                </Fragment>
+              ))}
+              <span className="sep" aria-hidden="true" />
+              <button className="chip" aria-pressed={showCases} onClick={() => setShowCases(!showCases)} title="Sentences cited by a case file"><span className="case-pin" style={{ margin: 0 }}>▤</span> Case files</button>
+              <button className="chip" aria-pressed={showDed} onClick={() => setShowDed(!showDed)} title="Sentences after which DEC can draw new conclusions"><span className="ded-pin" style={{ margin: 0 }}>⚙</span> New deductions</button>
+            </div>
+            <span className="muted small flow-where">clue {readingClue} of {tl.cap ?? tl.final}</span>
+            <button className="btn small ghost" onClick={() => setShowFlow(false)} aria-label="Hide the modal plot">Hide ▾</button>
+            <div className="flow-legend"><FlowLegend verdicts={false} /><span className="muted">· click a mark or a column; underlined sentences open their explanation</span></div>
+          </div>
+          <FlowChart tl={tl} n={readingClue} row={17} fit follow onPick={(k) => { setFocus(null); goClue(k); }} onPickItem={goItems} />
+        </section>
+      )}
+      {!showFlow && tl && (
+        <button className="flow-tab" onClick={() => setShowFlow(true)} aria-label="Open the modal plot">▴ Modal plot</button>
+      )}
     </div>
   );
 }

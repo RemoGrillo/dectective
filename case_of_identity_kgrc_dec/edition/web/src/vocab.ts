@@ -9,7 +9,7 @@ export type RealityValue = "true" | "false" | "false-if" | "unknown";
 
 export const VERB: Record<Verb, { label: string; yes: string; no: string; noun: string; dec: string; help: string }> = {
   says: { label: "says", yes: "says it", no: "says otherwise", noun: "statement", dec: "verbatim world", help: "What someone said, word for word, whether or not they mean it." },
-  believes: { label: "believes", yes: "believes it", no: "believes otherwise", noun: "belief", dec: "doxastic world", help: "What someone believes. Facts from Reality do not leak into it." },
+  believes: { label: "believes", yes: "believes it", no: "believes otherwise", noun: "belief", dec: "doxastic world", help: "What someone believes. What is true in Reality does not leak into it." },
   concludes: { label: "concludes", yes: "concludes it", no: "concludes otherwise", noun: "conclusion", dec: "epistemic world", help: "An account someone has worked out and the story accepts (Holmes's solution)." },
   supposes: { label: "supposes", yes: "supposes it", no: "supposes otherwise", noun: "guess", dec: "conjectural world", help: "A guess or hypothesis. It also takes Reality for granted." },
 };

@@ -1,21 +1,54 @@
-// The edition's icon set. One icon per idea, used everywhere:
-//   says = speech bubble · believes = thought cloud · concludes = magnifier · supposes = dashed bubble with "?"
-//   inside the icon: ✓ = holds it, ✕ (red) = holds otherwise.
-//   Diagnoses are FILLED red badges: lie (bubble ✕), delusion (cloud ✕), honest mistake (bubble !).
-//   Reality is a yellow disc. Every icon has a text label (title + aria-label): colour is never the only cue.
+// The edition's icon set: one coherent language, used everywhere.
+//   SHAPE = who holds it / how: says = speech bubble · believes = thought cloud · concludes = magnifier ·
+//           supposes = light bulb · Reality = yellow disc.
+//   CORNER MARK = polarity: black disc ✓ = holds it · red disc ✕ = holds otherwise (the shape turns red too).
+//   REALITY'S VALUE uses the same marks, full size: black ✓ = true · red ✕ = false · dashed red ✕ = false if… ·
+//           grey ? = not said (the same colours as the dots of the Worlds diagram).
+//   VERDICTS are SOLID red shapes: lie = bubble ✕ · delusion = cloud ✕ · honest mistake = bubble !
+//           (`inverse` draws them white, for red badges).
+// Every icon has a text label (title + aria-label): colour is never the only cue.
 import type { DecType } from "../api";
 import { DIAG, KIND, REALITY, VERB, type DiagnosisKind, type Polarity, type RealityValue, type Verb } from "../vocab";
 
-const BUBBLE = "M4 3.5h16a2 2 0 0 1 2 2v9.2a2 2 0 0 1-2 2h-8.6L6.2 21v-4.3H4a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2z";
-const CLOUD = "M7.2 15.6a4.1 4.1 0 0 1-.6-8.2 5.3 5.3 0 0 1 10.1-1.1 3.9 3.9 0 0 1 1.6 7.5 3.4 3.4 0 0 1-3.3 1.8z";
-const CHECK = (cx: number, cy: number) => `M${cx - 4} ${cy + .2}l2.8 2.8 5-5.6`;
-const CROSS = (cx: number, cy: number) => `M${cx - 3.4} ${cy - 3.4}l6.8 6.8M${cx + 3.4} ${cy - 3.4}l-6.8 6.8`;
+const SW = 1.7;                                   // one stroke width for every outline
+// shapes keep the bottom-right corner free for the polarity mark
+const BUBBLE = "M5 3h12a3 3 0 0 1 3 3v6.6a3 3 0 0 1-3 3h-6.6l-4.6 4.2v-4.2H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z";
+const CLOUD = "M6.9 15.4h9.6a3.5 3.5 0 0 0 .5-6.96 5.1 5.1 0 0 0-9.6-1.24 4.15 4.15 0 0 0-.5 8.2z";
+const CLOUD_DOTS = [{ cx: 5.3, cy: 19.1, r: 1.45 }, { cx: 2.6, cy: 21.9, r: .95 }];
+const BULB = "M8.3 15.3c0-1.7-.9-2.5-1.9-3.7A5.8 5.8 0 0 1 11 2.6a5.8 5.8 0 0 1 4.6 9c-1 1.2-1.9 2-1.9 3.7z";
+const CHECK = (cx: number, cy: number, k = 1) => `M${cx - 3.6 * k} ${cy + .1 * k}l${2.5 * k} ${2.5 * k} ${4.7 * k} -${5.2 * k}`;
+const CROSS = (cx: number, cy: number, k = 1) => `M${cx - 3.2 * k} ${cy - 3.2 * k}l${6.4 * k} ${6.4 * k}M${cx + 3.2 * k} ${cy - 3.2 * k}l-${6.4 * k} ${6.4 * k}`;
 
-function Mark({ polarity, cx, cy }: { polarity?: Polarity; cx: number; cy: number }) {
+/** Polarity mark in the bottom-right corner: black ✓ (holds it) or red ✕ (holds otherwise), ringed with paper. */
+function Corner({ polarity }: { polarity?: Polarity }) {
   if (!polarity) return null;
-  return polarity === "yes"
-    ? <path d={CHECK(cx, cy)} fill="none" stroke="var(--ink)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-    : <path d={CROSS(cx, cy)} fill="none" stroke="var(--red)" strokeWidth="2.4" strokeLinecap="round" />;
+  const yes = polarity === "yes";
+  return (
+    <g>
+      <circle cx="18.6" cy="18.6" r="5.3" fill={yes ? "var(--ink)" : "var(--red)"} stroke="var(--paper)" strokeWidth="1.6" />
+      <path d={yes ? CHECK(18.7, 18.4, .62) : CROSS(18.6, 18.6, .58)} fill="none" stroke={yes ? "var(--paper)" : "var(--on-red)"} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+  );
+}
+
+function Shape({ verb, stroke, dashed = false }: { verb: Verb; stroke: string; dashed?: boolean }) {
+  const common = { fill: "var(--paper)", stroke, strokeWidth: SW, strokeLinejoin: "round" as const, strokeLinecap: "round" as const };
+  switch (verb) {
+    case "says": return <path d={BUBBLE} {...common} />;
+    case "believes": return <>
+      <path d={CLOUD} {...common} />
+      <circle {...CLOUD_DOTS[0]} {...common} strokeWidth="1.5" />
+      <circle {...CLOUD_DOTS[1]} r={1.15} fill={stroke} />
+    </>;
+    case "concludes": return <>
+      <circle cx="13" cy="9.4" r="6.2" {...common} strokeWidth="2" />
+      <path d="M8.5 13.9 3.3 19.1" stroke={stroke} strokeWidth="3.1" strokeLinecap="round" />
+    </>;
+    case "supposes": return <>
+      <path d={BULB} {...common} strokeDasharray={dashed ? "2.6 2" : undefined} />
+      <path d="M8.5 17.8h5M9.3 20.4h3.4" stroke={stroke} strokeWidth={SW} strokeLinecap="round" />
+    </>;
+  }
 }
 
 export function VerbIcon({ verb, polarity, size = 20, title }: { verb: Verb; polarity?: Polarity; size?: number; title?: string }) {
@@ -24,55 +57,49 @@ export function VerbIcon({ verb, polarity, size = 20, title }: { verb: Verb; pol
   return (
     <svg className="ico" width={size} height={size} viewBox="0 0 24 24" role="img" aria-label={t}>
       <title>{t}</title>
-      {verb === "says" && <><path d={BUBBLE} fill="var(--paper)" stroke={stroke} strokeWidth="1.7" strokeLinejoin="round" /><Mark polarity={polarity} cx={12} cy={9.6} /></>}
-      {verb === "believes" && <>
-        <path d={CLOUD} transform="translate(-1.6 -1.2) scale(1.14)" fill="var(--paper)" stroke={stroke} strokeWidth="1.55" strokeLinejoin="round" />
-        <circle cx="4.6" cy="19.2" r="1.7" fill="var(--paper)" stroke={stroke} strokeWidth="1.4" />
-        <circle cx="2.4" cy="22.2" r="1.05" fill={stroke} />
-        <Mark polarity={polarity} cx={12.4} cy={10.4} />
-      </>}
-      {verb === "concludes" && <>
-        <circle cx="10" cy="10" r="7.2" fill="var(--paper)" stroke={stroke} strokeWidth="2" />
-        <path d="M15.3 15.3l6 6" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
-        <Mark polarity={polarity} cx={10} cy={10} />
-      </>}
-      {verb === "supposes" && <>
-        <path d={BUBBLE} fill="var(--paper)" stroke={stroke} strokeWidth="1.7" strokeDasharray="3 2.2" strokeLinejoin="round" />
-        {polarity ? <Mark polarity={polarity} cx={12} cy={9.6} /> : <text x="12" y="13.6" textAnchor="middle" fontSize="10" fontWeight="800" fill="var(--ink)" fontFamily="var(--f-display)">?</text>}
-      </>}
+      <Shape verb={verb} stroke={stroke} />
+      <Corner polarity={polarity} />
     </svg>
   );
 }
 
-export function DiagIcon({ kind, size = 18, title }: { kind: DiagnosisKind; size?: number; title?: string }) {
+/** Verdict icon: a SOLID red shape (bubble for what is said, cloud for what is believed) with a white mark. */
+export function DiagIcon({ kind, size = 18, title, inverse = false }: { kind: DiagnosisKind; size?: number; title?: string; inverse?: boolean }) {
   const t = title ?? `${DIAG[kind].label}: ${DIAG[kind].short}`;
+  const body = inverse ? "var(--on-red)" : "var(--red)", mark = inverse ? "var(--red)" : "var(--on-red)";
   return (
     <svg className="ico" width={size} height={size} viewBox="0 0 24 24" role="img" aria-label={t}>
       <title>{t}</title>
-      <rect x="0.5" y="0.5" width="23" height="23" rx="5" fill="var(--red)" />
-      {kind === "delusion"
-        ? <g transform="translate(1.6 1.2) scale(.86)"><path d={CLOUD} fill="var(--on-red)" /><circle cx="5.2" cy="18.6" r="1.6" fill="var(--on-red)" /><circle cx="3" cy="21.6" r="1" fill="var(--on-red)" /></g>
-        : <g transform="translate(1.7 1.6) scale(.86)"><path d={BUBBLE} fill="var(--on-red)" /></g>}
-      {kind === "mistake"
-        ? <><path d="M12 6.2v5.4" stroke="var(--red)" strokeWidth="2.4" strokeLinecap="round" /><circle cx="12" cy="14.4" r="1.4" fill="var(--red)" /></>
-        : <path d={CROSS(12, kind === "delusion" ? 10.2 : 9.9)} stroke="var(--red)" strokeWidth="2.4" strokeLinecap="round" />}
+      {kind === "delusion" ? <>
+        <path d={CLOUD} fill={body} stroke={body} strokeWidth="1.2" strokeLinejoin="round" />
+        {CLOUD_DOTS.map((c, i) => <circle key={i} {...c} r={c.r + .25} fill={body} />)}
+        <path d={CROSS(11.6, 10.1, .8)} stroke={mark} strokeWidth="2.3" strokeLinecap="round" />
+      </> : <>
+        <path d={BUBBLE} fill={body} stroke={body} strokeWidth="1.2" strokeLinejoin="round" />
+        {kind === "lie"
+          ? <path d={CROSS(11, 9.3, .85)} stroke={mark} strokeWidth="2.3" strokeLinecap="round" />
+          : <><path d="M11 5.6v4.6" stroke={mark} strokeWidth="2.4" strokeLinecap="round" /><circle cx="11" cy="13" r="1.4" fill={mark} /></>}
+      </>}
     </svg>
   );
 }
 
 export function DiagBadge({ kind, outline = false }: { kind: DiagnosisKind; outline?: boolean }) {
-  return <span className={`diag-badge ${outline ? "outline" : ""}`} title={DIAG[kind].rule}><DiagIcon kind={kind} size={16} />{DIAG[kind].label}</span>;
+  return <span className={`diag-badge ${outline ? "outline" : ""}`} title={DIAG[kind].rule}><DiagIcon kind={kind} size={16} inverse={!outline} />{DIAG[kind].label}</span>;
 }
 
+/** Reality: the yellow disc. With a value, the disc shows Reality's verdict in the edition's marks:
+ *  black ✓ true · red ✕ false · dashed red ✕ false if… · grey ? not said. */
 export function RealityDisc({ value, size = 22, title }: { value?: RealityValue; size?: number; title?: string }) {
   const t = title ?? (value ? `Reality: ${REALITY[value].label}` : "Reality");
   return (
     <svg className="ico" width={size} height={size} viewBox="0 0 24 24" role="img" aria-label={t}>
       <title>{t}</title>
-      <circle cx="12" cy="12" r="10.5" fill="var(--yellow)" stroke="#141414" strokeWidth="1.8" />
-      {value === "true" && <path d={CHECK(12, 11.6)} fill="none" stroke="#141414" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />}
-      {(value === "false" || value === "false-if") && <path d={CROSS(12, 12)} fill="none" stroke="#141414" strokeWidth="2.6" strokeLinecap="round" strokeDasharray={value === "false-if" ? "3 2" : undefined} />}
-      {value === "unknown" && <text x="12" y="16.2" textAnchor="middle" fontSize="12" fontWeight="800" fill="#141414" fontFamily="var(--f-display)">?</text>}
+      {!value && <><circle cx="12" cy="12" r="10.6" fill="var(--yellow)" stroke="#141414" strokeWidth="1.8" /><circle cx="12" cy="12" r="7.2" fill="none" stroke="#141414" strokeWidth=".9" /></>}
+      {value === "true" && <><circle cx="12" cy="12" r="11" fill="var(--ink)" /><path d={CHECK(12.2, 11.7, 1.18)} fill="none" stroke="var(--paper)" strokeWidth="2.7" strokeLinecap="round" strokeLinejoin="round" /></>}
+      {value === "false" && <><circle cx="12" cy="12" r="11" fill="var(--red)" /><path d={CROSS(12, 12, 1.02)} stroke="var(--on-red)" strokeWidth="2.7" strokeLinecap="round" /></>}
+      {value === "false-if" && <><circle cx="12" cy="12" r="10.1" fill="var(--paper)" stroke="var(--red)" strokeWidth="1.9" strokeDasharray="3.4 2.3" /><path d={CROSS(12, 12, .9)} stroke="var(--red)" strokeWidth="2.5" strokeLinecap="round" /></>}
+      {value === "unknown" && <><circle cx="12" cy="12" r="10.1" fill="var(--paper)" stroke="var(--muted)" strokeWidth="1.6" /><text x="12" y="16.6" textAnchor="middle" fontSize="13" fontWeight="800" fill="var(--muted)" fontFamily="var(--f-display)">?</text></>}
     </svg>
   );
 }
@@ -127,10 +154,10 @@ export function Medallion({ size = 48, className, fill = "#F2C200" }: { size?: n
 export function IconLegend({ compact = false }: { compact?: boolean }) {
   return (
     <div className="kal-legend" aria-label="Legend of the icons">
-      {(["says", "believes", "concludes", "supposes"] as Verb[]).map((v) => <span key={v} title={`${VERB[v].help} (DEC: ${VERB[v].dec})`}><VerbIcon verb={v} size={16} /> {VERB[v].label}</span>)}
-      <span><VerbIcon verb="says" polarity="yes" size={16} /> ✓ holds it</span>
-      <span><VerbIcon verb="says" polarity="no" size={16} /> ✕ holds otherwise</span>
-      {!compact && <span><RealityDisc size={16} /> Reality</span>}
+      {(["says", "believes", "concludes", "supposes"] as Verb[]).map((v) => <span key={v} title={`${VERB[v].help} (DEC: ${VERB[v].dec})`}><VerbIcon verb={v} size={18} /> {VERB[v].label}</span>)}
+      <span><VerbIcon verb="says" polarity="yes" size={18} /> holds it</span>
+      <span><VerbIcon verb="says" polarity="no" size={18} /> holds otherwise</span>
+      {!compact && <span><RealityDisc size={18} /> Reality</span>}
     </div>
   );
 }

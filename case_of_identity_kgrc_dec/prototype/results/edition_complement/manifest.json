@@ -15,7 +15,9 @@
     "F03_courtship",
     "F04_documents",
     "F05_windibank_visit",
-    "F07_comm_acts_visit"
+    "F07_comm_acts_visit",
+    "W15_v_windibank_denial",
+    "F10_comm_act_denial"
   ],
   "dec_flags": [],
   "closed_for": []

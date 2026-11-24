@@ -7,15 +7,21 @@ import { label, localName, plain, renderTriple, worldTitle, type Part } from "./
 import { closuresFor, identicalClosedValues, pairConflicts, type Triple } from "./rules/incompatibility.ts";
 import { gov, statusIn, type WorldStatus } from "./rules/perspectives.ts";
 import { ask, displayQuery, select, type Row } from "./store.ts";
+import { caseOrder, questionOf } from "./casebook.ts";
 
 export type Cell = { value: string; label: string; isIri: boolean };
 /** by: who produces the step's answer — DEC (its inferences or verdicts), the edition (a check over DEC's views), KGRC (comparison). */
 export type Step = { n: number; title: string; text: string; sparql: string; kind: "select" | "ask"; columns: string[]; rows: Record<string, Cell>[]; result?: boolean; by: "dec" | "edition" | "kgrc" };
 export type Caveat = { kind: "assumption" | "attribution" | "defect" | "reported" | "semantics" | "scope"; text: string };
+/** The diagram of a case file: the network (legacy) and the triples it is about (for the Venn of the case). */
+function fg(focus: Triple[], mode: Mode, opts?: Parameters<typeof buildGraph>[2]) {
+  return { graph: buildGraph(focus, mode, opts), focus };
+}
+
 export type Dossier = {
   id: string; number: number; type: string; typeLabel: string; title: string; subtitle: string;
   verdict: { label: string; tone: "red" | "black" | "grey" }; stamp: { word: string; sub: string }; summary: string; anchors: string[]; steps: Step[];
-  caveats: Caveat[]; dec: { run: string; world: string; relation: string; other?: string; kind: string }[]; graph: El[]; mode: Mode;
+  caveats: Caveat[]; dec: { run: string; world: string; relation: string; other?: string; kind: string }[]; graph: El[]; focus: Triple[]; mode: Mode;
 };
 
 const cell = (t: { type: string; value: string } | undefined): Cell =>
@@ -39,6 +45,8 @@ class Builder {
 }
 
 const T = (t: Triple) => plain(renderTriple(t.s, t.p, t.o));
+/** Reported speech: "X said that he …" when the claim is about the speaker. */
+const reported = (t: Triple, speaker: string) => t.s.value === speaker ? plain([{ text: "he" }, ...renderTriple(t.s, t.p, t.o).slice(1)]) : T(t);
 const nt = (t: Triple) => `${t.s.type === "uri" ? `<${t.s.value}>` : JSON.stringify(t.s.value)} <${t.p.value}> ${t.o.type === "uri" ? `<${t.o.value}>` : JSON.stringify(t.o.value)}`;
 /** Close an opening quotation mark left open by sentence segmentation. */
 export const balanced = (t: string) => ((t.match(/“/g) ?? []).length > (t.match(/”/g) ?? []).length ? t + "”" : t);
@@ -80,7 +88,7 @@ function utteranceDossier(vworld: string, kind: "insincere" | "false-sincere", t
   const sp = speakersOf(vworld)!;
   const vw = catalog.worlds.gold[vworld];
   b.select("What was said", `SELECT ?s ?p ?o WHERE { GRAPH <${NS.asserted}${vworld}> { ?s ?p ?o } }`,
-    (rows) => `The statement records ${rows.length === 1 ? "one claim" : rows.length + " claims"}: ${lst(rows.map((r) => "“" + plain(renderTriple(r.s, r.p, r.o)) + "”"))}. A statement keeps what was said, without assuming the speaker means it (DEC: verbatim world).`);
+    (rows) => `The statement records ${rows.length === 1 ? "one proposition" : rows.length + " propositions"}: ${lst(rows.map((r) => "“" + plain(renderTriple(r.s, r.p, r.o)) + "”"))}. A statement keeps what was said, without assuming the speaker means it (DEC: verbatim world).`);
   b.select("Who said it, to whom, reported by whom", `SELECT ?act ?speaker ?addressee ?reporter WHERE {
       ?act prof:hasContent <${NS.w + vworld}> ; crm:P14_carried_out_by ?speaker .
       OPTIONAL { ?act prof:addressee ?addressee } OPTIONAL { ?act prof:reportedBy ?reporter } }`,
@@ -90,12 +98,16 @@ function utteranceDossier(vworld: string, kind: "insincere" | "false-sincere", t
       return s + (sp.addressee ? ` It is addressed to ${label(sp.addressee)}.` : "") + (sp.reporter ? ` It is known only through ${label(sp.reporter)}'s report.` : "");
     });
   b.select("The speaker's own beliefs", `SELECT ?agent ?world WHERE { VALUES ?agent { ${sp.speakers.map((x) => `<${x}>`).join(" ")} } ?agent prof:believes ?world }`,
-    (rows) => `What ${lst([...new Set(rows.map((r) => label(r.agent.value)))])} believe${rows.length > 1 ? "" : "s"} is kept in “${worldTitle(NS.w + beliefWorld)}”. Facts from Reality do not leak into it (DEC: doxastic world).`);
+    (rows) => `What ${lst([...new Set(rows.map((r) => label(r.agent.value)))])} believe${rows.length > 1 ? "" : "s"} is kept in “${worldTitle(NS.w + beliefWorld)}”. What is true in Reality does not leak into it (DEC: doxastic world).`);
   if (kind === "insincere") {
     const w = bst.witnesses![0];
-    const ax = w.axiom.kind === "disjoint" ? `the rule that nothing is both ${humanClass(w.axiom.a)} and ${humanClass(w.axiom.b)}` : `the assumption that “${localName(w.axiom.predicate)}” has one value only`;
+    const ax = w.axiom.kind === "disjoint" ? `the rule that nothing is both ${humanClass(w.axiom.a)} and ${humanClass(w.axiom.b)}`
+      : w.axiom.kind === "distinct" ? "the rule that two names cannot be the same person and not the same person (OWL itself, no added assumption)"
+      : `the assumption that “${localName(w.axiom.predicate)}” has one value only`;
     b.select("Why the speaker cannot believe it", w.axiom.kind === "disjoint"
       ? `SELECT ?d WHERE { GRAPH <${NS.w + beliefWorld}> { <${t.s.value}> a ?d } { GRAPH <${NS.asserted}shared> { <${t.o.value}> owl:disjointWith ?d } } UNION { GRAPH <${NS.asserted}shared> { ?d owl:disjointWith <${t.o.value}> } } }`
+      : w.axiom.kind === "distinct"
+      ? `SELECT ?x ?y WHERE { GRAPH <${NS.w + beliefWorld}> { ?x <${w.triple.p.value}> ?y } VALUES (?x ?y) { (<${t.s.value}> <${t.o.value}>) (<${t.o.value}> <${t.s.value}>) } }`
       : `SELECT ?z WHERE { GRAPH <${NS.w + beliefWorld}> { <${t.s.value}> <${t.p.value}> ?z } FILTER(?z != <${t.o.value}>) }`,
       () => `The speaker's beliefs contain “${plain(w.parts)}” (${w.origin === "asserted" ? "stated there" : w.origin === "received" ? "inherited from " + w.originWorld : "inferred there by DEC"}). By ${ax}, this excludes “${T(t)}”. So the speaker said something they believed false.`);
   } else {
@@ -103,7 +115,8 @@ function utteranceDossier(vworld: string, kind: "insincere" | "false-sincere", t
       (x) => x ? `Yes: “${T(t)}” is among the speaker's beliefs. Saying it was sincere.` : `Not directly (status among the beliefs: ${bst.status}).`);
   }
   const rw = rst.witnesses?.[0];
-  b.select("Is it true in Reality?", rw ? `SELECT ?d WHERE { <${t.s.value}> a ?d . { GRAPH <${NS.asserted}shared> { <${t.o.value}> owl:disjointWith ?d } } UNION { GRAPH <${NS.asserted}shared> { ?d owl:disjointWith <${t.o.value}> } } }`
+  b.select("Is it true in Reality?", rw?.axiom.kind === "distinct" ? `SELECT ?x ?y WHERE { ?x <${rw.triple.p.value}> ?y VALUES (?x ?y) { (<${t.s.value}> <${t.o.value}>) (<${t.o.value}> <${t.s.value}>) } }`
+      : rw ? `SELECT ?d WHERE { <${t.s.value}> a ?d . { GRAPH <${NS.asserted}shared> { <${t.o.value}> owl:disjointWith ?d } } UNION { GRAPH <${NS.asserted}shared> { ?d owl:disjointWith <${t.o.value}> } } }`
       : `SELECT ?p ?o WHERE { <${t.s.value}> ?p ?o FILTER(?p = <${t.p.value}>) }`,
     () => rst.status.startsWith("contradicted") ? `No. Reality contains “${plain(rw!.parts)}”${rw!.origin === "received" ? " (from " + worldTitle(NS.w + rw!.originWorld!) + ")" : ""}, so what was said is false in the story.` : `Reality does not show it to be false (status: ${rst.status}).`);
   b.select("DEC's own verdict", `SELECT ?run ?relation ?other WHERE { GRAPH <${GRAPHS.runs}> { ?d ed:world <${NS.w + vworld}> ; ed:relation ?relation ; ed:run ?run . OPTIONAL { ?d ed:otherWorld ?other } } } ORDER BY ?run`,
@@ -126,10 +139,10 @@ function utteranceDossier(vworld: string, kind: "insincere" | "false-sincere", t
       ? { word: "Lie", sub: bst.witnesses![0].axiom.kind === "closure" ? "says what he believes false · if one job at a time" : "says what he believes false" }
       : { word: "Honest mistake", sub: "said in good faith, but false" },
     summary: kind === "insincere"
-      ? `${label(sp.asserted)} said that ${T(t)}, but ${label(believer)}'s own beliefs exclude it, and Reality rules it out.`
-      : `${label(sp.asserted)} said that ${T(t)} and believed it, but Reality rules it out. A false statement can be sincere.`,
+      ? `${label(sp.asserted)} said${sp.addressee ? ` to ${label(sp.addressee)}` : ""} that ${reported(t, sp.asserted)}, but ${believer === sp.asserted ? "his" : label(believer) + "'s"} own beliefs exclude it, and Reality rules it out.`
+      : `${label(sp.asserted)} said${sp.addressee ? ` to ${label(sp.addressee)}` : ""} that ${reported(t, sp.asserted)} and believed it, but Reality rules it out. A false statement can be sincere.`,
     anchors: anchorsFor([t], catalog.worlds.gold[vworld].segments), steps: b.steps, caveats, dec: decDiagnostics(vworld, "gold"),
-    graph: buildGraph(props, "gold", { worlds: [vworld, beliefWorld, "reality", "holmes_reconstruction"] }),
+    ...fg(props, "gold", { worlds: [vworld, beliefWorld, "reality", "holmes_reconstruction"] }),
   };
 }
 
@@ -193,7 +206,7 @@ function delusionalDossier(w: WorldInfo): Dossier {
   const props = (conflicts.length ? conflicts.map((x) => x.t) : content).slice(0, 8);
   return {
     id: `delusional-${w.local}`, number: 0, type: "delusional", typeLabel: pc.length === 0 ? "False alarm" : "Delusion", title: w.title, subtitle: w.desc, verdict, stamp, summary, mode: "gold",
-    anchors: anchorsFor(props, w.segments.slice(0, 12)), steps: b.steps, caveats, dec, graph: buildGraph(props, "gold", { worlds: [w.local, "reality", "holmes_reconstruction"] }),
+    anchors: anchorsFor(props, w.segments.slice(0, 12)), steps: b.steps, caveats, dec, ...fg(props, "gold", { worlds: [w.local, "reality", "holmes_reconstruction"] }),
   };
 }
 
@@ -202,7 +215,7 @@ function identityDossier(): Dossier {
   const b = new Builder();
   const H = NS.st + "hosmer", Wb = NS.st + "windibank", M = NS.st + "mary";
   b.select("Where the identity is asserted", `SELECT ?g WHERE { GRAPH ?g { { <${H}> owl:sameAs <${Wb}> } UNION { <${Wb}> owl:sameAs <${H}> } } FILTER(STRSTARTS(STR(?g), "${NS.asserted}")) }`,
-    (rows) => `“Hosmer Angel is James Windibank” is stated in ${lst(rows.map((r) => "“" + worldTitle(NS.w + localName(r.g.value)) + "”"))}. The two stay distinct entries in the graph: the identity is a claim, not a merge.`);
+    (rows) => `“Hosmer Angel is James Windibank” is stated in ${lst(rows.map((r) => "“" + worldTitle(NS.w + localName(r.g.value)) + "”"))}. The two stay distinct entries in the graph: the identity is a proposition, not a merge.`);
   b.ask("Is it true in Reality?", `ASK { <${H}> owl:sameAs <${Wb}> }`,
     (x) => x ? "Yes. The story accepts Holmes's solution, so DEC copies it into Reality (DEC: epistemic → reality permeation)." : "No.", "dec");
   b.ask("Does Mary hold it?", `ASK { GRAPH <${NS.w}mary_D1> { <${H}> owl:sameAs <${Wb}> } }`,
@@ -223,31 +236,31 @@ function identityDossier(): Dossier {
     id: "identity-hosmer", number: 0, type: "identity", typeLabel: "Identity", title: "Who is Hosmer Angel?", mode: "gold",
     subtitle: "One man, two names, two points of view", verdict: { label: "True in Reality, unknown to Mary", tone: "black" },
     stamp: { word: "Same person", sub: "true in Reality, unknown to Mary" },
-    summary: "Holmes's solution makes Hosmer Angel and James Windibank the same man in Reality. DEC keeps the identity where it belongs: it changes the facts (Mary was engaged to her stepfather) but never enters Mary's beliefs.",
+    summary: "Holmes's solution makes Hosmer Angel and James Windibank the same man in Reality. DEC keeps the identity where it belongs: it changes what is true (Mary was engaged to her stepfather) but never enters Mary's beliefs.",
     anchors: anchorsFor(props, ["P126.S11", "P041.S02"]), steps: b.steps, caveats: [{ kind: "assumption", text: "The identity is Holmes's conclusion. The story accepts it: Windibank half-admits it (P127.S01) and the firm's letter confirms it (P136.S06)." }],
-    dec: decDiagnostics("holmes_reconstruction", "gold"), graph: buildGraph(props, "gold", { worlds: ["holmes_reconstruction", "mary_D1", "reality", "windibank_beliefs"] }),
+    dec: decDiagnostics("holmes_reconstruction", "gold"), ...fg(props, "gold", { worlds: ["holmes_reconstruction", "mary_D1", "reality", "windibank_beliefs"] }),
   };
 }
 
 function consequencesDossier(): Dossier {
   const b = new Builder();
   const Wb = NS.st + "windibank", H = NS.st + "hosmer";
-  const rows = b.select("Facts about Windibank that nobody stated", `SELECT ?p ?o WHERE {
+  const rows = b.select("Propositions about Windibank that nobody stated", `SELECT ?p ?o WHERE {
       <${Wb}> ?p ?o . <${H}> ?p ?o .
       FILTER NOT EXISTS { GRAPH <${NS.asserted}reality> { <${Wb}> ?p ?o } }
       FILTER(?p != owl:sameAs && STRSTARTS(STR(?p), "${NS.prof}") || ?p = crm:P1_is_identified_by) }`,
-    (rs) => `In Reality, ${rs.length} facts hold of Windibank only because they hold of Hosmer Angel: ${lst(rs.map((r) => "“" + plain(renderTriple({ type: "uri", value: Wb }, r.p, r.o)) + "”"))}.`, "dec");
+    (rs) => `In Reality, ${rs.length} propositions hold of Windibank only because they hold of Hosmer Angel: ${lst(rs.map((r) => "“" + plain(renderTriple({ type: "uri", value: Wb }, r.p, r.o)) + "”"))}.`, "dec");
   const values = rows.map((r) => `(<${r.p.value}> ${r.o.type === "uri" ? `<${r.o.value}>` : JSON.stringify(r.o.value)})`).join(" ");
   b.ask("Do any of them enter Mary's world?", `ASK { VALUES (?p ?o) { ${values} } GRAPH <${NS.w}mary_D1> { <${Wb}> ?p ?o } }`,
     (x) => x ? "Yes — this would be a leak." : "No. None of them reaches Mary's beliefs: she knows nothing of him as the bridegroom.");
   const props: Triple[] = rows.slice(0, 5).map((r) => ({ s: { type: "uri", value: Wb }, p: r.p, o: r.o }));
   return {
     id: "consequences-identity", number: 0, type: "consequence", typeLabel: "Inference", title: "What follows from the identity", mode: "gold",
-    subtitle: "Facts DEC adds to Reality once Hosmer is Windibank", verdict: { label: "Inferred by DEC, never stated", tone: "black" },
+    subtitle: "Propositions DEC adds to Reality once Hosmer is Windibank", verdict: { label: "Inferred by DEC, never stated", tone: "black" },
     stamp: { word: "Inferred", sub: "by DEC, never stated" },
-    summary: "Nobody states these facts: DEC infers them in Reality from what holds of Hosmer and the accepted identity (e.g. Windibank wore tinted glasses).",
+    summary: "Nobody states these propositions: DEC infers them in Reality from what holds of Hosmer and the accepted identity (e.g. Windibank wore tinted glasses).",
     anchors: anchorsFor(rows.map((r) => ({ s: { type: "uri", value: H }, p: r.p, o: r.o })), ["P051.S06", "P126.S11"]), steps: b.steps, caveats: [{ kind: "semantics", text: "These are the reasoner's inferences, not readings of the text." }],
-    dec: [], graph: buildGraph(props, "gold", { worlds: ["reality", "mary_D1", "holmes_reconstruction"] }),
+    dec: [], ...fg(props, "gold", { worlds: ["reality", "mary_D1", "holmes_reconstruction"] }),
   };
 }
 
@@ -265,7 +278,7 @@ function hypothesisDossier(simWorld: string, goldTwin?: string): Dossier {
     const flagged = decRuns.filter((r) => r.diagnostics.some((d) => d.includes(NS.w + simWorld + " ") && d.includes("disagreesWith") && (d.includes("reality") || d.includes("DefaultGraph"))));
     const content = contentTriples(simWorld, ck);
     const established = content.length > 0 && content.every((t) => ask(`ASK { GRAPH <${G("reality", ck).M}> { ${nt(t)} } }`));
-    states.push(`${STAGE[ck]}: ${pc.filter((c) => c.kind === "disjoint").length ? "ruled out" : established ? "true" : "still possible"}` + (decRuns.length ? ` (DEC ${flagged.length ? "flags a conflict" : "finds no conflict"})` : ""));
+    states.push(`${STAGE[ck]}: ${pc.filter((c) => c.kind !== "closure").length ? "ruled out" : established ? "true" : "still possible"}` + (decRuns.length ? ` (DEC ${flagged.length ? "flags a conflict" : "finds no conflict"})` : ""));
     b.select(`Up to “${STAGE[ck]}”`,
       `SELECT DISTINCT ?x ?c ?d WHERE { GRAPH <${G(simWorld, ck).M}> { ?x a ?c } GRAPH <${G("reality", ck).M}> { ?x a ?d }
         { GRAPH <${G("shared", ck).A}> { ?c owl:disjointWith ?d } } UNION { GRAPH <${G("shared", ck).A}> { ?d owl:disjointWith ?c } } }`,
@@ -274,7 +287,7 @@ function hypothesisDossier(simWorld: string, goldTwin?: string): Dossier {
         : `Nothing known so far rules it out: still possible (which is not the same as proven).`);
   }
   const final = states.at(-1)!;
-  const incompatible = final.includes("incompatible");
+  const incompatible = final.includes("ruled out");
   return {
     id: `hypothesis-${simWorld}`, number: 0, type: "hypothesis", typeLabel: "A reader's guess over time", title: w.title, subtitle: "Spoiler-free reading, stage by stage", mode: "C4",
     verdict: incompatible ? { label: "Possible until the unmasking, then ruled out", tone: "red" }
@@ -284,7 +297,7 @@ function hypothesisDossier(simWorld: string, goldTwin?: string): Dossier {
     summary: states.join(" · "), anchors: w.segments.length ? w.segments : ["P096.S04", "P100.S03", "P118.S06", "P128.S11"], steps: b.steps,
     caveats: [{ kind: "scope", text: "The stages simulate what a first-time READER knows, not what Holmes knows. At the unmasking, Holmes's solution is accepted by typing it as an accepted account (DEC has no “settle” operation)." },
       { kind: "attribution", text: "These guesses belong to a simulated reader (st:solver), not to a character." }],
-    dec: (["C3", "C4"] as Mode[]).flatMap((ck) => decDiagnostics(simWorld, ck)), graph: buildGraph(contentTriples(simWorld, "C4").slice(0, 4), "C4", { worlds: [simWorld, "reality", "w10", "w01"] }),
+    dec: (["C3", "C4"] as Mode[]).flatMap((ck) => decDiagnostics(simWorld, ck)), ...fg(contentTriples(simWorld, "C4").slice(0, 4), "C4", { worlds: [simWorld, "reality", "w10", "w01"] }),
   };
 }
 
@@ -302,7 +315,7 @@ function watsonDossier(): Dossier {
     verdict: { label: "Rejected by Holmes, not disproved", tone: "grey" }, stamp: { word: "Rejected", sub: "by Holmes, not disproved" },
     summary: "Holmes sets aside Watson's explanation of the typed signature, yet nothing in the data rules it out. The edition does not invent a contradiction.",
     anchors: ["P099.S01", "P100.S01"], steps: b.steps, caveats: [{ kind: "semantics", text: "A guess inherits Reality (DEC: conjectural permeation); only its own content is checked here." }],
-    dec: decDiagnostics("watson_hyp", "gold"), graph: buildGraph(contentTriples("watson_hyp"), "gold", { worlds: ["watson_hyp", "reality"] }),
+    dec: decDiagnostics("watson_hyp", "gold"), ...fg(contentTriples("watson_hyp"), "gold", { worlds: ["watson_hyp", "reality"] }),
   };
 }
 
@@ -313,7 +326,7 @@ function typewriterDossier(): Dossier {
   const S = NS.st;
   b.select("The evidence, up to “The typewriter”", `SELECT ?x ?profile WHERE { GRAPH <${g("reality").M}> { ?x prof:hasDefectProfile ?profile } }`,
     (rows) => `At this point, ${lst(rows.map((r) => label(r.x.value)))} show the same defects (${rows[0] ? label(rows[0].profile.value) : "?"}).`);
-  b.ask("Is the machine identity a fact?", `ASK { GRAPH <${g("reality").M}> { <${S}m1> owl:sameAs <${S}m2> } }`, (x) => x ? "Yes." : "No: shared defects do not, by themselves, make two machines one.");
+  b.ask("Is the machine identity true in Reality?", `ASK { GRAPH <${g("reality").M}> { <${S}m1> owl:sameAs <${S}m2> } }`, (x) => x ? "Yes." : "No: shared defects do not, by themselves, make two machines one.");
   b.ask("Under Holmes's principle?", `ASK { GRAPH <${g("w22").M}> { <${S}m1> owl:sameAs <${S}m2> } }`,
     (x) => x ? "Yes. Inside Holmes's assumption that “no two of them write exactly alike”, DEC infers that the two machines are one — but only there, as a supposition." : "No.", "dec");
   b.select("…so the letters were typed on the office machine", `SELECT ?letter WHERE { GRAPH <${g("w22").M}> { ?letter prof:typedOn <${S}m2> ; prof:purportsToBeFrom <${S}pC> } }`,
@@ -324,7 +337,7 @@ function typewriterDossier(): Dossier {
     (rows) => `DEC (run T09c, assuming one author per letter) reports conflicts between: ${lst(rows.map((r) => `${worldTitle(r.h.value)} ↔ ${worldTitle(r.other.value)}`))}.`, "dec");
   const ident = identicalClosedValues("C3", g("w22").M, g("w23").M);
   b.select("Which of these are real?", `SELECT ?x ?y WHERE { GRAPH <${g("w22").M}> { ?x prof:writtenBy ?y } GRAPH <${g("w23").M}> { ?x prof:writtenBy ?y } }`,
-    () => `Stepfather vs other clerk is a real clash, but only if a letter has one author. The pairs with Holmes's typewriter assumption are false alarms: both sides hold the SAME fact (${lst(ident.map((i) => label(i.x) + " written by " + label(i.y)))}) and DEC's single-value check fires on identical values.`);
+    () => `Stepfather vs other clerk is a real clash, but only if a letter has one author. The pairs with Holmes's typewriter assumption are false alarms: both sides hold the SAME proposition (${lst(ident.map((i) => label(i.x) + " written by " + label(i.y)))}) and DEC's single-value check fires on identical values.`);
   void pairs;
   return {
     id: "typewriter", number: 0, type: "typewriter", typeLabel: "Evidence", title: "What the typewritten letters prove", subtitle: "Up to “The typewriter”", mode: "C3",
@@ -336,7 +349,7 @@ function typewriterDossier(): Dossier {
       { kind: "attribution", text: "“Another clerk typed them” is a what-if added by the editors; it is not in the text." },
       { kind: "defect", text: "The extra conflicts with Holmes's typewriter assumption come from DEC's single-value bug (identical values)." }],
     dec: (["w23", "w24", "w22"]).flatMap((w) => decDiagnostics(w, "C3")),
-    graph: buildGraph([{ s: { type: "uri", value: S + "m1" }, p: { type: "uri", value: NS.owl + "sameAs" }, o: { type: "uri", value: S + "m2" } },
+    ...fg([{ s: { type: "uri", value: S + "m1" }, p: { type: "uri", value: NS.owl + "sameAs" }, o: { type: "uri", value: S + "m2" } },
       { s: { type: "uri", value: S + "d1" }, p: { type: "uri", value: NS.prof + "writtenBy" }, o: { type: "uri", value: S + "pB" } }], "C3", { worlds: ["w22", "w23", "w24", "reality"] }),
   };
 }
@@ -358,7 +371,7 @@ function predictionDossier(): Dossier {
     stamp: { word: "Predicted", sub: "never observed in the text" },
     summary: "The reader learns the solution; Mary never does, in the text. Holmes's sentence predicts how she would react to a telling that never happens.",
     anchors: ["P079.S03", "P137.S01", "P138.S01", "P138.S02"], steps: b.steps, caveats: [{ kind: "semantics", text: "DEC has no “if… then”: the prediction is modelled as a belief of Holmes about hypothetical events." }],
-    dec: decDiagnostics("holmes_prediction", "gold"), graph: buildGraph([{ s: { type: "uri", value: NS.st + "hyp_reaction" }, p: { type: "uri", value: NS.prof + "rejects" }, o: { type: "uri", value: NS.st + "hyp_telling" } },
+    dec: decDiagnostics("holmes_prediction", "gold"), ...fg([{ s: { type: "uri", value: NS.st + "hyp_reaction" }, p: { type: "uri", value: NS.prof + "rejects" }, o: { type: "uri", value: NS.st + "hyp_telling" } },
       { s: { type: "uri", value: NS.st + "hosmer" }, p: { type: "uri", value: NS.rdf + "type" }, o: { type: "uri", value: NS.prof + "ExpectedToReturn" } }], "gold", { worlds: ["holmes_prediction", "mary_D1", "reality"] }),
   };
 }
@@ -378,7 +391,7 @@ function nameDossier(app: string): Dossier {
     (rows) => lst(rows.map((r) => `${label(r.person.value)}: ${r.asserted.value === "true" ? "stated" : "inferred by DEC through the identity"}`)) + ".", "dec");
   b.select("Who used the name as a persona?", `SELECT ?act ?agent WHERE { GRAPH <${NS.asserted}holmes_reconstruction> { ?act prof:usedAppellation <${A}> ; crm:P14_carried_out_by ?agent } }`,
     (rows) => rows.length ? `${lst([...new Set(rows.map((r) => label(r.agent.value)))])} used this name to impersonate Hosmer (Holmes's solution, P126.S11).` : "No impersonation uses this name.");
-  b.ask("Does Mary's world contain any naming fact?", `ASK { GRAPH w:mary_D1 { ?x crm:P1_is_identified_by ?n } }`,
+  b.ask("Does Mary's world contain any naming proposition?", `ASK { GRAPH w:mary_D1 { ?x crm:P1_is_identified_by ?n } }`,
     (x) => x ? "Yes." : "No: who-is-called-what lives in Reality, and Reality does not leak into Mary's beliefs.");
   return {
     id: `name-${app}`, number: 0, type: "name", typeLabel: "Names", title: `The name ${label(A).replace("the name ", "")}`, subtitle: "A name is not a person", mode: "gold",
@@ -387,7 +400,7 @@ function nameDossier(app: string): Dossier {
     summary: "Names are kept apart from the people they name, and two names are never merged. What a name picks out depends on the point of view: in Reality, “Hosmer Angel” picks out Windibank too.",
     anchors: app === "app_hosmer_angel" ? ["P018.S03", "P093.S01", "P096.S02", "P126.S11"] : ["P020.S02", "P110.S01"], steps: b.steps,
     caveats: [{ kind: "semantics", text: "Two names of the same person are NOT declared identical (no owl:sameAs between names)." }],
-    dec: [], graph: buildGraph([{ s: { type: "uri", value: NS.st + "hosmer" }, p: { type: "uri", value: NS.crm + "P1_is_identified_by" }, o: { type: "uri", value: A } },
+    dec: [], ...fg([{ s: { type: "uri", value: NS.st + "hosmer" }, p: { type: "uri", value: NS.crm + "P1_is_identified_by" }, o: { type: "uri", value: A } },
       { s: { type: "uri", value: NS.st + "windibank" }, p: { type: "uri", value: NS.crm + "P1_is_identified_by" }, o: { type: "uri", value: A } }], "gold", { worlds: ["reality", "holmes_reconstruction"] }),
   };
 }
@@ -402,13 +415,16 @@ export function dossiers(): Dossier[] {
   const delusional = new Set(runs.flatMap((r) => r.dataset === "gold" ? r.diagnostics.filter((d) => d.endsWith("delusionalWorld")).map((d) => d.split(" ")[0]) : []));
   for (const w of Object.values(catalog.worlds.gold)) if (delusional.has(w.iri) && w.decType !== "verbatim") list.push(delusionalDossier(w));
   list.push(hypothesisDossier("w20"), hypothesisDossier("w21"), watsonDossier(), typewriterDossier(), predictionDossier(), nameDossier("app_hosmer_angel"));
+  // numbered in the order of the questions they test (annotations/questions.json); any case file not listed there goes last
+  const rank = (d: Dossier) => { const i = caseOrder.indexOf(d.id); return i < 0 ? caseOrder.length + list.indexOf(d) : i; };
+  list.sort((a, b) => rank(a) - rank(b));
   list.forEach((d, i) => (d.number = i + 1));
   all = list;
   return all;
 }
 
 export function dossierIndex() {
-  return dossiers().map(({ steps, graph, ...rest }) => ({ ...rest, nSteps: steps.length }));
+  return dossiers().map(({ steps, graph, focus, ...rest }) => ({ ...rest, nSteps: steps.length, ...(questionOf(rest.id) ?? {}) }));
 }
 
 export function dossiersForSentence(sid: string) {

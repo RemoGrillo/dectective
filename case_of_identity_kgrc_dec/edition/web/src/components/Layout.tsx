@@ -7,12 +7,11 @@ import { EyeIcon, Medallion } from "./Glyphs";
 
 const NAV = [
   ["/read", "Read"],
-  ["/kaleidoscope", "Kaleidoscope"],
+  ["/perspectives", "Perspectives"],
   ["/deductions", "Deductions"],
   ["/dossiers", "Case files"],
-  ["/cast", "Cast"],
-  ["/worlds", "Worlds"],
-  ["/lab", "SPARQL"],
+  ["/identikit", "Identikit"],
+  ["/interrogation", "Interrogation"],
   ["/method", "How it works"],
 ] as const;
 
@@ -78,18 +77,21 @@ export function Layout() {
   const [open, setOpen] = useState(false);
   const loc = useLocation();
   useEffect(() => setOpen(false), [loc.pathname]);
-  useEffect(() => { if (!loc.hash && !loc.search.includes("s=")) window.scrollTo(0, 0); }, [loc.pathname]);
+  useEffect(() => {
+    if (loc.hash) { const t = setTimeout(() => document.getElementById(loc.hash.slice(1))?.scrollIntoView({ block: "start" }), 60); return () => clearTimeout(t); }
+    if (!loc.search.includes("s=")) window.scrollTo(0, 0);
+  }, [loc.pathname, loc.hash]);
   const st = stageOf(meta, mode);
   return (
     <div className="shell">
       <a className="skip-link" href="#main">Skip to content</a>
       <header className="masthead">
         <div className="masthead-inner">
-          <Link to={withMode("/", mode)} className="brand" aria-label="A Case of Identity — cover">
+          <Link to={withMode("/", mode)} className="brand" aria-label="Arthur Conan Doyle's A Case of Identity — cover">
             <Medallion size={36} />
             <span>
+              <span className="brand-author">Arthur Conan Doyle's</span>
               <span className="brand-title">A Case of Identity</span>
-              <span className="brand-series">An augmented edition</span>
             </span>
           </Link>
           <nav id="mainnav" className={`mainnav ${open ? "open" : ""}`} aria-label="Main">
@@ -118,7 +120,7 @@ export function Layout() {
       </main>
       <footer className="footer">
         <span>Text: Arthur Conan Doyle, <em>A Case of Identity</em> (1891), public domain. Reasoner: DEC (MIT), commit {meta?.decCommit.slice(0, 8) ?? "…"}. Comparison graph: KGRC (CC BY 4.0).</span>
-        <span><Link to={withMode("/method", mode)}>How it works &amp; credits</Link> · <Link to="/lab">SPARQL endpoint</Link></span>
+        <span><Link to={withMode("/method", mode)}>How it works &amp; credits</Link> · <Link to="/interrogation">SPARQL endpoint</Link></span>
       </footer>
     </div>
   );

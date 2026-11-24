@@ -316,6 +316,26 @@
    ]
   },
   {
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "dec_type": null,
+   "file": "prototype/modules/facts/F10_comm_act_denial.trig",
+   "graph": "default",
+   "id": "F10_comm_act_denial",
+   "note": "Windibank's reply to Holmes's comparison of the typewritten letters (P118.S04-S06); added 2026-11-23, after the audit runs",
+   "role": "fact",
+   "segments": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "tags": [
+    "communication",
+    "deception",
+    "identity"
+   ]
+  },
+  {
    "basis": "believed",
    "checkpoint": "C1",
    "dataset": "gold",
@@ -597,6 +617,26 @@
    "tags": [
     "typewriter",
     "hypothesis"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/W15_v_windibank_denial.trig",
+   "graph": "w:v_windibank_denial",
+   "id": "W15_v_windibank_denial",
+   "note": "implicit content: he dismisses Holmes's comparison of the letters as 'fantastic talk' (P119.S02) and speaks of Hosmer Angel as another man ('If you can catch the man, catch him', P119.S03)",
+   "role": "world",
+   "segments": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "tags": [
+    "communication",
+    "deception",
+    "identity"
    ]
   },
   {
@@ -959,6 +999,43 @@
    "tags": [
     "hypothesis",
     "typewriter"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "dec_type": null,
+   "file": "prototype/modules/facts/sF09_denial.trig",
+   "graph": "default",
+   "id": "sF09_denial",
+   "note": "",
+   "role": "fact",
+   "segments": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "tags": [
+    "communication"
+   ]
+  },
+  {
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "dec_type": "verbatim",
+   "file": "prototype/modules/worlds/sW07_v_denial.trig",
+   "graph": "w:w07",
+   "id": "sW07_v_denial",
+   "note": "implicit content: 'fantastic talk', 'If you can catch the man, catch him'",
+   "role": "world",
+   "segments": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "tags": [
+    "communication",
+    "identity"
    ]
   },
   {
@@ -1453,6 +1530,22 @@
     "P138.S01"
    ],
    "world": "reality"
+  },
+  "prop_1b038b4f4be3": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_1b038b4f4be3",
+   "module": "sW07_v_denial",
+   "o": "<http://example.org/dectective/story/pC>",
+   "p": "<http://www.w3.org/2002/07/owl#differentFrom>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "world": "w07"
   },
   "prop_1c67ab4e381f": {
    "anchorLevel": "proposition",
@@ -2796,6 +2889,21 @@
    ],
    "world": "w10"
   },
+  "prop_6820e6f240b6": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_6820e6f240b6",
+   "module": "F10_comm_act_denial",
+   "o": "<http://example.org/dectective/world/v_windibank_denial>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P119.S02"
+   ],
+   "world": "reality"
+  },
   "prop_688469bf97de": {
    "anchorLevel": "proposition",
    "basis": "analyst",
@@ -3274,6 +3382,22 @@
    ],
    "world": "reality"
   },
+  "prop_84913d3106cf": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_84913d3106cf",
+   "module": "sF09_denial",
+   "o": "<http://example.org/dectective/story/pH>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/a4>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "world": "reality"
+  },
   "prop_85721dae8f5a": {
    "anchorLevel": "proposition",
    "basis": "reported",
@@ -3302,6 +3426,22 @@
    "s": "<http://example.org/dectective/story/ca_holmes_prediction>",
    "sentences": [
     "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_86bb278092de": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_86bb278092de",
+   "module": "sF09_denial",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/a4>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
    ],
    "world": "reality"
   },
@@ -3358,6 +3498,22 @@
    ],
    "world": "reality"
   },
+  "prop_8c22c067fbd8": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_8c22c067fbd8",
+   "module": "sF09_denial",
+   "o": "<http://example.org/dectective/world/w07>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/a4>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "world": "reality"
+  },
   "prop_8c48541f6f35": {
    "anchorLevel": "module",
    "basis": "reported",
@@ -3392,6 +3548,22 @@
     "P024.S02",
     "P024.S03",
     "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_8e6bd2c24646": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_8e6bd2c24646",
+   "module": "F10_comm_act_denial",
+   "o": "<http://example.org/dectective/profile#CommunicativeAct>",
+   "p": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+   "s": "<http://example.org/dectective/story/ca_windibank_denial>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
    ],
    "world": "reality"
   },
@@ -4344,6 +4516,22 @@
    ],
    "world": "v_hosmer_cashier"
   },
+  "prop_c1d068027a1c": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_c1d068027a1c",
+   "module": "W15_v_windibank_denial",
+   "o": "<http://example.org/dectective/story/hosmer>",
+   "p": "<http://www.w3.org/2002/07/owl#differentFrom>",
+   "s": "<http://example.org/dectective/story/windibank>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "world": "v_windibank_denial"
+  },
   "prop_c241c8b5e348": {
    "anchorLevel": "module",
    "basis": "reported-accepted",
@@ -4378,6 +4566,22 @@
    "sentences": [
     "P024.S03",
     "P077.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_c55ed9540c9a": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_c55ed9540c9a",
+   "module": "F10_comm_act_denial",
+   "o": "<http://example.org/dectective/story/windibank>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/ca_windibank_denial>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
    ],
    "world": "reality"
   },
@@ -4565,6 +4769,22 @@
     "P128.S11"
    ],
    "world": "windibank_beliefs"
+  },
+  "prop_cea535c1b4bd": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_cea535c1b4bd",
+   "module": "sF09_denial",
+   "o": "<http://example.org/dectective/story/pB>",
+   "p": "<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>",
+   "s": "<http://example.org/dectective/story/a4>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "world": "reality"
   },
   "prop_cf46ef059e31": {
    "anchorLevel": "proposition",
@@ -4954,6 +5174,22 @@
    ],
    "world": "reality"
   },
+  "prop_e7c8d615570d": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_e7c8d615570d",
+   "module": "F10_comm_act_denial",
+   "o": "<http://example.org/dectective/story/holmes>",
+   "p": "<http://example.org/dectective/profile#addressee>",
+   "s": "<http://example.org/dectective/story/ca_windibank_denial>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
+   ],
+   "world": "reality"
+  },
   "prop_e8f6af52a5bf": {
    "anchorLevel": "proposition",
    "basis": "reconstructed",
@@ -5141,6 +5377,22 @@
    "s": "<http://example.org/dectective/story/ca_holmes_prediction>",
    "sentences": [
     "P138.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_ed9d552ffcdf": {
+   "anchorLevel": "proposition",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "gold",
+   "id": "prop_ed9d552ffcdf",
+   "module": "F10_comm_act_denial",
+   "o": "<http://example.org/dectective/world/v_windibank_denial>",
+   "p": "<http://example.org/dectective/profile#hasContent>",
+   "s": "<http://example.org/dectective/story/ca_windibank_denial>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
    ],
    "world": "reality"
   },
@@ -5343,6 +5595,22 @@
    "sentences": [
     "P018.S03",
     "P093.S01"
+   ],
+   "world": "reality"
+  },
+  "prop_fc5cd47af9c1": {
+   "anchorLevel": "module",
+   "basis": "observed",
+   "checkpoint": "C4",
+   "dataset": "sim",
+   "id": "prop_fc5cd47af9c1",
+   "module": "sF09_denial",
+   "o": "<http://example.org/dectective/world/w07>",
+   "p": "<http://example.org/dectective/profile#uttered>",
+   "s": "<http://example.org/dectective/story/pB>",
+   "sentences": [
+    "P119.S02",
+    "P119.S03"
    ],
    "world": "reality"
   },
@@ -5599,6 +5867,7 @@
      "T06a_belief_worlds_vs_reality",
      "T06b_mary_delusional_label",
      "T07c_watson",
+     "check-denial",
      "complement-gold"
     ],
     "modules": [
@@ -5733,6 +6002,7 @@
      "T10a_no_telling_event",
      "T10b_rejection_only_predicted",
      "T10c_mary_last_belief",
+     "check-denial",
      "complement-gold"
     ],
     "modules": [
@@ -5744,14 +6014,16 @@
      "F06_comm_acts",
      "F07_comm_acts_visit",
      "F08_holmes_acts",
-     "F09_crminf"
+     "F09_crminf",
+     "F10_comm_act_denial"
     ],
     "notes": [
      "events experienced by Mary, accepted by the narrative; journeys only as announced",
      "st:machine_H = 'the (unknown) machine the four letters were typed on'; defect profile observed in P118.S06",
      "KeenSighted from narrator (P111); letter_W acknowledged by Windibank (P112-P113); office machine shared (P117, admitted)",
      "no communicative act addressed to Mary after P080 exists in the text",
-     "st:analyst = extradiegetic annotator introducing an alternative hypothesis for testing (not in the text)"
+     "st:analyst = extradiegetic annotator introducing an alternative hypothesis for testing (not in the text)",
+     "Windibank's reply to Holmes's comparison of the typewritten letters (P118.S04-S06); added 2026-11-23, after the audit runs"
     ],
     "segments": [
      "P014.S01",
@@ -5789,6 +6061,8 @@
      "P118.S04",
      "P118.S05",
      "P118.S06",
+     "P119.S02",
+     "P119.S03",
      "P124.S02",
      "P126.S01",
      "P126.S11",
@@ -5830,6 +6104,7 @@
      "T10a_no_telling_event",
      "T10b_rejection_only_predicted",
      "T10c_mary_last_belief",
+     "check-denial",
      "complement-gold"
     ],
     "modules": [
@@ -5919,6 +6194,7 @@
     "iri": "http://example.org/dectective/world/v_windibank_delighted",
     "local": "v_windibank_delighted",
     "materializedBy": [
+     "check-denial",
      "complement-gold"
     ],
     "modules": [
@@ -5929,6 +6205,37 @@
      "P115.S02"
     ],
     "title": "Windibank: “I am delighted to hear it”"
+   },
+   "v_windibank_denial": {
+    "basis": [
+     "observed"
+    ],
+    "checkpoint": "C4",
+    "decType": "verbatim",
+    "desc": "His answer when Holmes shows that the letters from Hosmer have the same typing defects as his own: he dismisses it and speaks of Hosmer Angel as another man (“If you can catch the man, catch him”). Implied: he is not Hosmer Angel.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/windibank",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/v_windibank_denial",
+    "local": "v_windibank_denial",
+    "materializedBy": [
+     "check-denial",
+     "complement-gold"
+    ],
+    "modules": [
+     "W15_v_windibank_denial"
+    ],
+    "notes": [
+     "implicit content: he dismisses Holmes's comparison of the letters as 'fantastic talk' (P119.S02) and speaks of Hosmer Angel as another man ('If you can catch the man, catch him', P119.S03)"
+    ],
+    "segments": [
+     "P119.S02",
+     "P119.S03"
+    ],
+    "title": "Windibank: “this sort of fantastic talk”"
    },
    "v_windibank_machine": {
     "basis": [
@@ -5946,6 +6253,7 @@
     "iri": "http://example.org/dectective/world/v_windibank_machine",
     "local": "v_windibank_machine",
     "materializedBy": [
+     "check-denial",
      "complement-gold"
     ],
     "modules": [
@@ -6034,7 +6342,8 @@
     "local": "windibank_beliefs",
     "materializedBy": [
      "T05a_content_vs_speaker_belief",
-     "T05b_sincere_but_false"
+     "T05b_sincere_but_false",
+     "check-denial"
     ],
     "modules": [
      "W06_windibank_beliefs"
@@ -6094,6 +6403,7 @@
      "sF05_documents",
      "sF06_visit",
      "sF08_solver_authorship",
+     "sF09_denial",
      "sF07_reconstruction"
     ],
     "notes": [],
@@ -6123,6 +6433,8 @@
      "P116.S04",
      "P117.S01",
      "P118.S06",
+     "P119.S02",
+     "P119.S03",
      "P126.S11",
      "P127.S01",
      "P128.S07"
@@ -6335,6 +6647,36 @@
      "P115.S02"
     ],
     "title": "Windibank: “delighted”"
+   },
+   "w07": {
+    "basis": [
+     "observed"
+    ],
+    "checkpoint": "C4",
+    "decType": "verbatim",
+    "desc": "Said to Holmes, about the letters. Implied: he is not Hosmer Angel.",
+    "governedBy": [
+     {
+      "agent": "http://example.org/dectective/story/pB",
+      "predicate": "uttered"
+     }
+    ],
+    "iri": "http://example.org/dectective/world/w07",
+    "local": "w07",
+    "materializedBy": [
+     "complement-C4"
+    ],
+    "modules": [
+     "sW07_v_denial"
+    ],
+    "notes": [
+     "implicit content: 'fantastic talk', 'If you can catch the man, catch him'"
+    ],
+    "segments": [
+     "P119.S02",
+     "P119.S03"
+    ],
+    "title": "Windibank: “fantastic talk”"
    },
    "w10": {
     "basis": [

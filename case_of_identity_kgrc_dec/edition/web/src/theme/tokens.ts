@@ -14,6 +14,7 @@ export const light = {
   redSoft: "#FCE7E9",   // wash behind red-marked content (text on it: ink or red)
   onRed: "#FFFFFF",
   onYellow: "#141414",
+  decBlue: "#1E88E5",   // graphics only (timeline): what DEC infers, what flows into Reality
 } as const;
 
 export const dark = {
@@ -29,7 +30,16 @@ export const dark = {
   redSoft: "#3A1619",
   onRed: "#141414",
   onYellow: "#141414",
+  decBlue: "#5BB0FF",
 } as const;
+
+/** Non-text marks (WCAG 1.4.11, ≥ 3:1): the timeline's blue rings and arrows on paper and on Reality's yellow lane. */
+export const graphicPairs: { name: string; fg: string; bg: string; min: number }[] = [
+  { name: "light: DEC blue on paper", fg: light.decBlue, bg: light.paper, min: 3 },
+  { name: "light: DEC blue on yellow wash (Reality lane)", fg: light.decBlue, bg: light.yellowSoft, min: 3 },
+  { name: "dark: DEC blue on paper", fg: dark.decBlue, bg: dark.paper, min: 3 },
+  { name: "dark: DEC blue on yellow wash (Reality lane)", fg: dark.decBlue, bg: dark.yellowSoft, min: 3 },
+];
 
 /** Text/background pairs actually used by the UI, with the minimum ratio each must meet. */
 export const contrastPairs: { name: string; fg: string; bg: string; min: number }[] = [

@@ -25,6 +25,8 @@ Il reasoner DEC degli autori (`fvitali/dec-reasoner` @ `e6775b39`) è stato **co
 |---|---|---|---|
 | **28/29** | 15/29 | 15/29 | 10/29 |
 
+Dopo l'audit (2026-11-23) il modello gold è stato esteso con un enunciato mancante: la negazione di Windibank a Holmes a P119 (“fantastic talk… If you can catch the man”), cioè “non sono Hosmer Angel”, modulo `W15_v_windibank_denial` più l'atto `F10_comm_act_denial`. La suite T01–T10 non è stata rieseguita: i suoi numeri si riferiscono al modello precedente. Un'esecuzione DEC dedicata (`check-denial`) conferma la menzogna. Dettagli e impatto in `edition/README.md`.
+
 - **Valore di DEC:**
   - permeazione tipizzata epistemico → realtà (T01a, T01c, T02c, T08c);
   - mondi congetturali che ricevono i fatti (T03c, T08d, T09a);
@@ -57,12 +59,12 @@ Il reasoner DEC degli autori (`fvitali/dec-reasoner` @ `e6775b39`) è stato **co
 - Conferma degli autori di DEC su difetti, default e semantica dei mondi verbatim e annidati.
 - Valutazione LLM con e senza DEC (progettata, non eseguita: `reports/next_steps.md`).
 
-## Edizione digitale aumentata (`edition/`)
+## Banco di prova web per DEC (`edition/`)
 
-Interfaccia web full-stack (Node: Express + Oxigraph, React + Vite) che presenta il racconto integrale con le inferenze DEC rese visibili frase per frase. Comprende:
+Interfaccia web full-stack (Node: Express + Oxigraph, React + Vite) che usa il racconto integrale come banco di prova per DEC e ne mostra il metodo: le inferenze sono visibili frase per frase. Il pubblico è chi studia grafi di conoscenza e prospettive, non il lettore di gialli. Comprende:
 - menzogne, delusioni ed errori in buona fede segnati nel testo;
 - il caleidoscopio: Reality al centro e una fetta per persona, con ciò che dice, crede, conclude o suppone;
-- 13 case file generati automaticamente, con timbro e passi attribuiti a DEC o all'edizione;
+- 14 case file generati automaticamente e ordinati come esperimento. Cinque domande poste a DEC: identità, sincerità, credenze false, ipotesi nel tempo, limiti. Ciascuna ha la risposta, il confronto dell'audit con e senza DEC e una pila di casi; ogni passo è attribuito a DEC o all'edizione;
 - la mappa dei mondi con le segnalazioni DEC riesaminate (conflitto, solo se…, falso allarme dovuto al bug `closedFor`);
 - la lettura senza spoiler in quattro tappe;
 - **Deductions**: DEC eseguito su ogni prefisso della storia (37 indizi). Per ogni punto mostra cosa la macchina può già concludere, perché, e quanto manca alle conclusioni finali;
@@ -84,7 +86,7 @@ prototype/      profile/ (profilo CRM/CRMinf), modules/ (moduli TriG + catalog.j
                 fixtures/ (T01–T10: manifest, .rq, slice), runner/ (harness Java), exploratory/ (E01–E14), results/
 reports/        graph_audit, conceptual_model, reasoning_assessment, reuse_decision, dec_reasoner_notes,
                 dec_performance (+ _tables), next_steps
-edition/        edizione digitale aumentata (server Node + SPA), dati generati da scripts/build_edition_data.py
+edition/        banco di prova web per DEC (server Node + SPA), dati generati da scripts/build_edition_data.py
 ```
 
 ## Riproduzione

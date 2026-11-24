@@ -1,104 +1,104 @@
-@prefix ns1: <http://example.org/dectective/profile#> .
-@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://example.org/dectective/profile#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://example.org/dectective/world/shared> {
-    ns2:E18_Physical_Thing a rdfs:Class ;
-        rdfs:subClassOf ns2:E72_Legal_Object .
+    ns1:E18_Physical_Thing a rdfs:Class ;
+        rdfs:subClassOf ns1:E72_Legal_Object .
 
-    ns2:E19_Physical_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E18_Physical_Thing .
+    ns1:E19_Physical_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E18_Physical_Thing .
 
-    ns2:E1_CRM_Entity a rdfs:Class .
+    ns1:E1_CRM_Entity a rdfs:Class .
 
-    ns2:E20_Biological_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E19_Physical_Object .
+    ns1:E20_Biological_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E19_Physical_Object .
 
-    ns2:E21_Person a rdfs:Class ;
-        rdfs:subClassOf ns2:E20_Biological_Object,
-            ns2:E39_Actor .
+    ns1:E21_Person a rdfs:Class ;
+        rdfs:subClassOf ns1:E20_Biological_Object,
+            ns1:E39_Actor .
 
-    ns2:E22_Human-Made_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E19_Physical_Object,
-            ns2:E24_Physical_Human-Made_Thing .
+    ns1:E22_Human-Made_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E19_Physical_Object,
+            ns1:E24_Physical_Human-Made_Thing .
 
-    ns2:E24_Physical_Human-Made_Thing a rdfs:Class ;
-        rdfs:subClassOf ns2:E18_Physical_Thing,
-            ns2:E71_Human-Made_Thing .
+    ns1:E24_Physical_Human-Made_Thing a rdfs:Class ;
+        rdfs:subClassOf ns1:E18_Physical_Thing,
+            ns1:E71_Human-Made_Thing .
 
-    ns2:E28_Conceptual_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E71_Human-Made_Thing .
+    ns1:E28_Conceptual_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E71_Human-Made_Thing .
 
-    ns2:E2_Temporal_Entity a rdfs:Class ;
-        rdfs:subClassOf ns2:E1_CRM_Entity .
+    ns1:E2_Temporal_Entity a rdfs:Class ;
+        rdfs:subClassOf ns1:E1_CRM_Entity .
 
-    ns2:E31_Document a rdfs:Class ;
-        rdfs:subClassOf ns2:E73_Information_Object .
+    ns1:E31_Document a rdfs:Class ;
+        rdfs:subClassOf ns1:E73_Information_Object .
 
-    ns2:E39_Actor a rdfs:Class ;
-        rdfs:subClassOf ns2:E77_Persistent_Item .
+    ns1:E39_Actor a rdfs:Class ;
+        rdfs:subClassOf ns1:E77_Persistent_Item .
 
-    ns2:E41_Appellation a rdfs:Class ;
-        rdfs:subClassOf ns2:E90_Symbolic_Object .
+    ns1:E41_Appellation a rdfs:Class ;
+        rdfs:subClassOf ns1:E90_Symbolic_Object .
 
-    ns2:E4_Period a rdfs:Class ;
-        rdfs:subClassOf ns2:E2_Temporal_Entity,
-            ns2:E92_Spacetime_Volume .
+    ns1:E4_Period a rdfs:Class ;
+        rdfs:subClassOf ns1:E2_Temporal_Entity,
+            ns1:E92_Spacetime_Volume .
 
-    ns2:E52_Time-Span a rdfs:Class ;
-        rdfs:subClassOf ns2:E1_CRM_Entity .
+    ns1:E52_Time-Span a rdfs:Class ;
+        rdfs:subClassOf ns1:E1_CRM_Entity .
 
-    ns2:E55_Type a rdfs:Class ;
-        rdfs:subClassOf ns2:E28_Conceptual_Object .
+    ns1:E55_Type a rdfs:Class ;
+        rdfs:subClassOf ns1:E28_Conceptual_Object .
 
-    ns2:E5_Event a rdfs:Class ;
-        rdfs:subClassOf ns2:E4_Period .
+    ns1:E5_Event a rdfs:Class ;
+        rdfs:subClassOf ns1:E4_Period .
 
-    ns2:E70_Thing a rdfs:Class ;
-        rdfs:subClassOf ns2:E77_Persistent_Item .
+    ns1:E70_Thing a rdfs:Class ;
+        rdfs:subClassOf ns1:E77_Persistent_Item .
 
-    ns2:E71_Human-Made_Thing a rdfs:Class ;
-        rdfs:subClassOf ns2:E70_Thing .
+    ns1:E71_Human-Made_Thing a rdfs:Class ;
+        rdfs:subClassOf ns1:E70_Thing .
 
-    ns2:E72_Legal_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E70_Thing .
+    ns1:E72_Legal_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E70_Thing .
 
-    ns2:E73_Information_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E89_Propositional_Object,
-            ns2:E90_Symbolic_Object .
+    ns1:E73_Information_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E89_Propositional_Object,
+            ns1:E90_Symbolic_Object .
 
-    ns2:E74_Group a rdfs:Class ;
-        rdfs:subClassOf ns2:E39_Actor .
+    ns1:E74_Group a rdfs:Class ;
+        rdfs:subClassOf ns1:E39_Actor .
 
-    ns2:E77_Persistent_Item a rdfs:Class ;
-        rdfs:subClassOf ns2:E1_CRM_Entity .
+    ns1:E77_Persistent_Item a rdfs:Class ;
+        rdfs:subClassOf ns1:E1_CRM_Entity .
 
-    ns2:E7_Activity a rdfs:Class ;
-        rdfs:subClassOf ns2:E5_Event .
+    ns1:E7_Activity a rdfs:Class ;
+        rdfs:subClassOf ns1:E5_Event .
 
-    ns2:E89_Propositional_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E28_Conceptual_Object .
+    ns1:E89_Propositional_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E28_Conceptual_Object .
 
-    ns2:E90_Symbolic_Object a rdfs:Class ;
-        rdfs:subClassOf ns2:E28_Conceptual_Object,
-            ns2:E72_Legal_Object .
+    ns1:E90_Symbolic_Object a rdfs:Class ;
+        rdfs:subClassOf ns1:E28_Conceptual_Object,
+            ns1:E72_Legal_Object .
 
-    ns2:E92_Spacetime_Volume a rdfs:Class ;
-        rdfs:subClassOf ns2:E1_CRM_Entity .
+    ns1:E92_Spacetime_Volume a rdfs:Class ;
+        rdfs:subClassOf ns1:E1_CRM_Entity .
 
     <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> a rdfs:Class ;
-        rdfs:subClassOf ns2:E7_Activity .
+        rdfs:subClassOf ns1:E7_Activity .
 
     <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> a rdfs:Class ;
-        rdfs:subClassOf ns2:E2_Temporal_Entity .
+        rdfs:subClassOf ns1:E2_Temporal_Entity .
 
     <http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> a rdfs:Class ;
-        rdfs:subClassOf ns2:E89_Propositional_Object .
+        rdfs:subClassOf ns1:E89_Propositional_Object .
 
     <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> a rdfs:Class ;
-        rdfs:subClassOf ns2:E89_Propositional_Object .
+        rdfs:subClassOf ns1:E89_Propositional_Object .
 
     <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> a rdfs:Class ;
         rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
@@ -106,153 +106,153 @@
     <http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> a rdfs:Class ;
         rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
 
-    ns1:ActualJourney a owl:Class ;
-        rdfs:subClassOf ns1:Journey ;
-        owl:disjointWith ns1:PretendedJourney .
+    ns2:ActualJourney a owl:Class ;
+        rdfs:subClassOf ns2:Journey ;
+        owl:disjointWith ns2:PretendedJourney .
 
-    ns1:ExpectedToReturn a owl:Class ;
+    ns2:ExpectedToReturn a owl:Class ;
         rdfs:comment "Person whom the believer expects to come back (used only inside belief worlds)." ;
-        rdfs:subClassOf ns2:E21_Person .
+        rdfs:subClassOf ns1:E21_Person .
 
-    ns1:VoluntaryDisappearance a owl:Class ;
-        rdfs:subClassOf ns1:Disappearance ;
-        owl:disjointWith ns1:InvoluntaryDisappearance .
+    ns2:VoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns2:Disappearance ;
+        owl:disjointWith ns2:InvoluntaryDisappearance .
 
-    ns1:WeakSighted a owl:Class ;
-        rdfs:subClassOf ns2:E21_Person ;
-        owl:disjointWith ns1:KeenSighted .
+    ns2:WeakSighted a owl:Class ;
+        rdfs:subClassOf ns1:E21_Person ;
+        owl:disjointWith ns2:KeenSighted .
 
-    ns1:addressee a owl:ObjectProperty ;
-        rdfs:domain ns1:CommunicativeAct ;
-        rdfs:range ns2:E39_Actor .
+    ns2:addressee a owl:ObjectProperty ;
+        rdfs:domain ns2:CommunicativeAct ;
+        rdfs:range ns1:E39_Actor .
 
-    ns1:assisted a owl:ObjectProperty ;
-        rdfs:subPropertyOf ns2:P11i_participated_in .
+    ns2:assisted a owl:ObjectProperty ;
+        rdfs:subPropertyOf ns1:P11i_participated_in .
 
-    ns1:attended a owl:ObjectProperty ;
-        rdfs:domain ns2:E21_Person ;
-        rdfs:range ns2:E5_Event .
+    ns2:attended a owl:ObjectProperty ;
+        rdfs:domain ns1:E21_Person ;
+        rdfs:range ns1:E5_Event .
 
-    ns1:believes a owl:ObjectProperty ;
+    ns2:believes a owl:ObjectProperty ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
 
-    ns1:conjectures a owl:ObjectProperty ;
+    ns2:conjectures a owl:ObjectProperty ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
 
-    ns1:disappearedPerson a owl:ObjectProperty ;
-        rdfs:domain ns1:Disappearance ;
-        rdfs:subPropertyOf ns2:P11_had_participant .
+    ns2:disappearedPerson a owl:ObjectProperty ;
+        rdfs:domain ns2:Disappearance ;
+        rdfs:subPropertyOf ns1:P11_had_participant .
 
-    ns1:employedBy a owl:ObjectProperty ;
-        rdfs:domain ns2:E21_Person ;
-        rdfs:range ns2:E74_Group .
+    ns2:employedBy a owl:ObjectProperty ;
+        rdfs:domain ns1:E21_Person ;
+        rdfs:range ns1:E74_Group .
 
-    ns1:engagedTo a owl:ObjectProperty,
+    ns2:engagedTo a owl:ObjectProperty,
             owl:SymmetricProperty ;
-        rdfs:domain ns2:E21_Person ;
-        rdfs:range ns2:E21_Person .
+        rdfs:domain ns1:E21_Person ;
+        rdfs:range ns1:E21_Person .
 
-    ns1:establishes a owl:ObjectProperty ;
+    ns2:establishes a owl:ObjectProperty ;
         rdfs:comment "The actor's account accepted by the narrative as part of the reference reconstruction." ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
 
-    ns1:hasContent a owl:ObjectProperty ;
+    ns2:hasContent a owl:ObjectProperty ;
         rdfs:comment "The proposition set communicated (encoded as a named graph). Communicating it does not imply belief." ;
-        rdfs:domain ns1:CommunicativeAct ;
+        rdfs:domain ns2:CommunicativeAct ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
 
-    ns1:hasDefectProfile a owl:ObjectProperty ;
+    ns2:hasDefectProfile a owl:ObjectProperty ;
         rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
-        rdfs:domain ns1:Typewriter .
+        rdfs:domain ns2:Typewriter .
 
-    ns1:hasOccupation a owl:ObjectProperty ;
-        rdfs:domain ns2:E21_Person ;
-        rdfs:range ns1:Occupation .
+    ns2:hasOccupation a owl:ObjectProperty ;
+        rdfs:domain ns1:E21_Person ;
+        rdfs:range ns2:Occupation .
 
-    ns1:heldBy a owl:ObjectProperty ;
+    ns2:heldBy a owl:ObjectProperty ;
         rdfs:comment "Local shortcut: holder of a belief (CRMinf links it only indirectly via I1/I7 P14 and J2)." ;
         rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> ;
-        rdfs:range ns2:E39_Actor .
+        rdfs:range ns1:E39_Actor .
 
-    ns1:motive a owl:ObjectProperty .
+    ns2:motive a owl:ObjectProperty .
 
-    ns1:purportsToBeFrom a owl:ObjectProperty ;
+    ns2:purportsToBeFrom a owl:ObjectProperty ;
         rdfs:comment "Apparent sender as shown on the document; not authorship." ;
-        rdfs:domain ns1:Letter .
+        rdfs:domain ns2:Letter .
 
-    ns1:purpose a owl:ObjectProperty .
+    ns2:purpose a owl:ObjectProperty .
 
-    ns1:rejects a owl:ObjectProperty .
+    ns2:rejects a owl:ObjectProperty .
 
-    ns1:reportedBy a owl:ObjectProperty ;
+    ns2:reportedBy a owl:ObjectProperty ;
         rdfs:comment "Who reports the act in the text (e.g. Mary reporting Hosmer's words)." ;
-        rdfs:domain ns1:CommunicativeAct ;
-        rdfs:range ns2:E39_Actor .
+        rdfs:domain ns2:CommunicativeAct ;
+        rdfs:range ns1:E39_Actor .
 
-    ns1:showsDefectProfile a owl:ObjectProperty ;
-        rdfs:domain ns1:TypewrittenLetter .
+    ns2:showsDefectProfile a owl:ObjectProperty ;
+        rdfs:domain ns2:TypewrittenLetter .
 
-    ns1:spouseOf a owl:ObjectProperty,
+    ns2:spouseOf a owl:ObjectProperty,
             owl:SymmetricProperty .
 
-    ns1:stepfatherOf a owl:ObjectProperty ;
-        rdfs:domain ns2:E21_Person ;
-        rdfs:range ns2:E21_Person .
+    ns2:stepfatherOf a owl:ObjectProperty ;
+        rdfs:domain ns1:E21_Person ;
+        rdfs:range ns1:E21_Person .
 
-    ns1:traveller a owl:ObjectProperty ;
-        rdfs:domain ns1:Journey ;
-        rdfs:subPropertyOf ns2:P14_carried_out_by .
+    ns2:traveller a owl:ObjectProperty ;
+        rdfs:domain ns2:Journey ;
+        rdfs:subPropertyOf ns1:P14_carried_out_by .
 
-    ns1:typedOn a owl:ObjectProperty ;
-        rdfs:domain ns1:TypewrittenLetter ;
-        rdfs:range ns1:Typewriter .
+    ns2:typedOn a owl:ObjectProperty ;
+        rdfs:domain ns2:TypewrittenLetter ;
+        rdfs:range ns2:Typewriter .
 
-    ns1:usedAppellation a owl:ObjectProperty ;
-        rdfs:domain ns1:Impersonation ;
-        rdfs:range ns2:E41_Appellation .
+    ns2:usedAppellation a owl:ObjectProperty ;
+        rdfs:domain ns2:Impersonation ;
+        rdfs:range ns1:E41_Appellation .
 
-    ns1:usedBy a owl:ObjectProperty ;
-        rdfs:domain ns1:Typewriter .
+    ns2:usedBy a owl:ObjectProperty ;
+        rdfs:domain ns2:Typewriter .
 
-    ns1:uttered a owl:ObjectProperty ;
+    ns2:uttered a owl:ObjectProperty ;
         rdfs:comment "Verbatim content of a communicative act; no commitment of the speaker implied." ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
 
-    ns1:wore a owl:ObjectProperty ;
-        rdfs:domain ns2:E21_Person .
+    ns2:wore a owl:ObjectProperty ;
+        rdfs:domain ns1:E21_Person .
 
-    ns1:writtenBy a owl:ObjectProperty ;
-        rdfs:domain ns1:Letter ;
-        rdfs:range ns2:E21_Person .
+    ns2:writtenBy a owl:ObjectProperty ;
+        rdfs:domain ns2:Letter ;
+        rdfs:range ns1:E21_Person .
 
-    ns2:P1_is_identified_by a rdf:Property ;
-        rdfs:domain ns2:E1_CRM_Entity ;
-        rdfs:range ns2:E41_Appellation ;
-        owl:inverseOf ns2:P1i_identifies .
+    ns1:P1_is_identified_by a rdf:Property ;
+        rdfs:domain ns1:E1_CRM_Entity ;
+        rdfs:range ns1:E41_Appellation ;
+        owl:inverseOf ns1:P1i_identifies .
 
-    ns2:P4_has_time-span a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E52_Time-Span ;
-        owl:inverseOf ns2:P4i_is_time-span_of .
+    ns1:P4_has_time-span a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E52_Time-Span ;
+        owl:inverseOf ns1:P4i_is_time-span_of .
 
     <http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> a rdf:Property ;
         rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> ;
-        rdfs:subPropertyOf ns2:P17_was_motivated_by ;
+        rdfs:subPropertyOf ns1:P17_was_motivated_by ;
         owl:inverseOf <http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> .
 
     <http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> a rdf:Property ;
         rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> ;
-        rdfs:subPropertyOf ns2:P175_starts_before_or_with_the_start_of,
-            ns2:P175i_starts_after_or_with_the_start_of,
-            ns2:P185_ends_before_the_end_of ;
+        rdfs:subPropertyOf ns1:P175_starts_before_or_with_the_start_of,
+            ns1:P175i_starts_after_or_with_the_start_of,
+            ns1:P185_ends_before_the_end_of ;
         owl:inverseOf <http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> .
 
     <http://www.cidoc-crm.org/extensions/crminf/J3_applied> a rdf:Property ;
         rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> ;
         rdfs:range <http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> ;
-        rdfs:subPropertyOf ns2:P16_used_specific_object ;
+        rdfs:subPropertyOf ns1:P16_used_specific_object ;
         owl:inverseOf <http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> .
 
     <http://www.cidoc-crm.org/extensions/crminf/J4_that> a rdf:Property ;
@@ -265,173 +265,173 @@
 
     <http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> a rdf:Property ;
         rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> ;
-        rdfs:range ns2:E73_Information_Object ;
-        rdfs:subPropertyOf ns2:P16_used_specific_object ;
+        rdfs:range ns1:E73_Information_Object ;
+        rdfs:subPropertyOf ns1:P16_used_specific_object ;
         owl:inverseOf <http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> .
 
-    ns1:Impersonation a owl:Class ;
+    ns2:Impersonation a owl:Class ;
         rdfs:comment "Acting under a persona identified by an appellation that is not one's own." ;
-        rdfs:subClassOf ns2:E7_Activity .
+        rdfs:subClassOf ns1:E7_Activity .
 
-    ns1:InvoluntaryDisappearance a owl:Class ;
-        rdfs:subClassOf ns1:Disappearance .
+    ns2:InvoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns2:Disappearance .
 
-    ns1:KeenSighted a owl:Class ;
-        rdfs:subClassOf ns2:E21_Person .
+    ns2:KeenSighted a owl:Class ;
+        rdfs:subClassOf ns1:E21_Person .
 
-    ns1:Occupation a owl:Class ;
-        rdfs:subClassOf ns2:E55_Type .
+    ns2:Occupation a owl:Class ;
+        rdfs:subClassOf ns1:E55_Type .
 
-    ns1:PretendedJourney a owl:Class ;
+    ns2:PretendedJourney a owl:Class ;
         rdfs:comment "A journey announced but not performed." ;
-        rdfs:subClassOf ns1:Journey .
+        rdfs:subClassOf ns2:Journey .
 
-    ns2:P14_carried_out_by a rdf:Property ;
-        rdfs:domain ns2:E7_Activity ;
-        rdfs:range ns2:E39_Actor ;
-        rdfs:subPropertyOf ns2:P11_had_participant ;
-        owl:inverseOf ns2:P14i_performed .
+    ns1:P14_carried_out_by a rdf:Property ;
+        rdfs:domain ns1:E7_Activity ;
+        rdfs:range ns1:E39_Actor ;
+        rdfs:subPropertyOf ns1:P11_had_participant ;
+        owl:inverseOf ns1:P14i_performed .
 
-    ns2:P17_was_motivated_by a rdf:Property ;
-        rdfs:domain ns2:E7_Activity ;
-        rdfs:range ns2:E1_CRM_Entity ;
-        rdfs:subPropertyOf ns2:P15_was_influenced_by ;
-        owl:inverseOf ns2:P17i_motivated .
+    ns1:P17_was_motivated_by a rdf:Property ;
+        rdfs:domain ns1:E7_Activity ;
+        rdfs:range ns1:E1_CRM_Entity ;
+        rdfs:subPropertyOf ns1:P15_was_influenced_by ;
+        owl:inverseOf ns1:P17i_motivated .
 
-    ns2:P184_ends_before_or_with_the_end_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        rdfs:subPropertyOf ns2:P174_starts_before_the_end_of ;
-        owl:inverseOf ns2:P184i_ends_with_or_after_the_end_of .
+    ns1:P184_ends_before_or_with_the_end_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        rdfs:subPropertyOf ns1:P174_starts_before_the_end_of ;
+        owl:inverseOf ns1:P184i_ends_with_or_after_the_end_of .
 
-    ns2:P185_ends_before_the_end_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        rdfs:subPropertyOf ns2:P184_ends_before_or_with_the_end_of ;
-        owl:inverseOf ns2:P185i_ends_after_the_end_of .
+    ns1:P185_ends_before_the_end_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        rdfs:subPropertyOf ns1:P184_ends_before_or_with_the_end_of ;
+        owl:inverseOf ns1:P185i_ends_after_the_end_of .
 
-    ns1:TypewrittenLetter a owl:Class ;
-        rdfs:subClassOf ns1:Letter .
+    ns2:TypewrittenLetter a owl:Class ;
+        rdfs:subClassOf ns2:Letter .
 
-    ns2:P11i_participated_in a rdf:Property ;
-        rdfs:domain ns2:E39_Actor ;
-        rdfs:range ns2:E5_Event ;
-        rdfs:subPropertyOf ns2:P12i_was_present_at ;
-        owl:inverseOf ns2:P11_had_participant .
+    ns1:P11i_participated_in a rdf:Property ;
+        rdfs:domain ns1:E39_Actor ;
+        rdfs:range ns1:E5_Event ;
+        rdfs:subPropertyOf ns1:P12i_was_present_at ;
+        owl:inverseOf ns1:P11_had_participant .
 
-    ns2:P12i_was_present_at a rdf:Property ;
-        rdfs:domain ns2:E77_Persistent_Item ;
-        rdfs:range ns2:E5_Event ;
-        owl:inverseOf ns2:P12_occurred_in_the_presence_of .
+    ns1:P12i_was_present_at a rdf:Property ;
+        rdfs:domain ns1:E77_Persistent_Item ;
+        rdfs:range ns1:E5_Event ;
+        owl:inverseOf ns1:P12_occurred_in_the_presence_of .
 
-    ns2:P15_was_influenced_by a rdf:Property ;
-        rdfs:domain ns2:E7_Activity ;
-        rdfs:range ns2:E1_CRM_Entity ;
-        owl:inverseOf ns2:P15i_influenced .
+    ns1:P15_was_influenced_by a rdf:Property ;
+        rdfs:domain ns1:E7_Activity ;
+        rdfs:range ns1:E1_CRM_Entity ;
+        owl:inverseOf ns1:P15i_influenced .
 
-    ns2:P16_used_specific_object a rdf:Property ;
-        rdfs:domain ns2:E7_Activity ;
-        rdfs:range ns2:E70_Thing ;
-        rdfs:subPropertyOf ns2:P12_occurred_in_the_presence_of,
-            ns2:P15_was_influenced_by ;
-        owl:inverseOf ns2:P16i_was_used_for .
+    ns1:P16_used_specific_object a rdf:Property ;
+        rdfs:domain ns1:E7_Activity ;
+        rdfs:range ns1:E70_Thing ;
+        rdfs:subPropertyOf ns1:P12_occurred_in_the_presence_of,
+            ns1:P15_was_influenced_by ;
+        owl:inverseOf ns1:P16i_was_used_for .
 
-    ns2:P173_starts_before_or_with_the_end_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        owl:inverseOf ns2:P173i_ends_after_or_with_the_start_of .
+    ns1:P173_starts_before_or_with_the_end_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        owl:inverseOf ns1:P173i_ends_after_or_with_the_start_of .
 
-    ns2:P173i_ends_after_or_with_the_start_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        owl:inverseOf ns2:P173_starts_before_or_with_the_end_of .
+    ns1:P173i_ends_after_or_with_the_start_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        owl:inverseOf ns1:P173_starts_before_or_with_the_end_of .
 
-    ns2:P174i_ends_after_the_start_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        rdfs:subPropertyOf ns2:P173i_ends_after_or_with_the_start_of ;
-        owl:inverseOf ns2:P174_starts_before_the_end_of .
+    ns1:P174i_ends_after_the_start_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        rdfs:subPropertyOf ns1:P173i_ends_after_or_with_the_start_of ;
+        owl:inverseOf ns1:P174_starts_before_the_end_of .
 
-    ns2:P175_starts_before_or_with_the_start_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        rdfs:subPropertyOf ns2:P174_starts_before_the_end_of ;
-        owl:inverseOf ns2:P175i_starts_after_or_with_the_start_of .
+    ns1:P175_starts_before_or_with_the_start_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        rdfs:subPropertyOf ns1:P174_starts_before_the_end_of ;
+        owl:inverseOf ns1:P175i_starts_after_or_with_the_start_of .
 
-    ns2:P175i_starts_after_or_with_the_start_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        rdfs:subPropertyOf ns2:P174i_ends_after_the_start_of ;
-        owl:inverseOf ns2:P175_starts_before_or_with_the_start_of .
+    ns1:P175i_starts_after_or_with_the_start_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        rdfs:subPropertyOf ns1:P174i_ends_after_the_start_of ;
+        owl:inverseOf ns1:P175_starts_before_or_with_the_start_of .
 
-    ns1:CommunicativeAct a owl:Class ;
+    ns2:CommunicativeAct a owl:Class ;
         rdfs:comment "An act of telling or writing addressed to someone. Unlike crminf:I1 Argumentation (and E13, a subclass of I1 in CRMinf 1.2.1) it does NOT presuppose sincerity: the speaker's belief in the content is represented separately, if at all." ;
-        rdfs:subClassOf ns2:E7_Activity .
+        rdfs:subClassOf ns1:E7_Activity .
 
-    ns1:Disappearance a owl:Class ;
-        rdfs:subClassOf ns2:E5_Event .
+    ns2:Disappearance a owl:Class ;
+        rdfs:subClassOf ns1:E5_Event .
 
-    ns1:Journey a owl:Class ;
-        rdfs:subClassOf ns2:E7_Activity .
+    ns2:Journey a owl:Class ;
+        rdfs:subClassOf ns1:E7_Activity .
 
-    ns1:Letter a owl:Class ;
-        rdfs:subClassOf ns2:E22_Human-Made_Object .
+    ns2:Letter a owl:Class ;
+        rdfs:subClassOf ns1:E22_Human-Made_Object .
 
-    ns1:Typewriter a owl:Class ;
-        rdfs:subClassOf ns2:E22_Human-Made_Object .
+    ns2:Typewriter a owl:Class ;
+        rdfs:subClassOf ns1:E22_Human-Made_Object .
 
-    ns2:P11_had_participant a rdf:Property ;
-        rdfs:domain ns2:E5_Event ;
-        rdfs:range ns2:E39_Actor ;
-        rdfs:subPropertyOf ns2:P12_occurred_in_the_presence_of ;
-        owl:inverseOf ns2:P11i_participated_in .
+    ns1:P11_had_participant a rdf:Property ;
+        rdfs:domain ns1:E5_Event ;
+        rdfs:range ns1:E39_Actor ;
+        rdfs:subPropertyOf ns1:P12_occurred_in_the_presence_of ;
+        owl:inverseOf ns1:P11i_participated_in .
 
-    ns2:P12_occurred_in_the_presence_of a rdf:Property ;
-        rdfs:domain ns2:E5_Event ;
-        rdfs:range ns2:E77_Persistent_Item ;
-        owl:inverseOf ns2:P12i_was_present_at .
+    ns1:P12_occurred_in_the_presence_of a rdf:Property ;
+        rdfs:domain ns1:E5_Event ;
+        rdfs:range ns1:E77_Persistent_Item ;
+        owl:inverseOf ns1:P12i_was_present_at .
 
-    ns2:P174_starts_before_the_end_of a rdf:Property ;
-        rdfs:domain ns2:E2_Temporal_Entity ;
-        rdfs:range ns2:E2_Temporal_Entity ;
-        rdfs:subPropertyOf ns2:P173_starts_before_or_with_the_end_of ;
-        owl:inverseOf ns2:P174i_ends_after_the_start_of .
+    ns1:P174_starts_before_the_end_of a rdf:Property ;
+        rdfs:domain ns1:E2_Temporal_Entity ;
+        rdfs:range ns1:E2_Temporal_Entity ;
+        rdfs:subPropertyOf ns1:P173_starts_before_or_with_the_end_of ;
+        owl:inverseOf ns1:P174i_ends_after_the_start_of .
 }
 
 {
-    <http://example.org/dectective/story/holmes> a ns2:E21_Person .
+    <http://example.org/dectective/story/holmes> a ns1:E21_Person .
 
-    <http://example.org/dectective/story/hosmer> a ns2:E21_Person ;
-        ns2:P1_is_identified_by <http://example.org/dectective/story/app_hosmer_angel> .
+    <http://example.org/dectective/story/hosmer> a ns1:E21_Person ;
+        ns1:P1_is_identified_by <http://example.org/dectective/story/app_hosmer_angel> .
 
-    <http://example.org/dectective/story/mother> a ns2:E21_Person .
+    <http://example.org/dectective/story/mother> a ns1:E21_Person .
 
-    <http://example.org/dectective/story/watson> a ns2:E21_Person .
+    <http://example.org/dectective/story/watson> a ns1:E21_Person .
 
-    <http://example.org/dectective/story/windibank> a ns2:E21_Person ;
-        ns1:stepfatherOf <http://example.org/dectective/story/mary> ;
-        ns2:P1_is_identified_by <http://example.org/dectective/story/app_windibank> .
+    <http://example.org/dectective/story/windibank> a ns1:E21_Person ;
+        ns2:stepfatherOf <http://example.org/dectective/story/mary> ;
+        ns1:P1_is_identified_by <http://example.org/dectective/story/app_windibank> .
 
     <http://example.org/dectective/world/shared> a <http://w3id.org/conjectures/sharedWorld> .
 
-    ns1:believes a <http://w3id.org/conjectures/doxasticPredicate> .
+    ns2:believes a <http://w3id.org/conjectures/doxasticPredicate> .
 
-    ns1:conjectures a <http://w3id.org/conjectures/conjecturalPredicate> .
+    ns2:conjectures a <http://w3id.org/conjectures/conjecturalPredicate> .
 
-    ns1:establishes a <http://w3id.org/conjectures/epistemicPredicate> .
+    ns2:establishes a <http://w3id.org/conjectures/epistemicPredicate> .
 
-    ns1:uttered a <http://w3id.org/conjectures/verbatimPredicate> .
+    ns2:uttered a <http://w3id.org/conjectures/verbatimPredicate> .
 
-    <http://example.org/dectective/story/app_hosmer_angel> a ns2:E41_Appellation ;
+    <http://example.org/dectective/story/app_hosmer_angel> a ns1:E41_Appellation ;
         rdfs:label "Hosmer Angel" .
 
-    <http://example.org/dectective/story/app_mary_sutherland> a ns2:E41_Appellation ;
+    <http://example.org/dectective/story/app_mary_sutherland> a ns1:E41_Appellation ;
         rdfs:label "Mary Sutherland" .
 
-    <http://example.org/dectective/story/app_windibank> a ns2:E41_Appellation ;
+    <http://example.org/dectective/story/app_windibank> a ns1:E41_Appellation ;
         rdfs:label "Windibank" .
 
-    <http://example.org/dectective/story/mary> a ns2:E21_Person ;
-        ns2:P1_is_identified_by <http://example.org/dectective/story/app_mary_sutherland> .
+    <http://example.org/dectective/story/mary> a ns1:E21_Person ;
+        ns1:P1_is_identified_by <http://example.org/dectective/story/app_mary_sutherland> .
 }
 

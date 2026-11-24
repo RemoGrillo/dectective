@@ -3,7 +3,7 @@
   "query" : "./prototype/exploratory/probe.rq" ,
   "config" : "dec" ,
   "instrumented" : false ,
-  "parse_ms" : 237.657813 ,
+  "parse_ms" : 243.304831 ,
   "input_quads" : 414 ,
   "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
   "max_heap_mb" : 4096 ,
@@ -12,31 +12,31 @@
       { 
         "rep" : 0 ,
         "warmup" : false ,
-        "materialise_total_ms" : 4481.541746 ,
-        "cpu_ms" : 4308.405126 ,
+        "materialise_total_ms" : 3826.925334 ,
+        "cpu_ms" : 3728.760788 ,
         "gc_count" : 10 ,
         "gc_ms" : 67 ,
-        "heap_delta_mb" : 334.4307556152344 ,
+        "heap_delta_mb" : 342.4003448486328 ,
         "phases" : {
-            "load_ms" : 48.301698 ,
-            "handlePermeation_ms" : 1827.340996 ,
-            "enumerate_ms" : 2597.552506
+            "load_ms" : 47.67823 ,
+            "handlePermeation_ms" : 1580.061902 ,
+            "enumerate_ms" : 2191.477929
           } ,
         "per_world_ms" : {
-            "http://example.org/dectective/world/h_author_other#enumerate" : 757.675894 ,
-            "http://w3id.org/conjectures/reality#enumerate" : 0.693075 ,
-            "http://example.org/dectective/world/v_windibank_reassure#enumerate" : 0.209012 ,
-            "http://example.org/dectective/world/shared#enumerate" : 1.051677 ,
-            "http://example.org/dectective/world/v_windibank_machine#enumerate" : 0.047761 ,
-            "http://example.org/dectective/world/holmes_same_machine#enumerate" : 717.567372 ,
-            "http://example.org/dectective/world/v_hosmer_cashier#enumerate" : 0.121061 ,
-            "http://example.org/dectective/world/v_mary_france#enumerate" : 0.04277 ,
-            "http://example.org/dectective/world/mary_D1#enumerate" : 542.388823 ,
-            "http://example.org/dectective/world/watson_hyp#enumerate" : 573.620025 ,
-            "http://example.org/dectective/world/v_windibank_delighted#enumerate" : 0.154251
+            "http://example.org/dectective/world/h_author_other#enumerate" : 615.515735 ,
+            "http://w3id.org/conjectures/reality#enumerate" : 0.508596 ,
+            "http://example.org/dectective/world/v_windibank_reassure#enumerate" : 0.15305 ,
+            "http://example.org/dectective/world/shared#enumerate" : 0.638507 ,
+            "http://example.org/dectective/world/v_windibank_machine#enumerate" : 0.023338 ,
+            "http://example.org/dectective/world/holmes_same_machine#enumerate" : 570.410758 ,
+            "http://example.org/dectective/world/v_hosmer_cashier#enumerate" : 0.172298 ,
+            "http://example.org/dectective/world/v_mary_france#enumerate" : 0.038788 ,
+            "http://example.org/dectective/world/mary_D1#enumerate" : 502.26719 ,
+            "http://example.org/dectective/world/watson_hyp#enumerate" : 498.521206 ,
+            "http://example.org/dectective/world/v_windibank_delighted#enumerate" : 0.135811
           } ,
-        "query_first_ms" : 37.890677 ,
-        "query_second_ms" : 2.148055
+        "query_first_ms" : 27.84059 ,
+        "query_second_ms" : 1.459829
       }
     ] ,
   "accounting" : {
@@ -239,8 +239,8 @@
       "type" : "SELECT" ,
       "rows" : [ "g=http://example.org/dectective/world/h_author_other s=http://www.w3.org/2001/XMLSchema#nonPositiveInteger p=http://www.w3.org/1999/02/22-rdf-syntax-ns#type o=http://www.w3.org/2000/01/rdf-schema#Datatype" ] ,
       "n_rows" : 1 ,
-      "query_first_ms" : 37.890677 ,
-      "query_second_ms" : 2.148055 ,
+      "query_first_ms" : 27.84059 ,
+      "query_second_ms" : 1.459829 ,
       "matched_triples" : 1 ,
       "matched_non_asserted_triples" : 1 ,
       "matched_non_asserted_list" : [ "http://example.org/dectective/world/h_author_other | http://www.w3.org/2001/XMLSchema#nonPositiveInteger http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/2000/01/rdf-schema#Datatype" ]

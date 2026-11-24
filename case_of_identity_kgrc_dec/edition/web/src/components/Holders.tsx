@@ -1,4 +1,4 @@
-// "Who holds what" for one fact: Reality first, then only the people who hold something; the silent ones in one line.
+// "Who holds what" for one proposition: Reality first, then only the people who hold something; the silent ones in one line.
 import type { Viewpoint } from "../api";
 import { REALITY } from "../vocab";
 import { RealityDisc } from "./Glyphs";

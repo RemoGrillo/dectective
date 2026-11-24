@@ -83,3 +83,37 @@ describe("spoilers", () => {
     expect(c2.conclusions.some((c: any) => /Windibank wore tinted glasses/.test(c.text))).toBe(false);
   });
 });
+
+describe("timeline: lines spoken and narration", () => {
+  it("narration inside a paragraph credited to Windibank is not a line he speaks (clue P115.S01); his reply is", async () => {
+    const tl = (await request(app).get("/api/timeline")).body;
+    expect(tl.steps.find((s: any) => s.sid === "P115.S01")).toMatchObject({ speaker: "windibank", spoken: false });
+    expect(tl.steps.find((s: any) => s.sid === "P115.S02")).toMatchObject({ speaker: "windibank", spoken: true });
+    expect(tl.steps.find((s: any) => s.sid === "P059.S02").spoken).toBe(true);   // Mary, inside her quoted account
+  });
+  it("a line spoken stands for the propositions of its sentence (Holmes at P094.S02: the facts about letter no. 1)", async () => {
+    const tl = (await request(app).get("/api/timeline")).body;
+    const st = tl.steps.find((s: any) => s.sid === "P094.S02");
+    expect(st.props).toEqual(expect.arrayContaining(["Hosmer's letter no. 1 purports to come from Hosmer Angel", "Hosmer's letter no. 1 is a typewritten letter"]));
+    const sv = (await request(app).get("/api/sentence/P094.S02")).body;
+    for (const v of sv.viewpoints) expect(st.props).toContain(v.text);   // the same propositions the sentence's panel shows
+  });
+});
+
+describe("timeline: the Reality lane holds what is true, not the acts", () => {
+  it("at Watson's guess (P099.S01) the guess stays in Watson's world, and 'Watson supposes a guess' is not story content", async () => {
+    const tl = (await request(app).get("/api/timeline")).body;
+    const st = tl.steps.find((x: any) => x.sid === "P099.S01");
+    const here = tl.claims.filter((c: any) => c.step === st.n);
+    expect(here.some((c: any) => c.world === "watson_hyp" && c.content === true && /deny the signature/.test(c.text))).toBe(true);
+    expect(here.filter((c: any) => c.world === "reality" && c.content !== false)).toEqual([]);
+    expect(here.some((c: any) => c.world === "reality" && c.content === false && /Watson supposes/.test(c.text))).toBe(true);
+  });
+  it("acts of telling and who-holds-what are never content; facts of the story are", async () => {
+    const tl = (await request(app).get("/api/timeline")).body;
+    const reality = tl.claims.filter((c: any) => c.world === "reality");
+    for (const c of reality.filter((x: any) => /was addressed to|had the content|is an act of telling| said “|believes .*beliefs|is held by/.test(x.text))) expect(c.content).toBe(false);
+    expect(reality.find((c: any) => /works as a traveller in wines/.test(c.text)).content).toBe(true);
+  });
+});
+

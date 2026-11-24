@@ -1,7 +1,9 @@
 // Incompatibility of a proposition with the content of a world, under DECLARED axioms only:
 //  - owl:disjointWith between classes (shared schema, asserted graph of the world 'shared');
 //  - closure assumptions (dec:closedFor) with the CORRECT semantics: same subject, DIFFERENT object
-//    (DEC's own verifyClosedFor also flags identical values: see reports/dec_reasoner_notes.md §3).
+//    (DEC's own verifyClosedFor also flags identical values: see reports/dec_reasoner_notes.md §3);
+//  - owl:sameAs vs owl:differentFrom between the same two individuals ("distinct"): excluded by OWL itself, no declared
+//    axiom needed (Jena's OWL reasoner, hence DEC's conflict check, flags it too).
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { EDITION_DIR, NS, type Mode } from "../config.ts";
@@ -9,7 +11,8 @@ import { graphs, sourcesOf, worldsIn } from "../data.ts";
 import { ask, n3, select, type TermJSON } from "../store.ts";
 
 export type Triple = { s: TermJSON; p: TermJSON; o: TermJSON };
-export type Axiom = { kind: "disjoint"; a: string; b: string } | { kind: "closure"; predicate: string };
+export type Axiom = { kind: "disjoint"; a: string; b: string } | { kind: "closure"; predicate: string } | { kind: "distinct" };
+const SAME = NS.owl + "sameAs", DIFFERENT = NS.owl + "differentFrom";
 export type Witness = { triple: Triple; axiom: Axiom; origin: "asserted" | "received" | "derived"; originWorld?: string };
 
 /** Closure assumptions declared in the prototype's DEC configuration modules (gold: D03, D04; sim: sD03). */
@@ -59,6 +62,14 @@ export function witnesses(t: Triple, mode: Mode, world: string, decType: string)
       out.push({ triple: w, axiom: { kind: "disjoint", a: t.o.value, b: r.d.value }, ...originOf(w, mode, world, decType) });
     }
   }
+  if ((t.p.value === SAME || t.p.value === DIFFERENT) && t.o.type === "uri") {
+    // a = b is excluded by a ≠ b (either direction), and vice versa
+    const other = t.p.value === SAME ? DIFFERENT : SAME;
+    for (const [x, y] of [[t.s, t.o], [t.o, t.s]] as const) {
+      const w: Triple = { s: x, p: { type: "uri", value: other }, o: y };
+      if (has(M, w)) out.push({ triple: w, axiom: { kind: "distinct" }, ...originOf(w, mode, world, decType) });
+    }
+  }
   if (closuresFor(mode).includes(t.p.value)) {
     const rows = select(`SELECT DISTINCT ?z WHERE {
       GRAPH <${M}> { ${n3(t.s)} ${n3(t.p)} ?z }
@@ -80,6 +91,12 @@ export function pairConflicts(mode: Mode, gA: string, gB: string): { kind: strin
       GRAPH <${gA}> { ?x a ?c } GRAPH <${gB}> { ?x a ?d }
       { GRAPH <${AX}> { ?c owl:disjointWith ?d } } UNION { GRAPH <${AX}> { ?d owl:disjointWith ?c } } }`)) {
     out.push({ kind: "disjoint", detail: { x: r.x.value, c: r.c.value, d: r.d.value } });
+  }
+  for (const r of select(`SELECT DISTINCT ?x ?y WHERE {
+      { GRAPH <${gA}> { ?x owl:sameAs ?y } GRAPH <${gB}> { { ?x owl:differentFrom ?y } UNION { ?y owl:differentFrom ?x } } }
+      UNION { GRAPH <${gA}> { ?x owl:differentFrom ?y } GRAPH <${gB}> { { ?x owl:sameAs ?y } UNION { ?y owl:sameAs ?x } } }
+      FILTER(?x != ?y) }`)) {
+    out.push({ kind: "distinct", detail: { x: r.x.value, y: r.y.value } });
   }
   for (const p of closuresFor(mode)) {
     for (const r of select(`SELECT DISTINCT ?x ?y ?z WHERE {

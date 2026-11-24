@@ -4677,16 +4677,43 @@
     {
      "end": 30002,
      "id": "P119.S02",
-     "props": [],
-     "simProps": [],
+     "props": [
+      "prop_6820e6f240b6",
+      "prop_8e6bd2c24646",
+      "prop_c1d068027a1c",
+      "prop_c55ed9540c9a",
+      "prop_e7c8d615570d",
+      "prop_ed9d552ffcdf"
+     ],
+     "simProps": [
+      "prop_1b038b4f4be3",
+      "prop_84913d3106cf",
+      "prop_86bb278092de",
+      "prop_8c22c067fbd8",
+      "prop_cea535c1b4bd",
+      "prop_fc5cd47af9c1"
+     ],
      "start": 29926,
      "text": "“I cannot waste time over this sort of fantastic talk, Mr. Holmes,” he said."
     },
     {
      "end": 30080,
      "id": "P119.S03",
-     "props": [],
-     "simProps": [],
+     "props": [
+      "prop_8e6bd2c24646",
+      "prop_c1d068027a1c",
+      "prop_c55ed9540c9a",
+      "prop_e7c8d615570d",
+      "prop_ed9d552ffcdf"
+     ],
+     "simProps": [
+      "prop_1b038b4f4be3",
+      "prop_84913d3106cf",
+      "prop_86bb278092de",
+      "prop_8c22c067fbd8",
+      "prop_cea535c1b4bd",
+      "prop_fc5cd47af9c1"
+     ],
      "start": 30003,
      "text": "“If you can catch the man, catch him, and let me know when you have done it.”"
     }

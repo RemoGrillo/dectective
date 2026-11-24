@@ -13,7 +13,8 @@
   "v_windibank_delighted": "P115.S02",
   "v_windibank_machine": "P117.S01",
   "holmes_same_machine": "P116.S01",
-  "h_author_other": "P117.S01"
+  "h_author_other": "P117.S01",
+  "v_windibank_denial": "P119.S02"
  },
  "entryRules": {
   "mary_D1": "max(first module passage, first content anchor) in its checkpoint window",
@@ -29,7 +30,8 @@
   "v_windibank_delighted": "max(first module passage, first content anchor) in its checkpoint window",
   "v_windibank_machine": "max(first module passage, first content anchor) in its checkpoint window",
   "holmes_same_machine": "max(first module passage, first content anchor) in its checkpoint window",
-  "h_author_other": "override"
+  "h_author_other": "override",
+  "v_windibank_denial": "max(first module passage, first content anchor) in its checkpoint window"
  },
  "steps": [
   {
@@ -208,56 +210,62 @@
   },
   {
    "step": 29,
-   "sentence": "P124.S02",
-   "asserted": 419,
-   "new": 3
+   "sentence": "P119.S02",
+   "asserted": 422,
+   "new": 6
   },
   {
    "step": 30,
-   "sentence": "P126.S01",
-   "asserted": 421,
-   "new": 2
-  },
-  {
-   "step": 31,
-   "sentence": "P126.S11",
-   "asserted": 441,
-   "new": 20
-  },
-  {
-   "step": 32,
-   "sentence": "P128.S02",
-   "asserted": 443,
-   "new": 2
-  },
-  {
-   "step": 33,
-   "sentence": "P128.S07",
-   "asserted": 444,
-   "new": 1
-  },
-  {
-   "step": 34,
-   "sentence": "P128.S10",
-   "asserted": 446,
-   "new": 2
-  },
-  {
-   "step": 35,
-   "sentence": "P134.S01",
-   "asserted": 449,
+   "sentence": "P124.S02",
+   "asserted": 425,
    "new": 3
   },
   {
+   "step": 31,
+   "sentence": "P126.S01",
+   "asserted": 427,
+   "new": 2
+  },
+  {
+   "step": 32,
+   "sentence": "P126.S11",
+   "asserted": 447,
+   "new": 20
+  },
+  {
+   "step": 33,
+   "sentence": "P128.S02",
+   "asserted": 449,
+   "new": 2
+  },
+  {
+   "step": 34,
+   "sentence": "P128.S07",
+   "asserted": 450,
+   "new": 1
+  },
+  {
+   "step": 35,
+   "sentence": "P128.S10",
+   "asserted": 452,
+   "new": 2
+  },
+  {
    "step": 36,
-   "sentence": "P134.S04",
-   "asserted": 453,
-   "new": 4
+   "sentence": "P134.S01",
+   "asserted": 455,
+   "new": 3
   },
   {
    "step": 37,
+   "sentence": "P134.S04",
+   "asserted": 459,
+   "new": 4
+  },
+  {
+   "step": 38,
    "sentence": "P138.S01",
-   "asserted": 462,
+   "asserted": 468,
    "new": 9
   }
  ]

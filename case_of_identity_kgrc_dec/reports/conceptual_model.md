@@ -65,6 +65,7 @@ Esiti nel prototipo (T05):
 - rassicurazione di Windibank (P067.S01): **insincera** sotto disgiunzione volontaria/involontaria, con la cautela che il rapporto di Mary è attenuato («seemed to think»);
 - «father went to France» detto da Mary (P031.S10): **falsa ma sincera**;
 - «I am delighted to hear it» (P115.S02): **non determinata** (c'è solo l'indizio del sussulto osservato, P115.S01);
+- «I cannot waste time over this sort of fantastic talk… If you can catch the man, catch him» (P119.S02–S03), detto a Holmes: **insincera** (aggiunta il 2026-11-23, dopo i run T01–T10). Il contenuto è implicito (`st:windibank owl:differentFrom st:hosmer`, mondo W15). L'incompatibilità con le credenze di Windibank e con la realtà non richiede assiomi dichiarati né chiusure, perché `sameAs`/`differentFrom` è semantica OWL. DEC la rileva da solo nell'esecuzione `check-denial`, fuori dalla suite (`prototype/results/edition_complement/check_denial.json`);
 - dichiarazioni della madre (P053.S03, P065.S01): **non determinate** (nessuna credenza attestata; la complicità è un'affermazione di Holmes, sostenuta solo indirettamente dal «We» di P127.S02).
 
 **Valori di credenza → contenuti per il motore.** J5 «TRUE» → il mondo riceve il tipo dello stance (doxastic/epistemic/conjectural). «FALSE» su un I4 a più proposizioni non viene tradotto in negazioni: si annota solo, oppure, se l'I4 è un **I17 One-Proposition Set**, si codifica la proposizione incompatibile con un assioma dichiarato. «Possibly true» → mondo congetturale.

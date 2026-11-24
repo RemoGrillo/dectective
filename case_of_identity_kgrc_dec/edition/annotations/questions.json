@@ -1,0 +1,111 @@
+{
+  "note": "The case files as an experiment. Each question is put to DEC; each case file tests it on one case in the story; 'tests' are the audit queries (prototype/fixtures, reports/reasoning_assessment.md) that measure the same question with the same data and rules, with and without DEC. 'role' says what DEC contributes to that case. Order here = numbering of the case files.",
+  "question": "What does DEC add, and what is still up to the editors?",
+  "lede": "Five questions, each tested on cases from the story.",
+  "configs": [
+    {"id": "dec", "label": "DEC", "desc": "The DEC reasoner: worlds receive from each other by type (beliefs, accepted accounts, guesses), and pairs of worlds are checked for clashes."},
+    {"id": "ctx", "label": "Named graphs", "desc": "Each point of view in its own graph, with the same OWL reasoning but without DEC: nothing passes from one world to another and nothing is compared."},
+    {"id": "flat", "label": "One graph", "desc": "Everything merged into a single graph with OWL reasoning: what anyone says or believes counts as true."},
+    {"id": "asserted", "label": "Stored only", "desc": "The stored triples, with no reasoning at all."}
+  ],
+  "roles": {
+    "dec": {"label": "Needs DEC", "desc": "With the same data and rules, but without DEC, there is no answer or a wrong one."},
+    "dec-rule": {"label": "DEC + a rule", "desc": "DEC finds the clash; a rule of the edition says which kind of clash it is."},
+    "no-dec": {"label": "No DEC needed", "desc": "Separate named graphs give the same answer without DEC."},
+    "dec-wrong": {"label": "DEC errs", "desc": "DEC's answer is wrong here, because of a bug in the reasoner."},
+    "beyond": {"label": "Beyond DEC", "desc": "DEC can store it but cannot reason about it."}
+  },
+  "tests": {
+    "T01a_identity_in_reality": {"ask": "In Reality, who is Hosmer Angel?", "expect": "Windibank"},
+    "T01b_identity_in_holmes_world": {"ask": "Who is Hosmer Angel, asking inside Holmes's solution?", "expect": "Windibank"},
+    "T01c_identity_consequence": {"ask": "Did Windibank wear tinted glasses?", "expect": "yes, through the identity"},
+    "T02a_mary_identity": {"ask": "Does Mary believe that Hosmer is Windibank?", "expect": "no"},
+    "T02b_mary_opacity": {"ask": "In Mary's beliefs, is she engaged to Windibank?", "expect": "no"},
+    "T02c_mary_engaged_de_re_reality": {"ask": "In Reality, was Mary engaged to Windibank?", "expect": "yes"},
+    "T03a_weak_sight_not_fact": {"ask": "In Reality, does Windibank have weak eyes?", "expect": "no"},
+    "T03b_where_engaged_to_windibank": {"ask": "In which point of view is Mary engaged to Windibank?", "expect": "none"},
+    "T03c_engaged_only_under_hypothesis": {"ask": "Before the unmasking, where is Mary engaged to her stepfather?", "expect": "only in the reader's guess"},
+    "T04b_said_vs_true": {"ask": "Hosmer said he was a cashier: was it said? is it true?", "expect": "said, not true"},
+    "T05a_content_vs_speaker_belief": {"ask": "Which statements clash with what the speaker believes?", "expect": "the two lies"},
+    "T05b_sincere_but_false": {"ask": "Which statements are believed by the speaker but false?", "expect": "Mary on the journey to France"},
+    "T06a_belief_worlds_vs_reality": {"ask": "Whose beliefs clash with Reality?", "expect": "Mary's"},
+    "T06b_mary_delusional_label": {"ask": "Is Mary's world labelled delusional?", "expect": "yes"},
+    "T06c_ablation": {"ask": "Without the journey rules, do Mary's beliefs still clash?", "expect": "yes, through her eyesight"},
+    "T07a_C3": {"ask": "Up to the typewriter, which of the reader's guesses are ruled out?", "expect": "none"},
+    "T07b_C4": {"ask": "After the unmasking, which guesses are ruled out?", "expect": "“something happened to him”"},
+    "T07c_watson": {"ask": "Does Watson's rejected guess clash with anything?", "expect": "no"},
+    "T08a_identity_C2": {"ask": "Up to the clues, is Hosmer Windibank in Reality?", "expect": "no"},
+    "T08b_identity_C3": {"ask": "Up to the typewriter, is Hosmer Windibank in Reality?", "expect": "no"},
+    "T08c_identity_C4": {"ask": "After the unmasking, is Hosmer Windibank in Reality?", "expect": "yes"},
+    "T08d_same_machine_C3": {"ask": "Under Holmes's rule, were the letters typed on one machine?", "expect": "yes"},
+    "T08e_mary_unchanged_C4": {"ask": "After the unmasking, does Mary's view change?", "expect": "no"},
+    "T09a_typed_on_office_machine": {"ask": "Under Holmes's rule, which letters were typed on the office machine?", "expect": "both of Hosmer's"},
+    "T09b_same_machine_not_fact": {"ask": "Is it a fact that they were typed on the office machine?", "expect": "no, only under the rule"},
+    "T09c_authorship_alternatives": {"ask": "Which authorship guesses exclude each other?", "expect": "only the two rivals"},
+    "T10a_no_telling_event": {"ask": "Does Holmes ever tell Mary the truth?", "expect": "no"},
+    "T10b_rejection_only_predicted": {"ask": "Where does Mary reject the truth?", "expect": "only in Holmes's prediction"},
+    "T10c_mary_last_belief": {"ask": "Does Mary still expect Hosmer to return?", "expect": "yes"}
+  },
+  "questions": [
+    {
+      "id": "identity", "short": "Identity",
+      "title": "Can an identity be true in Reality without entering the beliefs of the person it deceives?",
+      "answer": {"word": "Yes", "sub": "DEC for Reality, named graphs for Mary"},
+      "finding": "When Holmes's solution is accepted, DEC carries “Hosmer Angel is James Windibank” into Reality and works out what follows from it: Mary was engaged to her stepfather, Windibank wore tinted glasses. Named graphs without DEC miss these consequences. One merged graph finds them, but it also pushes the identity into Mary's beliefs. Keeping Mary's view apart is the named graphs' doing, not DEC's.",
+      "tests": ["T01a_identity_in_reality", "T01b_identity_in_holmes_world", "T01c_identity_consequence", "T02a_mary_identity", "T02b_mary_opacity", "T02c_mary_engaged_de_re_reality", "T03a_weak_sight_not_fact", "T03b_where_engaged_to_windibank", "T08c_identity_C4", "T08e_mary_unchanged_C4"],
+      "cases": [
+        {"id": "identity-hosmer", "role": "dec", "shows": "DEC brings the identity into Reality. Mary's beliefs never receive it."},
+        {"id": "consequences-identity", "role": "dec", "shows": "Five propositions nobody states, inferred by DEC in Reality."},
+        {"id": "name-app_hosmer_angel", "role": "dec", "shows": "In Reality the name also picks out Windibank. In Mary's beliefs it does not."}
+      ]
+    },
+    {
+      "id": "sincerity", "short": "Sincerity",
+      "title": "Can DEC tell a lie from an honest mistake?",
+      "answer": {"word": "Yes, with a rule", "sub": "DEC finds the clash, the edition names it"},
+      "finding": "A lie is a statement that the speaker's own beliefs rule out. An honest mistake is one that the speaker believes but Reality rules out. DEC finds both clashes by checking worlds in pairs; no set-up without DEC finds either. Telling them apart is a rule of the edition over three worlds: what was said, what the speaker believes, and Reality. The speaker's beliefs are attributed by the editors, not read off the text.",
+      "tests": ["T04b_said_vs_true", "T05a_content_vs_speaker_belief", "T05b_sincere_but_false"],
+      "extraRuns": ["check-denial"],
+      "cases": [
+        {"id": "insincere-v_hosmer_cashier", "role": "dec-rule", "shows": "It clashes only if a man holds one job at a time: an assumption, stated as such."},
+        {"id": "insincere-v_windibank_reassure", "role": "dec-rule", "shows": "A disappearance cannot be both voluntary and involuntary."},
+        {"id": "insincere-v_windibank_denial", "role": "dec-rule", "shows": "OWL itself forbids being and not being the same person: no assumption needed."},
+        {"id": "false-sincere-v_mary_france", "role": "dec-rule", "shows": "Said and believed, but false: a sincere statement can be wrong."}
+      ]
+    },
+    {
+      "id": "belief", "short": "False belief",
+      "title": "Can DEC tell when someone believes what Reality rules out, and only then?",
+      "answer": {"word": "Yes, but check", "sub": "one of its two flags is a false alarm"},
+      "finding": "DEC labels Mary's beliefs delusional, and every clash rests on a rule written into the model: a journey is either actual or pretended, weak eyes are not keen eyes. It also labels Windibank's beliefs delusional, but there nothing conflicts: a bug in DEC's single-value check fires on identical values. That is why the edition re-checks each of DEC's verdicts, clash by clash.",
+      "tests": ["T06a_belief_worlds_vs_reality", "T06b_mary_delusional_label", "T06c_ablation"],
+      "cases": [
+        {"id": "delusional-mary_D1", "role": "dec", "shows": "Five of Mary's beliefs clash with Reality, each through a stated rule."},
+        {"id": "delusional-windibank_beliefs", "role": "dec-wrong", "shows": "Flagged although his beliefs agree with Reality: a bug in DEC's single-value check."}
+      ]
+    },
+    {
+      "id": "evidence", "short": "Guesses",
+      "title": "Can DEC weigh guesses against the evidence as the story unfolds?",
+      "answer": {"word": "Stage by stage", "sub": "one run per stage, no notion of time"},
+      "finding": "A guess, or a principle like Holmes's rule on typewriters, is a conjectural world that receives the facts of Reality. DEC derives what follows inside it without turning it into a fact: the letters were typed on the office machine, under Holmes's rule. A guess is ruled out only when the evidence contradicts it; a rejected guess that nothing contradicts stays open. DEC has no notion of time: each stage of the story is a separate run, and the edition compares them.",
+      "tests": ["T03c_engaged_only_under_hypothesis", "T07a_C3", "T07b_C4", "T07c_watson", "T08a_identity_C2", "T08b_identity_C3", "T08d_same_machine_C3", "T09a_typed_on_office_machine", "T09b_same_machine_not_fact", "T09c_authorship_alternatives"],
+      "cases": [
+        {"id": "hypothesis-w20", "role": "dec", "shows": "Possible at every stage, confirmed at the unmasking."},
+        {"id": "hypothesis-w21", "role": "dec", "shows": "Possible until the unmasking, then ruled out by the evidence."},
+        {"id": "hypothesis-watson", "role": "no-dec", "shows": "Holmes rejects it, but nothing contradicts it, and no clash is invented."},
+        {"id": "typewriter", "role": "dec", "shows": "One machine only under Holmes's rule. One of the clashes DEC adds is a bug."}
+      ]
+    },
+    {
+      "id": "limits", "short": "Limits",
+      "title": "Can DEC reason about what never happens in the text, such as a prediction?",
+      "answer": {"word": "No", "sub": "it keeps the prediction in a world apart"},
+      "finding": "Holmes's last words predict how Mary would react if she were told the truth, and she never is. DEC can hold the prediction as a world of its own and answer who said what, but it gives no meaning to “if… then” or to the future, and these lookups work just as well without DEC. Nested beliefs (“A believes that B believes”) are out of reach in the same way.",
+      "tests": ["T10a_no_telling_event", "T10b_rejection_only_predicted", "T10c_mary_last_belief"],
+      "cases": [
+        {"id": "prediction-ending", "role": "beyond", "shows": "Mary's rejection exists only inside Holmes's prediction."}
+      ]
+    }
+  ]
+}

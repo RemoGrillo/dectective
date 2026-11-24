@@ -24,7 +24,7 @@
     "nA": "the name 'Mary Sutherland'", "nB": "the name 'Windibank'", "nC": "the name 'Hosmer Angel'"
   },
   "classes": {
-    "ActualJourney": "was an actual journey", "PretendedJourney": "was only a pretended journey", "Journey": "was an announced journey",
+    "ActualJourney": "was an actual journey", "InverseFunctionalProperty": "identifies one thing (no two share it)", "PretendedJourney": "was only a pretended journey", "Journey": "was an announced journey",
     "InvoluntaryDisappearance": "was involuntary — something happened to him", "VoluntaryDisappearance": "was deliberate",
     "Disappearance": "was a disappearance", "WeakSighted": "has weak eyes", "KeenSighted": "has keen eyes",
     "ExpectedToReturn": "will come back", "Impersonation": "was an impersonation", "TypewrittenLetter": "is a typewritten letter",
@@ -32,7 +32,7 @@
     "E21_Person": "is a person", "E41_Appellation": "is a name", "E5_Event": "is an event", "E74_Group": "is a group"
   },
   "predicates": {
-    "sameAs": "is the same person as", "hasOccupation": "works as", "engagedTo": "is engaged to", "stepfatherOf": "is the stepfather of",
+    "sameAs": "is the same person as", "differentFrom": "is not the same person as", "hasOccupation": "works as", "engagedTo": "is engaged to", "stepfatherOf": "is the stepfather of",
     "spouseOf": "is married to", "attended": "attended", "traveller": "was undertaken by", "disappearedPerson": "concerned", "wore": "wore",
     "writtenBy": "was written by", "purportsToBeFrom": "purports to come from", "typedOn": "was typed on", "hasDefectProfile": "has",
     "showsDefectProfile": "shows", "usedBy": "is used by", "employedBy": "is employed by", "assisted": "assisted in",

@@ -1,5 +1,5 @@
 {
-  "note": "Face crop for the small round portraits: [x, y, side] in pixels of the 1024\u00d71024 original (top-left corner and side of a square). Edit and re-run `npm run build:portraits` if a face looks off-centre.",
+  "note": "Face crop for the small round portraits: [x, y, side] in pixels of the 1024\u00d71024 original (top-left corner and side of a square). Edit and re-run `npm run build:portraits` if a face looks off-centre. 'reveals': a persona's portrait with the face of the person behind the mask pasted in (spyglass): other = that person's portrait, shift = [dx, dy] to align the faces, mask = feathered ellipses [cx, cy, rx, ry] (pixels of the 1024\u00d71024 originals), feather = blur radius.",
   "faces": {
     "holmes": [
       160,
@@ -41,5 +41,41 @@
       24,
       600
     ]
+  },
+  "reveals": {
+    "hosmer": {
+      "other": "windibank",
+      "shift": [
+        5,
+        6
+      ],
+      "feather": 16,
+      "mask": [
+        [
+          455,
+          470,
+          130,
+          214
+        ],
+        [
+          600,
+          352,
+          92,
+          40
+        ],
+        [
+          588,
+          480,
+          72,
+          95
+        ],
+        [
+          298,
+          418,
+          52,
+          44
+        ]
+      ]
+    }
   }
 }

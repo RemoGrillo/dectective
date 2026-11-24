@@ -9,7 +9,7 @@
    "worlds": 2,
    "materialised": 4619,
    "inferred_substantive": 1533,
-   "ms": 2280.6
+   "ms": 1516.3
   },
   {
    "step": 1,
@@ -18,7 +18,7 @@
    "worlds": 2,
    "materialised": 4732,
    "inferred_substantive": 1534,
-   "ms": 1955.3
+   "ms": 1470.9
   },
   {
    "step": 2,
@@ -27,7 +27,7 @@
    "worlds": 2,
    "materialised": 4734,
    "inferred_substantive": 1535,
-   "ms": 2050.3
+   "ms": 1659.5
   },
   {
    "step": 3,
@@ -36,7 +36,7 @@
    "worlds": 2,
    "materialised": 4736,
    "inferred_substantive": 1536,
-   "ms": 2052.1
+   "ms": 1634.9
   },
   {
    "step": 4,
@@ -45,7 +45,7 @@
    "worlds": 2,
    "materialised": 4737,
    "inferred_substantive": 1536,
-   "ms": 1772.6
+   "ms": 1671.9
   },
   {
    "step": 5,
@@ -54,7 +54,7 @@
    "worlds": 2,
    "materialised": 4739,
    "inferred_substantive": 1537,
-   "ms": 1958.8
+   "ms": 1687.7
   },
   {
    "step": 6,
@@ -63,7 +63,7 @@
    "worlds": 2,
    "materialised": 4757,
    "inferred_substantive": 1537,
-   "ms": 2095.2
+   "ms": 1686.9
   },
   {
    "step": 7,
@@ -72,7 +72,7 @@
    "worlds": 2,
    "materialised": 4767,
    "inferred_substantive": 1537,
-   "ms": 1874.0
+   "ms": 1674.0
   },
   {
    "step": 8,
@@ -81,7 +81,7 @@
    "worlds": 4,
    "materialised": 7364,
    "inferred_substantive": 1691,
-   "ms": 2575.9
+   "ms": 2194.0
   },
   {
    "step": 9,
@@ -90,7 +90,7 @@
    "worlds": 4,
    "materialised": 7399,
    "inferred_substantive": 1703,
-   "ms": 2961.2
+   "ms": 2112.3
   },
   {
    "step": 10,
@@ -99,7 +99,7 @@
    "worlds": 4,
    "materialised": 7427,
    "inferred_substantive": 1705,
-   "ms": 2823.4
+   "ms": 2355.1
   },
   {
    "step": 11,
@@ -108,7 +108,7 @@
    "worlds": 5,
    "materialised": 7470,
    "inferred_substantive": 1710,
-   "ms": 2808.9
+   "ms": 2087.1
   },
   {
    "step": 12,
@@ -117,7 +117,7 @@
    "worlds": 5,
    "materialised": 7475,
    "inferred_substantive": 1710,
-   "ms": 2728.4
+   "ms": 3912.2
   },
   {
    "step": 13,
@@ -126,7 +126,7 @@
    "worlds": 5,
    "materialised": 7503,
    "inferred_substantive": 1718,
-   "ms": 2617.7
+   "ms": 2868.8
   },
   {
    "step": 14,
@@ -135,7 +135,7 @@
    "worlds": 5,
    "materialised": 7504,
    "inferred_substantive": 1718,
-   "ms": 2632.3
+   "ms": 3418.6
   },
   {
    "step": 15,
@@ -144,7 +144,7 @@
    "worlds": 6,
    "materialised": 7538,
    "inferred_substantive": 1723,
-   "ms": 2579.5
+   "ms": 2150.9
   },
   {
    "step": 16,
@@ -153,7 +153,7 @@
    "worlds": 6,
    "materialised": 7539,
    "inferred_substantive": 1723,
-   "ms": 2390.4
+   "ms": 2083.0
   },
   {
    "step": 17,
@@ -162,7 +162,7 @@
    "worlds": 6,
    "materialised": 7546,
    "inferred_substantive": 1723,
-   "ms": 2536.6
+   "ms": 1890.5
   },
   {
    "step": 18,
@@ -171,7 +171,7 @@
    "worlds": 7,
    "materialised": 10396,
    "inferred_substantive": 1723,
-   "ms": 3162.2
+   "ms": 2343.6
   },
   {
    "step": 19,
@@ -180,7 +180,7 @@
    "worlds": 7,
    "materialised": 10398,
    "inferred_substantive": 1723,
-   "ms": 3234.1
+   "ms": 2201.9
   },
   {
    "step": 20,
@@ -189,7 +189,7 @@
    "worlds": 7,
    "materialised": 10426,
    "inferred_substantive": 1723,
-   "ms": 2928.9
+   "ms": 2414.6
   },
   {
    "step": 21,
@@ -198,7 +198,7 @@
    "worlds": 7,
    "materialised": 10450,
    "inferred_substantive": 1726,
-   "ms": 2899.2
+   "ms": 2565.6
   },
   {
    "step": 22,
@@ -207,7 +207,7 @@
    "worlds": 8,
    "materialised": 10510,
    "inferred_substantive": 1731,
-   "ms": 2975.0
+   "ms": 2800.2
   },
   {
    "step": 23,
@@ -216,7 +216,7 @@
    "worlds": 9,
    "materialised": 13435,
    "inferred_substantive": 1731,
-   "ms": 3716.6
+   "ms": 3160.5
   },
   {
    "step": 24,
@@ -225,7 +225,7 @@
    "worlds": 9,
    "materialised": 13492,
    "inferred_substantive": 1731,
-   "ms": 3740.8
+   "ms": 3498.1
   },
   {
    "step": 25,
@@ -234,7 +234,7 @@
    "worlds": 11,
    "materialised": 16622,
    "inferred_substantive": 1736,
-   "ms": 4833.6
+   "ms": 3565.5
   },
   {
    "step": 26,
@@ -243,7 +243,7 @@
    "worlds": 11,
    "materialised": 16866,
    "inferred_substantive": 1736,
-   "ms": 4382.7
+   "ms": 3888.1
   },
   {
    "step": 27,
@@ -252,7 +252,7 @@
    "worlds": 11,
    "materialised": 16870,
    "inferred_substantive": 1736,
-   "ms": 4481.5
+   "ms": 3826.9
   },
   {
    "step": 28,
@@ -261,97 +261,106 @@
    "worlds": 11,
    "materialised": 16886,
    "inferred_substantive": 1744,
-   "ms": 5132.4
+   "ms": 4076.7
   },
   {
    "step": 29,
-   "sentence": "P124.S02",
-   "asserted": 419,
-   "worlds": 11,
-   "materialised": 16954,
+   "sentence": "P119.S02",
+   "asserted": 422,
+   "worlds": 12,
+   "materialised": 17004,
    "inferred_substantive": 1749,
-   "ms": 4773.5
+   "ms": 4236.0
   },
   {
    "step": 30,
-   "sentence": "P126.S01",
-   "asserted": 421,
+   "sentence": "P124.S02",
+   "asserted": 425,
    "worlds": 12,
-   "materialised": 20063,
-   "inferred_substantive": 1749,
-   "ms": 5702.1
+   "materialised": 17072,
+   "inferred_substantive": 1754,
+   "ms": 4283.3
   },
   {
    "step": 31,
-   "sentence": "P126.S11",
-   "asserted": 441,
-   "worlds": 15,
-   "materialised": 29278,
-   "inferred_substantive": 2098,
-   "ms": 10662.0
+   "sentence": "P126.S01",
+   "asserted": 427,
+   "worlds": 13,
+   "materialised": 20210,
+   "inferred_substantive": 1754,
+   "ms": 4741.1
   },
   {
    "step": 32,
-   "sentence": "P128.S02",
-   "asserted": 443,
-   "worlds": 15,
-   "materialised": 29306,
-   "inferred_substantive": 2098,
-   "ms": 12747.6
+   "sentence": "P126.S11",
+   "asserted": 447,
+   "worlds": 16,
+   "materialised": 29496,
+   "inferred_substantive": 2110,
+   "ms": 9088.0
   },
   {
    "step": 33,
-   "sentence": "P128.S07",
-   "asserted": 444,
-   "worlds": 15,
-   "materialised": 29323,
-   "inferred_substantive": 2098,
-   "ms": 12918.9
+   "sentence": "P128.S02",
+   "asserted": 449,
+   "worlds": 16,
+   "materialised": 29524,
+   "inferred_substantive": 2110,
+   "ms": 8738.8
   },
   {
    "step": 34,
-   "sentence": "P128.S10",
-   "asserted": 446,
-   "worlds": 15,
-   "materialised": 29349,
-   "inferred_substantive": 2098,
-   "ms": 11747.4
+   "sentence": "P128.S07",
+   "asserted": 450,
+   "worlds": 16,
+   "materialised": 29541,
+   "inferred_substantive": 2110,
+   "ms": 8694.8
   },
   {
    "step": 35,
-   "sentence": "P134.S01",
-   "asserted": 449,
-   "worlds": 15,
-   "materialised": 29451,
-   "inferred_substantive": 2103,
-   "ms": 11188.4
+   "sentence": "P128.S10",
+   "asserted": 452,
+   "worlds": 16,
+   "materialised": 29567,
+   "inferred_substantive": 2110,
+   "ms": 8540.4
   },
   {
    "step": 36,
-   "sentence": "P134.S04",
-   "asserted": 453,
-   "worlds": 15,
-   "materialised": 29571,
+   "sentence": "P134.S01",
+   "asserted": 455,
+   "worlds": 16,
+   "materialised": 29669,
    "inferred_substantive": 2115,
-   "ms": 10764.5
+   "ms": 8365.6
   },
   {
    "step": 37,
-   "sentence": "P138.S01",
-   "asserted": 462,
+   "sentence": "P134.S04",
+   "asserted": 459,
    "worlds": 16,
-   "materialised": 32227,
-   "inferred_substantive": 2232,
-   "ms": 11053.2
+   "materialised": 29789,
+   "inferred_substantive": 2127,
+   "ms": 8559.5
+  },
+  {
+   "step": 38,
+   "sentence": "P138.S01",
+   "asserted": 468,
+   "worlds": 17,
+   "materialised": 32445,
+   "inferred_substantive": 2244,
+   "ms": 9613.8
   }
  ],
  "averages": {
-  "asserted": 380.0,
-  "materialised": 13509.2,
-  "inferred_substantive": 1763.7,
-  "ms": 4688.0
+  "asserted": 382.5,
+  "materialised": 13648.3,
+  "inferred_substantive": 1765.8,
+  "ms": 3835.8
  },
- "total_ms": 173457.2,
+ "total_ms": 145761.3,
  "monotonic": true,
  "violations": []
 }

@@ -1,5 +1,7 @@
 # Ritratti dei personaggi
 
+I ritratti attuali sono illustrazioni tonde a colori, frontali. I prompt qui sotto sono quelli della prima serie (matita, di profilo): restano come riferimento.
+
 Metti qui i PNG, con questi nomi esatti:
 
 | File | Personaggio |

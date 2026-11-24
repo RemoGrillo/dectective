@@ -1,5 +1,5 @@
-// The kaleidoscope: one fact, every point of view.
-// Reality sits in the centre (yellow disc: true / false / not said). Around it, ONE slice per person, always in the
+// The kaleidoscope: one proposition, every point of view.
+// Reality sits in the centre (yellow disc, with its value: true / false / not said). Around it, ONE slice per person, always in the
 // same place: portrait, the icons of what they say / believe / conclude / suppose (✓ holds it, ✕ holds otherwise)
 // and, in red, a diagnosis (lie, delusion, honest mistake). A slice is red when the person clashes with Reality,
 // white when they agree, grey and dashed when they are silent.
@@ -7,7 +7,8 @@ import { useId, useMemo, useState } from "react";
 import type { Viewpoint, VPerson } from "../api";
 import { useApp } from "../state";
 import { DIAG, REALITY, VERB } from "../vocab";
-import { DiagBadge, VerbIcon } from "./Glyphs";
+import { RealityDisc, VerbIcon } from "./Glyphs";
+import { TermBadge } from "./Term";
 import { Portrait, portraitUrl } from "./Portrait";
 
 type State = "conflict" | "agree" | "silent";
@@ -27,7 +28,7 @@ function arc(cx: number, cy: number, r0: number, r1: number, a0: number, a1: num
 
 const MONO: Record<string, string> = { mary: "MS", windibank: "JW", hosmer: "HA", holmes: "SH", watson: "DW", mother: "MM", reader: "?", whatif: "W?" };
 
-export function Kaleidoscope({ vp, size = 360 }: { vp: Viewpoint; size?: number }) {
+export function Kaleidoscope({ vp, size = 360, compact = false }: { vp: Viewpoint; size?: number; compact?: boolean }) {
   const uid = useId().replace(/:/g, "");
   const { meta } = useApp();
   const [hover, setHover] = useState<string | null>(null);
@@ -35,7 +36,7 @@ export function Kaleidoscope({ vp, size = 360 }: { vp: Viewpoint; size?: number 
   const focus = hover ?? pinned;
   const people = vp.people;
   const n = Math.max(people.length, 1);
-  const pad = 70, W = size + pad * 2, c = W / 2;
+  const pad = compact ? 60 : 70, W = size + pad * 2, c = W / 2;
   const rC = size * 0.2, rIn = size * 0.255, rOut = size * 0.5;
   const span = (Math.PI * 2) / n, gap = n > 1 ? 0.035 : 0;
   const slices = useMemo(() => people.map((p, i) => {
@@ -51,12 +52,12 @@ export function Kaleidoscope({ vp, size = 360 }: { vp: Viewpoint; size?: number 
         <defs>
           {slices.map(({ p }) => <clipPath key={p.id} id={`${uid}-${p.id}`}><circle r="21" cx="0" cy="0" /></clipPath>)}
         </defs>
-        {/* connectors: each point of view faces the same fact */}
+        {/* connectors: each point of view faces the same proposition */}
         {slices.map(({ p, mid, state }) => (
           <line key={"l" + p.id} x1={c + rC * Math.cos(mid)} y1={c + rC * Math.sin(mid)} x2={c + rIn * Math.cos(mid)} y2={c + rIn * Math.sin(mid)}
             stroke={state === "conflict" ? "var(--red)" : state === "silent" ? "var(--line)" : "var(--ink)"} strokeWidth={state === "conflict" ? 3 : 1.5} strokeDasharray={state === "silent" ? "3 3" : undefined} />
         ))}
-        {slices.map(({ p, a0, a1, mid, state }) => {
+        {slices.map(({ p, a0, a1, mid, state }, i) => {
           const rp = (rIn + rOut) / 2 + 4;
           const px = c + rp * Math.cos(mid), py = c + rp * Math.sin(mid) - 12;
           const face = portraitUrl(meta, p.id, "face");
@@ -65,9 +66,10 @@ export function Kaleidoscope({ vp, size = 360 }: { vp: Viewpoint; size?: number 
           const anchor = Math.abs(Math.cos(mid)) < 0.25 ? "middle" : Math.cos(mid) > 0 ? "start" : "end";
           const label = `${p.name}${p.alias ? ` (alias “${p.alias}”)` : ""}: ${state === "silent" ? "silent" : p.stances.map((s) => VERB[s.verb][s.polarity]).join(", ")}${p.diagnoses.length ? " — " + p.diagnoses.map((d) => DIAG[d].label).join(", ") : ""}`;
           return (
-            <g key={p.id} className="slice" tabIndex={0} role="button" aria-pressed={pinned === p.id} aria-label={label}
+            <g key={p.id} className="slice" style={{ ["--i" as any]: i }} tabIndex={0} role="button" aria-pressed={pinned === p.id} aria-label={label}
               onMouseEnter={() => setHover(p.id)} onMouseLeave={() => setHover(null)} onFocus={() => setHover(p.id)} onBlur={() => setHover(null)}
               onClick={() => setPinned(pinned === p.id ? null : p.id)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setPinned(pinned === p.id ? null : p.id); } }}>
+              <title>{label}</title>
               <path className="wedge" d={arc(c, c, rIn, rOut, a0, a1)}
                 fill={state === "conflict" ? "var(--red-soft)" : state === "silent" ? "var(--bg)" : "var(--paper)"}
                 stroke={state === "conflict" ? "var(--red)" : state === "silent" ? "var(--line)" : "var(--ink)"}
@@ -114,24 +116,25 @@ export function Kaleidoscope({ vp, size = 360 }: { vp: Viewpoint; size?: number 
         <g role="img" aria-label={`Reality: ${REALITY[r.value].label}`} onMouseEnter={() => setHover(null)}>
           <circle cx={c} cy={c} r={rC} fill="var(--yellow)" stroke="#141414" strokeWidth="3" />
           <circle cx={c} cy={c} r={rC - 6} fill="none" stroke="#141414" strokeWidth="1" />
-          <text x={c} y={c - rC * 0.42} textAnchor="middle" fontFamily="var(--f-display)" fontWeight="800" fontSize="12" letterSpacing=".14em" fill="#141414">REALITY</text>
-          <text x={c} y={c + 14} textAnchor="middle" fontFamily="var(--f-display)" fontWeight="800" fontSize={rC * 0.62} fill="#141414">{REALITY[r.value].glyph}</text>
-          <text x={c} y={c + rC * 0.62} textAnchor="middle" fontFamily="var(--f-display)" fontWeight="700" fontSize="12" letterSpacing=".06em" fill="#141414">{REALITY[r.value].short.toUpperCase()}</text>
+          <text x={c} y={c - rC * 0.5} textAnchor="middle" fontFamily="var(--f-display)" fontWeight="800" fontSize="11" letterSpacing=".14em" fill="#141414">REALITY</text>
+          {/* Reality's value: the same medallion as everywhere (black ✓ true · red ✕ false · dashed ✕ false if… · ? not said) */}
+          <svg x={c - rC * 0.4} y={c - rC * 0.4} width={rC * 0.8} height={rC * 0.8} overflow="visible"><RealityDisc value={r.value} size={rC * 0.8} /></svg>
+          <text x={c} y={c + rC * 0.66} textAnchor="middle" fontFamily="var(--f-display)" fontWeight="700" fontSize="11.5" letterSpacing=".06em" fill="#141414">{REALITY[r.value].short.toUpperCase()}</text>
         </g>
       </svg>
-      <div className="kal-detail" aria-live="polite">
+      {!compact && <div className="kal-detail" aria-live="polite">
         {shown ? <PersonDetail p={shown} vp={vp} /> : (
           <div className="small">
             <strong>Reality: {REALITY[r.value].label.toLowerCase()}</strong>{r.value !== "unknown" && <> — {r.how}</>}.
             <span className="muted" title={r.dec}> Hover or tab to a person to see why.</span>
           </div>
         )}
-      </div>
-      <div className="kal-legend" aria-hidden="true">
+      </div>}
+      {!compact && <div className="kal-legend" aria-hidden="true">
         <span><svg width="14" height="14"><rect x="1" y="1" width="12" height="12" fill="var(--red-soft)" stroke="var(--red)" strokeWidth="2" /></svg> clashes with Reality</span>
         <span><svg width="14" height="14"><rect x="1" y="1" width="12" height="12" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5" /></svg> agrees</span>
         <span><svg width="14" height="14"><rect x="1" y="1" width="12" height="12" fill="var(--bg)" stroke="var(--line)" strokeDasharray="3 2" strokeWidth="1.5" /></svg> silent</span>
-      </div>
+      </div>}
     </div>
   );
 }
@@ -141,7 +144,7 @@ export function PersonDetail({ p, vp }: { p: VPerson; vp: Viewpoint }) {
     <div className="holder">
       <Portrait id={p.id} size={40} name={p.name} />
       <div className="lines">
-        <div className="line"><span className="name">{p.name}</span>{p.alias && <span className="small muted">also “{p.alias}”</span>}{p.diagnoses.map((d) => <DiagBadge key={d} kind={d} />)}</div>
+        <div className="line"><span className="name">{p.name}</span>{p.alias && <span className="small muted">also “{p.alias}”</span>}{p.diagnoses.map((d) => { const x = vp.diagnoses.find((y) => y.person === p.id && y.kind === d); return <TermBadge key={d} kind={d} text={x?.text} assumption={x?.assumption} size="small" />; })}</div>
         {p.stances.length === 0 && <div className="how">Says, believes and supposes nothing about this.</div>}
         {p.stances.map((s, i) => (
           <div key={i} className="line" title={`DEC: ${s.dec}`}>
@@ -150,7 +153,6 @@ export function PersonDetail({ p, vp }: { p: VPerson; vp: Viewpoint }) {
             <span className="how">— {s.how}</span>
           </div>
         ))}
-        {vp.diagnoses.filter((d) => d.person === p.id && d.assumption).map((d, i) => <div key={i} className="how red">{DIAG[d.kind].label} only {d.assumption}.</div>)}
       </div>
     </div>
   );

@@ -16,6 +16,7 @@
     "v_windibank_reassure": {"title": "Windibank: “something happened to him”", "desc": "Reported by Mary: “he seemed to think, with me, that something had happened”."},
     "v_windibank_delighted": {"title": "Windibank: “I am delighted to hear it”", "desc": "His reply when Holmes says he will find Hosmer Angel."},
     "v_windibank_machine": {"title": "Windibank: “We do all our correspondence with this machine”", "desc": "What he admits about the office typewriter."},
+    "v_windibank_denial": {"title": "Windibank: “this sort of fantastic talk”", "desc": "His answer when Holmes shows that the letters from Hosmer have the same typing defects as his own: he dismisses it and speaks of Hosmer Angel as another man (“If you can catch the man, catch him”). Implied: he is not Hosmer Angel."},
     "h_author_other": {"title": "What-if: another clerk typed the letters", "desc": "Not in the story. The editors added it to test what the typewriter evidence alone can prove."}
   },
   "sim": {
@@ -26,6 +27,7 @@
     "w04": {"title": "Windibank: “something happened to him”", "desc": "Reported by Mary."},
     "w05": {"title": "Watson's guess", "desc": "The typed signature as a breach-of-promise trick."},
     "w06": {"title": "Windibank: “delighted”", "desc": "Said to Holmes."},
+    "w07": {"title": "Windibank: “fantastic talk”", "desc": "Said to Holmes, about the letters. Implied: he is not Hosmer Angel."},
     "w10": {"title": "Holmes's solution", "desc": "Stated at the unmasking, and accepted from that point on."},
     "w20": {"title": "Reader's guess: Hosmer is the stepfather", "desc": "A guess of the simulated first-time reader."},
     "w21": {"title": "Reader's guess: something happened to him", "desc": "Mary's view, taken as a guess."},

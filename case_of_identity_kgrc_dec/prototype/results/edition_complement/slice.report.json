@@ -10,30 +10,32 @@
     "http://example.org/dectective/world/holmes_reconstruction",
     "http://example.org/dectective/world/holmes_same_machine",
     "http://example.org/dectective/world/v_windibank_delighted",
+    "http://example.org/dectective/world/v_windibank_denial",
     "http://example.org/dectective/world/v_windibank_machine"
   ],
-  "modules_candidate": 30,
-  "fact_triples_selected": 87,
-  "governing_triples": 7,
+  "modules_candidate": 32,
+  "fact_triples_selected": 91,
+  "governing_triples": 8,
   "dec_config_triples": 4,
   "schema_triples": 41,
   "crm_terms": 0,
   "excluded_axioms": [],
   "schema_mode": "minimal",
   "sizes_after": {
-    "default": 98,
-    "http://example.org/dectective/world/h_author_other": 3,
+    "default": 103,
     "http://example.org/dectective/world/holmes_same_machine": 1,
-    "http://example.org/dectective/world/holmes_reconstruction": 11,
     "http://example.org/dectective/world/shared": 41,
-    "http://example.org/dectective/world/v_windibank_machine": 2,
-    "http://example.org/dectective/world/holmes_mother": 1,
     "http://example.org/dectective/world/v_windibank_delighted": 1,
+    "http://example.org/dectective/world/h_author_other": 3,
+    "http://example.org/dectective/world/v_windibank_machine": 2,
+    "http://example.org/dectective/world/holmes_reconstruction": 11,
+    "http://example.org/dectective/world/v_windibank_denial": 1,
+    "http://example.org/dectective/world/holmes_mother": 1,
     "http://example.org/dectective/world/holmes_motive": 1
   },
   "sizes_full_by_graph": {
     "w:shared": 293,
-    "default": 129,
+    "default": 134,
     "w:mary_D1": 10,
     "w:holmes_reconstruction": 11,
     "w:holmes_mother": 1,
@@ -47,9 +49,10 @@
     "w:v_windibank_delighted": 1,
     "w:v_windibank_machine": 2,
     "w:holmes_same_machine": 1,
-    "w:h_author_other": 3
+    "w:h_author_other": 3,
+    "w:v_windibank_denial": 1
   },
-  "total_after": 159,
-  "total_full": 465,
-  "inconsistency_pairs_upper_bound": 36
+  "total_after": 165,
+  "total_full": 471,
+  "inconsistency_pairs_upper_bound": 45
 }

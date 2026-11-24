@@ -60,7 +60,7 @@ export function StepTable({ columns, rows, max = 12 }: { columns: string[]; rows
           ))}
         </tbody>
       </table>
-      {rows.length > max && <p className="small muted" style={{ margin: 0, padding: "6px 10px" }}>…and {rows.length - max} more rows (run the query in the SPARQL Lab to see all).</p>}
+      {rows.length > max && <p className="small muted" style={{ margin: 0, padding: "6px 10px" }}>…and {rows.length - max} more rows (run the query in Interrogation to see all).</p>}
     </div>
   );
 }

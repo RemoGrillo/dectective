@@ -8,7 +8,7 @@ export type Part = { text: string; iri?: string; kind?: string };
 export type Term = { type: string; value: string };
 export type Witness = {
   triple: { s: Term; p: Term; o: Term };
-  axiom: { kind: "disjoint" | "closure"; a?: string; b?: string; predicate?: string };
+  axiom: { kind: "disjoint" | "closure" | "distinct"; a?: string; b?: string; predicate?: string };
   origin: string; originWorld?: string; parts: Part[];
 };
 export type Governor = { agent: string; name: string; predicate: string; viaIdentity: boolean };
@@ -30,7 +30,7 @@ export type Section = { id: string; title: string; subtitle: string; from: strin
 export type Checkpoint = { id: string; after: string; label: string; desc: string; page: number };
 export type Meta = {
   title: string; decCommit: string; build: any; modes: Mode[]; sections: Section[]; checkpoints: Checkpoint[];
-  agents: Agent[]; closures: Record<string, string[]>; prefixes: string; graphs: { iri: string; role: string }[]; portraits: Record<string, { full: string; face: string }>;
+  agents: Agent[]; closures: Record<string, string[]>; prefixes: string; graphs: { iri: string; role: string }[]; portraits: Record<string, { full: string; face: string; reveal?: string }>;
 };
 export type Mark = "lie" | "delusion" | "mistake" | "reasoning" | "identity" | "annotated";
 export type TextSentence = {
@@ -58,7 +58,19 @@ export type SentenceView = {
 };
 export type Cell = { value: string; label: string; isIri: boolean };
 export type Step = { n: number; title: string; text: string; sparql: string; kind: "select" | "ask"; columns?: string[]; rows?: Record<string, Cell>[]; result?: boolean; by: "dec" | "edition" | "kgrc" };
+export type CaseRole = { kind: "dec" | "dec-rule" | "no-dec" | "dec-wrong" | "beyond"; label: string; desc: string; shows: string };
+export type QuestionRef = { id: string; n: number; short: string; title: string; answer: Stamp };
+export type AuditConfig = { id: string; label: string; desc: string };
+export type AuditRow = { id: string; label: string; ask: string; expect: string; matches: Record<string, boolean | null>; note?: string };
+export type Score = Record<string, { ok: number; of: number }>;
+export type Audit = { configs: AuditConfig[]; rows: AuditRow[]; score: Score; extra: { id: string; question: string }[] };
+export type CaseCard = DossierRef & { summary: string; subtitle: string; role: CaseRole };
+export type Casebook = {
+  question: string; lede: string; configs: AuditConfig[]; roles: Record<string, { label: string; desc: string }>; score: Score; nTests: number;
+  questions: (QuestionRef & { finding: string; score: Score; nTests: number; rows: AuditRow[]; cases: CaseCard[] })[];
+};
 export type Dossier = DossierRef & {
+  question?: QuestionRef; role?: CaseRole; audit?: Audit | null;
   type: string; subtitle: string; summary: string; mode: Mode; anchors: string[]; steps: Step[];
   caveats: { kind: string; text: string }[]; dec: { run: string; world: string; relation: string; other?: string; kind: string }[];
   graph: CyEl[]; anchorTexts: { id: string; text: string }[]; nSteps?: number;
@@ -68,13 +80,17 @@ export type WorldInfo = {
   sources: string[]; materializedBy: string[]; governedBy: (Governor & { world: string })[];
   delusional?: string[]; disagreesWith?: { other: string; runs: string[]; closedForOnly?: boolean }[]; defect?: string | null; [k: string]: any;
 };
-export type TStep = { n: number; sid: string; page: number; stage: string; text: string; speaker: string; newTriples: number };
+export type TStep = { n: number; sid: string; page: number; stage: string; text: string; speaker: string; spoken?: boolean;
+  /** the propositions of the model tied to the clue's sentence (what a line spoken there stands for) */
+  props?: string[]; newTriples: number };
 export type TPremise = { text: string; world: string; step: number | null; background?: boolean };
 export type TConclusion = {
   id: string; step: number; kind: "inferred" | "accepted"; cls: "story" | "minor"; world: string; worldTitle: string; person?: string; personName?: string; verb?: Verb;
   text: string; parts: Part[]; rule: string; ruleText: string; premises: TPremise[]; explainedAt: number | null;
 };
-export type TClaim = { step: number; world: string; worldTitle: string; person?: string; personName?: string; verb?: Verb; text: string };
+export type TClaim = { step: number; world: string; worldTitle: string; person?: string; personName?: string; verb?: Verb; text: string;
+  /** false for the acts themselves ("Watson supposes a guess", "Mary told Holmes"): not shown on the Reality lane */
+  content?: boolean };
 export type TEvent = { step: number; pid: string; text: string; kind: "reality" | "verdict"; from?: string; to?: string;
   diagnosis?: { kind: "lie" | "delusion" | "mistake"; person: string; personName: string; text: string; assumption?: string } };
 export type Timeline = {

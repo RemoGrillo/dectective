@@ -9,20 +9,8 @@
 @prefix w: <http://example.org/dectective/world/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-w:watson_hyp {
-    st:letter_H1 prof1:purpose st:purpose_deny_signature .
-}
-
-w:holmes_motive {
-    st:windibank prof1:motive st:motive_keep_income .
-}
-
-w:holmes_prediction {
-    st:hyp_reaction prof1:rejects st:hyp_telling .
-
-    st:hyp_telling a prof1:CommunicativeAct ;
-        prof1:addressee st:mary ;
-        crm:P14_carried_out_by st:holmes .
+w:v_hosmer_cashier {
+    st:hosmer prof1:hasOccupation st:occ_cashier_leadenhall .
 }
 
 w:shared {
@@ -385,6 +373,10 @@ w:shared {
         rdfs:subPropertyOf crm:P174i_ends_after_the_start_of ;
         owl:inverseOf crm:P175_starts_before_or_with_the_start_of .
 
+    prof1:CommunicativeAct a owl:Class ;
+        rdfs:comment "An act of telling or writing addressed to someone. Unlike crminf:I1 Argumentation (and E13, a subclass of I1 in CRMinf 1.2.1) it does NOT presuppose sincerity: the speaker's belief in the content is represented separately, if at all." ;
+        rdfs:subClassOf crm:E7_Activity .
+
     prof1:Disappearance a owl:Class ;
         rdfs:subClassOf crm:E5_Event .
 
@@ -413,24 +405,6 @@ w:shared {
         rdfs:range crm:E2_Temporal_Entity ;
         rdfs:subPropertyOf crm:P173_starts_before_or_with_the_end_of ;
         owl:inverseOf crm:P174i_ends_after_the_start_of .
-
-    prof1:CommunicativeAct a owl:Class ;
-        rdfs:comment "An act of telling or writing addressed to someone. Unlike crminf:I1 Argumentation (and E13, a subclass of I1 in CRMinf 1.2.1) it does NOT presuppose sincerity: the speaker's belief in the content is represented separately, if at all." ;
-        rdfs:subClassOf crm:E7_Activity .
-}
-
-w:v_windibank_reassure {
-    st:disappearance a prof1:InvoluntaryDisappearance .
-
-    st:hosmer a prof1:ExpectedToReturn .
-}
-
-w:holmes_same_machine {
-    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
-}
-
-w:v_hosmer_cashier {
-    st:hosmer prof1:hasOccupation st:occ_cashier_leadenhall .
 }
 
 w:v_windibank_machine {
@@ -439,21 +413,30 @@ w:v_windibank_machine {
     st:office_machine prof1:usedBy st:westhouse_staff .
 }
 
-w:h_author_other {
-    st:letter_H1 prof1:writtenBy st:other_clerk .
+w:holmes_prediction {
+    st:hyp_reaction prof1:rejects st:hyp_telling .
 
-    st:other_clerk a crm:E21_Person ;
-        prof1:employedBy st:westhouse_marbank .
+    st:hyp_telling a prof1:CommunicativeAct ;
+        prof1:addressee st:mary ;
+        crm:P14_carried_out_by st:holmes .
+}
+
+w:v_windibank_denial {
+    st:windibank owl:differentFrom st:hosmer .
+}
+
+w:holmes_mother {
+    st:mother prof1:assisted st:impersonation .
 }
 
 w:holmes_reconstruction {
-    st:impersonation a prof1:Impersonation ;
-        prof1:usedAppellation st:app_hosmer_angel ;
-        crm:P14_carried_out_by st:windibank .
+    st:disappearance a prof1:VoluntaryDisappearance .
 
     st:journey_france_1 a prof1:PretendedJourney .
 
     st:journey_france_2 a prof1:PretendedJourney .
+
+    st:letter_H1 prof1:writtenBy st:windibank .
 
     st:letter_H2 prof1:writtenBy st:windibank .
 
@@ -461,36 +444,11 @@ w:holmes_reconstruction {
 
     st:letter_H4 prof1:writtenBy st:windibank .
 
-    st:disappearance a prof1:VoluntaryDisappearance .
+    st:impersonation a prof1:Impersonation ;
+        prof1:usedAppellation st:app_hosmer_angel ;
+        crm:P14_carried_out_by st:windibank .
 
     st:hosmer owl:sameAs st:windibank .
-
-    st:letter_H1 prof1:writtenBy st:windibank .
-}
-
-w:v_mary_france {
-    st:journey_france_1 a prof1:ActualJourney .
-}
-
-w:v_windibank_delighted {
-    st:windibank prof1:motive st:wish_hosmer_found .
-}
-
-w:mary_D1 {
-    st:journey_france_2 a prof1:ActualJourney ;
-        prof1:traveller st:windibank .
-
-    st:mary prof1:engagedTo st:hosmer .
-
-    st:disappearance a prof1:InvoluntaryDisappearance ;
-        prof1:disappearedPerson st:hosmer .
-
-    st:journey_france_1 a prof1:ActualJourney ;
-        prof1:traveller st:windibank .
-
-    st:hosmer a prof1:ExpectedToReturn,
-            prof1:WeakSighted ;
-        prof1:hasOccupation st:occ_cashier_leadenhall .
 }
 
 {
@@ -528,6 +486,11 @@ w:mary_D1 {
     st:ca_windibank_delighted a prof1:CommunicativeAct ;
         prof1:addressee st:holmes ;
         prof1:hasContent w:v_windibank_delighted ;
+        crm:P14_carried_out_by st:windibank .
+
+    st:ca_windibank_denial a prof1:CommunicativeAct ;
+        prof1:addressee st:holmes ;
+        prof1:hasContent w:v_windibank_denial ;
         crm:P14_carried_out_by st:windibank .
 
     st:ca_windibank_machine a prof1:CommunicativeAct ;
@@ -633,19 +596,19 @@ w:mary_D1 {
     st:machine_H a prof1:Typewriter ;
         prof1:hasDefectProfile st:profile_eR14 .
 
-    st:holmes a crm:E21_Person ;
-        prof1:believes w:holmes_prediction ;
-        prof1:conjectures w:holmes_mother,
-            w:holmes_motive,
-            w:holmes_same_machine ;
-        prof1:establishes w:holmes_reconstruction .
-
     st:mary a crm:E21_Person ;
         prof1:attended st:ball ;
         prof1:believes w:mary_D1 ;
         prof1:engagedTo st:hosmer ;
         prof1:uttered w:v_mary_france ;
         crm:P1_is_identified_by st:app_mary_sutherland .
+
+    st:holmes a crm:E21_Person ;
+        prof1:believes w:holmes_prediction ;
+        prof1:conjectures w:holmes_mother,
+            w:holmes_motive,
+            w:holmes_same_machine ;
+        prof1:establishes w:holmes_reconstruction .
 
     st:hosmer a crm:E21_Person ;
         prof1:attended st:ball ;
@@ -661,15 +624,12 @@ w:mary_D1 {
         prof1:spouseOf st:mother ;
         prof1:stepfatherOf st:mary ;
         prof1:uttered w:v_windibank_delighted,
+            w:v_windibank_denial,
             w:v_windibank_machine,
             w:v_windibank_reassure ;
         crm:P1_is_identified_by st:app_windibank .
 
-    _:nebc4853af13a48beaba65862d6454c44b2 dec:checkInconsistencies true .
-}
-
-w:holmes_mother {
-    st:mother prof1:assisted st:impersonation .
+    _:n6b5f7f117b2d49969cfa0120fe27678eb2 dec:checkInconsistencies true .
 }
 
 w:windibank_beliefs {
@@ -679,5 +639,55 @@ w:windibank_beliefs {
 
     st:windibank prof1:hasOccupation st:occ_wine_traveller ;
         owl:sameAs st:hosmer .
+}
+
+w:v_mary_france {
+    st:journey_france_1 a prof1:ActualJourney .
+}
+
+w:h_author_other {
+    st:other_clerk a crm:E21_Person ;
+        prof1:employedBy st:westhouse_marbank .
+
+    st:letter_H1 prof1:writtenBy st:other_clerk .
+}
+
+w:v_windibank_reassure {
+    st:disappearance a prof1:InvoluntaryDisappearance .
+
+    st:hosmer a prof1:ExpectedToReturn .
+}
+
+w:v_windibank_delighted {
+    st:windibank prof1:motive st:wish_hosmer_found .
+}
+
+w:holmes_same_machine {
+    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
+}
+
+w:holmes_motive {
+    st:windibank prof1:motive st:motive_keep_income .
+}
+
+w:watson_hyp {
+    st:letter_H1 prof1:purpose st:purpose_deny_signature .
+}
+
+w:mary_D1 {
+    st:journey_france_2 a prof1:ActualJourney ;
+        prof1:traveller st:windibank .
+
+    st:disappearance a prof1:InvoluntaryDisappearance ;
+        prof1:disappearedPerson st:hosmer .
+
+    st:journey_france_1 a prof1:ActualJourney ;
+        prof1:traveller st:windibank .
+
+    st:mary prof1:engagedTo st:hosmer .
+
+    st:hosmer a prof1:ExpectedToReturn,
+            prof1:WeakSighted ;
+        prof1:hasOccupation st:occ_cashier_leadenhall .
 }
 

@@ -3,7 +3,7 @@
   "query" : "./prototype/exploratory/probe.rq" ,
   "config" : "dec" ,
   "instrumented" : false ,
-  "parse_ms" : 255.772996 ,
+  "parse_ms" : 251.44402 ,
   "input_quads" : 315 ,
   "jvm" : "OpenJDK 64-Bit Server VM 21.0.13.0.3" ,
   "max_heap_mb" : 4096 ,
@@ -12,22 +12,22 @@
       { 
         "rep" : 0 ,
         "warmup" : false ,
-        "materialise_total_ms" : 1958.829409 ,
-        "cpu_ms" : 1904.163976 ,
+        "materialise_total_ms" : 1687.734093 ,
+        "cpu_ms" : 1612.835453 ,
         "gc_count" : 5 ,
-        "gc_ms" : 33 ,
-        "heap_delta_mb" : 159.12075805664062 ,
+        "gc_ms" : 36 ,
+        "heap_delta_mb" : 159.28424072265625 ,
         "phases" : {
-            "load_ms" : 47.629093 ,
-            "handlePermeation_ms" : 1898.162287 ,
-            "enumerate_ms" : 3.722495
+            "load_ms" : 49.206081 ,
+            "handlePermeation_ms" : 1627.975643 ,
+            "enumerate_ms" : 3.11877
           } ,
         "per_world_ms" : {
-            "http://w3id.org/conjectures/reality#enumerate" : 0.972356 ,
-            "http://example.org/dectective/world/shared#enumerate" : 1.44417
+            "http://w3id.org/conjectures/reality#enumerate" : 0.792795 ,
+            "http://example.org/dectective/world/shared#enumerate" : 1.128087
           } ,
-        "query_first_ms" : 70.931852 ,
-        "query_second_ms" : 3.055921
+        "query_first_ms" : 39.600398 ,
+        "query_second_ms" : 1.973013
       }
     ] ,
   "accounting" : {
@@ -86,8 +86,8 @@
       "type" : "SELECT" ,
       "rows" : [ "g=http://example.org/dectective/world/shared s=http://www.cidoc-crm.org/cidoc-crm/E55_Type p=http://www.w3.org/2000/01/rdf-schema#subClassOf o=http://www.cidoc-crm.org/cidoc-crm/E55_Type" ] ,
       "n_rows" : 1 ,
-      "query_first_ms" : 70.931852 ,
-      "query_second_ms" : 3.055921 ,
+      "query_first_ms" : 39.600398 ,
+      "query_second_ms" : 1.973013 ,
       "matched_triples" : 1 ,
       "matched_non_asserted_triples" : 1 ,
       "matched_non_asserted_list" : [ "http://example.org/dectective/world/shared | http://www.cidoc-crm.org/cidoc-crm/E55_Type http://www.w3.org/2000/01/rdf-schema#subClassOf http://www.cidoc-crm.org/cidoc-crm/E55_Type" ]

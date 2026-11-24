@@ -1,12 +1,13 @@
 // How it works: the edition's vocabulary next to DEC's terms, how verdicts are computed, DEC's known bugs,
 // spoiler-free stages, provenance and numbers (folded), limits and credits.
 import { Link } from "react-router";
-import { useApi } from "../api";
+import { useApi, type Casebook } from "../api";
+import { ConfigLegend } from "../components/Casebook";
 import { Loading } from "../components/Bits";
 import { DecBadge, DiagIcon, RealityDisc, VerbIcon, WorldIcon } from "../components/Glyphs";
 import { stageOf, useApp, withMode } from "../state";
 import { useTimeline } from "../components/DeductionBits";
-import { DIAG, PAIR, STATUS, VERB, type DiagnosisKind, type Verb } from "../vocab";
+import { DIAG, PAIR, REALITY, STATUS, VERB, type DiagnosisKind, type Verb } from "../vocab";
 
 function Row({ icon, term, children, dec }: { icon?: React.ReactNode; term: React.ReactNode; children: React.ReactNode; dec: React.ReactNode }) {
   return <div className="gloss-row"><div className="term">{icon}{term}</div><div>{children}</div><div className="dec">{dec}</div></div>;
@@ -16,21 +17,35 @@ export default function Method() {
   const { meta, mode } = useApp();
   const { data: runs } = useApi<any[]>("/api/runs");
   const { data: tl } = useTimeline();
+  const { data: cb } = useApi<Casebook>("/api/casebook");
   const fam = meta?.build?.families ?? {};
   const testRuns = (runs ?? []).filter((r) => r.kind === "test");
   const med = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor(s.length / 2)] : 0; };
   return (
-    <div className="page" style={{ maxWidth: 1100 }}>
+    <div className="page">
       <div className="page-head">
         <h1>How it works</h1>
-        <p className="lede">The edition's words, what they mean, and the DEC term behind each.</p>
+        <figure className="epigraph">
+          <blockquote>“When you have eliminated the impossible, whatever remains, however improbable, must be the truth.”</blockquote>
+          <figcaption>Sherlock Holmes, in Arthur Conan Doyle, <cite>The Sign of the Four</cite> (1890)</figcaption>
+        </figure>
+        <p className="lede">What is being tested, the edition's words with the DEC term behind each, and the limits.</p>
       </div>
+      <div className="method-grid">
+
+      <section className="card pad" id="audit" style={{ marginBottom: 18 }}>
+        <h2>What is being tested</h2>
+        <p>This is not an edition for reading a mystery. It uses Conan Doyle's story as a test bench for <strong>DEC</strong>, a reasoner over doxastic, epistemic and conjectural worlds: what someone believes, what is established, what is supposed. Every claim, belief and guess in the text is encoded as a point of view. DEC is asked what follows, which views clash, and where it cannot tell.</p>
+        <p>To see what DEC itself adds, the audit asked {cb ? cb.nTests : "the same"} questions of the same data and the same rules in four set-ups:</p>
+        {cb && <ConfigLegend configs={cb.configs} />}
+        {cb && <p className="small" style={{ margin: "10px 0 0" }}>Answered as expected: {cb.configs.map((c, i) => <span key={c.id}>{i ? " · " : ""}<strong>{c.label}</strong> {cb.score[c.id].ok}/{cb.score[c.id].of}</span>)}. The <Link to={withMode("/dossiers", mode)}>case files</Link> group the queries into five questions and test each on a case in the story.</p>}
+      </section>
 
       <section className="card pad" style={{ marginBottom: 18 }}>
         <h2>Points of view</h2>
-        <p>The story is modelled as a set of <strong>points of view</strong> (DEC calls them <em>worlds</em>). The DEC reasoner fills each one with what follows from it, and lets facts pass from one to another only along fixed paths.</p>
+        <p>The story is modelled as a set of <strong>points of view</strong> (DEC calls them <em>worlds</em>). The DEC reasoner fills each one with what follows from it, and lets propositions pass from one to another only along fixed paths.</p>
         <div className="gloss">
-          <Row icon={<RealityDisc size={20} />} term="Reality" dec="reality world">What is true in the story: narrated facts, plus Holmes's solution, which the story accepts.</Row>
+          <Row icon={<RealityDisc size={20} />} term="Reality" dec="reality world">What is true in the story: what the narrative establishes, plus Holmes's solution, which the story accepts.</Row>
           {(["says", "believes", "concludes", "supposes"] as Verb[]).map((v) => (
             <Row key={v} icon={<VerbIcon verb={v} size={20} />} term={<>{VERB[v].label} <span className="muted" style={{ fontWeight: 400 }}>({VERB[v].noun})</span></>} dec={VERB[v].dec}>{VERB[v].help}</Row>
           ))}
@@ -40,10 +55,18 @@ export default function Method() {
       </section>
 
       <section className="card pad" style={{ marginBottom: 18 }}>
-        <h2>How a point of view holds a fact</h2>
+        <h2>How a point of view holds a proposition</h2>
         <div className="gloss">
           {(["asserted", "received", "derived", "contradicted", "contradicted-assuming", "not-determined"] as const).map((s) => (
             <Row key={s} term={STATUS[s].label} dec={s}>{STATUS[s].help}{s === "derived" && <> <DecBadge /></>}</Row>
+          ))}
+        </div>
+        <h3 style={{ marginTop: 18 }}>The icons</h3>
+        <div className="gloss">
+          <Row icon={<VerbIcon verb="believes" polarity="yes" size={22} />} term="holds it" dec="asserted · received · derived">The shape says who holds it and how (says, believes, concludes, supposes); the black ✓ in the corner: it holds there.</Row>
+          <Row icon={<VerbIcon verb="believes" polarity="no" size={22} />} term="holds otherwise" dec="contradicted">Red shape, red ✕ in the corner: that point of view rules the proposition out.</Row>
+          {(["true", "false", "false-if", "unknown"] as const).map((v) => (
+            <Row key={v} icon={<RealityDisc value={v} size={22} />} term={`Reality: ${REALITY[v].short.toLowerCase()}`} dec={v === "true" ? "holds in reality" : v === "false" ? "contradicted in reality" : v === "false-if" ? "contradicted-assuming in reality" : "not-determined in reality"}>{REALITY[v].label}. The same marks as above, full size{v === "false-if" ? "; dashed when the clash needs an assumption" : ""}.</Row>
           ))}
         </div>
         <p className="small muted" style={{ marginTop: 10 }}>A person's stance is what holds in the points of view they govern, including under another name once Reality knows who is who (Hosmer's words are Windibank's). What a guess merely inherits from Reality does not count as the person's own stance.</p>
@@ -56,7 +79,7 @@ export default function Method() {
             <Row key={k} icon={<DiagIcon kind={k} size={20} />} term={DIAG[k].label} dec={DIAG[k].dec}>{DIAG[k].rule}</Row>
           ))}
         </div>
-        <p className="small muted" style={{ marginTop: 10 }}>“Rules out” means a declared rule makes the two incompatible (e.g. actual vs pretended journey). When the clash needs an assumption, such as one occupation at a time, the verdict says so (“if…”).</p>
+        <p className="small muted" style={{ marginTop: 10 }}>“Rules out” means a declared rule makes the two incompatible (e.g. actual vs pretended journey), or OWL itself does (someone cannot be and not be the same person). When the clash needs an assumption, such as one occupation at a time, the verdict says so (“if…”).</p>
       </section>
 
       <section className="card pad" style={{ marginBottom: 18 }}>
@@ -79,10 +102,11 @@ export default function Method() {
         <h2>Deductions over time</h2>
         <p>The <Link to={withMode("/deductions", mode)}>Deductions</Link> page replays DEC on the story as it unfolds. A <strong>clue</strong> is a sentence that adds something to the model. For each clue DEC runs once on everything read so far, without the conflict check, so each run takes seconds.</p>
         <ul className="small">
-          <li>A fact enters at the first sentence that supports it. A point of view (with whoever holds it) enters when its passage and its first content have been read.</li>
+          <li>A proposition enters at the first sentence that supports it. A point of view (with whoever holds it) enters when its passage and its first content have been read.</li>
           <li>DEC's conclusions only grow from one clue to the next (checked at every run). So whatever holds at a clue still holds afterwards, and a clash appears as soon as both sides are in.</li>
           <li>Lies, delusions and honest mistakes are computed clue by clue from these views, with the same rules as everywhere else. The identity Hosmer = Windibank only counts once Reality has it.</li>
           <li>Each conclusion shows its <em>because</em>: the rule and the premises that make it possible, each with the page where it was read.</li>
+          <li>In the Reader, the <strong>modal plot</strong> under the text draws the same runs as lanes, one per person and kind of point of view, one column per clue. It shows what the text says (black), what DEC infers (blue rings), what flows into Reality (blue arrows), and where something is false (red). It follows your reading.</li>
         </ul>
         {tl && <p className="small muted" style={{ margin: 0 }}>{tl.steps.length} clues · {tl.totals.conclusions} story-level conclusions (+{tl.totals.minor} minor) · {tl.totals.verdicts} verdicts · DEC runs: average {Math.round(tl.metrics.averages.ms / 100) / 10} s, total {Math.round(tl.metrics.total_ms / 1000)} s · monotonic: {tl.metrics.monotonic ? "yes" : "NO"}.</p>}
       </section>
@@ -94,7 +118,8 @@ export default function Method() {
             <ul className="small">
               <li>{meta.build.quads.toLocaleString("en")} quads in the store: {(fam.world ?? 0).toLocaleString("en")} in DEC's views of the whole story, {(fam.snapshot ?? 0).toLocaleString("en")} in the spoiler-free stages, {(fam.asserted ?? 0) + (fam["snapshot-asserted"] ?? 0)} of stated content, {fam.text} + {fam.annotation} of text and annotation, {fam.ACaseOfIdentity} of the original KGRC graph.</li>
               <li>{meta.build.propositions} propositions; {meta.build.runs} DEC runs ({testRuns.length} test slices{runs ? `; median ${Math.round(med(testRuns.map((r) => r.materialise_ms_median ?? 0)))} ms and ${med(testRuns.map((r) => r.materialised))} inferred triples per slice` : ""}).</li>
-              <li>Six points of view no test needed were filled by one extra DEC run (no conflict check), and each stage likewise by one run: labelled “complement”.</li>
+              <li>Seven points of view no test needed were filled by one extra DEC run (no conflict check), and each stage likewise by one run: labelled “complement”.</li>
+              <li>Windibank's denial to Holmes (“fantastic talk”, p. 119) was added to the model after the test runs. One extra DEC run with the conflict check (“check-denial”) confirms it clashes with his own beliefs and with Reality, while his other two statements to Holmes do not.</li>
               <li>The data build is deterministic (SHA-256 of <span className="mono">edition.nq</span>: <span className="mono">{meta.build.sha256?.["edition.nq"]?.slice(0, 16)}…</span>).</li>
             </ul>
           )}
@@ -128,8 +153,9 @@ export default function Method() {
           <li>Fonts: Barlow, Barlow Condensed, Literata, Courier Prime, IBM Plex Mono (SIL Open Font License), self-hosted.</li>
           <li>Design: an original treatment inspired by 1930s Italian crime-paperback covers; no publisher's marks.</li>
         </ul>
-        <p className="small" style={{ margin: 0 }}><Link to={withMode("/lab", mode)}>Query everything yourself in the SPARQL Lab →</Link></p>
+        <p className="small" style={{ margin: 0 }}><Link to={withMode("/interrogation", mode)}>Query everything yourself in Interrogation →</Link></p>
       </section>
+      </div>
     </div>
   );
 }

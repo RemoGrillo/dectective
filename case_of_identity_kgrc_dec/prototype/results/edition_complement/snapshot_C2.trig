@@ -417,22 +417,12 @@ w:shared {
         owl:inverseOf crm:P174i_ends_after_the_start_of .
 }
 
-w:w20 {
-    st:pC owl:sameAs st:pB .
-}
-
-w:w04 {
-    st:e2 a prof1:InvoluntaryDisappearance .
-
-    st:pC a prof1:ExpectedToReturn .
-}
-
 w:w03 {
     st:pC prof1:hasOccupation st:o2 .
 }
 
-w:w05 {
-    st:d1 prof1:purpose st:u1 .
+w:w20 {
+    st:pC owl:sameAs st:pB .
 }
 
 {
@@ -527,5 +517,15 @@ w:w05 {
 
 w:w21 {
     st:e2 a prof1:InvoluntaryDisappearance .
+}
+
+w:w05 {
+    st:d1 prof1:purpose st:u1 .
+}
+
+w:w04 {
+    st:e2 a prof1:InvoluntaryDisappearance .
+
+    st:pC a prof1:ExpectedToReturn .
 }
 

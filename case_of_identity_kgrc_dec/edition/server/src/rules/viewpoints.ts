@@ -4,8 +4,9 @@
 // HONEST MISTAKE (says and believes p, Reality rules p out). Everything is computed from the per-world statuses
 // (perspectives.ts), which are in turn computed from DEC's materialised views.
 import { NS, type Mode } from "../config.ts";
-import { agents, catalog, sentences, type Agent } from "../data.ts";
+import { agents, catalog, graphs, sentences, type Agent } from "../data.ts";
 import { localName, plain, type Part } from "../render.ts";
+import { select } from "../store.ts";
 import { gov, propositionView, isContent, type Status, type WorldStatus } from "./perspectives.ts";
 
 export type Verb = "says" | "believes" | "concludes" | "supposes";
@@ -20,7 +21,7 @@ export type Stance = {
   dec: string;            // the same in DEC's terms
 };
 export type DiagnosisKind = "lie" | "delusion" | "mistake";
-export type Diagnosis = { kind: DiagnosisKind; person: string; personName: string; world: string; text: string; assumption?: string };
+export type Diagnosis = { kind: DiagnosisKind; person: string; personName: string; world: string; text: string; assumption?: string; to?: string };
 export type Person = { id: string; name: string; short: string; kind: string; alias?: string; stances: Stance[]; diagnoses: DiagnosisKind[] };
 export type RealityVerdict = { value: "true" | "false" | "false-if" | "unknown"; how: string; dec: string; assumption?: string };
 export type Viewpoint = {
@@ -78,6 +79,20 @@ function realityVerdict(statuses: WorldStatus[]): RealityVerdict {
   return { value, how: r.status === "not-determined" ? "the story does not say" : howText(r), dec: decText(r), assumption: assumptionOf(r) };
 }
 
+/** Addressee of each statement (verbatim world → person it was said to), from the communicative acts in Reality. */
+const toCache = new Map<Mode, Map<string, string>>();
+function addressees(mode: Mode): Map<string, string> {
+  if (!toCache.has(mode)) {
+    const m = new Map<string, string>();
+    for (const r of select(`SELECT ?w ?to WHERE { GRAPH <${graphs(mode, "reality").M}> { ?act prof:hasContent ?w ; prof:addressee ?to } }`)) {
+      const a = agents.find((x) => iriOf(x, mode) === r.to.value);
+      if (a) m.set(r.w.value.split("/").pop()!, a.short);
+    }
+    toCache.set(mode, m);
+  }
+  return toCache.get(mode)!;
+}
+
 /** Persons shown for a mode, in a FIXED order (the kaleidoscope keeps everyone in the same place). */
 const ORDER = ["mary", "windibank", "hosmer", "holmes", "watson", "mother", "reader", "whatif"];
 function iriOf(a: Agent, mode: Mode) { return mode === "gold" ? a.gold : a.sim; }
@@ -97,7 +112,7 @@ export function mergedPersonas(mode: Mode, G: Gov = gov(mode)): Map<string, stri
   return out;
 }
 
-export function peopleFor(mode: Mode, G: Gov = gov(mode)): { agent: Agent; alias?: string }[] {
+export function peopleFor(mode: Mode, G: Gov = gov(mode)): { agent: Agent; alias?: string; aliasId?: string }[] {
   const merged = mergedPersonas(mode, G);
   const governing = new Set(G.map((g) => g.agent));
   return ORDER.map((id) => agents.find((a) => a.id === id)!).filter((a) => {
@@ -105,7 +120,7 @@ export function peopleFor(mode: Mode, G: Gov = gov(mode)): { agent: Agent; alias
     return iri && a.kind !== "reality" && governing.has(iri) && !merged.has(a.id);
   }).map((a) => {
     const alias = [...merged.entries()].find(([, owner]) => owner === a.id)?.[0];
-    return { agent: a, alias: alias ? agents.find((x) => x.id === alias)!.name : undefined };
+    return { agent: a, alias: alias ? agents.find((x) => x.id === alias)!.name : undefined, aliasId: alias };
   });
 }
 
@@ -141,14 +156,16 @@ export function viewpointFrom(view: { id: string; parts: Part[]; text: string; w
     const realityFalse = reality.value === "false" || reality.value === "false-if";
     const name = agent.short;
     for (const s of says) {
+      const to = addressees(mode).get(s.world);
+      const toText = to ? ` to ${to}` : "";
       if (believesNo.length) {
         kinds.push("lie");
-        diagnoses.push({ kind: "lie", person: agent.id, personName: agent.name, world: s.world,
-          text: `${name}${s.asName ? ` (as ${s.asName})` : ""} says it, but believes otherwise`, assumption: believesNo[0].assumption });
+        diagnoses.push({ kind: "lie", person: agent.id, personName: agent.name, world: s.world, to,
+          text: `${name}${s.asName ? ` (as ${s.asName})` : ""} says it${toText}, but believes otherwise`, assumption: believesNo[0].assumption });
       } else if (believesYes.length && realityFalse) {
         kinds.push("mistake");
-        diagnoses.push({ kind: "mistake", person: agent.id, personName: agent.name, world: s.world,
-          text: `${name} says it in good faith, but it is false`, assumption: reality.assumption });
+        diagnoses.push({ kind: "mistake", person: agent.id, personName: agent.name, world: s.world, to,
+          text: `${name} says it${toText} in good faith, but it is false`, assumption: reality.assumption });
       }
     }
     if (believesYes.length && realityFalse) {
@@ -181,7 +198,7 @@ export function viewpoint(pid: string, mode: Mode): Viewpoint | null {
 
 // ---------------------------------------------------------------- sentence-level marks
 export type Mark = DiagnosisKind | "reasoning" | "identity" | "annotated";
-const IDENTITY_P = [NS.owl + "sameAs", NS.crm + "P1_is_identified_by", NS.prof + "usedAppellation"];
+const IDENTITY_P = [NS.owl + "sameAs", NS.owl + "differentFrom", NS.crm + "P1_is_identified_by", NS.prof + "usedAppellation"];
 
 function worldsOf(mode: Mode) { return mode === "gold" ? catalog.worlds.gold : catalog.worlds.sim; }
 

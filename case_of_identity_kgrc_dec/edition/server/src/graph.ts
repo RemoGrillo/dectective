@@ -62,7 +62,7 @@ export function buildGraph(props: Triple[], mode: Mode, opts: { worlds?: string[
       for (const w of (s.witnesses ?? []).slice(0, 2)) {
         const wid = propNode(w.triple, "prop witness");
         add({ data: { id: `st:${wid}:${s.world}`, source: "w:" + s.world, target: wid, kind: "status", status: "holds", label: "states", dec: w.origin }, classes: "status holds" });
-        const ax = w.axiom.kind === "disjoint" ? `can't be both (${CLASS_TEXT(w.axiom.a)} / ${CLASS_TEXT(w.axiom.b)})` : `one value only (${localName(w.axiom.predicate)}): an assumption`;
+        const ax = w.axiom.kind === "disjoint" ? `can't be both (${CLASS_TEXT(w.axiom.a)} / ${CLASS_TEXT(w.axiom.b)})` : w.axiom.kind === "distinct" ? "can't be both the same and not the same" : `one value only (${localName(w.axiom.predicate)}): an assumption`;
         add({ data: { id: `inc:${pid}:${wid}`, source: pid, target: wid, kind: "incompatible", label: ax }, classes: "incompatible" + (w.axiom.kind === "closure" ? " assumption" : "") });
       }
     }

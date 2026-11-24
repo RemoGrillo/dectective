@@ -417,18 +417,12 @@ w:shared {
         owl:inverseOf crm:P174i_ends_after_the_start_of .
 }
 
-w:w20 {
-    st:pC owl:sameAs st:pB .
-}
-
-w:w04 {
-    st:e2 a prof1:InvoluntaryDisappearance .
-
-    st:pC a prof1:ExpectedToReturn .
-}
-
 w:w03 {
     st:pC prof1:hasOccupation st:o2 .
+}
+
+w:w20 {
+    st:pC owl:sameAs st:pB .
 }
 
 {
@@ -509,10 +503,16 @@ w:w03 {
         prof1:wore st:x1 ;
         crm:P1_is_identified_by st:nC .
 
-    _:n82317dd371d545628c6f5b1ea4f7092cb2 dec:checkInconsistencies true .
+    _:n17ef715d08ba4e2f808b37e0c8012a4fb2 dec:checkInconsistencies true .
 }
 
 w:w21 {
     st:e2 a prof1:InvoluntaryDisappearance .
+}
+
+w:w04 {
+    st:e2 a prof1:InvoluntaryDisappearance .
+
+    st:pC a prof1:ExpectedToReturn .
 }
 

@@ -1,4 +1,4 @@
-// SPARQL Lab: example gallery (natural language ↔ SPARQL), editor, results, downloads, curl snippet, graph guide.
+// Interrogation (the SPARQL Lab): example gallery (natural language ↔ SPARQL), editor, results, downloads, curl snippet, graph guide.
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useSearchParams } from "react-router";
 import { runSparql, useApi, type Example, type SparqlResult } from "../api";
@@ -75,10 +75,10 @@ export default function SparqlLab() {
   const curl = `curl -s ${origin}/sparql \\\n  -H 'Accept: application/sparql-results+json' \\\n  --data-urlencode 'query@query.rq'`;
 
   return (
-    <div className="page wide" style={{ maxWidth: 1500 }}>
+    <div className="page wide">
       <div className="page-head">
-        <h1>SPARQL Lab</h1>
-        <p className="lede">Ask the graph directly: pick a question, or write your own query.</p>
+        <h1>Interrogation</h1>
+        <p className="lede">Question the graph yourself, in SPARQL: pick one of the questions, or write your own.</p>
       </div>
       <div className="lab">
         <aside className="examples card" aria-label="Example questions">

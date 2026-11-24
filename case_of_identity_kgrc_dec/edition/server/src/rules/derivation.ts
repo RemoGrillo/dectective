@@ -37,6 +37,9 @@ export function derivationHints(t: Triple, mode: Mode, world: string): Hint[] {
     if (ifp.length) out.push({ rule: "inverse-functional", property: ifp[0].p.value, value: ifp[0].v.value });
     if (ask(`ASK { GRAPH <${M}> { ${n3(t.o)} owl:sameAs ${n3(t.s)} } }`)) out.push({ rule: "symmetric", property: NS.owl + "sameAs" });
   }
+  if (t.p.value === NS.owl + "differentFrom" && ask(`ASK { GRAPH <${M}> { ${n3(t.o)} owl:differentFrom ${n3(t.s)} } }`)) {
+    out.push({ rule: "symmetric", property: NS.owl + "differentFrom" });
+  }
   if (ask(`ASK { GRAPH <${AX}> { ${n3(t.p)} a owl:SymmetricProperty } GRAPH <${M}> { ${n3(t.o)} ${n3(t.p)} ${n3(t.s)} } }`)) {
     out.push({ rule: "symmetric", property: t.p.value });
   }

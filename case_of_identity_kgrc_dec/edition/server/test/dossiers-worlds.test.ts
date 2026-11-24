@@ -5,6 +5,41 @@ import { createApp } from "../src/index.ts";
 
 const app = createApp();
 
+describe("case files as an experiment (casebook)", () => {
+  it("groups every case file under one of five questions, numbered in question order", async () => {
+    const cb = (await request(app).get("/api/casebook")).body;
+    expect(cb.questions.map((q: any) => q.id)).toEqual(["identity", "sincerity", "belief", "evidence", "limits"]);
+    const all = (await request(app).get("/api/dossiers")).body;
+    const inBook = cb.questions.flatMap((q: any) => q.cases.map((c: any) => c.id));
+    expect(new Set(inBook).size).toBe(all.length);
+    expect(cb.questions.flatMap((q: any) => q.cases.map((c: any) => c.number))).toEqual(all.map((_: any, i: number) => i + 1));
+  });
+
+  it("reads the audit as reported: DEC 28/29, named graphs 15/29, one graph 10/29, stored only 15/29", async () => {
+    const cb = (await request(app).get("/api/casebook")).body;
+    expect(cb.nTests).toBe(29);
+    expect(cb.score).toEqual({ dec: { ok: 28, of: 29 }, ctx: { ok: 15, of: 29 }, flat: { ok: 10, of: 29 }, asserted: { ok: 15, of: 29 } });
+    const sincerity = cb.questions.find((q: any) => q.id === "sincerity");
+    expect(sincerity.score.dec).toEqual({ ok: 3, of: 3 });
+    expect(sincerity.score.ctx.ok).toBeLessThan(3);
+  });
+
+  it("a case file names its question, what DEC contributes, and the audit rows", async () => {
+    const d = (await request(app).get("/api/dossiers/delusional-windibank_beliefs")).body;
+    expect(d.question.id).toBe("belief");
+    expect(d.role.kind).toBe("dec-wrong");
+    expect(d.audit.rows.map((r: any) => r.label)).toEqual(["T06a", "T06b", "T06c"]);
+    const tw = (await request(app).get("/api/dossiers/typewriter")).body;
+    expect(tw.audit.rows.find((r: any) => r.label === "T09c").matches.dec).toBe(false);
+  });
+
+  it("a guess ruled out at the unmasking is stamped Refuted", async () => {
+    const d = (await request(app).get("/api/dossiers/hypothesis-w21")).body;
+    expect(d.summary).toMatch(/The unmasking: ruled out/);
+    expect(d.stamp.word).toBe("Refuted");
+  });
+});
+
 describe("case files (dossiers)", () => {
   it("discovers the expected instances", async () => {
     const r = await request(app).get("/api/dossiers");

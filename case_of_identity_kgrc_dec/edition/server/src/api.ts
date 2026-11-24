@@ -6,11 +6,13 @@ import YAML from "yaml";
 import { ANNOTATIONS_DIR, PORTRAITS_DIR, DEC_COMMIT, GRAPHS, MODES, NS, PREFIXES, REALITY, type Mode } from "./config.ts";
 import { agents, buildInfo, catalog, graphs, labels, runs, sentences, text, worldsIn } from "./data.ts";
 import { dossierIndex, dossiers, dossiersForSentence } from "./dossiers.ts";
+import { auditFor, casebook, questionOf } from "./casebook.ts";
 import { buildGraph } from "./graph.ts";
 import { label, plain, renderTriple } from "./render.ts";
 import { CLOSURES, identicalClosedValues, pairConflicts } from "./rules/incompatibility.ts";
 import { agentStances, isContent, kaleidoscope, propositionView, statusIn, worldsSummary } from "./rules/perspectives.ts";
 import { timelinePayload } from "./timeline.ts";
+import { vennForTriples, vennFromViewpoints } from "./venn.ts";
 import { mergedPersonas, peopleFor, sentenceMarks, viewpoint, viewpointFrom, type Viewpoint } from "./rules/viewpoints.ts";
 import { ask, parseN3, select } from "./store.ts";
 
@@ -68,7 +70,8 @@ function knowledgeMap(m: Mode) {
     rows.push(viewpoint(pr.id, m)!);
   }
   rows.sort((a, b) => (a.sentences[0] ?? "Z").localeCompare(b.sentences[0] ?? "Z"));
-  const res = { mode: m, people: peopleFor(m).map(({ agent, alias }) => ({ id: agent.id, short: agent.short, name: agent.name, kind: agent.kind, alias })), rows };
+  const res = { mode: m, people: peopleFor(m).map(({ agent, alias, aliasId }) => ({ id: agent.id, short: agent.short, name: agent.name, kind: agent.kind, alias,
+    ...(aliasId ? { aliasId, aliasShort: agents.find((a) => a.id === aliasId)!.short } : {}) })), rows };
   kmCache.set(m, res);
   return res;
 }
@@ -122,7 +125,7 @@ function worldsPayload(m: Mode) {
     const gA = graphs(m, p.a).M, gB = graphs(m, p.b).M;
     const conflicts = pairConflicts(m, gA, gB);
     const identical = identicalClosedValues(m, gA, gB);
-    const real = conflicts.filter((c) => c.kind === "disjoint");
+    const real = conflicts.filter((c) => c.kind !== "closure");
     const verdict = conflicts.length === 0 && identical.length > 0 ? "artifact"     // only DEC's closedFor defect (identical values)
       : real.length === 0 && conflicts.length > 0 ? "assumption"                     // only under a declared closure
       : conflicts.length > 0 ? "conflict" : "unexplained";
@@ -130,6 +133,7 @@ function worldsPayload(m: Mode) {
       ...p, verdict,
       conflicts: conflicts.slice(0, 12).map((c) => ({ kind: c.kind, text: c.kind === "disjoint"
         ? `${label(c.detail.x)} — ${humanClass(c.detail.c)} and ${humanClass(c.detail.d)}`
+        : c.kind === "distinct" ? `${label(c.detail.x)} and ${label(c.detail.y)} — the same person and not the same person`
         : `${label(c.detail.x)} ${labels.predicates[c.detail.p.split("#").pop()!] ?? label(c.detail.p)} ${label(c.detail.y)} and ${label(c.detail.z)}` })),
       identical: identical.slice(0, 6).map((i) => `${label(i.x)} ${label(i.p)} ${label(i.y)}`),
     };
@@ -147,84 +151,28 @@ function worldsPayload(m: Mode) {
 
 /** Portraits available now (read at each request, so new images need no restart): id → oval image and face thumbnail.
  *  Uses the web versions in portraits/web/ (scripts/build_portraits.py) when present, the original file otherwise. */
-function portraitIndex(): Record<string, { full: string; face: string }> {
+function portraitIndex(): Record<string, { full: string; face: string; reveal?: string }> {
   if (!existsSync(PORTRAITS_DIR)) return {};
   const webDir = path.join(PORTRAITS_DIR, "web");
   const web = existsSync(webDir) ? readdirSync(webDir) : [];
-  const out: Record<string, { full: string; face: string }> = {};
+  const out: Record<string, { full: string; face: string; reveal?: string }> = {};
   for (const f of readdirSync(PORTRAITS_DIR).filter((x) => /\.(png|jpe?g|webp)$/i.test(x)).sort()) {
     const id = f.replace(/\.[^.]+$/, "").toLowerCase();
     const full = web.includes(`${id}.webp`) ? `/portraits/web/${id}.webp` : `/portraits/${f}`;
     out[id] = { full, face: web.includes(`${id}-face.webp`) ? `/portraits/web/${id}-face.webp` : full };
+    if (web.includes(`${id}-reveal.webp`) && full.startsWith("/portraits/web/")) out[id].reveal = `/portraits/web/${id}-reveal.webp`;
   }
   return out;
 }
 
-// ---------------------------------------------------------------- Venn: who says / believes / concludes / supposes what, against Reality
-// One set per (person, verb) with the facts the person holds (own stances, not inherited) + Reality (facts true in
-// the story). Links: what X SAYS that Y BELIEVES (deceives = X believes otherwise and Reality rules it out;
-// misleads = false but X sincere; tells = not false); clashes = a fact held by someone and the Reality fact that
-// rules it out.
+// ---------------------------------------------------------------- Venn (logic in venn.ts)
 const vennCache = new Map<Mode, any>();
 function vennPayload(m: Mode) {
-  if (vennCache.has(m)) return vennCache.get(m);
-  const km = knowledgeMap(m);
-  const rows: Viewpoint[] = km.rows.filter((r: Viewpoint) => r.people.some((p) => p.stances.some((s) => s.polarity === "yes")));
-  const sets = new Map<string, { id: string; kind: string; person?: string; personName?: string; alias?: string; label: string; worlds: Set<string>; items: Set<string> }>();
-  const realityItems = new Set<string>();
-  const items = rows.map((r, i) => {
-    const memb: string[] = [];
-    for (const p of r.people) {
-      for (const st of p.stances.filter((x) => x.polarity === "yes")) {
-        const id = `${p.id}:${st.verb}`;
-        if (!sets.has(id)) sets.set(id, { id, kind: st.verb, person: p.id, personName: p.short, alias: p.alias, label: `${p.short} ${st.verb}`, worlds: new Set(), items: new Set() });
-        sets.get(id)!.worlds.add(st.worldTitle);
-        sets.get(id)!.items.add(r.id);
-        if (!memb.includes(id)) memb.push(id);
-      }
-    }
-    if (r.reality.value === "true") { realityItems.add(r.id); memb.push("reality"); }
-    return { id: r.id, n: i + 1, text: r.text, reality: r.reality.value, realityHow: r.reality.how, sets: memb.sort(),
-      diagnoses: r.diagnoses.map((d) => ({ kind: d.kind, person: d.person, personName: d.personName, text: d.text, assumption: d.assumption })) };
-  });
-  // what X says that Y believes
-  const links: any[] = [];
-  for (const a of sets.values()) {
-    if (a.kind !== "says") continue;
-    for (const b of sets.values()) {
-      if (b.kind !== "believes" || b.person === a.person) continue;
-      const shared = [...a.items].filter((x) => b.items.has(x));
-      if (!shared.length) continue;
-      const kindOf = (pid: string) => {
-        const it = items.find((x) => x.id === pid)!;
-        if (it.diagnoses.some((d) => d.kind === "lie" && d.person === a.person)) return "deceives";
-        return it.reality === "false" || it.reality === "false-if" ? "misleads" : "tells";
-      };
-      const kinds = shared.map(kindOf);
-      const kind = kinds.includes("deceives") ? "deceives" : kinds.includes("misleads") ? "misleads" : "tells";
-      links.push({ from: a.id, to: b.id, kind, items: shared, byItem: Object.fromEntries(shared.map((x, i) => [x, kinds[i]])) });
-    }
+  if (!vennCache.has(m)) {
+    const rows: Viewpoint[] = knowledgeMap(m).rows.filter((r: Viewpoint) => r.people.some((p) => p.stances.some((s) => s.polarity === "yes")));
+    vennCache.set(m, vennFromViewpoints(rows, m, false));
   }
-  // clashes: a fact held by someone that Reality rules out, and the Reality fact that does it (when it is also shown)
-  const keyOf = new Map(rows.map((r) => { const pr = catalog.propositions[r.id]; return [`${pr.s} ${pr.p} ${pr.o}`, r.id]; }));
-  const clashes: any[] = [];
-  const realityWorld = worldsIn(m).find((w) => w.local === "reality")!;
-  for (const r of rows.filter((x) => x.reality.value === "false" || x.reality.value === "false-if")) {
-    const pr = catalog.propositions[r.id];
-    const st = statusIn({ s: parseN3(pr.s), p: parseN3(pr.p), o: parseN3(pr.o) }, m, realityWorld);
-    for (const w of st.witnesses ?? []) {
-      const other = keyOf.get(`${w.triple.s.type === "uri" ? `<${w.triple.s.value}>` : JSON.stringify(w.triple.s.value)} <${w.triple.p.value}> ${w.triple.o.type === "uri" ? `<${w.triple.o.value}>` : JSON.stringify(w.triple.o.value)}`);
-      clashes.push({ item: r.id, other: other ?? null, text: plain(w.parts), assumption: w.axiom.kind === "closure" });
-    }
-  }
-  const res = {
-    mode: m,
-    sets: [{ id: "reality", kind: "reality", label: "Reality", size: realityItems.size, worlds: ["Reality"] },
-      ...[...sets.values()].map((x) => ({ id: x.id, kind: x.kind, person: x.person, personName: x.personName, alias: x.alias, label: x.label, size: x.items.size, worlds: [...x.worlds].sort() }))],
-    items, links, clashes,
-  };
-  vennCache.set(m, res);
-  return res;
+  return vennCache.get(m);
 }
 
 const examplesFile = YAML.parse(readFileSync(path.join(ANNOTATIONS_DIR, "examples.yaml"), "utf8"));
@@ -233,7 +181,7 @@ export const examples = (examplesFile.examples as any[]).map((e) => ({ ...e, spa
 export function api(): Router {
   const r = Router();
   r.get("/meta", (_req, res) => res.json({
-    title: "A Case of Identity — an augmented edition", decCommit: DEC_COMMIT, build: buildInfo, modes: MODES,
+    title: "A Case of Identity — DEC at work", decCommit: DEC_COMMIT, build: buildInfo, modes: MODES,
     sections: text.sections, checkpoints: text.checkpoints, agents, closures: CLOSURES, prefixes: PREFIXES,
     portraits: portraitIndex(),
     graphs: [
@@ -285,12 +233,36 @@ export function api(): Router {
     res.json(v);
   });
   r.get("/dossiers", (_req, res) => res.json(dossierIndex()));
+  r.get("/casebook", (_req, res) => res.json(casebook(dossierIndex())));
   r.get("/dossiers/:id", (req, res) => {
     const d = dossiers().find((x) => x.id === req.params.id);
     if (!d) return res.status(404).json({ error: "unknown dossier" });
-    res.json({ ...d, anchorTexts: d.anchors.map((a) => ({ id: a, text: sentences.get(a)?.text ?? "" })) });
+    res.json({ ...d, ...(questionOf(d.id) ?? {}), audit: auditFor(d.id), anchorTexts: d.anchors.map((a) => ({ id: a, text: sentences.get(a)?.text ?? "" })) });
   });
   r.get("/venn", (req, res) => res.json(vennPayload(mode(req))));
+  // a Venn focused on the propositions of one sentence (and the propositions of Reality that rule them out)
+  r.get("/venn/sentence/:id", (req, res) => {
+    const m = mode(req);
+    const s = sentences.get(req.params.id);
+    if (!s) return res.status(404).json({ error: "unknown sentence" });
+    if (m !== "gold" && checkpointOrder.indexOf(s.paragraph.revealedBy) > checkpointOrder.indexOf(m)) return res.json({ mode: m, sets: [], items: [], links: [], clashes: [] });
+    const triples = (kaleidoscope(s.id, m).propositions as any[]).map((p) => { const pr = catalog.propositions[p.id]; return { s: parseN3(pr.s), p: parseN3(pr.p), o: parseN3(pr.o) }; });
+    res.json(vennForTriples(triples, m));
+  });
+  // a Venn focused on one proposition (the side column of the Perspectives page)
+  r.get("/venn/proposition/:id", (req, res) => {
+    const m = mode(req);
+    const pr = catalog.propositions[req.params.id];
+    if (!pr || (m === "gold") !== (pr.dataset === "gold")) return res.status(404).json({ error: "unknown proposition" });
+    if (!(knowledgeMap(m).rows as Viewpoint[]).some((r) => r.id === pr.id)) return res.json({ mode: m, sets: [], items: [], links: [], clashes: [] });
+    res.json(vennForTriples([{ s: parseN3(pr.s), p: parseN3(pr.p), o: parseN3(pr.o) }], m));
+  });
+  // a Venn focused on what a case file is about
+  r.get("/venn/dossier/:id", (req, res) => {
+    const d = dossiers().find((x) => x.id === req.params.id);
+    if (!d) return res.status(404).json({ error: "unknown dossier" });
+    res.json(vennForTriples(d.focus, d.mode));
+  });
   r.get("/worlds", (req, res) => {
     const m = mode(req);
     if (!worldsCache.has(m)) worldsCache.set(m, worldsPayload(m));
@@ -311,7 +283,9 @@ export function api(): Router {
       const p = r.people.find((x) => x.id === shownAs);
       let st = p?.stances ?? [];
       if (merged.has(a.id)) st = st.filter((x) => x.asName === a.name);
-      return { id: r.id, text: r.text, parts: r.parts, sentences: r.sentences, reality: r.reality.value, stances: st, diagnoses: r.diagnoses.filter((d) => d.person === shownAs) };
+      // a persona's page: only what was said or held under that name
+      const ds = r.diagnoses.filter((d) => d.person === shownAs && (!merged.has(a.id) || st.some((x) => x.world === d.world)));
+      return { id: r.id, text: r.text, parts: r.parts, sentences: r.sentences, reality: r.reality.value, stances: st, diagnoses: ds };
     });
     const nm = names(m).filter((n) => n.persons.some((p) => p.id === a.id || p.id === shownAs));
     res.json({ agent: a, mode: m, mergedInto: merged.get(a.id) ?? null, alias: [...merged.entries()].filter(([, o]) => o === a.id).map(([p]) => agents.find((x) => x.id === p)!.name),

@@ -1,0 +1,19 @@
+{
+  "dataset": "gold",
+  "question": "Does DEC flag Windibank's denial to Holmes (P119) against his own beliefs and Reality?",
+  "seed_iris": [],
+  "require_modules": [
+    "W15_v_windibank_denial",
+    "F10_comm_act_denial",
+    "W06_windibank_beliefs",
+    "W02_holmes_reconstruction",
+    "W11_v_windibank_delighted",
+    "W12_v_windibank_machine",
+    "F07_comm_acts_visit",
+    "F01_persons"
+  ],
+  "dec_flags": [
+    "checkInconsistencies"
+  ],
+  "closed_for": []
+}

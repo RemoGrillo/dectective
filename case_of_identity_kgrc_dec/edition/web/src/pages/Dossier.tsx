@@ -5,7 +5,8 @@ import { Link, useNavigate, useParams } from "react-router";
 import { useApi, type Dossier, type Step } from "../api";
 import { ErrorBox, Loading, SentenceLink, Stamp } from "../components/Bits";
 import { DecBadge } from "../components/Glyphs";
-import { GraphView } from "../components/LazyGraph";
+import { AuditTable, ConfigLegend, RoleBadge } from "../components/Casebook";
+import { FocusVenn } from "../components/FocusVenn";
 import { StepTable } from "../components/ResultTable";
 import { useApp, withMode } from "../state";
 
@@ -31,7 +32,7 @@ export default function DossierPage() {
   const i = index?.findIndex((x) => x.id === d.id) ?? -1;
   const prev = i > 0 ? index![i - 1] : null, next = index && i >= 0 && i < index.length - 1 ? index[i + 1] : null;
   const decRuns = groupDec(d.dec);
-  const openLab = (q: string) => navigate(withMode("/lab", mode), { state: { query: q } });
+  const openLab = (q: string) => navigate(withMode("/interrogation", mode), { state: { query: q } });
 
   return (
     <div className="page">
@@ -42,6 +43,19 @@ export default function DossierPage() {
           {next && <Link to={withMode(`/dossiers/${next.id}`, mode)}>No. {next.number} →</Link>}
         </span>
       </nav>
+      {d.question && d.role && (
+        <section className="qband" aria-label="The question this case file tests">
+          <div>
+            <span className="kicker">Question {d.question.n} of 5 · {d.question.short}</span>
+            <p className="qband-title">{d.question.title}</p>
+          </div>
+          <div className="qband-case">
+            <span className="label">This case</span>
+            <RoleBadge role={d.role} />
+            <span className="small">{d.role.shows}</span>
+          </div>
+        </section>
+      )}
       <article className="sheet">
         <span className="folder-tab">Case file No. {String(d.number).padStart(2, "0")} · {d.typeLabel}</span>
         <header className="sheet-head">
@@ -70,7 +84,7 @@ export default function DossierPage() {
                     <div className="more-body">
                       <pre className="code">{s.sparql}</pre>
                       {s.kind === "ask" ? <p className="ask-result">ASK → <strong>{String(s.result).toUpperCase()}</strong></p> : <StepTable columns={s.columns ?? []} rows={s.rows ?? []} />}
-                      <button className="btn small" style={{ marginTop: 8 }} onClick={() => openLab(s.sparql)}>Open in the SPARQL Lab →</button>
+                      <button className="btn small" style={{ marginTop: 8 }} onClick={() => openLab(s.sparql)}>Open in Interrogation →</button>
                     </div>
                   </details>
                 </div>
@@ -112,9 +126,24 @@ export default function DossierPage() {
         </div>
       </article>
 
+      {d.audit && (
+        <section className="card pad audit-card" style={{ marginTop: 24 }} aria-labelledby="audit-h">
+          <div className="spread" style={{ alignItems: "baseline" }}>
+            <h2 id="audit-h" style={{ margin: 0 }}>The same question, with and without DEC</h2>
+            <span className="small muted">Audit queries for question {d.question?.n}: same data, same rules, four set-ups. ✓ answered as expected; ✕ no answer, or a wrong one.</span>
+          </div>
+          <AuditTable configs={d.audit.configs} rows={d.audit.rows} />
+          {d.audit.extra.length > 0 && <p className="small muted" style={{ margin: "8px 0 0" }}>Also run for this edition, after the audit: {d.audit.extra.map((x) => <span key={x.id}><span className="mono">{x.id}</span> ({x.question})</span>)}.</p>}
+          <details className="more">
+            <summary>What the four set-ups are</summary>
+            <div className="more-body"><ConfigLegend configs={d.audit.configs} /></div>
+          </details>
+        </section>
+      )}
+
       <section className="card pad" style={{ marginTop: 24 }} aria-labelledby="graph-h">
         <h2 id="graph-h">Who holds what</h2>
-        {d.graph?.length ? <GraphView elements={d.graph} height="tall" caption={d.title} /> : <p className="empty">No diagram for this case.</p>}
+        <FocusVenn url={`/api/venn/dossier/${d.id}`} height={480} minWidth={600} />
       </section>
     </div>
   );

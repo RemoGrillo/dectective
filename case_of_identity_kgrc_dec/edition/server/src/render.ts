@@ -47,6 +47,7 @@ export function renderTriple(s: TermJSON | string, p: TermJSON | string, o: Term
   }
   let pl = labels.predicates[localName(P.value)] ?? humanize(localName(P.value));
   if (P.value === NS.owl + "sameAs" && !agentByIri(S.value)) pl = "is the same as";
+  if (P.value === NS.owl + "differentFrom" && !agentByIri(S.value)) pl = "is not the same as";
   const obj: Part = O.type === "uri" ? { text: label(O.value), iri: O.value, kind: O.value.startsWith(NS.w) ? "world" : "entity" }
     : { text: `“${O.value}”`, kind: "literal" };
   return [subj, { text: ` ${pl} `, iri: P.value, kind: "predicate" }, obj];

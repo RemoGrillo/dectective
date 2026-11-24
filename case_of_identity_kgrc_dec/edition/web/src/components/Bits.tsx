@@ -11,7 +11,7 @@ export function Parts({ parts }: { parts: Part[] }) {
         if (!p.iri) return <span key={i}>{p.text}</span>;
         const ag = meta?.agents.find((a) => a.gold === p.iri || a.sim === p.iri);
         if (ag && ag.kind !== "reality" && ag.kind !== "whatif" && ag.kind !== "reader") {
-          return <Link key={i} to={withMode(`/cast/${ag.id}`, mode)} title={`${ag.name}: what they hold`}>{p.text}</Link>;
+          return <Link key={i} to={withMode(`/identikit/${ag.id}`, mode)} title={`${ag.name}: what they hold`}>{p.text}</Link>;
         }
         return <span key={i}>{p.text}</span>;
       })}

@@ -1,5 +1,5 @@
 # Natural-language question <-> SPARQL query pairs for the edition's endpoint.
-# The prefix block below is prepended to every query. Graph naming: see the SPARQL Lab guide.
+# The prefix block below is prepended to every query. Graph naming: see the guide in Interrogation (the SPARQL Lab).
 prefixes: |
   PREFIX st:   <http://example.org/dectective/story/>
   PREFIX w:    <http://example.org/dectective/world/>

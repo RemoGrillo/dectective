@@ -16,9 +16,9 @@ export function Portrait({ id, size = 44, name, oval = false }: { id: string; si
   const { meta } = useApp();
   const pid = useId().replace(/:/g, "");
   if (id === "reality") return <span className="portrait reality" style={{ width: size, height: size, border: 0, background: "transparent" }}><RealityDisc size={size} /></span>;
-  const w = size, h = oval ? Math.round(size * 1.24) : size;
-  const label = name ? `Portrait of ${name}` : "Portrait";
   const src = portraitUrl(meta, id, oval ? "full" : "face");
+  const w = size, h = oval && !src ? Math.round(size * 1.24) : size;     // the drawn portraits are round; placeholders oval
+  const label = name ? `Portrait of ${name}` : "Portrait";
   if (src) {
     // the oval drawings carry their own frame: shown whole, without the placeholder's border
     return <span className={`portrait ${oval ? "oval drawn" : ""}`} style={{ width: w, height: h }}><img src={src} alt={label} loading="lazy" /></span>;

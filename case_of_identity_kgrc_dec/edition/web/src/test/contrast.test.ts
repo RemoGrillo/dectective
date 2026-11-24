@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { contrast, contrastPairs, light } from "../theme/tokens";
+import { contrast, contrastPairs, graphicPairs, light } from "../theme/tokens";
 
 describe("WCAG contrast of the theme tokens", () => {
-  for (const p of contrastPairs) {
+  for (const p of [...contrastPairs, ...graphicPairs]) {
     it(`${p.name} ≥ ${p.min}:1`, () => {
       expect(contrast(p.fg, p.bg)).toBeGreaterThanOrEqual(p.min);
     });

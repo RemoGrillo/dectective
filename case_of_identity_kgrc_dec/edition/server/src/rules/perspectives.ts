@@ -56,7 +56,7 @@ export function statusIn(t: Triple, mode: Mode, w: WorldInfo): WorldStatus {
   }
   const ws = witnesses(t, mode, w.local, w.decType).map((x) => ({ ...x, parts: renderTriple(x.triple.s, x.triple.p, x.triple.o) }));
   if (ws.length) {
-    const strict = ws.some((x) => x.axiom.kind === "disjoint");
+    const strict = ws.some((x) => x.axiom.kind !== "closure");   // disjointness and same/different are certain; a closure is an assumption
     return { ...base, status: strict ? "contradicted" : "contradicted-assuming", witnesses: ws };
   }
   return { ...base, status: "not-determined" };
@@ -144,7 +144,12 @@ const SCAFFOLD_CLASSES = [NS.crm + "E21_Person", NS.crm + "E41_Appellation", NS.
 
 export function isContent(pid: string): boolean {
   const pr = catalog.propositions[pid];
-  const p = parseN3(pr.p).value, o = parseN3(pr.o);
+  return isContentTriple(parseN3(pr.p).value, parseN3(pr.o));
+}
+
+/** A triple says something about the story (what someone says, believes, supposes, or what is true), not about the
+ *  acts of saying and holding (who said it to whom, who holds which point of view) nor the model's own plumbing. */
+export function isContentTriple(p: string, o: { value: string }): boolean {
   if (SCAFFOLD.includes(p)) return false;
   if (p === NS.rdf + "type" && SCAFFOLD_CLASSES.includes(o.value)) return false;
   if (p.startsWith(NS.inf)) return false;

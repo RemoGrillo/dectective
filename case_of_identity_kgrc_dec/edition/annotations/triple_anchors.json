@@ -19,6 +19,7 @@
     ["mary", "engagedTo", "hosmer", ["P041.S02"]],
     ["hosmer", "sameAs", "windibank", ["P126.S11", "P134.S02"]],
     ["windibank", "sameAs", "hosmer", ["P126.S11", "P127.S01"]],
+    ["windibank", "differentFrom", "hosmer", ["P119.S02", "P119.S03"]],
     ["hosmer", "P1_is_identified_by", "app_hosmer_angel", ["P018.S03", "P093.S01"]],
     ["windibank", "P1_is_identified_by", "app_windibank", ["P020.S02"]],
     ["mary", "P1_is_identified_by", "app_mary_sutherland", ["P014.S01"]],
@@ -59,6 +60,7 @@
     ["ca_windibank_reassure", "*", "*", ["P067.S01", "P067.S02"]],
     ["ca_windibank_delighted", "*", "*", ["P115.S02"]],
     ["ca_windibank_machine", "*", "*", ["P117.S01"]],
+    ["ca_windibank_denial", "*", "*", ["P119.S02", "P119.S03"]],
     ["reaction_start", "*", "*", ["P115.S01"]],
     ["ca_holmes_reconstruction", "*", "*", ["P124.S02", "P126.S01"]],
     ["ca_holmes_explanation", "*", "*", ["P134.S01", "P136.S01"]],
@@ -75,6 +77,7 @@
     ["mary", "uttered", "*", ["P031.S10"]],
     ["windibank", "uttered", "v_windibank_reassure", ["P067.S01"]],
     ["windibank", "uttered", "v_windibank_delighted", ["P115.S02"]],
-    ["windibank", "uttered", "v_windibank_machine", ["P117.S01"]]
+    ["windibank", "uttered", "v_windibank_machine", ["P117.S01"]],
+    ["windibank", "uttered", "v_windibank_denial", ["P119.S02"]]
   ]
 }

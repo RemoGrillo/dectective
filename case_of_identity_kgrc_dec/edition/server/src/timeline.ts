@@ -12,7 +12,7 @@ import { label, plain, renderTriple, type Part } from "./render.ts";
 import { n3, parseN3, type TermJSON } from "./store.ts";
 import { derivationHints, type Hint } from "./rules/derivation.ts";
 import { witnesses, type Triple, type Witness } from "./rules/incompatibility.ts";
-import { gov, isContent, type Status, type WorldStatus } from "./rules/perspectives.ts";
+import { gov, isContent, isContentTriple, type Status, type WorldStatus } from "./rules/perspectives.ts";
 import { VERB_OF, viewpointFrom, type DiagnosisKind } from "./rules/viewpoints.ts";
 
 type Entry = [string, string, string, string, number, string, "story" | "minor"];
@@ -47,7 +47,7 @@ function personOf(world: string) {
 // ---------------------------------------------------------------- conclusions (what DEC infers, with its premises)
 type Premise = { text: string; world: string; step: number; background?: boolean };
 const RULE_TEXT: Record<string, (h: any) => string> = {
-  identity: (h) => `same person, same facts: ${label(h.from)} is ${label(h.to)}`,
+  identity: (h) => `same person: ${label(h.from)} is ${label(h.to)}, so what holds of one holds of the other`,
   symmetric: () => "it works both ways",
   subclass: (h) => `every “${label(h.from)}” is also of this kind`,
   "inverse-functional": (h) => `a single identifying trait (“${label(h.property)}”): two things that share it are one`,
@@ -120,11 +120,41 @@ function conclusions(): Conclusion[] {
   return out.sort((a, b) => a.step - b.step || (a.cls === b.cls ? 0 : a.cls === "story" ? -1 : 1) || interest(b) - interest(a) || a.text.localeCompare(b.text));
 }
 
+/** The propositions of the model tied to a sentence (content only, one per triple): what a line someone speaks stands for
+ *  in the modal plot, instead of the words of the text. */
+function propsOf(sid: string): string[] {
+  const out: string[] = [];
+  for (const pr of Object.values(catalog.propositions)) {
+    if (pr.dataset !== "gold" || pr.world === "shared" || !pr.sentences.includes(sid) || !isContent(pr.id)) continue;
+    const t = T({ s: parseN3(pr.s), p: parseN3(pr.p), o: parseN3(pr.o) });
+    if (!out.includes(t)) out.push(t);
+  }
+  return out;
+}
+
+/** Is the sentence a line spoken by its paragraph's speaker, rather than narration inside that paragraph? ("Mr. Windibank
+ *  gave a violent start and dropped his gloves" is narration in a paragraph credited to Windibank.) Without narration
+ *  the whole paragraph is speech; otherwise the quotation marks decide, carried from sentence to sentence. */
+function spokenBySpeaker(sid: string): boolean {
+  const sen = sentences.get(sid);
+  if (!sen) return false;
+  if (!sen.paragraph.hasNarration) return true;
+  let open = false;
+  for (const s of sen.paragraph.sentences) {
+    const spoken = open || s.text.includes("“");
+    for (const ch of s.text) { if (ch === "“") open = true; else if (ch === "”") open = false; }
+    if (s.id === sid) return spoken;
+  }
+  return false;
+}
+
 // ---------------------------------------------------------------- claims entering (what the text adds at each clue)
 function claims() {
   return TLD.entries.filter(([, , , , , how, cls]) => how === "asserted" && cls === "story").map(([w, s, p, o, n]) => {
     const t: Triple = { s: parseN3(s), p: parseN3(p), o: parseN3(o) };
-    return { step: n, world: w, worldTitle: worldTitle(w), ...personOf(w), text: T(t) };
+    // content: what the story says, believes, supposes or holds true; not the acts themselves ("Watson supposes a guess",
+    // "Mary told Holmes"), which the timeline shows through the lanes of the people
+    return { step: n, world: w, worldTitle: worldTitle(w), ...personOf(w), text: T(t), content: isContentTriple(t.p.value, t.o) };
   }).sort((a, b) => a.step - b.step || a.world.localeCompare(b.world));
 }
 
@@ -147,7 +177,7 @@ function statusesAt(t: Triple, k: number): WorldStatus[] {
       return { ...base, status, receivedFrom: src, receivedFromTitle: src ? worldTitle(src) : undefined };
     }
     const ws = witnessesAt(t, w.local, w.decType).filter((x) => x.step <= k).map((x) => ({ ...x, parts: renderTriple(x.triple.s, x.triple.p, x.triple.o) }));
-    if (ws.length) return { ...base, status: ws.some((x) => x.axiom.kind === "disjoint") ? "contradicted" : "contradicted-assuming", witnesses: ws };
+    if (ws.length) return { ...base, status: ws.some((x) => x.axiom.kind !== "closure") ? "contradicted" : "contradicted-assuming", witnesses: ws };
     return { ...base, status: "not-determined" as Status };
   });
 }
@@ -193,7 +223,8 @@ function full() {
   if (cache) return cache;
   const steps = TLD.steps.map((s) => {
     const sen = sentences.get(s.sid);
-    return { n: s.n, sid: s.sid, page: s.page, stage: s.stage, text: sen?.text ?? "", speaker: sen?.paragraph.speaker ?? "", newTriples: s.new };
+    return { n: s.n, sid: s.sid, page: s.page, stage: s.stage, text: sen?.text ?? "", speaker: sen?.paragraph.speaker ?? "", spoken: spokenBySpeaker(s.sid),
+      props: propsOf(s.sid), newTriples: s.new };
   });
   const cl = conclusions();
   const cs = claims();

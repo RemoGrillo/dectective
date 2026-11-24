@@ -5,7 +5,8 @@ import { Link, useSearchParams } from "react-router";
 import { useApi, type TConclusion, type TEvent, type TextPayload, type Timeline, type TStep } from "../api";
 import { ErrorBox, Loading } from "../components/Bits";
 import { ConclusionCard, countsByStep, Meter, stepOf, useTimeline } from "../components/DeductionBits";
-import { DiagBadge, RealityDisc } from "../components/Glyphs";
+import { RealityDisc } from "../components/Glyphs";
+import { TermBadge } from "../components/Term";
 import { StoryBar } from "../components/StoryBar";
 import { stageOf, useApp, withMode } from "../state";
 import { DIAG, REALITY, VERB, type RealityValue } from "../vocab";
@@ -34,7 +35,7 @@ export default function Deductions() {
   ];
 
   return (
-    <div className="page wide" style={{ maxWidth: 1400 }}>
+    <div className="page wide">
       <div className="page-head">
         <h1>Deductions</h1>
         <p className="lede">What DEC can conclude at each point of the story, and what it still can't.</p>
@@ -84,7 +85,7 @@ function ClueHeader({ tl, step, last, go }: { tl: Timeline; step: TStep; last: n
 }
 
 function verdictLine(e: TEvent) {
-  return <li key={e.pid + e.diagnosis!.kind + e.diagnosis!.person} className="row" style={{ gap: 6, alignItems: "flex-start", flexWrap: "nowrap" }}><DiagBadge kind={e.diagnosis!.kind} /><span className="small">{e.diagnosis!.text}{e.diagnosis!.assumption ? `, ${e.diagnosis!.assumption}` : ""}: “{e.text}”</span></li>;
+  return <li key={e.pid + e.diagnosis!.kind + e.diagnosis!.person} className="row" style={{ gap: 6, alignItems: "flex-start", flexWrap: "nowrap" }}><TermBadge kind={e.diagnosis!.kind} text={e.diagnosis!.text} assumption={e.diagnosis!.assumption} size="small" /><span className="small">{e.diagnosis!.personName}: “{e.text}”</span></li>;
 }
 function realityLine(e: TEvent) {
   return <li key={e.pid + e.step} className="row small" style={{ gap: 6, flexWrap: "nowrap", alignItems: "flex-start" }}><RealityDisc value={e.to as RealityValue} size={16} /><span><strong>{REALITY[e.to as RealityValue].short}</strong> in Reality: {e.text}</span></li>;
@@ -195,7 +196,7 @@ function VersusEnd({ tl, n }: { tl: Timeline; n: number }) {
             </ul>
           )}
           <h4>Will change</h4>
-          {changes.length === 0 ? <p className="small muted">Nothing: every fact already has its final standing.</p> : (
+          {changes.length === 0 ? <p className="small muted">Nothing: every proposition already has its final standing.</p> : (
             <ul className="plain">
               {changes.map((x, i) => (
                 <li key={i} className="small" style={{ marginBottom: 6 }}>

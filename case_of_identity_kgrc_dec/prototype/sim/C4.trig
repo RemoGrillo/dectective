@@ -9,6 +9,10 @@
 @prefix w: <http://example.org/dectective/world/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+w:w22 {
+    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
+}
+
 w:w01 {
     st:e2 a prof1:InvoluntaryDisappearance .
 
@@ -168,10 +172,6 @@ w:shared {
         rdfs:domain prof1:CommunicativeAct ;
         rdfs:range inf:I4_Proposition_Set .
 
-    prof1:hasDefectProfile a owl:ObjectProperty ;
-        rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
-        rdfs:domain prof1:Typewriter .
-
     prof1:hasOccupation a owl:ObjectProperty ;
         rdfs:domain crm:E21_Person ;
         rdfs:range prof1:Occupation .
@@ -298,6 +298,10 @@ w:shared {
         rdfs:subClassOf crm:E21_Person ;
         owl:disjointWith prof1:KeenSighted .
 
+    prof1:hasDefectProfile a owl:ObjectProperty ;
+        rdfs:comment "Set of typing defects of a machine. Making it owl:InverseFunctionalProperty encodes Holmes's individuality principle (P116.S01-S02); that axiom is NOT shared: it lives only in the worlds that adopt it." ;
+        rdfs:domain prof1:Typewriter .
+
     crm:P14_carried_out_by a rdf:Property ;
         rdfs:domain crm:E7_Activity ;
         rdfs:range crm:E39_Actor ;
@@ -417,26 +421,22 @@ w:shared {
         owl:inverseOf crm:P174i_ends_after_the_start_of .
 }
 
-w:w20 {
-    st:pC owl:sameAs st:pB .
-}
-
-w:w04 {
-    st:e2 a prof1:InvoluntaryDisappearance .
-
-    st:pC a prof1:ExpectedToReturn .
-}
-
 w:w03 {
     st:pC prof1:hasOccupation st:o2 .
 }
 
-w:w05 {
-    st:d1 prof1:purpose st:u1 .
+w:w10 {
+    st:e2 a prof1:VoluntaryDisappearance .
+
+    st:j1 a prof1:PretendedJourney .
+
+    st:j2 a prof1:PretendedJourney .
+
+    st:pC owl:sameAs st:pB .
 }
 
-w:w22 {
-    prof1:hasDefectProfile a owl:InverseFunctionalProperty .
+w:w20 {
+    st:pC owl:sameAs st:pB .
 }
 
 {
@@ -455,6 +455,11 @@ w:w22 {
     st:a3 a prof1:CommunicativeAct ;
         prof1:addressee st:pH ;
         prof1:hasContent w:w06 ;
+        crm:P14_carried_out_by st:pB .
+
+    st:a4 a prof1:CommunicativeAct ;
+        prof1:addressee st:pH ;
+        prof1:hasContent w:w07 ;
         crm:P14_carried_out_by st:pB .
 
     st:analyst prof1:conjectures w:w24 .
@@ -511,9 +516,6 @@ w:w22 {
 
     st:pD a crm:E21_Person .
 
-    st:pH a crm:E21_Person ;
-        prof1:establishes w:w10 .
-
     st:d1 a prof1:TypewrittenLetter ;
         prof1:purportsToBeFrom st:pC ;
         prof1:typedOn st:m1 .
@@ -528,11 +530,20 @@ w:w22 {
     st:m1 a prof1:Typewriter ;
         prof1:hasDefectProfile st:f1 .
 
+    st:pH a crm:E21_Person ;
+        prof1:establishes w:w10 .
+
     st:pA a crm:E21_Person ;
         prof1:attended st:e1 ;
         prof1:believes w:w01 ;
         prof1:engagedTo st:pC ;
         crm:P1_is_identified_by st:nA .
+
+    st:pC a crm:E21_Person ;
+        prof1:attended st:e1 ;
+        prof1:uttered w:w03 ;
+        prof1:wore st:x1 ;
+        crm:P1_is_identified_by st:nC .
 
     st:pB a prof1:KeenSighted,
             crm:E21_Person ;
@@ -541,34 +552,33 @@ w:w22 {
         prof1:spouseOf st:pD ;
         prof1:stepfatherOf st:pA ;
         prof1:uttered w:w04,
-            w:w06 ;
+            w:w06,
+            w:w07 ;
         crm:P1_is_identified_by st:nB .
 
-    st:pC a crm:E21_Person ;
-        prof1:attended st:e1 ;
-        prof1:uttered w:w03 ;
-        prof1:wore st:x1 ;
-        crm:P1_is_identified_by st:nC .
-
-    _:n1fd0c0980b364983bc61d4eb36c4ab02b2 dec:checkInconsistencies true .
+    _:na32923c3a7c1432bba0adc8b12e77245b2 dec:checkInconsistencies true .
 }
 
-w:w10 {
-    st:j1 a prof1:PretendedJourney .
-
-    st:j2 a prof1:PretendedJourney .
-
-    st:e2 a prof1:VoluntaryDisappearance .
-
-    st:pC owl:sameAs st:pB .
+w:w21 {
+    st:e2 a prof1:InvoluntaryDisappearance .
 }
 
 w:w06 {
     st:pB prof1:motive st:u2 .
 }
 
-w:w21 {
-    st:e2 a prof1:InvoluntaryDisappearance .
+w:w07 {
+    st:pB owl:differentFrom st:pC .
+}
+
+w:w23 {
+    st:d1 prof1:writtenBy st:pB .
+
+    st:d2 prof1:writtenBy st:pB .
+}
+
+w:w05 {
+    st:d1 prof1:purpose st:u1 .
 }
 
 w:w24 {
@@ -578,9 +588,9 @@ w:w24 {
     st:d1 prof1:writtenBy st:q1 .
 }
 
-w:w23 {
-    st:d2 prof1:writtenBy st:pB .
+w:w04 {
+    st:e2 a prof1:InvoluntaryDisappearance .
 
-    st:d1 prof1:writtenBy st:pB .
+    st:pC a prof1:ExpectedToReturn .
 }
 

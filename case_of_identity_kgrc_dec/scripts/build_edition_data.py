@@ -3,7 +3,7 @@
 
 Inputs (all produced by the audit pipeline):
   prototype/results/metrics/<q>/dec.plain.dump.txt   DEC materialisation of each test slice (gold, C2-C4)
-  prototype/results/edition_complement/*.dump.txt    complementary runs (6 gold worlds; one per checkpoint C1-C4)
+  prototype/results/edition_complement/*.dump.txt    complementary runs (7 gold worlds; DEC check on the denial; one per checkpoint C1-C4)
   prototype/results/leakage_C*.dump.txt              reality-reaching slices of each checkpoint
   prototype/modules/catalog.jsonl + modules/*.trig    asserted content per world (gold, sim)
   prototype/fixtures/*/manifest.json, results/test_results.json, metrics/<q>/dec.json   tests, runs, diagnostics
@@ -255,12 +255,22 @@ def main(root):
             run_worlds[qid] = sorted({str(w) for w, *_ in parse_dump(os.path.join(mdir, "dec.plain.dump.txt"))})
     comp = os.path.join(root, "prototype/results/edition_complement")
     cj = json.load(open(os.path.join(comp, "dec.json")))
-    runs.append({"id": "complement-gold", "kind": "complement", "dataset": "gold", "question": "Complementary materialisation (6 worlds never in a test slice)",
+    runs.append({"id": "complement-gold", "kind": "complement", "dataset": "gold", "question": "Complementary materialisation (7 worlds never in a test slice)",
                  "slice": "prototype/results/edition_complement/slice.trig", "checkInconsistencies": False, "closedFor": [], "excludedAxioms": [],
                  "materialise_ms_median": cj["runs"][0]["materialise_total_ms"], "n_worlds": cj["accounting"]["n_worlds"],
                  "inconsistency_pairs": cj["accounting"]["inconsistency_pairs"], "asserted": cj["accounting"]["asserted_total"],
                  "materialised": cj["accounting"]["materialised_total"], "diagnostics": [], "test_result": None})
     ingest("complement-gold", "gold", os.path.join(comp, "dec.dump.txt"))
+    # DEC's own conflict check on Windibank's denial to Holmes (W15, added after the audit; scripts/run_edition_complement.py)
+    cd = json.load(open(os.path.join(comp, "check_denial.json")))
+    runs.append({"id": "check-denial", "kind": "check", "dataset": "gold",
+                 "question": "Does DEC flag Windibank's denial to Holmes (P119) against his own beliefs and Reality? (controls: his other two statements to Holmes)",
+                 "slice": "prototype/results/edition_complement/check_denial.slice.trig", "checkInconsistencies": True, "closedFor": [], "excludedAxioms": [],
+                 "materialise_ms_median": cd["runs"][0]["materialise_total_ms"], "n_worlds": cd["accounting"]["n_worlds"],
+                 "inconsistency_pairs": cd["accounting"]["inconsistency_pairs"], "asserted": cd["accounting"]["asserted_total"],
+                 "materialised": cd["accounting"]["materialised_total"],
+                 "diagnostics": [d for d in cd["accounting"]["dec_diagnostics"] if "disagreesWith" in d or "delusionalWorld" in d], "test_result": None})
+    ingest("check-denial", "gold", os.path.join(comp, "check_denial.dump.txt"))
     for ck in ("C1", "C2", "C3", "C4"):
         sj = json.load(open(os.path.join(comp, f"snapshot_{ck}.json")))
         runs.append({"id": f"complement-{ck}", "kind": "complement", "dataset": ck, "question": f"Whole checkpoint {ck} without conflict-check flags",

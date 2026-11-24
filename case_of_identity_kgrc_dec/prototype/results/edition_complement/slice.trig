@@ -4,6 +4,93 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<http://example.org/dectective/world/holmes_same_machine> {
+    ns1:hasDefectProfile a owl:InverseFunctionalProperty .
+}
+
+<http://example.org/dectective/world/shared> {
+    ns1:CommunicativeAct a owl:Class .
+
+    ns1:Impersonation a owl:Class .
+
+    ns1:KeenSighted a owl:Class .
+
+    ns1:Occupation a owl:Class .
+
+    ns1:PretendedJourney a owl:Class ;
+        rdfs:subClassOf ns1:Journey .
+
+    ns1:Typewriter a owl:Class .
+
+    ns1:TypewrittenLetter a owl:Class ;
+        rdfs:subClassOf ns1:Letter .
+
+    ns1:VoluntaryDisappearance a owl:Class ;
+        rdfs:subClassOf ns1:Disappearance .
+
+    ns1:addressee a owl:ObjectProperty .
+
+    ns1:assisted a owl:ObjectProperty .
+
+    ns1:attended a owl:ObjectProperty .
+
+    ns1:conjectures a owl:ObjectProperty .
+
+    ns1:disappearedPerson a owl:ObjectProperty .
+
+    ns1:employedBy a owl:ObjectProperty .
+
+    ns1:engagedTo a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:establishes a owl:ObjectProperty .
+
+    ns1:hasContent a owl:ObjectProperty .
+
+    ns1:hasOccupation a owl:ObjectProperty .
+
+    ns1:heldBy a owl:ObjectProperty .
+
+    ns1:motive a owl:ObjectProperty .
+
+    ns1:purportsToBeFrom a owl:ObjectProperty .
+
+    ns1:reportedBy a owl:ObjectProperty .
+
+    ns1:showsDefectProfile a owl:ObjectProperty .
+
+    ns1:spouseOf a owl:ObjectProperty,
+            owl:SymmetricProperty .
+
+    ns1:stepfatherOf a owl:ObjectProperty .
+
+    ns1:traveller a owl:ObjectProperty .
+
+    ns1:typedOn a owl:ObjectProperty .
+
+    ns1:usedAppellation a owl:ObjectProperty .
+
+    ns1:usedBy a owl:ObjectProperty .
+
+    ns1:uttered a owl:ObjectProperty .
+
+    ns1:wore a owl:ObjectProperty .
+
+    ns1:writtenBy a owl:ObjectProperty .
+
+    ns1:Disappearance a owl:Class .
+
+    ns1:Journey a owl:Class .
+
+    ns1:Letter a owl:Class .
+
+    ns1:hasDefectProfile a owl:ObjectProperty .
+}
+
+<http://example.org/dectective/world/v_windibank_delighted> {
+    <http://example.org/dectective/story/windibank> ns1:motive <http://example.org/dectective/story/wish_hosmer_found> .
+}
+
 <http://example.org/dectective/world/h_author_other> {
     <http://example.org/dectective/story/letter_H1> ns1:writtenBy <http://example.org/dectective/story/other_clerk> .
 
@@ -11,8 +98,10 @@
         ns1:employedBy <http://example.org/dectective/story/westhouse_marbank> .
 }
 
-<http://example.org/dectective/world/holmes_same_machine> {
-    ns1:hasDefectProfile a owl:InverseFunctionalProperty .
+<http://example.org/dectective/world/v_windibank_machine> {
+    <http://example.org/dectective/story/letter_W> ns1:typedOn <http://example.org/dectective/story/office_machine> .
+
+    <http://example.org/dectective/story/office_machine> ns1:usedBy <http://example.org/dectective/story/westhouse_staff> .
 }
 
 <http://example.org/dectective/world/holmes_reconstruction> {
@@ -59,6 +148,11 @@
     <http://example.org/dectective/story/ca_windibank_delighted> a ns1:CommunicativeAct ;
         ns1:addressee <http://example.org/dectective/story/holmes> ;
         ns1:hasContent <http://example.org/dectective/world/v_windibank_delighted> ;
+        ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
+
+    <http://example.org/dectective/story/ca_windibank_denial> a ns1:CommunicativeAct ;
+        ns1:addressee <http://example.org/dectective/story/holmes> ;
+        ns1:hasContent <http://example.org/dectective/world/v_windibank_denial> ;
         ns2:P14_carried_out_by <http://example.org/dectective/story/windibank> .
 
     <http://example.org/dectective/story/ca_windibank_machine> a ns1:CommunicativeAct ;
@@ -145,14 +239,14 @@
         ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> ;
         ns1:usedBy <http://example.org/dectective/story/westhouse_staff> .
 
+    <http://example.org/dectective/story/machine_H> a ns1:Typewriter ;
+        ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> .
+
     <http://example.org/dectective/story/holmes> a ns2:E21_Person ;
         ns1:conjectures <http://example.org/dectective/world/holmes_mother>,
             <http://example.org/dectective/world/holmes_motive>,
             <http://example.org/dectective/world/holmes_same_machine> ;
         ns1:establishes <http://example.org/dectective/world/holmes_reconstruction> .
-
-    <http://example.org/dectective/story/machine_H> a ns1:Typewriter ;
-        ns1:hasDefectProfile <http://example.org/dectective/story/profile_eR14> .
 
     <http://example.org/dectective/story/hosmer> a ns2:E21_Person ;
         ns1:attended <http://example.org/dectective/story/ball> ;
@@ -171,101 +265,17 @@
         ns1:spouseOf <http://example.org/dectective/story/mother> ;
         ns1:stepfatherOf <http://example.org/dectective/story/mary> ;
         ns1:uttered <http://example.org/dectective/world/v_windibank_delighted>,
+            <http://example.org/dectective/world/v_windibank_denial>,
             <http://example.org/dectective/world/v_windibank_machine> ;
         ns2:P1_is_identified_by <http://example.org/dectective/story/app_windibank> .
 }
 
-<http://example.org/dectective/world/shared> {
-    ns1:addressee a owl:ObjectProperty .
-
-    ns1:assisted a owl:ObjectProperty .
-
-    ns1:attended a owl:ObjectProperty .
-
-    ns1:disappearedPerson a owl:ObjectProperty .
-
-    ns1:employedBy a owl:ObjectProperty .
-
-    ns1:engagedTo a owl:ObjectProperty,
-            owl:SymmetricProperty .
-
-    ns1:hasContent a owl:ObjectProperty .
-
-    ns1:hasOccupation a owl:ObjectProperty .
-
-    ns1:heldBy a owl:ObjectProperty .
-
-    ns1:motive a owl:ObjectProperty .
-
-    ns1:purportsToBeFrom a owl:ObjectProperty .
-
-    ns1:reportedBy a owl:ObjectProperty .
-
-    ns1:showsDefectProfile a owl:ObjectProperty .
-
-    ns1:spouseOf a owl:ObjectProperty,
-            owl:SymmetricProperty .
-
-    ns1:stepfatherOf a owl:ObjectProperty .
-
-    ns1:traveller a owl:ObjectProperty .
-
-    ns1:typedOn a owl:ObjectProperty .
-
-    ns1:usedAppellation a owl:ObjectProperty .
-
-    ns1:usedBy a owl:ObjectProperty .
-
-    ns1:wore a owl:ObjectProperty .
-
-    ns1:writtenBy a owl:ObjectProperty .
-
-    ns1:Impersonation a owl:Class .
-
-    ns1:KeenSighted a owl:Class .
-
-    ns1:Letter a owl:Class .
-
-    ns1:Occupation a owl:Class .
-
-    ns1:VoluntaryDisappearance a owl:Class ;
-        rdfs:subClassOf ns1:Disappearance .
-
-    ns1:conjectures a owl:ObjectProperty .
-
-    ns1:establishes a owl:ObjectProperty .
-
-    ns1:hasDefectProfile a owl:ObjectProperty .
-
-    ns1:uttered a owl:ObjectProperty .
-
-    ns1:Disappearance a owl:Class .
-
-    ns1:PretendedJourney a owl:Class ;
-        rdfs:subClassOf ns1:Journey .
-
-    ns1:Typewriter a owl:Class .
-
-    ns1:Journey a owl:Class .
-
-    ns1:CommunicativeAct a owl:Class .
-
-    ns1:TypewrittenLetter a owl:Class ;
-        rdfs:subClassOf ns1:Letter .
-}
-
-<http://example.org/dectective/world/v_windibank_machine> {
-    <http://example.org/dectective/story/letter_W> ns1:typedOn <http://example.org/dectective/story/office_machine> .
-
-    <http://example.org/dectective/story/office_machine> ns1:usedBy <http://example.org/dectective/story/westhouse_staff> .
+<http://example.org/dectective/world/v_windibank_denial> {
+    <http://example.org/dectective/story/windibank> owl:differentFrom <http://example.org/dectective/story/hosmer> .
 }
 
 <http://example.org/dectective/world/holmes_mother> {
     <http://example.org/dectective/story/mother> ns1:assisted <http://example.org/dectective/story/impersonation> .
-}
-
-<http://example.org/dectective/world/v_windibank_delighted> {
-    <http://example.org/dectective/story/windibank> ns1:motive <http://example.org/dectective/story/wish_hosmer_found> .
 }
 
 <http://example.org/dectective/world/holmes_motive> {
